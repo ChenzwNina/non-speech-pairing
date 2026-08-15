@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Predicting content · gpt-realtime-2.1</title>
+  <style>
+    :root {
+      --paper: #f3efe6;
+      --ink: #1c1712;
+      --mute: #6d6458;
+      --line: #d8cfc0;
+      --card: #fbf8f2;
+      --ok: #215c40;
+      --ok-bg: #dcecde;
+      --miss: #9a3124;
+      --miss-bg: #f4ddd6;
+      --gold: #8a5a12;
+      --gold-bg: #f3e6c8;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink); }
+    body {
+      font: 15px/1.45 "Avenir Next", "Segoe UI", sans-serif;
+      padding: 28px 20px 80px;
+    }
+    h1, h2, h3, .serif { font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif; }
+    .wrap { max-width: 1120px; margin: 0 auto; }
+    header.top { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: end; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+    header.top p.kicker { margin: 0 0 6px; color: var(--mute); letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
+    h1 { margin: 0; font-size: 32px; font-weight: 600; letter-spacing: -0.03em; }
+    .lede { margin: 8px 0 0; color: var(--mute); max-width: 44em; }
+    .score { text-align: right; }
+    .score .num { font-size: 42px; line-height: 1; font-weight: 600; letter-spacing: -0.04em; }
+    .score .sub { color: var(--mute); margin-top: 4px; }
+    section { margin-top: 28px; }
+    h2 { font-size: 18px; margin: 0 0 12px; font-weight: 600; }
+    .bars { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; }
+    .bar-row { display: grid; grid-template-columns: 120px 1fr 54px; gap: 10px; align-items: center; margin: 7px 0; font-size: 13px; }
+    .bar-row .label { color: var(--mute); }
+    .track { height: 8px; background: #e6dfd2; }
+    .fill { height: 8px; background: var(--ink); }
+    .fill.low { background: var(--miss); }
+    .count { text-align: right; font-variant-numeric: tabular-nums; }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    select, input[type="search"] {
+      font: inherit; background: var(--card); color: var(--ink);
+      border: 1px solid var(--line); padding: 7px 10px;
+    }
+    input[type="search"] { min-width: 220px; }
+    .meta { color: var(--mute); font-size: 13px; margin-top: 10px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); padding: 18px 18px 14px; margin: 14px 0;
+    }
+    .card-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-bottom: 8px; }
+    .card-head h3 { margin: 0; font-size: 18px; }
+    .badge { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--mute); }
+    .badge.ok { color: var(--ok); }
+    .badge.miss { color: var(--miss); }
+    .shared { color: var(--mute); font-size: 14px; margin: 0 0 10px; }
+    .shared b { color: var(--ink); font-weight: 600; }
+    .voc { font-size: 13px; color: var(--mute); margin-bottom: 6px; }
+    audio { width: 100%; height: 32px; margin: 4px 0 10px; }
+    ul.opts { list-style: none; margin: 0; padding: 0; }
+    ul.opts li {
+      display: grid; grid-template-columns: 22px 1fr auto; gap: 8px; align-items: start;
+      padding: 7px 8px; margin: 4px 0; font-size: 13px; border: 1px solid transparent;
+    }
+    ul.opts li.gold { background: var(--gold-bg); border-color: #e2c98a; }
+    ul.opts li.pred { outline: 1px solid var(--miss); }
+    ul.opts li.gold.pred { outline-color: var(--ok); background: var(--ok-bg); border-color: #b7d0bb; }
+    .tag { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mute); padding-top: 2px; }
+    .empty { color: var(--mute); padding: 24px 0; }
+    @media (max-width: 820px) {
+      header.top, .bars { grid-template-columns: 1fr; }
+      .score { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <p class="kicker">Predicting content eval</p>
+        <h1>Speaker A’s next line</h1>
+        <p class="lede" id="lede"></p>
+      </div>
+      <div class="score serif">
+        <div class="num" id="score-num"></div>
+        <div class="sub" id="score-sub"></div>
+      </div>
+    </header>
+
+    <section class="bars">
+      <div>
+        <h2>Accuracy by vocalization</h2>
+        <div id="bars-voc"></div>
+      </div>
+      <div>
+        <h2>Accuracy by domain</h2>
+        <div id="bars-domain"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Clips</h2>
+      <div class="controls">
+        <select id="f-voc"></select>
+        <select id="f-domain"></select>
+        <select id="f-outcome">
+          <option value="all">All outcomes</option>
+          <option value="correct">Correct only</option>
+          <option value="wrong">Incorrect only</option>
+        </select>
+        <input id="f-search" type="search" placeholder="Search id, domain, transcript" />
+      </div>
+      <p class="meta" id="clip-meta"></p>
+      <div id="list"></div>
+    </section>
+  </div>
+  <script id="payload" type="application/json">{"model": "gpt-realtime-2.1", "seed": 0, "generated_at": "2026-08-15T01:14:40.942736+00:00", "built_at": "2026-08-15T02:45:34.501711+00:00", "n": 30, "voc_order": ["sigh", "groan", "laugh", "hmm", "mmhm", "scoff", "throat_clear", "exhale", "yawn", "shaky_breath"], "voc_label": {"sigh": "Sigh", "groan": "Groan", "laugh": "Laugh", "hmm": "Hmm", "mmhm": "Mm-hm", "scoff": "Scoff", "throat_clear": "Throat clear", "exhale": "Exhale", "yawn": "Yawn", "shaky_breath": "Shaky breath"}, "summary": {"overall": {"n": 30, "correct": 24, "accuracy": 0.8}, "by_vocalization": {"sigh": {"n": 3, "correct": 3, "accuracy": 1.0}, "groan": {"n": 3, "correct": 3, "accuracy": 1.0}, "laugh": {"n": 3, "correct": 2, "accuracy": 0.6666666666666666}, "hmm": {"n": 3, "correct": 3, "accuracy": 1.0}, "mmhm": {"n": 3, "correct": 3, "accuracy": 1.0}, "scoff": {"n": 3, "correct": 3, "accuracy": 1.0}, "throat_clear": {"n": 3, "correct": 1, "accuracy": 0.3333333333333333}, "exhale": {"n": 3, "correct": 0, "accuracy": 0.0}, "yawn": {"n": 3, "correct": 3, "accuracy": 1.0}, "shaky_breath": {"n": 3, "correct": 3, "accuracy": 1.0}}, "by_domain": {"family": {"n": 10, "correct": 7, "accuracy": 0.7}, "school": {"n": 10, "correct": 9, "accuracy": 0.9}, "work": {"n": 10, "correct": 8, "accuracy": 0.8}}}, "trials": [{"item_id": "sigh_family_001", "vocalization_id": "sigh", "vocalization": "Sigh", "formula": "[sigh]", "domain": "family", "content_type": "fine\u2026, complaint, closure", "audio": "audio_sewn/sigh_family_001.mp3", "turn_1": "Mom says Aunt Denise is coming Sunday, and she wants the attic cleared before then.", "turn_2": "Your old boxes are up there too, and Dad says he cannot manage the stairs by himself.", "options": [{"key": "A", "id": "gold", "text": "Fine, I'll help Dad clear the attic Saturday, but I was really hoping to have the weekend to myself."}, {"key": "B", "id": "alternative", "text": "I'd be happy to help Dad clear the attic Saturday so everything's ready before Aunt Denise gets here."}], "correct_key": "A", "predicted_key": "A", "gold_text": "Fine, I'll help Dad clear the attic Saturday, but I was really hoping to have the weekend to myself.", "alt_text": "I'd be happy to help Dad clear the attic Saturday so everything's ready before Aunt Denise gets here.", "correct": true}, {"item_id": "sigh_school_001", "vocalization_id": "sigh", "vocalization": "Sigh", "formula": "[sigh]", "domain": "school", "content_type": "fine\u2026, complaint, closure", "audio": "audio_sewn/sigh_school_001.mp3", "turn_1": "The history club display has to be finished before tomorrow's open house, and Jordan just texted that he cannot stay after school.", "turn_2": "We could ask Ms. Patel for more time, find another club member, or have you cover Jordan's part.", "options": [{"key": "A", "id": "alternative", "text": "I'd be happy to stay after school and finish the display\u2014we'll have it ready for the open house."}, {"key": "B", "id": "gold", "text": "Fine, I'll stay after school to finish the display, but this is the third time I've had to cover for someone."}], "correct_key": "B", "predicted_key": "B", "gold_text": "Fine, I'll stay after school to finish the display, but this is the third time I've had to cover for someone.", "alt_text": "I'd be happy to stay after school and finish the display\u2014we'll have it ready for the open house.", "correct": true}, {"item_id": "sigh_work_001", "vocalization_id": "sigh", "vocalization": "Sigh", "formula": "[sigh]", "domain": "work", "content_type": "fine\u2026, complaint, closure", "audio": "audio_sewn/sigh_work_001.mp3", "turn_1": "Our manager says the client wants the entire presentation redesigned before Friday's review.", "turn_2": "We could push back, ask for a narrower revision, or divide the slides among the team.", "options": [{"key": "A", "id": "alternative", "text": "Absolutely, I'll take the lead on redesigning the client deck and make it great for Friday."}, {"key": "B", "id": "gold", "text": "Fine, I'll stay late and revise the whole client deck myself."}], "correct_key": "B", "predicted_key": "B", "gold_text": "Fine, I'll stay late and revise the whole client deck myself.", "alt_text": "Absolutely, I'll take the lead on redesigning the client deck and make it great for Friday.", "correct": true}, {"item_id": "groan_family_001", "vocalization_id": "groan", "vocalization": "Groan", "formula": "[groan]", "domain": "family", "content_type": "rejection, protest, not again", "audio": "audio_sewn/groan_family_001.mp3", "turn_1": "Mom said Grandma needs help sorting the boxes in the garage this afternoon.", "turn_2": "Dad volunteered both of us, and he wants us out there as soon as we change clothes.", "options": [{"key": "A", "id": "gold", "text": "Not again\u2014we already gave up last Saturday to help Uncle Ray move."}, {"key": "B", "id": "alternative", "text": "Great, I\u2019m actually excited to help Grandma sort through those boxes."}], "correct_key": "A", "predicted_key": "A", "gold_text": "Not again\u2014we already gave up last Saturday to help Uncle Ray move.", "alt_text": "Great, I\u2019m actually excited to help Grandma sort through those boxes.", "correct": true}, {"item_id": "groan_school_001", "vocalization_id": "groan", "vocalization": "Groan", "formula": "[groan]", "domain": "school", "content_type": "rejection, protest, not again", "audio": "audio_sewn/groan_school_001.mp3", "turn_1": "The principal moved tomorrow's science fair check-in to 7:15, and our robotics club still has to set up the display.", "turn_2": "We could meet in the library before first period, or ask Mr. Patel whether he can give us more time.", "options": [{"key": "A", "id": "gold", "text": "Not another before-school meeting; I can't get to campus that early."}, {"key": "B", "id": "alternative", "text": "Absolutely\u2014let's meet in the library before first period and get the display ready."}], "correct_key": "A", "predicted_key": "A", "gold_text": "Not another before-school meeting; I can't get to campus that early.", "alt_text": "Absolutely\u2014let's meet in the library before first period and get the display ready.", "correct": true}, {"item_id": "groan_work_001", "vocalization_id": "groan", "vocalization": "Groan", "formula": "[groan]", "domain": "work", "content_type": "rejection, protest, not again", "audio": "audio_sewn/groan_work_001.mp3", "turn_1": "The launch checklist is nearly done, and I was hoping we could hand it off today.", "turn_2": "Mara says the client added a weekend review meeting and wants our whole team there.", "options": [{"key": "A", "id": "alternative", "text": "Absolutely, I\u2019m happy to be there for the weekend review."}, {"key": "B", "id": "gold", "text": "I can't give up another Saturday for this project."}], "correct_key": "B", "predicted_key": "B", "gold_text": "I can't give up another Saturday for this project.", "alt_text": "Absolutely, I\u2019m happy to be there for the weekend review.", "correct": true}, {"item_id": "laugh_family_001", "vocalization_id": "laugh", "vocalization": "Laugh", "formula": "[laugh]", "domain": "family", "content_type": "joke, playful evaluation", "audio": "audio_sewn/laugh_family_001.mp3", "turn_1": "Dad wants us to decide what to do with the old couch before Uncle Ray comes over to help this afternoon.", "turn_2": "We could put it in the basement, or ask Uncle Ray to help us haul it out to the curb.", "options": [{"key": "A", "id": "gold", "text": "Sure, because the basement has been begging for one more place to lose our board games."}, {"key": "B", "id": "alternative", "text": "I think asking Uncle Ray to help us get it to the curb is the most practical option."}], "correct_key": "A", "predicted_key": "B", "gold_text": "Sure, because the basement has been begging for one more place to lose our board games.", "alt_text": "I think asking Uncle Ray to help us get it to the curb is the most practical option.", "correct": false}, {"item_id": "laugh_school_001", "vocalization_id": "laugh", "vocalization": "Laugh", "formula": "[laugh]", "domain": "school", "content_type": "joke, playful evaluation", "audio": "audio_sewn/laugh_school_001.mp3", "turn_1": "Our chemistry teacher wants our lab group to make a study guide for Friday's quiz, and Leo said he would finish the last section during lunch.", "turn_2": "He just sent his draft\u2014it's three bullet points and a doodle of a beaker.", "options": [{"key": "A", "id": "gold", "text": "If that study guide gets any shorter, it will qualify as a sticky note."}, {"key": "B", "id": "alternative", "text": "I'm worried this isn't enough to help us study for Friday's quiz."}], "correct_key": "A", "predicted_key": "A", "gold_text": "If that study guide gets any shorter, it will qualify as a sticky note.", "alt_text": "I'm worried this isn't enough to help us study for Friday's quiz.", "correct": true}, {"item_id": "laugh_work_001", "vocalization_id": "laugh", "vocalization": "Laugh", "formula": "[laugh]", "domain": "work", "content_type": "joke, playful evaluation", "audio": "audio_sewn/laugh_work_001.mp3", "turn_1": "The client asked whether we can make the dashboard look more premium before tomorrow's demo.", "turn_2": "Our manager gave us one afternoon to do it and said there is no budget for new design work.", "options": [{"key": "A", "id": "gold", "text": "Perfect\u2014nothing says premium like adding a gold gradient five minutes before the meeting."}, {"key": "B", "id": "alternative", "text": "This is a real concern\u2014we should focus on the few changes that will improve clarity before tomorrow."}], "correct_key": "A", "predicted_key": "A", "gold_text": "Perfect\u2014nothing says premium like adding a gold gradient five minutes before the meeting.", "alt_text": "This is a real concern\u2014we should focus on the few changes that will improve clarity before tomorrow.", "correct": true}, {"item_id": "hmm_family_001", "vocalization_id": "hmm", "vocalization": "Hmm", "formula": "Hmm...", "domain": "family", "content_type": "tentative proposal, evaluation", "audio": "audio_sewn/hmm_family_001.mp3", "turn_1": "Dad says the storm could knock out the power tonight, and Maya is nervous about sleeping upstairs by herself.", "turn_2": "We could move some mattresses downstairs, have her sleep in our room, or see whether Grandma wants her over.", "options": [{"key": "A", "id": "alternative", "text": "Maya is sleeping in our room tonight."}, {"key": "B", "id": "gold", "text": "Maybe having Maya sleep in our room would be the least scary option for her tonight."}], "correct_key": "B", "predicted_key": "B", "gold_text": "Maybe having Maya sleep in our room would be the least scary option for her tonight.", "alt_text": "Maya is sleeping in our room tonight.", "correct": true}, {"item_id": "hmm_school_001", "vocalization_id": "hmm", "vocalization": "Hmm", "formula": "Hmm...", "domain": "school", "content_type": "tentative proposal, evaluation", "audio": "audio_sewn/hmm_school_001.mp3", "turn_1": "The debate club can practice either in the library conference room or in the auditorium before Friday's tournament.", "turn_2": "The librarian needs our choice before the final bell, but most of the team has not said which room they prefer.", "options": [{"key": "A", "id": "alternative", "text": "Reserve the auditorium; practicing on the actual stage will sharpen our timing before Friday."}, {"key": "B", "id": "gold", "text": "Maybe we should reserve the auditorium, since rehearsing on the actual stage could help us judge our timing."}], "correct_key": "B", "predicted_key": "B", "gold_text": "Maybe we should reserve the auditorium, since rehearsing on the actual stage could help us judge our timing.", "alt_text": "Reserve the auditorium; practicing on the actual stage will sharpen our timing before Friday.", "correct": true}, {"item_id": "hmm_work_001", "vocalization_id": "hmm", "vocalization": "Hmm", "formula": "Hmm...", "domain": "work", "content_type": "tentative proposal, evaluation", "audio": "audio_sewn/hmm_work_001.mp3", "turn_1": "The client liked the prototype, but asked whether the onboarding screens can be ready for Monday's review.", "turn_2": "Design can revise several screens today, though engineering says the new flow may need more testing.", "options": [{"key": "A", "id": "alternative", "text": "We'll have the revised onboarding screens ready for Monday and present the new flow in the review."}, {"key": "B", "id": "gold", "text": "We could keep the current flow for Monday and present the revised screens as a follow-up, if that seems safer."}], "correct_key": "B", "predicted_key": "B", "gold_text": "We could keep the current flow for Monday and present the revised screens as a follow-up, if that seems safer.", "alt_text": "We'll have the revised onboarding screens ready for Monday and present the new flow in the review.", "correct": true}, {"item_id": "mmhm_family_001", "vocalization_id": "mmhm", "vocalization": "Mm-hm", "formula": "Mm-hm...", "domain": "family", "content_type": "continuation, agreement", "audio": "audio_sewn/mmhm_family_001.mp3", "turn_1": "My brother told me he finally asked Dad if he could borrow the car this weekend, and Dad sounded surprised when he called me afterward.", "turn_2": "Did Dad say why he was surprised?", "options": [{"key": "A", "id": "gold", "text": "Then what did he say when Dad asked where he wanted to go?"}, {"key": "B", "id": "alternative", "text": "I don't really want to keep talking about this."}], "correct_key": "A", "predicted_key": "A", "gold_text": "Then what did he say when Dad asked where he wanted to go?", "alt_text": "I don't really want to keep talking about this.", "correct": true}, {"item_id": "mmhm_school_001", "vocalization_id": "mmhm", "vocalization": "Mm-hm", "formula": "Mm-hm...", "domain": "school", "content_type": "continuation, agreement", "audio": "audio_sewn/mmhm_school_001.mp3", "turn_1": "At lunch, our drama club had to clear the auditorium early because the choir scheduled an extra rehearsal.", "turn_2": "Did the librarian let you store the costume rack in the library after all?", "options": [{"key": "A", "id": "alternative", "text": "Let's drop it; I don't want to talk about the costume rack anymore."}, {"key": "B", "id": "gold", "text": "She did, so we rolled it over before sixth period started."}], "correct_key": "B", "predicted_key": "B", "gold_text": "She did, so we rolled it over before sixth period started.", "alt_text": "Let's drop it; I don't want to talk about the costume rack anymore.", "correct": true}, {"item_id": "mmhm_work_001", "vocalization_id": "mmhm", "vocalization": "Mm-hm", "formula": "Mm-hm...", "domain": "work", "content_type": "continuation, agreement", "audio": "audio_sewn/mmhm_work_001.mp3", "turn_1": "During the budget meeting, Priya said the client raised a new concern after seeing our staffing plan.", "turn_2": "Did she explain whether it was about the timeline or the cost estimate?", "options": [{"key": "A", "id": "alternative", "text": "I don't want to keep dissecting it right now."}, {"key": "B", "id": "gold", "text": "Exactly\u2014the timeline came up first, and then they asked whether we could add another analyst."}], "correct_key": "B", "predicted_key": "B", "gold_text": "Exactly\u2014the timeline came up first, and then they asked whether we could add another analyst.", "alt_text": "I don't want to keep dissecting it right now.", "correct": true}, {"item_id": "scoff_family_001", "vocalization_id": "scoff", "vocalization": "Scoff", "formula": "[scoff]", "domain": "family", "content_type": "disagreement, criticism", "audio": "audio_sewn/scoff_family_001.mp3", "turn_1": "Mom found the cracked vase in the hallway and wants to know what happened before Aunt Elena arrives for dinner.", "turn_2": "Evan says we should turn the broken side toward the wall and act as if nothing happened.", "options": [{"key": "A", "id": "alternative", "text": "Evan's idea is perfect; if we turn the broken side toward the wall, Mom may never notice before dinner."}, {"key": "B", "id": "gold", "text": "That is a terrible plan; Mom will notice the missing pieces the moment she walks in."}], "correct_key": "B", "predicted_key": "B", "gold_text": "That is a terrible plan; Mom will notice the missing pieces the moment she walks in.", "alt_text": "Evan's idea is perfect; if we turn the broken side toward the wall, Mom may never notice before dinner.", "correct": true}, {"item_id": "scoff_school_001", "vocalization_id": "scoff", "vocalization": "Scoff", "formula": "[scoff]", "domain": "school", "content_type": "disagreement, criticism", "audio": "audio_sewn/scoff_school_001.mp3", "turn_1": "Our history group still has to decide how to present the civil rights project on Friday.", "turn_2": "Evan wants to put every paragraph on one poster and have us read it aloud to the class.", "options": [{"key": "A", "id": "alternative", "text": "That sounds like a great way to present our project."}, {"key": "B", "id": "gold", "text": "That is a terrible way to present a history project."}], "correct_key": "B", "predicted_key": "B", "gold_text": "That is a terrible way to present a history project.", "alt_text": "That sounds like a great way to present our project.", "correct": true}, {"item_id": "scoff_work_001", "vocalization_id": "scoff", "vocalization": "Scoff", "formula": "[scoff]", "domain": "work", "content_type": "disagreement, criticism", "audio": "audio_sewn/scoff_work_001.mp3", "turn_1": "The manager wants an answer before the client call, but we still have time to revise the rollout plan.", "turn_2": "What if we tell the client the reporting delay is their fault and promise not to change our timeline?", "options": [{"key": "A", "id": "gold", "text": "That's an awful way to handle a client problem."}, {"key": "B", "id": "alternative", "text": "I love that approach\u2014it keeps us on schedule and puts the responsibility where it belongs."}], "correct_key": "A", "predicted_key": "A", "gold_text": "That's an awful way to handle a client problem.", "alt_text": "I love that approach\u2014it keeps us on schedule and puts the responsibility where it belongs.", "correct": true}, {"item_id": "throat_clear_family_001", "vocalization_id": "throat_clear", "vocalization": "Throat clear", "formula": "[clears throat]", "domain": "family", "content_type": "correction, disagreement, sensitive topic", "audio": "audio_sewn/throat_clear_family_001.mp3", "turn_1": "Mom says we need to decide the sleeping arrangements before Aunt Rosa, Uncle Vince, and the cousins arrive this weekend.", "turn_2": "I can take the air mattress in the den so the cousins can use my room.", "options": [{"key": "A", "id": "alternative", "text": "That works for me\u2014the cousins can have your room, and the rest should be easy to arrange."}, {"key": "B", "id": "gold", "text": "Before we decide rooms, I need to say that I am not comfortable having Uncle Vince stay here after what happened last Christmas."}], "correct_key": "B", "predicted_key": "A", "gold_text": "Before we decide rooms, I need to say that I am not comfortable having Uncle Vince stay here after what happened last Christmas.", "alt_text": "That works for me\u2014the cousins can have your room, and the rest should be easy to arrange.", "correct": false}, {"item_id": "throat_clear_school_001", "vocalization_id": "throat_clear", "vocalization": "Throat clear", "formula": "[clears throat]", "domain": "school", "content_type": "correction, disagreement, sensitive topic", "audio": "audio_sewn/throat_clear_school_001.mp3", "turn_1": "The student council adviser posted a draft list of officers for next semester and asked us to review it before today's meeting.", "turn_2": "Are you going to bring up anything when she asks for feedback?", "options": [{"key": "A", "id": "gold", "text": "I need to correct the roster: Jordan told me privately that she never agreed to be listed as treasurer."}, {"key": "B", "id": "alternative", "text": "It looks good to me\u2014I don't have anything to add."}], "correct_key": "A", "predicted_key": "A", "gold_text": "I need to correct the roster: Jordan told me privately that she never agreed to be listed as treasurer.", "alt_text": "It looks good to me\u2014I don't have anything to add.", "correct": true}, {"item_id": "throat_clear_work_001", "vocalization_id": "throat_clear", "vocalization": "Throat clear", "formula": "[clears throat]", "domain": "work", "content_type": "correction, disagreement, sensitive topic", "audio": "audio_sewn/throat_clear_work_001.mp3", "turn_1": "Before I send the project meeting notes, did you see that Martin listed me as the lead for the client presentation?", "turn_2": "I did. He said we should confirm the roles this afternoon so the client gets one clear point of contact.", "options": [{"key": "A", "id": "alternative", "text": "That works for me\u2014I\u2019m happy to lead the presentation as planned."}, {"key": "B", "id": "gold", "text": "I need to correct that assignment: I can't lead the presentation because I'm already responsible for the compliance review."}], "correct_key": "B", "predicted_key": "A", "gold_text": "I need to correct that assignment: I can't lead the presentation because I'm already responsible for the compliance review.", "alt_text": "That works for me\u2014I\u2019m happy to lead the presentation as planned.", "correct": false}, {"item_id": "exhale_family_001", "vocalization_id": "exhale", "vocalization": "Exhale", "formula": "[exhale]", "domain": "family", "content_type": "closure, positive resolution", "audio": "audio_sewn/exhale_family_001.mp3", "turn_1": "The plumber just called back about the leak under the kitchen sink.", "turn_2": "What did he say? Mom is worried we'll have to move Grandma's birthday dinner somewhere else.", "options": [{"key": "A", "id": "alternative", "text": "He can't come until tomorrow, so we still don't know where we'll have dinner."}, {"key": "B", "id": "gold", "text": "He can come this afternoon, so we can still have dinner here."}], "correct_key": "B", "predicted_key": "A", "gold_text": "He can come this afternoon, so we can still have dinner here.", "alt_text": "He can't come until tomorrow, so we still don't know where we'll have dinner.", "correct": false}, {"item_id": "exhale_school_001", "vocalization_id": "exhale", "vocalization": "Exhale", "formula": "[exhale]", "domain": "school", "content_type": "closure, positive resolution", "audio": "audio_sewn/exhale_school_001.mp3", "turn_1": "I thought our robotics club had missed the deadline for the campus innovation grant.", "turn_2": "Ms. Ortiz checked the submission time and said we made it, so the grant money is approved for this semester.", "options": [{"key": "A", "id": "alternative", "text": "I still won't feel settled until the grant money is actually in our club account."}, {"key": "B", "id": "gold", "text": "At least our robotics club has the funding secured for this semester."}], "correct_key": "B", "predicted_key": "A", "gold_text": "At least our robotics club has the funding secured for this semester.", "alt_text": "I still won't feel settled until the grant money is actually in our club account.", "correct": false}, {"item_id": "exhale_work_001", "vocalization_id": "exhale", "vocalization": "Exhale", "formula": "[exhale]", "domain": "work", "content_type": "closure, positive resolution", "audio": "audio_sewn/exhale_work_001.mp3", "turn_1": "Could you check whether the client finally responded about the contract? The launch date is waiting on their legal review.", "turn_2": "Their account manager just wrote that the legal review is complete and they have an answer for us.", "options": [{"key": "A", "id": "gold", "text": "Great, they approved the contract, and we can lock the launch date."}, {"key": "B", "id": "alternative", "text": "That doesn't mean we're cleared\u2014the launch is still on hold until we know their answer."}], "correct_key": "A", "predicted_key": "B", "gold_text": "Great, they approved the contract, and we can lock the launch date.", "alt_text": "That doesn't mean we're cleared\u2014the launch is still on hold until we know their answer.", "correct": false}, {"item_id": "yawn_family_001", "vocalization_id": "yawn", "vocalization": "Yawn", "formula": "[yawn]", "domain": "family", "content_type": "ending interaction, postponement", "audio": "audio_sewn/yawn_family_001.mp3", "turn_1": "Mom asked us to sort the old family photos before Grandma visits, but we have already been at this for hours.", "turn_2": "There are still two boxes left. Do you want to keep going or decide what to do with them?", "options": [{"key": "A", "id": "gold", "text": "Could we put the last two boxes away and finish sorting them tomorrow?"}, {"key": "B", "id": "alternative", "text": "Let\u2019s keep going now and get through these last two boxes."}], "correct_key": "A", "predicted_key": "A", "gold_text": "Could we put the last two boxes away and finish sorting them tomorrow?", "alt_text": "Let\u2019s keep going now and get through these last two boxes.", "correct": true}, {"item_id": "yawn_school_001", "vocalization_id": "yawn", "vocalization": "Yawn", "formula": "[yawn]", "domain": "school", "content_type": "ending interaction, postponement", "audio": "audio_sewn/yawn_school_001.mp3", "turn_1": "I have been trying to finish the chemistry homework since practice ended, but I keep rereading the same questions.", "turn_2": "We still need to complete the last page before Ms. Ortega checks it tomorrow; do you want to keep working here or decide what to do?", "options": [{"key": "A", "id": "alternative", "text": "I'm still focused\u2014let's finish the last page here now."}, {"key": "B", "id": "gold", "text": "Let's call it a night and finish the last page before class tomorrow."}], "correct_key": "B", "predicted_key": "B", "gold_text": "Let's call it a night and finish the last page before class tomorrow.", "alt_text": "I'm still focused\u2014let's finish the last page here now.", "correct": true}, {"item_id": "yawn_work_001", "vocalization_id": "yawn", "vocalization": "Yawn", "formula": "[yawn]", "domain": "work", "content_type": "ending interaction, postponement", "audio": "audio_sewn/yawn_work_001.mp3", "turn_1": "I've been updating the client onboarding deck since this morning, and I still need to reconcile the manager's comments.", "turn_2": "The client review is tomorrow afternoon, so we could keep working now, ask for help, or decide what to cut.", "options": [{"key": "A", "id": "gold", "text": "Can we stop here and pick up the remaining edits first thing tomorrow?"}, {"key": "B", "id": "alternative", "text": "Let's keep working now and get the key edits ready for tomorrow."}], "correct_key": "A", "predicted_key": "A", "gold_text": "Can we stop here and pick up the remaining edits first thing tomorrow?", "alt_text": "Let's keep working now and get the key edits ready for tomorrow.", "correct": true}, {"item_id": "shaky_breath_family_001", "vocalization_id": "shaky_breath", "vocalization": "Shaky breath", "formula": "[shaky breath]", "domain": "family", "content_type": "disclosure, request for reassurance", "audio": "audio_sewn/shaky_breath_family_001.mp3", "turn_1": "Dad, Grandma's doctor called while you were outside, and they asked for you to call back as soon as possible.", "turn_2": "I can call now. Did they tell you anything about why it is urgent?", "options": [{"key": "A", "id": "alternative", "text": "They said her tests showed something serious, but I've got this\u2014I\u2019ll help Grandma through whatever comes next."}, {"key": "B", "id": "gold", "text": "They said her tests showed something serious, and I'm scared\u2014can you tell me we're going to get through this together?"}], "correct_key": "B", "predicted_key": "B", "gold_text": "They said her tests showed something serious, and I'm scared\u2014can you tell me we're going to get through this together?", "alt_text": "They said her tests showed something serious, but I've got this\u2014I\u2019ll help Grandma through whatever comes next.", "correct": true}, {"item_id": "shaky_breath_school_001", "vocalization_id": "shaky_breath", "vocalization": "Shaky breath", "formula": "[shaky breath]", "domain": "school", "content_type": "disclosure, request for reassurance", "audio": "audio_sewn/shaky_breath_school_001.mp3", "turn_1": "Ms. Patel moved debate club tryouts to tomorrow, and everyone has to give a short speech in front of the class.", "turn_2": "You have your outline, and we can practice during lunch or ask whether pairs can go first.", "options": [{"key": "A", "id": "gold", "text": "I know, but my hands will not stop shaking. Do you think I am going to embarrass myself?"}, {"key": "B", "id": "alternative", "text": "I've got my outline and a plan for lunch\u2014I can handle tomorrow."}], "correct_key": "A", "predicted_key": "A", "gold_text": "I know, but my hands will not stop shaking. Do you think I am going to embarrass myself?", "alt_text": "I've got my outline and a plan for lunch\u2014I can handle tomorrow.", "correct": true}, {"item_id": "shaky_breath_work_001", "vocalization_id": "shaky_breath", "vocalization": "Shaky breath", "formula": "[shaky breath]", "domain": "work", "content_type": "disclosure, request for reassurance", "audio": "audio_sewn/shaky_breath_work_001.mp3", "turn_1": "The client moved today's budget review up to three o'clock, and the manager just asked me to lead it.", "turn_2": "You know the figures better than anyone, but I can join the call if you want.", "options": [{"key": "A", "id": "gold", "text": "Can you stay on the call with me? I'm worried I'll freeze when they start asking questions."}, {"key": "B", "id": "alternative", "text": "I've got this\u2014I know the figures and can handle their questions."}], "correct_key": "A", "predicted_key": "A", "gold_text": "Can you stay on the call with me? I'm worried I'll freeze when they start asking questions.", "alt_text": "I've got this\u2014I know the figures and can handle their questions.", "correct": true}]}</script>
+  <script>
+    const DATA = JSON.parse(document.getElementById("payload").textContent);
+    const $ = (id) => document.getElementById(id);
+    const state = { voc: "all", domain: "all", outcome: "all", q: "" };
+
+    function pct(block) {
+      if (!block || block.accuracy == null) return "n/a";
+      return (100 * block.accuracy).toFixed(1) + "%";
+    }
+    function esc(s) {
+      return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[c]));
+    }
+    function barHtml(name, block) {
+      const acc = block.accuracy || 0;
+      const cls = acc < 0.4 ? "fill low" : "fill";
+      return `<div class="bar-row"><span class="label">${esc(name)}</span>
+        <div class="track"><div class="${cls}" style="width:${(100*acc).toFixed(1)}%"></div></div>
+        <span class="count">${block.correct}/${block.n}</span></div>`;
+    }
+
+    function renderHead() {
+      const o = DATA.summary.overall;
+      $("lede").textContent = `${DATA.model} two-choice on 30 sewn clips (Turn 1 + Turn 2 + clipped Turn 3 vocalization). Chance is 50%. Seed ${DATA.seed}.`;
+      $("score-num").textContent = pct(o);
+      $("score-sub").textContent = `${o.correct} / ${o.n} correct`;
+      $("bars-voc").innerHTML = DATA.voc_order.map((id) =>
+        barHtml(DATA.voc_label[id] || id, DATA.summary.by_vocalization[id] || {n:0,correct:0,accuracy:0})
+      ).join("");
+      const domains = ["school", "work", "family"];
+      $("bars-domain").innerHTML = domains.map((d) =>
+        barHtml(d, DATA.summary.by_domain[d] || {n:0,correct:0,accuracy:0})
+      ).join("");
+      $("f-voc").innerHTML = `<option value="all">All vocalizations</option>` +
+        DATA.voc_order.map((id) => `<option value="${id}">${esc(DATA.voc_label[id] || id)}</option>`).join("");
+      $("f-domain").innerHTML = `<option value="all">All domains</option>` +
+        domains.map((d) => `<option value="${d}">${d}</option>`).join("");
+    }
+
+    function optionList(trial) {
+      return `<ul class="opts">` + trial.options.map((opt) => {
+        const gold = opt.key === trial.correct_key;
+        const pred = opt.key === trial.predicted_key;
+        const cls = [gold ? "gold" : "", pred ? "pred" : ""].join(" ").trim();
+        const tag = gold && pred ? "gold · model" : gold ? "gold" : pred ? "model" : "alternative";
+        return `<li class="${cls}"><span>${esc(opt.key)}</span><span>${esc(opt.text)}</span><span class="tag">${tag}</span></li>`;
+      }).join("") + `</ul>`;
+    }
+
+    function visible(trial) {
+      if (state.voc !== "all" && trial.vocalization_id !== state.voc) return false;
+      if (state.domain !== "all" && trial.domain !== state.domain) return false;
+      if (state.outcome === "correct" && !trial.correct) return false;
+      if (state.outcome === "wrong" && trial.correct) return false;
+      if (state.q) {
+        const blob = [trial.item_id, trial.domain, trial.vocalization, trial.turn_1, trial.turn_2, trial.gold_text, trial.alt_text].join(" ").toLowerCase();
+        if (!blob.includes(state.q)) return false;
+      }
+      return true;
+    }
+
+    function renderList() {
+      const trials = DATA.trials.filter(visible);
+      $("clip-meta").textContent = `${trials.length} clip(s)`;
+      if (!trials.length) {
+        $("list").innerHTML = `<p class="empty">No clips match these filters.</p>`;
+        return;
+      }
+      $("list").innerHTML = trials.map((trial) => `<article class="card">
+        <div class="card-head">
+          <h3>${esc(trial.item_id)}</h3>
+          <span class="badge ${trial.correct ? "ok" : "miss"}">${esc(trial.vocalization)} · ${esc(trial.domain)} · ${trial.correct ? "correct" : "incorrect"}</span>
+        </div>
+        <p class="shared"><b>A</b> ${esc(trial.turn_1)}<br /><b>B</b> ${esc(trial.turn_2)}</p>
+        <div class="voc">Turn 3 starts with ${esc(trial.formula)}</div>
+        <audio controls preload="none" src="${esc(trial.audio)}"></audio>
+        ${optionList(trial)}
+      </article>`).join("");
+    }
+
+    $("f-voc").addEventListener("change", (e) => { state.voc = e.target.value; renderList(); });
+    $("f-domain").addEventListener("change", (e) => { state.domain = e.target.value; renderList(); });
+    $("f-outcome").addEventListener("change", (e) => { state.outcome = e.target.value; renderList(); });
+    $("f-search").addEventListener("input", (e) => { state.q = e.target.value.trim().toLowerCase(); renderList(); });
+
+    renderHead();
+    renderList();
+  </script>
+</body>
+</html>
