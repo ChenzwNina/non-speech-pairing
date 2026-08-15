@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Predicting content · gpt-realtime-2.1</title>
+  <title>Task 2 · Hear the vocalization, predict the next line</title>
   <style>
     :root {
       --paper: #f3efe6;
@@ -81,8 +81,8 @@
   <div class="wrap">
     <header class="top">
       <div>
-        <p class="kicker">Predicting content eval</p>
-        <h1>Speaker A’s next line</h1>
+        <p class="kicker">Task 2 · Hear the voc, predict the next line</p>
+        <h1>Which line is Speaker A about to say?</h1>
         <p class="lede" id="lede"></p>
       </div>
       <div class="score serif">
@@ -143,7 +143,7 @@
 
     function renderHead() {
       const o = DATA.summary.overall;
-      $("lede").textContent = `${DATA.model} two-choice on 30 sewn clips (Turn 1 + Turn 2 + clipped Turn 3 vocalization). Chance is 50%. Seed ${DATA.seed}.`;
+      $("lede").textContent = `${DATA.model} two-choice: hear Turn 1 + Turn 2 + the clipped voc only (no gold words). Chance 50%. Seed ${DATA.seed}.`;
       $("score-num").textContent = pct(o);
       $("score-sub").textContent = `${o.correct} / ${o.n} correct`;
       $("bars-voc").innerHTML = DATA.voc_order.map((id) =>

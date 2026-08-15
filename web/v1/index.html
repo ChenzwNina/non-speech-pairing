@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pairing type · gpt-realtime</title>
+  <title>Task 1 · Same words, different vocalization</title>
   <style>
     :root {
       --paper: #f3efe6;
@@ -98,8 +98,8 @@
   <div class="wrap">
     <header class="top">
       <div>
-        <p class="kicker">Pairing type eval</p>
-        <h1>Speaker B status</h1>
+        <p class="kicker">Task 1 · Same words, different vocalization</p>
+        <h1>What attitude is Speaker B expressing?</h1>
         <p class="lede" id="lede"></p>
       </div>
       <div class="score serif">
@@ -170,7 +170,7 @@
 
     function renderHead() {
       const o = DATA.summary.overall;
-      $("lede").textContent = `${DATA.model} forced-choice on 48 sewn clips (Turn 1 + vocalization + Turn 2). Chance is 25%. Seed ${DATA.seed}.`;
+      $("lede").textContent = `${DATA.model} 4-way MCQ: same spoken words, only Speaker B’s vocalization changes. Chance 25%. Seed ${DATA.seed}.`;
       $("score-num").textContent = pct(o);
       $("score-sub").textContent = `${o.correct} / ${o.n} correct`;
       const contrastOrder = ["C1","C2","C3","C4"];
