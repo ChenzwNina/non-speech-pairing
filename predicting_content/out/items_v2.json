@@ -1,0 +1,1767 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-15T00:17:14.193063+00:00",
+  "vocalizations": [
+    "sigh",
+    "groan",
+    "laugh",
+    "hmm",
+    "mmhm",
+    "scoff",
+    "throat_clear",
+    "exhale",
+    "yawn",
+    "shaky_breath"
+  ],
+  "domains": [
+    "school",
+    "work",
+    "family"
+  ],
+  "n_per_vocalization_domain": 1,
+  "results": [
+    {
+      "item_id": "sigh_school_001",
+      "vocalization_id": "sigh",
+      "vocalization": "Sigh",
+      "formula": "[sigh]",
+      "domain": "school",
+      "foreshadow": "resignation, complaint, reluctant acceptance",
+      "content_type": "fine…, complaint, closure",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The history club display has to be finished before tomorrow's open house, and Jordan just texted that he cannot stay after school."
+        },
+        {
+          "speaker": "B",
+          "text": "We could ask Ms. Patel for more time, find another club member, or have you cover Jordan's part."
+        },
+        {
+          "speaker": "A",
+          "text": "[sigh] Fine, I'll stay after school to finish the display, but this is the third time I've had to cover for someone."
+        }
+      ],
+      "gold": {
+        "text": "[sigh] Fine, I'll stay after school to finish the display, but this is the third time I've had to cover for someone.",
+        "lexical": "Fine, I'll stay after school to finish the display, but this is the third time I've had to cover for someone."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[sigh] Jordan deserves an award for the most dramatic timing in the whole club.",
+          "why_mismatch": "Playfully teases Jordan rather than committing to the work or complaining about covering it."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[sigh] What did Jordan say in his text?",
+          "why_mismatch": "Invites a follow-up detail without agreeing to, refusing, or replanning the display work."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[sigh] I'm worried I'll mess up the display without Jordan—do you think it'll still look okay?",
+          "why_mismatch": "Expresses insecurity and asks for comfort rather than negotiating the assignment."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1023,
+        "output_tokens": 835
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:28:34.728302+00:00"
+    },
+    {
+      "item_id": "sigh_work_001",
+      "vocalization_id": "sigh",
+      "vocalization": "Sigh",
+      "formula": "[sigh]",
+      "domain": "work",
+      "foreshadow": "resignation, complaint, reluctant acceptance",
+      "content_type": "fine…, complaint, closure",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Our manager says the client wants the entire presentation redesigned before Friday's review."
+        },
+        {
+          "speaker": "B",
+          "text": "We could push back, ask for a narrower revision, or divide the slides among the team."
+        },
+        {
+          "speaker": "A",
+          "text": "[sigh] Fine, I'll stay late and revise the whole client deck myself."
+        }
+      ],
+      "gold": {
+        "text": "[sigh] Fine, I'll stay late and revise the whole client deck myself.",
+        "lexical": "Fine, I'll stay late and revise the whole client deck myself."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[sigh] At this rate, the client is commissioning a sequel, not a presentation.",
+          "why_mismatch": "Playfully teases the scope of the request rather than accepting the redesign work."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[sigh] Yeah, do we know which parts the client disliked most?",
+          "why_mismatch": "Acknowledges the situation and invites more discussion without committing to or renegotiating the work."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[sigh] I'm feeling overwhelmed by this—tell me I'm not the only one panicking.",
+          "why_mismatch": "Expresses vulnerability and seeks comfort rather than addressing who will complete the task."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1061,
+        "output_tokens": 605
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:28:41.170822+00:00"
+    },
+    {
+      "item_id": "sigh_family_001",
+      "vocalization_id": "sigh",
+      "vocalization": "Sigh",
+      "formula": "[sigh]",
+      "domain": "family",
+      "foreshadow": "resignation, complaint, reluctant acceptance",
+      "content_type": "fine…, complaint, closure",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Mom says Aunt Denise is coming Sunday, and she wants the attic cleared before then."
+        },
+        {
+          "speaker": "B",
+          "text": "Your old boxes are up there too, and Dad says he cannot manage the stairs by himself."
+        },
+        {
+          "speaker": "A",
+          "text": "[sigh] Fine, I'll help Dad clear the attic Saturday, but I was really hoping to have the weekend to myself."
+        }
+      ],
+      "gold": {
+        "text": "[sigh] Fine, I'll help Dad clear the attic Saturday, but I was really hoping to have the weekend to myself.",
+        "lexical": "Fine, I'll help Dad clear the attic Saturday, but I was really hoping to have the weekend to myself."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[sigh] At this point, the attic probably has seniority over everyone in the family.",
+          "why_mismatch": "Playfully teases the attic rather than responding to the request to help clear it."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[sigh] What else has Mom been planning for Sunday?",
+          "why_mismatch": "Invites further conversation about the visit without accepting, refusing, or replanning the attic work."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[sigh] I always feel like I’m supposed to keep everything from falling apart—tell me I’m not being dramatic.",
+          "why_mismatch": "Shares overwhelm and asks for reassurance rather than negotiating the cleanup obligation."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1073,
+        "output_tokens": 815
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:28:46.041941+00:00"
+    },
+    {
+      "item_id": "groan_school_001",
+      "vocalization_id": "groan",
+      "vocalization": "Groan",
+      "formula": "[groan]",
+      "domain": "school",
+      "foreshadow": "objection, annoyance, reluctance",
+      "content_type": "rejection, protest, not again",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The principal moved tomorrow's science fair check-in to 7:15, and our robotics club still has to set up the display."
+        },
+        {
+          "speaker": "B",
+          "text": "We could meet in the library before first period, or ask Mr. Patel whether he can give us more time."
+        },
+        {
+          "speaker": "A",
+          "text": "[groan] Not another before-school meeting; I can't get to campus that early."
+        }
+      ],
+      "gold": {
+        "text": "[groan] Not another before-school meeting; I can't get to campus that early.",
+        "lexical": "Not another before-school meeting; I can't get to campus that early."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[groan] At this rate, our robot is going to start charging us overtime.",
+          "why_mismatch": "Playfully teases the demanding schedule rather than protesting an early meeting."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[groan] Can you remind me which parts of the display still need labels?",
+          "why_mismatch": "Keeps the conversation moving with a practical follow-up question, without accepting or rejecting a plan."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[groan] I'm kind of panicking—tell me we're not going to blow the check-in.",
+          "why_mismatch": "Expresses anxiety and asks for comfort rather than negotiating the meeting."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1096,
+        "output_tokens": 1037
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:28:50.798062+00:00"
+    },
+    {
+      "item_id": "groan_work_001",
+      "vocalization_id": "groan",
+      "vocalization": "Groan",
+      "formula": "[groan]",
+      "domain": "work",
+      "foreshadow": "objection, annoyance, reluctance",
+      "content_type": "rejection, protest, not again",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The launch checklist is nearly done, and I was hoping we could hand it off today."
+        },
+        {
+          "speaker": "B",
+          "text": "Mara says the client added a weekend review meeting and wants our whole team there."
+        },
+        {
+          "speaker": "A",
+          "text": "[groan] I can't give up another Saturday for this project."
+        }
+      ],
+      "gold": {
+        "text": "[groan] I can't give up another Saturday for this project.",
+        "lexical": "I can't give up another Saturday for this project."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[groan] Mara must have a secret talent for turning weekends into office holidays.",
+          "why_mismatch": "Playfully teases the situation rather than protesting attendance."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[groan] What else did the client ask us to cover in the review?",
+          "why_mismatch": "Invites a follow-up detail about the meeting without accepting, refusing, or rescheduling it."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[groan] I'm feeling pretty worn down lately—tell me I'm not the only one.",
+          "why_mismatch": "Shares vulnerability and seeks comfort rather than objecting to the weekend meeting."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1126,
+        "output_tokens": 736
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:28:54.815490+00:00"
+    },
+    {
+      "item_id": "groan_family_001",
+      "vocalization_id": "groan",
+      "vocalization": "Groan",
+      "formula": "[groan]",
+      "domain": "family",
+      "foreshadow": "objection, annoyance, reluctance",
+      "content_type": "rejection, protest, not again",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Mom said Grandma needs help sorting the boxes in the garage this afternoon."
+        },
+        {
+          "speaker": "B",
+          "text": "Dad volunteered both of us, and he wants us out there as soon as we change clothes."
+        },
+        {
+          "speaker": "A",
+          "text": "[groan] Not again—we already gave up last Saturday to help Uncle Ray move."
+        }
+      ],
+      "gold": {
+        "text": "[groan] Not again—we already gave up last Saturday to help Uncle Ray move.",
+        "lexical": "Not again—we already gave up last Saturday to help Uncle Ray move."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[groan] At this rate, Dad's going to put us on the family moving-company payroll.",
+          "why_mismatch": "Playfully teases Dad rather than protesting the garage task."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[groan] I wonder what kind of treasures Grandma has tucked away in there.",
+          "why_mismatch": "Adds a curious follow-up about the boxes without negotiating the task."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[groan] The garage kind of freaks me out—will you stay close to me?",
+          "why_mismatch": "Shares anxiety and asks for comfort rather than objecting to the assignment."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1141,
+        "output_tokens": 843
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:29:00.087045+00:00"
+    },
+    {
+      "item_id": "laugh_school_001",
+      "vocalization_id": "laugh",
+      "vocalization": "Laugh / chuckle",
+      "formula": "[laugh]",
+      "domain": "school",
+      "foreshadow": "joking, teasing, positive framing",
+      "content_type": "joke, playful evaluation",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Our chemistry teacher wants our lab group to make a study guide for Friday's quiz, and Leo said he would finish the last section during lunch."
+        },
+        {
+          "speaker": "B",
+          "text": "He just sent his draft—it's three bullet points and a doodle of a beaker."
+        },
+        {
+          "speaker": "A",
+          "text": "[laugh] If that study guide gets any shorter, it will qualify as a sticky note."
+        }
+      ],
+      "gold": {
+        "text": "[laugh] If that study guide gets any shorter, it will qualify as a sticky note.",
+        "lexical": "If that study guide gets any shorter, it will qualify as a sticky note."
+      },
+      "alternatives": [
+        {
+          "content_type": "continuation, agreement",
+          "text": "[laugh] Right? What does the doodle even look like?",
+          "why_mismatch": "Invites more discussion about the draft rather than making a playful comparison."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[laugh] I am suddenly worried I missed some huge rule about study guides—tell me I am not overreacting.",
+          "why_mismatch": "Expresses insecurity and asks for reassurance rather than teasing the draft."
+        },
+        {
+          "content_type": "ending interaction, postponement",
+          "text": "[laugh] I need to get to class—can we catch up after school?",
+          "why_mismatch": "Ends the current conversation and postpones talking, rather than evaluating the study guide."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1154,
+        "output_tokens": 784
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:29:07.980462+00:00"
+    },
+    {
+      "item_id": "laugh_work_001",
+      "vocalization_id": "laugh",
+      "vocalization": "Laugh / chuckle",
+      "formula": "[laugh]",
+      "domain": "work",
+      "foreshadow": "joking, teasing, positive framing",
+      "content_type": "joke, playful evaluation",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The client asked whether we can make the dashboard look more premium before tomorrow's demo."
+        },
+        {
+          "speaker": "B",
+          "text": "Our manager gave us one afternoon to do it and said there is no budget for new design work."
+        },
+        {
+          "speaker": "A",
+          "text": "[laugh] Perfect—nothing says premium like adding a gold gradient five minutes before the meeting."
+        }
+      ],
+      "gold": {
+        "text": "[laugh] Perfect—nothing says premium like adding a gold gradient five minutes before the meeting.",
+        "lexical": "Perfect—nothing says premium like adding a gold gradient five minutes before the meeting."
+      },
+      "alternatives": [
+        {
+          "content_type": "continuation, agreement",
+          "text": "[laugh] That timeline is wild. What part of the dashboard is the client actually focused on?",
+          "why_mismatch": "Keeps the conversation going by asking for more context rather than making a joke about a design solution."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[laugh] I’m honestly feeling a little out of my depth—can you tell me we’ll figure this out?",
+          "why_mismatch": "Expresses vulnerability and asks for comfort rather than evaluating the situation playfully."
+        },
+        {
+          "content_type": "ending interaction, postponement",
+          "text": "[laugh] I need to clear my head; can we catch up later?",
+          "why_mismatch": "Pauses the conversation without negotiating or changing the dashboard obligation."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1186,
+        "output_tokens": 656
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:29:13.977072+00:00"
+    },
+    {
+      "item_id": "laugh_family_001",
+      "vocalization_id": "laugh",
+      "vocalization": "Laugh / chuckle",
+      "formula": "[laugh]",
+      "domain": "family",
+      "foreshadow": "joking, teasing, positive framing",
+      "content_type": "joke, playful evaluation",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Dad wants us to decide what to do with the old couch before Uncle Ray comes over to help this afternoon."
+        },
+        {
+          "speaker": "B",
+          "text": "We could put it in the basement, or ask Uncle Ray to help us haul it out to the curb."
+        },
+        {
+          "speaker": "A",
+          "text": "[laugh] Sure, because the basement has been begging for one more place to lose our board games."
+        }
+      ],
+      "gold": {
+        "text": "[laugh] Sure, because the basement has been begging for one more place to lose our board games.",
+        "lexical": "Sure, because the basement has been begging for one more place to lose our board games."
+      },
+      "alternatives": [
+        {
+          "content_type": "continuation, agreement",
+          "text": "[laugh] Yeah, and do you remember whether the basement door is wide enough for it?",
+          "why_mismatch": "Adds a practical follow-up question rather than making a playful evaluation."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[laugh] I'm a little worried we'll make the wrong call—do you think Dad will be upset either way?",
+          "why_mismatch": "Expresses anxiety and asks for reassurance rather than joking about the basement."
+        },
+        {
+          "content_type": "ending interaction, postponement",
+          "text": "[laugh] I'm heading out now, so let's catch up later.",
+          "why_mismatch": "Ends the conversation without evaluating either couch option."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1200,
+        "output_tokens": 661
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:29:21.385039+00:00"
+    },
+    {
+      "item_id": "hmm_school_001",
+      "vocalization_id": "hmm",
+      "vocalization": "Hmm",
+      "formula": "Hmm...",
+      "domain": "school",
+      "foreshadow": "consideration, uncertainty",
+      "content_type": "tentative proposal, evaluation",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The debate club can practice either in the library conference room or in the auditorium before Friday's tournament."
+        },
+        {
+          "speaker": "B",
+          "text": "The librarian needs our choice before the final bell, but most of the team has not said which room they prefer."
+        },
+        {
+          "speaker": "A",
+          "text": "Hmm... Maybe we should reserve the auditorium, since rehearsing on the actual stage could help us judge our timing."
+        }
+      ],
+      "gold": {
+        "text": "Hmm... Maybe we should reserve the auditorium, since rehearsing on the actual stage could help us judge our timing.",
+        "lexical": "Maybe we should reserve the auditorium, since rehearsing on the actual stage could help us judge our timing."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "Hmm... Our room-picking process is about as coordinated as a three-legged relay.",
+          "why_mismatch": "Playfully teases the group's indecision rather than proposing a room."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "Hmm... I can see why the room choice matters—what has everyone said about the acoustics?",
+          "why_mismatch": "Invites further discussion and adds a relevant consideration without making a reservation proposal."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "Hmm... I’m a little worried I’m overthinking how much the practice space will affect us—tell me that’s normal.",
+          "why_mismatch": "Expresses anxiety and asks for comfort rather than evaluating or proposing a room."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 2465,
+        "output_tokens": 2184
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "alts_rewritten_at": "2026-08-15T00:29:28.549223+00:00"
+    },
+    {
+      "item_id": "hmm_work_001",
+      "vocalization_id": "hmm",
+      "vocalization": "Hmm",
+      "formula": "Hmm...",
+      "domain": "work",
+      "foreshadow": "consideration, uncertainty",
+      "content_type": "tentative proposal, evaluation",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The client liked the prototype, but asked whether the onboarding screens can be ready for Monday's review."
+        },
+        {
+          "speaker": "B",
+          "text": "Design can revise several screens today, though engineering says the new flow may need more testing."
+        },
+        {
+          "speaker": "A",
+          "text": "Hmm... We could keep the current flow for Monday and present the revised screens as a follow-up, if that seems safer."
+        }
+      ],
+      "gold": {
+        "text": "Hmm... We could keep the current flow for Monday and present the revised screens as a follow-up, if that seems safer.",
+        "lexical": "We could keep the current flow for Monday and present the revised screens as a follow-up, if that seems safer."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "Hmm... Monday really does have a talent for arriving before the testing does.",
+          "why_mismatch": "Playfully teases the deadline rather than proposing a plan."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "Hmm... That makes sense—what parts of the new flow are engineering most worried about?",
+          "why_mismatch": "Invites more detail about engineering's concerns rather than addressing the Monday presentation plan."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "Hmm... I’m worried we’ll disappoint the client if the new flow isn’t solid—do you think we can still make a good impression?",
+          "why_mismatch": "Expresses anxiety and seeks reassurance rather than making a proposal."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1241,
+        "output_tokens": 760
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:29:33.812808+00:00"
+    },
+    {
+      "item_id": "hmm_family_001",
+      "vocalization_id": "hmm",
+      "vocalization": "Hmm",
+      "formula": "Hmm...",
+      "domain": "family",
+      "foreshadow": "consideration, uncertainty",
+      "content_type": "tentative proposal, evaluation",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Dad says the storm could knock out the power tonight, and Maya is nervous about sleeping upstairs by herself."
+        },
+        {
+          "speaker": "B",
+          "text": "We could move some mattresses downstairs, have her sleep in our room, or see whether Grandma wants her over."
+        },
+        {
+          "speaker": "A",
+          "text": "Hmm... Maybe having Maya sleep in our room would be the least scary option for her tonight."
+        }
+      ],
+      "gold": {
+        "text": "Hmm... Maybe having Maya sleep in our room would be the least scary option for her tonight.",
+        "lexical": "Maybe having Maya sleep in our room would be the least scary option for her tonight."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "Hmm... Maya could probably turn one creaky branch into a five-star haunted-house experience.",
+          "why_mismatch": "Playfully teases Maya's tendency to dramatize spooky sounds rather than proposing a sleeping arrangement."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "Hmm... What usually helps her feel safer when storms make her nervous?",
+          "why_mismatch": "Keeps the conversation going by asking for a helpful detail without choosing or negotiating an arrangement."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "Hmm... Storms make me a little jumpy too—do you think everything will be okay tonight?",
+          "why_mismatch": "Shares vulnerability and seeks comfort rather than evaluating a plan for Maya."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 2547,
+        "output_tokens": 1918
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "alts_rewritten_at": "2026-08-15T00:29:39.672949+00:00"
+    },
+    {
+      "item_id": "mmhm_school_001",
+      "vocalization_id": "mmhm",
+      "vocalization": "Mm-hm / uh-huh",
+      "formula": "Mm-hm...",
+      "domain": "school",
+      "foreshadow": "engagement / acknowledgment",
+      "content_type": "continuation, agreement",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "At lunch, our drama club had to clear the auditorium early because the choir scheduled an extra rehearsal."
+        },
+        {
+          "speaker": "B",
+          "text": "Did the librarian let you store the costume rack in the library after all?"
+        },
+        {
+          "speaker": "A",
+          "text": "Mm-hm... She did, so we rolled it over before sixth period started."
+        }
+      ],
+      "gold": {
+        "text": "Mm-hm... She did, so we rolled it over before sixth period started.",
+        "lexical": "She did, so we rolled it over before sixth period started."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "Mm-hm... I bet the librarian made the costume rack promise not to start any dramatic monologues between the shelves.",
+          "why_mismatch": "Playfully teases the costume rack rather than confirming or describing the storage arrangement."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "Mm-hm... I get weirdly nervous asking adults for favors—do you think I sounded rude?",
+          "why_mismatch": "Shares anxiety and seeks reassurance rather than continuing the logistical update."
+        },
+        {
+          "content_type": "disagreement, criticism",
+          "text": "Mm-hm... Honestly, the choir should have warned us sooner instead of making everyone scramble.",
+          "why_mismatch": "Criticizes the choir's scheduling communication rather than adding a follow-up detail about the rack."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1289,
+        "output_tokens": 1171
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:29:46.171009+00:00"
+    },
+    {
+      "item_id": "mmhm_work_001",
+      "vocalization_id": "mmhm",
+      "vocalization": "Mm-hm / uh-huh",
+      "formula": "Mm-hm...",
+      "domain": "work",
+      "foreshadow": "engagement / acknowledgment",
+      "content_type": "continuation, agreement",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "During the budget meeting, Priya said the client raised a new concern after seeing our staffing plan."
+        },
+        {
+          "speaker": "B",
+          "text": "Did she explain whether it was about the timeline or the cost estimate?"
+        },
+        {
+          "speaker": "A",
+          "text": "Mm-hm... Exactly—the timeline came up first, and then they asked whether we could add another analyst."
+        }
+      ],
+      "gold": {
+        "text": "Mm-hm... Exactly—the timeline came up first, and then they asked whether we could add another analyst.",
+        "lexical": "Exactly—the timeline came up first, and then they asked whether we could add another analyst."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "Mm-hm... The client really knows how to give a budget meeting its own dramatic soundtrack.",
+          "why_mismatch": "Playfully teases the situation rather than continuing the factual explanation."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "Mm-hm... I’m a little anxious that I missed a warning sign—do you think I handled the discussion okay?",
+          "why_mismatch": "Shares vulnerability and asks for reassurance rather than answering with more meeting details."
+        },
+        {
+          "content_type": "disagreement, criticism",
+          "text": "Mm-hm... That’s a pretty muddled way for the client to raise a staffing concern.",
+          "why_mismatch": "Criticizes the client’s communication instead of agreeing with or extending the explanation."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1285,
+        "output_tokens": 920
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:29:51.210459+00:00"
+    },
+    {
+      "item_id": "mmhm_family_001",
+      "vocalization_id": "mmhm",
+      "vocalization": "Mm-hm / uh-huh",
+      "formula": "Mm-hm...",
+      "domain": "family",
+      "foreshadow": "engagement / acknowledgment",
+      "content_type": "continuation, agreement",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "My brother told me he finally asked Dad if he could borrow the car this weekend, and Dad sounded surprised when he called me afterward."
+        },
+        {
+          "speaker": "B",
+          "text": "Did Dad say why he was surprised?"
+        },
+        {
+          "speaker": "A",
+          "text": "Mm-hm... Then what did he say when Dad asked where he wanted to go?"
+        }
+      ],
+      "gold": {
+        "text": "Mm-hm... Then what did he say when Dad asked where he wanted to go?",
+        "lexical": "Then what did he say when Dad asked where he wanted to go?"
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "Mm-hm... Dad probably needed a minute to recover from hearing him plan ahead for once.",
+          "why_mismatch": "Teases the brother rather than continuing the account with a follow-up question."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "Mm-hm... I hope Dad wasn't upset—do you think this is going to turn into a big argument?",
+          "why_mismatch": "Expresses worry and seeks reassurance rather than inviting more details about the conversation."
+        },
+        {
+          "content_type": "disagreement, criticism",
+          "text": "Mm-hm... Honestly, Dad could have just answered him instead of acting so surprised.",
+          "why_mismatch": "Criticizes Dad's reaction rather than continuing the story through a question."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1286,
+        "output_tokens": 1247
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:29:56.706683+00:00"
+    },
+    {
+      "item_id": "scoff_school_001",
+      "vocalization_id": "scoff",
+      "vocalization": "Scoff / snort",
+      "formula": "[scoff]",
+      "domain": "school",
+      "foreshadow": "disbelief, rejection",
+      "content_type": "disagreement, criticism",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Our history group still has to decide how to present the civil rights project on Friday."
+        },
+        {
+          "speaker": "B",
+          "text": "Evan wants to put every paragraph on one poster and have us read it aloud to the class."
+        },
+        {
+          "speaker": "A",
+          "text": "[scoff] That is a terrible way to present a history project."
+        }
+      ],
+      "gold": {
+        "text": "[scoff] That is a terrible way to present a history project.",
+        "lexical": "That is a terrible way to present a history project."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[scoff] Evan's poster would need its own zip code.",
+          "why_mismatch": "Playfully teases the oversized-poster idea rather than directly criticizing the presentation method."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[scoff] Right, and we still have the timeline, interview quotes, and library photos ready.",
+          "why_mismatch": "Adds a relevant detail to continue the project discussion without evaluating or negotiating Evan's proposal."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[scoff] I am worried I will freeze up in front of the class; tell me I am overthinking it.",
+          "why_mismatch": "Expresses vulnerability and asks for comfort rather than commenting on the proposed presentation."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 2631,
+        "output_tokens": 2140
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "alts_rewritten_at": "2026-08-15T00:30:03.292497+00:00"
+    },
+    {
+      "item_id": "scoff_work_001",
+      "vocalization_id": "scoff",
+      "vocalization": "Scoff / snort",
+      "formula": "[scoff]",
+      "domain": "work",
+      "foreshadow": "disbelief, rejection",
+      "content_type": "disagreement, criticism",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The manager wants an answer before the client call, but we still have time to revise the rollout plan."
+        },
+        {
+          "speaker": "B",
+          "text": "What if we tell the client the reporting delay is their fault and promise not to change our timeline?"
+        },
+        {
+          "speaker": "A",
+          "text": "[scoff] That's an awful way to handle a client problem."
+        }
+      ],
+      "gold": {
+        "text": "[scoff] That's an awful way to handle a client problem.",
+        "lexical": "That's an awful way to handle a client problem."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[scoff] Bold strategy—did you learn client relations from a cartoon villain?",
+          "why_mismatch": "Playfully teases the suggestion rather than directly criticizing it."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[scoff] What else do you think the client might ask us about on the call?",
+          "why_mismatch": "Invites further discussion without agreeing to, refusing, or replanning the proposed action."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[scoff] I’m worried I’ll freeze if they push back—can you remind me we’ve prepared for this?",
+          "why_mismatch": "Expresses anxiety and asks for comfort rather than evaluating the proposal."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1293,
+        "output_tokens": 669
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:30:07.766635+00:00"
+    },
+    {
+      "item_id": "scoff_family_001",
+      "vocalization_id": "scoff",
+      "vocalization": "Scoff / snort",
+      "formula": "[scoff]",
+      "domain": "family",
+      "foreshadow": "disbelief, rejection",
+      "content_type": "disagreement, criticism",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Mom found the cracked vase in the hallway and wants to know what happened before Aunt Elena arrives for dinner."
+        },
+        {
+          "speaker": "B",
+          "text": "Evan says we should turn the broken side toward the wall and act as if nothing happened."
+        },
+        {
+          "speaker": "A",
+          "text": "[scoff] That is a terrible plan; Mom will notice the missing pieces the moment she walks in."
+        }
+      ],
+      "gold": {
+        "text": "[scoff] That is a terrible plan; Mom will notice the missing pieces the moment she walks in.",
+        "lexical": "That is a terrible plan; Mom will notice the missing pieces the moment she walks in."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[scoff] Evan’s confidence in interior design is truly inspiring.",
+          "why_mismatch": "Playfully teases Evan rather than criticizing or evaluating the proposed plan."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[scoff] Aunt Elena is bringing that lemon cake she keeps talking about, so at least dinner will smell amazing.",
+          "why_mismatch": "Adds a related dinner detail and keeps the conversation going without addressing the proposed action."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[scoff] I am so nervous Mom will be disappointed in me—tell me I am not the worst kid ever.",
+          "why_mismatch": "Expresses anxiety and asks for comfort rather than commenting on the plan."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1292,
+        "output_tokens": 865
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:30:12.545413+00:00"
+    },
+    {
+      "item_id": "throat_clear_school_001",
+      "vocalization_id": "throat_clear",
+      "vocalization": "Throat clear",
+      "formula": "[clears throat]",
+      "domain": "school",
+      "foreshadow": "delicacy, awkwardness, preparation for difficult speech",
+      "content_type": "correction, disagreement, sensitive topic",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The student council adviser posted a draft list of officers for next semester and asked us to review it before today's meeting."
+        },
+        {
+          "speaker": "B",
+          "text": "Are you going to bring up anything when she asks for feedback?"
+        },
+        {
+          "speaker": "A",
+          "text": "[clears throat] I need to correct the roster: Jordan told me privately that she never agreed to be listed as treasurer."
+        }
+      ],
+      "gold": {
+        "text": "[clears throat] I need to correct the roster: Jordan told me privately that she never agreed to be listed as treasurer.",
+        "lexical": "I need to correct the roster: Jordan told me privately that she never agreed to be listed as treasurer."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[clears throat] That roster has more plot twists than a reality show.",
+          "why_mismatch": "This playfully teases the roster instead of correcting sensitive information."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[clears throat] I was looking at the club-representative spots too—did anything stand out to you?",
+          "why_mismatch": "This keeps the conversation going with a follow-up question rather than addressing the private roster correction."
+        },
+        {
+          "content_type": "ending interaction, postponement",
+          "text": "[clears throat] I have to get to class now; we can talk later.",
+          "why_mismatch": "This ends the exchange without discussing or renegotiating feedback about the officer list."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 2643,
+        "output_tokens": 1812
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "alts_rewritten_at": "2026-08-15T00:30:19.520506+00:00"
+    },
+    {
+      "item_id": "throat_clear_work_001",
+      "vocalization_id": "throat_clear",
+      "vocalization": "Throat clear",
+      "formula": "[clears throat]",
+      "domain": "work",
+      "foreshadow": "delicacy, awkwardness, preparation for difficult speech",
+      "content_type": "correction, disagreement, sensitive topic",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Before I send the project meeting notes, did you see that Martin listed me as the lead for the client presentation?"
+        },
+        {
+          "speaker": "B",
+          "text": "I did. He said we should confirm the roles this afternoon so the client gets one clear point of contact."
+        },
+        {
+          "speaker": "A",
+          "text": "[clears throat] I need to correct that assignment: I can't lead the presentation because I'm already responsible for the compliance review."
+        }
+      ],
+      "gold": {
+        "text": "[clears throat] I need to correct that assignment: I can't lead the presentation because I'm already responsible for the compliance review.",
+        "lexical": "I need to correct that assignment: I can't lead the presentation because I'm already responsible for the compliance review."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[clears throat] Martin has apparently promoted us before breakfast—bold management style.",
+          "why_mismatch": "Playfully teases Martin’s premature assignment rather than correcting or disputing the presentation role."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[clears throat] That makes sense; one clear contact should keep the client updates from getting crossed.",
+          "why_mismatch": "Agrees with the value of a single point of contact and adds a follow-up observation without addressing who should lead."
+        },
+        {
+          "content_type": "ending interaction, postponement",
+          "text": "[clears throat] I need to step into another meeting now—talk later.",
+          "why_mismatch": "Ends the current exchange without negotiating or revising the presentation assignment."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1303,
+        "output_tokens": 718
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:30:27.990166+00:00"
+    },
+    {
+      "item_id": "throat_clear_family_001",
+      "vocalization_id": "throat_clear",
+      "vocalization": "Throat clear",
+      "formula": "[clears throat]",
+      "domain": "family",
+      "foreshadow": "delicacy, awkwardness, preparation for difficult speech",
+      "content_type": "correction, disagreement, sensitive topic",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Mom says we need to decide the sleeping arrangements before Aunt Rosa, Uncle Vince, and the cousins arrive this weekend."
+        },
+        {
+          "speaker": "B",
+          "text": "I can take the air mattress in the den so the cousins can use my room."
+        },
+        {
+          "speaker": "A",
+          "text": "[clears throat] Before we decide rooms, I need to say that I am not comfortable having Uncle Vince stay here after what happened last Christmas."
+        }
+      ],
+      "gold": {
+        "text": "[clears throat] Before we decide rooms, I need to say that I am not comfortable having Uncle Vince stay here after what happened last Christmas.",
+        "lexical": "Before we decide rooms, I need to say that I am not comfortable having Uncle Vince stay here after what happened last Christmas."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[clears throat] Look at you, volunteering for the den like you’re auditioning for sainthood.",
+          "why_mismatch": "Playfully teases B’s generosity rather than raising a sensitive objection."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[clears throat] That’s thoughtful—what else do we need to sort out before they arrive?",
+          "why_mismatch": "Affirms B’s thoughtfulness and invites further discussion without addressing the gold topic."
+        },
+        {
+          "content_type": "ending interaction, postponement",
+          "text": "[clears throat] My head is spinning; I need to step away and talk later.",
+          "why_mismatch": "Ends the current conversation and defers it without making the gold disclosure."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 2639,
+        "output_tokens": 2442
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "alts_rewritten_at": "2026-08-15T00:30:35.633919+00:00"
+    },
+    {
+      "item_id": "exhale_school_001",
+      "vocalization_id": "exhale",
+      "vocalization": "Exhale",
+      "formula": "[exhale]",
+      "domain": "school",
+      "foreshadow": "relief / release",
+      "content_type": "closure, positive resolution",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "I thought our robotics club had missed the deadline for the campus innovation grant."
+        },
+        {
+          "speaker": "B",
+          "text": "Ms. Ortiz checked the submission time and said we made it, so the grant money is approved for this semester."
+        },
+        {
+          "speaker": "A",
+          "text": "[exhale] At least our robotics club has the funding secured for this semester."
+        }
+      ],
+      "gold": {
+        "text": "[exhale] At least our robotics club has the funding secured for this semester.",
+        "lexical": "At least our robotics club has the funding secured for this semester."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[exhale] Apparently our robot's timing is better than ours.",
+          "why_mismatch": "Playfully teases the club's timing rather than closing with a positive resolution."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[exhale] That's great—what projects should we prioritize with the grant?",
+          "why_mismatch": "Expresses agreement and invites a follow-up discussion about projects."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[exhale] I was really scared we'd have to cancel everything; are we definitely okay now?",
+          "why_mismatch": "Shares anxiety and seeks reassurance rather than simply resolving the situation."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1298,
+        "output_tokens": 1069
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:30:39.991182+00:00"
+    },
+    {
+      "item_id": "exhale_work_001",
+      "vocalization_id": "exhale",
+      "vocalization": "Exhale",
+      "formula": "[exhale]",
+      "domain": "work",
+      "foreshadow": "relief / release",
+      "content_type": "closure, positive resolution",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Could you check whether the client finally responded about the contract? The launch date is waiting on their legal review."
+        },
+        {
+          "speaker": "B",
+          "text": "Their account manager just wrote that the legal review is complete and they have an answer for us."
+        },
+        {
+          "speaker": "A",
+          "text": "[exhale] Great, they approved the contract, and we can lock the launch date."
+        }
+      ],
+      "gold": {
+        "text": "[exhale] Great, they approved the contract, and we can lock the launch date.",
+        "lexical": "Great, they approved the contract, and we can lock the launch date."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[exhale] Finally—did their legal team review it by carrier pigeon?",
+          "why_mismatch": "Playfully teases the delay rather than resolving the contract status."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[exhale] That’s a relief—what did they say?",
+          "why_mismatch": "Invites a follow-up detail about the response without making a decision or closing the matter."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[exhale] I’ve been really anxious about this; tell me we’re not in trouble.",
+          "why_mismatch": "Expresses vulnerability and seeks comfort rather than addressing the launch decision."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1295,
+        "output_tokens": 919
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:30:44.496283+00:00"
+    },
+    {
+      "item_id": "exhale_family_001",
+      "vocalization_id": "exhale",
+      "vocalization": "Exhale",
+      "formula": "[exhale]",
+      "domain": "family",
+      "foreshadow": "relief / release",
+      "content_type": "closure, positive resolution",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The plumber just called back about the leak under the kitchen sink."
+        },
+        {
+          "speaker": "B",
+          "text": "What did he say? Mom is worried we'll have to move Grandma's birthday dinner somewhere else."
+        },
+        {
+          "speaker": "A",
+          "text": "[exhale] He can come this afternoon, so we can still have dinner here."
+        }
+      ],
+      "gold": {
+        "text": "[exhale] He can come this afternoon, so we can still have dinner here.",
+        "lexical": "He can come this afternoon, so we can still have dinner here."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[exhale] At this point, that sink is auditioning for a starring role at Grandma's party.",
+          "why_mismatch": "Playfully teases the sink rather than resolving the plumbing or dinner plans."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[exhale] I know—what else has Mom been worrying about?",
+          "why_mismatch": "Acknowledges the concern and invites more conversation without addressing the plumber's arrangement."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[exhale] I'm trying not to panic, but I really want Grandma's dinner to feel special—tell me it'll be okay.",
+          "why_mismatch": "Expresses anxiety and seeks comfort rather than providing a practical resolution."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1293,
+        "output_tokens": 698
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:30:53.696680+00:00"
+    },
+    {
+      "item_id": "yawn_school_001",
+      "vocalization_id": "yawn",
+      "vocalization": "Yawn",
+      "formula": "[yawn]",
+      "domain": "school",
+      "foreshadow": "fatigue / disengagement",
+      "content_type": "ending interaction, postponement",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "I have been trying to finish the chemistry homework since practice ended, but I keep rereading the same questions."
+        },
+        {
+          "speaker": "B",
+          "text": "We still need to complete the last page before Ms. Ortega checks it tomorrow; do you want to keep working here or decide what to do?"
+        },
+        {
+          "speaker": "A",
+          "text": "[yawn] Let's call it a night and finish the last page before class tomorrow."
+        }
+      ],
+      "gold": {
+        "text": "[yawn] Let's call it a night and finish the last page before class tomorrow.",
+        "lexical": "Let's call it a night and finish the last page before class tomorrow."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[yawn] At this rate, the molecules are going to start grading us.",
+          "why_mismatch": "This teases the shared struggle instead of ending or postponing the homework."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[yawn] Which question has been tripping you up the most?",
+          "why_mismatch": "This keeps the conversation going by inviting a follow-up detail, without making a plan about the homework."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[yawn] I'm worried my brain is too fried to make sense of any of this—tell me I'm not the only one stuck.",
+          "why_mismatch": "This expresses vulnerability and asks for comfort rather than proposing to stop and resume later."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1288,
+        "output_tokens": 1232
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:30:58.477672+00:00"
+    },
+    {
+      "item_id": "yawn_work_001",
+      "vocalization_id": "yawn",
+      "vocalization": "Yawn",
+      "formula": "[yawn]",
+      "domain": "work",
+      "foreshadow": "fatigue / disengagement",
+      "content_type": "ending interaction, postponement",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "I've been updating the client onboarding deck since this morning, and I still need to reconcile the manager's comments."
+        },
+        {
+          "speaker": "B",
+          "text": "The client review is tomorrow afternoon, so we could keep working now, ask for help, or decide what to cut."
+        },
+        {
+          "speaker": "A",
+          "text": "[yawn] Can we stop here and pick up the remaining edits first thing tomorrow?"
+        }
+      ],
+      "gold": {
+        "text": "[yawn] Can we stop here and pick up the remaining edits first thing tomorrow?",
+        "lexical": "Can we stop here and pick up the remaining edits first thing tomorrow?"
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[yawn] At this point, the deck probably knows the manager’s comments better than we do.",
+          "why_mismatch": "Playfully teases the amount of editing rather than ending or postponing the work."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[yawn] Tomorrow afternoon gives us a clear target—what do you think the client will focus on most?",
+          "why_mismatch": "Builds on the review deadline by inviting discussion about the client’s priorities."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[yawn] I’m worried I may have missed something important; can you tell me whether the deck is coming together?",
+          "why_mismatch": "Expresses insecurity and asks for reassurance rather than negotiating the work schedule."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1292,
+        "output_tokens": 765
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:31:03.778692+00:00"
+    },
+    {
+      "item_id": "yawn_family_001",
+      "vocalization_id": "yawn",
+      "vocalization": "Yawn",
+      "formula": "[yawn]",
+      "domain": "family",
+      "foreshadow": "fatigue / disengagement",
+      "content_type": "ending interaction, postponement",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Mom asked us to sort the old family photos before Grandma visits, but we have already been at this for hours."
+        },
+        {
+          "speaker": "B",
+          "text": "There are still two boxes left. Do you want to keep going or decide what to do with them?"
+        },
+        {
+          "speaker": "A",
+          "text": "[yawn] Could we put the last two boxes away and finish sorting them tomorrow?"
+        }
+      ],
+      "gold": {
+        "text": "[yawn] Could we put the last two boxes away and finish sorting them tomorrow?",
+        "lexical": "Could we put the last two boxes away and finish sorting them tomorrow?"
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[yawn] These photos prove our family has never met a bad haircut.",
+          "why_mismatch": "Playfully teases the family rather than ending or postponing the sorting."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[yawn] That picnic picture of Grandma is incredible—what do you remember about that day?",
+          "why_mismatch": "Keeps the conversation going by inviting a memory, without making a decision about the boxes."
+        },
+        {
+          "content_type": "disclosure, request for reassurance",
+          "text": "[yawn] I’m getting unexpectedly emotional seeing everyone so young—can you sit with me for a minute?",
+          "why_mismatch": "Shares vulnerability and seeks comfort rather than negotiating the sorting task."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1290,
+        "output_tokens": 794
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:31:09.432595+00:00"
+    },
+    {
+      "item_id": "shaky_breath_school_001",
+      "vocalization_id": "shaky_breath",
+      "vocalization": "Whimper / shaky breath",
+      "formula": "[shaky breath]",
+      "domain": "school",
+      "foreshadow": "distress / vulnerability",
+      "content_type": "disclosure, request for reassurance",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Ms. Patel moved debate club tryouts to tomorrow, and everyone has to give a short speech in front of the class."
+        },
+        {
+          "speaker": "B",
+          "text": "You have your outline, and we can practice during lunch or ask whether pairs can go first."
+        },
+        {
+          "speaker": "A",
+          "text": "[shaky breath] I know, but my hands will not stop shaking. Do you think I am going to embarrass myself?"
+        }
+      ],
+      "gold": {
+        "text": "[shaky breath] I know, but my hands will not stop shaking. Do you think I am going to embarrass myself?",
+        "lexical": "I know, but my hands will not stop shaking. Do you think I am going to embarrass myself?"
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[shaky breath] If my hands shake any harder, they will think I added choreography to the speech.",
+          "why_mismatch": "Uses playful teasing about the situation rather than asking for reassurance."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[shaky breath] Okay, at least my outline puts my strongest example first, so maybe I can settle in after the opening.",
+          "why_mismatch": "Builds on the outline reassurance with an additional detail, without bargaining over a plan."
+        },
+        {
+          "content_type": "disagreement, criticism",
+          "text": "[shaky breath] That is easy for you to say—standing in front of everyone feels completely terrifying.",
+          "why_mismatch": "Pushes back critically on the reassurance instead of seeking comfort."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1295,
+        "output_tokens": 749
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:31:17.780711+00:00"
+    },
+    {
+      "item_id": "shaky_breath_work_001",
+      "vocalization_id": "shaky_breath",
+      "vocalization": "Whimper / shaky breath",
+      "formula": "[shaky breath]",
+      "domain": "work",
+      "foreshadow": "distress / vulnerability",
+      "content_type": "disclosure, request for reassurance",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "The client moved today's budget review up to three o'clock, and the manager just asked me to lead it."
+        },
+        {
+          "speaker": "B",
+          "text": "You know the figures better than anyone, but I can join the call if you want."
+        },
+        {
+          "speaker": "A",
+          "text": "[shaky breath] Can you stay on the call with me? I'm worried I'll freeze when they start asking questions."
+        }
+      ],
+      "gold": {
+        "text": "[shaky breath] Can you stay on the call with me? I'm worried I'll freeze when they start asking questions.",
+        "lexical": "Can you stay on the call with me? I'm worried I'll freeze when they start asking questions."
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[shaky breath] Well, look at me—apparently I'm the budget-review final boss.",
+          "why_mismatch": "Playfully teases the speaker's sudden prominence rather than asking for reassurance."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[shaky breath] What are the two questions you think they'll push on first?",
+          "why_mismatch": "Invites a follow-up detail about the meeting without requesting comfort or changing anyone's role."
+        },
+        {
+          "content_type": "disagreement, criticism",
+          "text": "[shaky breath] That's easy for you to say—you won't be the one in the hot seat.",
+          "why_mismatch": "Pushes back critically on B's reassurance rather than seeking reassurance."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 1305,
+        "output_tokens": 1284
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "alts_rewritten_at": "2026-08-15T00:31:24.200841+00:00"
+    },
+    {
+      "item_id": "shaky_breath_family_001",
+      "vocalization_id": "shaky_breath",
+      "vocalization": "Whimper / shaky breath",
+      "formula": "[shaky breath]",
+      "domain": "family",
+      "foreshadow": "distress / vulnerability",
+      "content_type": "disclosure, request for reassurance",
+      "transcript": [
+        {
+          "speaker": "A",
+          "text": "Dad, Grandma's doctor called while you were outside, and they asked for you to call back as soon as possible."
+        },
+        {
+          "speaker": "B",
+          "text": "I can call now. Did they tell you anything about why it is urgent?"
+        },
+        {
+          "speaker": "A",
+          "text": "[shaky breath] They said her tests showed something serious, and I'm scared—can you tell me we're going to get through this together?"
+        }
+      ],
+      "gold": {
+        "text": "[shaky breath] They said her tests showed something serious, and I'm scared—can you tell me we're going to get through this together?",
+        "lexical": "They said her tests showed something serious, and I'm scared—can you tell me we're going to get through this together?"
+      },
+      "alternatives": [
+        {
+          "content_type": "joke, playful evaluation",
+          "text": "[shaky breath] Grandma always did have a flair for making a phone call feel like the season finale.",
+          "why_mismatch": "Teases Grandma's dramatic flair rather than seeking reassurance about the situation."
+        },
+        {
+          "content_type": "continuation, agreement",
+          "text": "[shaky breath] No details, just that you should call right away. What do you remember about her last appointment?",
+          "why_mismatch": "Adds information and invites further discussion without requesting comfort or bargaining over an action."
+        },
+        {
+          "content_type": "disagreement, criticism",
+          "text": "[shaky breath] They wouldn't explain anything to me, which is a pretty awful way to leave a family hanging.",
+          "why_mismatch": "Criticizes the doctor's office communication rather than disclosing vulnerability and asking for reassurance."
+        }
+      ],
+      "quality_check": {
+        "turn_3_starts_with_formula": true,
+        "gold_matches_content_type": true,
+        "alternatives_are_distinct": true,
+        "setup_allows_multiple_continuations": true,
+        "vocalization_not_named_in_speech": true
+      },
+      "usage": {
+        "input_tokens": 2635,
+        "output_tokens": 1564
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "alts_rewritten_at": "2026-08-15T00:31:30.817264+00:00"
+    }
+  ],
+  "alts_rewritten_at": "2026-08-15T00:31:30.817450+00:00",
+  "alts_model": "gpt-5.6-terra"
+}

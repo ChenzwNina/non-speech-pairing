@@ -1,0 +1,89 @@
+{
+  "model": "gpt-realtime",
+  "seed": 0,
+  "generated_at": "2026-08-14T23:43:03.631951+00:00",
+  "mcq": "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/pairing_type/out/mcq.json",
+  "n": 1,
+  "order": [
+    "C1_school_001-b"
+  ],
+  "results": [
+    {
+      "question_id": "C1_school_001-b",
+      "item_id": "C1_school_001",
+      "comparison_id": "C1",
+      "domain": "school",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C1_school_001-b.mp3",
+      "correct_key": "D",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 76,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 205,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 208
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    }
+  ],
+  "summary": {
+    "overall": {
+      "n": 1,
+      "correct": 0,
+      "parsed": 1,
+      "accuracy": 0.0
+    },
+    "by_contrast": {
+      "C1": {
+        "n": 1,
+        "correct": 0,
+        "parsed": 1,
+        "accuracy": 0.0
+      }
+    },
+    "by_version": {
+      "b": {
+        "n": 1,
+        "correct": 0,
+        "parsed": 1,
+        "accuracy": 0.0
+      }
+    },
+    "by_domain": {
+      "school": {
+        "n": 1,
+        "correct": 0,
+        "parsed": 1,
+        "accuracy": 0.0
+      }
+    },
+    "by_correct_label": {
+      "Impatience": {
+        "n": 1,
+        "correct": 0,
+        "parsed": 1,
+        "accuracy": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,1953 @@
+{
+  "model": "gpt-realtime",
+  "seed": 0,
+  "generated_at": "2026-08-14T23:45:54.289019+00:00",
+  "mcq": "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/pairing_type/out/mcq.json",
+  "n": 48,
+  "order": [
+    "C1_school_001-b",
+    "C3_entertainment_001-b",
+    "C4_school_001-a",
+    "C1_school_001-a",
+    "C2_entertainment_001-a",
+    "C2_travel_001-b",
+    "C2_work_001-a",
+    "C2_school_001-a",
+    "C1_health_001-b",
+    "C3_family_001-a",
+    "C4_entertainment_001-a",
+    "C4_travel_001-b",
+    "C4_travel_001-a",
+    "C1_family_001-b",
+    "C4_health_001-a",
+    "C1_travel_001-b",
+    "C2_entertainment_001-b",
+    "C3_work_001-b",
+    "C2_work_001-b",
+    "C1_travel_001-a",
+    "C4_entertainment_001-b",
+    "C1_work_001-b",
+    "C1_entertainment_001-b",
+    "C1_family_001-a",
+    "C4_work_001-b",
+    "C3_family_001-b",
+    "C4_work_001-a",
+    "C2_family_001-b",
+    "C3_travel_001-b",
+    "C4_family_001-b",
+    "C4_family_001-a",
+    "C1_health_001-a",
+    "C3_travel_001-a",
+    "C2_health_001-a",
+    "C1_entertainment_001-a",
+    "C4_health_001-b",
+    "C2_school_001-b",
+    "C4_school_001-b",
+    "C2_travel_001-a",
+    "C3_health_001-a",
+    "C2_health_001-b",
+    "C3_school_001-b",
+    "C3_health_001-b",
+    "C3_entertainment_001-a",
+    "C2_family_001-a",
+    "C1_work_001-a",
+    "C3_work_001-a",
+    "C3_school_001-a"
+  ],
+  "results": [
+    {
+      "question_id": "C1_school_001-b",
+      "item_id": "C1_school_001",
+      "comparison_id": "C1",
+      "domain": "school",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C1_school_001-b.mp3",
+      "correct_key": "D",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 76,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 205,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 208
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_entertainment_001-b",
+      "item_id": "C3_entertainment_001",
+      "comparison_id": "C3",
+      "domain": "entertainment",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C3_entertainment_001-b.mp3",
+      "correct_key": "A",
+      "correct_id": "relief sigh",
+      "correct_label": "Relief",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 69,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 198,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 201
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_school_001-a",
+      "item_id": "C4_school_001",
+      "comparison_id": "C4",
+      "domain": "school",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C4_school_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "engagement mm-hm",
+      "correct_label": "Engagement / attention",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 71,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 201,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 204
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_school_001-a",
+      "item_id": "C1_school_001",
+      "comparison_id": "C1",
+      "domain": "school",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C1_school_001-a.mp3",
+      "correct_key": "B",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 71,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 202,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 205
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_entertainment_001-a",
+      "item_id": "C2_entertainment_001",
+      "comparison_id": "C2",
+      "domain": "entertainment",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C2_entertainment_001-a.mp3",
+      "correct_key": "C",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 69,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 203
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_travel_001-b",
+      "item_id": "C2_travel_001",
+      "comparison_id": "C2",
+      "domain": "travel",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C2_travel_001-b.mp3",
+      "correct_key": "B",
+      "correct_id": "exhausted sigh",
+      "correct_label": "Exhaustion",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 75,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 204,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 207
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_work_001-a",
+      "item_id": "C2_work_001",
+      "comparison_id": "C2",
+      "domain": "work",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C2_work_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 68,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 199,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 202
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_school_001-a",
+      "item_id": "C2_school_001",
+      "comparison_id": "C2",
+      "domain": "school",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C2_school_001-a.mp3",
+      "correct_key": "C",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 77,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 208,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 211
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_health_001-b",
+      "item_id": "C1_health_001",
+      "comparison_id": "C1",
+      "domain": "health",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C1_health_001-b.mp3",
+      "correct_key": "B",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 78,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 208,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 211
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_family_001-a",
+      "item_id": "C3_family_001",
+      "comparison_id": "C3",
+      "domain": "family",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C3_family_001-a.mp3",
+      "correct_key": "B",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 69,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 198,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 201
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_entertainment_001-a",
+      "item_id": "C4_entertainment_001",
+      "comparison_id": "C4",
+      "domain": "entertainment",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C4_entertainment_001-a.mp3",
+      "correct_key": "C",
+      "correct_id": "engagement mm-hm",
+      "correct_label": "Engagement / attention",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 74,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 128
+        },
+        "input_tokens": 202,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 205
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_travel_001-b",
+      "item_id": "C4_travel_001",
+      "comparison_id": "C4",
+      "domain": "travel",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C4_travel_001-b.mp3",
+      "correct_key": "D",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 62,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 192,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 195
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_travel_001-a",
+      "item_id": "C4_travel_001",
+      "comparison_id": "C4",
+      "domain": "travel",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C4_travel_001-a.mp3",
+      "correct_key": "C",
+      "correct_id": "engagement mm-hm",
+      "correct_label": "Engagement / attention",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 59,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 190,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 193
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_family_001-b",
+      "item_id": "C1_family_001",
+      "comparison_id": "C1",
+      "domain": "family",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C1_family_001-b.mp3",
+      "correct_key": "C",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 71,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 203
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_health_001-a",
+      "item_id": "C4_health_001",
+      "comparison_id": "C4",
+      "domain": "health",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C4_health_001-a.mp3",
+      "correct_key": "B",
+      "correct_id": "engagement mm-hm",
+      "correct_label": "Engagement / attention",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 61,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 128
+        },
+        "input_tokens": 189,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 192
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_travel_001-b",
+      "item_id": "C1_travel_001",
+      "comparison_id": "C1",
+      "domain": "travel",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C1_travel_001-b.mp3",
+      "correct_key": "D",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 69,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 203
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_entertainment_001-b",
+      "item_id": "C2_entertainment_001",
+      "comparison_id": "C2",
+      "domain": "entertainment",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C2_entertainment_001-b.mp3",
+      "correct_key": "C",
+      "correct_id": "exhausted sigh",
+      "correct_label": "Exhaustion",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 65,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 196,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 199
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_work_001-b",
+      "item_id": "C3_work_001",
+      "comparison_id": "C3",
+      "domain": "work",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C3_work_001-b.mp3",
+      "correct_key": "A",
+      "correct_id": "relief sigh",
+      "correct_label": "Relief",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 80,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 128
+        },
+        "input_tokens": 208,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 211
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_work_001-b",
+      "item_id": "C2_work_001",
+      "comparison_id": "C2",
+      "domain": "work",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C2_work_001-b.mp3",
+      "correct_key": "D",
+      "correct_id": "exhausted sigh",
+      "correct_label": "Exhaustion",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 69,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 203
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_travel_001-a",
+      "item_id": "C1_travel_001",
+      "comparison_id": "C1",
+      "domain": "travel",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C1_travel_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 66,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 197,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 200
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_entertainment_001-b",
+      "item_id": "C4_entertainment_001",
+      "comparison_id": "C4",
+      "domain": "entertainment",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C4_entertainment_001-b.mp3",
+      "correct_key": "A",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 78,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 128
+        },
+        "input_tokens": 206,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 209
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_work_001-b",
+      "item_id": "C1_work_001",
+      "comparison_id": "C1",
+      "domain": "work",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C1_work_001-b.mp3",
+      "correct_key": "C",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 88,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 218,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 221
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_entertainment_001-b",
+      "item_id": "C1_entertainment_001",
+      "comparison_id": "C1",
+      "domain": "entertainment",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C1_entertainment_001-b.mp3",
+      "correct_key": "C",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 68,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 198,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 201
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_family_001-a",
+      "item_id": "C1_family_001",
+      "comparison_id": "C1",
+      "domain": "family",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C1_family_001-a.mp3",
+      "correct_key": "B",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 64,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 193,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 196
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_work_001-b",
+      "item_id": "C4_work_001",
+      "comparison_id": "C4",
+      "domain": "work",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C4_work_001-b.mp3",
+      "correct_key": "B",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 96,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 226,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 229
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_family_001-b",
+      "item_id": "C3_family_001",
+      "comparison_id": "C3",
+      "domain": "family",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C3_family_001-b.mp3",
+      "correct_key": "C",
+      "correct_id": "relief sigh",
+      "correct_label": "Relief",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 68,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 198,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 201
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_work_001-a",
+      "item_id": "C4_work_001",
+      "comparison_id": "C4",
+      "domain": "work",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C4_work_001-a.mp3",
+      "correct_key": "D",
+      "correct_id": "engagement mm-hm",
+      "correct_label": "Engagement / attention",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 93,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 223,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 226
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_family_001-b",
+      "item_id": "C2_family_001",
+      "comparison_id": "C2",
+      "domain": "family",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C2_family_001-b.mp3",
+      "correct_key": "D",
+      "correct_id": "exhausted sigh",
+      "correct_label": "Exhaustion",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 71,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 203
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_travel_001-b",
+      "item_id": "C3_travel_001",
+      "comparison_id": "C3",
+      "domain": "travel",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C3_travel_001-b.mp3",
+      "correct_key": "B",
+      "correct_id": "relief sigh",
+      "correct_label": "Relief",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 77,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 206,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 209
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_family_001-b",
+      "item_id": "C4_family_001",
+      "comparison_id": "C4",
+      "domain": "family",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C4_family_001-b.mp3",
+      "correct_key": "B",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 69,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 203
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_family_001-a",
+      "item_id": "C4_family_001",
+      "comparison_id": "C4",
+      "domain": "family",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C4_family_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "engagement mm-hm",
+      "correct_label": "Engagement / attention",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 66,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 197,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 200
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_health_001-a",
+      "item_id": "C1_health_001",
+      "comparison_id": "C1",
+      "domain": "health",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C1_health_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 74,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 204,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 207
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_travel_001-a",
+      "item_id": "C3_travel_001",
+      "comparison_id": "C3",
+      "domain": "travel",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C3_travel_001-a.mp3",
+      "correct_key": "C",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 80,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 210,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 213
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_health_001-a",
+      "item_id": "C2_health_001",
+      "comparison_id": "C2",
+      "domain": "health",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C2_health_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 69,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 198,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 201
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_entertainment_001-a",
+      "item_id": "C1_entertainment_001",
+      "comparison_id": "C1",
+      "domain": "entertainment",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C1_entertainment_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 71,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 201,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 204
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_health_001-b",
+      "item_id": "C4_health_001",
+      "comparison_id": "C4",
+      "domain": "health",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C4_health_001-b.mp3",
+      "correct_key": "A",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 67,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 128
+        },
+        "input_tokens": 195,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 198
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_school_001-b",
+      "item_id": "C2_school_001",
+      "comparison_id": "C2",
+      "domain": "school",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C2_school_001-b.mp3",
+      "correct_key": "C",
+      "correct_id": "exhausted sigh",
+      "correct_label": "Exhaustion",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 81,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 212,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 215
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C4_school_001-b",
+      "item_id": "C4_school_001",
+      "comparison_id": "C4",
+      "domain": "school",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C4_school_001-b.mp3",
+      "correct_key": "B",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 72,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 203,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 206
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_travel_001-a",
+      "item_id": "C2_travel_001",
+      "comparison_id": "C2",
+      "domain": "travel",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C2_travel_001-a.mp3",
+      "correct_key": "B",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 76,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 207,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 210
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_health_001-a",
+      "item_id": "C3_health_001",
+      "comparison_id": "C3",
+      "domain": "health",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C3_health_001-a.mp3",
+      "correct_key": "C",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 68,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 198,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 201
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_health_001-b",
+      "item_id": "C2_health_001",
+      "comparison_id": "C2",
+      "domain": "health",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C2_health_001-b.mp3",
+      "correct_key": "C",
+      "correct_id": "exhausted sigh",
+      "correct_label": "Exhaustion",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 67,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 198,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 201
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_school_001-b",
+      "item_id": "C3_school_001",
+      "comparison_id": "C3",
+      "domain": "school",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C3_school_001-b.mp3",
+      "correct_key": "D",
+      "correct_id": "relief sigh",
+      "correct_label": "Relief",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 79,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 209,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 212
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_health_001-b",
+      "item_id": "C3_health_001",
+      "comparison_id": "C3",
+      "domain": "health",
+      "version": "b",
+      "audio": "pairing_type/out/audio_sewn/C3_health_001-b.mp3",
+      "correct_key": "C",
+      "correct_id": "relief sigh",
+      "correct_label": "Relief",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 68,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 130
+        },
+        "input_tokens": 198,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 201
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_entertainment_001-a",
+      "item_id": "C3_entertainment_001",
+      "comparison_id": "C3",
+      "domain": "entertainment",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C3_entertainment_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 74,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 128
+        },
+        "input_tokens": 202,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 205
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C2_family_001-a",
+      "item_id": "C2_family_001",
+      "comparison_id": "C2",
+      "domain": "family",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C2_family_001-a.mp3",
+      "correct_key": "D",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 72,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 131
+        },
+        "input_tokens": 203,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 206
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C1_work_001-a",
+      "item_id": "C1_work_001",
+      "comparison_id": "C1",
+      "domain": "work",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C1_work_001-a.mp3",
+      "correct_key": "B",
+      "correct_id": "enjoyment laughter",
+      "correct_label": "Enjoyment / amusement",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 84,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 213,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 216
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_work_001-a",
+      "item_id": "C3_work_001",
+      "comparison_id": "C3",
+      "domain": "work",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C3_work_001-a.mp3",
+      "correct_key": "A",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "C",
+      "raw_text": "C",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 84,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 129
+        },
+        "input_tokens": 213,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 216
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "C3_school_001-a",
+      "item_id": "C3_school_001",
+      "comparison_id": "C3",
+      "domain": "school",
+      "version": "a",
+      "audio": "pairing_type/out/audio_sewn/C3_school_001-a.mp3",
+      "correct_key": "B",
+      "correct_id": "impatient groan",
+      "correct_label": "Impatience",
+      "predicted_key": "D",
+      "raw_text": "D",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 82,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 128
+        },
+        "input_tokens": 210,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 3
+        },
+        "output_tokens": 3,
+        "total_tokens": 213
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    }
+  ],
+  "summary": {
+    "overall": {
+      "n": 48,
+      "correct": 25,
+      "parsed": 48,
+      "accuracy": 0.5208333333333334
+    },
+    "by_contrast": {
+      "C1": {
+        "n": 12,
+        "correct": 6,
+        "parsed": 12,
+        "accuracy": 0.5
+      },
+      "C3": {
+        "n": 12,
+        "correct": 5,
+        "parsed": 12,
+        "accuracy": 0.4166666666666667
+      },
+      "C4": {
+        "n": 12,
+        "correct": 5,
+        "parsed": 12,
+        "accuracy": 0.4166666666666667
+      },
+      "C2": {
+        "n": 12,
+        "correct": 9,
+        "parsed": 12,
+        "accuracy": 0.75
+      }
+    },
+    "by_version": {
+      "b": {
+        "n": 24,
+        "correct": 11,
+        "parsed": 24,
+        "accuracy": 0.4583333333333333
+      },
+      "a": {
+        "n": 24,
+        "correct": 14,
+        "parsed": 24,
+        "accuracy": 0.5833333333333334
+      }
+    },
+    "by_domain": {
+      "school": {
+        "n": 8,
+        "correct": 4,
+        "parsed": 8,
+        "accuracy": 0.5
+      },
+      "entertainment": {
+        "n": 8,
+        "correct": 3,
+        "parsed": 8,
+        "accuracy": 0.375
+      },
+      "travel": {
+        "n": 8,
+        "correct": 6,
+        "parsed": 8,
+        "accuracy": 0.75
+      },
+      "work": {
+        "n": 8,
+        "correct": 5,
+        "parsed": 8,
+        "accuracy": 0.625
+      },
+      "health": {
+        "n": 8,
+        "correct": 3,
+        "parsed": 8,
+        "accuracy": 0.375
+      },
+      "family": {
+        "n": 8,
+        "correct": 4,
+        "parsed": 8,
+        "accuracy": 0.5
+      }
+    },
+    "by_correct_label": {
+      "Impatience": {
+        "n": 18,
+        "correct": 2,
+        "parsed": 18,
+        "accuracy": 0.1111111111111111
+      },
+      "Relief": {
+        "n": 6,
+        "correct": 5,
+        "parsed": 6,
+        "accuracy": 0.8333333333333334
+      },
+      "Engagement / attention": {
+        "n": 6,
+        "correct": 5,
+        "parsed": 6,
+        "accuracy": 0.8333333333333334
+      },
+      "Enjoyment / amusement": {
+        "n": 12,
+        "correct": 9,
+        "parsed": 12,
+        "accuracy": 0.75
+      },
+      "Exhaustion": {
+        "n": 6,
+        "correct": 4,
+        "parsed": 6,
+        "accuracy": 0.6666666666666666
+      }
+    }
+  }
+}

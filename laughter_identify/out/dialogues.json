@@ -1,0 +1,1077 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-14T18:10:18.335760+00:00",
+  "functions": [
+    "Show enjoyment of incongruity",
+    "Softening / trouble-telling",
+    "Benevolence induction",
+    "Smoothing",
+    "Show sympathy",
+    "Marking irony"
+  ],
+  "themes": [
+    "school",
+    "work",
+    "family",
+    "health"
+  ],
+  "results": [
+    {
+      "id": "001",
+      "theme": "school",
+      "function": "Show enjoyment of incongruity",
+      "laughable_type": "Pleasant incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "either",
+        "event_initiator": "either / shared situation",
+        "event_focus": "A humorous mismatch between an utterance or event and shared background knowledge or expectations.",
+        "trigger_event": "A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.",
+        "laughter_action": "Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.",
+        "lexical_anchor": "Optional: wording or a described event that makes the humorous mismatch recoverable."
+      },
+      "sample": 1,
+      "situation": "Two classmates talk after robotics club about their robot wandering into the principal's office.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "delighted",
+      "laugh_word": "haha",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[excited] At robotics club, our robot rolled into the principal's office during its presentation."
+        },
+        {
+          "speaker": "B",
+          "text": "[delighted] haha, it finally found a real-world internship."
+        },
+        {
+          "speaker": "A",
+          "text": "[relieved] The principal laughed too and asked it to stop emailing him meeting requests."
+        },
+        {
+          "speaker": "B",
+          "text": "[playful] For a first-year student, it is already terrifyingly proactive."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1706,
+        "output_tokens": 417
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "002",
+      "theme": "school",
+      "function": "Softening / trouble-telling",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own socially delicate contribution, such as criticism, dissent, refusal, an inconvenient answer, or painful self-disclosure.",
+        "trigger_event": "The speaker produces an utterance that carries interpersonal or face cost.",
+        "laughter_action": "Reduce the force, seriousness, or intrusiveness of the delicate contribution and help manage the uneasiness around it.",
+        "lexical_anchor": "Action-level: the turn must actually contain the delicate act, such as mild fault-finding, disagreement, refusal, inconvenient information, or trouble-telling."
+      },
+      "sample": 1,
+      "situation": "Two classmates are checking their biology presentation before class.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "apologetic",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[worried] Did you finish the graphs for our biology presentation tomorrow?"
+        },
+        {
+          "speaker": "B",
+          "text": "[confident] Yeah, I added all the data from our lab notebook."
+        },
+        {
+          "speaker": "A",
+          "text": "[apologetic] hehe, the graphs you added still do not have labels, so Mr. Chen might mark us down."
+        },
+        {
+          "speaker": "B",
+          "text": "[surprised] Oh, right, I will label them before first period."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1645,
+        "output_tokens": 394
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "003",
+      "theme": "school",
+      "function": "Benevolence induction",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own request, suggestion, opinion, favor, or other contribution that is exposed to evaluation, disagreement, or refusal.",
+        "trigger_event": "The speaker makes a contribution for which friendly agreement, leniency, or non-harsh evaluation is interactionally relevant.",
+        "laughter_action": "Solicit goodwill, agreement, friendliness, or leniency from the interlocutor and discourage harsh evaluation of the contribution.",
+        "lexical_anchor": "Action-level: a request, suggestion, opinion, favor, admission, or similarly evaluable contribution; no particular word is required."
+      },
+      "sample": 1,
+      "situation": "Two classmates are arranging work for their chemistry class after school.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "sheepish",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[tired] Did Ms. Patel assign the chemistry lab questions while I was at the debate tournament?"
+        },
+        {
+          "speaker": "B",
+          "text": "[helpful] Yeah, they are due tomorrow morning, and the last two are pretty tricky."
+        },
+        {
+          "speaker": "A",
+          "text": "[hopeful] Could you send me photos of your notes tonight, [sheepish] hehe, so I do not walk into lab completely lost?"
+        },
+        {
+          "speaker": "B",
+          "text": "[warmly] Of course, I will send them after I finish dinner."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1712,
+        "output_tokens": 273
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "004",
+      "theme": "school",
+      "function": "Smoothing",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "either",
+        "event_initiator": "either / interaction",
+        "event_focus": "Mild social or conversational awkwardness in the interaction itself.",
+        "trigger_event": "Embarrassment, a socially awkward moment, or an unexpected conversational response creates potential discomfort or disrupts the expected flow.",
+        "laughter_action": "Minimize the awkwardness and help the conversation continue smoothly.",
+        "lexical_anchor": "None required: the relevant cue may come from the interactional situation rather than a particular expression."
+      },
+      "sample": 1,
+      "situation": "Two classmates clear up an awkward misunderstanding about a club meeting after school.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "awkward",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[curious] Are you still coming to debate club after class?"
+        },
+        {
+          "speaker": "B",
+          "text": "[hesitant] I thought you only invited me because nobody else signed up."
+        },
+        {
+          "speaker": "A",
+          "text": "[awkward] hehe, no, I just thought it would be more fun if you came, and it starts at three."
+        },
+        {
+          "speaker": "B",
+          "text": "[relieved] Okay, then I’ll meet you outside the library."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1633,
+        "output_tokens": 338
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "005",
+      "theme": "school",
+      "function": "Show sympathy",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "recipient",
+        "event_initiator": "partner",
+        "event_focus": "The partner's socially uncomfortable, face-sensitive, or vulnerable contribution.",
+        "trigger_event": "The partner displays social discomfort or produces a socially incongruous act, such as softening, benevolence induction, smoothing, or another vulnerable contribution.",
+        "laughter_action": "Show understanding of the partner's discomfort, display closeness, and reassure the partner that they are not being judged harshly.",
+        "lexical_anchor": "None required: the laughter responds to the partner's social display or discomfort."
+      },
+      "sample": 1,
+      "situation": "After English class, A worries that a question to the teacher sounded like a bid for compliments.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "warm",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[hesitant] Could you maybe tell Professor Lin I wasn't fishing for praise when I asked if my essay was okay?"
+        },
+        {
+          "speaker": "B",
+          "text": "[warm] hehe, it sounded like you were genuinely worried about the thesis, not showing off."
+        },
+        {
+          "speaker": "A",
+          "text": "[relieved] Thanks, because everyone went quiet while she read the first paragraph."
+        },
+        {
+          "speaker": "B",
+          "text": "[reassuring] They were probably just waiting to hear what feedback she gave you."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1772,
+        "output_tokens": 369
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "006",
+      "theme": "school",
+      "function": "Marking irony",
+      "laughable_type": "Pragmatic incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.",
+        "trigger_event": "The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.",
+        "laughter_action": "Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.",
+        "lexical_anchor": "Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance."
+      },
+      "sample": 1,
+      "situation": "Classmates waiting through a failed projector rehearsal for a school presentation.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "sarcastic",
+      "laugh_word": "haha",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[worried] The projector froze again right when our history presentation started."
+        },
+        {
+          "speaker": "B",
+          "text": "[tired] Mr. Patel says the replacement cable is somewhere in the media cabinet."
+        },
+        {
+          "speaker": "A",
+          "text": "[sarcastic] haha, this is exactly the flawless rehearsal every student dreams of."
+        },
+        {
+          "speaker": "B",
+          "text": "[resigned] At least we found out before presenting to the whole class tomorrow."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1651,
+        "output_tokens": 241
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "007",
+      "theme": "work",
+      "function": "Show enjoyment of incongruity",
+      "laughable_type": "Pleasant incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "either",
+        "event_initiator": "either / shared situation",
+        "event_focus": "A humorous mismatch between an utterance or event and shared background knowledge or expectations.",
+        "trigger_event": "A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.",
+        "laughter_action": "Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.",
+        "lexical_anchor": "Optional: wording or a described event that makes the humorous mismatch recoverable."
+      },
+      "sample": 1,
+      "situation": "Coworkers joking about an unreliable office copier before a client packet is due.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "amused",
+      "laugh_word": "haha",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[tired] The copier jammed again, so I put a \"do not feed after midnight\" sign on it."
+        },
+        {
+          "speaker": "B",
+          "text": "[amused] haha, that is exactly how it behaves whenever we need client packets."
+        },
+        {
+          "speaker": "A",
+          "text": "[playful] I am hoping the warning scares it into printing the contracts."
+        },
+        {
+          "speaker": "B",
+          "text": "[focused] I will send the files to the backup printer before the meeting starts."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1708,
+        "output_tokens": 314
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "008",
+      "theme": "work",
+      "function": "Softening / trouble-telling",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own socially delicate contribution, such as criticism, dissent, refusal, an inconvenient answer, or painful self-disclosure.",
+        "trigger_event": "The speaker produces an utterance that carries interpersonal or face cost.",
+        "laughter_action": "Reduce the force, seriousness, or intrusiveness of the delicate contribution and help manage the uneasiness around it.",
+        "lexical_anchor": "Action-level: the turn must actually contain the delicate act, such as mild fault-finding, disagreement, refusal, inconvenient information, or trouble-telling."
+      },
+      "sample": 1,
+      "situation": "Two coworkers review a presentation before sending it to a client.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "apologetic",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[focused] Can you give my client presentation one last look before I send it?"
+        },
+        {
+          "speaker": "B",
+          "text": "[apologetic] You’ve still got the client’s name misspelled on the title slide, hehe."
+        },
+        {
+          "speaker": "A",
+          "text": "[embarrassed] Oh no, thank you for catching that before it went out."
+        },
+        {
+          "speaker": "B",
+          "text": "[reassuring] No problem, the rest of the deck looks really solid."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1647,
+        "output_tokens": 360
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "009",
+      "theme": "work",
+      "function": "Benevolence induction",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own request, suggestion, opinion, favor, or other contribution that is exposed to evaluation, disagreement, or refusal.",
+        "trigger_event": "The speaker makes a contribution for which friendly agreement, leniency, or non-harsh evaluation is interactionally relevant.",
+        "laughter_action": "Solicit goodwill, agreement, friendliness, or leniency from the interlocutor and discourage harsh evaluation of the contribution.",
+        "lexical_anchor": "Action-level: a request, suggestion, opinion, favor, admission, or similarly evaluable contribution; no particular word is required."
+      },
+      "sample": 1,
+      "situation": "Two coworkers are preparing slides for a client meeting, and A asks B for a favor.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "sheepish",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[worried] The client moved tomorrow's presentation up to nine."
+        },
+        {
+          "speaker": "B",
+          "text": "[focused] I can finish the pricing slides tonight if you handle the case-study page."
+        },
+        {
+          "speaker": "A",
+          "text": "[sheepish] hehe, could you take the case-study page too, since I promised to cover the early client call?"
+        },
+        {
+          "speaker": "B",
+          "text": "[warmly] Sure, send me your notes after the call and I'll put it together."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1714,
+        "output_tokens": 160
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "010",
+      "theme": "work",
+      "function": "Smoothing",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "either",
+        "event_initiator": "either / interaction",
+        "event_focus": "Mild social or conversational awkwardness in the interaction itself.",
+        "trigger_event": "Embarrassment, a socially awkward moment, or an unexpected conversational response creates potential discomfort or disrupts the expected flow.",
+        "laughter_action": "Minimize the awkwardness and help the conversation continue smoothly.",
+        "lexical_anchor": "None required: the relevant cue may come from the interactional situation rather than a particular expression."
+      },
+      "sample": 1,
+      "situation": "At a work kickoff meeting, an unexpected reaction to introductions creates a small awkward pause.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "awkward",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[organized] Before we begin the project kickoff, let’s do quick introductions around the table."
+        },
+        {
+          "speaker": "B",
+          "text": "[surprised] Oh, we have to say something about ourselves?"
+        },
+        {
+          "speaker": "A",
+          "text": "[awkward] hehe, just your name and role is fine, then we’ll move straight to the agenda."
+        },
+        {
+          "speaker": "B",
+          "text": "[relieved] I’m Priya from finance, and I’m ready for the budget section."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1635,
+        "output_tokens": 360
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "011",
+      "theme": "work",
+      "function": "Show sympathy",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "recipient",
+        "event_initiator": "partner",
+        "event_focus": "The partner's socially uncomfortable, face-sensitive, or vulnerable contribution.",
+        "trigger_event": "The partner displays social discomfort or produces a socially incongruous act, such as softening, benevolence induction, smoothing, or another vulnerable contribution.",
+        "laughter_action": "Show understanding of the partner's discomfort, display closeness, and reassure the partner that they are not being judged harshly.",
+        "lexical_anchor": "None required: the laughter responds to the partner's social display or discomfort."
+      },
+      "sample": 1,
+      "situation": "Two coworkers prepare for a client video call.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "warm",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[hesitant] Could you open the client call for me, because I still freeze when I have to say our agency name out loud?"
+        },
+        {
+          "speaker": "B",
+          "text": "[warm] hehe, of course, I'll introduce us and hand the budget slides to you once everyone is settled."
+        },
+        {
+          "speaker": "A",
+          "text": "[relieved] Thanks, I can explain the numbers fine once the call has actually started."
+        },
+        {
+          "speaker": "B",
+          "text": "[reassuring] Perfect, then we'll make the handoff after the agenda."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1774,
+        "output_tokens": 400
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "012",
+      "theme": "work",
+      "function": "Marking irony",
+      "laughable_type": "Pragmatic incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.",
+        "trigger_event": "The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.",
+        "laughter_action": "Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.",
+        "lexical_anchor": "Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance."
+      },
+      "sample": 1,
+      "situation": "Coworkers discuss a client project after a deadline change.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "dry",
+      "laugh_word": "haha",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[worried] The client moved the launch to Friday but still has not approved the homepage copy."
+        },
+        {
+          "speaker": "B",
+          "text": "[tired] And they just added three new review rounds to the schedule."
+        },
+        {
+          "speaker": "A",
+          "text": "[dry] haha, perfect, we finally have a deadline with absolutely no room to do the work."
+        },
+        {
+          "speaker": "B",
+          "text": "[resigned] I will tell the manager we need the client to choose between Friday and the extra reviews."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1653,
+        "output_tokens": 266
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "013",
+      "theme": "family",
+      "function": "Show enjoyment of incongruity",
+      "laughable_type": "Pleasant incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "either",
+        "event_initiator": "either / shared situation",
+        "event_focus": "A humorous mismatch between an utterance or event and shared background knowledge or expectations.",
+        "trigger_event": "A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.",
+        "laughter_action": "Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.",
+        "lexical_anchor": "Optional: wording or a described event that makes the humorous mismatch recoverable."
+      },
+      "sample": 1,
+      "situation": "At home, two siblings talk about their grandfather's new robot vacuum.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "delighted",
+      "laugh_word": "haha",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[excited] Grandpa named his robot vacuum Crumb Solo because it patrols the kitchen by itself."
+        },
+        {
+          "speaker": "B",
+          "text": "[delighted] haha, Grandpa finally found a roommate who actually does the chores."
+        },
+        {
+          "speaker": "A",
+          "text": "[playful] Mom says she is adding Crumb Solo to our family chore chart."
+        },
+        {
+          "speaker": "B",
+          "text": "[warmly] Then Grandpa can tell everyone his roommate is the most reliable one in the house."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1704,
+        "output_tokens": 372
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "014",
+      "theme": "family",
+      "function": "Softening / trouble-telling",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own socially delicate contribution, such as criticism, dissent, refusal, an inconvenient answer, or painful self-disclosure.",
+        "trigger_event": "The speaker produces an utterance that carries interpersonal or face cost.",
+        "laughter_action": "Reduce the force, seriousness, or intrusiveness of the delicate contribution and help manage the uneasiness around it.",
+        "lexical_anchor": "Action-level: the turn must actually contain the delicate act, such as mild fault-finding, disagreement, refusal, inconvenient information, or trouble-telling."
+      },
+      "sample": 1,
+      "situation": "Two siblings are sorting leftovers after a family dinner at home.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "apologetic",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[tired] Did you put the leftover containers away after Mom's dinner?"
+        },
+        {
+          "speaker": "B",
+          "text": "[casual] Yeah, I squeezed everything into the freezer."
+        },
+        {
+          "speaker": "A",
+          "text": "[apologetic] hehe, you put the lasagna in there without a label, so Mom won't know what it is tomorrow."
+        },
+        {
+          "speaker": "B",
+          "text": "[embarrassed] Oh, you're right, I'll label it before she starts guessing."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1643,
+        "output_tokens": 297
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "015",
+      "theme": "family",
+      "function": "Benevolence induction",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own request, suggestion, opinion, favor, or other contribution that is exposed to evaluation, disagreement, or refusal.",
+        "trigger_event": "The speaker makes a contribution for which friendly agreement, leniency, or non-harsh evaluation is interactionally relevant.",
+        "laughter_action": "Solicit goodwill, agreement, friendliness, or leniency from the interlocutor and discourage harsh evaluation of the contribution.",
+        "lexical_anchor": "Action-level: a request, suggestion, opinion, favor, admission, or similarly evaluable contribution; no particular word is required."
+      },
+      "sample": 1,
+      "situation": "Two siblings are arranging travel to their grandmother's birthday brunch.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "sheepish",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[curious] Are you heading to Aunt Lena's early for Grandma's birthday brunch?"
+        },
+        {
+          "speaker": "B",
+          "text": "[matter-of-fact] Yeah, Mom asked me to bring the old photo albums before everyone arrives."
+        },
+        {
+          "speaker": "A",
+          "text": "[sheepish] hehe, could you swing by and pick me up too, since my bike tire went flat?"
+        },
+        {
+          "speaker": "B",
+          "text": "[warmly] Sure, but be outside when I pull up because Mom hates it when we're late."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1710,
+        "output_tokens": 451
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "016",
+      "theme": "family",
+      "function": "Smoothing",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "either",
+        "event_initiator": "either / interaction",
+        "event_focus": "Mild social or conversational awkwardness in the interaction itself.",
+        "trigger_event": "Embarrassment, a socially awkward moment, or an unexpected conversational response creates potential discomfort or disrupts the expected flow.",
+        "laughter_action": "Minimize the awkwardness and help the conversation continue smoothly.",
+        "lexical_anchor": "None required: the relevant cue may come from the interactional situation rather than a particular expression."
+      },
+      "sample": 1,
+      "situation": "At home, a teenager makes an unexpectedly formal response to a casual family dinner question, and their mother smooths over the sticky pause.",
+      "laughing_turn": 4,
+      "laughing_speaker": "B",
+      "laugh_adjective": "light",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[curious] So, how was your first day back at school?"
+        },
+        {
+          "speaker": "B",
+          "text": "[formal] It was an educational experience, Mother."
+        },
+        {
+          "speaker": "A",
+          "text": "[surprised] Oh, am I \"Mother\" now?"
+        },
+        {
+          "speaker": "B",
+          "text": "[light] hehe, I mean... it was fine, Mom."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1631,
+        "output_tokens": 144
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "017",
+      "theme": "family",
+      "function": "Show sympathy",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "recipient",
+        "event_initiator": "partner",
+        "event_focus": "The partner's socially uncomfortable, face-sensitive, or vulnerable contribution.",
+        "trigger_event": "The partner displays social discomfort or produces a socially incongruous act, such as softening, benevolence induction, smoothing, or another vulnerable contribution.",
+        "laughter_action": "Show understanding of the partner's discomfort, display closeness, and reassure the partner that they are not being judged harshly.",
+        "lexical_anchor": "None required: the laughter responds to the partner's social display or discomfort."
+      },
+      "sample": 1,
+      "situation": "A family dinner where a child feels embarrassed about saying grace.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "kind",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[hesitant] Dad, could you say grace tonight because I still mix up Grandma's name with Aunt Maria's?"
+        },
+        {
+          "speaker": "B",
+          "text": "[kind] hehe, of course, sweetheart, and Grandma will just be glad we're all together."
+        },
+        {
+          "speaker": "A",
+          "text": "[relieved] Thanks, Dad, I'll bring the potatoes to the table while you start."
+        },
+        {
+          "speaker": "B",
+          "text": "[warmly] Perfect, and tell your brother the rolls are getting cold."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1770,
+        "output_tokens": 344
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "018",
+      "theme": "family",
+      "function": "Marking irony",
+      "laughable_type": "Pragmatic incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.",
+        "trigger_event": "The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.",
+        "laughter_action": "Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.",
+        "lexical_anchor": "Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance."
+      },
+      "sample": 1,
+      "situation": "Two siblings talk at home about the chirping smoke alarm before their grandmother visits.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "dry",
+      "laugh_word": "haha",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[tired] Mom says the smoke alarm started chirping again after breakfast."
+        },
+        {
+          "speaker": "B",
+          "text": "[concerned] Dad promised he would replace the battery when he gets home."
+        },
+        {
+          "speaker": "A",
+          "text": "[dry] haha, perfect, because our family dinner absolutely needs a forty-second alarm solo."
+        },
+        {
+          "speaker": "B",
+          "text": "[resigned] I'll remind Dad before Grandma comes over tonight."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1649,
+        "output_tokens": 422
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "019",
+      "theme": "health",
+      "function": "Show enjoyment of incongruity",
+      "laughable_type": "Pleasant incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "either",
+        "event_initiator": "either / shared situation",
+        "event_focus": "A humorous mismatch between an utterance or event and shared background knowledge or expectations.",
+        "trigger_event": "A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.",
+        "laughter_action": "Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.",
+        "lexical_anchor": "Optional: wording or a described event that makes the humorous mismatch recoverable."
+      },
+      "sample": 1,
+      "situation": "Two friends talk after a routine checkup and a bad night of sleep.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "amused",
+      "laugh_word": "haha",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[tired] My sleep app congratulated me for lying still eight hours, even though I was awake worrying about my checkup."
+        },
+        {
+          "speaker": "B",
+          "text": "[amused] haha, apparently your insomnia has mastered the art of bed rest."
+        },
+        {
+          "speaker": "A",
+          "text": "[relieved] At least the nurse said my blood pressure was normal."
+        },
+        {
+          "speaker": "B",
+          "text": "[warmly] Good, maybe tonight your app can celebrate actual sleep."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1719,
+        "output_tokens": 348
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "020",
+      "theme": "health",
+      "function": "Softening / trouble-telling",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own socially delicate contribution, such as criticism, dissent, refusal, an inconvenient answer, or painful self-disclosure.",
+        "trigger_event": "The speaker produces an utterance that carries interpersonal or face cost.",
+        "laughter_action": "Reduce the force, seriousness, or intrusiveness of the delicate contribution and help manage the uneasiness around it.",
+        "lexical_anchor": "Action-level: the turn must actually contain the delicate act, such as mild fault-finding, disagreement, refusal, inconvenient information, or trouble-telling."
+      },
+      "sample": 1,
+      "situation": "A and B are discussing B's advice during A's recovery from a lingering cold.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "uneasy",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[tired] My cough is finally easing, but I still wake up feeling completely drained."
+        },
+        {
+          "speaker": "B",
+          "text": "[concerned] You should probably keep taking that strong nighttime syrup so you can sleep."
+        },
+        {
+          "speaker": "A",
+          "text": "[uneasy] hehe, that syrup leaves me so foggy the next day that I don't think your plan is helping me recover."
+        },
+        {
+          "speaker": "B",
+          "text": "[apologetic] You're right, I was focused on the cough and forgot how wiped out it makes you."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1658,
+        "output_tokens": 169
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "021",
+      "theme": "health",
+      "function": "Benevolence induction",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own request, suggestion, opinion, favor, or other contribution that is exposed to evaluation, disagreement, or refusal.",
+        "trigger_event": "The speaker makes a contribution for which friendly agreement, leniency, or non-harsh evaluation is interactionally relevant.",
+        "laughter_action": "Solicit goodwill, agreement, friendliness, or leniency from the interlocutor and discourage harsh evaluation of the contribution.",
+        "lexical_anchor": "Action-level: a request, suggestion, opinion, favor, admission, or similarly evaluable contribution; no particular word is required."
+      },
+      "sample": 1,
+      "situation": "A is easing back into exercise after physical therapy and asks B for support on a first walk.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "sheepish",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[hopeful] My physical therapist said I can try a short walk this weekend."
+        },
+        {
+          "speaker": "B",
+          "text": "[encouraging] That sounds great, as long as you keep it genuinely short."
+        },
+        {
+          "speaker": "A",
+          "text": "[hesitant] Could you come with me and stop me from turning it into three miles, [sheepish] hehe?"
+        },
+        {
+          "speaker": "B",
+          "text": "[warmly] Absolutely, and I will be very strict about the turnaround point."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1725,
+        "output_tokens": 374
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "022",
+      "theme": "health",
+      "function": "Smoothing",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "either",
+        "event_initiator": "either / interaction",
+        "event_focus": "Mild social or conversational awkwardness in the interaction itself.",
+        "trigger_event": "Embarrassment, a socially awkward moment, or an unexpected conversational response creates potential discomfort or disrupts the expected flow.",
+        "laughter_action": "Minimize the awkwardness and help the conversation continue smoothly.",
+        "lexical_anchor": "None required: the relevant cue may come from the interactional situation rather than a particular expression."
+      },
+      "sample": 1,
+      "situation": "A patient and a clinic receptionist discuss a short delay before a checkup.",
+      "laughing_turn": 2,
+      "laughing_speaker": "B",
+      "laugh_adjective": "light",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[apologetic] The clinician is running about ten minutes late for your checkup."
+        },
+        {
+          "speaker": "B",
+          "text": "[light] hehe, I’m fine waiting, though now I feel like I’m supposed to be annoyed."
+        },
+        {
+          "speaker": "A",
+          "text": "[relieved] You do not have to be, and I’ll let you know as soon as the room is ready."
+        },
+        {
+          "speaker": "B",
+          "text": "[calm] No problem, I have my follow-up questions for the clinician."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1646,
+        "output_tokens": 1701
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "023",
+      "theme": "health",
+      "function": "Show sympathy",
+      "laughable_type": "Social incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "recipient",
+        "event_initiator": "partner",
+        "event_focus": "The partner's socially uncomfortable, face-sensitive, or vulnerable contribution.",
+        "trigger_event": "The partner displays social discomfort or produces a socially incongruous act, such as softening, benevolence induction, smoothing, or another vulnerable contribution.",
+        "laughter_action": "Show understanding of the partner's discomfort, display closeness, and reassure the partner that they are not being judged harshly.",
+        "lexical_anchor": "None required: the laughter responds to the partner's social display or discomfort."
+      },
+      "sample": 1,
+      "situation": "Two friends talk after a routine clinic checkup.",
+      "laughing_turn": 4,
+      "laughing_speaker": "B",
+      "laugh_adjective": "warm",
+      "laugh_word": "hehe",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[curious] Did the nurse say your blood pressure was okay?"
+        },
+        {
+          "speaker": "B",
+          "text": "[relieved] She said it was normal, but I still felt silly sitting there in that paper gown."
+        },
+        {
+          "speaker": "A",
+          "text": "[embarrassed] I asked her to repeat the result because I thought she was judging how breathless I sounded walking in."
+        },
+        {
+          "speaker": "B",
+          "text": "[warm] hehe, [reassuring] she probably hears that worry every day, and your checkup went well."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1785,
+        "output_tokens": 348
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "id": "024",
+      "theme": "health",
+      "function": "Marking irony",
+      "laughable_type": "Pragmatic incongruity (incongruity branch)",
+      "profile": {
+        "laugher_role": "producer",
+        "event_initiator": "self / laugher",
+        "event_focus": "The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.",
+        "trigger_event": "The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.",
+        "laughter_action": "Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.",
+        "lexical_anchor": "Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance."
+      },
+      "sample": 1,
+      "situation": "Two friends compare routine clinic checkups.",
+      "laughing_turn": 3,
+      "laughing_speaker": "A",
+      "laugh_adjective": "dry",
+      "laugh_word": "haha",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "[tired] My annual checkup was scheduled for nine, but the clinic was running late."
+        },
+        {
+          "speaker": "B",
+          "text": "[sympathetic] Did you at least get to see the nurse before lunch?"
+        },
+        {
+          "speaker": "A",
+          "text": "[dry] haha, I just love spending my whole morning in a waiting room for a blood-pressure check."
+        },
+        {
+          "speaker": "B",
+          "text": "[concerned] That sounds frustrating, especially when you had to fast for the appointment."
+        }
+      ],
+      "usage": {
+        "input_tokens": 1664,
+        "output_tokens": 280
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    }
+  ]
+}

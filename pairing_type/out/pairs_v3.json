@@ -1,0 +1,282 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-14T20:55:19.586886+00:00",
+  "contrasts": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "n_per_contrast": 1,
+  "results": [
+    {
+      "item_id": "C1_001",
+      "comparison_id": "C1",
+      "contrast": "enjoyment laughter vs impatient groan",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "We've been debating pizza toppings for ten minutes."
+        },
+        "turn_2_lexical_content": "This is becoming a whole production."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "We've been debating pizza toppings for ten minutes."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha This is becoming a whole production."
+          },
+          {
+            "speaker": "C",
+            "text": "At this rate, we should print menus and take reservations."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "We've been debating pizza toppings for ten minutes."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... This is becoming a whole production."
+          },
+          {
+            "speaker": "C",
+            "text": "I'll order two large pizzas now; vote on toppings later."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C jokes along with B and extends the playful framing.",
+        "realization_b_action": "C ends the delay by proposing an immediate ordering plan.",
+        "why_responses_diverge": "The same words can frame the lengthy discussion as amusing or as something that should be wrapped up."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1791,
+        "output_tokens": 601
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C2_001",
+      "comparison_id": "C2",
+      "contrast": "enjoyment laughter vs exhausted sigh",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The last box is taped, so our donation drive is finally packed."
+        },
+        "turn_2_lexical_content": "We can finally put the tape away."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The last box is taped, so our donation drive is finally packed."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha We can finally put the tape away."
+          },
+          {
+            "speaker": "C",
+            "text": "Then let's take a victory photo before we clean up."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[exhausted sigh]",
+        "intended_meaning": "exhausted sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The last box is taped, so our donation drive is finally packed."
+          },
+          {
+            "speaker": "B",
+            "text": "[exhausted sigh] We can finally put the tape away."
+          },
+          {
+            "speaker": "C",
+            "text": "I'll handle the photo; you can sit down for a minute."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C proposes a celebratory victory photo.",
+        "realization_b_action": "C offers B a chance to rest while taking over the photo.",
+        "why_responses_diverge": "The first vocalization invites celebration, while the second calls for accommodating B's need for a break."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1823,
+        "output_tokens": 573
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C3_001",
+      "comparison_id": "C3",
+      "contrast": "impatient groan vs relief sigh",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The final screw is in, and the bookshelf is standing straight."
+        },
+        "turn_2_lexical_content": "We should be finished with this now."
+      },
+      "realization_a": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The final screw is in, and the bookshelf is standing straight."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... We should be finished with this now."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's do one quick check, then pack up."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[sigh] hoo",
+        "intended_meaning": "relief sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The final screw is in, and the bookshelf is standing straight."
+          },
+          {
+            "speaker": "B",
+            "text": "[sigh] hoo We should be finished with this now."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, I'll put the kettle on; take five."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C proposes a fast final check and immediate cleanup.",
+        "realization_b_action": "C treats the work as complete and suggests a break.",
+        "why_responses_diverge": "The first vocalization makes B's words sound like a push to finish promptly, while the second makes them sound like closure after completing the task."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1853,
+        "output_tokens": 765
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C4_001",
+      "comparison_id": "C4",
+      "contrast": "engagement mm-hm vs impatient groan",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Before we choose paint, I found three more color samples."
+        },
+        "turn_2_lexical_content": "We could compare them under the kitchen light."
+      },
+      "realization_a": {
+        "vocalization": "mm-hm",
+        "intended_meaning": "engagement mm-hm",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Before we choose paint, I found three more color samples."
+          },
+          {
+            "speaker": "B",
+            "text": "mm-hm We could compare them under the kitchen light."
+          },
+          {
+            "speaker": "C",
+            "text": "Good idea—bring them over and let's test each one."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Before we choose paint, I found three more color samples."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... We could compare them under the kitchen light."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's skip that and pick from the samples already here."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C continues the comparison by inviting everyone to test the additional samples.",
+        "realization_b_action": "C shortens the discussion by declining the additional comparison and choosing from existing samples.",
+        "why_responses_diverge": "The first vocalization supports interest in examining more options, while the second supports moving the decision along."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1875,
+        "output_tokens": 680
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    }
+  ]
+}

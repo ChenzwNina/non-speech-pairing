@@ -1,0 +1,824 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-19T06:29:43.946066+00:00",
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "speakers": 2,
+  "context_turns": 4,
+  "total_turns": 6,
+  "n_per_contrast": 1,
+  "judged": true,
+  "constraint": "turns 1-4 identical across versions with turn 4 as the trigger; turn 5 is B's voc-only first contribution; turn 6 is the selected reply",
+  "results": [
+    {
+      "pair_id": "gasp_grunt_001",
+      "scenario": "bandmates responding to an unexpectedly large festival slot",
+      "trigger_note": "A has committed the band to play a main-stage show for ten thousand people.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "The festival coordinator called right after rehearsal."
+        },
+        {
+          "speaker": "A",
+          "text": "Our little afternoon slot disappeared because another act canceled."
+        },
+        {
+          "speaker": "A",
+          "text": "She offered us the main stage, but she needed an answer tonight."
+        },
+        {
+          "speaker": "A",
+          "text": "I told her we'd play Saturday in front of ten thousand people."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "fear",
+        "responder": "A",
+        "response": "You're right, I got carried away. I'll call her back and withdraw before she locks us in."
+      },
+      "version_2": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "reluctant agreement",
+        "responder": "A",
+        "response": "Okay, I'll confirm the slot and book us extra rehearsals every night this week."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp reads as alarm at taking on an overwhelming performance, so A backs out; the grunt reads as a reluctant go-ahead, so A commits and prepares.",
+      "usage": {
+        "input_tokens": 2941,
+        "output_tokens": 1960
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-grunt",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is interpretations_fit_the_context, since a gasp could also convey surprise or excitement rather than specifically fear."
+      }
+    },
+    {
+      "pair_id": "gasp_laughter_001",
+      "scenario": "neighbors discovering a banner-printing mistake before a park cleanup",
+      "trigger_note": "Fifty public banners contain an embarrassing slogan typo.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I picked up the banners for Saturday's park cleanup."
+        },
+        {
+          "speaker": "A",
+          "text": "I gave the print shop the slogan exactly as the committee wrote it."
+        },
+        {
+          "speaker": "A",
+          "text": "They were supposed to say, \"Keep Our Park Clean.\""
+        },
+        {
+          "speaker": "A",
+          "text": "Instead, all fifty say, \"Keep Our Pants Clean,\" and they're already hanging across Main Street."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "shock",
+        "responder": "A",
+        "response": "I'll call the shop now and get those banners taken down before anyone else sees them."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "genuine amusement",
+        "responder": "A",
+        "response": "All right, the banners stay—we'll make the typo the cleanup's running joke."
+      },
+      "why_the_vocalization_changes_the_response": "A gasp treats the public mistake as an urgent embarrassment that needs fixing, while laughter makes it reasonable to embrace the absurdity instead of removing the banners.",
+      "usage": {
+        "input_tokens": 6003,
+        "output_tokens": 2561
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "gasp-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is undecidable_from_text_alone, since the public embarrassment somewhat independently favors taking the banners down, though either response remains plausible."
+      }
+    },
+    {
+      "pair_id": "gasp_sigh_001",
+      "scenario": "roommates deciding how to handle an expensive dishwasher repair",
+      "trigger_note": "The repair estimate is far higher than expected.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I heard back from the appliance shop about our dishwasher."
+        },
+        {
+          "speaker": "A",
+          "text": "The pump is cracked, but they can get the part tomorrow."
+        },
+        {
+          "speaker": "A",
+          "text": "Buying a new machine would mean waiting at least two weeks for delivery."
+        },
+        {
+          "speaker": "A",
+          "text": "Their repair estimate is eight hundred and forty dollars."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "shock",
+        "responder": "A",
+        "response": "Hold off on the repair—I’m calling around for a cheaper quote before we spend that."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "resignation",
+        "responder": "A",
+        "response": "Yeah, we can’t keep doing dishes in the sink; I’ll authorize the repair today."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp suggests the price is too startling to accept without challenging it, while the sigh suggests weary acceptance of an unwanted but necessary repair.",
+      "usage": {
+        "input_tokens": 2971,
+        "output_tokens": 1563
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is undecidable_from_text_alone, since the high repair estimate somewhat favors seeking another quote even without the vocalization."
+      }
+    },
+    {
+      "pair_id": "gasp_sob_001",
+      "contrast": "gasp-sob",
+      "error": "RuntimeError: still invalid after retries: vocalization 1 does not clearly favor reply 1; vocalization 2 does not clearly favor reply 2; the replies can be swapped without the dialogue getting worse"
+    },
+    {
+      "pair_id": "gasp_yawn_001",
+      "scenario": "friends choosing a Friday-night outing",
+      "trigger_note": "The observatory will open its roof for a meteor shower viewing.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I've been trying to find something different for Friday night."
+        },
+        {
+          "speaker": "A",
+          "text": "The old observatory has started doing late-night programs again."
+        },
+        {
+          "speaker": "A",
+          "text": "Usually it's an hour of slides about constellations."
+        },
+        {
+          "speaker": "A",
+          "text": "But this Friday they're opening the roof so people can watch the meteor shower."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "pleasant surprise",
+        "responder": "A",
+        "response": "Then I'm booking us spots before that viewing deck fills up."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "lack of interest",
+        "responder": "A",
+        "response": "All right, I'll drop the observatory idea and find us something with more energy."
+      },
+      "why_the_vocalization_changes_the_response": "A gasp makes the meteor shower sound exciting enough to book immediately, while a yawn signals that the observatory program is not an appealing outing and prompts A to choose a different plan.",
+      "usage": {
+        "input_tokens": 2983,
+        "output_tokens": 2623
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is whether a yawn is natural, since the meteor-shower reveal is framed as an appealing activity, though disinterest in astronomy remains plausible."
+      }
+    },
+    {
+      "pair_id": "grunt_laughter_001",
+      "scenario": "coworkers reviewing an accidental email sign-off",
+      "trigger_note": "A says the client received the email signed with a childish nickname.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I sent the revised budget to the client before lunch."
+        },
+        {
+          "speaker": "A",
+          "text": "I copied the numbers straight from finance, so at least the totals are right."
+        },
+        {
+          "speaker": "A",
+          "text": "But I wrote it on my phone while I was waiting for the elevator."
+        },
+        {
+          "speaker": "A",
+          "text": "My email signature went out as “Captain Spreadsheet.”"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "annoyance",
+        "responder": "A",
+        "response": "You're right, I’ll send a clean follow-up from my laptop and apologize for the signature."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "genuine amusement",
+        "responder": "A",
+        "response": "Okay, that is objectively funny—I’m leaving it alone unless the client mentions it."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt reads the mistaken sign-off as unprofessional and calls for immediate correction, while the laughter treats it as harmlessly funny and supports letting it stand.",
+      "usage": {
+        "input_tokens": 3000,
+        "output_tokens": 564
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "grunt-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is voc2_favors_reply2, since genuine laughter could still be followed by a decision to correct the signature."
+      }
+    },
+    {
+      "pair_id": "grunt_sigh_001",
+      "scenario": "siblings deciding how to handle a crack in a bedroom wall",
+      "trigger_note": "The contractor says the wall crack is not structural.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "The contractor finally came to look at the crack above the window."
+        },
+        {
+          "speaker": "A",
+          "text": "I showed him how much wider it got after last week's rain."
+        },
+        {
+          "speaker": "A",
+          "text": "He checked the wall from outside and climbed up into the attic."
+        },
+        {
+          "speaker": "A",
+          "text": "He says it's only peeling plaster, not a structural crack."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "skepticism",
+        "responder": "A",
+        "response": "I won't have anyone patch it yet; I'll get a structural engineer to inspect it before we touch that wall."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "relief",
+        "responder": "A",
+        "response": "Then I'll cancel the structural engineer and ask the painter to patch it this week."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt is taken as doubt about the contractor's diagnosis, so A seeks an independent structural inspection. The sigh is taken as relief that the wall is safe, so A cancels the extra inspection and proceeds with a cosmetic repair.",
+      "usage": {
+        "input_tokens": 3001,
+        "output_tokens": 2281
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "grunt-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is undecidable_from_text_alone, since the contractor's reassurance somewhat favors the relief-and-patch response even though caution remains plausible."
+      }
+    },
+    {
+      "pair_id": "grunt_sob_001",
+      "scenario": "roommates learning that a disputed apartment application was approved",
+      "trigger_note": "A says they accepted B's apartment offer without asking first.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I finally got through to the housing office about the application they rejected."
+        },
+        {
+          "speaker": "A",
+          "text": "They found out the income form had been filed under somebody else's name."
+        },
+        {
+          "speaker": "A",
+          "text": "That mix-up was the only reason they turned you down."
+        },
+        {
+          "speaker": "A",
+          "text": "They've offered you the unit, and I told them you'd take it before I called."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "annoyance",
+        "responder": "A",
+        "response": "You're right, I shouldn't have answered for you. I'll call back and put the offer on hold until you've decided."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "relief after distress",
+        "responder": "A",
+        "response": "I'll book the lease-signing appointment now, then we can start moving your boxes over tonight."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt reads as objection to A making the decision unilaterally, so A pauses the offer. The sob reads as overwhelmed relief that the appeal succeeded, so A moves ahead with securing the apartment.",
+      "usage": {
+        "input_tokens": 6084,
+        "output_tokens": 4217
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "grunt-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is voc2_favors_reply2, since relieved sobbing does not conclusively establish consent to immediately book the lease signing."
+      }
+    },
+    {
+      "pair_id": "grunt_yawn_001",
+      "scenario": "coworkers facing mandatory after-hours training",
+      "trigger_note": "The manager requires them to stay late for training on two consecutive nights.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I checked with the manager about the new register system."
+        },
+        {
+          "speaker": "A",
+          "text": "The training videos can only be accessed after we close."
+        },
+        {
+          "speaker": "A",
+          "text": "We both have to complete them before next week's audit."
+        },
+        {
+          "speaker": "A",
+          "text": "She wants us to stay two extra hours tonight and tomorrow to finish them."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "reluctant agreement",
+        "responder": "A",
+        "response": "All right, I'll get us dinner, and we'll stay to knock the videos out tonight."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "No, I’m not keeping us here when we’re already worn out; I’ll ask her to schedule the training during a staffed shift next week."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt is read as resigned willingness to accept the late work, so A commits to completing it that night. The yawn signals that the extra evening work is too exhausting, so A rejects the after-hours plan and seeks a daytime alternative.",
+      "usage": {
+        "input_tokens": 6158,
+        "output_tokens": 4455
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "grunt-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is that a yawn is only an indirect cue of fatigue, though the proposed extra late work makes it natural."
+      }
+    },
+    {
+      "pair_id": "laughter_sigh_001",
+      "scenario": "friends volunteering together at a community fair",
+      "trigger_note": "A reveals that their volunteer shift is running a dunk tank in matching pirate costumes.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "The community fair still needed two people for an afternoon shift."
+        },
+        {
+          "speaker": "A",
+          "text": "I told Dana that you and I could volunteer together."
+        },
+        {
+          "speaker": "A",
+          "text": "She said teams can switch booths until noon if something really doesn't suit them."
+        },
+        {
+          "speaker": "A",
+          "text": "She assigned us to run the dunk tank in matching pirate costumes."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "shared amusement",
+        "responder": "A",
+        "response": "Then we’re owning it—I’ll bring eye patches, and we’ll make that dunk tank the best booth there."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "disappointment",
+        "responder": "A",
+        "response": "Okay, I should have checked with you first; I’ll ask Dana to move us to a quieter booth before noon."
+      },
+      "why_the_vocalization_changes_the_response": "Laughter supports embracing the absurd costume assignment, while a sigh signals that the assignment is unwelcome, so A requests a different shift.",
+      "usage": {
+        "input_tokens": 6127,
+        "output_tokens": 3306
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "laughter-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is both_vocalizations_natural_here, since the sigh is somewhat less strongly motivated than the laughter but remains plausible."
+      }
+    },
+    {
+      "pair_id": "laughter_sob_001",
+      "scenario": "siblings preparing a birthday slideshow from old family videos",
+      "trigger_note": "A recovered a lost clip of their late father singing badly and expressing love.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I've been sorting through the old camcorder files for Mom's birthday slideshow."
+        },
+        {
+          "speaker": "A",
+          "text": "Most of them are blurry holidays, with everybody talking over each other."
+        },
+        {
+          "speaker": "A",
+          "text": "I thought the recording from the year Dad died had been lost for good."
+        },
+        {
+          "speaker": "A",
+          "text": "But I found one where he's singing \"Happy Birthday\" hopelessly off-key, then he looks at Mom and says, \"I love you, June.\""
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "shared amusement",
+        "responder": "A",
+        "response": "Then I'm putting that clip at the end of the slideshow—his terrible singing will make everyone smile."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being deeply moved",
+        "responder": "A",
+        "response": "I'll keep that one out of the slideshow and save it for just us after the party."
+      },
+      "why_the_vocalization_changes_the_response": "Laughter supports sharing the clip publicly as a warm, funny memory, while sobbing suggests it is too emotionally personal for the party and should be kept private.",
+      "usage": {
+        "input_tokens": 3076,
+        "output_tokens": 1075
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "laughter-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is both_vocalizations_natural_here, since laughter is somewhat less immediate than a sob after recalling Dad's death, though the off-key singing makes affectionate amusement plausible."
+      }
+    },
+    {
+      "pair_id": "laughter_yawn_001",
+      "scenario": "volunteer coordinator planning an orientation",
+      "trigger_note": "A has made a forty-minute dramatic video for a quick volunteer tour.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I promised the new volunteers a quick tour of the storage room before they start."
+        },
+        {
+          "speaker": "A",
+          "text": "While I was cleaning, I found the security clips from last year's costume drive."
+        },
+        {
+          "speaker": "A",
+          "text": "Most of them are just people trying to squeeze giant donation boxes through the door."
+        },
+        {
+          "speaker": "A",
+          "text": "I stitched them into a forty-minute video with dramatic narration."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "genuine amusement",
+        "responder": "A",
+        "response": "Perfect, I’ll keep the full cut and use it to open the orientation."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "boredom",
+        "responder": "A",
+        "response": "Right, I’ll shelve the video and give them the two-minute tour instead."
+      },
+      "why_the_vocalization_changes_the_response": "Laughter supports treating the absurd video as entertaining enough to feature, while a yawn signals that its length would lose the audience, so A abandons it for a concise tour.",
+      "usage": {
+        "input_tokens": 3070,
+        "output_tokens": 1618
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "laughter-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is undecidable_from_text_alone, since the earlier promise of a quick tour mildly favors shelving a forty-minute video even without the vocalization."
+      }
+    },
+    {
+      "pair_id": "sigh_sob_001",
+      "scenario": "classmates deciding whether to continue a retiring teacher's garden club",
+      "trigger_note": "A teacher has entrusted them with the keys and notebook for the garden club.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I stopped by the school greenhouse after class."
+        },
+        {
+          "speaker": "A",
+          "text": "Ms. Chen was clearing out her desk; the district is making her retire at the end of the month."
+        },
+        {
+          "speaker": "A",
+          "text": "She said the garden club will disappear unless someone takes it over."
+        },
+        {
+          "speaker": "A",
+          "text": "She put the keys and her whole planting notebook in my hands."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "exhaustion",
+        "responder": "A",
+        "response": "You're right, we already have too much on our plates. I'll take the keys back and tell her we can't run it."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being deeply moved",
+        "responder": "A",
+        "response": "Then we'll keep it going. I'll message the club tonight, and we'll make sure Ms. Chen's garden doesn't disappear."
+      },
+      "why_the_vocalization_changes_the_response": "The sigh reads the handoff as an unsustainable new burden, so A declines it; the sob reads it as a moving trust from Ms. Chen, so A commits to preserving the club.",
+      "usage": {
+        "input_tokens": 9325,
+        "output_tokens": 4952
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 3,
+      "contrast": "sigh-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is whether a sob is fully natural here, since the situation is poignant but could be less immediately sob-inducing for some listeners."
+      }
+    },
+    {
+      "pair_id": "sigh_yawn_001",
+      "scenario": "coworkers discovering a duplicate-entry requirement for old receipts",
+      "trigger_note": "Every receipt must be entered twice in separate systems.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "We've been sorting these old donation receipts since breakfast."
+        },
+        {
+          "speaker": "A",
+          "text": "I finally opened the instructions for putting them into the new system."
+        },
+        {
+          "speaker": "A",
+          "text": "I thought we were nearly finished with the stack."
+        },
+        {
+          "speaker": "A",
+          "text": "It turns out every receipt has to be typed twice, once for the archive and once for accounting."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "frustration",
+        "responder": "A",
+        "response": "No, that is a broken process. I'll call accounting and get permission to use one shared file."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "exhaustion",
+        "responder": "A",
+        "response": "We're stopping for today; I'll lock these up, and we can finish after you've had some sleep."
+      },
+      "why_the_vocalization_changes_the_response": "The sigh reads as frustration with an inefficient requirement, so A challenges the process. The yawn reads as exhaustion from the long work session, so A stops the work instead.",
+      "usage": {
+        "input_tokens": 12502,
+        "output_tokens": 10365
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 4,
+      "contrast": "sigh-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is swapping_replies_is_clearly_worse, since frustration could also reasonably lead to stopping work for the day."
+      }
+    },
+    {
+      "pair_id": "sob_yawn_001",
+      "scenario": "friends editing a retirement tribute video late at night",
+      "trigger_note": "A former student's message reveals that the teacher paid for a bus pass so he could stay in school.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I've been editing Ms. Patel's retirement video since after dinner."
+        },
+        {
+          "speaker": "A",
+          "text": "It's nearly midnight, and I still have sixty-seven clips open."
+        },
+        {
+          "speaker": "A",
+          "text": "I wanted your help deciding what deserves the last few minutes."
+        },
+        {
+          "speaker": "A",
+          "text": "Her first student sent this: “You bought my bus pass so I could stay in school.”"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being deeply moved",
+        "responder": "A",
+        "response": "That message is the ending, then—I’ll keep the whole clip, even if the video runs long."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "exhaustion",
+        "responder": "A",
+        "response": "I've kept you up too late; I’ll save this now and make a short cut in the morning."
+      },
+      "why_the_vocalization_changes_the_response": "A sob makes the message feel important enough to preserve in full, while a yawn signals that the late-night editing session should stop and be shortened later.",
+      "usage": {
+        "input_tokens": 6242,
+        "output_tokens": 3950
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "sob-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "judge": {
+        "trigger_is_last_shared_turn": true,
+        "both_vocalizations_natural_here": true,
+        "interpretations_fit_the_context": true,
+        "undecidable_from_text_alone": true,
+        "replies_commit_to_different_actions": true,
+        "voc1_favors_reply1": true,
+        "voc2_favors_reply2": true,
+        "swapping_replies_is_clearly_worse": true,
+        "notes": "The weakest property is undecidable_from_text_alone, since the emotional content of the quoted message somewhat favors keeping the clip even without the vocalization."
+      }
+    }
+  ]
+}

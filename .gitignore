@@ -2,3 +2,13 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+
+# Intermediate TTS. Keep sewn eval clips in git; leave per-turn / voc / versioned renders local.
+**/audio_neutral/
+**/audio_voc/
+**/audio_v1/
+**/audio_v2/
+pairing_type/out/audio/
+predicting_content/out/audio_turns/
+transcript_curated/out/audio_turns/
+**/*-turn[0-9][0-9].mp3

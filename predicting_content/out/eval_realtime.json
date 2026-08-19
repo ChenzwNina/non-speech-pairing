@@ -1,0 +1,1601 @@
+{
+  "model": "gpt-realtime-2.1",
+  "seed": 0,
+  "generated_at": "2026-08-15T01:14:40.942736+00:00",
+  "items": "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/predicting_content/out/items.json",
+  "n": 30,
+  "order": [
+    "groan_school_001",
+    "hmm_work_001",
+    "throat_clear_school_001",
+    "scoff_family_001",
+    "groan_family_001",
+    "sigh_school_001",
+    "laugh_work_001",
+    "yawn_family_001",
+    "shaky_breath_family_001",
+    "mmhm_family_001",
+    "throat_clear_family_001",
+    "yawn_work_001",
+    "exhale_school_001",
+    "sigh_family_001",
+    "throat_clear_work_001",
+    "groan_work_001",
+    "exhale_family_001",
+    "laugh_school_001",
+    "hmm_family_001",
+    "exhale_work_001",
+    "hmm_school_001",
+    "shaky_breath_work_001",
+    "scoff_school_001",
+    "scoff_work_001",
+    "laugh_family_001",
+    "sigh_work_001",
+    "mmhm_work_001",
+    "yawn_school_001",
+    "mmhm_school_001",
+    "shaky_breath_school_001"
+  ],
+  "results": [
+    {
+      "question_id": "groan_school_001",
+      "item_id": "groan_school_001",
+      "vocalization_id": "groan",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/groan_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Not another before-school meeting; I can't get to campus that early."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "Absolutely\u2014let's meet in the library before first period and get the display ready."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Not another before-school meeting; I can't get to campus that early.",
+      "alt_text": "Absolutely\u2014let's meet in the library before first period and get the display ready.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 134,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 154
+        },
+        "input_tokens": 288,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 40,
+          "reasoning_tokens": 35
+        },
+        "output_tokens": 40,
+        "total_tokens": 328
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "hmm_work_001",
+      "item_id": "hmm_work_001",
+      "vocalization_id": "hmm",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/hmm_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "We'll have the revised onboarding screens ready for Monday and present the new flow in the review."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "We could keep the current flow for Monday and present the revised screens as a follow-up, if that seems safer."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "We could keep the current flow for Monday and present the revised screens as a follow-up, if that seems safer.",
+      "alt_text": "We'll have the revised onboarding screens ready for Monday and present the new flow in the review.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 133,
+          "cached_tokens": 256,
+          "cached_tokens_details": {
+            "audio_tokens": 128,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 164
+        },
+        "input_tokens": 297,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 30,
+          "reasoning_tokens": 25
+        },
+        "output_tokens": 30,
+        "total_tokens": 327
+      },
+      "correct": true,
+      "attempt": 2,
+      "error": null
+    },
+    {
+      "question_id": "throat_clear_school_001",
+      "item_id": "throat_clear_school_001",
+      "vocalization_id": "throat_clear",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/throat_clear_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "I need to correct the roster: Jordan told me privately that she never agreed to be listed as treasurer."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "It looks good to me\u2014I don't have anything to add."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "I need to correct the roster: Jordan told me privately that she never agreed to be listed as treasurer.",
+      "alt_text": "It looks good to me\u2014I don't have anything to add.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 113,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 157
+        },
+        "input_tokens": 270,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 32,
+          "reasoning_tokens": 27
+        },
+        "output_tokens": 32,
+        "total_tokens": 302
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "scoff_family_001",
+      "item_id": "scoff_family_001",
+      "vocalization_id": "scoff",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/scoff_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "Evan's idea is perfect; if we turn the broken side toward the wall, Mom may never notice before dinner."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "That is a terrible plan; Mom will notice the missing pieces the moment she walks in."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "That is a terrible plan; Mom will notice the missing pieces the moment she walks in.",
+      "alt_text": "Evan's idea is perfect; if we turn the broken side toward the wall, Mom may never notice before dinner.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 114,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 164
+        },
+        "input_tokens": 278,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 75,
+          "reasoning_tokens": 70
+        },
+        "output_tokens": 75,
+        "total_tokens": 353
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "groan_family_001",
+      "item_id": "groan_family_001",
+      "vocalization_id": "groan",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/groan_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Not again\u2014we already gave up last Saturday to help Uncle Ray move."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "Great, I\u2019m actually excited to help Grandma sort through those boxes."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Not again\u2014we already gave up last Saturday to help Uncle Ray move.",
+      "alt_text": "Great, I\u2019m actually excited to help Grandma sort through those boxes.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 93,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 151
+        },
+        "input_tokens": 244,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 24,
+          "reasoning_tokens": 19
+        },
+        "output_tokens": 24,
+        "total_tokens": 268
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "sigh_school_001",
+      "item_id": "sigh_school_001",
+      "vocalization_id": "sigh",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/sigh_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "I'd be happy to stay after school and finish the display\u2014we'll have it ready for the open house."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "Fine, I'll stay after school to finish the display, but this is the third time I've had to cover for someone."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "Fine, I'll stay after school to finish the display, but this is the third time I've had to cover for someone.",
+      "alt_text": "I'd be happy to stay after school and finish the display\u2014we'll have it ready for the open house.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 141,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 168
+        },
+        "input_tokens": 309,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 23,
+          "reasoning_tokens": 18
+        },
+        "output_tokens": 23,
+        "total_tokens": 332
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "laugh_work_001",
+      "item_id": "laugh_work_001",
+      "vocalization_id": "laugh",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/laugh_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Perfect\u2014nothing says premium like adding a gold gradient five minutes before the meeting."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "This is a real concern\u2014we should focus on the few changes that will improve clarity before tomorrow."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Perfect\u2014nothing says premium like adding a gold gradient five minutes before the meeting.",
+      "alt_text": "This is a real concern\u2014we should focus on the few changes that will improve clarity before tomorrow.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 105,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 158
+        },
+        "input_tokens": 263,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 25,
+          "reasoning_tokens": 20
+        },
+        "output_tokens": 25,
+        "total_tokens": 288
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "yawn_family_001",
+      "item_id": "yawn_family_001",
+      "vocalization_id": "yawn",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/yawn_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Could we put the last two boxes away and finish sorting them tomorrow?"
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "Let\u2019s keep going now and get through these last two boxes."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Could we put the last two boxes away and finish sorting them tomorrow?",
+      "alt_text": "Let\u2019s keep going now and get through these last two boxes.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 150,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 150
+        },
+        "input_tokens": 300,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 24,
+          "reasoning_tokens": 19
+        },
+        "output_tokens": 24,
+        "total_tokens": 324
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "shaky_breath_family_001",
+      "item_id": "shaky_breath_family_001",
+      "vocalization_id": "shaky_breath",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/shaky_breath_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "They said her tests showed something serious, but I've got this\u2014I\u2019ll help Grandma through whatever comes next."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "They said her tests showed something serious, and I'm scared\u2014can you tell me we're going to get through this together?"
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "They said her tests showed something serious, and I'm scared\u2014can you tell me we're going to get through this together?",
+      "alt_text": "They said her tests showed something serious, but I've got this\u2014I\u2019ll help Grandma through whatever comes next.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 101,
+          "cached_tokens": 192,
+          "cached_tokens_details": {
+            "audio_tokens": 64,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 168
+        },
+        "input_tokens": 269,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 72,
+          "reasoning_tokens": 67
+        },
+        "output_tokens": 72,
+        "total_tokens": 341
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "mmhm_family_001",
+      "item_id": "mmhm_family_001",
+      "vocalization_id": "mmhm",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/mmhm_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Then what did he say when Dad asked where he wanted to go?"
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "I don't really want to keep talking about this."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Then what did he say when Dad asked where he wanted to go?",
+      "alt_text": "I don't really want to keep talking about this.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 113,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 147
+        },
+        "input_tokens": 260,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 52,
+          "reasoning_tokens": 47
+        },
+        "output_tokens": 52,
+        "total_tokens": 312
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "throat_clear_family_001",
+      "item_id": "throat_clear_family_001",
+      "vocalization_id": "throat_clear",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/throat_clear_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "That works for me\u2014the cousins can have your room, and the rest should be easy to arrange."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "Before we decide rooms, I need to say that I am not comfortable having Uncle Vince stay here after what happened last Christmas."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "Before we decide rooms, I need to say that I am not comfortable having Uncle Vince stay here after what happened last Christmas.",
+      "alt_text": "That works for me\u2014the cousins can have your room, and the rest should be easy to arrange.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 118,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 168
+        },
+        "input_tokens": 286,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 79,
+          "reasoning_tokens": 74
+        },
+        "output_tokens": 79,
+        "total_tokens": 365
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "yawn_work_001",
+      "item_id": "yawn_work_001",
+      "vocalization_id": "yawn",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/yawn_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Can we stop here and pick up the remaining edits first thing tomorrow?"
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "Let's keep working now and get the key edits ready for tomorrow."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Can we stop here and pick up the remaining edits first thing tomorrow?",
+      "alt_text": "Let's keep working now and get the key edits ready for tomorrow.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 133,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 150
+        },
+        "input_tokens": 283,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 29,
+          "reasoning_tokens": 24
+        },
+        "output_tokens": 29,
+        "total_tokens": 312
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "exhale_school_001",
+      "item_id": "exhale_school_001",
+      "vocalization_id": "exhale",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/exhale_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "I still won't feel settled until the grant money is actually in our club account."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "At least our robotics club has the funding secured for this semester."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "At least our robotics club has the funding secured for this semester.",
+      "alt_text": "I still won't feel settled until the grant money is actually in our club account.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 107,
+          "cached_tokens": 192,
+          "cached_tokens_details": {
+            "audio_tokens": 64,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 259,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 57,
+          "reasoning_tokens": 52
+        },
+        "output_tokens": 57,
+        "total_tokens": 316
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "sigh_family_001",
+      "item_id": "sigh_family_001",
+      "vocalization_id": "sigh",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/sigh_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Fine, I'll help Dad clear the attic Saturday, but I was really hoping to have the weekend to myself."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "I'd be happy to help Dad clear the attic Saturday so everything's ready before Aunt Denise gets here."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Fine, I'll help Dad clear the attic Saturday, but I was really hoping to have the weekend to myself.",
+      "alt_text": "I'd be happy to help Dad clear the attic Saturday so everything's ready before Aunt Denise gets here.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 104,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 165
+        },
+        "input_tokens": 269,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 23,
+          "reasoning_tokens": 18
+        },
+        "output_tokens": 23,
+        "total_tokens": 292
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "throat_clear_work_001",
+      "item_id": "throat_clear_work_001",
+      "vocalization_id": "throat_clear",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/throat_clear_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "That works for me\u2014I\u2019m happy to lead the presentation as planned."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "I need to correct that assignment: I can't lead the presentation because I'm already responsible for the compliance review."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "I need to correct that assignment: I can't lead the presentation because I'm already responsible for the compliance review.",
+      "alt_text": "That works for me\u2014I\u2019m happy to lead the presentation as planned.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 135,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 158
+        },
+        "input_tokens": 293,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 74,
+          "reasoning_tokens": 69
+        },
+        "output_tokens": 74,
+        "total_tokens": 367
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "groan_work_001",
+      "item_id": "groan_work_001",
+      "vocalization_id": "groan",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/groan_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "Absolutely, I\u2019m happy to be there for the weekend review."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "I can't give up another Saturday for this project."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "I can't give up another Saturday for this project.",
+      "alt_text": "Absolutely, I\u2019m happy to be there for the weekend review.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 110,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 146
+        },
+        "input_tokens": 256,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 49,
+          "reasoning_tokens": 44
+        },
+        "output_tokens": 49,
+        "total_tokens": 305
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "exhale_family_001",
+      "item_id": "exhale_family_001",
+      "vocalization_id": "exhale",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/exhale_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "He can't come until tomorrow, so we still don't know where we'll have dinner."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "He can come this afternoon, so we can still have dinner here."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "He can come this afternoon, so we can still have dinner here.",
+      "alt_text": "He can't come until tomorrow, so we still don't know where we'll have dinner.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 89,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 153
+        },
+        "input_tokens": 242,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 58,
+          "reasoning_tokens": 53
+        },
+        "output_tokens": 58,
+        "total_tokens": 300
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "laugh_school_001",
+      "item_id": "laugh_school_001",
+      "vocalization_id": "laugh",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/laugh_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "If that study guide gets any shorter, it will qualify as a sticky note."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "I'm worried this isn't enough to help us study for Friday's quiz."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "If that study guide gets any shorter, it will qualify as a sticky note.",
+      "alt_text": "I'm worried this isn't enough to help us study for Friday's quiz.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 130,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 153
+        },
+        "input_tokens": 283,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 83,
+          "reasoning_tokens": 78
+        },
+        "output_tokens": 83,
+        "total_tokens": 366
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "hmm_family_001",
+      "item_id": "hmm_family_001",
+      "vocalization_id": "hmm",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/hmm_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "Maya is sleeping in our room tonight."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "Maybe having Maya sleep in our room would be the least scary option for her tonight."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "Maybe having Maya sleep in our room would be the least scary option for her tonight.",
+      "alt_text": "Maya is sleeping in our room tonight.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 137,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 148
+        },
+        "input_tokens": 285,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 36,
+          "reasoning_tokens": 31
+        },
+        "output_tokens": 36,
+        "total_tokens": 321
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "exhale_work_001",
+      "item_id": "exhale_work_001",
+      "vocalization_id": "exhale",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/exhale_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Great, they approved the contract, and we can lock the launch date."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "That doesn't mean we're cleared\u2014the launch is still on hold until we know their answer."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Great, they approved the contract, and we can lock the launch date.",
+      "alt_text": "That doesn't mean we're cleared\u2014the launch is still on hold until we know their answer.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 122,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 155
+        },
+        "input_tokens": 277,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 53,
+          "reasoning_tokens": 48
+        },
+        "output_tokens": 53,
+        "total_tokens": 330
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "hmm_school_001",
+      "item_id": "hmm_school_001",
+      "vocalization_id": "hmm",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/hmm_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "Reserve the auditorium; practicing on the actual stage will sharpen our timing before Friday."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "Maybe we should reserve the auditorium, since rehearsing on the actual stage could help us judge our timing."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "Maybe we should reserve the auditorium, since rehearsing on the actual stage could help us judge our timing.",
+      "alt_text": "Reserve the auditorium; practicing on the actual stage will sharpen our timing before Friday.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 136,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 160
+        },
+        "input_tokens": 296,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 59,
+          "reasoning_tokens": 54
+        },
+        "output_tokens": 59,
+        "total_tokens": 355
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "shaky_breath_work_001",
+      "item_id": "shaky_breath_work_001",
+      "vocalization_id": "shaky_breath",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/shaky_breath_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Can you stay on the call with me? I'm worried I'll freeze when they start asking questions."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "I've got this\u2014I know the figures and can handle their questions."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Can you stay on the call with me? I'm worried I'll freeze when they start asking questions.",
+      "alt_text": "I've got this\u2014I know the figures and can handle their questions.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 94,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 155
+        },
+        "input_tokens": 249,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 43,
+          "reasoning_tokens": 38
+        },
+        "output_tokens": 43,
+        "total_tokens": 292
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "scoff_school_001",
+      "item_id": "scoff_school_001",
+      "vocalization_id": "scoff",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/scoff_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "That sounds like a great way to present our project."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "That is a terrible way to present a history project."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "That is a terrible way to present a history project.",
+      "alt_text": "That sounds like a great way to present our project.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 108,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 145
+        },
+        "input_tokens": 253,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 33,
+          "reasoning_tokens": 28
+        },
+        "output_tokens": 33,
+        "total_tokens": 286
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "scoff_work_001",
+      "item_id": "scoff_work_001",
+      "vocalization_id": "scoff",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/scoff_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "That's an awful way to handle a client problem."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "I love that approach\u2014it keeps us on schedule and puts the responsibility where it belongs."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "That's an awful way to handle a client problem.",
+      "alt_text": "I love that approach\u2014it keeps us on schedule and puts the responsibility where it belongs.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 120,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 150
+        },
+        "input_tokens": 270,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 40,
+          "reasoning_tokens": 35
+        },
+        "output_tokens": 40,
+        "total_tokens": 310
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "laugh_family_001",
+      "item_id": "laugh_family_001",
+      "vocalization_id": "laugh",
+      "domain": "family",
+      "audio": "predicting_content/out/audio_sewn/laugh_family_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "Sure, because the basement has been begging for one more place to lose our board games."
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "I think asking Uncle Ray to help us get it to the curb is the most practical option."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "Sure, because the basement has been begging for one more place to lose our board games.",
+      "alt_text": "I think asking Uncle Ray to help us get it to the curb is the most practical option.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 107,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 160
+        },
+        "input_tokens": 267,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 41,
+          "reasoning_tokens": 36
+        },
+        "output_tokens": 41,
+        "total_tokens": 308
+      },
+      "correct": false,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "sigh_work_001",
+      "item_id": "sigh_work_001",
+      "vocalization_id": "sigh",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/sigh_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "Absolutely, I'll take the lead on redesigning the client deck and make it great for Friday."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "Fine, I'll stay late and revise the whole client deck myself."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "Fine, I'll stay late and revise the whole client deck myself.",
+      "alt_text": "Absolutely, I'll take the lead on redesigning the client deck and make it great for Friday.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 122,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 155
+        },
+        "input_tokens": 277,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 67,
+          "reasoning_tokens": 62
+        },
+        "output_tokens": 67,
+        "total_tokens": 344
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "mmhm_work_001",
+      "item_id": "mmhm_work_001",
+      "vocalization_id": "mmhm",
+      "domain": "work",
+      "audio": "predicting_content/out/audio_sewn/mmhm_work_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "I don't want to keep dissecting it right now."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "Exactly\u2014the timeline came up first, and then they asked whether we could add another analyst."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "Exactly\u2014the timeline came up first, and then they asked whether we could add another analyst.",
+      "alt_text": "I don't want to keep dissecting it right now.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 111,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 263,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 55,
+          "reasoning_tokens": 50
+        },
+        "output_tokens": 55,
+        "total_tokens": 318
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "yawn_school_001",
+      "item_id": "yawn_school_001",
+      "vocalization_id": "yawn",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/yawn_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "I'm still focused\u2014let's finish the last page here now."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "Let's call it a night and finish the last page before class tomorrow."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "Let's call it a night and finish the last page before class tomorrow.",
+      "alt_text": "I'm still focused\u2014let's finish the last page here now.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 147,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 150
+        },
+        "input_tokens": 297,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 52,
+          "reasoning_tokens": 47
+        },
+        "output_tokens": 52,
+        "total_tokens": 349
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "mmhm_school_001",
+      "item_id": "mmhm_school_001",
+      "vocalization_id": "mmhm",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/mmhm_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "alternative",
+          "text": "Let's drop it; I don't want to talk about the costume rack anymore."
+        },
+        {
+          "key": "B",
+          "id": "gold",
+          "text": "She did, so we rolled it over before sixth period started."
+        }
+      ],
+      "correct_key": "B",
+      "gold_text": "She did, so we rolled it over before sixth period started.",
+      "alt_text": "Let's drop it; I don't want to talk about the costume rack anymore.",
+      "predicted_key": "B",
+      "raw_text": "B",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 109,
+          "cached_tokens": 64,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 64
+          },
+          "image_tokens": 0,
+          "text_tokens": 151
+        },
+        "input_tokens": 260,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 27,
+          "reasoning_tokens": 22
+        },
+        "output_tokens": 27,
+        "total_tokens": 287
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "question_id": "shaky_breath_school_001",
+      "item_id": "shaky_breath_school_001",
+      "vocalization_id": "shaky_breath",
+      "domain": "school",
+      "audio": "predicting_content/out/audio_sewn/shaky_breath_school_001.mp3",
+      "options": [
+        {
+          "key": "A",
+          "id": "gold",
+          "text": "I know, but my hands will not stop shaking. Do you think I am going to embarrass myself?"
+        },
+        {
+          "key": "B",
+          "id": "alternative",
+          "text": "I've got my outline and a plan for lunch\u2014I can handle tomorrow."
+        }
+      ],
+      "correct_key": "A",
+      "gold_text": "I know, but my hands will not stop shaking. Do you think I am going to embarrass myself?",
+      "alt_text": "I've got my outline and a plan for lunch\u2014I can handle tomorrow.",
+      "predicted_key": "A",
+      "raw_text": "A",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 120,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 159
+        },
+        "input_tokens": 279,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 57,
+          "reasoning_tokens": 52
+        },
+        "output_tokens": 57,
+        "total_tokens": 336
+      },
+      "correct": true,
+      "attempt": 1,
+      "error": null
+    }
+  ],
+  "summary": {
+    "overall": {
+      "n": 30,
+      "correct": 24,
+      "parsed": 30,
+      "accuracy": 0.8
+    },
+    "by_vocalization": {
+      "groan": {
+        "n": 3,
+        "correct": 3,
+        "parsed": 3,
+        "accuracy": 1.0
+      },
+      "hmm": {
+        "n": 3,
+        "correct": 3,
+        "parsed": 3,
+        "accuracy": 1.0
+      },
+      "throat_clear": {
+        "n": 3,
+        "correct": 1,
+        "parsed": 3,
+        "accuracy": 0.3333333333333333
+      },
+      "scoff": {
+        "n": 3,
+        "correct": 3,
+        "parsed": 3,
+        "accuracy": 1.0
+      },
+      "sigh": {
+        "n": 3,
+        "correct": 3,
+        "parsed": 3,
+        "accuracy": 1.0
+      },
+      "laugh": {
+        "n": 3,
+        "correct": 2,
+        "parsed": 3,
+        "accuracy": 0.6666666666666666
+      },
+      "yawn": {
+        "n": 3,
+        "correct": 3,
+        "parsed": 3,
+        "accuracy": 1.0
+      },
+      "shaky_breath": {
+        "n": 3,
+        "correct": 3,
+        "parsed": 3,
+        "accuracy": 1.0
+      },
+      "mmhm": {
+        "n": 3,
+        "correct": 3,
+        "parsed": 3,
+        "accuracy": 1.0
+      },
+      "exhale": {
+        "n": 3,
+        "correct": 0,
+        "parsed": 3,
+        "accuracy": 0.0
+      }
+    },
+    "by_domain": {
+      "school": {
+        "n": 10,
+        "correct": 9,
+        "parsed": 10,
+        "accuracy": 0.9
+      },
+      "work": {
+        "n": 10,
+        "correct": 8,
+        "parsed": 10,
+        "accuracy": 0.8
+      },
+      "family": {
+        "n": 10,
+        "correct": 7,
+        "parsed": 10,
+        "accuracy": 0.7
+      }
+    }
+  }
+}

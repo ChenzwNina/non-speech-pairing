@@ -1,0 +1,1654 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-14T21:19:28.049347+00:00",
+  "contrasts": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "domains": [
+    "school",
+    "work",
+    "family",
+    "health",
+    "entertainment",
+    "travel"
+  ],
+  "n_per_contrast_domain": 1,
+  "results": [
+    {
+      "item_id": "C1_school_001",
+      "comparison_id": "C1",
+      "contrast": "enjoyment laughter vs impatient groan",
+      "domain": "school",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Our debate club finally got the auditorium for Friday's showcase."
+        },
+        "turn_2_lexical_content": "That should make the practice much more interesting."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our debate club finally got the auditorium for Friday's showcase."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha That should make the practice much more interesting."
+          },
+          {
+            "speaker": "C",
+            "text": "Great—our dramatic objections will finally have proper echoes."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our debate club finally got the auditorium for Friday's showcase."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... That should make the practice much more interesting."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's assign the opening speakers before the meeting ends."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C jokes along and celebrates the new auditorium.",
+        "realization_b_action": "C moves the club meeting forward by assigning speakers.",
+        "why_responses_diverge": "The same words can welcome a more engaging rehearsal or signal impatience with more discussion and complications."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1865,
+        "output_tokens": 616
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C1_work_001",
+      "comparison_id": "C1",
+      "contrast": "enjoyment laughter vs impatient groan",
+      "domain": "work",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "In the project meeting, the client approved our mockup, but three agenda items remain."
+        },
+        "turn_2_lexical_content": "We can send the final files this afternoon."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "In the project meeting, the client approved our mockup, but three agenda items remain."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha We can send the final files this afternoon."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, I'll bring coffee tomorrow to celebrate."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "In the project meeting, the client approved our mockup, but three agenda items remain."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... We can send the final files this afternoon."
+          },
+          {
+            "speaker": "C",
+            "text": "Then let's assign edits now and move to the budget."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C joins the positive moment by proposing a small workplace celebration.",
+        "realization_b_action": "C speeds up the meeting by assigning work and advancing the agenda.",
+        "why_responses_diverge": "The same update invites celebration with the laughter, but prompts moving the meeting along with the groan."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1909,
+        "output_tokens": 829
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C1_family_001",
+      "comparison_id": "C1",
+      "contrast": "enjoyment laughter vs impatient groan",
+      "domain": "family",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Dad found old home videos, and we're all waiting for dinner."
+        },
+        "turn_2_lexical_content": "There are still three more tapes."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Dad found old home videos, and we're all waiting for dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha There are still three more tapes."
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect, let's make a family movie night and watch every one."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Dad found old home videos, and we're all waiting for dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... There are still three more tapes."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's save the tapes for later and get everyone to the table."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C enthusiastically proposes extending the family viewing into a movie night.",
+        "realization_b_action": "C moves the family away from the videos and toward dinner.",
+        "why_responses_diverge": "The same words can signal delight at having more family videos or frustration that the viewing is delaying dinner."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1934,
+        "output_tokens": 704
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C1_health_001",
+      "comparison_id": "C1",
+      "contrast": "enjoyment laughter vs impatient groan",
+      "domain": "health",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Our walk break is halfway done, and the clinic loop continues past the garden."
+        },
+        "turn_2_lexical_content": "The garden path is next."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our walk break is halfway done, and the clinic loop continues past the garden."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha The garden path is next."
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect—let's take it and see whether the roses are blooming."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our walk break is halfway done, and the clinic loop continues past the garden."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... The garden path is next."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's skip that loop and head back before our break ends."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C enthusiastically extends the walk through the garden.",
+        "realization_b_action": "C shortens the walk and directs the group back.",
+        "why_responses_diverge": "B's vocalization makes the same route update sound either playful enjoyment or impatience to finish the walk."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1960,
+        "output_tokens": 391
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C1_entertainment_001",
+      "comparison_id": "C1",
+      "contrast": "enjoyment laughter vs impatient groan",
+      "domain": "entertainment",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The concert doors just opened, and the band has not started yet."
+        },
+        "turn_2_lexical_content": "We still have the whole set ahead of us."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The concert doors just opened, and the band has not started yet."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha We still have the whole set ahead of us."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, let’s find a spot close to the stage."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The concert doors just opened, and the band has not started yet."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... We still have the whole set ahead of us."
+          },
+          {
+            "speaker": "C",
+            "text": "Then let’s stop chatting and get inside now."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C joins B’s positive anticipation by suggesting they choose a good viewing spot.",
+        "realization_b_action": "C responds to B’s impatience by urging the group to move inside immediately.",
+        "why_responses_diverge": "The identical words can express excitement about the upcoming performance or frustration with the wait; the vocalization determines whether C celebrates or hurries the group along."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1981,
+        "output_tokens": 629
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C1_travel_001",
+      "comparison_id": "C1",
+      "contrast": "enjoyment laughter vs impatient groan",
+      "domain": "travel",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Our flight boards in twenty minutes, and we're standing near the gate."
+        },
+        "turn_2_lexical_content": "The souvenir kiosk is still open."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our flight boards in twenty minutes, and we're standing near the gate."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha The souvenir kiosk is still open."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, let's grab matching keychains before we board."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our flight boards in twenty minutes, and we're standing near the gate."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... The souvenir kiosk is still open."
+          },
+          {
+            "speaker": "C",
+            "text": "Skip the kiosk; let's join the boarding line now."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C enthusiastically proposes a quick souvenir stop.",
+        "realization_b_action": "C urges the group to bypass the kiosk and proceed to boarding.",
+        "why_responses_diverge": "B's vocalization makes the open kiosk sound either like a fun opportunity or an unwanted delay."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2007,
+        "output_tokens": 704
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C2_school_001",
+      "comparison_id": "C2",
+      "contrast": "enjoyment laughter vs exhausted sigh",
+      "domain": "school",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Our robotics team just finished sorting donated parts after the club meeting."
+        },
+        "turn_2_lexical_content": "At least the storage room is finally organized."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our robotics team just finished sorting donated parts after the club meeting."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha At least the storage room is finally organized."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, let's take a victory photo before we leave."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[exhausted sigh]",
+        "intended_meaning": "exhausted sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our robotics team just finished sorting donated parts after the club meeting."
+          },
+          {
+            "speaker": "B",
+            "text": "[exhausted sigh] At least the storage room is finally organized."
+          },
+          {
+            "speaker": "C",
+            "text": "Then let's lock up now so everyone can head home."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C celebrates the completed club task with a victory photo.",
+        "realization_b_action": "C wraps up the meeting so B and the team can leave.",
+        "why_responses_diverge": "The same words can mark satisfaction with the work or a tired conclusion after effort."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2026,
+        "output_tokens": 617
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C2_work_001",
+      "comparison_id": "C2",
+      "contrast": "enjoyment laughter vs exhausted sigh",
+      "domain": "work",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The manager just approved our team’s proposal for the client presentation."
+        },
+        "turn_2_lexical_content": "I guess we earned a break before rehearsal."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The manager just approved our team’s proposal for the client presentation."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha I guess we earned a break before rehearsal."
+          },
+          {
+            "speaker": "C",
+            "text": "Absolutely—let’s grab coffee and toast the approval before we practice."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[exhausted sigh]",
+        "intended_meaning": "exhausted sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The manager just approved our team’s proposal for the client presentation."
+          },
+          {
+            "speaker": "B",
+            "text": "[exhausted sigh] I guess we earned a break before rehearsal."
+          },
+          {
+            "speaker": "C",
+            "text": "Let’s take ten minutes now, then keep the rehearsal short."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C celebrates the approval and suggests a coffee toast.",
+        "realization_b_action": "C protects B’s need to rest by proposing a short break and abbreviated rehearsal.",
+        "why_responses_diverge": "The same words invite a break, but the vocalization makes it either a cheerful celebration or a need for recovery."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2052,
+        "output_tokens": 400
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C2_family_001",
+      "comparison_id": "C2",
+      "contrast": "enjoyment laughter vs exhausted sigh",
+      "domain": "family",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Mom, the kitchen is finally clean, and everyone helped after dinner."
+        },
+        "turn_2_lexical_content": "Now we can all sit down for the movie."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Mom, the kitchen is finally clean, and everyone helped after dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha Now we can all sit down for the movie."
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect—family movie night officially starts with popcorn."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[exhausted sigh]",
+        "intended_meaning": "exhausted sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Mom, the kitchen is finally clean, and everyone helped after dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[exhausted sigh] Now we can all sit down for the movie."
+          },
+          {
+            "speaker": "C",
+            "text": "You two relax; I’ll bring the blankets and start it."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C celebrates the start of family movie night.",
+        "realization_b_action": "C takes over the remaining setup so B can rest.",
+        "why_responses_diverge": "The same words can mark cheerful anticipation or a need to stop working and settle down, depending on B's vocalization."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2072,
+        "output_tokens": 575
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C2_health_001",
+      "comparison_id": "C2",
+      "contrast": "enjoyment laughter vs exhausted sigh",
+      "domain": "health",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The instructor added a cool-down after our lunchtime stretching class."
+        },
+        "turn_2_lexical_content": "I can feel that in my calves."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The instructor added a cool-down after our lunchtime stretching class."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha I can feel that in my calves."
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect, our walking group is getting stronger already."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[exhausted sigh]",
+        "intended_meaning": "exhausted sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The instructor added a cool-down after our lunchtime stretching class."
+          },
+          {
+            "speaker": "B",
+            "text": "[exhausted sigh] I can feel that in my calves."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's sit in the lobby for a few minutes."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C celebrates the beneficial effects of the stretching class.",
+        "realization_b_action": "C suggests a brief rest before the group continues.",
+        "why_responses_diverge": "The laughter supports treating the sensation as a satisfying result, while the sigh supports accommodating B's need for recovery."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2102,
+        "output_tokens": 685
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C2_entertainment_001",
+      "comparison_id": "C2",
+      "contrast": "enjoyment laughter vs exhausted sigh",
+      "domain": "entertainment",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The DJ just announced one final song before the club closes."
+        },
+        "turn_2_lexical_content": "I could stay for one more song."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The DJ just announced one final song before the club closes."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha I could stay for one more song."
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect, let's make it our victory lap on the dance floor."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[exhausted sigh]",
+        "intended_meaning": "exhausted sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The DJ just announced one final song before the club closes."
+          },
+          {
+            "speaker": "B",
+            "text": "[exhausted sigh] I could stay for one more song."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's head out after this one, and I'll call us a ride."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C enthusiastically suggests celebrating by dancing through the final song.",
+        "realization_b_action": "C proposes leaving after the song and arranging transportation home.",
+        "why_responses_diverge": "B's vocalization makes the same willingness to stay sound either playful and celebratory or like a final effort before leaving."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2121,
+        "output_tokens": 715
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C2_travel_001",
+      "comparison_id": "C2",
+      "contrast": "enjoyment laughter vs exhausted sigh",
+      "domain": "travel",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Our hotel room is ready, and the airport shuttle leaves at dawn."
+        },
+        "turn_2_lexical_content": "We have time for one last walk downtown."
+      },
+      "realization_a": {
+        "vocalization": "[happy laugh] haha",
+        "intended_meaning": "enjoyment laughter",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our hotel room is ready, and the airport shuttle leaves at dawn."
+          },
+          {
+            "speaker": "B",
+            "text": "[happy laugh] haha We have time for one last walk downtown."
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect—let's make it a tiny victory lap before we pack."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[exhausted sigh]",
+        "intended_meaning": "exhausted sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our hotel room is ready, and the airport shuttle leaves at dawn."
+          },
+          {
+            "speaker": "B",
+            "text": "[exhausted sigh] We have time for one last walk downtown."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's stay in instead and finish packing early."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C enthusiastically proposes a celebratory final walk before packing.",
+        "realization_b_action": "C suggests resting at the hotel and packing rather than taking the walk.",
+        "why_responses_diverge": "The same words can frame the extra time as a fun opportunity or as one more demand before an early departure."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2143,
+        "output_tokens": 751
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C3_school_001",
+      "comparison_id": "C3",
+      "contrast": "impatient groan vs relief sigh",
+      "domain": "school",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Our lab group has checked every answer, and Mr. Lewis is collecting worksheets."
+        },
+        "turn_2_lexical_content": "We can finally turn in the worksheet."
+      },
+      "realization_a": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our lab group has checked every answer, and Mr. Lewis is collecting worksheets."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... We can finally turn in the worksheet."
+          },
+          {
+            "speaker": "C",
+            "text": "Then hand it over now before he reaches the next table."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[sigh] hoo",
+        "intended_meaning": "relief sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our lab group has checked every answer, and Mr. Lewis is collecting worksheets."
+          },
+          {
+            "speaker": "B",
+            "text": "[sigh] hoo We can finally turn in the worksheet."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, let's clear our table and head to lunch."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C urges B to submit the worksheet immediately before the teacher moves on.",
+        "realization_b_action": "C treats the assignment as finished and begins winding down for lunch.",
+        "why_responses_diverge": "The groan makes the delay feel frustrating and calls for quick action, while the sigh makes submission feel like a completed burden and supports easing off."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2175,
+        "output_tokens": 853
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C3_work_001",
+      "comparison_id": "C3",
+      "contrast": "impatient groan vs relief sigh",
+      "domain": "work",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "In our team meeting, the client signed off on the draft, leaving only the expense report."
+        },
+        "turn_2_lexical_content": "That is the last thing on today's list."
+      },
+      "realization_a": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "In our team meeting, the client signed off on the draft, leaving only the expense report."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... That is the last thing on today's list."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's complete that report now so we can end this meeting."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[sigh] hoo",
+        "intended_meaning": "relief sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "In our team meeting, the client signed off on the draft, leaving only the expense report."
+          },
+          {
+            "speaker": "B",
+            "text": "[sigh] hoo That is the last thing on today's list."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, we can handle that report tomorrow and end the meeting."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C urges the team to finish the remaining report immediately and wrap up the meeting.",
+        "realization_b_action": "C treats the remaining task as non-urgent and ends the meeting for now.",
+        "why_responses_diverge": "The groan makes the final remaining task feel like an unwanted delay, while the sigh makes the nearly completed workload feel settled enough to ease off."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2180,
+        "output_tokens": 731
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C3_family_001",
+      "comparison_id": "C3",
+      "contrast": "impatient groan vs relief sigh",
+      "domain": "family",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Mom has the laundry sorted, and we're folding it before Grandma arrives."
+        },
+        "turn_2_lexical_content": "The last basket is folded."
+      },
+      "realization_a": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Mom has the laundry sorted, and we're folding it before Grandma arrives."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... The last basket is folded."
+          },
+          {
+            "speaker": "C",
+            "text": "Then let's get it into the drawers before Grandma gets here."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[sigh] hoo",
+        "intended_meaning": "relief sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Mom has the laundry sorted, and we're folding it before Grandma arrives."
+          },
+          {
+            "speaker": "B",
+            "text": "[sigh] hoo The last basket is folded."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, leave the drawers for later and come sit with us."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C urges the family to finish putting away the laundry quickly.",
+        "realization_b_action": "C treats the folding task as sufficiently complete and suggests relaxing.",
+        "why_responses_diverge": "The same words report that folding is complete, while the vocalization makes B's stance either impatient to finish remaining chores or relieved enough to stop."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2177,
+        "output_tokens": 689
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C3_health_001",
+      "comparison_id": "C3",
+      "contrast": "impatient groan vs relief sigh",
+      "domain": "health",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The nurse said our checkup forms are complete, and she'll call us in shortly."
+        },
+        "turn_2_lexical_content": "So we can put the clipboards away."
+      },
+      "realization_a": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The nurse said our checkup forms are complete, and she'll call us in shortly."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... So we can put the clipboards away."
+          },
+          {
+            "speaker": "C",
+            "text": "I'll hand them over now, so we can get called in sooner."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[sigh] hoo",
+        "intended_meaning": "relief sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The nurse said our checkup forms are complete, and she'll call us in shortly."
+          },
+          {
+            "speaker": "B",
+            "text": "[sigh] hoo So we can put the clipboards away."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, I'll put them away and we can just relax until then."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C promptly hands over the paperwork to help move the appointment along.",
+        "realization_b_action": "C puts the paperwork away and settles in to wait comfortably.",
+        "why_responses_diverge": "The groan makes B's remark fit a desire to hurry through the remaining wait, while the sigh makes it fit relief that the paperwork is finished."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2181,
+        "output_tokens": 808
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C3_entertainment_001",
+      "comparison_id": "C3",
+      "contrast": "impatient groan vs relief sigh",
+      "domain": "entertainment",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Before our friend's party, we're all adding songs to the shared playlist."
+        },
+        "turn_2_lexical_content": "The playlist is finally set."
+      },
+      "realization_a": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Before our friend's party, we're all adding songs to the shared playlist."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... The playlist is finally set."
+          },
+          {
+            "speaker": "C",
+            "text": "Then save it now; we're already late for the party."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[sigh] hoo",
+        "intended_meaning": "relief sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Before our friend's party, we're all adding songs to the shared playlist."
+          },
+          {
+            "speaker": "B",
+            "text": "[sigh] hoo The playlist is finally set."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, leave it alone; we can head over without rushing."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C urges B to save the playlist immediately and leave for the party.",
+        "realization_b_action": "C treats the playlist as complete and suggests stopping edits and leaving calmly.",
+        "why_responses_diverge": "The groan supports impatience with the delayed task, while the sigh supports relief that the task is finished."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2182,
+        "output_tokens": 826
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C3_travel_001",
+      "comparison_id": "C3",
+      "contrast": "impatient groan vs relief sigh",
+      "domain": "travel",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Our airport car arrives soon, and we're doing a final check of the suitcases."
+        },
+        "turn_2_lexical_content": "The passport copies are in the folder."
+      },
+      "realization_a": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our airport car arrives soon, and we're doing a final check of the suitcases."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... The passport copies are in the folder."
+          },
+          {
+            "speaker": "C",
+            "text": "Put the folder in your carry-on, and let's head downstairs."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[sigh] hoo",
+        "intended_meaning": "relief sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Our airport car arrives soon, and we're doing a final check of the suitcases."
+          },
+          {
+            "speaker": "B",
+            "text": "[sigh] hoo The passport copies are in the folder."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, then we're all set; let's relax until the car arrives."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C urges B to finish packing and leave promptly.",
+        "realization_b_action": "C treats the travel preparation as complete and suggests easing off.",
+        "why_responses_diverge": "The groan makes the remaining travel task feel overdue, while the sigh frames finding the documents as completion."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2178,
+        "output_tokens": 915
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C4_school_001",
+      "comparison_id": "C4",
+      "contrast": "engagement mm-hm vs impatient groan",
+      "domain": "school",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "At debate club, Priya is reviewing tomorrow's tournament schedule with us."
+        },
+        "turn_2_lexical_content": "Tell us what happens after the first round."
+      },
+      "realization_a": {
+        "vocalization": "mm-hm",
+        "intended_meaning": "engagement mm-hm",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "At debate club, Priya is reviewing tomorrow's tournament schedule with us."
+          },
+          {
+            "speaker": "B",
+            "text": "mm-hm Tell us what happens after the first round."
+          },
+          {
+            "speaker": "C",
+            "text": "Yes, then cover the semifinal brackets too."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "At debate club, Priya is reviewing tomorrow's tournament schedule with us."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... Tell us what happens after the first round."
+          },
+          {
+            "speaker": "C",
+            "text": "Could we just hear our arrival time?"
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C encourages Priya to continue explaining later tournament rounds.",
+        "realization_b_action": "C redirects the discussion to a brief, immediately useful detail.",
+        "why_responses_diverge": "The first vocalization supports interest in hearing more of the schedule, while the second supports shortening the explanation."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2182,
+        "output_tokens": 854
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C4_work_001",
+      "comparison_id": "C4",
+      "contrast": "engagement mm-hm vs impatient groan",
+      "domain": "work",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Before the client call, I'm outlining the revised onboarding timeline for everyone."
+        },
+        "turn_2_lexical_content": "The next milestone is the training session on Thursday."
+      },
+      "realization_a": {
+        "vocalization": "mm-hm",
+        "intended_meaning": "engagement mm-hm",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Before the client call, I'm outlining the revised onboarding timeline for everyone."
+          },
+          {
+            "speaker": "B",
+            "text": "mm-hm The next milestone is the training session on Thursday."
+          },
+          {
+            "speaker": "C",
+            "text": "Could you also cover who owns the training materials?"
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Before the client call, I'm outlining the revised onboarding timeline for everyone."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... The next milestone is the training session on Thursday."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's save the ownership details for the follow-up email."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C invites A to continue the timeline discussion with another relevant detail.",
+        "realization_b_action": "C shortens the discussion by deferring details until later.",
+        "why_responses_diverge": "B's vocalization makes the same milestone statement sound either like engaged participation or a signal to move the meeting along."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2186,
+        "output_tokens": 659
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C4_family_001",
+      "comparison_id": "C4",
+      "contrast": "engagement mm-hm vs impatient groan",
+      "domain": "family",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Dad is showing us photos from his childhood after Sunday dinner."
+        },
+        "turn_2_lexical_content": "What happened when Grandpa saw that one?"
+      },
+      "realization_a": {
+        "vocalization": "mm-hm",
+        "intended_meaning": "engagement mm-hm",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Dad is showing us photos from his childhood after Sunday dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "mm-hm What happened when Grandpa saw that one?"
+          },
+          {
+            "speaker": "C",
+            "text": "Dad, tell us what Grandpa said next."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Dad is showing us photos from his childhood after Sunday dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... What happened when Grandpa saw that one?"
+          },
+          {
+            "speaker": "C",
+            "text": "Dad, maybe save the rest for another night; dessert is getting cold."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C invites Dad to continue the story.",
+        "realization_b_action": "C suggests ending the story and shifting back to dessert.",
+        "why_responses_diverge": "The first vocalization makes B's question sound like interested encouragement, while the second makes it sound like a request to move things along."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2184,
+        "output_tokens": 702
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C4_health_001",
+      "comparison_id": "C4",
+      "contrast": "engagement mm-hm vs impatient groan",
+      "domain": "health",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The nurse says the three of us should keep consistent sleep schedules."
+        },
+        "turn_2_lexical_content": "I usually wake up around then."
+      },
+      "realization_a": {
+        "vocalization": "mm-hm",
+        "intended_meaning": "engagement mm-hm",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The nurse says the three of us should keep consistent sleep schedules."
+          },
+          {
+            "speaker": "B",
+            "text": "mm-hm I usually wake up around then."
+          },
+          {
+            "speaker": "C",
+            "text": "Could you explain how weekends fit into that schedule?"
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The nurse says the three of us should keep consistent sleep schedules."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... I usually wake up around then."
+          },
+          {
+            "speaker": "C",
+            "text": "Could we finish the checkup questions now?"
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C invites the nurse to continue discussing sleep routines.",
+        "realization_b_action": "C redirects the conversation to wrap up the sleep discussion and continue the checkup.",
+        "why_responses_diverge": "B's vocalization either invites further discussion of the sleep advice or signals a wish to move past it."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2184,
+        "output_tokens": 899
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C4_entertainment_001",
+      "comparison_id": "C4",
+      "contrast": "engagement mm-hm vs impatient groan",
+      "domain": "entertainment",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "Before the sequel starts, I’m filling you both in on the first film."
+        },
+        "turn_2_lexical_content": "There is also a connection to the final scene."
+      },
+      "realization_a": {
+        "vocalization": "mm-hm",
+        "intended_meaning": "engagement mm-hm",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Before the sequel starts, I’m filling you both in on the first film."
+          },
+          {
+            "speaker": "B",
+            "text": "mm-hm There is also a connection to the final scene."
+          },
+          {
+            "speaker": "C",
+            "text": "Keep going—I want to hear how that connection works."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "Before the sequel starts, I’m filling you both in on the first film."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... There is also a connection to the final scene."
+          },
+          {
+            "speaker": "C",
+            "text": "Let’s save the recap and start the sequel now."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C invites A to continue the recap.",
+        "realization_b_action": "C ends the recap and moves the group to the sequel.",
+        "why_responses_diverge": "B’s vocalization either supports continued discussion or signals that the recap should be wrapped up."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2181,
+        "output_tokens": 806
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C4_travel_001",
+      "comparison_id": "C4",
+      "contrast": "engagement mm-hm vs impatient groan",
+      "domain": "travel",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "While we wait at the gate, I'm outlining our weekend itinerary."
+        },
+        "turn_2_lexical_content": "What comes after the harbor tour?"
+      },
+      "realization_a": {
+        "vocalization": "mm-hm",
+        "intended_meaning": "engagement mm-hm",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "While we wait at the gate, I'm outlining our weekend itinerary."
+          },
+          {
+            "speaker": "B",
+            "text": "mm-hm What comes after the harbor tour?"
+          },
+          {
+            "speaker": "C",
+            "text": "A, could you go over the evening train next?"
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]...",
+        "intended_meaning": "impatient groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "While we wait at the gate, I'm outlining our weekend itinerary."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan]... What comes after the harbor tour?"
+          },
+          {
+            "speaker": "C",
+            "text": "Let's board now and look over the rest later."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C invites A to continue describing the itinerary.",
+        "realization_b_action": "C ends the itinerary discussion and redirects the group to boarding.",
+        "why_responses_diverge": "B's vocalization makes the same question sound either like interest in more itinerary details or a wish to move on from the discussion."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 2187,
+        "output_tokens": 734
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    }
+  ]
+}

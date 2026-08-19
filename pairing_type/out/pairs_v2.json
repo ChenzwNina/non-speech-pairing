@@ -1,0 +1,486 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-14T20:06:43.910425+00:00",
+  "contrasts": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7"
+  ],
+  "n_per_contrast": 1,
+  "results": [
+    {
+      "item_id": "C1_001",
+      "comparison_id": "C1",
+      "contrast": "Enjoyment laugh vs. Exhaustion sigh",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The three of us finished packing before the movers get here."
+        },
+        "turn_2_lexical_content": "We actually got it all done."
+      },
+      "realization_a": {
+        "vocalization": "[enjoyment laugh]",
+        "intended_meaning": "enjoyment laugh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The three of us finished packing before the movers get here."
+          },
+          {
+            "speaker": "B",
+            "text": "[enjoyment laugh] We actually got it all done."
+          },
+          {
+            "speaker": "C",
+            "text": "We beat the clock—pizza is on me tonight."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[negative sigh]",
+        "intended_meaning": "negative sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The three of us finished packing before the movers get here."
+          },
+          {
+            "speaker": "B",
+            "text": "[negative sigh] We actually got it all done."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's take ten minutes; I'll get everyone water."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C celebrates the group's accomplishment by offering pizza.",
+        "realization_b_action": "C responds by suggesting a break and bringing water.",
+        "why_responses_diverge": "The same words can mark pleased amusement or weary completion, leading C to celebrate versus support a rest."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1807,
+        "output_tokens": 689
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C2_001",
+      "comparison_id": "C2",
+      "contrast": "Enjoyment laugh vs. Alarm gasp",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "While cleaning the hall closet, I found this old Halloween box."
+        },
+        "turn_2_lexical_content": "Look at this thing."
+      },
+      "realization_a": {
+        "vocalization": "[enjoyment laugh]",
+        "intended_meaning": "enjoyment laugh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "While cleaning the hall closet, I found this old Halloween box."
+          },
+          {
+            "speaker": "B",
+            "text": "[enjoyment laugh] Look at this thing."
+          },
+          {
+            "speaker": "C",
+            "text": "If that wig fits, you're wearing it for the group photo."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[gasp]",
+        "intended_meaning": "gasp",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "While cleaning the hall closet, I found this old Halloween box."
+          },
+          {
+            "speaker": "B",
+            "text": "[gasp] Look at this thing."
+          },
+          {
+            "speaker": "C",
+            "text": "It's only a plastic spider; I put it there last Halloween."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C joins the playful joke about the costume item.",
+        "realization_b_action": "C identifies the startling item and reassures B that it is harmless.",
+        "why_responses_diverge": "The same words can accompany amusement at a ridiculous costume item or alarm at mistaking a plastic spider for something real."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1849,
+        "output_tokens": 647
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C3_001",
+      "comparison_id": "C3",
+      "contrast": "Consideration hmm vs. Rejection scoff",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "For the team lunch, I thought we could try the new Ethiopian place."
+        },
+        "turn_2_lexical_content": "That could be interesting."
+      },
+      "realization_a": {
+        "vocalization": "[genuine consideration hmm]",
+        "intended_meaning": "genuine consideration hmm",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "For the team lunch, I thought we could try the new Ethiopian place."
+          },
+          {
+            "speaker": "B",
+            "text": "[genuine consideration hmm] That could be interesting."
+          },
+          {
+            "speaker": "C",
+            "text": "They have a sampler platter; I can pull up the menu."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[rejection scoff]",
+        "intended_meaning": "rejection scoff",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "For the team lunch, I thought we could try the new Ethiopian place."
+          },
+          {
+            "speaker": "B",
+            "text": "[rejection scoff] That could be interesting."
+          },
+          {
+            "speaker": "C",
+            "text": "It has vegetarian options and is only two blocks away."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C elaborates on the restaurant's menu to support B's consideration.",
+        "realization_b_action": "C justifies the suggestion by addressing likely objections about convenience and options.",
+        "why_responses_diverge": "The first vocalization invites more information, while the second prompts C to defend the proposal."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1882,
+        "output_tokens": 577
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C4_001",
+      "comparison_id": "C4",
+      "contrast": "Engagement uh-huh vs. Boredom yawn",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "I found the photo album from our college road trip."
+        },
+        "turn_2_lexical_content": "There are more pictures in the back."
+      },
+      "realization_a": {
+        "vocalization": "[attentive encouragement]",
+        "intended_meaning": "attentive encouragement",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "I found the photo album from our college road trip."
+          },
+          {
+            "speaker": "B",
+            "text": "[attentive encouragement] There are more pictures in the back."
+          },
+          {
+            "speaker": "C",
+            "text": "Great, show us the ones from the beach stop too."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[disengagement yawn]",
+        "intended_meaning": "disengagement yawn",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "I found the photo album from our college road trip."
+          },
+          {
+            "speaker": "B",
+            "text": "[disengagement yawn] There are more pictures in the back."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's save the rest for later and start dinner."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C invites A to continue looking through the album.",
+        "realization_b_action": "C suggests wrapping up the album viewing and moving on.",
+        "why_responses_diverge": "B's identical words point to additional photos, while the vocalization makes that observation either an invitation to continue or a cue to shorten the activity."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1907,
+        "output_tokens": 392
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C5_001",
+      "comparison_id": "C5",
+      "contrast": "Surprise gasp vs. Disappointment sigh",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "All three of us are listed in the same project group."
+        },
+        "turn_2_lexical_content": "We're all in the same group."
+      },
+      "realization_a": {
+        "vocalization": "[gasp]",
+        "intended_meaning": "gasp",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "All three of us are listed in the same project group."
+          },
+          {
+            "speaker": "B",
+            "text": "[gasp] We're all in the same group."
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect—let's celebrate with coffee and plan our first meeting."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[negative sigh]",
+        "intended_meaning": "negative sigh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "All three of us are listed in the same project group."
+          },
+          {
+            "speaker": "B",
+            "text": "[negative sigh] We're all in the same group."
+          },
+          {
+            "speaker": "C",
+            "text": "Oh no, is that disappointing? We can ask for a reassignment."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C treats the grouping as welcome news and proposes celebrating and planning.",
+        "realization_b_action": "C acknowledges B's apparent disappointment and offers to seek a different assignment.",
+        "why_responses_diverge": "The identical words can signal either pleased surprise or dismay; B's vocalization determines whether C celebrates or offers help."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1905,
+        "output_tokens": 826
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C6_001",
+      "comparison_id": "C6",
+      "contrast": "Excitement gasp vs. Reluctance groan",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "The board-game café has an open table, and we're all free tonight."
+        },
+        "turn_2_lexical_content": "We could stay until closing."
+      },
+      "realization_a": {
+        "vocalization": "[gasp]",
+        "intended_meaning": "gasp",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The board-game café has an open table, and we're all free tonight."
+          },
+          {
+            "speaker": "B",
+            "text": "[gasp] We could stay until closing."
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect, I'll reserve it and bring the expansion pack."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[groan]",
+        "intended_meaning": "groan",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "The board-game café has an open table, and we're all free tonight."
+          },
+          {
+            "speaker": "B",
+            "text": "[groan] We could stay until closing."
+          },
+          {
+            "speaker": "C",
+            "text": "Let's keep it short and head home after one game."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C enthusiastically commits to an extended game-night plan.",
+        "realization_b_action": "C scales the plan back to avoid staying late.",
+        "why_responses_diverge": "The same suggestion is received as eager interest in one realization and reluctance in the other."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1928,
+        "output_tokens": 592
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "C7_001",
+      "comparison_id": "C7",
+      "contrast": "Shared Fun vs. Shock",
+      "shared_context": {
+        "turn_1": {
+          "speaker": "A",
+          "text": "I brought the bakery's mystery cake for us to taste after dinner."
+        },
+        "turn_2_lexical_content": "They put that on top?"
+      },
+      "realization_a": {
+        "vocalization": "[enjoyment laugh]",
+        "intended_meaning": "enjoyment laugh",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "I brought the bakery's mystery cake for us to taste after dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[enjoyment laugh] They put that on top?"
+          },
+          {
+            "speaker": "C",
+            "text": "Perfect—let's see whether the frosting tastes as wild as it looks."
+          }
+        ]
+      },
+      "realization_b": {
+        "vocalization": "[gasp]",
+        "intended_meaning": "gasp",
+        "transcript": [
+          {
+            "speaker": "A",
+            "text": "I brought the bakery's mystery cake for us to taste after dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[gasp] They put that on top?"
+          },
+          {
+            "speaker": "C",
+            "text": "Yes, it is edible; the baker said the decoration is spun sugar."
+          }
+        ]
+      },
+      "response_difference": {
+        "realization_a_action": "C joins the playful reaction and extends the joke about the cake.",
+        "realization_b_action": "C seriously reassures B and explains the unusual decoration.",
+        "why_responses_diverge": "The same question treats the decoration as amusing in A but as startling and requiring reassurance in B."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "third_turn_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1954,
+        "output_tokens": 591
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    }
+  ]
+}

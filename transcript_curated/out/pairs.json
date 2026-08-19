@@ -1,0 +1,785 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-15T01:44:07.914394+00:00",
+  "pairs": [
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "domains": [
+    "school",
+    "work",
+    "family",
+    "health",
+    "entertainment"
+  ],
+  "n_per_pair_domain": 1,
+  "results": [
+    {
+      "item_id": "P1_school_001",
+      "pair_id": "P1",
+      "contrast": "enjoyment big laugh vs sympathetic laugh",
+      "domain": "school",
+      "turn_1": {
+        "speaker": "A",
+        "text": "We’re all outside the library when my poster board slides into the fountain."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "The ink spread across the whole timeline before we could grab it."
+      },
+      "turn_3_lexical": "At least the fish got to study ancient Rome.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha At least the fish got to study ancient Rome."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "At least the fish got to [sympathetic] study ancient Rome."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I’m taking a picture for the history club group chat."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "I have spare paper in my bag; let’s remake the timeline."
+      },
+      "response_difference": {
+        "version_a_action": "C joins the moment by documenting the poster mishap for classmates.",
+        "version_b_action": "C offers supplies and helps replace the damaged assignment.",
+        "why_responses_diverge": "The same remark invites either playful participation or practical support depending on its delivery."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1503,
+        "output_tokens": 656
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P1_work_001",
+      "pair_id": "P1",
+      "contrast": "enjoyment big laugh vs sympathetic laugh",
+      "domain": "work",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are in a client meeting when my screen share opens the unfinished slide deck."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "I close it and bring up the final version while the client waits."
+      },
+      "turn_3_lexical": "At least the client saw our creative process.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha At least the client saw our creative process."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "At least the client [sympathetic] saw our creative process."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I’m putting that line in the team chat with the screenshot."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "I’ll check the revised deck with you before we send it."
+      },
+      "response_difference": {
+        "version_a_action": "C shares the line and screenshot internally as a shared joke.",
+        "version_b_action": "C offers practical help reviewing the deck before it is sent.",
+        "why_responses_diverge": "The first vocalization invites amusement about the mishap, while the second makes the same words fit a gentler response to it."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1551,
+        "output_tokens": 870
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P1_family_001",
+      "pair_id": "P1",
+      "contrast": "enjoyment big laugh vs sympathetic laugh",
+      "domain": "family",
+      "turn_1": {
+        "speaker": "A",
+        "text": "Dad, Mia, and I are mixing cupcake batter in our kitchen when the mixer sprays the counter."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "The bowl slipped just as I reached for the vanilla."
+      },
+      "turn_3_lexical": "At least the kitchen has a new polka-dot pattern.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha At least the kitchen has a new polka-dot pattern."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "At least the kitchen has a [sympathetic] new polka-dot pattern."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "Dad, leave it there until I get a picture for the family group chat."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "I'll grab towels and help wipe the cabinets before the cupcakes cool."
+      },
+      "response_difference": {
+        "version_a_action": "C preserves the splattered counter long enough to share it as a family joke.",
+        "version_b_action": "C offers practical cleanup help to reduce the inconvenience.",
+        "why_responses_diverge": "The joyful laugh frames the mishap as amusing, while the sympathetic vocalization frames it as something worth easing."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1880,
+        "output_tokens": 720
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P1_health_001",
+      "pair_id": "P1",
+      "contrast": "enjoyment big laugh vs sympathetic laugh",
+      "domain": "health",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are finishing our park walk when I catch my shoe on the curb."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "You landed on the grass, but your ankle twisted a little."
+      },
+      "turn_3_lexical": "At least my stretching routine got an unexpected new move.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha At least my stretching routine got an unexpected new move."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "At least my stretching routine got an [sympathetic] unexpected new move."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I’m adding curb choreography to our next walk."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "Sit with me a minute; I’ll grab the ice pack from my bag."
+      },
+      "response_difference": {
+        "version_a_action": "C extends the moment as a shared joke by inventing a playful name for it.",
+        "version_b_action": "C offers practical comfort and support after the awkward landing.",
+        "why_responses_diverge": "A's vocalization frames the remark as amusement, while B's placement of the sympathetic vocalization frames it as a gentle acknowledgment of lingering discomfort."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1608,
+        "output_tokens": 609
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P1_entertainment_001",
+      "pair_id": "P1",
+      "contrast": "enjoyment big laugh vs sympathetic laugh",
+      "domain": "entertainment",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are at the amphitheater when my folding chair collapses."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "The chair bangs the pavement between songs, and people turn toward us."
+      },
+      "turn_3_lexical": "At least I made the encore memorable for everyone.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha At least I made the encore memorable for everyone."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "At least I made the encore [sympathetic] memorable for everyone."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I’m calling that the opening act for your standing ovation."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "Take my seat; I’ll stand by the rail for the last song."
+      },
+      "response_difference": {
+        "version_a_action": "C extends the moment as a shared joke about the concert.",
+        "version_b_action": "C offers A a working seat and takes the less comfortable spot.",
+        "why_responses_diverge": "The first delivery invites playful participation, while the second prompts practical support after the mishap."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1636,
+        "output_tokens": 714
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P2_school_001",
+      "pair_id": "P2",
+      "contrast": "sarcastic laugh vs enjoyment big laugh",
+      "domain": "school",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are in the science club room when our robot bumps the supply cabinet."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "The principal is due here, and the cabinet door swings open."
+      },
+      "turn_3_lexical": "That certainly gives our demonstration a memorable opening.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[sarcastic] ha... ha... ha... That certainly gives our demonstration a memorable opening."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha That certainly gives our demonstration a memorable opening."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I’ll close the cabinet and reset the robot on its marked starting line."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "I’ll invite the principal to watch its surprise entrance from the doorway."
+      },
+      "response_difference": {
+        "version_a_action": "C treats the remark as criticism and resets the demonstration to avoid the cabinet collision.",
+        "version_b_action": "C treats the remark as pleased amusement and incorporates the robot's entrance into the demonstration.",
+        "why_responses_diverge": "The same evaluation can praise the unexpected opening or dryly criticize the mishap, depending on the laugh."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1654,
+        "output_tokens": 765
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P2_work_001",
+      "pair_id": "P2",
+      "contrast": "sarcastic laugh vs enjoyment big laugh",
+      "domain": "work",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are reviewing the campaign mockup before sending it to the manager."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "The client asked for something bold, so I used the brightest template."
+      },
+      "turn_3_lexical": "This should make the manager's morning.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[sarcastic] ha... ha... ha... This should make the manager's morning."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha This should make the manager's morning."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I'll switch to the calmer layout and pull back the colors before we send it."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "I'll add it to the agenda and bring coffee for the manager's reveal."
+      },
+      "response_difference": {
+        "version_a_action": "C revises the mockup toward a more restrained design before submission.",
+        "version_b_action": "C treats the mockup as a success and prepares a cheerful reveal for the manager.",
+        "why_responses_diverge": "The same evaluation reads as dry criticism with the sarcastic laugh, but as genuine excitement with the happy laugh."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1685,
+        "output_tokens": 580
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P2_family_001",
+      "pair_id": "P2",
+      "contrast": "sarcastic laugh vs enjoyment big laugh",
+      "domain": "family",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are sorting Grandma's attic photos at the dining-room table."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "I put every picture into one folder so we can make a slideshow tonight."
+      },
+      "turn_3_lexical": "What a wonderfully efficient system for finding the old pictures.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[sarcastic] ha... ha... ha... What a wonderfully efficient system for finding the old pictures."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha What a wonderfully efficient system for finding the old pictures."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I'll split the folder into years before we start the slideshow."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "I'll bring popcorn and queue up the slideshow for everyone."
+      },
+      "response_difference": {
+        "version_a_action": "C reorganizes the photo folder by year before the slideshow.",
+        "version_b_action": "C prepares to enjoy the slideshow with the family.",
+        "why_responses_diverge": "In version A, C treats A's remark as a complaint about the single-folder organization. In version B, C treats it as pleased approval of the plan."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1708,
+        "output_tokens": 846
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P2_health_001",
+      "pair_id": "P2",
+      "contrast": "sarcastic laugh vs enjoyment big laugh",
+      "domain": "health",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us meet at the park before work for our new walking plan."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "The fitness app recorded eight minutes before it stopped syncing."
+      },
+      "turn_3_lexical": "This walking plan is really off to a start.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[sarcastic] ha... ha... ha... This walking plan is really off to a start."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha This walking plan is really off to a start."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I'll restart the tracker and set a reminder before tomorrow's walk."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "I'll log our first walk manually and take a group photo."
+      },
+      "response_difference": {
+        "version_a_action": "C treats the remark as criticism and fixes the tracking routine for the next walk.",
+        "version_b_action": "C treats the remark as cheerful and commemorates the group's first walk.",
+        "why_responses_diverge": "The same evaluation sounds mocking with the sarcastic laugh but pleased with the happy laugh."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1741,
+        "output_tokens": 1364
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P2_entertainment_001",
+      "pair_id": "P2",
+      "contrast": "sarcastic laugh vs enjoyment big laugh",
+      "domain": "entertainment",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are at a comedy club when the headliner starts taking requests."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "The first request is the theme song from our old favorite show."
+      },
+      "turn_3_lexical": "This is exactly the kind of reunion I hoped for.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[sarcastic] ha... ha... ha... This is exactly the kind of reunion I hoped for."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy laugh] hahahaha This is exactly the kind of reunion I hoped for."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I’ll tell the host we’re done with requests before the next one starts."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "I’ll put in our favorite finale song for the next request."
+      },
+      "response_difference": {
+        "version_a_action": "C stops the request idea by speaking to the host.",
+        "version_b_action": "C joins the fun by submitting another request.",
+        "why_responses_diverge": "A's vocalization makes the same evaluation land as criticism in A and genuine delight in B."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1766,
+        "output_tokens": 749
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P3_school_001",
+      "pair_id": "P3",
+      "contrast": "exhausted sigh vs relief sigh",
+      "domain": "school",
+      "turn_1": {
+        "speaker": "A",
+        "text": "We’re all in the classroom, checking the final pages of our history club newsletter."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "I just uploaded the last photo, so only the captions need a final check."
+      },
+      "turn_3_lexical": "The last caption is finally in place.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[heavy sigh]... The last caption is finally in place."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy]hooo[exhale] The last caption is finally in place."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I’ll proofread that caption myself; you can pack up your laptop."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "Great, I’ll close the shared document and walk with you to the bus."
+      },
+      "response_difference": {
+        "version_a_action": "C takes over the remaining proofreading and lets A stop working.",
+        "version_b_action": "C closes the completed document and leaves with A.",
+        "why_responses_diverge": "The first delivery suggests A needs a break despite completing the caption, while the second marks completion as a release."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1782,
+        "output_tokens": 564
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P3_work_001",
+      "pair_id": "P3",
+      "contrast": "exhausted sigh vs relief sigh",
+      "domain": "work",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are in the conference room checking final contract revisions before the client call."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "I added legal's last comment and saved the clean copy."
+      },
+      "turn_3_lexical": "The final version is ready to send now.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[heavy sigh]... The final version is ready to send now."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy]hooo[exhale] The final version is ready to send now."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I'll send it and handle the follow-up notes; take five minutes away from the screen."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "Great, I'll mark revisions complete and release the conference room before the call."
+      },
+      "response_difference": {
+        "version_a_action": "C takes over the immediate sending and follow-up work so A can pause.",
+        "version_b_action": "C closes out the completed revision task and clears the room for the next meeting step.",
+        "why_responses_diverge": "The same words can signal either that A has reached a limit after finishing the work or that the completed task has lifted a burden."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1811,
+        "output_tokens": 700
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P3_family_001",
+      "pair_id": "P3",
+      "contrast": "exhausted sigh vs relief sigh",
+      "domain": "family",
+      "turn_1": {
+        "speaker": "A",
+        "text": "Mom, my brother, and I are folding laundry in the living room before Aunt Rosa visits."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "I found the last stack of towels behind the armchair."
+      },
+      "turn_3_lexical": "The final basket is put away now.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[heavy sigh]... The final basket is put away now."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy]hooo[exhale] The final basket is put away now."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "You two sit down; I'll set out the snacks myself."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "Great, then let's all sit down until Aunt Rosa gets here."
+      },
+      "response_difference": {
+        "version_a_action": "C sends A and B to rest and takes over the remaining hosting task.",
+        "version_b_action": "C treats the chores as complete and joins everyone in taking a break.",
+        "why_responses_diverge": "The first delivery makes C respond by reducing A's workload, while the second makes C close out the task and relax with the family."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1836,
+        "output_tokens": 1066
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P3_health_001",
+      "pair_id": "P3",
+      "contrast": "exhausted sigh vs relief sigh",
+      "domain": "health",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are finishing the last stretches of our evening mobility routine."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "I counted the final hold, and the timer has just stopped."
+      },
+      "turn_3_lexical": "That is the final stretch for today.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[heavy sigh]... That is the final stretch for today."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy]hooo[exhale] That is the final stretch for today."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I'll roll up the mats; sit down and rest your legs."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "Great, let's roll up the mats together and get some water."
+      },
+      "response_difference": {
+        "version_a_action": "C takes over the cleanup and directs A to rest.",
+        "version_b_action": "C treats the routine as complete and joins the group in winding down.",
+        "why_responses_diverge": "The first delivery suggests A needs a break after the routine, while the second marks the ending as a welcome completion."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1842,
+        "output_tokens": 802
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    },
+    {
+      "item_id": "P3_entertainment_001",
+      "pair_id": "P3",
+      "contrast": "exhausted sigh vs relief sigh",
+      "domain": "entertainment",
+      "turn_1": {
+        "speaker": "A",
+        "text": "The three of us are packing up after the band's late set at the festival."
+      },
+      "turn_2": {
+        "speaker": "B",
+        "text": "I rolled the last cable, and the stage manager is waiting by the gate."
+      },
+      "turn_3_lexical": "The last speaker is finally loaded into the van.",
+      "turn_3_a": {
+        "speaker": "A",
+        "text": "[heavy sigh]... The last speaker is finally loaded into the van."
+      },
+      "turn_3_b": {
+        "speaker": "A",
+        "text": "[happy]hooo[exhale] The last speaker is finally loaded into the van."
+      },
+      "turn_4_a": {
+        "speaker": "C",
+        "text": "I'll lock the van and return the passes; you can sit down."
+      },
+      "turn_4_b": {
+        "speaker": "C",
+        "text": "Great, let's hand over the keys and catch the final shuttle."
+      },
+      "response_difference": {
+        "version_a_action": "C takes over the remaining wrap-up tasks so A can rest.",
+        "version_b_action": "C treats the load-out as complete and moves the group toward leaving together.",
+        "why_responses_diverge": "The exhausted delivery suggests A needs a break, while the relieved delivery signals that the final task is complete."
+      },
+      "quality_check": {
+        "turn_1_identical": true,
+        "turn_2_identical": true,
+        "turn_3_words_identical": true,
+        "only_vocalization_changes": true,
+        "both_meanings_plausible_from_same_words": true,
+        "turn_4_actions_differ": true,
+        "vocalization_meaning_not_explicitly_named": true
+      },
+      "usage": {
+        "input_tokens": 1834,
+        "output_tokens": 566
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1
+    }
+  ]
+}
