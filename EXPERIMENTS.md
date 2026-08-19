@@ -14,7 +14,85 @@ Task 1 = `pairing_type`. Task 2 = `predicting_content`.
 
 ---
 
-## 1. `pairing_type/` — same words, different vocalization → attitude
+## 1. `predicting_response/` — same setup, different vocalization → different next response
+
+**Purpose.** Hold the spoken words fixed, change only Speaker B’s vocalization, and see whether the next appropriate reply changes with it. Where `pairing_type` asks what B *feels*, this asks what should *happen next*. A text-only model is guessing; the sound has to pick the continuation.
+
+### Dataset
+
+Default run: **two speakers**, exactly **six turns** (`--speakers 2`, `--context-turns 4`). Speaker A talks; Speaker B has no lexical speech anywhere. B’s first contribution is a voc-only tag, meant to be spliced in later as **external audio**.
+
+
+| Turn | Speaker | Control                                                                                          |
+| ---- | ------- | ------------------------------------------------------------------------------------------------ |
+| 1–3  | A       | Setup. Word-for-word identical across the pair. No tags. Separate utterances, not one paragraph. |
+| 4    | A       | **The trigger** — the reveal B reacts to. Identical across the pair. Never a question.           |
+| 5    | B       | The vocalization alone (`[gasp]`, `[grunt]`, `[laughter]`, `[sigh]`, `[sob]`, `[yawn]`).         |
+| 6    | A       | The reply the vocalization selects. Differs between versions. Must not name the sound.           |
+
+
+Turn 4 is the beat that invites a reaction. Nothing may sit between it and B’s voc. Early drafts let the news land at turn 3 and filled turn 4 with housekeeping (`It'll be waiting at the front desk`), so B reacted to the wrong line. A question on turn 4 is also banned: that makes turn 6 an answer to A instead of a reading of B.
+
+`--speakers 3` is an optional A/C context with either of them replying; `--context-turns 8` is a 10-turn variant. The generated set is the two-speaker default.
+
+Six vocalizations paired every unordered way = **15 contrasts**. `--n` sets pairs per contrast (default 1). The writer picks each version’s interpretation from that voc’s meaning list to fit the scene it invented, rather than having a meaning assigned up front.
+
+**Current run.** `gpt-5.6-terra`, high effort, judged. **14/15** valid pairs in `predicting_response/out/pairs.json`. `gasp`–`sob` failed after 4 attempts (replies swapped freely). All 14 survivors pass every audit property.
+
+Example (`gasp_grunt_001`):
+
+```
+1. A: The festival coordinator called right after rehearsal.
+2. A: Our little afternoon slot disappeared because another act canceled.
+3. A: She offered us the main stage, but she needed an answer tonight.
+4. A: I told her we'd play Saturday in front of ten thousand people.
+
+[gasp]  (fear)                 -> A: You're right, I got carried away. I'll call her
+                                      back and withdraw before she locks us in.
+[grunt] (reluctant agreement)  -> A: Okay, I'll confirm the slot and book us extra
+                                      rehearsals every night this week.
+```
+
+**Audio.** None yet. Intended splice: turns 1–4 speech + curated B voc. Response options stay separate as the two answer choices. One synthesized voice for A; B is never TTS’d.
+
+**Generation check.** Mechanical: exactly 4 A-only context turns, no tags, turn 4 not a question, no line predicting B’s reaction, exact plain tags, same responder, replies differ and do not name the sound.
+
+**Contrast audit** (a second model pass, `--no-judge` to skip). Eight properties; items rebuild up to 4 times:
+
+
+| Property                           | Rejects                                                              |
+| ---------------------------------- | -------------------------------------------------------------------- |
+| `trigger_is_last_shared_turn`      | B reacting to logistics, a summary, or an aside                      |
+| `both_vocalizations_natural_here`  | a gasp with nothing surprising, a yawn with no tedium                |
+| `interpretations_fit_the_context`  | a meaning forced onto a scene that doesn’t earn it                   |
+| `undecidable_from_text_alone`      | context that already points at one reply                             |
+| `replies_commit_to_different_actions` | same decision in two tones                                        |
+| `voc1_favors_reply1` / `voc2_favors_reply2` | a link that is merely compatible, not specific               |
+| `swapping_replies_is_clearly_worse` | replies that swap without the dialogue degrading                    |
+
+
+The swap test does most of the work. It catches items built on an arbitrary two-option choice, where a gasp is no more “put it first” than laughter is:
+
+```
+4. C: So do I put that bit before or after the case study?
+[gasp]     -> "Before. That reveal is too good to bury."
+[laughter] -> "After. We'll use the mascot bit as the closing joke."
+```
+
+`verify.py` re-runs the mechanical checks and tallies the audit flags with no API calls.
+
+### Verifier
+
+**None yet.** Intended probe: sew turns 1–4 with a curated voc, then 2-way forced choice between the two turn-6 replies (the pair’s other reply as the distractor).
+
+### Comments
+
+- `gasp`–`sob` is the hard contrast: both are high-arousal reactions to significant news, so they tend to motivate the same next move (slow down and verify, or move immediately).
+- Two speakers keeps the audio simple — one synthesized voice, one spliced recording.
+
+---
+
+## 2. `pairing_type/` — same words, different vocalization → attitude
 
 **Purpose.** Generate an audio dataset where the spoken words stay fixed and only Speaker B’s vocalization changes, then test whether a model can identify B’s attitude from that sound.
 
@@ -97,7 +175,7 @@ Run: `gpt-realtime`, seed 0. **25/48 = 52.1%** (chance 25%). Impatience 2/18. C2
 
 ---
 
-## 2. `predicting_content/` — hear the vocalization → predict the next line
+## 3. `predicting_content/` — hear the vocalization → predict the next line
 
 **Purpose.** Generate clips where the last turn *starts* with a non-speech sound that foreshadows upcoming words, then test whether a model can pick the matching next line **without hearing those words**.
 
@@ -164,7 +242,7 @@ Run: `gpt-realtime-2.1`, seed 0. **24/30 = 80%**. Exhale 0/3, throat-clear 1/3, 
 
 ---
 
-## 3. `transcript_curated/` — same Turn 3 words, different delivery → different C response
+## 4. `transcript_curated/` — same Turn 3 words, different delivery → different C response
 
 **Purpose.** Generate four-turn pairs where Turns 1–2 and Turn 3’s *words* are the same, only how Turn 3 is voiced changes, and Speaker C’s next line should flip with that vibe. Intended as a “does the model pick the matching response / reading?” benchmark. **No listening eval yet.**
 
@@ -219,7 +297,7 @@ T4 B: I have spare paper in my bag; let's remake the timeline.
 
 ---
 
-## 4. `laughter_identify/` — identify which laughter function is in the dialogue
+## 5. `laughter_identify/` — identify which laughter function is in the dialogue
 
 **Purpose.** Generate four-turn dialogues each targeting one taxonomy laughter function, as items for a “what is this laugh doing?” identification set. **No audio or listening eval in this folder.**
 
@@ -263,157 +341,15 @@ Laugh: turn 2 (B).
 
 ---
 
-## 5. `predicting_response/` — same setup, different vocalization → different next response
-
-**Purpose.** Hold the spoken words fixed, change only B's vocalization, and see whether the
-next appropriate reply changes with it. Where `pairing_type` asks what B *feels*, this asks
-what should *happen next*.
-
-### Dataset
-
-Six turns, two speakers (`--speakers 2`, default):
-
-
-| Turn | Speaker | Control                                                                       |
-| ---- | ------- | ----------------------------------------------------------------------------- |
-| 1–3  | A       | Setup. Identical across the pair. No tags.                                    |
-| 4    | A       | **The trigger** — the reveal B reacts to. Identical across the pair. Never a question. |
-| 5    | B       | The vocalization alone. B's first contribution; B has no lexical speech anywhere. |
-| 6    | A       | The reply the vocalization selects. Differs between versions.                 |
-
-
-B stays silent through the context so the eval can splice in **external audio** for turn 5
-without B's voice being established first.
-
-`--speakers 3` restores an A/C context with either replying; `--context-turns 8` gives a
-10-turn variant. Six vocalizations paired every way = **15 contrasts**; `--n` sets pairs per
-contrast.
-
-The writer chooses each version's interpretation from that vocalization's meaning list to fit
-the scene it invented. Assigning the meaning up front produced reactions the scene had not
-earned.
-
-Example (`laughter_sob_001`):
-
-```
-1. A: I've been sorting through the old camcorder files for Mom's birthday slideshow.
-2. A: Most of them are blurry holidays, with everybody talking over each other.
-3. A: I thought the recording from the year Dad died had been lost for good.
-4. A: But I found one where he's singing "Happy Birthday" hopelessly off-key,
-      then he looks at Mom and says, "I love you, June."
-
-laughter (shared amusement) -> A: Then I'm putting that clip at the end of the
-                                 slideshow—his terrible singing will make everyone smile.
-sob (being deeply moved)    -> A: I'll keep that one out of the slideshow and save it
-                                 for just us after the party.
-```
-
-**Generation check.** Mechanical: turn count and speakers, no B in the context, no tags, turn 4
-not a question, no line predicting B's reaction, exact plain tags, shared responder, replies
-differ and don't name the sound.
-
-**Contrast audit** (a second model pass, `--no-judge` to skip). Eight properties: the trigger is
-the last shared turn; both vocalizations are natural there; both interpretations are earned; the
-reply is undecidable from text alone; the replies commit to different actions; each vocalization
-favors its own reply; and **swapping the replies is clearly worse**. Items are rebuilt up to 4
-times.
-
-The swap test does most of the work — 8 of 14 rebuilds in the 15-pair run. It catches items
-built on an arbitrary two-option choice, where a gasp is no more "put it first" than laughter is:
-
-```
-4. C: So do I put that bit before or after the case study?
-[gasp]     -> "Before. That reveal is too good to bury."
-[laughter] -> "After. We'll use the mascot bit as the closing joke."
-```
-
-### Verifier
-
-**None yet.** The intended probe is a 2-way forced choice: play turns 1–4 plus the spliced
-vocalization, then ask which of the two turn-6 replies fits, with the pair's other reply as the
-distractor.
-
-### Comments
-
-- 14/15 contrasts produced a valid pair. `gasp`–`sob` is the hard one: both are high-arousal
-  reactions to significant news, so they tend to motivate the same next move.
-- Two speakers keeps the audio simple — one synthesized voice, one spliced recording.
-
----
-
-## 6. `pairing_type_upgraded/` — silent B, two vocs → two next responses
-
-**Purpose.** Same task as `predicting_response` (does the voc pick the next line?), but with a
-three-person scene: A and C talk, B has **never spoken**, and B’s first contribution is a
-voc-only reaction supplied later as external audio. Where `pairing_type` asks for B’s
-attitude and B also says words, this holds the spoken context fixed and asks which reply
-follows the sound.
-
-### Dataset
-
-Three speakers. Shared context is **A and C only** (about 3–6 turns). Then B produces one
-plain tag (`[gasp]`, `[grunt]`, `[laughter]`, `[sigh]`, `[sob]`, `[yawn]`) with no extra
-words. Either A or C gives the next line; that responder is the same in both versions.
-
-
-| Part              | Speaker | Control                                                                 |
-| ----------------- | ------- | ----------------------------------------------------------------------- |
-| Shared context    | A, C    | Identical across the pair. No tags. No spoken turn from B.              |
-| Vocalization      | B       | Voc-only first contribution. Two different tags per pair. Not synthesized here. |
-| Final response    | A or C  | Differs between versions. Must not name the sound.                      |
-
-
-Six vocalizations paired every unordered way = **15 contrasts / 15 pairs**. Meanings vary
-inside each voc (gasp as surprise vs disbelief, yawn as boredom vs tiredness, etc.).
-
-Example (`gasp_grunt_001`):
-
-```
-A: The talent-show sign-up closes today.
-C: I thought our class had decided not to enter.
-A: We hadn't, but I put our names down for a three-minute slot.
-C: And what exactly are we doing onstage?
-A: I found my old card trick. It should be enough for three minutes.
-
-[gasp]  -> A: I know it sounds sudden, but the deadline was today.
-[grunt] -> A: Okay, I'll keep the slot and bring the cards tomorrow.
-```
-
-**Audio.** Each spoken line is its own clip. **91 mp3s**: 61 context turns + 30 response
-options (`v1` / `v2`). B’s voc is **not** generated — it will be curated externally, then
-sewn as context turns + voc. Voices: A `r1KmysJdVYZjJCm4mL3b`, C `C3x1TEM7scV4p2AXJyrp`.
-TTS `eleven_v3`. Files under `pairing_type_upgraded/out/audio_turns/`.
-
-**Generation check.** Shared context has no B and no tags; both versions use the assigned
-plain tags; the two replies differ, share a responder, and do not name the voc.
-
-### Verifier
-
-**None yet.** Intended probe: sew the context-turn clips with a curated voc, then 2-way
-forced choice between the two response clips (the pair’s other reply as the distractor).
-
-### Comments
-
-- Closest sibling is `predicting_response/` (2-speaker A monologue + silent B, with a
-  contrast-audit rebuild loop). This folder keeps the A/C conversation so B can be a
-  silent third person in the room.
-- Per-turn clips are deliberate: vocs get spliced between the last context turn and the
-  response options, which stay separate because they are the answer choices.
-
----
-
 ## Status at a glance
 
 
-| Folder               | Turns              | Manipulation                | What the model is asked          | Format            | Result      |
-| -------------------- | ------------------ | --------------------------- | -------------------------------- | ----------------- | ----------- |
-| `pairing_type`       | 3 (A B C)          | T2 voc; words fixed         | B’s attitude                     | 4-way MCQ, audio  | 25/48 = 52% |
-| `predicting_content` | 3 (A B A)          | T3 voc; gold words held out | A’s next line                    | 2-way MCQ, audio  | 24/30 = 80% |
-| `transcript_curated` | 4 (A B A C)        | T3 tags; words fixed        | *(planned: C’s line or T3 vibe)* | none yet          | —           |
-| `laughter_identify`  | 4 (A B A B)        | one targeted laugh function | *(planned: which function)*      | none yet          | —           |
-| `predicting_response` | 6 (A×4, B, A)     | T5 voc; context fixed       | which reply follows              | none yet          | —           |
-| `pairing_type_upgraded` | A/C context + B voc + reply | B voc; A/C words fixed | which reply follows              | none yet          | —           |
-| `archived`           | ~4, 2 performances | tags / delivery             | what the laugh is doing          | 2-way + open      | —           |
-| `v2`                 | 4 lexical          | none (ambiguity filter)     | which function from text         | 2-way, 50/50 gate | filter only |
-
-
+| Folder                | Turns          | Manipulation                | What the model is asked          | Format            | Result      |
+| --------------------- | -------------- | --------------------------- | -------------------------------- | ----------------- | ----------- |
+| `predicting_response` | 6 (A×4, B, A)  | T5 voc; context fixed       | which reply follows              | none yet          | —           |
+| `pairing_type`        | 3 (A B C)      | T2 voc; words fixed         | B’s attitude                     | 4-way MCQ, audio  | 25/48 = 52% |
+| `predicting_content`  | 3 (A B A)      | T3 voc; gold words held out | A’s next line                    | 2-way MCQ, audio  | 24/30 = 80% |
+| `transcript_curated`  | 4 (A B A C)    | T3 tags; words fixed        | *(planned: C’s line or T3 vibe)* | none yet          | —           |
+| `laughter_identify`   | 4 (A B A B)    | one targeted laugh function | *(planned: which function)*      | none yet          | —           |
+| `archived`            | ~4, 2 performances | tags / delivery          | what the laugh is doing          | 2-way + open      | —           |
+| `v2`                  | 4 lexical      | none (ambiguity filter)     | which function from text         | 2-way, 50/50 gate | filter only |
