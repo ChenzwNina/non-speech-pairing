@@ -1,0 +1,727 @@
+{
+  "model": "gpt-4o",
+  "effort": "high",
+  "generated_at": "2026-08-21T16:09:28.109578+00:00",
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "speakers": 2,
+  "theme": "family",
+  "context_turns": 4,
+  "total_turns": 6,
+  "n_per_contrast": 1,
+  "judged": false,
+  "constraint": "turns 1-4 identical across versions with turn 4 as the trigger; turn 5 is B's voc-only first contribution; turn 6 is the selected reply",
+  "results": [
+    {
+      "pair_id": "family_gasp_grunt_001",
+      "scenario": "A parent informs their teenager about an upcoming family reunion plan.",
+      "trigger_note": "The family reunion is scheduled for a weekend trip next month.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, I've got some news about the family."
+        },
+        {
+          "speaker": "A",
+          "text": "Your Aunt Sarah is organizing a reunion."
+        },
+        {
+          "speaker": "A",
+          "text": "She wants to have everyone together for a weekend trip."
+        },
+        {
+          "speaker": "A",
+          "text": "It's scheduled for next month."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "It's exciting, right? Everyone's going to be there."
+      },
+      "version_2": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "We can talk about whether you need to go, but it means a lot to her."
+      },
+      "why_the_vocalization_changes_the_response": "With a gasp, A assumes surprise and excitement, reinforcing the positive aspect of the gathering. With a grunt, A recognizes reluctance and offers to discuss participation, acknowledging the possible unwillingness.",
+      "usage": {
+        "input_tokens": 5292,
+        "output_tokens": 248
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-grunt",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_gasp_laughter_001",
+      "scenario": "Sibling discovery of their childhood drawings while sorting old family boxes.",
+      "trigger_note": "A finds and shows an old drawing of a dinosaur wearing a superhero cape.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, while I was going through these boxes, I found something you'd love."
+        },
+        {
+          "speaker": "A",
+          "text": "Remember all those drawings we made as kids?"
+        },
+        {
+          "speaker": "A",
+          "text": "Check this out—it's a dinosaur wearing a superhero cape."
+        },
+        {
+          "speaker": "A",
+          "text": "We must have thought it was the coolest thing ever."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "Right? I completely forgot how imaginative we were as kids."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "I know, right? We were such little artists back then."
+      },
+      "why_the_vocalization_changes_the_response": "After the gasp, A acknowledges the surprise and reflects on their forgotten creativity, highlighting the unexpectedness. The laughter response takes a playful approach, sharing amusement over their youthful imagination, maintaining a lighthearted tone.",
+      "usage": {
+        "input_tokens": 5308,
+        "output_tokens": 262
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_gasp_sigh_001",
+      "scenario": "A parent informs their child about discovering a rare family heirloom that needs restoring.",
+      "trigger_note": "A revealed finding an old, damaged quilt with embroidered family stories.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I was in the attic today, sorting through some of the old boxes."
+        },
+        {
+          "speaker": "A",
+          "text": "You'll never believe what I found—it was your great-grandmother's quilt."
+        },
+        {
+          "speaker": "A",
+          "text": "It's got all these intricate family stories embroidered on it."
+        },
+        {
+          "speaker": "A",
+          "text": "But it's pretty damaged after all these years."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "I know, right? We should definitely get it restored soon."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "It's a lot of work, but we can restore it gradually."
+      },
+      "why_the_vocalization_changes_the_response": "With the gasp, A shares B's surprise and immediately suggests restoration, highlighting excitement. The sigh signals a sense of burden, so A responds by acknowledging the work involved and suggests a gradual approach, indicating understanding and pacing.",
+      "usage": {
+        "input_tokens": 5333,
+        "output_tokens": 272
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_gasp_sob_001",
+      "scenario": "A tells B about discovering their grandfather's hidden journals with complicated family history.",
+      "trigger_note": "A reveals they found their grandfather's journals with detailed family history, offering surprising and emotional insights.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I was cleaning out the attic yesterday and found a dusty old box."
+        },
+        {
+          "speaker": "A",
+          "text": "Inside were a bunch of Grandpa's old journals, ones no one knew about."
+        },
+        {
+          "speaker": "A",
+          "text": "I've only read a little, but they have some surprising family stories."
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently, he wrote about a side of our family that moved to France during the war."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise, admiration",
+        "responder": "A",
+        "response": "Right? I can barely believe it myself! Seems like there's a lot we didn't know."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, it's a lot to take in, I know. Let's sit down and go through them together when you're ready."
+      },
+      "why_the_vocalization_changes_the_response": "The [gasp] indicates surprise or admiration, leading A to share in the unexpected discovery enthusiastically. The [sob] signals emotional overwhelm, prompting A to offer comfort and suggest going through the journals gently together, adapting to B's emotional state.",
+      "usage": {
+        "input_tokens": 5343,
+        "output_tokens": 311
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_gasp_yawn_001",
+      "scenario": "A parent discusses a surprise family trip they've planned for the kids.",
+      "trigger_note": "A reveals they've planned a surprise weekend trip to a historic locale.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Guess what? I've been planning something special for the whole family."
+        },
+        {
+          "speaker": "A",
+          "text": "I've secretly arranged for us to go on a weekend trip."
+        },
+        {
+          "speaker": "A",
+          "text": "It's somewhere we haven't been before, and I think it'll be really fun."
+        },
+        {
+          "speaker": "A",
+          "text": "We're going to that historic town by the coast this weekend!"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "Right? The kids are going to love exploring all the old buildings!"
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Let's make sure we get plenty of rest before we head out."
+      },
+      "why_the_vocalization_changes_the_response": "In version 1, B's gasp indicates surprise or excitement, prompting A to share in the enthusiasm and highlight the fun aspect of the trip. In version 2, B's yawn signals low energy or tiredness, leading A to suggest rest to prepare for the trip, adapting to a more practical concern.",
+      "usage": {
+        "input_tokens": 5360,
+        "output_tokens": 290
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_grunt_laughter_001",
+      "scenario": "A parent tells their child about needing to sort through the attic to make space for visiting family.",
+      "trigger_note": "A says the attic needs to be fully cleared for the family visit.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, remember that we're hosting the family reunion next month?"
+        },
+        {
+          "speaker": "A",
+          "text": "I've been thinking we should clear out the attic to make some room."
+        },
+        {
+          "speaker": "A",
+          "text": "There's a ton of old stuff up there that we never use."
+        },
+        {
+          "speaker": "A",
+          "text": "So we'll need to clear it all out before they arrive."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "Okay, we can just focus on the left side this weekend and tackle the rest later."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? It's going to be like a treasure hunt up there. Let's find some interesting stuff."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt indicates reluctance or resistance, leading A to soften the task by suggesting a phased approach. The laughter suggests B finds the idea amusing or exciting, prompting A to frame the task as a fun discovery activity.",
+      "usage": {
+        "input_tokens": 5362,
+        "output_tokens": 285
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_grunt_sigh_001",
+      "scenario": "Two siblings are sorting through old family photo albums for an upcoming anniversary party.",
+      "trigger_note": "A reveals how many albums are left to sort.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "We really need to get these albums sorted for Grandma and Grandpa's anniversary party."
+        },
+        {
+          "speaker": "A",
+          "text": "I started with the ones from the 1970s, but it's taking longer than I thought."
+        },
+        {
+          "speaker": "A",
+          "text": "It's kind of fun, though—look at how everyone dressed back then."
+        },
+        {
+          "speaker": "A",
+          "text": "But we still have ten more albums to go through by tomorrow."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "impatience",
+        "responder": "A",
+        "response": "I know it's a lot, but maybe we can skip some years if they're too similar."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "Let's leave half for later; we don't have to finish all tonight."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt indicates impatience, prompting A to negotiate by suggesting a way to speed up the process, while the sigh reflects feeling burdened, leading A to propose dividing the task to make it more manageable.",
+      "usage": {
+        "input_tokens": 5477,
+        "output_tokens": 285
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_grunt_sob_001",
+      "scenario": "Two siblings are packing up their late grandmother's belongings.",
+      "trigger_note": "A shares that they need to sort through Grandma's personal letters tonight.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I sorted through all of Grandma's clothes this morning. It was harder than I thought."
+        },
+        {
+          "speaker": "A",
+          "text": "I found some old trinkets we might want to keep, too."
+        },
+        {
+          "speaker": "A",
+          "text": "But there’s still a lot left to do. The hardest part is going through her personal letters."
+        },
+        {
+          "speaker": "A",
+          "text": "We should try to get through those tonight."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "What if we just start with a few? We can finish the rest over the weekend."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "deep sadness",
+        "responder": "A",
+        "response": "Hey, it's okay. We can take it slow and stop whenever you need."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt signals reluctance, prompting A to suggest breaking up the task into smaller, manageable parts. The sob indicates emotional overwhelm, leading A to offer reassurance and the option to pause.",
+      "usage": {
+        "input_tokens": 5485,
+        "output_tokens": 278
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_grunt_yawn_001",
+      "scenario": "Parent and teenager discussing a weekend plan to reorganize the basement.",
+      "trigger_note": "Speaker A reveals the plan to spend the weekend clearing out the basement.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, so this weekend I've planned for us to finally tackle the basement."
+        },
+        {
+          "speaker": "A",
+          "text": "We've been putting it off for months now, and it really needs to be done."
+        },
+        {
+          "speaker": "A",
+          "text": "I thought we could both spend Saturday sorting through everything."
+        },
+        {
+          "speaker": "A",
+          "text": "It's a big job, but it’ll be great to have it organized."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "Okay, okay—how about we do just half this weekend and finish the rest next time?"
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "We can start later in the morning so you can sleep in a bit. Does that help?"
+      },
+      "why_the_vocalization_changes_the_response": "The grunt signals strong unwillingness, prompting A to offer a compromise to reduce the workload. The yawn indicates tiredness, leading A to adjust the timing to accommodate B's energy levels. Each response adapts differently based on B's vocalization, addressing either workload or rest.",
+      "usage": {
+        "input_tokens": 5500,
+        "output_tokens": 301
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_laughter_sigh_001",
+      "scenario": "Two siblings discuss their childhood toys while clearing out the attic.",
+      "trigger_note": "A found an old handmade puppet from their childhood.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Remember when we used to play in the attic for hours, pretending it was our secret castle?"
+        },
+        {
+          "speaker": "A",
+          "text": "We had that whole collection of toys and made up the craziest stories."
+        },
+        {
+          "speaker": "A",
+          "text": "Oh wow, look what I found!"
+        },
+        {
+          "speaker": "A",
+          "text": "It's our old handmade puppet! I can't believe it survived all these years."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? We should keep it; it's a piece of our crazy stories."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Let's just decide later; maybe we can sort through the rest of the toys another day."
+      },
+      "why_the_vocalization_changes_the_response": "With laughter, A joins the humor of finding an unlikely survivor, celebrating their playful past. With a sigh, A senses B's weariness and shifts to postponing the decision, acknowledging the burden of sorting.",
+      "usage": {
+        "input_tokens": 5432,
+        "output_tokens": 277
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "laughter-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_laughter_sob_001",
+      "scenario": "A parent and their adult child are reflecting on old family videos.",
+      "trigger_note": "Revealing a hilarious or deeply moving moment in an old family video.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I was going through the old family videos last night."
+        },
+        {
+          "speaker": "A",
+          "text": "Do you remember that trip to the beach when you were five?"
+        },
+        {
+          "speaker": "A",
+          "text": "You were trying to build a sandcastle but kept getting distracted by seagulls."
+        },
+        {
+          "speaker": "A",
+          "text": "And then you started performing your own little dance, completely unprompted."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "I know, right? You always knew how to entertain a crowd!"
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Oh, those memories really get to you, don't they? They’re so precious."
+      },
+      "why_the_vocalization_changes_the_response": "Laughter from B prompts A to join in the amusement and lighten the moment with a playful comment about entertaining a crowd. The sob suggests B is overwhelmed with emotion, prompting A to acknowledge the depth of feeling and value of the memories. The two responses show different engagement based on B's emotional reaction.",
+      "usage": {
+        "input_tokens": 5438,
+        "output_tokens": 296
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "laughter-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_laughter_yawn_001",
+      "scenario": "Two siblings talking about preparing a short, funny speech for their parent's birthday.",
+      "trigger_note": "A shares the final line planned for the speech, aiming for humor.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I've been working on the speech for mom's birthday."
+        },
+        {
+          "speaker": "A",
+          "text": "I want to make it fun and lighthearted."
+        },
+        {
+          "speaker": "A",
+          "text": "I've added a story about the time she accidentally ordered forty pizzas for a school event."
+        },
+        {
+          "speaker": "A",
+          "text": "I'm ending with: 'So here's to mom, the only person who can feed an entire town by mistake!'"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Glad you liked that bit! I think she'll get a kick out of it too."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Alright, maybe we won't rehearse any more. Let's finish it tomorrow."
+      },
+      "why_the_vocalization_changes_the_response": "The laughter signals amusement and encourages A to continue with the humorous tone, reinforcing the idea that the speech is engaging. The yawn, suggesting tiredness, prompts A to recognize B's low energy and propose stopping the rehearsal, prioritizing rest over rehearsal.",
+      "usage": {
+        "input_tokens": 5453,
+        "output_tokens": 294
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "laughter-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_sigh_sob_001",
+      "scenario": "A parent tells their child about needing to get rid of their late relative's belongings.",
+      "trigger_note": "A informs B about needing to sort through and donate their grandmother's possessions.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "We really need to start sorting through Grandma's things soon."
+        },
+        {
+          "speaker": "A",
+          "text": "I know it’s going to be tough, but we can donate a lot of it to charity."
+        },
+        {
+          "speaker": "A",
+          "text": "There are so many memories attached to each item."
+        },
+        {
+          "speaker": "A",
+          "text": "But leaving it untouched isn't going to get any easier."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "Let's just tackle one box today and see how we feel after that, okay?"
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "deep sadness",
+        "responder": "A",
+        "response": "Hey, we don’t have to do it all now. We can keep her favorite things for as long as we need."
+      },
+      "why_the_vocalization_changes_the_response": "In version 1, A acknowledges B's feeling of being burdened and suggests breaking the task into smaller, more manageable parts to alleviate the sense of overwhelm. In version 2, A perceives B's deep sadness and offers reassurance by suggesting they keep meaningful items, reducing emotional pressure and focusing on gentler emotional support.",
+      "usage": {
+        "input_tokens": 5562,
+        "output_tokens": 313
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sigh-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_sigh_yawn_001",
+      "scenario": "Two siblings discussing a weekend meal prep plan for a large family gathering.",
+      "trigger_note": "A reveals that they need to make five different dishes for the meal prep.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "So, this weekend we're tackling the meal prep for the family gathering."
+        },
+        {
+          "speaker": "A",
+          "text": "I was thinking we'll need to make enough for everyone, maybe plan a few different dishes."
+        },
+        {
+          "speaker": "A",
+          "text": "I know it's going to be a bit of work, but it should be fun to do it together."
+        },
+        {
+          "speaker": "A",
+          "text": "We have to make five different dishes for Saturday."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Let's just pick a few favorites and keep it simple."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "low energy",
+        "responder": "A",
+        "response": "How about we skip a couple of those and just do the essentials?"
+      },
+      "why_the_vocalization_changes_the_response": "The sigh indicates B is feeling weary, so A suggests simplifying the plan by choosing a few favorite dishes. The yawn signals low energy, prompting A to consider prioritizing only the essential dishes. Each response adjusts the workload differently based on B's reaction.",
+      "usage": {
+        "input_tokens": 5583,
+        "output_tokens": 290
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sigh-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    },
+    {
+      "pair_id": "family_sob_yawn_001",
+      "scenario": "A parent discusses the future of the family home they currently live in.",
+      "trigger_note": "A asks B to consider the prospect of moving out of their childhood home.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "You know how much this house means to all of us."
+        },
+        {
+          "speaker": "A",
+          "text": "But maintaining it is getting harder every year."
+        },
+        {
+          "speaker": "A",
+          "text": "We’ve talked about downsizing a bit."
+        },
+        {
+          "speaker": "A",
+          "text": "I think it's really time to consider moving out soon."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "It's okay, we don't have to decide anything today. Let's just keep talking about it."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Why don't we discuss this tomorrow after we've both rested?"
+      },
+      "why_the_vocalization_changes_the_response": "The sob indicates that B is emotionally overwhelmed by the thought of leaving the family home, so A offers reassurance and patience to handle the emotional weight. The yawn suggests fatigue or low engagement with the ongoing discussion, prompting A to suggest postponing the conversation until they are both more refreshed.",
+      "usage": {
+        "input_tokens": 5591,
+        "output_tokens": 278
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sob-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "family"
+    }
+  ]
+}

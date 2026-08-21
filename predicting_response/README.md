@@ -131,12 +131,116 @@ did not land in 8 attempts: both are high-arousal reactions to significant news,
 that one motivates — slow down and verify, or move immediately — the other motivates too.
 Re-running that contrast alone may land one, since it passed once during development.
 
-## Not built yet
+## Audio
 
-Audio and the eval. The intended eval is a two-way forced choice: splice
-`turns 1–4 speech + external B vocalization`, then ask which of the two turn-6 replies
-fits, using the pair's other reply as the distractor. See `pairing_type/sew_audio.py` for
-the splicing pattern and `pairing_type/eval_realtime.py` for the listening harness.
+```bash
+python predicting_response/generate_audio.py             # synthesize + splice + sew
+python predicting_response/generate_audio.py --limit 2   # first two pairs only
+python predicting_response/generate_audio.py --sew-only  # re-sew, no TTS spend
+```
 
-Two speakers makes the audio simpler than the A/C variant — one synthesized voice for the
-context and reply, one spliced recording for B.
+Turns 1–N and the reply are synthesized with ElevenLabs `eleven_v3` in voice
+`r1KmysJdVYZjJCm4mL3b` — the same voice `pairing_type` uses for A. Speaker B is never
+synthesized: turn N+1 is a **real recording** drawn from `audio_non-speech/<voc>/`.
+
+Two variants are sewn per version, from the same turn files and the same clip choice, so
+they always agree:
+
+```
+audio_prompt/  turn 1 +0.40 turn 2 +0.40 turn 3 +0.40 turn 4 +0.35 [clip]
+audio_full/    the same, then +0.35 reply
+```
+
+**`audio_prompt/` is the eval input** — it ends at B's vocalization, so the reply the model
+is asked to choose is not audible. `audio_full/` is for reading the dataset back by ear;
+`--no-full` skips it.
+
+Turns 1–N are shared by both versions of a pair, so they are synthesized once and reused.
+Existing turn files are left alone unless `--overwrite`, so re-runs don't repay for TTS.
+
+Output:
+
+- `out/audio_prompt/<pair_id>_v1.mp3`, `_v2.mp3` — ends at turn 5 · 14.9–25.0s
+- `out/audio_full/<pair_id>_v1.mp3`, `_v2.mp3` — includes turn 6
+- `out/audio_turns/<pair_id>/` — the individual synthesized turns
+- `out/audio_manifest.json` — clip choice, both paths, and durations per version
+
+### Clip selection
+
+Clips are drawn **least-used-first, randomly among the tied** (`--seed` to change, default
+0), so the dataset spreads across a folder instead of leaning on a few recordings.
+`audio_manifest.json` records every choice in `clips`, a `clip_usage` tally per file, and
+per-vocalization `coverage`. A re-run carries the previous tally forward so it keeps
+spreading; `--reset-usage` starts over.
+
+Note the folder name for `[sob]` is `sobbing/`, mapped in `VOC_DIRS`.
+
+### Length guard
+
+Only clips between 0.3s and 10s are eligible; anything outside that is skipped and listed in
+the manifest's `excluded_clips`. Three files were originally long compilations that would
+have dwarfed a ~20s dialogue (a 69s "gasp"); they have since been trimmed, so all six
+folders are fully eligible and `excluded_clips` is empty. `audio_non-speech/extra-source/`
+is not a vocalization folder and is ignored.
+
+Clip counts: gasp 18, grunt 15, laughter 18, sigh 18, sobbing 18, yawn 18.
+
+## Eval
+
+```bash
+python predicting_response/eval_realtime.py
+python predicting_response/eval_realtime.py --limit 2
+python predicting_response/eval_realtime.py --resume --seed 0
+python predicting_response/eval_realtime.py --separate-sessions
+```
+
+Items are shuffled, then each `audio_prompt/` clip is played **once** and two questions are
+asked in the same session, so both answers come from one listen:
+
+1. **Which non-speech sound was at the end?** Six options — gasp, grunt, laughter, sigh,
+   sob, yawn — in a shuffled order per item. Chance 16.7%.
+2. **What would the speaker say next?** The two turn-6 replies from the pair, shuffled. The
+   distractor is the sibling version's reply, so the words up to the vocalization are
+   identical and only the sound distinguishes them. Chance 50%.
+
+The session is told it will hear a conversation between two people where one does all the
+speaking and the other reacts at the end without words.
+
+Because Q1 comes first in the same session, its answer can scaffold Q2.
+`--separate-sessions` re-plays the audio in a fresh session for Q2 to measure that effect.
+
+Two notes on the harness: `gpt-realtime-2.1` spends output tokens on reasoning before
+answering, so `MAX_OUTPUT_TOKENS` must leave real headroom — a 16-token cap returns an
+empty string every time. And Q2 is asked by appending to the conversation rather than with
+`conversation: "none"`, which is what keeps the audio in context.
+
+### Result — `gpt-realtime-2.1`, seed 0, 28 items
+
+| | score | chance |
+| --- | --- | --- |
+| Q1 vocalization | **24/28 = 85.7%** | 16.7% |
+| Q2 next reply | **21/28 = 75.0%** | 50.0% |
+| both | 19/28 = 67.9% | 8.3% |
+
+Q2 splits sharply by whether Q1 landed: **79.2%** when the sound was identified, **50.0%**
+— chance — when it wasn't. Only 4 items had Q1 wrong, so treat that split as suggestive.
+
+Per vocalization:
+
+| voc | Q1 | Q2 |
+| --- | --- | --- |
+| gasp | 4/4 | 3/4 |
+| grunt | 3/5 | 5/5 |
+| laughter | 4/5 | 4/5 |
+| sigh | 4/5 | **1/5** |
+| sob | 4/4 | 3/4 |
+| yawn | 5/5 | 5/5 |
+
+`sigh` is the outlier: recognized 4/5 but only 1/5 on the reply. The model hears the sigh
+and still picks the wrong continuation, which fits sigh having the widest meaning spread in
+the inventory — frustration, disappointment, relief, resignation, impatience, exhaustion —
+where relief and frustration point at opposite next moves. Worth a closer look before
+trusting the sigh items.
+
+Q1 confusions are all within-family: grunt → sigh or laughter, laughter ↔ sigh. gasp, sob,
+and yawn were never missed.

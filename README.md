@@ -53,7 +53,7 @@ Example (`gasp_grunt_001`):
                                       rehearsals every night this week.
 ```
 
-**Audio.** None yet. Intended splice: turns 1–4 speech + curated B voc. Response options stay separate as the two answer choices. One synthesized voice for A; B is never TTS’d.
+**Audio.** Turns 1–4 and the reply are ElevenLabs `eleven_v3`, voice `r1KmysJdVYZjJCm4mL3b`. Turn 5 is a **real recording** drawn from `audio_non-speech/<voc>/`, least-used-first so the draw spreads across the folder; every choice is logged in `out/audio_manifest.json`. B is never TTS’d. Two variants per version: `audio_prompt/` ends at the vocalization (the eval input, 14.9–25.0s), `audio_full/` adds turn 6. Clips are restricted to 0.3–10s, which caught three long compilations in the source folders before they were trimmed.
 
 **Generation check.** Mechanical: exactly 4 A-only context turns, no tags, turn 4 not a question, no line predicting B’s reaction, exact plain tags, same responder, replies differ and do not name the sound.
 
@@ -83,7 +83,18 @@ The swap test does most of the work. It catches items built on an arbitrary two-
 
 ### Verifier
 
-**None yet.** Intended probe: sew turns 1–4 with a curated voc, then 2-way forced choice between the two turn-6 replies (the pair’s other reply as the distractor).
+**Two questions per clip, one listen.** The `audio_prompt/` clip is played once, then both questions are asked in the same session:
+
+- **Q1** — which of six vocalizations was at the end (gasp, grunt, laughter, sigh, sob, yawn), shuffled per item. Chance 16.7%.
+- **Q2** — which of the pair’s two turn-6 replies comes next, shuffled. The distractor is the sibling version’s reply, so the words up to the vocalization are identical and only the sound separates them. Chance 50%.
+
+Run: `gpt-realtime-2.1`, seed 0, 28 items. **Q1 24/28 = 85.7%. Q2 21/28 = 75.0%.** Both 19/28 = 67.9%.
+
+Q2 was 79.2% when Q1 was right and 50.0% — chance — when it wasn’t, though only 4 items had Q1 wrong, so treat that split as suggestive. `--separate-sessions` re-plays the audio in a fresh session for Q2, to measure how much Q1 scaffolds it.
+
+By vocalization, `sigh` is the outlier: recognized 4/5 but **1/5** on the reply, consistent with its meanings spanning relief through frustration, which point at opposite next moves. Q1 confusions stay within family (grunt → sigh/laughter, laughter ↔ sigh); gasp, sob, and yawn were never missed.
+
+Harness note: `gpt-realtime-2.1` spends output tokens on reasoning before answering, so a tight `max_output_tokens` returns an empty string every time.
 
 ### Comments
 
@@ -346,7 +357,7 @@ Laugh: turn 2 (B).
 
 | Folder                | Turns          | Manipulation                | What the model is asked          | Format            | Result      |
 | --------------------- | -------------- | --------------------------- | -------------------------------- | ----------------- | ----------- |
-| `predicting_response` | 6 (A×4, B, A)  | T5 voc; context fixed       | which reply follows              | none yet          | —           |
+| `predicting_response` | 6 (A×4, B, A)  | T5 voc; context fixed       | voc + which reply follows        | 6-way + 2-way, audio | 86% / 75% |
 | `pairing_type`        | 3 (A B C)      | T2 voc; words fixed         | B’s attitude                     | 4-way MCQ, audio  | 25/48 = 52% |
 | `predicting_content`  | 3 (A B A)      | T3 voc; gold words held out | A’s next line                    | 2-way MCQ, audio  | 24/30 = 80% |
 | `transcript_curated`  | 4 (A B A C)    | T3 tags; words fixed        | *(planned: C’s line or T3 vibe)* | none yet          | —           |

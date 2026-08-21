@@ -1,0 +1,727 @@
+{
+  "model": "gpt-4o",
+  "effort": "high",
+  "generated_at": "2026-08-21T16:09:31.727840+00:00",
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "speakers": 2,
+  "theme": "school",
+  "context_turns": 4,
+  "total_turns": 6,
+  "n_per_contrast": 1,
+  "judged": false,
+  "constraint": "turns 1-4 identical across versions with turn 4 as the trigger; turn 5 is B's voc-only first contribution; turn 6 is the selected reply",
+  "results": [
+    {
+      "pair_id": "school_gasp_grunt_001",
+      "scenario": "Students discussing a last-minute assignment in the library.",
+      "trigger_note": "A reveals the entire project is due tomorrow.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "We really have to pull through with this project if we want to pass history."
+        },
+        {
+          "speaker": "A",
+          "text": "I went ahead and compiled the research sources last night."
+        },
+        {
+          "speaker": "A",
+          "text": "We can use some charts and graphs to make the presentation stronger."
+        },
+        {
+          "speaker": "A",
+          "text": "Oh, and by the way, the entire project is due tomorrow."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "I know—it's a lot, but we can split up the sections to get it done."
+      },
+      "version_2": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "Okay, let's just focus on the most important parts to save time."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp indicates surprise, prompting A to reassure and offer a plan to manage the shock. The grunt suggests reluctance, leading A to simplify the workload to accommodate B's resistance.",
+      "usage": {
+        "input_tokens": 5264,
+        "output_tokens": 263
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-grunt",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_gasp_laughter_001",
+      "scenario": "Students are discussing their team project after a class presentation.",
+      "trigger_note": "A reveals the professor's unexpected praise for their project.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I can't believe we finally finished our presentation this morning."
+        },
+        {
+          "speaker": "A",
+          "text": "I was so nervous in front of the class."
+        },
+        {
+          "speaker": "A",
+          "text": "But we pulled it off without any major issues, right?"
+        },
+        {
+          "speaker": "A",
+          "text": "And guess what? Professor Lee said it was one of the best he's seen all semester!"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "Yeah, I was shocked too! I think he'll mention it in the newsletter."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? That’s hilarious! I thought he’d mention the time we almost tripped over the cables!"
+      },
+      "why_the_vocalization_changes_the_response": "With the gasp, A assumes B is surprised and shares their own shock, offering more serious acknowledgment of the praise. With laughter, A treats the reaction as humor, joining in on the amusement and making a playful comment about the presentation.",
+      "usage": {
+        "input_tokens": 5278,
+        "output_tokens": 278
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_gasp_sigh_001",
+      "scenario": "Students discussing a group project deadline extension after class.",
+      "trigger_note": "A reveals that the project deadline has been extended by another week.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, did you hear about the group project? I just talked to Mr. Davis."
+        },
+        {
+          "speaker": "A",
+          "text": "He realized that everyone's struggling to keep up with the original timeline."
+        },
+        {
+          "speaker": "A",
+          "text": "So, he decided to give us some extra time to finish it."
+        },
+        {
+          "speaker": "A",
+          "text": "The deadline is now extended by another week."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "pleasant surprise",
+        "responder": "A",
+        "response": "Right? It’s a huge relief! Now we can actually polish our presentation."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "resignation",
+        "responder": "A",
+        "response": "I know, it's been a lot to juggle. We can pace ourselves better now."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp shows pleasant surprise, prompting A to share in the excitement and relief about having more time. The sigh indicates feeling burdened, leading A to acknowledge the workload and offer a plan to manage the time more effectively.",
+      "usage": {
+        "input_tokens": 5301,
+        "output_tokens": 276
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_gasp_sob_001",
+      "scenario": "Two classmates discuss a scholarship opportunity in the school common room.",
+      "trigger_note": "A reveals that B has received the full scholarship for their top-choice university.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, you remember that scholarship you applied for?"
+        },
+        {
+          "speaker": "A",
+          "text": "The one for the university you really wanted to attend?"
+        },
+        {
+          "speaker": "A",
+          "text": "I just saw the list of recipients in the office."
+        },
+        {
+          "speaker": "A",
+          "text": "You're on it! You got the full scholarship!"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "Amazing, right? I knew you could do it!"
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, take your time. You totally deserve this."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp suggests surprise, leading A to share excitement and affirmation. The sob indicates B is overwhelmed, so A offers gentle support and acknowledgment, allowing B to process their emotions.",
+      "usage": {
+        "input_tokens": 5305,
+        "output_tokens": 247
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_gasp_yawn_001",
+      "scenario": "Two classmates discuss their upcoming school trip's itinerary.",
+      "trigger_note": "A mentions adding a surprise visit to a famous art gallery to the school trip's itinerary.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "So, I talked to Mr. Edwards about the trip."
+        },
+        {
+          "speaker": "A",
+          "text": "He said we could fit a little more into the schedule."
+        },
+        {
+          "speaker": "A",
+          "text": "Since we'll be near downtown anyway, I suggested a surprise visit to the famous art gallery."
+        },
+        {
+          "speaker": "A",
+          "text": "He thought it was a great idea and added it without telling everyone."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "I know, right? It's going to be amazing seeing all that art."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "low energy",
+        "responder": "A",
+        "response": "Feeling tired? We can always skip it if it's too much."
+      },
+      "why_the_vocalization_changes_the_response": "With the gasp, A acknowledges B's surprise and shares excitement about the gallery visit. With the yawn, A senses B's low energy and offers reassurance that the gallery visit is optional if B feels overwhelmed.",
+      "usage": {
+        "input_tokens": 5319,
+        "output_tokens": 275
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_grunt_laughter_001",
+      "scenario": "Two classmates are discussing decorating their classroom for spirit week.",
+      "trigger_note": "A reveals the teacher wants them to decorate the entire room by tomorrow.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "So, I talked to Mr. Johnson about spirit week decorations."
+        },
+        {
+          "speaker": "A",
+          "text": "He said we can use anything we find in the art supplies closet."
+        },
+        {
+          "speaker": "A",
+          "text": "But the catch is, we have to set up everything tonight after school."
+        },
+        {
+          "speaker": "A",
+          "text": "And he wants the entire room done by tomorrow morning."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "Okay, okay—we can just focus on the front wall and leave the rest."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? Guess we'll be making some quick art decisions tonight!"
+      },
+      "why_the_vocalization_changes_the_response": "The grunt indicates B's reluctance, prompting A to suggest narrowing the task to make it manageable. The laughter suggests B finds the situation amusing, leading A to play along with the absurdity and enthusiasm for a creative challenge.",
+      "usage": {
+        "input_tokens": 5318,
+        "output_tokens": 272
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_grunt_sigh_001",
+      "scenario": "Two classmates are planning a study schedule for finals week.",
+      "trigger_note": "A reveals the extra credit opportunity that requires extra study on a weekend.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Alright, we need to come up with a study schedule for finals week."
+        },
+        {
+          "speaker": "A",
+          "text": "I was thinking we could start with math since it's the toughest."
+        },
+        {
+          "speaker": "A",
+          "text": "And then maybe history, since there's so much to memorize."
+        },
+        {
+          "speaker": "A",
+          "text": "Plus, there's an extra credit project due on Saturday if we can put in some weekend hours."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "Okay, okay—we can skip it if you’d rather not. Let’s just focus on the essentials."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "We don't have to do the extra credit this week; let's prioritize what’s most important."
+      },
+      "why_the_vocalization_changes_the_response": "With the grunt, A responds to what sounds like a firm unwillingness to add more work, suggesting dropping the extra credit entirely. In contrast, the sigh indicates being overwhelmed, so A proposes not prioritizing the extra credit but leaves it as an optional task, reflecting a more supportive adaptation rather than immediate dismissal.",
+      "usage": {
+        "input_tokens": 10904,
+        "output_tokens": 598
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 2,
+      "contrast": "grunt-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_grunt_sob_001",
+      "scenario": "Two students in the art room discuss the immense workload for the upcoming art exhibition.",
+      "trigger_note": "A reveals they have to set up all exhibits by Friday.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "You know the art exhibition is just around the corner, right?"
+        },
+        {
+          "speaker": "A",
+          "text": "We got confirmation from Mr. Davis today about the final list."
+        },
+        {
+          "speaker": "A",
+          "text": "It's more than we expected, with a lot of pieces coming in from other classes."
+        },
+        {
+          "speaker": "A",
+          "text": "We have to set up all the exhibits by Friday afternoon."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "I get it, it's a lot. Maybe we can split the setup over a couple of days."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, it's okay. We can take it one step at a time. How about we start with just one section?"
+      },
+      "why_the_vocalization_changes_the_response": "The grunt suggests a strong unwillingness, prompting A to offer a practical compromise to reduce the burden. The sob indicates being overwhelmed, leading A to offer emotional support and a suggestion to take things slowly. Each response addresses B's distinct emotional signal differently.",
+      "usage": {
+        "input_tokens": 5429,
+        "output_tokens": 298
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_grunt_yawn_001",
+      "scenario": "Two classmates discuss organizing the school's talent show after classes.",
+      "trigger_note": "A suggests they need to stay late all week for rehearsal setup.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "So, the talent show schedule is finalized, and we've got everyone assigned their rehearsal slots."
+        },
+        {
+          "speaker": "A",
+          "text": "But we still need more volunteers to manage the backstage setup."
+        },
+        {
+          "speaker": "A",
+          "text": "It's going to be a lot of work, especially checking all the lighting and sound equipment by Friday."
+        },
+        {
+          "speaker": "A",
+          "text": "I think we'll have to stay late after school every day this week to get it all ready."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "Alright, how about I handle the equipment checks, and you oversee scheduling the volunteers?"
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "We can take it easy and see how much we finish today before worrying about tomorrow."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt indicates an unwillingness or resistance to staying late, so A responds by proposing a division of labor to make it more manageable. The yawn suggests tiredness or low energy, leading A to suggest pacing themselves and focusing only on today's tasks for now. Each response adapts the workload based on B's reaction.",
+      "usage": {
+        "input_tokens": 5449,
+        "output_tokens": 313
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_laughter_sigh_001",
+      "scenario": "Two classmates discuss their science club's experiment results.",
+      "trigger_note": "A reveals that their experiment was completely off the mark.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I stayed late in the lab last night to analyze our data."
+        },
+        {
+          "speaker": "A",
+          "text": "I thought we'd nailed the experiment this time."
+        },
+        {
+          "speaker": "A",
+          "text": "But instead of getting the reaction we expected, the whole thing turned purple."
+        },
+        {
+          "speaker": "A",
+          "text": "Turns out we mixed up the reagents."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? It was like a chemistry comic sketch gone wrong."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "Let's take a break and recollect tomorrow; it’s been a long week."
+      },
+      "why_the_vocalization_changes_the_response": "In the laughter version, A embraces the humor of the mistake, treating B's reaction as a cue to share in the amusement. In the sigh version, A acknowledges the exhaustion, offering a pause before continuing.",
+      "usage": {
+        "input_tokens": 5379,
+        "output_tokens": 260
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "laughter-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_laughter_sob_001",
+      "scenario": "Two classmates talk about their roles in the upcoming school play.",
+      "trigger_note": "A admits they accidentally swapped the main characters' costumes.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I’ve been organizing the costumes for the school play all week."
+        },
+        {
+          "speaker": "A",
+          "text": "It's taken a ton of coordination to make sure everyone looks the part."
+        },
+        {
+          "speaker": "A",
+          "text": "You know how detailed these characters can be, every accessory matters."
+        },
+        {
+          "speaker": "A",
+          "text": "Well, here's the thing—I accidentally swapped the main characters' costumes."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "I know, it sounds ridiculous! Luckily, we have time to switch them back."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, it's okay. We'll sort it out in time for the dress rehearsal."
+      },
+      "why_the_vocalization_changes_the_response": "The laughter suggests B finds the mix-up funny, prompting A to join in on the humor and reassure B that it's manageable. The sob indicates B is overwhelmed by the mistake, leading A to offer comfort and assure them it can be resolved.",
+      "usage": {
+        "input_tokens": 5383,
+        "output_tokens": 279
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "laughter-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_laughter_yawn_001",
+      "scenario": "Two classmates discussing their new history assignment in the classroom.",
+      "trigger_note": "A reveals they found a drawing from last year's class hidden in a school desk.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Guess what I found in the desk when I was reaching for my notes."
+        },
+        {
+          "speaker": "A",
+          "text": "It’s a drawing that someone from last year's class left behind."
+        },
+        {
+          "speaker": "A",
+          "text": "It’s a cartoon of Mr. Thompson dressed as a knight!"
+        },
+        {
+          "speaker": "A",
+          "text": "He’s holding a ruler like a sword, and there’s a dragon labeled 'Homework.'"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? I think it deserves a spot on the classroom wall again."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Feeling sleepy? We can always check it out tomorrow after class."
+      },
+      "why_the_vocalization_changes_the_response": "With [laughter], A joins in the amusement and suggests displaying the drawing, creating a shared humorous moment. With [yawn], A notices B's low energy and offers to defer examining the drawing, acknowledging fatigue.",
+      "usage": {
+        "input_tokens": 5397,
+        "output_tokens": 279
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "laughter-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_sigh_sob_001",
+      "scenario": "Two classmates discuss feedback received on their history projects from their teacher.",
+      "trigger_note": "The teacher's feedback indicated that they both need to redo a major part of their projects.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "We finally got the feedback on our history projects."
+        },
+        {
+          "speaker": "A",
+          "text": "I thought I did pretty well, but I guess not."
+        },
+        {
+          "speaker": "A",
+          "text": "Mrs. Daniels said our main arguments need to be reworked entirely."
+        },
+        {
+          "speaker": "A",
+          "text": "Looks like we'll have to redo a major part of our projects."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Alright, let's break it down into smaller tasks so it feels less overwhelming."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, it's tough, but we can take it one step at a time together."
+      },
+      "why_the_vocalization_changes_the_response": "The sigh indicates weariness, so A offers a practical way to reduce the burden. In contrast, the sob shows emotional overwhelm, leading A to provide emotional support and reassurance.",
+      "usage": {
+        "input_tokens": 5502,
+        "output_tokens": 269
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sigh-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_sigh_yawn_001",
+      "scenario": "Two classmates plan a weekend study session for an upcoming exam.",
+      "trigger_note": "A suggests starting the study session early in the morning.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "We really need to prepare for the biology exam next week."
+        },
+        {
+          "speaker": "A",
+          "text": "I was thinking we could meet up this Saturday to go over the chapters."
+        },
+        {
+          "speaker": "A",
+          "text": "There's a lot to cover, so it'd be good to start early in the morning."
+        },
+        {
+          "speaker": "A",
+          "text": "I think starting at 8 AM would be ideal to get a head start."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Okay, we can start at 9 AM instead if that's more manageable."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "low energy",
+        "responder": "A",
+        "response": "Alright, I’ll narrow it down to the key topics so it won’t take as long."
+      },
+      "why_the_vocalization_changes_the_response": "In version 1, A perceives B's sigh as exhaustion, leading A to adjust the schedule for a later start. In version 2, A interprets B's yawn as low energy, prompting A to simplify the study plan to maintain engagement.",
+      "usage": {
+        "input_tokens": 5519,
+        "output_tokens": 291
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sigh-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    },
+    {
+      "pair_id": "school_sob_yawn_001",
+      "scenario": "Two classmates discuss class elections and a speech that must be given.",
+      "trigger_note": "A reveals they will have to speak in front of the entire school by Friday.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I just found out about the class elections schedule."
+        },
+        {
+          "speaker": "A",
+          "text": "They moved everything one day earlier than planned."
+        },
+        {
+          "speaker": "A",
+          "text": "So instead of next week, all speeches are due by Friday."
+        },
+        {
+          "speaker": "A",
+          "text": "We’ll have to speak in front of the entire school by then."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, it's okay. We can work on the speech together—I'll help you with it."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Alright, let's just get through the draft tonight and polish it later."
+      },
+      "why_the_vocalization_changes_the_response": "After [sob], A responds with emotional support and a team-oriented offer, sensing that B is overwhelmed by the pressure. After [yawn], A shifts to a more practical approach, recognizing B's fatigue and suggesting they tackle the immediate task with less intensity.",
+      "usage": {
+        "input_tokens": 5525,
+        "output_tokens": 282
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sob-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "school"
+    }
+  ]
+}

@@ -1,0 +1,727 @@
+{
+  "model": "gpt-4o",
+  "effort": "high",
+  "generated_at": "2026-08-21T16:09:49.657692+00:00",
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "speakers": 2,
+  "theme": "work",
+  "context_turns": 4,
+  "total_turns": 6,
+  "n_per_contrast": 1,
+  "judged": false,
+  "constraint": "turns 1-4 identical across versions with turn 4 as the trigger; turn 5 is B's voc-only first contribution; turn 6 is the selected reply",
+  "results": [
+    {
+      "pair_id": "work_gasp_grunt_001",
+      "scenario": "A coworker informs another about the project deadline being moved up unexpectedly.",
+      "trigger_note": "A reveals that the project deadline has been moved up to this Friday.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, did you hear about the project update?"
+        },
+        {
+          "speaker": "A",
+          "text": "I just got off the call with the client."
+        },
+        {
+          "speaker": "A",
+          "text": "They've decided to move the deadline forward."
+        },
+        {
+          "speaker": "A",
+          "text": "We now need everything completed by this Friday."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "I know, it's sudden, but I'll help with the reports to lighten the load."
+      },
+      "version_2": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "I get it; it's tough. How about I draft the presentation, and you review it?"
+      },
+      "why_the_vocalization_changes_the_response": "After the gasp, A acknowledges the surprise and offers help with the reports to handle the sudden pressure. In response to the grunt, A recognizes the unwillingness and suggests dividing the work to make it more manageable.",
+      "usage": {
+        "input_tokens": 5254,
+        "output_tokens": 265
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-grunt",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_gasp_laughter_001",
+      "scenario": "Coworkers discovering a forgotten birthday surprise for their manager.",
+      "trigger_note": "A reveals they forgot about their manager's birthday surprise in the lunch room.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I think we're all set for the meeting this afternoon."
+        },
+        {
+          "speaker": "A",
+          "text": "By the way, did you guys finish decorating for Carla's birthday?"
+        },
+        {
+          "speaker": "A",
+          "text": "Oh no... I just remembered we left the cake and decorations in the lunch room."
+        },
+        {
+          "speaker": "A",
+          "text": "So they've been sitting in there since this morning."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "Don't worry, they might still be fine. Let's check quickly before the meeting."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? At least it'll be a surprise when she sees it later, anyway."
+      },
+      "why_the_vocalization_changes_the_response": "In the gasp version, A senses B's surprise and reassures B by offering to quickly check the situation to fix it. In the laughter version, A shares in the amusement and makes light of the oversight, suggesting it's still going to be a unique surprise.",
+      "usage": {
+        "input_tokens": 5272,
+        "output_tokens": 284
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_gasp_sigh_001",
+      "scenario": "A manager informs a team member about an unexpected doubling of their workload for a big upcoming presentation.",
+      "trigger_note": "A reveals that the workload for the presentation has unexpectedly doubled.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, I just got out of a meeting with the execs."
+        },
+        {
+          "speaker": "A",
+          "text": "They've decided to expand our presentation for next week."
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently, they want us to cover twice as many topics."
+        },
+        {
+          "speaker": "A",
+          "text": "So, our workload has doubled for this project."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "It's a lot, but we'll prioritize and tackle it one step at a time."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "I know it feels overwhelming; let's break it down to manage it better."
+      },
+      "why_the_vocalization_changes_the_response": "After the gasp, A's response acknowledges the surprise and aims to reassure B by emphasizing prioritization. After the sigh, A's response recognizes B's burdened feeling and offers a practical approach to make it more manageable. Each response adapts to the specific emotion conveyed by B.",
+      "usage": {
+        "input_tokens": 5296,
+        "output_tokens": 288
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_gasp_sob_001",
+      "scenario": "A reveals a motivational poster that a coworker found while organizing the storage room.",
+      "trigger_note": "A reveals that the poster, featuring a team photo, has motivational messages from the entire department.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "You remember we were reorganizing the storage room today, right?"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, we found something interesting in one of the old boxes."
+        },
+        {
+          "speaker": "A",
+          "text": "It's a poster we made for the last team-building retreat."
+        },
+        {
+          "speaker": "A",
+          "text": "Every single person in the department wrote a motivational message on it for each other."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "pleasant surprise",
+        "responder": "A",
+        "response": "Right? It was such a positive and uplifting find; I thought you'd love it!"
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "I know, it's really touching to see all those personal messages again."
+      },
+      "why_the_vocalization_changes_the_response": "With the gasp, A perceives delight and surprise, responding enthusiastically and reinforcing the positive discovery. With the sob, A senses emotional overwhelm, responding with gentle acknowledgment and shared sentimentality about the poster's impact.",
+      "usage": {
+        "input_tokens": 5309,
+        "output_tokens": 284
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_gasp_yawn_001",
+      "scenario": "Discussing a surprise recognition event at work.",
+      "trigger_note": "It's revealed that A won the Employee of the Month award unexpectedly.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "You won't believe what happened today at the staff meeting."
+        },
+        {
+          "speaker": "A",
+          "text": "They were talking about boosting morale and recognizing efforts."
+        },
+        {
+          "speaker": "A",
+          "text": "Then, out of nowhere, they called my name!"
+        },
+        {
+          "speaker": "A",
+          "text": "I didn’t even know they had an Employee of the Month award."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "surprise",
+        "responder": "A",
+        "response": "I know, right? I'm still in shock. They even gave me a plaque!"
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Yeah, it was quite a surprise. Anyway, let's catch up tomorrow."
+      },
+      "why_the_vocalization_changes_the_response": "After [gasp], A shares excitement and follows up with an extra detail about the award, picking up on B's surprise. After [yawn], A acknowledges B's low energy and suggests continuing the conversation another time, showing understanding of B's tiredness.",
+      "usage": {
+        "input_tokens": 5327,
+        "output_tokens": 275
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "gasp-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_grunt_laughter_001",
+      "scenario": "Two coworkers discussing a new seating arrangement in the office.",
+      "trigger_note": "A reveals that the team will swap desks every week to promote collaboration.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "So, starting next week, management has decided to try something new."
+        },
+        {
+          "speaker": "A",
+          "text": "They're hoping it'll boost creativity and team interaction."
+        },
+        {
+          "speaker": "A",
+          "text": "Each week, we'll all be swapping desks with someone from a different department."
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently, it's part of a new initiative to promote collaboration."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "I know, it's a bit much. Maybe we can give our feedback after the first round."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? At least it'll keep things interesting around here."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt signifies resistance, prompting A to acknowledge the inconvenience and suggest feedback to possibly change the initiative. In contrast, laughter indicates amusement, leading A to join in on the humor of the situation and see it as an entertaining change.",
+      "usage": {
+        "input_tokens": 5325,
+        "output_tokens": 272
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_grunt_sigh_001",
+      "scenario": "Coworkers discussing a sudden request to work over the weekend for a big client project.",
+      "trigger_note": "Informing about the need to work over the weekend for a project deadline.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "We finally got the confirmation from the client this morning."
+        },
+        {
+          "speaker": "A",
+          "text": "They want everything ready by Monday morning for the new campaign."
+        },
+        {
+          "speaker": "A",
+          "text": "I know it's short notice, but we’re going to have to work over the weekend."
+        },
+        {
+          "speaker": "A",
+          "text": "I'll need everyone in for at least Saturday."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "What if you handle the client updates, and I'll prepare the reports?"
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "Okay, let's aim to finish by Saturday afternoon so we have some time off."
+      },
+      "why_the_vocalization_changes_the_response": "After [grunt], A treats B's reaction as resistant and attempts to share the workload differently, suggesting a division of responsibilities. After [sigh], A perceives B as burdened and seeks to mitigate the situation by suggesting an early finish to alleviate the workload. Each response adapts differently to B's expressed unwillingness or exhaustion.",
+      "usage": {
+        "input_tokens": 5432,
+        "output_tokens": 303
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_grunt_sob_001",
+      "scenario": "Coworkers are discussing a team reorganization that affects their roles.",
+      "trigger_note": "A informs B about having to lead a new, challenging project on short notice.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, did you hear about the team changes? It's pretty big news."
+        },
+        {
+          "speaker": "A",
+          "text": "It looks like they're merging our team with the one from the other department."
+        },
+        {
+          "speaker": "A",
+          "text": "The real kicker is that they've chosen you to lead the new combined project."
+        },
+        {
+          "speaker": "A",
+          "text": "They want you to present the initial plan at the meeting next week."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "I get it's a lot, but we can prioritize the workload together."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, let's sit and talk about how I can support you through this."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt indicates B's strong unwillingness, prompting A to address the concern by suggesting teamwork to manage the task. The sob shows B's emotional overwhelm, leading A to offer direct support and a more personal discussion, acknowledging the emotional impact.",
+      "usage": {
+        "input_tokens": 5443,
+        "output_tokens": 287
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_grunt_yawn_001",
+      "scenario": "Two coworkers discussing an upcoming training session scheduled for early the next morning.",
+      "trigger_note": "A mentions the training session is set for 7 a.m. tomorrow.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, I just checked the schedule for tomorrow."
+        },
+        {
+          "speaker": "A",
+          "text": "We have that team training session first thing."
+        },
+        {
+          "speaker": "A",
+          "text": "I think it covers the new software everyone's supposed to use."
+        },
+        {
+          "speaker": "A",
+          "text": "And it's going to start at 7 a.m. sharp."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "Is it the early start that's bothering you, or the topic itself?"
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Let's just focus on the key parts; we don't have to be there for the whole thing."
+      },
+      "why_the_vocalization_changes_the_response": "After the grunt, A acknowledges B's resistance by exploring whether it’s about the time or the content, opening up negotiation. After the yawn, A picks up on B's tiredness by suggesting they only attend the essential parts, aiming to reduce B's effort. Each response aligns with what the vocalization reveals about B's state.",
+      "usage": {
+        "input_tokens": 5461,
+        "output_tokens": 296
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "grunt-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_laughter_sigh_001",
+      "scenario": "Coworkers reviewing the new office renovation plans and noticing an unusual feature in the blueprint.",
+      "trigger_note": "The blueprint shows the break room is now listed as a 'Zen Meditation Zone.'",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "Hey, take a look at these renovation plans for the office."
+        },
+        {
+          "speaker": "A",
+          "text": "They've added some new features to improve our workspace."
+        },
+        {
+          "speaker": "A",
+          "text": "There's even a new coffee bar near the entrance."
+        },
+        {
+          "speaker": "A",
+          "text": "But, the break room is now labeled as a 'Zen Meditation Zone.'"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? Imagine us all meditating instead of gossiping over coffee!"
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "resignation",
+        "responder": "A",
+        "response": "I know, maybe they're expecting us to relax our way through deadlines."
+      },
+      "why_the_vocalization_changes_the_response": "With laughter, A joins in on the humor and playfully imagines the office dynamic. With a sigh, A acknowledges the weariness or skepticism about the practicality and potential expectation of this change, reflecting on the burden of more expectations.",
+      "usage": {
+        "input_tokens": 10828,
+        "output_tokens": 538
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 2,
+      "contrast": "laughter-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_laughter_sob_001",
+      "scenario": "Coworkers are going through old office photos for a presentation and find a funny/nostalgic picture.",
+      "trigger_note": "A finds and comments on an old photo of the team dressed as superheroes for a work event.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "While sorting these pictures for the presentation, I found something interesting."
+        },
+        {
+          "speaker": "A",
+          "text": "Remember that themed costume day we had for the company picnic?"
+        },
+        {
+          "speaker": "A",
+          "text": "I've just stumbled upon a picture from that event."
+        },
+        {
+          "speaker": "A",
+          "text": "It's the one where we're all dressed as superheroes—it's hilarious."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Exactly! I especially love how seriously Jim was striking that superhero pose."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Oh, wow. Yeah, those were some great times. Let me know if you need a moment."
+      },
+      "why_the_vocalization_changes_the_response": "In version 1, B's laughter indicates amusement, prompting A to continue the playful mood by recalling a specific funny detail from the photo. In version 2, B's sobbing suggests deep emotional impact from the nostalgia, leading A to provide space and acknowledge the shared memories.",
+      "usage": {
+        "input_tokens": 5406,
+        "output_tokens": 301
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "laughter-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_laughter_yawn_001",
+      "scenario": "Coworkers reviewing a client presentation late in the day.",
+      "trigger_note": "The presentation included a hilarious typo on the title slide.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "We finally got the client presentation back from editing."
+        },
+        {
+          "speaker": "A",
+          "text": "Let's check it quickly, then we can finish up."
+        },
+        {
+          "speaker": "A",
+          "text": "I think they added some new slides."
+        },
+        {
+          "speaker": "A",
+          "text": "Oh wow, the title says, 'Delicious Strategies' instead of 'Decisive Strategies'."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Right? I almost want to keep it just for fun."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Let's just fix it quickly and wrap things up."
+      },
+      "why_the_vocalization_changes_the_response": "The laughter indicates B is amused by the typo, leading A to play along with the humor. The yawn suggests B is tired or disengaged, prompting A to prioritize efficiency and conclude swiftly.",
+      "usage": {
+        "input_tokens": 5430,
+        "output_tokens": 256
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "laughter-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_sigh_sob_001",
+      "scenario": "Coworkers discussing reorganizing the office storage space.",
+      "trigger_note": "The manager requests complete reorganization of the storage area by Monday.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I spoke with the manager this morning."
+        },
+        {
+          "speaker": "A",
+          "text": "She wants us to reorganize the entire storage area."
+        },
+        {
+          "speaker": "A",
+          "text": "And she needs it done by Monday."
+        },
+        {
+          "speaker": "A",
+          "text": "It'll be a lot of work to go through everything this weekend."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "Let's just split it up so it doesn't feel overwhelming."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, it's okay, we'll figure this out together."
+      },
+      "why_the_vocalization_changes_the_response": "The sigh signals weariness, so A responds by suggesting a practical division of the task to make it less burdensome. The sob indicates a more intense emotional response, prompting A to offer emotional support and emphasize partnership in handling the workload.",
+      "usage": {
+        "input_tokens": 5536,
+        "output_tokens": 257
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sigh-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_sigh_yawn_001",
+      "scenario": "Two coworkers are discussing the plan for packing up the office for an upcoming move.",
+      "trigger_note": "A reveals they need to stay late for the office move preparation.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "The moving company isn't coming until next week, but we need to have everything packed up by Thursday."
+        },
+        {
+          "speaker": "A",
+          "text": "That means we’ll have to stay late for the next few days to get it all done."
+        },
+        {
+          "speaker": "A",
+          "text": "Plus, we also have to make sure all the files are sorted and labeled correctly."
+        },
+        {
+          "speaker": "A",
+          "text": "I just heard we need to handle the storage room tonight before anything else."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "Okay, let's focus on the most critical sections first; we'll split the work to make it easier."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "low energy",
+        "responder": "A",
+        "response": "Alright, we'll just get the basics done tonight and continue in the morning."
+      },
+      "why_the_vocalization_changes_the_response": "The sigh indicates B is feeling burdened, prompting A to offer a plan to divide the workload to reduce the burden. The yawn suggests low energy, leading A to decide to limit the evening's tasks and continue later, accommodating B's lack of energy.",
+      "usage": {
+        "input_tokens": 5551,
+        "output_tokens": 310
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sigh-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    },
+    {
+      "pair_id": "work_sob_yawn_001",
+      "scenario": "Coworkers reviewing yearly performance evaluations and discovering a harsh review for one member of the team.",
+      "trigger_note": "A informs B about their unexpectedly harsh performance review.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "So, I finally got through the evaluations today."
+        },
+        {
+          "speaker": "A",
+          "text": "Most of them went as expected, but there was an outlier."
+        },
+        {
+          "speaker": "A",
+          "text": "Your review was surprisingly harsh, which seemed out of character."
+        },
+        {
+          "speaker": "A",
+          "text": "They said your attention to detail has been lacking, which I didn't anticipate."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "Hey, let's talk to HR about this. We need to clear up what's going on."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Let's wrap it up for today and tackle this fresh in the morning."
+      },
+      "why_the_vocalization_changes_the_response": "The sob signals that B is overwhelmed, prompting A to offer immediate action by involving HR to resolve the situation. The yawn suggests B is tired and possibly needs a break, so A decides to pause the discussion and revisit it with fresh energy later.",
+      "usage": {
+        "input_tokens": 5561,
+        "output_tokens": 284
+      },
+      "served_by": "gpt-4o-2024-08-06",
+      "attempts": 1,
+      "contrast": "sob-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "work"
+    }
+  ]
+}

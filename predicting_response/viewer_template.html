@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 3 · Same setup, different vocalization, different reply</title>
+  <style>
+    :root {
+      --paper: #f3efe6;
+      --ink: #1c1712;
+      --mute: #6d6458;
+      --line: #d8cfc0;
+      --card: #fbf8f2;
+      --ok: #215c40;
+      --ok-bg: #dcecde;
+      --miss: #9a3124;
+      --miss-bg: #f4ddd6;
+      --gold: #8a5a12;
+      --gold-bg: #f3e6c8;
+      --trigger: #efe4cd;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink); }
+    body { font: 15px/1.45 "Avenir Next", "Segoe UI", sans-serif; padding: 28px 20px 80px; }
+    h1, h2, h3, .serif { font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif; }
+    .wrap { max-width: 1180px; margin: 0 auto; }
+    header.top { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: end; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+    header.top p.kicker { margin: 0 0 6px; color: var(--mute); letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
+    h1 { margin: 0; font-size: 32px; font-weight: 600; letter-spacing: -0.03em; }
+    .lede { margin: 8px 0 0; color: var(--mute); max-width: 46em; }
+    .scores { display: flex; gap: 26px; text-align: right; }
+    .scores .num { font-size: 40px; line-height: 1; font-weight: 600; letter-spacing: -0.04em; }
+    .scores .cap { color: var(--mute); font-size: 12px; margin-top: 4px; }
+    .scores .sub { color: var(--mute); font-size: 12px; }
+    section { margin-top: 30px; }
+    h2 { font-size: 18px; margin: 0 0 12px; font-weight: 600; }
+    .note { color: var(--mute); font-size: 13px; margin: 0 0 14px; max-width: 62em; }
+    .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .bar-row { display: grid; grid-template-columns: 74px 1fr 78px; gap: 10px; align-items: center; margin: 7px 0; font-size: 13px; }
+    .bar-row .label { color: var(--mute); }
+    .track { height: 8px; background: #e6dfd2; position: relative; }
+    .fill { height: 8px; background: var(--ink); }
+    .fill.low { background: var(--miss); }
+    .chance { position: absolute; top: -3px; bottom: -3px; width: 1px; background: var(--mute); opacity: 0.55; }
+    .count { text-align: right; font-variant-numeric: tabular-nums; color: var(--mute); }
+    table.conf { border-collapse: collapse; font-size: 13px; }
+    table.conf th, table.conf td { border: 1px solid var(--line); padding: 5px 9px; text-align: center; }
+    table.conf th { color: var(--mute); font-weight: 500; font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; }
+    table.conf td.diag { background: var(--ok-bg); font-weight: 600; }
+    table.conf td.off { background: var(--miss-bg); }
+    table.conf td.zero { color: #c3bbad; }
+    table.conf th.row { text-align: right; text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--ink); }
+    .split { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 6px; }
+    .stat { background: var(--card); border: 1px solid var(--line); padding: 12px 16px; }
+    .stat .big { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
+    .stat .cap { color: var(--mute); font-size: 12px; margin-top: 2px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    select, input[type="search"] { font: inherit; background: var(--card); color: var(--ink); border: 1px solid var(--line); padding: 7px 10px; }
+    input[type="search"] { min-width: 220px; }
+    .meta { color: var(--mute); font-size: 13px; margin-top: 10px; }
+    .card { background: var(--card); border: 1px solid var(--line); padding: 18px; margin: 16px 0; }
+    .card-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; margin-bottom: 4px; }
+    .card-head h3 { margin: 0; font-size: 18px; }
+    .badge { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--mute); }
+    .scenario { color: var(--mute); font-size: 13px; margin: 0 0 12px; }
+    ol.ctx { margin: 0 0 14px; padding-left: 22px; font-size: 14px; }
+    ol.ctx li { margin: 3px 0; }
+    ol.ctx li.trig { background: var(--trigger); padding: 2px 6px; margin-left: -6px; }
+    ol.ctx .tag { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-left: 8px; }
+    .versions { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .ver { border-top: 2px solid var(--line); padding-top: 10px; }
+    .ver.right .voc-line { color: var(--ink); }
+    .voc-line { font-size: 14px; margin: 0 0 2px; }
+    .voc-line b { font-weight: 600; }
+    .interp { color: var(--mute); font-size: 12px; margin: 0 0 8px; }
+    audio { width: 100%; height: 32px; margin: 2px 0 4px; }
+    .clipname { color: var(--mute); font-size: 11px; margin: 0 0 10px; }
+    .qhead { font-size: 11px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--mute); margin: 12px 0 5px; display: flex; justify-content: space-between; }
+    .qhead .verdict.ok { color: var(--ok); }
+    .qhead .verdict.miss { color: var(--miss); }
+    ul.opts { list-style: none; margin: 0; padding: 0; }
+    ul.opts li { display: grid; grid-template-columns: 20px 1fr auto; gap: 8px; align-items: start; padding: 6px 8px; margin: 3px 0; font-size: 13px; border: 1px solid transparent; }
+    ul.opts li .key { color: var(--mute); font-variant-numeric: tabular-nums; }
+    ul.opts li.gold { background: var(--gold-bg); border-color: #e2c98a; }
+    ul.opts li.pred { outline: 1px solid var(--miss); }
+    ul.opts li.gold.pred { outline-color: var(--ok); background: var(--ok-bg); border-color: #b7d0bb; }
+    ul.opts li .tag { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mute); padding-top: 2px; white-space: nowrap; }
+    ul.opts.six li { padding: 4px 8px; margin: 2px 0; }
+    .why { color: var(--mute); font-size: 13px; margin: 14px 0 0; padding-top: 10px; border-top: 1px solid var(--line); }
+    .empty { color: var(--mute); padding: 24px 0; }
+    footer { margin-top: 34px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--mute); font-size: 12px; }
+    @media (max-width: 900px) {
+      header.top, .panels, .versions { grid-template-columns: 1fr; }
+      .scores { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <p class="kicker">Task 3 · Same setup, different vocalization</p>
+        <h1>Does the sound decide what gets said next?</h1>
+        <p class="lede" id="lede"></p>
+      </div>
+      <div class="scores serif">
+        <div>
+          <div class="num" id="q1-num"></div>
+          <div class="cap">Q1 · which sound</div>
+          <div class="sub" id="q1-sub"></div>
+        </div>
+        <div>
+          <div class="num" id="q2-num"></div>
+          <div class="cap">Q2 · which reply</div>
+          <div class="sub" id="q2-sub"></div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>How the two questions relate</h2>
+      <p class="note">Each clip is played once and both questions are asked in the same session. If a model
+        can only pick the right reply when it recognized the sound, the two should move together.</p>
+      <div class="split" id="split"></div>
+    </section>
+
+    <section class="panels">
+      <div>
+        <h2>Accuracy by vocalization</h2>
+        <p class="note">Bars are Q1 then Q2 for each sound. The tick marks chance.</p>
+        <div id="bars"></div>
+      </div>
+      <div>
+        <h2>Q1 confusion — heard as</h2>
+        <p class="note">Rows are what was played, columns what the model answered.</p>
+        <div id="conf"></div>
+      </div>
+    </section>
+
+    <section id="theme-section" style="display:none">
+      <h2>Accuracy by theme</h2>
+      <div id="theme-bars"></div>
+    </section>
+
+    <section>
+      <h2>The pairs</h2>
+      <div class="controls">
+        <select id="filter-theme"></select>
+        <select id="filter-voc"></select>
+        <select id="filter-result"></select>
+        <input type="search" id="search" placeholder="search text…" />
+      </div>
+      <p class="meta" id="list-meta"></p>
+      <div id="list"></div>
+    </section>
+
+    <footer id="footer"></footer>
+  </div>
+
+  <script id="payload" type="application/json">__PAYLOAD__</script>
+  <script>
+    const D = JSON.parse(document.getElementById("payload").textContent);
+    const S = D.summary;
+    const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+    const writerLabel = Array.isArray(D.writer) ? D.writer.join(", ") : D.writer;
+    const themeLabel = (D.themes || []).length > 1 ? ` across ${D.themes.length} themes (${D.themes.join(", ")})` : "";
+    document.getElementById("lede").textContent =
+      `${D.items.length} pairs, ${S.n} clips${themeLabel}. Turns 1–${D.context_turns} are identical inside a pair; `
+      + `only the vocalization at turn ${D.context_turns + 1} differs, and it should change which reply comes next. `
+      + `Clips end at the vocalization, so the reply is never audible. Written by ${writerLabel}, evaluated by ${D.eval_model}.`;
+    document.getElementById("q1-num").textContent = S.q1.pct + "%";
+    document.getElementById("q1-sub").textContent = `${S.q1.correct}/${S.q1.n} · chance ${S.q1.chance}%`;
+    document.getElementById("q2-num").textContent = S.q2.pct + "%";
+    document.getElementById("q2-sub").textContent = `${S.q2.correct}/${S.q2.n} · chance ${S.q2.chance}%`;
+
+    document.getElementById("split").innerHTML = [
+      [`${S.both.pct}%`, `both right · ${S.both.correct}/${S.both.n} · chance ${S.both.chance}%`],
+      [`${S.q2_when_q1_correct.pct}%`, `Q2 when Q1 was right · ${S.q2_when_q1_correct.correct}/${S.q2_when_q1_correct.n}`],
+      [`${S.q2_when_q1_wrong.pct}%`, `Q2 when Q1 was wrong · ${S.q2_when_q1_wrong.correct}/${S.q2_when_q1_wrong.n}`]
+    ].map(([big, cap]) => `<div class="stat"><div class="big serif">${big}</div><div class="cap">${cap}</div></div>`).join("");
+
+    function barRow(label, value, count, chance) {
+      const low = value <= chance + 0.01;
+      return `<div class="bar-row"><div class="label">${esc(label)}</div>`
+        + `<div class="track"><div class="fill${low ? " low" : ""}" style="width:${Math.max(value, 0.8)}%"></div>`
+        + `<div class="chance" style="left:${chance}%"></div></div>`
+        + `<div class="count">${count}</div></div>`;
+    }
+    document.getElementById("bars").innerHTML = D.voc_order.map((voc) => {
+      const s = S.by_vocalization[voc];
+      if (!s) return "";
+      return `<div style="margin-bottom:12px">`
+        + barRow(D.voc_label[voc] + " Q1", s.q1, `${s.q1_correct}/${s.n}`, S.q1.chance)
+        + barRow("Q2", s.q2, `${s.q2_correct}/${s.n}`, S.q2.chance)
+        + `</div>`;
+    }).join("");
+
+    const heardKeys = D.voc_order.concat(["unparsed"]).filter((k) =>
+      D.voc_order.some((g) => (S.confusion[g] || {})[k]));
+    document.getElementById("conf").innerHTML =
+      `<table class="conf"><thead><tr><th></th>${heardKeys.map((k) => `<th>${esc(D.voc_label[k] || k)}</th>`).join("")}</tr></thead><tbody>`
+      + D.voc_order.map((gold) => {
+          const row = S.confusion[gold] || {};
+          return `<tr><th class="row">${esc(D.voc_label[gold])}</th>`
+            + heardKeys.map((k) => {
+                const n = row[k] || 0;
+                const cls = n === 0 ? "zero" : (k === gold ? "diag" : "off");
+                return `<td class="${cls}">${n || "·"}</td>`;
+              }).join("") + `</tr>`;
+        }).join("")
+      + `</tbody></table>`;
+
+    if (S.by_theme && Object.keys(S.by_theme).length > 1) {
+      document.getElementById("theme-section").style.display = "";
+      document.getElementById("theme-bars").innerHTML = Object.entries(S.by_theme).map(([theme, s]) => {
+        return `<div style="margin-bottom:12px">`
+          + barRow(theme + " Q1", s.q1, `${s.q1_correct}/${s.n}`, S.q1.chance)
+          + barRow("Q2", s.q2, `${s.q2_correct}/${s.n}`, S.q2.chance)
+          + `</div>`;
+      }).join("");
+    }
+
+    const themeSel = document.getElementById("filter-theme");
+    const themes = D.themes || [];
+    if (themes.length > 1) {
+      themeSel.innerHTML = `<option value="">All themes</option>`
+        + themes.map((t) => `<option value="${t}">${esc(t)}</option>`).join("");
+    } else {
+      themeSel.style.display = "none";
+    }
+
+    const vocSel = document.getElementById("filter-voc");
+    vocSel.innerHTML = `<option value="">All vocalizations</option>`
+      + D.voc_order.map((v) => `<option value="${v}">${esc(D.voc_label[v])}</option>`).join("");
+    const resSel = document.getElementById("filter-result");
+    resSel.innerHTML = [
+      ["", "All results"], ["q2wrong", "Q2 wrong"], ["q1wrong", "Q1 wrong"],
+      ["both", "Both right"], ["split", "One version right, one wrong"]
+    ].map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
+    const search = document.getElementById("search");
+
+    function optList(options, gold, predicted, labelFn, six) {
+      return `<ul class="opts${six ? " six" : ""}">` + Object.entries(options).map(([key, value]) => {
+        const isGold = key === gold, isPred = key === predicted;
+        const tags = [isGold ? "correct" : "", isPred ? "model" : ""].filter(Boolean).join(" · ");
+        return `<li class="${isGold ? "gold " : ""}${isPred ? "pred" : ""}">`
+          + `<span class="key">${esc(key)}</span><span>${esc(labelFn(value))}</span>`
+          + `<span class="tag">${tags}</span></li>`;
+      }).join("") + `</ul>`;
+    }
+
+    function verdict(ok) {
+      return `<span class="verdict ${ok ? "ok" : "miss"}">${ok ? "correct" : "wrong"}</span>`;
+    }
+
+    function versionBlock(v) {
+      const both = v.q1_correct && v.q2_correct;
+      return `<div class="ver${both ? " right" : ""}">
+        <p class="voc-line"><b>${esc(v.voc_tag)}</b> as ${esc(v.interpretation)}</p>
+        <p class="interp">version ${esc(v.version)} · clip ends at the vocalization · ${v.prompt_seconds}s${
+          v.voice_id ? ` · voice ${esc(v.voice_id)}` : ""}</p>
+        <audio controls preload="none" src="audio_prompt/${esc(v.prompt_audio)}"></audio>
+        <p class="clipname">recording: ${esc(v.clip_file)} (${v.clip_seconds}s)${
+          v.full_audio ? ` · <a href="audio_full/${esc(v.full_audio)}">with the reply</a>` : ""}</p>
+        <div class="qhead"><span>Q1 · which sound</span>${verdict(v.q1_correct)}</div>
+        ${optList(v.q1_options, v.q1_gold, v.q1_predicted, (voc) => D.voc_label[voc] || voc, true)}
+        <div class="qhead"><span>Q2 · what would the speaker say next</span>${verdict(v.q2_correct)}</div>
+        ${optList(v.q2_options, v.q2_gold, v.q2_predicted, (t) => t, false)}
+      </div>`;
+    }
+
+    function card(item) {
+      const last = item.context.length;
+      return `<div class="card">
+        <div class="card-head">
+          <h3>${esc(item.pair_id)}</h3>
+          <span class="badge">${item.theme ? esc(item.theme) + " · " : ""}${esc(item.contrast)}</span>
+        </div>
+        <p class="scenario">${esc(item.scenario)} · trigger: ${esc(item.trigger_note)}</p>
+        <ol class="ctx">${item.context.map((t, i) =>
+          `<li class="${i + 1 === last ? "trig" : ""}">${esc(t.speaker)}: ${esc(t.text)}`
+          + (i + 1 === last ? `<span class="tag">trigger</span>` : "") + `</li>`).join("")}</ol>
+        <div class="versions">${item.versions.map(versionBlock).join("")}</div>
+        <p class="why">${esc(item.why)}</p>
+      </div>`;
+    }
+
+    function matches(item) {
+      const theme = themeSel.value, voc = vocSel.value, res = resSel.value, q = search.value.trim().toLowerCase();
+      if (theme && item.theme !== theme) return false;
+      if (voc && !item.versions.some((v) => v.vocalization === voc)) return false;
+      if (res === "q2wrong" && item.versions.every((v) => v.q2_correct)) return false;
+      if (res === "q1wrong" && item.versions.every((v) => v.q1_correct)) return false;
+      if (res === "both" && !item.versions.every((v) => v.q1_correct && v.q2_correct)) return false;
+      if (res === "split") {
+        const rights = item.versions.filter((v) => v.q2_correct).length;
+        if (rights !== 1) return false;
+      }
+      if (q) {
+        const hay = [item.pair_id, item.scenario, item.trigger_note, item.why,
+          ...item.context.map((t) => t.text),
+          ...item.versions.flatMap((v) => [v.reply, v.interpretation])].join(" ").toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    }
+
+    function render() {
+      const shown = D.items.filter(matches);
+      document.getElementById("list").innerHTML =
+        shown.length ? shown.map(card).join("") : `<p class="empty">Nothing matches those filters.</p>`;
+      const clips = shown.length * 2;
+      document.getElementById("list-meta").textContent =
+        `${shown.length} of ${D.items.length} pairs · ${clips} clips`;
+    }
+    [themeSel, vocSel, resSel].forEach((el) => el.addEventListener("change", render));
+    search.addEventListener("input", render);
+    render();
+
+    const missing = D.contrasts_without_a_pair || [];
+    document.getElementById("footer").innerHTML =
+      `Writer ${esc(D.writer)} · eval ${esc(D.eval_model)}, seed ${D.seed}`
+      + `${D.separate_sessions ? ", Q2 in a fresh session" : ", both questions in one session"}`
+      + ` · speech ${esc(D.tts_model)}, voice${(D.voices || []).length > 1 ? "s" : ""} `
+      + `${(D.voices || []).map(esc).join(", ")}; the vocalization is a real recording, never synthesized`
+      + `${missing.length ? ` · no valid pair for ${missing.map(esc).join(", ")}` : ""}`
+      + ` · built ${esc((D.built_at || "").slice(0, 10))}`;
+  </script>
+</body>
+</html>
