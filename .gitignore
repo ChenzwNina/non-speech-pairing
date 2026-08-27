@@ -18,3 +18,6 @@ prior_test/predicting_response/out/themes/audio_turns/
 # Third-party source corpus, 17MB. Only used once, to sample the 20 situations now
 # recorded in 1.0/out/seeds.json. Refetch from facebookresearch/EmpatheticDialogues.
 archive/train.csv
+
+# Run logs; the manifests and verdicts they produce are what matters.
+2.0/out/*.log
