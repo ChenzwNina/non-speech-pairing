@@ -1,0 +1,1047 @@
+{
+  "generated_at": "2026-08-27T15:38:21+00:00",
+  "trials": 48,
+  "scoring": "exact letter match against the condition's gold; chance is 25%",
+  "summary": {
+    "q3": {
+      "openai": {
+        "right": 14,
+        "asked": 20,
+        "unparsed": 0
+      },
+      "qwen": {
+        "right": 9,
+        "asked": 15,
+        "unparsed": 0
+      },
+      "grok": {
+        "right": 4,
+        "asked": 8,
+        "unparsed": 0
+      },
+      "gemini": {
+        "right": 4,
+        "asked": 5,
+        "unparsed": 0
+      }
+    },
+    "q4": {
+      "openai": {
+        "right": 20,
+        "asked": 20,
+        "unparsed": 0
+      },
+      "qwen": {
+        "right": 15,
+        "asked": 15,
+        "unparsed": 0
+      },
+      "grok": {
+        "right": 6,
+        "asked": 8,
+        "unparsed": 0
+      },
+      "gemini": {
+        "right": 5,
+        "asked": 5,
+        "unparsed": 0
+      }
+    }
+  },
+  "detail": [
+    {
+      "provider": "openai",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "A",
+      "chose": "B",
+      "correct": false,
+      "raw": "B",
+      "picked_text": "They are handling it as an unremarkable logistical detail of the trip, with neither speaker showing much interest in the incident beyond confirming what happened.",
+      "picked_other_condition": false
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "D",
+      "chose": "A",
+      "correct": false,
+      "raw": "A",
+      "picked_text": "They are dwelling in sympathetic secondhand embarrassment, treating the failed cover story and the manager’s silent presence as an especially miserable workplace humiliation.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "D",
+      "chose": "B",
+      "correct": false,
+      "raw": "B",
+      "picked_text": "They are turning the speaker’s disastrous meeting mishap into a shared absurdity rather than dwelling on the humiliation.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "C",
+      "correct": false,
+      "raw": "C",
+      "picked_text": "They are turning an embarrassing yoga mishap into a shared, harmless anecdote and admiring the quick fix rather than dwelling on the humiliation.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "C",
+      "chose": "A",
+      "correct": false,
+      "raw": "A"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "A",
+      "correct": false,
+      "raw": "A",
+      "picked_text": "They are turning an embarrassing yoga mishap into a shared, harmless anecdote and admiring the quick fix rather than dwelling on the humiliation.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_005",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_005",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "A",
+      "chose": "D",
+      "correct": false,
+      "raw": "D",
+      "picked_text": "They are turning the train-bathroom intrusion into an absurd travel mishap rather than dwelling on the embarrassment.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_005",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "A",
+      "correct": false,
+      "raw": "A",
+      "picked_text": "They are turning the child’s small Walmart spill and the onlookers’ attention into a shared, manageable parenting mishap rather than an embarrassment.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_005",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "D",
+      "chose": "C",
+      "correct": false,
+      "raw": "C",
+      "picked_text": "They are turning an embarrassing yoga mishap into a shared, harmless anecdote and admiring the quick fix rather than dwelling on the humiliation.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_006",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_006",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_006",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_006",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "A",
+      "chose": "C",
+      "correct": false,
+      "raw": "C",
+      "picked_text": "They are working through it as a neutral debrief, establishing exactly what happened and confirming the presentation still met its objective.",
+      "picked_other_condition": false
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_005",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "D",
+      "correct": false,
+      "raw": "D",
+      "picked_text": "They are turning the child’s small Walmart spill and the onlookers’ attention into a shared, manageable parenting mishap rather than an embarrassment.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_005",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_007",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "A",
+      "chose": "D",
+      "correct": false,
+      "raw": "D",
+      "picked_text": "They are commiserating over an awkward workplace humiliation that the speaker expects to keep replaying socially.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_007",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_007",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_007",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_005",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_005",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_006",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_006",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "A",
+      "correct": false,
+      "raw": "A",
+      "picked_text": "They are turning the train-bathroom intrusion into an absurd travel mishap rather than dwelling on the embarrassment.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "D",
+      "chose": "B",
+      "correct": false,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_008",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_008",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_008",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_008",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_006",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "D",
+      "correct": false,
+      "raw": "D",
+      "picked_text": "They are turning the unnoticed smeared-eyeliner errand into an affectionate, escalating public-embarrassment anecdote rather than dwelling on the humiliation.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_006",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_007",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_007",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_009",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_009",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "D",
+      "chose": "A",
+      "correct": false,
+      "raw": "A",
+      "picked_text": "They are turning an embarrassing yoga mishap into a shared, harmless anecdote and admiring the quick fix rather than dwelling on the humiliation.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_009",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "B",
+      "chose": "B",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_009",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "B",
+      "chose": "A",
+      "correct": false,
+      "raw": "A",
+      "picked_text": "They are commiserating over the exhausting scramble of having to improvise a work presentation from memory.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_007",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_007",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_010",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "B",
+      "chose": "C",
+      "correct": false,
+      "raw": "C",
+      "picked_text": "They are commiserating over a self-inflicted last-minute wardrobe scramble while recognizing that it was salvaged.",
+      "picked_other_condition": true
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_010",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_008",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_008",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "question": "q3",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_010",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "A",
+      "chose": "A",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_010",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "C",
+      "chose": "C",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "question": "q3",
+      "gold": "C",
+      "chose": "A",
+      "correct": false,
+      "raw": "A",
+      "picked_text": "They are working through it as a neutral debrief, establishing exactly what happened and confirming the presentation still met its objective.",
+      "picked_other_condition": false
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "question": "q4",
+      "gold": "D",
+      "chose": "D",
+      "correct": true,
+      "raw": "D"
+    }
+  ]
+}

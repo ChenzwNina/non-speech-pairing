@@ -153,8 +153,9 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--only", action="append")
     parser.add_argument("--limit", type=int)
-    parser.add_argument("--keep-unresolved", action="store_true",
-                        help="splice slots whose clip failed stage 8 anyway")
+    parser.add_argument("--drop-unresolved", action="store_true",
+                        help="exclude slots whose clips did not pass stage 8, from both "
+                             "conditions")
     return parser.parse_args()
 
 
