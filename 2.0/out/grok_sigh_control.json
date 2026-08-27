@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-27",
+  "question": "Is grok rejecting our synthesized sighs, or can it not perceive sighs at all?",
+  "method": "Five real human sigh recordings and five real laughter recordings from audio_non-speech/, drawn at seed 0, put to all four S2S models with the same yes/no question stage 8 uses. No TTS involved, so a denial is about the listener.",
+  "real_recordings": {
+    "openai": {"sigh": "5/5", "laughter": "5/5"},
+    "qwen": {"sigh": "5/5", "laughter": "5/5"},
+    "gemini": {"sigh": "5/5", "laughter": "3/3 completed, 2 API errors"},
+    "grok": {"sigh": "2/5", "laughter": "3/5",
+             "detail": "two flat NO on real human sighs, one timeout; one NO and one timeout on real laughter"}
+  },
+  "synthesized_clips": {
+    "note": "1097 verdicts over the 410 stage-8 clips",
+    "sigh_yes_rate": {"qwen": 1.00, "gemini": 0.99, "openai": 0.98, "grok": 0.25},
+    "laugh_yes_rate": {"gemini": 1.00, "qwen": 1.00, "openai": 0.97, "grok": 0.79},
+    "grok_silences": {"sigh": 39, "laugh": 2}
+  },
+  "conclusion": "Grok cannot reliably perceive sighs. It denies them in synthesized clips (25%) and in real human recordings (40%), and goes silent on sigh audio twenty times more often than on laughter. Manual turn control fixed its transport — it echoes speech at 100% in preflight — so this is perception, not delivery.",
+  "consequence_for_stage_8": "All 53 unresolved clips had grok as one of the two drawn judges. No clip judged by a grok-free pair failed. 49 of the 53 are sighs.",
+  "recommendation": "Draw stage-8 judges from openai, gemini and qwen. Keep grok as a tested model in stage 11 — its inability to hear sighs is a result the benchmark should measure, not a defect in the gate that measures the stimuli."
+}
