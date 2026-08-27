@@ -69,6 +69,13 @@ TIMEOUT = 180.0
 # makes a retry cheap, and a retry is all a hung session needs.
 GROK_TIMEOUT = 45.0
 
+# Gemini's live session can block forever on receive(): if the server never sends
+# turn_complete, the async-for never ends, the socket stays ESTABLISHED and the thread never
+# comes back. Three of those were enough to deadlock a nine-worker verification pass, because
+# every remaining worker queued behind gemini's semaphore waiting on sessions that were never
+# going to finish. Nothing in the SDK bounds this, so it is bounded here.
+GEMINI_TIMEOUT = 90.0
+
 # Manual turn control, not server VAD. Under VAD grok refuses whole clips outright -- it
 # reports hearing no audio and the session hangs -- and sighs failed every single time. With
 # turn_detection off and an explicit commit it answered 11 of 12 clips, every answer correct.
@@ -299,8 +306,12 @@ async def _ask_gemini(audio: Path, task: str, question: str, model: str) -> str:
     return "".join(said).strip()
 
 
+async def _bounded(coro, seconds: float):
+    return await asyncio.wait_for(coro, timeout=seconds)
+
+
 def ask_gemini(audio: Path, task: str, question: str, model: str) -> str:
-    return asyncio.run(_ask_gemini(audio, task, question, model))
+    return asyncio.run(_bounded(_ask_gemini(audio, task, question, model), GEMINI_TIMEOUT))
 
 
 def _grok_retry(call, *args):
@@ -599,7 +610,10 @@ async def _converse_gemini(audio: Path, task: str, followups: list[str], model: 
 
 
 def converse_gemini(audio: Path, task: str, followups: list[str], model: str) -> dict:
-    return asyncio.run(_converse_gemini(audio, task, followups, model))
+    # A conversation is several turns rather than one answer, so it gets proportionally longer
+    # before the same bound applies.
+    return asyncio.run(_bounded(_converse_gemini(audio, task, followups, model),
+                               GEMINI_TIMEOUT * (1 + len(followups))))
 
 
 CONVERSE = {"openai": converse_openai, "grok": converse_grok, "qwen": converse_qwen,

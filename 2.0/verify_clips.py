@@ -52,7 +52,13 @@ QUESTION = {
     "sad": "You will hear one short audio clip. Does the clip contain a sigh? "
            "A. yes  B. no. Answer with one letter and nothing else.",
 }
-JUDGES = ("openai", "grok", "gemini", "qwen")
+# grok is not a judge. It answered yes to 25% of sigh clips where these three answered
+# 98-100%, went silent on sigh audio 39 times against 2 for laughter, and denied real human
+# sigh recordings 3 times out of 5. Every one of the 53 clips that failed the first pass had
+# grok as a drawn judge; no clip judged by a grok-free pair failed at all. It remains a tested
+# model in stage 11 — being deaf to sighs is a result worth reporting, not a reason to let it
+# screen the stimuli. See out/grok_sigh_control.json.
+JUDGES = ("openai", "gemini", "qwen")
 NEEDED = 2              # judges per clip
 MAX_ROUNDS = 3          # regenerations of the same token
 NO_RESPONSE_TRIES = 2   # the spec's "try it one more time with the same audio"

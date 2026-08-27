@@ -14,6 +14,8 @@ from __future__ import annotations
 import json
 import os
 import re
+import subprocess
+import threading
 import time
 from pathlib import Path
 
@@ -30,6 +32,19 @@ for extra in (REPO.parent / "non-speech-vocalization" / ".env",
         load_dotenv(extra)
 
 XAI_BASE = "https://api.x.ai/v1"
+
+# Claude runs through the Claude Code CLI rather than the Anthropic API, so it draws on the
+# subscription instead of API credit. Two flags matter. --system-prompt replaces the agent
+# prompt instead of appending to it, and --exclude-dynamic-system-prompt-sections drops the
+# per-session sections: together they cut a one-word answer from $0.235 to $0.046. Do NOT add
+# --disallowed-tools to trim further — changing the tool set invalidates the prompt cache
+# every call, which costs four times more than the schemas do.
+CLAUDE_CLI = "claude"
+CLI_FLAGS = ("--output-format", "json", "--exclude-dynamic-system-prompt-sections")
+CLI_TIMEOUT = 240
+
+CLI_COST: list[float] = []
+_cost_lock = threading.Lock()
 
 # Stage 4 is GPT-4o per the spec, where every other writing stage is GPT-5.6-Terra. Kept as
 # written rather than quietly upgraded.
@@ -60,9 +75,28 @@ def _xai() -> OpenAI:
     return OpenAI(api_key=key("XAI_API_KEY"), base_url=XAI_BASE)
 
 
-def _anthropic():
-    from anthropic import Anthropic
-    return Anthropic(api_key=key("ANTHROPIC_API_KEY"))
+def ask_claude(model: str, system: str, prompt: str) -> str:
+    """One judgement from Claude, via the CLI. The prompt goes in on stdin, so its length and
+    contents need no quoting."""
+    proc = subprocess.run(
+        [CLAUDE_CLI, "-p", "--model", model, "--system-prompt", system, *CLI_FLAGS],
+        input=prompt, capture_output=True, text=True, timeout=CLI_TIMEOUT)
+    if proc.returncode != 0:
+        raise RuntimeError(f"claude cli exit {proc.returncode}: "
+                           f"{(proc.stderr or proc.stdout)[:200]}")
+    try:
+        payload = json.loads(proc.stdout)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"claude cli gave no JSON: {proc.stdout[:200]}") from exc
+    if payload.get("is_error"):
+        raise RuntimeError(f"claude cli reported an error: {str(payload.get('result'))[:200]}")
+    with _cost_lock:
+        CLI_COST.append(payload.get("total_cost_usd") or 0.0)
+    return (payload.get("result") or "").strip()
+
+
+def cli_spend() -> float:
+    return sum(CLI_COST)
 
 
 def retry(call, *args, **kwargs):
@@ -99,11 +133,7 @@ def ask(judge: str, system: str, prompt: str, max_tokens: int = 1200) -> str:
     """One text judgement from one judge, at its default effort. Returns raw text."""
     model = JUDGES.get(judge, judge)
     if model.startswith("claude"):
-        message = _anthropic().messages.create(
-            model=model, max_tokens=max_tokens, system=system,
-            messages=[{"role": "user", "content": prompt}])
-        return "".join(block.text for block in message.content
-                       if getattr(block, "type", "") == "text").strip()
+        return ask_claude(model, system, prompt)
     client = _xai() if model.startswith("grok") else _openai()
     response = client.responses.create(model=model, instructions=system, input=prompt,
                                        max_output_tokens=max_tokens)
@@ -133,6 +163,13 @@ if __name__ == "__main__":
     # Smoke test: every writer and judge reachable, before anything depends on them.
     print(f"{'model':22} {'role':10} reply")
     for role, model in (("writer", WRITER), ("placer", PLACER), ("verifier", VERIFIER)):
+        if model.startswith("claude"):
+            try:
+                out = ask_claude(model, "Reply with one word.", "Say READY.")
+                print(f"  {model:20} {role:10} {out[:40]!r}  (via CLI)")
+            except Exception as exc:
+                print(f"  {model:20} {role:10} FAILED {type(exc).__name__}: {exc}"[:150])
+            continue
         try:
             out = ask(model, "Reply with one word.", "Say READY.")
             print(f"  {model:20} {role:10} {out[:40]!r}")
