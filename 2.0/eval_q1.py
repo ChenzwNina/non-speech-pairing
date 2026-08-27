@@ -213,6 +213,26 @@ def main() -> None:
             won, total = per_cell[(provider, condition, against)]
             cells.append(f"{won}/{total}={won/max(1,total):3.0%}")
         print(f"    {provider:8} {cells[0]:>18} {cells[1]:>14} {cells[2]:>16} {cells[3]:>14}")
+    # The happy-vs-sad and sad-vs-happy cells use the same two replies, judged against
+    # different transcripts. If those replies were interchangeable, a judge that preferred one
+    # would prefer it in both contexts and the two win rates would sum to about 100%. A sum
+    # above 100% means the preference flips with the transcript, which is the thing this whole
+    # eval exists to detect. The pooled figure above cannot show it: it averages this contrast
+    # together with the comparisons against neutral, where a model may have no signal at all.
+    print("\n  paired contrast — the same two replies, judged against each transcript")
+    print(f"    {'model':8} {'happy reply wins':>17} {'sad reply wins':>15} {'sum':>6}  reading")
+    for provider in providers:
+        h_won, h_of = per_cell[(provider, "happy", "sad")]
+        s_won, s_of = per_cell[(provider, "sad", "happy")]
+        if not (h_of and s_of):
+            continue
+        h, sd = h_won / h_of, s_won / s_of
+        total = (h + sd) * 100
+        reading = ("replies differ by condition" if total > 115 else
+                   "replies interchangeable" if total >= 95 else
+                   "replies fit the WRONG condition")
+        print(f"    {provider:8} {h:16.0%} {sd:14.0%} {total:5.0f}%  {reading}")
+
     print("\n  judge agreement with the model's own condition")
     for judge, (won, total) in sorted(per_judge.items()):
         first, n = position[judge]
@@ -228,7 +248,18 @@ def main() -> None:
         "per_provider": {p: {"won": w, "of": t} for p, (w, t) in per_provider.items()},
         "per_judge": {j: {"won": w, "of": t} for j, (w, t) in per_judge.items()},
         "per_comparison": {f"{p}|{c}|vs {a}": {"won": w, "of": t}
-                           for (p, c, a), (w, t) in per_cell.items()}},
+                           for (p, c, a), (w, t) in per_cell.items()},
+        "paired_contrast": {
+            p: round((per_cell[(p, "happy", "sad")][0] / per_cell[(p, "happy", "sad")][1]
+                      + per_cell[(p, "sad", "happy")][0] / per_cell[(p, "sad", "happy")][1])
+                     * 100, 1)
+            for p in providers
+            if per_cell[(p, "happy", "sad")][1] and per_cell[(p, "sad", "happy")][1]},
+        "paired_contrast_note": ("the happy-vs-sad and sad-vs-happy cells reuse the same two "
+                                 "replies against different transcripts; ~100 means "
+                                 "interchangeable, above 100 means the judge's preference "
+                                 "flips with the transcript, below means the replies fit the "
+                                 "opposite condition better")},
         indent=2, ensure_ascii=False) + "\n")
     print(f"\nwrote {RESULT.name} · CLI spend ${T.cli_spend():.2f}")
 

@@ -64,10 +64,59 @@ One deterministic failure survives: on some inputs the audio commits and then `r
 is dropped in silence — no `response.created`, no error, no `response.done`. Louder audio does
 not fix it. `providers.py` bounds the wait and retries in a fresh session.
 
+## Results
+
+20 items x 3 conditions x 4 models = 240 trials, no errors and no retries. Every clip passed
+verification (410/410, 98% on the first take) and a transcription check found 100% of the
+script's words present in all three conditions.
+
+| | Q1 pooled | Q1 paired | Q2 tone (adj.) | Q3 reading | Q4 perception |
+| --- | --- | --- | --- | --- | --- |
+| openai | **64%** | 135% | **+0.41** | 72% | **100%** |
+| gemini | 54% | **135%** | -0.10 | **82%** | **100%** |
+| qwen | 55% | 123% | -0.15 | 65% | **100%** |
+| grok | 46% | 75% | -0.11 | 48% | 60% |
+| *baseline* | *50% chance* | *100% = interchangeable* | *0 = judge average* | *25% chance* | *25% chance* |
+
+**Three of four models use the sounds.** This is where 2.0 departs from 1.0, whose every eval
+sat at its baseline and whose conclusion was that models hear the sounds and answer as though
+they had not. Perception is at ceiling for openai, gemini and qwen; Q3 runs 65-82% against a 25%
+chance line; and the paired contrast shows their replies are not interchangeable across
+conditions.
+
+**Q1 pooled understates this, and the paired figure is why.** The `happy vs sad` and
+`sad vs happy` comparisons reuse the same two replies against different transcripts, so if
+those replies were interchangeable a judge preferring one would prefer it in both contexts and
+the win rates would sum to ~100%. Gemini scores 68% and 67% — a symmetric flip. Openai reaches
+the same 135% one-sidedly (90% and 45%): judges prefer its cheerful reply even for sigh-told
+conversations. The comparisons against neutral carry almost no signal (37-55%), and averaging
+them in is what pulls the pooled numbers toward chance.
+
+The remaining failures are specific rather than general:
+
+- **qwen** identifies sighs perfectly and still reads sigh-told stories with the laughter
+  framing: 12 errors that direction against 1 the other way. Its replies do vary by condition,
+  so it adapts how it speaks while misreading what is happening.
+- **gemini** reads both conditions well (85%/80%) but its delivery falls away on sad (-0.50
+  adjusted, the largest asymmetry in the run) — right words, wrong voice.
+- **openai** leads on delivery and pooled appropriateness, yet its sad reply is not preferred
+  for sad conversations.
+- **grok** fails upstream. At 60% perception, everything downstream of it is unreliable.
+
+**Q2 needs its caveat.** Leave-one-out gives each model a different panel, and these judges
+differ by more than a point in severity (qwen 3.33, openai 2.37, gemini 2.15). Qwen is the most
+generous and never rates itself, so its own replies face the two harshest judges. The raw gap
+between gemini (2.75) and qwen (2.11) is 0.64; the gap between the panels they faced is 0.59.
+Almost all of it is the panel. The raw means stay the headline because the spec asks for them;
+the judge-adjusted column above subtracts each judge's own mean.
+
 ## State
 
-Built and run: stages 1–8. Gold is written but **unverified** — the Anthropic key has no
-credit, so the Opus 5 pass has not run.
+Stages 1-11 and all four evals are built and run. Outstanding:
 
-Not yet built: stage 9 (splicing the three conditions), stage 10 (the Q3 option sets), stage 11
-(testing), and the four evals.
+- **Gold is unverified.** The Opus 5 pass, including the swap test, has not run — it was
+  written against an Anthropic key with no credit, and now routes through the Claude Code CLI,
+  so it can. A mechanical proxy is reassuring (mean content-word overlap 0.18 between the happy
+  and sad gold, closest pair still clearly opposed) but it is not the swap test.
+- **Q4's neutral condition is unmeasured** by choice: neutral is heard and answered but never
+  scored, so nothing here says what a model claims to hear when no sound is present.

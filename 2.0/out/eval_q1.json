@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-08-27T16:22:13+00:00",
+  "judges": [
+    "opus",
+    "terra",
+    "grok"
+  ],
+  "votes": 960,
+  "scoring": "each scored reply is compared against the same model's replies to the other two conditions; a win means the judge preferred the reply actually produced for the condition it is judging. chance is 50%",
+  "per_provider": {
+    "gemini": {
+      "won": 130,
+      "of": 240
+    },
+    "grok": {
+      "won": 110,
+      "of": 240
+    },
+    "openai": {
+      "won": 153,
+      "of": 240
+    },
+    "qwen": {
+      "won": 132,
+      "of": 240
+    }
+  },
+  "per_judge": {
+    "terra": {
+      "won": 178,
+      "of": 320
+    },
+    "opus": {
+      "won": 168,
+      "of": 320
+    },
+    "grok": {
+      "won": 179,
+      "of": 320
+    }
+  },
+  "per_comparison": {
+    "gemini|happy|vs sad": {
+      "won": 41,
+      "of": 60
+    },
+    "gemini|happy|vs neutral": {
+      "won": 27,
+      "of": 60
+    },
+    "gemini|sad|vs neutral": {
+      "won": 22,
+      "of": 60
+    },
+    "gemini|sad|vs happy": {
+      "won": 40,
+      "of": 60
+    },
+    "grok|happy|vs neutral": {
+      "won": 33,
+      "of": 60
+    },
+    "grok|happy|vs sad": {
+      "won": 25,
+      "of": 60
+    },
+    "grok|sad|vs neutral": {
+      "won": 32,
+      "of": 60
+    },
+    "grok|sad|vs happy": {
+      "won": 20,
+      "of": 60
+    },
+    "openai|happy|vs neutral": {
+      "won": 43,
+      "of": 60
+    },
+    "openai|happy|vs sad": {
+      "won": 54,
+      "of": 60
+    },
+    "openai|sad|vs neutral": {
+      "won": 29,
+      "of": 60
+    },
+    "openai|sad|vs happy": {
+      "won": 27,
+      "of": 60
+    },
+    "qwen|happy|vs neutral": {
+      "won": 29,
+      "of": 60
+    },
+    "qwen|happy|vs sad": {
+      "won": 38,
+      "of": 60
+    },
+    "qwen|sad|vs neutral": {
+      "won": 29,
+      "of": 60
+    },
+    "qwen|sad|vs happy": {
+      "won": 36,
+      "of": 60
+    }
+  },
+  "paired_contrast": {
+    "gemini": 135.0,
+    "grok": 75.0,
+    "openai": 135.0,
+    "qwen": 123.3
+  },
+  "paired_contrast_note": "the happy-vs-sad and sad-vs-happy cells reuse the same two replies against different transcripts; ~100 means interchangeable, above 100 means the judge's preference flips with the transcript, below means the replies fit the opposite condition better"
+}

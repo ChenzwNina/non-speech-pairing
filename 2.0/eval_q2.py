@@ -184,6 +184,41 @@ def main() -> None:
         values = per_judge[judge]
         print(f"    {judge:8} mean {sum(values)/len(values):.2f} over {len(values)} ratings")
 
+    # Leave-one-out means each model faces a different panel, and these judges differ by more
+    # than a point in how generously they rate. So a model that happens to be excused from
+    # judging is scored by whoever is left, and the raw means partly rank the panels rather
+    # than the models. Subtracting each judge's own mean removes that; the raw figures above
+    # stay the headline, because they are what the spec asks for.
+    judge_mean = {j: sum(v) / len(v) for j, v in per_judge.items()}
+    print("\n  the panel each model faced (expected score if every reply were identical)")
+    faced = defaultdict(set)
+    for r in ratings:
+        faced[r["provider"]].add(r["judge"])
+    for provider in sorted(faced):
+        js = sorted(faced[provider])
+        expected = sum(judge_mean[j] for j in js) / len(js)
+        print(f"    {provider:8} {','.join(js):24} {expected:.2f}")
+
+    adj_response = defaultdict(list)
+    for r in ratings:
+        adj_response[(r["provider"], r["item_id"], r["condition"])].append(
+            r["score"] - judge_mean[r["judge"]])
+    adj_provider, adj_cell = defaultdict(list), defaultdict(list)
+    for (provider, _, condition), values in adj_response.items():
+        mean = sum(values) / len(values)
+        adj_provider[provider].append(mean)
+        adj_cell[(provider, condition)].append(mean)
+    print("\n  judge-adjusted (0 = what that judge gives on average; + is above it)")
+    print(f"    {'model':8} {'overall':>9} {'happy':>8} {'sad':>8}")
+    for provider in sorted(adj_provider,
+                           key=lambda k: -sum(adj_provider[k]) / len(adj_provider[k])):
+        overall = sum(adj_provider[provider]) / len(adj_provider[provider])
+        cells = []
+        for condition in SCORED:
+            values = adj_cell[(provider, condition)]
+            cells.append(f"{sum(values)/len(values):+.2f}" if values else "  -")
+        print(f"    {provider:8} {overall:+9.2f} {cells[0]:>8} {cells[1]:>8}")
+
     RESULT.write_text(json.dumps({
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "panel": list(PANEL), "leave_one_out": True, "ratings": len(ratings),
@@ -191,7 +226,13 @@ def main() -> None:
         "per_provider": {p: round(sum(v)/len(v), 3) for p, v in per_provider.items()},
         "per_condition": {f"{p}|{c}": round(sum(v)/len(v), 3)
                           for (p, c), v in per_cell.items()},
-        "per_judge_mean": {j: round(sum(v)/len(v), 3) for j, v in per_judge.items()}},
+        "per_judge_mean": {j: round(sum(v)/len(v), 3) for j, v in per_judge.items()},
+        "judge_adjusted": {p: round(sum(v)/len(v), 3) for p, v in adj_provider.items()},
+        "judge_adjusted_per_condition": {f"{p}|{c}": round(sum(v)/len(v), 3)
+                                         for (p, c), v in adj_cell.items()},
+        "caveat": ("leave-one-out gives each model a different panel, and these judges differ "
+                   "by over a point in severity, so the raw means partly rank the panels; the "
+                   "judge-adjusted figures subtract each judge's own mean")},
         indent=2, ensure_ascii=False) + "\n")
     print(f"\nwrote {RESULT.name}")
 

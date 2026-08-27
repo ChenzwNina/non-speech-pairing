@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-08-27T16:04:10+00:00",
+  "panel": [
+    "openai",
+    "gemini",
+    "qwen"
+  ],
+  "leave_one_out": true,
+  "ratings": 360,
+  "scale": "0 strongly mismatched to 4 strongly matched, against the stage-5 gold tone",
+  "per_provider": {
+    "gemini": 2.75,
+    "grok": 2.5,
+    "openai": 3.15,
+    "qwen": 2.112
+  },
+  "per_condition": {
+    "gemini|happy": 3.15,
+    "gemini|sad": 2.35,
+    "grok|happy": 2.533,
+    "grok|sad": 2.467,
+    "openai|sad": 2.975,
+    "openai|happy": 3.325,
+    "qwen|happy": 2.0,
+    "qwen|sad": 2.225
+  },
+  "per_judge_mean": {
+    "qwen": 3.325,
+    "openai": 2.367,
+    "gemini": 2.15
+  },
+  "judge_adjusted": {
+    "gemini": -0.096,
+    "grok": -0.114,
+    "openai": 0.412,
+    "qwen": -0.146
+  },
+  "judge_adjusted_per_condition": {
+    "gemini|happy": 0.304,
+    "gemini|sad": -0.496,
+    "grok|happy": -0.081,
+    "grok|sad": -0.147,
+    "openai|sad": 0.238,
+    "openai|happy": 0.587,
+    "qwen|happy": -0.258,
+    "qwen|sad": -0.033
+  },
+  "caveat": "leave-one-out gives each model a different panel, and these judges differ by over a point in severity, so the raw means partly rank the panels; the judge-adjusted figures subtract each judge's own mean"
+}
