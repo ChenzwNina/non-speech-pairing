@@ -1,0 +1,104 @@
+{
+  "scene": "wrong airport",
+  "note": "B never speaks; B's only contribution is laughter",
+  "tts_model": "eleven_v3",
+  "voices": {
+    "A": "s3TPKV1kjDlVtZbl4Ksh",
+    "B": "aKw9UnnjRq5scbeeGI7Z"
+  },
+  "stability": 0.3,
+  "gaps": {
+    "turn": 0.28,
+    "clause": 0.12,
+    "seam": 0.16,
+    "joint_offset": 0.32
+  },
+  "segments": [
+    {
+      "id": "a1",
+      "speaker": "A",
+      "kind": "speech",
+      "text": "So I get to the airport three hours early. For once in my life.",
+      "seconds": 3.84,
+      "parts": null,
+      "asr": null
+    },
+    {
+      "id": "a_chuckle1",
+      "speaker": "A",
+      "kind": "laugh",
+      "text": "[chuckles] heh—",
+      "seconds": 0.88,
+      "parts": null,
+      "asr": null
+    },
+    {
+      "id": "a2",
+      "speaker": "A",
+      "kind": "speech",
+      "text": "And I'm sitting at the gate feeling very proud of myself.",
+      "seconds": 2.8,
+      "parts": null,
+      "asr": null
+    },
+    {
+      "id": "a_chuckle2",
+      "speaker": "A",
+      "kind": "laugh",
+      "text": "[chuckles softly] hah—",
+      "seconds": 1.52,
+      "parts": null,
+      "asr": null
+    },
+    {
+      "id": "a3",
+      "speaker": "A",
+      "kind": "speech",
+      "text": "And then I look up at the board. Wrong airport. My flight was going out of the other one.",
+      "seconds": 8.4,
+      "parts": null,
+      "asr": null
+    },
+    {
+      "id": "joint",
+      "speaker": "A+B",
+      "kind": "joint",
+      "text": {
+        "A": "[laughs happily] hahahaha",
+        "B": "[laughs warmly] hahahaha—ha"
+      },
+      "seconds": 2.48,
+      "parts": {
+        "A": 1.76,
+        "B": 2.16
+      },
+      "asr": null
+    },
+    {
+      "id": "a4",
+      "speaker": "A",
+      "kind": "speech",
+      "text": "I just stood there holding my little coffee.",
+      "seconds": 2.0,
+      "parts": null,
+      "asr": null
+    },
+    {
+      "id": "b_giggle",
+      "speaker": "B",
+      "kind": "laugh",
+      "text": "[giggles] hehehe",
+      "seconds": 2.0,
+      "parts": null,
+      "asr": null
+    }
+  ],
+  "laughter": {
+    "path": "group_laughter/out/wrong_airport_laughter.mp3",
+    "seconds": 24.92
+  },
+  "plain": {
+    "path": "group_laughter/out/wrong_airport_plain.mp3",
+    "seconds": 17.52
+  }
+}

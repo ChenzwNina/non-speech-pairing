@@ -1,0 +1,812 @@
+{
+  "built_at": "2026-08-24T20:24:10.335009+00:00",
+  "seed_dataset": "allenai/soda",
+  "writer_model": "gpt-5.6-terra",
+  "tts_model": "eleven_v3",
+  "verifier_model": "gpt-realtime-2.1",
+  "verify_runs": 3,
+  "turns_per_item": 12,
+  "vocalization_types": [
+    "laughter",
+    "yawn",
+    "sob",
+    "sigh"
+  ],
+  "rng_seed": 11,
+  "n_items": 1,
+  "results": [
+    {
+      "item_id": "soda_4845347",
+      "seed": {
+        "narrative": "Jazlynn hit Sandra with a bat because Jazlynn wanted to teach Sandra a lesson about picking fights with people. Jazlynn thought that if she hit Sandra hard enough, Sandra would never pick another fight again.",
+        "speaker_a": "Jazlynn",
+        "speaker_b": "Sandra",
+        "relation": "xIntent",
+        "literal": "Jazlynn hit Sandra with a bat because Jazlynn wants to teach Sandra a lesson.",
+        "original_index": 4845347
+      },
+      "plan": [
+        {
+          "turn": 1,
+          "vocalization": "laughter"
+        },
+        {
+          "turn": 2,
+          "vocalization": "yawn"
+        },
+        {
+          "turn": 3,
+          "vocalization": "yawn"
+        },
+        {
+          "turn": 4,
+          "vocalization": "sob"
+        },
+        {
+          "turn": 5,
+          "vocalization": "laughter"
+        },
+        {
+          "turn": 6,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 7,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 8,
+          "vocalization": "laughter"
+        },
+        {
+          "turn": 9,
+          "vocalization": "yawn"
+        },
+        {
+          "turn": 10,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 11,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 12,
+          "vocalization": "yawn"
+        }
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Jazlynn",
+          "text": "[bitter laugh] You kept provoking people and acting untouchable. I thought one hard hit would make you stop."
+        },
+        {
+          "turn": 2,
+          "speaker": "Sandra",
+          "text": "[long yawn] My head is pounding and I can't focus. Put the bat away and call emergency services."
+        },
+        {
+          "turn": 3,
+          "speaker": "Jazlynn",
+          "text": "[sleepy yawn] I've been up all night, but that doesn't excuse what I did. The bat is on the ground; I'm calling now."
+        },
+        {
+          "turn": 4,
+          "speaker": "Sandra",
+          "text": "[voice breaking, crying] I picked fights, but I didn't deserve to be hit. Tell them exactly what happened."
+        },
+        {
+          "turn": 5,
+          "speaker": "Jazlynn",
+          "text": "[embarrassed laugh] I called it teaching you a lesson because I didn't want to admit I lost control. I won't lie to them."
+        },
+        {
+          "turn": 6,
+          "speaker": "Sandra",
+          "text": "[resigned sigh] Fine. Then say you swung it, and say I need help before we argue about anything else."
+        },
+        {
+          "turn": 7,
+          "speaker": "Jazlynn",
+          "text": "[long sigh] You're right. The dispatcher says to keep you still, and I'm staying here until the ambulance arrives."
+        },
+        {
+          "turn": 8,
+          "speaker": "Sandra",
+          "text": "[disbelieving laugh] Staying here doesn't undo it. After the doctor checks me, I want the police to hear my side."
+        },
+        {
+          "turn": 9,
+          "speaker": "Jazlynn",
+          "text": "[exhausted yawn] They will. I'll give a statement and accept whatever comes from it."
+        },
+        {
+          "turn": 10,
+          "speaker": "Sandra",
+          "text": "[sigh of relief] The paramedic says nothing looks broken, but they're taking me in for scans. Don't follow me into the exam room."
+        },
+        {
+          "turn": 11,
+          "speaker": "Jazlynn",
+          "text": "[remorseful sigh] I understand. I'm sorry I hurt you, and I'll wait where the officers tell me to."
+        },
+        {
+          "turn": 12,
+          "speaker": "Sandra",
+          "text": "[weary yawn] Good. I need sleep and treatment, not another confrontation. Let them handle the rest."
+        }
+      ],
+      "vocalizations": [
+        {
+          "turn": 3,
+          "vocalization": "yawn",
+          "audio_tag": "[sleepy yawn]",
+          "target": "her sleeplessness and guilt",
+          "intention_after": "Reject exhaustion as an excuse and call for help."
+        },
+        {
+          "turn": 6,
+          "vocalization": "sigh",
+          "audio_tag": "[resigned sigh]",
+          "target": "Jazlynn's claimed honesty",
+          "intention_after": "Set the facts straight and prioritize treatment."
+        },
+        {
+          "turn": 7,
+          "vocalization": "sigh",
+          "audio_tag": "[long sigh]",
+          "target": "the emergency instructions",
+          "intention_after": "Accept Sandra's demand and focus on safety."
+        },
+        {
+          "turn": 10,
+          "vocalization": "sigh",
+          "audio_tag": "[sigh of relief]",
+          "target": "the paramedic's initial assessment",
+          "intention_after": "Set limits while agreeing to further care."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "input_tokens": 1471,
+        "output_tokens": 2416
+      },
+      "vocalizations_dropped": [
+        {
+          "turn": 1,
+          "vocalization": "laughter",
+          "audio_tag": "[bitter laugh]",
+          "target": "Sandra acting untouchable",
+          "intention_after": "Justify the assault as a warning."
+        },
+        {
+          "turn": 2,
+          "vocalization": "yawn",
+          "audio_tag": "[long yawn]",
+          "target": "her worsening head pain",
+          "intention_after": "Demand immediate medical help."
+        },
+        {
+          "turn": 4,
+          "vocalization": "sob",
+          "audio_tag": "[voice breaking, crying]",
+          "target": "being struck with the bat",
+          "intention_after": "Insist Jazlynn tell responders the truth."
+        },
+        {
+          "turn": 5,
+          "vocalization": "laughter",
+          "audio_tag": "[embarrassed laugh]",
+          "target": "her lesson excuse",
+          "intention_after": "Admit she lost control and promise honesty."
+        },
+        {
+          "turn": 8,
+          "vocalization": "laughter",
+          "audio_tag": "[disbelieving laugh]",
+          "target": "Jazlynn staying nearby",
+          "intention_after": "Set a boundary and insist on reporting."
+        },
+        {
+          "turn": 9,
+          "vocalization": "yawn",
+          "audio_tag": "[exhausted yawn]",
+          "target": "the looming consequences",
+          "intention_after": "Commit to giving a truthful statement."
+        },
+        {
+          "turn": 11,
+          "vocalization": "sigh",
+          "audio_tag": "[remorseful sigh]",
+          "target": "the harm she caused Sandra",
+          "intention_after": "Apologize and defer to authorities."
+        },
+        {
+          "turn": 12,
+          "vocalization": "yawn",
+          "audio_tag": "[weary yawn]",
+          "target": "the need for recovery",
+          "intention_after": "End the exchange and prioritize treatment."
+        }
+      ],
+      "labels_verified": true,
+      "verification": {
+        "model": "gpt-realtime-2.1",
+        "runs_per_turn": 3,
+        "retakes_allowed": 2,
+        "rule": "kept when a majority of parseable votes name the sound; a failing turn is re-rendered and retried",
+        "verdicts": [
+          {
+            "turn": 1,
+            "target": "laughter",
+            "audio_tag": "[bitter laugh]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/01_jazlynn.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 2,
+            "target": "yawn",
+            "audio_tag": "[long yawn]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/02_sandra.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "sigh",
+                  "sigh"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 2,
+                "votes": [
+                  "sigh",
+                  null,
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 3,
+            "target": "yawn",
+            "audio_tag": "[sleepy yawn]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/03_jazlynn.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 3,
+                "usable_votes": 3,
+                "votes": [
+                  "yawn",
+                  "yawn",
+                  "yawn"
+                ]
+              }
+            ],
+            "verified": true
+          },
+          {
+            "turn": 4,
+            "target": "sob",
+            "audio_tag": "[voice breaking, crying]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/04_sandra.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 5,
+            "target": "laughter",
+            "audio_tag": "[embarrassed laugh]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/05_jazlynn.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 6,
+            "target": "sigh",
+            "audio_tag": "[resigned sigh]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/06_sandra.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 3,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "sigh",
+                  "sigh"
+                ]
+              }
+            ],
+            "verified": true
+          },
+          {
+            "turn": 7,
+            "target": "sigh",
+            "audio_tag": "[long sigh]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/07_jazlynn.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 2,
+                "usable_votes": 2,
+                "votes": [
+                  null,
+                  "sigh",
+                  "sigh"
+                ]
+              }
+            ],
+            "verified": true
+          },
+          {
+            "turn": 8,
+            "target": "laughter",
+            "audio_tag": "[disbelieving laugh]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/08_sandra.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 9,
+            "target": "yawn",
+            "audio_tag": "[exhausted yawn]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/09_jazlynn.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "sigh",
+                  "sigh"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "sigh",
+                  "sigh"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 2,
+                "votes": [
+                  null,
+                  "sigh",
+                  "sigh"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 10,
+            "target": "sigh",
+            "audio_tag": "[sigh of relief]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/10_sandra.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 2,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "none",
+                  "sigh"
+                ]
+              }
+            ],
+            "verified": true
+          },
+          {
+            "turn": 11,
+            "target": "sigh",
+            "audio_tag": "[remorseful sigh]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/11_jazlynn.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 1,
+                "usable_votes": 2,
+                "votes": [
+                  "none",
+                  "sigh",
+                  null
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 12,
+            "target": "yawn",
+            "audio_tag": "[weary yawn]",
+            "audio": "soda_scatter/dataset_tagtest/lines/soda_4845347/12_sandra.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "none",
+                  "sigh"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 1,
+                "usable_votes": 2,
+                "votes": [
+                  "other",
+                  "yawn",
+                  null
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "other",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          }
+        ]
+      },
+      "audio": "soda_scatter/dataset_tagtest/audio/soda_4845347.mp3",
+      "audio_seconds": 92.44,
+      "segments": [
+        {
+          "kind": "line",
+          "turn": 1,
+          "speaker": "Jazlynn",
+          "text": "[bitter laugh] You kept provoking people and acting untouchable. I thought one hard hit would make you stop.",
+          "seconds": 8.08,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/01_jazlynn.mp3",
+          "vocalization": "laughter",
+          "starts_at_seconds": 0.0,
+          "starts_at": "0:00.00"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 2,
+          "speaker": "Sandra",
+          "text": "[long yawn] My head is pounding and I can't focus. Put the bat away and call emergency services.",
+          "seconds": 7.76,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/02_sandra.mp3",
+          "vocalization": "yawn",
+          "starts_at_seconds": 8.44,
+          "starts_at": "0:08.44"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 3,
+          "speaker": "Jazlynn",
+          "text": "[sleepy yawn] I've been up all night, but that doesn't excuse what I did. The bat is on the ground; I'm calling now.",
+          "seconds": 11.04,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/03_jazlynn.mp3",
+          "vocalization": "yawn",
+          "starts_at_seconds": 16.56,
+          "starts_at": "0:16.56"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 4,
+          "speaker": "Sandra",
+          "text": "[voice breaking, crying] I picked fights, but I didn't deserve to be hit. Tell them exactly what happened.",
+          "seconds": 6.56,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/04_sandra.mp3",
+          "vocalization": "sob",
+          "starts_at_seconds": 27.96,
+          "starts_at": "0:27.96"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 5,
+          "speaker": "Jazlynn",
+          "text": "[embarrassed laugh] I called it teaching you a lesson because I didn't want to admit I lost control. I won't lie to them.",
+          "seconds": 8.0,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/05_jazlynn.mp3",
+          "vocalization": "laughter",
+          "starts_at_seconds": 34.88,
+          "starts_at": "0:34.88"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 6,
+          "speaker": "Sandra",
+          "text": "[resigned sigh] Fine. Then say you swung it, and say I need help before we argue about anything else.",
+          "seconds": 5.36,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/06_sandra.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 43.24,
+          "starts_at": "0:43.24"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 7,
+          "speaker": "Jazlynn",
+          "text": "[long sigh] You're right. The dispatcher says to keep you still, and I'm staying here until the ambulance arrives.",
+          "seconds": 7.52,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/07_jazlynn.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 48.96,
+          "starts_at": "0:48.96"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 8,
+          "speaker": "Sandra",
+          "text": "[disbelieving laugh] Staying here doesn't undo it. After the doctor checks me, I want the police to hear my side.",
+          "seconds": 7.36,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/08_sandra.mp3",
+          "vocalization": "laughter",
+          "starts_at_seconds": 56.84,
+          "starts_at": "0:56.84"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 9,
+          "speaker": "Jazlynn",
+          "text": "[exhausted yawn] They will. I'll give a statement and accept whatever comes from it.",
+          "seconds": 4.88,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/09_jazlynn.mp3",
+          "vocalization": "yawn",
+          "starts_at_seconds": 64.56,
+          "starts_at": "1:04.56"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 10,
+          "speaker": "Sandra",
+          "text": "[sigh of relief] The paramedic says nothing looks broken, but they're taking me in for scans. Don't follow me into the exam room.",
+          "seconds": 7.36,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/10_sandra.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 69.8,
+          "starts_at": "1:09.80"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 11,
+          "speaker": "Jazlynn",
+          "text": "[remorseful sigh] I understand. I'm sorry I hurt you, and I'll wait where the officers tell me to.",
+          "seconds": 7.84,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/11_jazlynn.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 77.52,
+          "starts_at": "1:17.52"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 12,
+          "speaker": "Sandra",
+          "text": "[weary yawn] Good. I need sleep and treatment, not another confrontation. Let them handle the rest.",
+          "seconds": 6.72,
+          "path": "soda_scatter/dataset_tagtest/lines/soda_4845347/12_sandra.mp3",
+          "vocalization": "yawn",
+          "starts_at_seconds": 85.72,
+          "starts_at": "1:25.72"
+        }
+      ]
+    }
+  ]
+}

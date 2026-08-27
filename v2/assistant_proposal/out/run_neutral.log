@@ -1,0 +1,65 @@
+5 task(s) · gpt-realtime-2.1 · voice marin · user turn: neutral
+  backyard  laughter  audio_non-speech/laughter/laughter-4.MP3 (2.7s)
+  budget    sigh      audio_non-speech/sigh/sigh-5.MP3 (1.5s)
+  birthday  gasp      audio_non-speech/gasp/gasp-10.MP3 (1.1s)
+  inbox     yawn      audio_non-speech/yawn/yawn-17.MP3 (2.0s)
+  neighbor  sigh      audio_non-speech/sigh/sigh-9.mp3 (1.9s)
+
+==============================================================================
+backyard_laughter_neutral
+==============================================================================
+context: You are helping the user get their overgrown backyard usable before twenty relatives arrive for a barbecue next Saturday.
+
+  proposal: Focus on making it safe and usable first: clear a simple path, cut back anything poking people, and level a clean zone for the grill and a few chairs. Then add basics like a trash spot, some shade if you can swing it, and a quick sweep or mow so it feels intentional, not wild.
+  user:     I guess I have a lot to do before Saturday.
+  [laughter]
+  reply:    Totally, but you don’t need a perfect backyard—just a workable one. If you knock out a path, a grill zone, and a seating area, you’ll already feel in control, and the rest is optional polish.
+  -> assistant_proposal/out/audio/backyard_laughter_neutral.mp3 (36.1s)
+
+==============================================================================
+budget_sigh_neutral
+==============================================================================
+context: You are helping the user find eight hundred dollars a month in their budget after a surprise tax bill.
+
+  proposal: Start with the big fixed stuff first: housing, car, insurance, and debt payments, because a small change there can move hundreds at once. Then we fill the gap with faster wins like subscriptions, eating out, and shopping caps until we hit the eight hundred.
+  user:     I did not realize I was spending that much every month.
+  [sigh]
+  reply:    That happens to so many of us, and it’s actually good news because it means there’s room to fix it. Let’s pick one category to put on a weekly cap, like eating out, and then choose one fixed cost to renegotiate or replace.
+  -> assistant_proposal/out/audio/budget_sigh_neutral.mp3 (34.8s)
+
+==============================================================================
+birthday_gasp_neutral
+==============================================================================
+context: You are helping the user plan a surprise for their partner's fortieth birthday, three weeks from now.
+
+  proposal: A fun, low-stress option is a small gathering with their favorite people, plus one “wow” moment, like a private chef, a meaningful toast, or a short slideshow of memories. If parties aren’t their thing, a weekend day planned around a favorite activity, a great meal, and a sentimental gift can feel incredibly special.
+  user:     I think the small gathering idea could work well for them.
+  [gasp]
+  reply:    Nice—then we can keep it cozy and personal, like hosting at home or a favorite spot, with a tight guest list and a clear start time. For the “wow” moment, we could have a private chef, a signature cocktail, or a short, sweet toast with a few photos.
+  -> assistant_proposal/out/audio/birthday_gasp_neutral.mp3 (38.3s)
+
+==============================================================================
+inbox_yawn_neutral
+==============================================================================
+context: You are helping the user clear three hundred work emails that piled up over two weeks of leave, before Monday morning.
+
+  proposal: We’ll go fast and gentle: first triage, then batch replies. Start by sorting into three buckets: urgent and actionable, waiting or blocked, and FYI. Then we’ll focus only on the first bucket today, and ignore the guilt of the rest for now.
+  user:     I have three hundred emails, so three buckets sounds manageable.
+  [yawn]
+  reply:    Perfect. Start at the top and don’t read every word—just tag each one into a bucket in under ten seconds. If you’re unsure, put it in waiting or FYI and keep moving.
+  -> assistant_proposal/out/audio/inbox_yawn_neutral.mp3 (31.9s)
+
+==============================================================================
+neighbor_sigh_neutral
+==============================================================================
+context: You are helping the user deal with the upstairs neighbor who practices drums late at night.
+
+  proposal: Start with a friendly, specific chat, like, “Hey, I can hear the drums through the floor after 10, could you keep it earlier or use pads?” If that doesn’t stick, loop in your landlord or building manager and keep a simple log so it stays factual instead of emotional.
+  user:     I’ll start with the friendly chat and keep a log if needed.
+  [sigh]
+  reply:    That sounds like a solid plan. Take a breath, keep your tone calm, and if you want, we can rehearse a quick one-liner so it feels easier when you knock or send a message.
+  -> assistant_proposal/out/audio/neighbor_sigh_neutral.mp3 (30.9s)
+
+5/5 item(s) built
+transcripts: /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/transcripts
+audio:       /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/audio

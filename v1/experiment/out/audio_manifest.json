@@ -1,0 +1,701 @@
+{
+  "generated_at": "2026-08-21T04:21:13.497273+00:00",
+  "source": "predicting_response/out/pairs.json",
+  "tts_model": "eleven_v3",
+  "voice_a": "r1KmysJdVYZjJCm4mL3b",
+  "seed": 0,
+  "variants": {
+    "prompt": "turns 1..N + vocalization, ends at turn N+1",
+    "full": "prompt + turn N+2 reply"
+  },
+  "gaps": {
+    "between_turns": 0.4,
+    "before_voc": 0.35,
+    "after_voc": 0.35
+  },
+  "clip_seconds_allowed": [
+    0.3,
+    10.0
+  ],
+  "excluded_clips": {},
+  "coverage": {
+    "gasp": {
+      "clips_in_folder": 18,
+      "clips_eligible": 18,
+      "clips_used": 4
+    },
+    "grunt": {
+      "clips_in_folder": 15,
+      "clips_eligible": 15,
+      "clips_used": 5
+    },
+    "laughter": {
+      "clips_in_folder": 18,
+      "clips_eligible": 18,
+      "clips_used": 5
+    },
+    "sigh": {
+      "clips_in_folder": 18,
+      "clips_eligible": 18,
+      "clips_used": 5
+    },
+    "sob": {
+      "clips_in_folder": 18,
+      "clips_eligible": 18,
+      "clips_used": 4
+    },
+    "yawn": {
+      "clips_in_folder": 18,
+      "clips_eligible": 18,
+      "clips_used": 5
+    }
+  },
+  "clip_usage": {
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/gasp/gasp-16.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/gasp/gasp-17.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/gasp/gasp-4.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/gasp/gasp-6.mp3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/grunt/grunt-2.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/grunt/grunt-4.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/grunt/grunt-5.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/grunt/grunt-7.mp3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/grunt/grunt-8.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/laughter/laughter-10.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/laughter/laughter-2.mp3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/laughter/laughter-3.mp3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/laughter/laughter-4.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/laughter/laughter-7.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sigh/sigh-13.mp3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sigh/sigh-14.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sigh/sigh-3.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sigh/sigh-8.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sigh/sigh-9.mp3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sobbing/sob-12.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sobbing/sob-14.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sobbing/sob-15.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/sobbing/sob-6.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/yawn/yawn-10.mp3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/yawn/yawn-11.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/yawn/yawn-13.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/yawn/yawn-18.MP3": 1,
+    "/Users/ninachen/Documents/github/eigenlab/non-speech-pairing/audio_non-speech/yawn/yawn-4.mp3": 1
+  },
+  "clips": [
+    {
+      "pair_id": "gasp_grunt_001",
+      "version": "v1",
+      "contrast": "gasp-grunt",
+      "vocalization": "[gasp]",
+      "intended_interpretation": "fear",
+      "responder": "A",
+      "clip": "audio_non-speech/gasp/gasp-4.MP3",
+      "clip_seconds": 0.888,
+      "prompt": "predicting_response/out/audio_prompt/gasp_grunt_001_v1.mp3",
+      "prompt_seconds": 16.678,
+      "context_turns": [
+        "predicting_response/out/audio_turns/gasp_grunt_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/gasp_grunt_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/gasp_grunt_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/gasp_grunt_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/gasp_grunt_001/t6_v1_A.mp3",
+      "reply_text": "You're right, I got carried away. I'll call her back and withdraw before she locks us in.",
+      "full": "predicting_response/out/audio_full/gasp_grunt_001_v1.mp3",
+      "full_seconds": 24.388
+    },
+    {
+      "pair_id": "gasp_grunt_001",
+      "version": "v2",
+      "contrast": "gasp-grunt",
+      "vocalization": "[grunt]",
+      "intended_interpretation": "reluctant agreement",
+      "responder": "A",
+      "clip": "audio_non-speech/grunt/grunt-7.mp3",
+      "clip_seconds": 0.575,
+      "prompt": "predicting_response/out/audio_prompt/gasp_grunt_001_v2.mp3",
+      "prompt_seconds": 16.365,
+      "context_turns": [
+        "predicting_response/out/audio_turns/gasp_grunt_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/gasp_grunt_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/gasp_grunt_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/gasp_grunt_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/gasp_grunt_001/t6_v2_A.mp3",
+      "reply_text": "Okay, I'll confirm the slot and book us extra rehearsals every night this week.",
+      "full": "predicting_response/out/audio_full/gasp_grunt_001_v2.mp3",
+      "full_seconds": 20.955
+    },
+    {
+      "pair_id": "gasp_laughter_001",
+      "version": "v1",
+      "contrast": "gasp-laughter",
+      "vocalization": "[gasp]",
+      "intended_interpretation": "shock",
+      "responder": "A",
+      "clip": "audio_non-speech/gasp/gasp-6.mp3",
+      "clip_seconds": 1.097,
+      "prompt": "predicting_response/out/audio_prompt/gasp_laughter_001_v1.mp3",
+      "prompt_seconds": 18.647,
+      "context_turns": [
+        "predicting_response/out/audio_turns/gasp_laughter_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/gasp_laughter_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/gasp_laughter_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/gasp_laughter_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/gasp_laughter_001/t6_v1_A.mp3",
+      "reply_text": "I'll call the shop now and get those banners taken down before anyone else sees them.",
+      "full": "predicting_response/out/audio_full/gasp_laughter_001_v1.mp3",
+      "full_seconds": 22.837
+    },
+    {
+      "pair_id": "gasp_laughter_001",
+      "version": "v2",
+      "contrast": "gasp-laughter",
+      "vocalization": "[laughter]",
+      "intended_interpretation": "genuine amusement",
+      "responder": "A",
+      "clip": "audio_non-speech/laughter/laughter-10.MP3",
+      "clip_seconds": 2.194,
+      "prompt": "predicting_response/out/audio_prompt/gasp_laughter_001_v2.mp3",
+      "prompt_seconds": 19.744,
+      "context_turns": [
+        "predicting_response/out/audio_turns/gasp_laughter_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/gasp_laughter_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/gasp_laughter_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/gasp_laughter_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/gasp_laughter_001/t6_v2_A.mp3",
+      "reply_text": "All right, the banners stay—we'll make the typo the cleanup's running joke.",
+      "full": "predicting_response/out/audio_full/gasp_laughter_001_v2.mp3",
+      "full_seconds": 24.494
+    },
+    {
+      "pair_id": "gasp_sigh_001",
+      "version": "v1",
+      "contrast": "gasp-sigh",
+      "vocalization": "[gasp]",
+      "intended_interpretation": "shock",
+      "responder": "A",
+      "clip": "audio_non-speech/gasp/gasp-17.MP3",
+      "clip_seconds": 1.358,
+      "prompt": "predicting_response/out/audio_prompt/gasp_sigh_001_v1.mp3",
+      "prompt_seconds": 14.908,
+      "context_turns": [
+        "predicting_response/out/audio_turns/gasp_sigh_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/gasp_sigh_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/gasp_sigh_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/gasp_sigh_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/gasp_sigh_001/t6_v1_A.mp3",
+      "reply_text": "Hold off on the repair—I’m calling around for a cheaper quote before we spend that.",
+      "full": "predicting_response/out/audio_full/gasp_sigh_001_v1.mp3",
+      "full_seconds": 19.338
+    },
+    {
+      "pair_id": "gasp_sigh_001",
+      "version": "v2",
+      "contrast": "gasp-sigh",
+      "vocalization": "[sigh]",
+      "intended_interpretation": "resignation",
+      "responder": "A",
+      "clip": "audio_non-speech/sigh/sigh-8.MP3",
+      "clip_seconds": 1.358,
+      "prompt": "predicting_response/out/audio_prompt/gasp_sigh_001_v2.mp3",
+      "prompt_seconds": 14.908,
+      "context_turns": [
+        "predicting_response/out/audio_turns/gasp_sigh_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/gasp_sigh_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/gasp_sigh_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/gasp_sigh_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/gasp_sigh_001/t6_v2_A.mp3",
+      "reply_text": "Yeah, we can’t keep doing dishes in the sink; I’ll authorize the repair today.",
+      "full": "predicting_response/out/audio_full/gasp_sigh_001_v2.mp3",
+      "full_seconds": 19.738
+    },
+    {
+      "pair_id": "gasp_yawn_001",
+      "version": "v1",
+      "contrast": "gasp-yawn",
+      "vocalization": "[gasp]",
+      "intended_interpretation": "pleasant surprise",
+      "responder": "A",
+      "clip": "audio_non-speech/gasp/gasp-16.MP3",
+      "clip_seconds": 1.071,
+      "prompt": "predicting_response/out/audio_prompt/gasp_yawn_001_v1.mp3",
+      "prompt_seconds": 15.981,
+      "context_turns": [
+        "predicting_response/out/audio_turns/gasp_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/gasp_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/gasp_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/gasp_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/gasp_yawn_001/t6_v1_A.mp3",
+      "reply_text": "Then I'm booking us spots before that viewing deck fills up.",
+      "full": "predicting_response/out/audio_full/gasp_yawn_001_v1.mp3",
+      "full_seconds": 19.291
+    },
+    {
+      "pair_id": "gasp_yawn_001",
+      "version": "v2",
+      "contrast": "gasp-yawn",
+      "vocalization": "[yawn]",
+      "intended_interpretation": "lack of interest",
+      "responder": "A",
+      "clip": "audio_non-speech/yawn/yawn-4.mp3",
+      "clip_seconds": 7.896,
+      "prompt": "predicting_response/out/audio_prompt/gasp_yawn_001_v2.mp3",
+      "prompt_seconds": 22.806,
+      "context_turns": [
+        "predicting_response/out/audio_turns/gasp_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/gasp_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/gasp_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/gasp_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/gasp_yawn_001/t6_v2_A.mp3",
+      "reply_text": "All right, I'll drop the observatory idea and find us something with more energy.",
+      "full": "predicting_response/out/audio_full/gasp_yawn_001_v2.mp3",
+      "full_seconds": 27.636
+    },
+    {
+      "pair_id": "grunt_laughter_001",
+      "version": "v1",
+      "contrast": "grunt-laughter",
+      "vocalization": "[grunt]",
+      "intended_interpretation": "annoyance",
+      "responder": "A",
+      "clip": "audio_non-speech/grunt/grunt-8.MP3",
+      "clip_seconds": 1.071,
+      "prompt": "predicting_response/out/audio_prompt/grunt_laughter_001_v1.mp3",
+      "prompt_seconds": 15.821,
+      "context_turns": [
+        "predicting_response/out/audio_turns/grunt_laughter_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/grunt_laughter_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/grunt_laughter_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/grunt_laughter_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/grunt_laughter_001/t6_v1_A.mp3",
+      "reply_text": "You're right, I’ll send a clean follow-up from my laptop and apologize for the signature.",
+      "full": "predicting_response/out/audio_full/grunt_laughter_001_v1.mp3",
+      "full_seconds": 20.731
+    },
+    {
+      "pair_id": "grunt_laughter_001",
+      "version": "v2",
+      "contrast": "grunt-laughter",
+      "vocalization": "[laughter]",
+      "intended_interpretation": "genuine amusement",
+      "responder": "A",
+      "clip": "audio_non-speech/laughter/laughter-2.mp3",
+      "clip_seconds": 1.992,
+      "prompt": "predicting_response/out/audio_prompt/grunt_laughter_001_v2.mp3",
+      "prompt_seconds": 16.742,
+      "context_turns": [
+        "predicting_response/out/audio_turns/grunt_laughter_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/grunt_laughter_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/grunt_laughter_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/grunt_laughter_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/grunt_laughter_001/t6_v2_A.mp3",
+      "reply_text": "Okay, that is objectively funny—I’m leaving it alone unless the client mentions it.",
+      "full": "predicting_response/out/audio_full/grunt_laughter_001_v2.mp3",
+      "full_seconds": 22.372
+    },
+    {
+      "pair_id": "grunt_sigh_001",
+      "version": "v1",
+      "contrast": "grunt-sigh",
+      "vocalization": "[grunt]",
+      "intended_interpretation": "skepticism",
+      "responder": "A",
+      "clip": "audio_non-speech/grunt/grunt-2.MP3",
+      "clip_seconds": 1.123,
+      "prompt": "predicting_response/out/audio_prompt/grunt_sigh_001_v1.mp3",
+      "prompt_seconds": 15.873,
+      "context_turns": [
+        "predicting_response/out/audio_turns/grunt_sigh_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sigh_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sigh_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sigh_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/grunt_sigh_001/t6_v1_A.mp3",
+      "reply_text": "I won't have anyone patch it yet; I'll get a structural engineer to inspect it before we touch that wall.",
+      "full": "predicting_response/out/audio_full/grunt_sigh_001_v1.mp3",
+      "full_seconds": 21.903
+    },
+    {
+      "pair_id": "grunt_sigh_001",
+      "version": "v2",
+      "contrast": "grunt-sigh",
+      "vocalization": "[sigh]",
+      "intended_interpretation": "relief",
+      "responder": "A",
+      "clip": "audio_non-speech/sigh/sigh-3.MP3",
+      "clip_seconds": 0.888,
+      "prompt": "predicting_response/out/audio_prompt/grunt_sigh_001_v2.mp3",
+      "prompt_seconds": 15.638,
+      "context_turns": [
+        "predicting_response/out/audio_turns/grunt_sigh_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sigh_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sigh_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sigh_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/grunt_sigh_001/t6_v2_A.mp3",
+      "reply_text": "Then I'll cancel the structural engineer and ask the painter to patch it this week.",
+      "full": "predicting_response/out/audio_full/grunt_sigh_001_v2.mp3",
+      "full_seconds": 20.548
+    },
+    {
+      "pair_id": "grunt_sob_001",
+      "version": "v1",
+      "contrast": "grunt-sob",
+      "vocalization": "[grunt]",
+      "intended_interpretation": "annoyance",
+      "responder": "A",
+      "clip": "audio_non-speech/grunt/grunt-5.MP3",
+      "clip_seconds": 2.821,
+      "prompt": "predicting_response/out/audio_prompt/grunt_sob_001_v1.mp3",
+      "prompt_seconds": 18.691,
+      "context_turns": [
+        "predicting_response/out/audio_turns/grunt_sob_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sob_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sob_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sob_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/grunt_sob_001/t6_v1_A.mp3",
+      "reply_text": "You're right, I shouldn't have answered for you. I'll call back and put the offer on hold until you've decided.",
+      "full": "predicting_response/out/audio_full/grunt_sob_001_v1.mp3",
+      "full_seconds": 24.561
+    },
+    {
+      "pair_id": "grunt_sob_001",
+      "version": "v2",
+      "contrast": "grunt-sob",
+      "vocalization": "[sob]",
+      "intended_interpretation": "relief after distress",
+      "responder": "A",
+      "clip": "audio_non-speech/sobbing/sob-15.MP3",
+      "clip_seconds": 2.952,
+      "prompt": "predicting_response/out/audio_prompt/grunt_sob_001_v2.mp3",
+      "prompt_seconds": 18.822,
+      "context_turns": [
+        "predicting_response/out/audio_turns/grunt_sob_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sob_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sob_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/grunt_sob_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/grunt_sob_001/t6_v2_A.mp3",
+      "reply_text": "I'll book the lease-signing appointment now, then we can start moving your boxes over tonight.",
+      "full": "predicting_response/out/audio_full/grunt_sob_001_v2.mp3",
+      "full_seconds": 23.652
+    },
+    {
+      "pair_id": "grunt_yawn_001",
+      "version": "v1",
+      "contrast": "grunt-yawn",
+      "vocalization": "[grunt]",
+      "intended_interpretation": "reluctant agreement",
+      "responder": "A",
+      "clip": "audio_non-speech/grunt/grunt-4.MP3",
+      "clip_seconds": 2.22,
+      "prompt": "predicting_response/out/audio_prompt/grunt_yawn_001_v1.mp3",
+      "prompt_seconds": 16.01,
+      "context_turns": [
+        "predicting_response/out/audio_turns/grunt_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/grunt_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/grunt_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/grunt_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/grunt_yawn_001/t6_v1_A.mp3",
+      "reply_text": "All right, I'll get us dinner, and we'll stay to knock the videos out tonight.",
+      "full": "predicting_response/out/audio_full/grunt_yawn_001_v1.mp3",
+      "full_seconds": 20.52
+    },
+    {
+      "pair_id": "grunt_yawn_001",
+      "version": "v2",
+      "contrast": "grunt-yawn",
+      "vocalization": "[yawn]",
+      "intended_interpretation": "tiredness",
+      "responder": "A",
+      "clip": "audio_non-speech/yawn/yawn-13.MP3",
+      "clip_seconds": 1.306,
+      "prompt": "predicting_response/out/audio_prompt/grunt_yawn_001_v2.mp3",
+      "prompt_seconds": 15.096,
+      "context_turns": [
+        "predicting_response/out/audio_turns/grunt_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/grunt_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/grunt_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/grunt_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/grunt_yawn_001/t6_v2_A.mp3",
+      "reply_text": "No, I’m not keeping us here when we’re already worn out; I’ll ask her to schedule the training during a staffed shift next week.",
+      "full": "predicting_response/out/audio_full/grunt_yawn_001_v2.mp3",
+      "full_seconds": 22.726
+    },
+    {
+      "pair_id": "laughter_sigh_001",
+      "version": "v1",
+      "contrast": "laughter-sigh",
+      "vocalization": "[laughter]",
+      "intended_interpretation": "shared amusement",
+      "responder": "A",
+      "clip": "audio_non-speech/laughter/laughter-3.mp3",
+      "clip_seconds": 5.042,
+      "prompt": "predicting_response/out/audio_prompt/laughter_sigh_001_v1.mp3",
+      "prompt_seconds": 20.192,
+      "context_turns": [
+        "predicting_response/out/audio_turns/laughter_sigh_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sigh_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sigh_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sigh_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/laughter_sigh_001/t6_v1_A.mp3",
+      "reply_text": "Then we’re owning it—I’ll bring eye patches, and we’ll make that dunk tank the best booth there.",
+      "full": "predicting_response/out/audio_full/laughter_sigh_001_v1.mp3",
+      "full_seconds": 26.302
+    },
+    {
+      "pair_id": "laughter_sigh_001",
+      "version": "v2",
+      "contrast": "laughter-sigh",
+      "vocalization": "[sigh]",
+      "intended_interpretation": "disappointment",
+      "responder": "A",
+      "clip": "audio_non-speech/sigh/sigh-13.mp3",
+      "clip_seconds": 0.936,
+      "prompt": "predicting_response/out/audio_prompt/laughter_sigh_001_v2.mp3",
+      "prompt_seconds": 16.086,
+      "context_turns": [
+        "predicting_response/out/audio_turns/laughter_sigh_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sigh_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sigh_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sigh_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/laughter_sigh_001/t6_v2_A.mp3",
+      "reply_text": "Okay, I should have checked with you first; I’ll ask Dana to move us to a quieter booth before noon.",
+      "full": "predicting_response/out/audio_full/laughter_sigh_001_v2.mp3",
+      "full_seconds": 22.116
+    },
+    {
+      "pair_id": "laughter_sob_001",
+      "version": "v1",
+      "contrast": "laughter-sob",
+      "vocalization": "[laughter]",
+      "intended_interpretation": "shared amusement",
+      "responder": "A",
+      "clip": "audio_non-speech/laughter/laughter-7.MP3",
+      "clip_seconds": 2.952,
+      "prompt": "predicting_response/out/audio_prompt/laughter_sob_001_v1.mp3",
+      "prompt_seconds": 24.982,
+      "context_turns": [
+        "predicting_response/out/audio_turns/laughter_sob_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sob_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sob_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sob_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/laughter_sob_001/t6_v1_A.mp3",
+      "reply_text": "Then I'm putting that clip at the end of the slideshow—his terrible singing will make everyone smile.",
+      "full": "predicting_response/out/audio_full/laughter_sob_001_v1.mp3",
+      "full_seconds": 30.692
+    },
+    {
+      "pair_id": "laughter_sob_001",
+      "version": "v2",
+      "contrast": "laughter-sob",
+      "vocalization": "[sob]",
+      "intended_interpretation": "being deeply moved",
+      "responder": "A",
+      "clip": "audio_non-speech/sobbing/sob-12.MP3",
+      "clip_seconds": 2.429,
+      "prompt": "predicting_response/out/audio_prompt/laughter_sob_001_v2.mp3",
+      "prompt_seconds": 24.459,
+      "context_turns": [
+        "predicting_response/out/audio_turns/laughter_sob_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sob_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sob_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/laughter_sob_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/laughter_sob_001/t6_v2_A.mp3",
+      "reply_text": "I'll keep that one out of the slideshow and save it for just us after the party.",
+      "full": "predicting_response/out/audio_full/laughter_sob_001_v2.mp3",
+      "full_seconds": 28.729
+    },
+    {
+      "pair_id": "laughter_yawn_001",
+      "version": "v1",
+      "contrast": "laughter-yawn",
+      "vocalization": "[laughter]",
+      "intended_interpretation": "genuine amusement",
+      "responder": "A",
+      "clip": "audio_non-speech/laughter/laughter-4.MP3",
+      "clip_seconds": 2.743,
+      "prompt": "predicting_response/out/audio_prompt/laughter_yawn_001_v1.mp3",
+      "prompt_seconds": 19.573,
+      "context_turns": [
+        "predicting_response/out/audio_turns/laughter_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/laughter_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/laughter_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/laughter_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/laughter_yawn_001/t6_v1_A.mp3",
+      "reply_text": "Perfect, I’ll keep the full cut and use it to open the orientation.",
+      "full": "predicting_response/out/audio_full/laughter_yawn_001_v1.mp3",
+      "full_seconds": 23.523
+    },
+    {
+      "pair_id": "laughter_yawn_001",
+      "version": "v2",
+      "contrast": "laughter-yawn",
+      "vocalization": "[yawn]",
+      "intended_interpretation": "boredom",
+      "responder": "A",
+      "clip": "audio_non-speech/yawn/yawn-18.MP3",
+      "clip_seconds": 2.586,
+      "prompt": "predicting_response/out/audio_prompt/laughter_yawn_001_v2.mp3",
+      "prompt_seconds": 19.416,
+      "context_turns": [
+        "predicting_response/out/audio_turns/laughter_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/laughter_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/laughter_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/laughter_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/laughter_yawn_001/t6_v2_A.mp3",
+      "reply_text": "Right, I’ll shelve the video and give them the two-minute tour instead.",
+      "full": "predicting_response/out/audio_full/laughter_yawn_001_v2.mp3",
+      "full_seconds": 23.686
+    },
+    {
+      "pair_id": "sigh_sob_001",
+      "version": "v1",
+      "contrast": "sigh-sob",
+      "vocalization": "[sigh]",
+      "intended_interpretation": "exhaustion",
+      "responder": "A",
+      "clip": "audio_non-speech/sigh/sigh-9.mp3",
+      "clip_seconds": 1.855,
+      "prompt": "predicting_response/out/audio_prompt/sigh_sob_001_v1.mp3",
+      "prompt_seconds": 17.165,
+      "context_turns": [
+        "predicting_response/out/audio_turns/sigh_sob_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/sigh_sob_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/sigh_sob_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/sigh_sob_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/sigh_sob_001/t6_v1_A.mp3",
+      "reply_text": "You're right, we already have too much on our plates. I'll take the keys back and tell her we can't run it.",
+      "full": "predicting_response/out/audio_full/sigh_sob_001_v1.mp3",
+      "full_seconds": 22.875
+    },
+    {
+      "pair_id": "sigh_sob_001",
+      "version": "v2",
+      "contrast": "sigh-sob",
+      "vocalization": "[sob]",
+      "intended_interpretation": "being deeply moved",
+      "responder": "A",
+      "clip": "audio_non-speech/sobbing/sob-14.MP3",
+      "clip_seconds": 5.277,
+      "prompt": "predicting_response/out/audio_prompt/sigh_sob_001_v2.mp3",
+      "prompt_seconds": 20.587,
+      "context_turns": [
+        "predicting_response/out/audio_turns/sigh_sob_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/sigh_sob_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/sigh_sob_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/sigh_sob_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/sigh_sob_001/t6_v2_A.mp3",
+      "reply_text": "Then we'll keep it going. I'll message the club tonight, and we'll make sure Ms. Chen's garden doesn't disappear.",
+      "full": "predicting_response/out/audio_full/sigh_sob_001_v2.mp3",
+      "full_seconds": 26.857
+    },
+    {
+      "pair_id": "sigh_yawn_001",
+      "version": "v1",
+      "contrast": "sigh-yawn",
+      "vocalization": "[sigh]",
+      "intended_interpretation": "frustration",
+      "responder": "A",
+      "clip": "audio_non-speech/sigh/sigh-14.MP3",
+      "clip_seconds": 1.123,
+      "prompt": "predicting_response/out/audio_prompt/sigh_yawn_001_v1.mp3",
+      "prompt_seconds": 16.993,
+      "context_turns": [
+        "predicting_response/out/audio_turns/sigh_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/sigh_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/sigh_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/sigh_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/sigh_yawn_001/t6_v1_A.mp3",
+      "reply_text": "No, that is a broken process. I'll call accounting and get permission to use one shared file.",
+      "full": "predicting_response/out/audio_full/sigh_yawn_001_v1.mp3",
+      "full_seconds": 23.183
+    },
+    {
+      "pair_id": "sigh_yawn_001",
+      "version": "v2",
+      "contrast": "sigh-yawn",
+      "vocalization": "[yawn]",
+      "intended_interpretation": "exhaustion",
+      "responder": "A",
+      "clip": "audio_non-speech/yawn/yawn-10.mp3",
+      "clip_seconds": 1.224,
+      "prompt": "predicting_response/out/audio_prompt/sigh_yawn_001_v2.mp3",
+      "prompt_seconds": 17.094,
+      "context_turns": [
+        "predicting_response/out/audio_turns/sigh_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/sigh_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/sigh_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/sigh_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/sigh_yawn_001/t6_v2_A.mp3",
+      "reply_text": "We're stopping for today; I'll lock these up, and we can finish after you've had some sleep.",
+      "full": "predicting_response/out/audio_full/sigh_yawn_001_v2.mp3",
+      "full_seconds": 24.644
+    },
+    {
+      "pair_id": "sob_yawn_001",
+      "version": "v1",
+      "contrast": "sob-yawn",
+      "vocalization": "[sob]",
+      "intended_interpretation": "being deeply moved",
+      "responder": "A",
+      "clip": "audio_non-speech/sobbing/sob-6.MP3",
+      "clip_seconds": 6.896,
+      "prompt": "predicting_response/out/audio_prompt/sob_yawn_001_v1.mp3",
+      "prompt_seconds": 24.126,
+      "context_turns": [
+        "predicting_response/out/audio_turns/sob_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/sob_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/sob_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/sob_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/sob_yawn_001/t6_v1_A.mp3",
+      "reply_text": "That message is the ending, then—I’ll keep the whole clip, even if the video runs long.",
+      "full": "predicting_response/out/audio_full/sob_yawn_001_v1.mp3",
+      "full_seconds": 29.116
+    },
+    {
+      "pair_id": "sob_yawn_001",
+      "version": "v2",
+      "contrast": "sob-yawn",
+      "vocalization": "[yawn]",
+      "intended_interpretation": "exhaustion",
+      "responder": "A",
+      "clip": "audio_non-speech/yawn/yawn-11.MP3",
+      "clip_seconds": 2.429,
+      "prompt": "predicting_response/out/audio_prompt/sob_yawn_001_v2.mp3",
+      "prompt_seconds": 19.659,
+      "context_turns": [
+        "predicting_response/out/audio_turns/sob_yawn_001/t1_A.mp3",
+        "predicting_response/out/audio_turns/sob_yawn_001/t2_A.mp3",
+        "predicting_response/out/audio_turns/sob_yawn_001/t3_A.mp3",
+        "predicting_response/out/audio_turns/sob_yawn_001/t4_A.mp3"
+      ],
+      "reply_turn": "predicting_response/out/audio_turns/sob_yawn_001/t6_v2_A.mp3",
+      "reply_text": "I've kept you up too late; I’ll save this now and make a short cut in the morning.",
+      "full": "predicting_response/out/audio_full/sob_yawn_001_v2.mp3",
+      "full_seconds": 24.569
+    }
+  ]
+}

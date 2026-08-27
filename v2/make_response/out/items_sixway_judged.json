@@ -1,0 +1,186 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-23T22:03:44.514928+00:00",
+  "setting": "domestic",
+  "speakers": {
+    "proposer": "Jane",
+    "reactor": "Alex"
+  },
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "judged": true,
+  "structure": "turn 1 Jane proposes (shared across all six versions); turn 2 Alex produces one vocalization and no words; turn 3 Jane responds to it",
+  "results": [
+    {
+      "item_id": "domestic_001",
+      "error": "GenerationFailed: still invalid after retries: versions.sigh.jane_response is too long",
+      "last_problems": [
+        "versions.sigh.jane_response is too long"
+      ],
+      "last_draft": {
+        "item_id": "domestic_001",
+        "jane_turn1": "Sarah called: Maya's foster placement has fallen through again, and the council needs a family home for her before Monday. I think we should offer to have her live with us through the school year and make the study her room.",
+        "versions": {
+          "gasp": {
+            "vocalization": "[gasp]",
+            "interpretation": "Alex is startled by the urgency and by the scale of Jane's proposal to take Maya in for months.",
+            "jane_response": "No one is arriving tonight, and I have not promised Sarah anything. I should have started by saying that the council can keep Maya in her emergency placement while we ask questions."
+          },
+          "grunt": {
+            "vocalization": "[grunt]",
+            "interpretation": "Alex objects to Jane treating the study, which Alex relies on for work, as though it can simply be given away.",
+            "jane_response": "You're right, your work space is not mine to volunteer. We can look at my sewing room instead, and I will be the one to clear it out."
+          },
+          "laughter": {
+            "vocalization": "[laughter]",
+            "interpretation": "Alex thinks Jane is wildly underestimating how much more taking in a troubled fifteen-year-old involves than moving a desk and adding a bed.",
+            "jane_response": "No, a coat of paint will not magically make us experts on teenagers. But we can do the training and ask the social worker every embarrassingly basic question before we offer anything."
+          },
+          "sigh": {
+            "vocalization": "[sigh]",
+            "interpretation": "Alex can see why Maya needs them but is already weighing the loss of privacy, changed routines, and extra responsibilities.",
+            "jane_response": "That is not a blank cheque; tell me the conditions you would need before this could be a yes. We can put them in front of the social worker instead of pretending we can absorb everything."
+          },
+          "sob": {
+            "vocalization": "[sob]",
+            "interpretation": "Alex is devastated that Maya has been uprooted again and is overwhelmed by the thought of her needing family to step in.",
+            "jane_response": "We do not have to decide her whole future this minute. Let's go see Maya tomorrow, and you can make sure she knows she still has family in her corner."
+          },
+          "yawn": {
+            "vocalization": "[yawn]",
+            "interpretation": "Alex is too exhausted to take in an urgent care plan or face the paperwork tonight.",
+            "jane_response": "You have already done two night shifts; I will tell Sarah we need until tomorrow morning. I'll read the council paperwork tonight and give you the short version after you've slept."
+          }
+        },
+        "why_all_six_work": "Maya's failed placement makes the proposal urgent, emotionally painful, and consequential, while a school-year commitment creates major practical, financial, and domestic disruption. The tiny study and the prospect of suddenly caring for a teenager also make Jane's plan vulnerable to skepticism and humour. Jane's replies respectively clarify the urgency, concede a specific space issue, defend the plan's realism, negotiate conditions, center Maya's emotional need, and postpone the work for an exhausted Alex, so they are not interchangeable."
+      }
+    },
+    {
+      "item_id": "domestic_002",
+      "jane_turn1": "I think we should take out a renovation loan, knock through the kitchen and dining room, and build a downstairs bedroom for your mum before her hip surgery. It would mean months of builders in the house, but she could recover here instead of alone in that third-floor flat.",
+      "versions": {
+        "gasp": {
+          "vocalization": "[gasp]",
+          "interpretation": "Alex is stunned that Jane is proposing debt, major demolition, and bringing his mother into their home as one immediate plan.",
+          "jane_response": "I know I put a loan, a demolition, and your mum moving in all in one sentence. Nothing is decided; I wanted to raise it before we make plans around her surgery."
+        },
+        "grunt": {
+          "vocalization": "[grunt]",
+          "interpretation": "Alex doubts that Jane has realistically accounted for the cost and disruption and wants the plan challenged rather than assumed.",
+          "jane_response": "The quotes aren't a fantasy; I checked what accessible rentals cost, and this is cheaper after a year. Tell me which number you think doesn't hold up."
+        },
+        "laughter": {
+          "vocalization": "[laughter]",
+          "interpretation": "Alex finds the scale of Jane's solution wildly overblown and is poking fun at how abruptly she has turned a surgery into a full-house rebuild.",
+          "jane_response": "All right, it does sound like I've pitched a renovation show with your mum as the surprise guest. If you've got a less insane way to get her out of that walk-up, I'm listening."
+        },
+        "sigh": {
+          "vocalization": "[sigh]",
+          "interpretation": "Alex sees why his mother may need help but feels the prospect of becoming her caregiver amid a renovation exhausting and inevitable.",
+          "jane_response": "You don't have to become the project manager as well as her son. I'll deal with the architect and the builders; you can decide whether she would actually want that room."
+        },
+        "sob": {
+          "vocalization": "[sob]",
+          "interpretation": "Alex is overwhelmed by what the proposal implies about his mother's lost independence and declining health.",
+          "jane_response": "I'm sorry—I know this makes her surgery feel bigger and more permanent than either of us wants. We can leave her flat and the house alone for now."
+        },
+        "yawn": {
+          "vocalization": "[yawn]",
+          "interpretation": "Alex is too depleted tonight to process budgets, building work, and a move-in decision.",
+          "jane_response": "This can wait until you've slept; I shouldn't have sprung a loan application on you at night. I'll put the paperwork away and bring it up this weekend."
+        }
+      },
+      "why_all_six_work": "The proposal combines major debt and disruptive construction with the emotionally charged possibility that Alex's mother can no longer live independently, while its sheer scale can also seem comic or impossible to tackle when exhausted. Jane's replies address six separate implications—being blindsided, doubting the finances, ridiculing the scale, feeling burdened, grieving the loss, and needing rest—so they do not transfer cleanly.",
+      "usage": {
+        "input_tokens": 3260,
+        "output_tokens": 2508
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "speakers": {
+        "proposer": "Jane",
+        "reactor": "Alex"
+      },
+      "setting": "domestic",
+      "topic_seed": "a large purchase or renovation the household would feel for years — a car, a structural change, knocking a room through, a loan",
+      "judge": {
+        "all_six_plausible": true,
+        "responses_each_tied_to_own_vocalization": true,
+        "responses_mutually_distinct": true,
+        "interpretations_context_specific": true,
+        "marked_vocalizations_respected": true,
+        "weakest_vocalization": "yawn",
+        "swappable_pairs": [],
+        "overall": "PASS",
+        "reason": "Each sound receives a context-specific reading and a distinct, appropriately anchored conversational move, with the yawn only slightly less strongly licensed by the stated setup."
+      }
+    },
+    {
+      "item_id": "domestic_003",
+      "jane_turn1": "My company will let me transfer to the Bristol office, and there is a two-bedroom flat near it if we give notice here by Friday. We'd be giving up the place we've had since your mum died, but it would cut my commute and get us out before this rent increase.",
+      "versions": {
+        "gasp": {
+          "vocalization": "[gasp]",
+          "interpretation": "Alex is blindsided that Jane has already investigated a transfer and a deadline without first discussing such a major change together.",
+          "jane_response": "I should have brought it to you before I called them. I have not accepted the transfer or given notice."
+        },
+        "grunt": {
+          "vocalization": "[grunt]",
+          "interpretation": "Alex is skeptical that the supposed savings and shorter commute justify losing their home and taking on an urgent, expensive move.",
+          "jane_response": "I'll put the Bristol rent, deposit, and moving costs beside what we pay now. If the numbers do not truly help us, I will not keep pushing it."
+        },
+        "laughter": {
+          "vocalization": "[laughter]",
+          "interpretation": "Alex finds the idea of two people who hate packing voluntarily abandoning their familiar flat for a hurried move to Bristol absurd.",
+          "jane_response": "Yes, us choosing a cross-country move is a fairly ridiculous sales pitch. But my commute is swallowing three hours a day, which is why I kept looking at it."
+        },
+        "sigh": {
+          "vocalization": "[sigh]",
+          "interpretation": "Alex sees the transfer as a daunting but potentially necessary way out of the rent increase and Jane's exhausting commute.",
+          "jane_response": "I'll ask to view the flat on Saturday and start the application, then. You can stop the process at any point before we give notice."
+        },
+        "sob": {
+          "vocalization": "[sob]",
+          "interpretation": "Alex is overwhelmed by the thought of leaving the home that still holds memories of their mother and does not want to lose it.",
+          "jane_response": "No, we are not giving this place up. I will tell work the transfer is off the table."
+        },
+        "yawn": {
+          "vocalization": "[yawn]",
+          "interpretation": "Alex is too depleted to process deadlines, housing comparisons, and the prospect of packing up their life tonight.",
+          "jane_response": "You do not have to think through forms or boxes tonight. I'll ask whether Friday can be extended, and tomorrow we can give it ten minutes."
+        }
+      },
+      "why_all_six_work": "The transfer combines a looming financial pressure, a demanding relocation project, a startling deadline, and the emotionally loaded loss of a home connected to Alex's mother; it is also grand enough to seem absurd. Jane's replies respectively apologize for unilateral planning, demand financial proof, defend an apparently ridiculous idea, take a concrete next step, withdraw the plan entirely, and remove the immediate mental workload, so they are not interchangeable.",
+      "usage": {
+        "input_tokens": 3294,
+        "output_tokens": 2178
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "speakers": {
+        "proposer": "Jane",
+        "reactor": "Alex"
+      },
+      "setting": "domestic",
+      "topic_seed": "moving, or refusing to move — a new city, downsizing, a job that relocates them, giving up a tenancy",
+      "judge": {
+        "all_six_plausible": true,
+        "responses_each_tied_to_own_vocalization": true,
+        "responses_mutually_distinct": true,
+        "interpretations_context_specific": true,
+        "marked_vocalizations_respected": true,
+        "weakest_vocalization": "yawn",
+        "swappable_pairs": [],
+        "overall": "PASS",
+        "reason": "Each sound has a plausible, proposal-specific reading, and Jane makes a distinct response ranging from apology and cost-testing to proceeding, withdrawing, or postponing."
+      }
+    }
+  ]
+}

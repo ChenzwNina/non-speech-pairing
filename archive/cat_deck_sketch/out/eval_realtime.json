@@ -1,0 +1,115 @@
+{
+  "model": "gpt-realtime-2.1",
+  "audio": "cat_deck_sketch/out/cat_deck_sketch.mp3",
+  "audio_seconds": 53.8,
+  "instructions": "You are listening to a short audio recording of a conversation between two coworkers. Answer the questions you are asked about it. Be specific and concrete, and base what you say on what you actually hear in the recording.",
+  "questions": [
+    {
+      "key": "describe",
+      "question": "Describe what happens in this conversation."
+    },
+    {
+      "key": "each_laugh",
+      "question": "In this recording there are several moments where someone laughs. For each one, say who laughs, roughly when it happens, and what that particular laugh communicates at that point in the conversation. Treat them separately — they are not all the same kind of laugh."
+    },
+    {
+      "key": "most_different",
+      "question": "Of the laughs you just described, which two are the most different from each other, and what is the difference?"
+    }
+  ],
+  "ground_truth": [
+    {
+      "laugh_id": "laugh_1_genuine",
+      "speaker": "MAYA",
+      "at": "0:05",
+      "means": "warm genuine amusement at Dan's joke"
+    },
+    {
+      "laugh_id": "laugh_2_nervous",
+      "speaker": "DAN",
+      "at": "0:20",
+      "means": "nervous dread on realising he sent the wrong file"
+    },
+    {
+      "laugh_id": "laugh_3_sarcastic",
+      "speaker": "DAN",
+      "at": "0:35",
+      "means": "dry sarcasm at the Comic Sans remark"
+    },
+    {
+      "laugh_id": "laugh_4_helpless",
+      "speaker": "DAN",
+      "at": "0:45",
+      "means": "suppressed laughter breaking into helpless real laughter"
+    },
+    {
+      "laugh_id": "laugh_5_apologetic",
+      "speaker": "DAN",
+      "at": "0:51",
+      "means": "laughing while apologising, knowing it is bad"
+    }
+  ],
+  "evaluated_at": "2026-08-24T04:24:18.291864+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "answers": [
+        {
+          "key": "describe",
+          "question": "Describe what happens in this conversation.",
+          "answer": "Two coworkers are talking about a presentation deck. One jokes about putting a cat picture on the final slide, and then the other says they already sent the deck to the client. It turns out they sent the unfinished version—the one on the desktop.\n\nThe client has already replied, calling out the use of Comic Sans and jokingly asking if the cat will be attending tomorrow’s meeting. One coworker tries not to laugh, admits it’s bad, and says they can fix it, but the mistake has already been noticed."
+        },
+        {
+          "key": "each_laugh",
+          "question": "In this recording there are several moments where someone laughs. For each one, say who laughs, roughly when it happens, and what that particular laugh communicates at that point in the conversation. Treat them separately — they are not all the same kind of laugh.",
+          "answer": "First laugh: It’s the coworker responding to the “shareholder confidence” joke. It happens early, right after the cat-on-the-final-slide line. It sounds like a genuine amused laugh—like they actually found the joke funny.\n\nSecond laugh: It’s Dan, after he realizes the client has already replied about the deck. This is mid-conversation, right after the “Interesting use of Comic Sans” line. It comes across as a stressed, awkward laugh—more “oh no” than “that’s hilarious.”\n\nThird laugh: Again Dan, when he hears the extra client comment about the cat attending the meeting. This is toward the end. It’s a bigger laugh, communicating disbelief and that the situation has tipped into absurdity.\n\nThere’s also a tiny laugh-like reaction in the back-and-forth when he’s caught out (“Oh… was it?”). That’s more of a nervous chuckle, signaling he knows he messed up and is trying to soften the moment."
+        },
+        {
+          "key": "most_different",
+          "question": "Of the laughs you just described, which two are the most different from each other, and what is the difference?",
+          "answer": "The most different are the first laugh and the last big laugh.\n\nThe first laugh is the coworker’s amused reaction to a joke—it’s light, playful, and signals “that was actually funny.”\n\nThe last big laugh from Dan is more about disbelief and the situation becoming ridiculous. It’s not approval; it’s a “wow, this has gone off the rails” laugh under stress."
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "answers": [
+        {
+          "key": "describe",
+          "question": "Describe what happens in this conversation.",
+          "answer": "Two coworkers are talking about a presentation. One jokingly admits there’s a picture of a cat on the final slide, and the other laughs. Then it turns serious: one coworker says they already sent the deck to the client. The other asks which version, and it turns out it was the unfinished version from the desktop.\n\nThey hope to fix it before the client sees it, but it’s too late—there’s already a reply. The client comments on the “interesting use of Comic Sans” and adds a joke asking if the cat will be attending tomorrow’s meeting. One coworker laughs, and the other tells them not to, because the situation is bad. The laughing coworker apologizes and acknowledges it’s a mess."
+        },
+        {
+          "key": "each_laugh",
+          "question": "In this recording there are several moments where someone laughs. For each one, say who laughs, roughly when it happens, and what that particular laugh communicates at that point in the conversation. Treat them separately — they are not all the same kind of laugh.",
+          "answer": "Let me walk through the laughs one by one and pin down who’s laughing, when, and what it signals.First laugh: The coworker who asked about the cat picture laughs right after the line “It improves shareholder confidence.” It happens early, immediately after that joke. It communicates genuine amusement — they think the joke lands.\n\nSecond laugh: The coworker who sent the deck gives a short, dry laugh when they hear the client’s comment about “interesting use of Comic Sans.” It’s a quick “ha” before “Great. Fantastic.” It signals awkwardness and frustration, like they’re trying to defuse the embarrassment with sarcasm.\n\nThird laugh: That same coworker laughs again when the client’s message continues with the joke about the cat attending the meeting. It’s a more sustained laugh (multiple “ha” moments). This one reads as nervous and inappropriate given the situation — they’re reacting to the absurdity, even though it’s bad news.\n\nAnd then there’s the reaction to that: the other coworker says “Don’t laugh!” which makes it clear the laugh is not being appreciated and the mood should be serious."
+        },
+        {
+          "key": "most_different",
+          "question": "Of the laughs you just described, which two are the most different from each other, and what is the difference?",
+          "answer": "The most different are the first laugh and the third laugh.\n\nThe first laugh is a light, happy reaction to a joke (“shareholder confidence”). It signals genuine enjoyment and a relaxed moment.\n\nThe third laugh is a longer, nervous laugh at the client’s “cat attending the meeting” line. It comes in a stressful situation and reads as inappropriate coping with embarrassment, not simple amusement."
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "answers": [
+        {
+          "key": "describe",
+          "question": "Describe what happens in this conversation.",
+          "answer": "Two coworkers are talking after one of them apparently put a joke cat picture on the final slide. The other says they’ve already sent the deck to the client, but it turns out they sent the unfinished version—the one on the desktop.\n\nThe sender tries to downplay it and says they can fix it, but then they learn the client already replied. The client comments on the “interesting use of Comic Sans” and jokingly asks if the cat will attend tomorrow’s meeting. One coworker laughs, while the other tells them not to, and the sender apologizes, acknowledging it’s a mess."
+        },
+        {
+          "key": "each_laugh",
+          "question": "In this recording there are several moments where someone laughs. For each one, say who laughs, roughly when it happens, and what that particular laugh communicates at that point in the conversation. Treat them separately — they are not all the same kind of laugh.",
+          "answer": "First laugh: It’s the coworker who says, “Haha, okay, that was actually funny.” It happens very early, right after the line about the cat improving shareholder confidence. It sounds like a genuine amused laugh, acknowledging a joke that landed.\n\nSecond laugh: That’s Dan, when he hears the client’s comment about Comic Sans and the cat attending the meeting. It’s shortly after the client’s reply is mentioned. This laugh feels like a mix of disbelief and “well, this is awkwardly funny,” even though it’s not a good situation.\n\nThird laugh: There’s another brief laugh from Dan right after the cat-attending line is read out, before the other coworker says, “Don’t laugh!” This one comes across as nervous or reflexive—he’s laughing because the client’s response is absurd, not because he thinks the mistake is trivial.\n\nEach laugh shifts tone: first amused, then uneasy amusement, then nervous laughter under pressure."
+        },
+        {
+          "key": "most_different",
+          "question": "Of the laughs you just described, which two are the most different from each other, and what is the difference?",
+          "answer": "The most different are the first laugh and the third laugh.\n\nThe first laugh is from the coworker who says the joke was “actually funny.” It’s light, intentional, and warm—an “I enjoyed that” kind of laugh.\n\nThe third laugh is Dan’s after the client’s cat-attending line, right before “Don’t laugh!” It’s more nervous and reflexive, like he’s coping with an awkward, absurd situation. It doesn’t celebrate the moment; it leaks stress."
+        }
+      ]
+    }
+  ]
+}

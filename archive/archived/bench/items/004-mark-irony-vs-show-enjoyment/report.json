@@ -1,0 +1,118 @@
+{
+  "accepted": true,
+  "rejected_by": null,
+  "cost_usd": 0.4497,
+  "stages": {
+    "mechanical": {
+      "attempt": 1,
+      "failures": []
+    },
+    "bivalence": {
+      "ok": true,
+      "reason": null,
+      "vote_share": 1.0,
+      "prior_favours": "performance_a",
+      "prior_is_unanimous": true,
+      "mean_confidence": 0.685,
+      "both_plausible_rate": 1.0,
+      "votes": [
+        "performance_a",
+        "performance_a",
+        "performance_a",
+        "performance_a"
+      ],
+      "runs": [
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_a",
+          "confidence": 0.68,
+          "both_plausible": true,
+          "reason": "\"Well, that's good to know\" after learning another chair also shed spare parts is a stock ironic formula — the leftover screws were already a worry, and B's report makes it a pattern rather than a fluke, so the laugh flags the reversal rather than simple shared delight."
+        },
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.68,
+          "both_plausible": true,
+          "reason": "\"Well, that's good to know\" after learning leftover parts are systematic reads as ironic reassurance about a possibly unsafe chair, with the laugh flagging the inversion, though the shared-experience reading is a close second."
+        },
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_a",
+          "confidence": 0.72,
+          "both_plausible": true,
+          "reason": "\"Well, that's good to know\" is a stock ironic formula, and the shared leftover parts point to a defect in the product rather than a delightful coincidence, so the laugh most likely flags the inversion."
+        },
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.66,
+          "both_plausible": true,
+          "reason": "\"Well, that's good to know\" after learning spare parts came in both boxes reads as ironic — the laugh marks the reversal, flagging shared worry about the chair's soundness rather than simple delight in a coincidence."
+        }
+      ]
+    },
+    "discriminability": {
+      "ok": true,
+      "reason": null,
+      "per_performance": {
+        "performance_a": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.89,
+              "both_plausible": null,
+              "reason": "The stacked [sardonic][knowing] tags plus a [dry laugh] in a uniformly flat, deadpan exchange mark \"that's good to know\" as ironic — the laugh signals inversion, not shared delight."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_a",
+              "confidence": 0.9,
+              "both_plausible": null,
+              "reason": "The [sardonic][knowing] tags plus a [dry laugh] mark \"that's good to know\" as ironic — the laugh flags inversion and shared wry alarm about the leftover parts, not warm mutual enjoyment."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_a",
+              "confidence": 0.9,
+              "both_plausible": null,
+              "reason": "The [sardonic][knowing] framing plus a [dry laugh] (not a warm or amused one) marks 'that's good to know' as ironic — the laugh signals shared recognition that leftover hardware in both boxes is a bad sign, not shared delight."
+            }
+          ]
+        },
+        "performance_b": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_b",
+              "confidence": 0.87,
+              "both_plausible": null,
+              "reason": "The [delighted] tag plus the trailing [laughing] performs shared warmth over a funny coincidence rather than the dry, deflating delivery an ironic 'that's good to know' would require."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.9,
+              "both_plausible": null,
+              "reason": "The [delighted] tag plus the trailing [laughing] performs shared warm amusement at the coincidence rather than the flat, dry delivery that would mark the line as sarcastic."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.89,
+              "both_plausible": null,
+              "reason": "The [delighted] tag plus a trailing [laughing] reads as genuine shared amusement at the coincidence rather than the flat, ironic delivery a sarcastic reversal of 'that's good to know' would require."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

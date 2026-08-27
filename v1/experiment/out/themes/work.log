@@ -1,0 +1,207 @@
+15 pair(s)  (15 contrast type(s) × 1) · 6 turns per version · cast A+B · theme work
+model: gpt-4o  (audit off)
+[1/15] work_gasp_grunt_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Hey, did you hear about the project update?
+      2. A: I just got off the call with the client.
+      3. A: They've decided to move the deadline forward.
+      4. A: We now need everything completed by this Friday.  <- trigger
+      v1 [gasp] (surprise) -> A: I know, it's sudden, but I'll help with the reports to lighten the load.
+      v2 [grunt] (strong unwillingness) -> A: I get it; it's tough. How about I draft the presentation, and you review it?
+      accepted
+    scenario: A coworker informs another about the project deadline being moved up unexpectedly.
+    trigger:  A reveals that the project deadline has been moved up to this Friday.
+    v1 [gasp] (surprise) → I know, it's sudden, but I'll help with the reports to lighten the load.
+    v2 [grunt] (strong unwillingness) → I get it; it's tough. How about I draft the presentation, and you review it?
+[2/15] work_gasp_laughter_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I think we're all set for the meeting this afternoon.
+      2. A: By the way, did you guys finish decorating for Carla's birthday?
+      3. A: Oh no... I just remembered we left the cake and decorations in the lunch room.
+      4. A: So they've been sitting in there since this morning.  <- trigger
+      v1 [gasp] (surprise) -> A: Don't worry, they might still be fine. Let's check quickly before the meeting.
+      v2 [laughter] (amusement) -> A: Right? At least it'll be a surprise when she sees it later, anyway.
+      accepted
+    scenario: Coworkers discovering a forgotten birthday surprise for their manager.
+    trigger:  A reveals they forgot about their manager's birthday surprise in the lunch room.
+    v1 [gasp] (surprise) → Don't worry, they might still be fine. Let's check quickly before the meeting.
+    v2 [laughter] (amusement) → Right? At least it'll be a surprise when she sees it later, anyway.
+[3/15] work_gasp_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Hey, I just got out of a meeting with the execs.
+      2. A: They've decided to expand our presentation for next week.
+      3. A: Apparently, they want us to cover twice as many topics.
+      4. A: So, our workload has doubled for this project.  <- trigger
+      v1 [gasp] (surprise) -> A: It's a lot, but we'll prioritize and tackle it one step at a time.
+      v2 [sigh] (feeling burdened) -> A: I know it feels overwhelming; let's break it down to manage it better.
+      accepted
+    scenario: A manager informs a team member about an unexpected doubling of their workload for a big upcoming presentation.
+    trigger:  A reveals that the workload for the presentation has unexpectedly doubled.
+    v1 [gasp] (surprise) → It's a lot, but we'll prioritize and tackle it one step at a time.
+    v2 [sigh] (feeling burdened) → I know it feels overwhelming; let's break it down to manage it better.
+[4/15] work_gasp_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: You remember we were reorganizing the storage room today, right?
+      2. A: Well, we found something interesting in one of the old boxes.
+      3. A: It's a poster we made for the last team-building retreat.
+      4. A: Every single person in the department wrote a motivational message on it for each other.  <- trigger
+      v1 [gasp] (pleasant surprise) -> A: Right? It was such a positive and uplifting find; I thought you'd love it!
+      v2 [sob] (being emotionally overwhelmed) -> A: I know, it's really touching to see all those personal messages again.
+      accepted
+    scenario: A reveals a motivational poster that a coworker found while organizing the storage room.
+    trigger:  A reveals that the poster, featuring a team photo, has motivational messages from the entire department.
+    v1 [gasp] (pleasant surprise) → Right? It was such a positive and uplifting find; I thought you'd love it!
+    v2 [sob] (being emotionally overwhelmed) → I know, it's really touching to see all those personal messages again.
+[5/15] work_gasp_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: You won't believe what happened today at the staff meeting.
+      2. A: They were talking about boosting morale and recognizing efforts.
+      3. A: Then, out of nowhere, they called my name!
+      4. A: I didn’t even know they had an Employee of the Month award.  <- trigger
+      v1 [gasp] (surprise) -> A: I know, right? I'm still in shock. They even gave me a plaque!
+      v2 [yawn] (tiredness) -> A: Yeah, it was quite a surprise. Anyway, let's catch up tomorrow.
+      accepted
+    scenario: Discussing a surprise recognition event at work.
+    trigger:  It's revealed that A won the Employee of the Month award unexpectedly.
+    v1 [gasp] (surprise) → I know, right? I'm still in shock. They even gave me a plaque!
+    v2 [yawn] (tiredness) → Yeah, it was quite a surprise. Anyway, let's catch up tomorrow.
+[6/15] work_grunt_laughter_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: So, starting next week, management has decided to try something new.
+      2. A: They're hoping it'll boost creativity and team interaction.
+      3. A: Each week, we'll all be swapping desks with someone from a different department.
+      4. A: Apparently, it's part of a new initiative to promote collaboration.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: I know, it's a bit much. Maybe we can give our feedback after the first round.
+      v2 [laughter] (amusement) -> A: Right? At least it'll keep things interesting around here.
+      accepted
+    scenario: Two coworkers discussing a new seating arrangement in the office.
+    trigger:  A reveals that the team will swap desks every week to promote collaboration.
+    v1 [grunt] (strong unwillingness) → I know, it's a bit much. Maybe we can give our feedback after the first round.
+    v2 [laughter] (amusement) → Right? At least it'll keep things interesting around here.
+[7/15] work_grunt_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: We finally got the confirmation from the client this morning.
+      2. A: They want everything ready by Monday morning for the new campaign.
+      3. A: I know it's short notice, but we’re going to have to work over the weekend.
+      4. A: I'll need everyone in for at least Saturday.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: What if you handle the client updates, and I'll prepare the reports?
+      v2 [sigh] (feeling burdened) -> A: Okay, let's aim to finish by Saturday afternoon so we have some time off.
+      accepted
+    scenario: Coworkers discussing a sudden request to work over the weekend for a big client project.
+    trigger:  Informing about the need to work over the weekend for a project deadline.
+    v1 [grunt] (strong unwillingness) → What if you handle the client updates, and I'll prepare the reports?
+    v2 [sigh] (feeling burdened) → Okay, let's aim to finish by Saturday afternoon so we have some time off.
+[8/15] work_grunt_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Hey, did you hear about the team changes? It's pretty big news.
+      2. A: It looks like they're merging our team with the one from the other department.
+      3. A: The real kicker is that they've chosen you to lead the new combined project.
+      4. A: They want you to present the initial plan at the meeting next week.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: I get it's a lot, but we can prioritize the workload together.
+      v2 [sob] (being emotionally overwhelmed) -> A: Hey, let's sit and talk about how I can support you through this.
+      accepted
+    scenario: Coworkers are discussing a team reorganization that affects their roles.
+    trigger:  A informs B about having to lead a new, challenging project on short notice.
+    v1 [grunt] (strong unwillingness) → I get it's a lot, but we can prioritize the workload together.
+    v2 [sob] (being emotionally overwhelmed) → Hey, let's sit and talk about how I can support you through this.
+[9/15] work_grunt_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Hey, I just checked the schedule for tomorrow.
+      2. A: We have that team training session first thing.
+      3. A: I think it covers the new software everyone's supposed to use.
+      4. A: And it's going to start at 7 a.m. sharp.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: Is it the early start that's bothering you, or the topic itself?
+      v2 [yawn] (tiredness) -> A: Let's just focus on the key parts; we don't have to be there for the whole thing.
+      accepted
+    scenario: Two coworkers discussing an upcoming training session scheduled for early the next morning.
+    trigger:  A mentions the training session is set for 7 a.m. tomorrow.
+    v1 [grunt] (strong unwillingness) → Is it the early start that's bothering you, or the topic itself?
+    v2 [yawn] (tiredness) → Let's just focus on the key parts; we don't have to be there for the whole thing.
+[10/15] work_laughter_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Do you remember the team-building event yesterday?
+      2. A: The tug-of-war turned into a complete mess.
+      3. A: Everyone was already slipping in the mud.
+      4. A: Then the boss fell face-first into the giant puddle!  <- trigger
+      v1 [laughter] (amusement) -> A: Right? I couldn't stop laughing! That's one way to break the ice.
+      v2 [sigh] (tiredness) -> A: Yeah, it was a long day. I felt exhausted afterwards, too.
+      failed checks: ['response names the vocalization instead of interpreting it']
+    -- attempt 2/4 draft --
+      1. A: Hey, take a look at these renovation plans for the office.
+      2. A: They've added some new features to improve our workspace.
+      3. A: There's even a new coffee bar near the entrance.
+      4. A: But, the break room is now labeled as a 'Zen Meditation Zone.'  <- trigger
+      v1 [laughter] (amusement) -> A: Right? Imagine us all meditating instead of gossiping over coffee!
+      v2 [sigh] (resignation) -> A: I know, maybe they're expecting us to relax our way through deadlines.
+      accepted
+    scenario: Coworkers reviewing the new office renovation plans and noticing an unusual feature in the blueprint.
+    trigger:  The blueprint shows the break room is now listed as a 'Zen Meditation Zone.'
+    v1 [laughter] (amusement) → Right? Imagine us all meditating instead of gossiping over coffee!
+    v2 [sigh] (resignation) → I know, maybe they're expecting us to relax our way through deadlines.
+[11/15] work_laughter_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: While sorting these pictures for the presentation, I found something interesting.
+      2. A: Remember that themed costume day we had for the company picnic?
+      3. A: I've just stumbled upon a picture from that event.
+      4. A: It's the one where we're all dressed as superheroes—it's hilarious.  <- trigger
+      v1 [laughter] (amusement) -> A: Exactly! I especially love how seriously Jim was striking that superhero pose.
+      v2 [sob] (being emotionally overwhelmed) -> A: Oh, wow. Yeah, those were some great times. Let me know if you need a moment.
+      accepted
+    scenario: Coworkers are going through old office photos for a presentation and find a funny/nostalgic picture.
+    trigger:  A finds and comments on an old photo of the team dressed as superheroes for a work event.
+    v1 [laughter] (amusement) → Exactly! I especially love how seriously Jim was striking that superhero pose.
+    v2 [sob] (being emotionally overwhelmed) → Oh, wow. Yeah, those were some great times. Let me know if you need a moment.
+[12/15] work_laughter_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: We finally got the client presentation back from editing.
+      2. A: Let's check it quickly, then we can finish up.
+      3. A: I think they added some new slides.
+      4. A: Oh wow, the title says, 'Delicious Strategies' instead of 'Decisive Strategies'.  <- trigger
+      v1 [laughter] (amusement) -> A: Right? I almost want to keep it just for fun.
+      v2 [yawn] (tiredness) -> A: Let's just fix it quickly and wrap things up.
+      accepted
+    scenario: Coworkers reviewing a client presentation late in the day.
+    trigger:  The presentation included a hilarious typo on the title slide.
+    v1 [laughter] (amusement) → Right? I almost want to keep it just for fun.
+    v2 [yawn] (tiredness) → Let's just fix it quickly and wrap things up.
+[13/15] work_sigh_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I spoke with the manager this morning.
+      2. A: She wants us to reorganize the entire storage area.
+      3. A: And she needs it done by Monday.
+      4. A: It'll be a lot of work to go through everything this weekend.  <- trigger
+      v1 [sigh] (feeling burdened) -> A: Let's just split it up so it doesn't feel overwhelming.
+      v2 [sob] (being emotionally overwhelmed) -> A: Hey, it's okay, we'll figure this out together.
+      accepted
+    scenario: Coworkers discussing reorganizing the office storage space.
+    trigger:  The manager requests complete reorganization of the storage area by Monday.
+    v1 [sigh] (feeling burdened) → Let's just split it up so it doesn't feel overwhelming.
+    v2 [sob] (being emotionally overwhelmed) → Hey, it's okay, we'll figure this out together.
+[14/15] work_sigh_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: The moving company isn't coming until next week, but we need to have everything packed up by Thursday.
+      2. A: That means we’ll have to stay late for the next few days to get it all done.
+      3. A: Plus, we also have to make sure all the files are sorted and labeled correctly.
+      4. A: I just heard we need to handle the storage room tonight before anything else.  <- trigger
+      v1 [sigh] (feeling burdened) -> A: Okay, let's focus on the most critical sections first; we'll split the work to make it easier.
+      v2 [yawn] (low energy) -> A: Alright, we'll just get the basics done tonight and continue in the morning.
+      accepted
+    scenario: Two coworkers are discussing the plan for packing up the office for an upcoming move.
+    trigger:  A reveals they need to stay late for the office move preparation.
+    v1 [sigh] (feeling burdened) → Okay, let's focus on the most critical sections first; we'll split the work to make it easier.
+    v2 [yawn] (low energy) → Alright, we'll just get the basics done tonight and continue in the morning.
+[15/15] work_sob_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: So, I finally got through the evaluations today.
+      2. A: Most of them went as expected, but there was an outlier.
+      3. A: Your review was surprisingly harsh, which seemed out of character.
+      4. A: They said your attention to detail has been lacking, which I didn't anticipate.  <- trigger
+      v1 [sob] (being emotionally overwhelmed) -> A: Hey, let's talk to HR about this. We need to clear up what's going on.
+      v2 [yawn] (tiredness) -> A: Let's wrap it up for today and tackle this fresh in the morning.
+      accepted
+    scenario: Coworkers reviewing yearly performance evaluations and discovering a harsh review for one member of the team.
+    trigger:  A informs B about their unexpectedly harsh performance review.
+    v1 [sob] (being emotionally overwhelmed) → Hey, let's talk to HR about this. We need to clear up what's going on.
+    v2 [yawn] (tiredness) → Let's wrap it up for today and tackle this fresh in the morning.
+
+wrote predicting_response/out/themes/pairs_work.json and predicting_response/out/themes/pairs_work.md

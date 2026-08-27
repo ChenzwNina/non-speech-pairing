@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 4 · Two dialogues, one match</title>
+  <style>
+    :root {
+      --paper: #f3efe6;
+      --ink: #1c1712;
+      --mute: #6d6458;
+      --line: #d8cfc0;
+      --card: #fbf8f2;
+      --ok: #215c40;
+      --ok-bg: #dcecde;
+      --miss: #9a3124;
+      --miss-bg: #f4ddd6;
+      --gold: #8a5a12;
+      --gold-bg: #f3e6c8;
+      --accent: #3a5a78;
+      --accent-bg: #e2e9ef;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--paper); color: var(--ink); }
+    body { font: 15px/1.5 "Avenir Next", "Segoe UI", sans-serif; padding: 28px 20px 80px; }
+    h1, h2, h3, .serif { font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif; }
+    .wrap { max-width: 1180px; margin: 0 auto; }
+    header.top { padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+    header.top p.kicker { margin: 0 0 6px; color: var(--mute); letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
+    h1 { margin: 0; font-size: 32px; font-weight: 600; letter-spacing: -0.03em; }
+    .lede { margin: 10px 0 0; color: var(--mute); max-width: 60em; font-size: 15px; }
+    nav.jump { display: flex; gap: 18px; margin-top: 16px; flex-wrap: wrap; }
+    nav.jump a { color: var(--accent); text-decoration: none; font-size: 13px; border-bottom: 1px solid transparent; }
+    nav.jump a:hover { border-color: var(--accent); }
+    section { margin-top: 40px; }
+    section h2 { font-size: 20px; margin: 0 0 6px; font-weight: 600; }
+    section > .kicker2 { color: var(--mute); letter-spacing: 0.06em; text-transform: uppercase; font-size: 11px; margin-bottom: 4px; display: block; }
+    .note { color: var(--mute); font-size: 13.5px; margin: 6px 0 16px; max-width: 68em; }
+    .prose { max-width: 68em; }
+    .prose p { margin: 0 0 12px; }
+    .prose ol, .prose ul { margin: 0 0 14px; padding-left: 22px; }
+    .prose li { margin: 4px 0; }
+    .prose code { background: var(--card); border: 1px solid var(--line); padding: 1px 5px; font-size: 13px; }
+    .pipeline { display: flex; align-items: stretch; gap: 0; margin: 18px 0; flex-wrap: wrap; }
+    .pipeline .step { background: var(--card); border: 1px solid var(--line); padding: 12px 16px; flex: 1; min-width: 150px; }
+    .pipeline .step .n { font-size: 11px; color: var(--mute); text-transform: uppercase; letter-spacing: 0.06em; }
+    .pipeline .step .t { font-weight: 600; margin: 3px 0; font-size: 14px; }
+    .pipeline .step .d { font-size: 12.5px; color: var(--mute); }
+    .pipeline .arrow { display: flex; align-items: center; justify-content: center; padding: 0 8px; color: var(--mute); font-size: 18px; }
+    .criteria { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 14px 0; }
+    .criterion { background: var(--card); border: 1px solid var(--line); padding: 12px 14px; }
+    .criterion .name { font-weight: 600; font-size: 13.5px; margin-bottom: 4px; }
+    .criterion .rate { float: right; font-variant-numeric: tabular-nums; color: var(--ok); font-weight: 600; }
+    .criterion .desc { font-size: 12.5px; color: var(--mute); }
+    table.qdefs { border-collapse: collapse; width: 100%; font-size: 13.5px; margin: 14px 0; }
+    table.qdefs th, table.qdefs td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; }
+    table.qdefs th { background: var(--card); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--mute); font-weight: 600; }
+    table.qdefs td.qlabel { font-weight: 600; white-space: nowrap; }
+    table.qdefs td.shape { white-space: nowrap; color: var(--mute); }
+    .stat-row { display: flex; gap: 16px; flex-wrap: wrap; margin: 16px 0; }
+    .stat { background: var(--card); border: 1px solid var(--line); padding: 14px 18px; min-width: 130px; }
+    .stat .big { font-size: 30px; font-weight: 600; letter-spacing: -0.03em; }
+    .stat .big.low { color: var(--miss); }
+    .stat .cap { color: var(--mute); font-size: 11.5px; margin-top: 3px; }
+    .stat .chance { color: var(--mute); font-size: 11px; }
+    .bar-row { display: grid; grid-template-columns: 70px 1fr 60px; gap: 10px; align-items: center; margin: 7px 0; font-size: 13px; }
+    .bar-row .label { color: var(--mute); }
+    .track { height: 8px; background: #e6dfd2; position: relative; }
+    .fill { height: 8px; background: var(--ink); }
+    .fill.low { background: var(--miss); }
+    .chance-tick { position: absolute; top: -3px; bottom: -3px; width: 1px; background: var(--mute); opacity: 0.55; }
+    .count { text-align: right; font-variant-numeric: tabular-nums; color: var(--mute); }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 4px; }
+    select, input[type="search"] { font: inherit; background: var(--card); color: var(--ink); border: 1px solid var(--line); padding: 7px 10px; }
+    input[type="search"] { min-width: 220px; }
+    .meta { color: var(--mute); font-size: 13px; margin: 10px 0; }
+    .card { background: var(--card); border: 1px solid var(--line); padding: 18px; margin: 16px 0; }
+    .card-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+    .card-head h3 { margin: 0; font-size: 17px; }
+    .badge { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--mute); }
+    .turn1 { background: var(--paper); border: 1px solid var(--line); padding: 10px 14px; margin: 0 0 12px; font-size: 14px; }
+    .turn1 .who { color: var(--mute); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+    audio { width: 100%; height: 32px; margin: 4px 0 10px; }
+    .dialogues { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 14px; }
+    .dialogue { border-top: 2px solid var(--line); padding-top: 8px; }
+    .dialogue .order { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+    .dialogue .voc { font-size: 14px; margin: 3px 0; }
+    .dialogue .interp { color: var(--mute); font-size: 12.5px; margin: 0 0 6px; }
+    .dialogue .resp { font-size: 13.5px; }
+    .qgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 10px; }
+    .qgrid .qwide { grid-column: 1 / -1; }
+    .qblock { border-top: 1px solid var(--line); padding-top: 8px; }
+    .qhead { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--mute); margin-bottom: 5px; display: flex; justify-content: space-between; }
+    .qhead .verdict.ok { color: var(--ok); }
+    .qhead .verdict.miss { color: var(--miss); }
+    ul.opts { list-style: none; margin: 0; padding: 0; }
+    ul.opts li { display: grid; grid-template-columns: 18px 1fr auto; gap: 7px; align-items: start; padding: 5px 7px; margin: 2px 0; font-size: 12.5px; border: 1px solid transparent; }
+    ul.opts li .key { color: var(--mute); font-variant-numeric: tabular-nums; }
+    ul.opts li.gold { background: var(--gold-bg); border-color: #e2c98a; }
+    ul.opts li.pred { outline: 1px solid var(--miss); }
+    ul.opts li.gold.pred { outline-color: var(--ok); background: var(--ok-bg); border-color: #b7d0bb; }
+    ul.opts li .tag { font-size: 9.5px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--mute); padding-top: 1px; white-space: nowrap; }
+    .rationale { color: var(--mute); font-size: 13px; margin: 14px 0 0; padding-top: 10px; border-top: 1px solid var(--line); }
+    .empty { color: var(--mute); padding: 24px 0; }
+    footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--mute); font-size: 12px; }
+    @media (max-width: 900px) {
+      .criteria, .dialogues, .qgrid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <p class="kicker">Task 4 · Two-turn benchmark, two separate dialogues</p>
+      <h1>Two dialogues, never mixed — can the model match them back up?</h1>
+      <p class="lede" id="lede"></p>
+      <nav class="jump">
+        <a href="#curation">How the dataset is curated</a>
+        <a href="#metrics">What's measured</a>
+        <a href="#results">Results</a>
+        <a href="#pairs">Browse the pairs</a>
+      </nav>
+    </header>
+
+    <section id="curation">
+      <span class="kicker2">Curation</span>
+      <h2>How the dataset is built</h2>
+      <div class="prose">
+        <p>Each item is a minimal two-turn interaction: Speaker A says one line, Speaker B
+        answers with only a non-speech sound — no words. Two versions share the identical
+        Turn 1; only B's vocalization differs between them. Each version also carries a
+        gold interpretation (what B's reaction means here) and a gold verbal continuation
+        (what B would plausibly say next), written but never spoken.</p>
+        <p>There are <strong>no random distractors</strong>. The matching questions below
+        are a straight forced choice between the pair's own two gold answers — nothing else
+        to eliminate. That raises the bar on generation: the two gold answers must
+        themselves be individually right and jointly non-interchangeable, or the question
+        has no real answer.</p>
+      </div>
+      <div class="pipeline" id="pipeline"></div>
+      <div class="prose">
+        <p>An item that fails any check is rebuilt with the specific failures fed back into
+        the prompt, up to 4 attempts. In this run, <span id="attempts-summary"></span>.</p>
+        <p>The verifier judges four criteria independently — the central test in each is a
+        <strong>swap test</strong>: if either the interpretation or the response would work
+        about as well paired with the <em>other</em> vocalization, that criterion fails.</p>
+      </div>
+      <div class="criteria" id="criteria"></div>
+    </section>
+
+    <section id="metrics">
+      <span class="kicker2">Metrics</span>
+      <h2>What the model is asked</h2>
+      <p class="note">Each pair is rendered as <strong>two separate audio files</strong>,
+      never mixed into one clip — Dialogue 1 is Turn 1 + one vocalization, Dialogue 2 is the
+      same Turn 1 + the other vocalization. The model is told up front it will hear two
+      distinct dialogues, one at a time. Which of the pair's two versions plays as
+      "Dialogue 1" vs "Dialogue 2" is randomized independently per item, so sound identity
+      is not confounded with listening order. All four questions are asked in one session:
+      identify each sound right after its own audio, then — once both have been heard —
+      match the two gold interpretations and the two gold responses back to the dialogue
+      each actually belongs to.</p>
+      <table class="qdefs" id="qdefs"></table>
+    </section>
+
+    <section id="results">
+      <span class="kicker2">Results</span>
+      <h2><span id="eval-model-name"></span> on <span id="n-items"></span> items</h2>
+      <div class="stat-row" id="headline-stats"></div>
+      <div>
+        <h2 style="font-size:16px">Sound identification, by vocalization (pooled across both dialogue slots)</h2>
+        <div id="bars-id"></div>
+      </div>
+    </section>
+
+    <section id="pairs">
+      <span class="kicker2">Data</span>
+      <h2>The pairs</h2>
+      <p class="note">Each card shows the two separate audio files for that pair — Dialogue 1
+      and Dialogue 2 as actually presented to the model, in the randomized order used for
+      that item — and all four questions asked, with the model's answer and the correct
+      answer both marked.</p>
+      <div class="controls">
+        <select id="filter-voc"></select>
+        <select id="filter-result"></select>
+        <input type="search" id="search" placeholder="search text…" />
+      </div>
+      <p class="meta" id="list-meta"></p>
+      <div id="list"></div>
+    </section>
+
+    <footer id="footer"></footer>
+  </div>
+
+  <script id="payload" type="application/json">{"writer":"gpt-5.6-terra","eval_model":"gpt-realtime-2.1","seed":0,"tts_model":"eleven_v3","voice_pool":{"male":"s3TPKV1kjDlVtZbl4Ksh","female":"aKw9UnnjRq5scbeeGI7Z"},"voice_counts":{"male":7,"female":8},"gap_after_turn1":0.4,"attempts_histogram":{"1":13,"2":2},"judge_properties":[{"key":"vocalizations_both_plausible","text":"Both vocalizations are plausible reactions to Turn 1, which does not give either away."},{"key":"interpretations_clearly_contrastive","text":"The two gold interpretations express meaningfully different pragmatic meanings — swapping them would clearly make the pair worse."},{"key":"responses_clearly_contrastive","text":"The two gold responses perform different conversational functions and would sound wrong if swapped onto the other reaction."},{"key":"negative_vocalization_semantics_preserved","text":"For grunt/sigh/sob/yawn, the interpretation and response still register the reluctance, fatigue, or distress — never plain cheerful agreement."}],"judge_pass_rate":{"vocalizations_both_plausible":100.0,"interpretations_clearly_contrastive":100.0,"responses_clearly_contrastive":100.0,"negative_vocalization_semantics_preserved":100.0},"q_defs":[{"key":"q1a","label":"Q1a","title":"Identify Dialogue 1's sound","shape":"6-way","chance":16.7,"desc":"Right after playing audio 1, which non-speech sound did Speaker B produce?"},{"key":"q1b","label":"Q1b","title":"Identify Dialogue 2's sound","shape":"6-way","chance":16.7,"desc":"Right after playing audio 2 (a separate clip — Turn 1 repeated, different reaction), same question."},{"key":"q2","label":"Q2","title":"Match interpretations to dialogues","shape":"2-way","chance":50.0,"desc":"Having heard both, given the pair's two gold interpretations, which one describes Dialogue 1 and which describes Dialogue 2?"},{"key":"q3","label":"Q3","title":"Match responses to dialogues","shape":"2-way","chance":50.0,"desc":"Given the pair's two gold spoken continuations, which one follows Dialogue 1 and which follows Dialogue 2?"}],"summary":{"n":15,"q":{"q1a":{"correct":15,"n":15,"pct":100.0},"q1b":{"correct":12,"n":15,"pct":80.0},"q2":{"correct":13,"n":15,"pct":86.7},"q3":{"correct":14,"n":15,"pct":93.3}},"all_four":{"correct":12,"n":15,"pct":80.0},"matching_when_both_ids_correct":{"correct":12,"n":12,"pct":100.0},"matching_when_an_id_wrong":{"correct":1,"n":3,"pct":33.3},"id_by_vocalization":{"gasp":{"n":5,"correct":5,"pct":100.0},"grunt":{"n":5,"correct":3,"pct":60.0},"laughter":{"n":5,"correct":5,"pct":100.0},"sigh":{"n":5,"correct":5,"pct":100.0},"sob":{"n":5,"correct":4,"pct":80.0},"yawn":{"n":5,"correct":5,"pct":100.0}}},"voc_order":["gasp","grunt","laughter","sigh","sob","yawn"],"voc_label":{"gasp":"Gasp","grunt":"Grunt","laughter":"Laughter","sigh":"Sigh","sob":"Sob","yawn":"Yawn"},"items":[{"pair_id":"gasp_grunt_001","contrast":"gasp-grunt","attempts":1,"shared_turn1":"I finished the full twenty-six-mile trail loop this morning.","turn1_voice_label":"male","contrastive_rationale":"The first reaction conveys amazed admiration and leads naturally to congratulations, while the second conveys skeptical challenge and leads to a request for evidence. Asking for proof after an admiring reaction or offering excited praise after a skeptical reaction would be strongly dispreferred.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The gasp conveys impressed celebration while the grunt conveys skeptical challenge, with clearly distinct fitting responses."},"dialogue1":{"version":"v1","audio":"gasp_grunt_001_v1.mp3","audio_seconds":4.749,"vocalization":"gasp","voc_tag":"[gasp]","interpretation":"B is impressed by A's endurance and enthusiastically celebrates the accomplishment.","response":"You ran all twenty-six miles? That's amazing!","clip_file":"gasp-15.MP3","clip_seconds":1.149},"dialogue2":{"version":"v2","audio":"gasp_grunt_001_v2.mp3","audio_seconds":5.899,"vocalization":"grunt","voc_tag":"[grunt]","interpretation":"B doubts that A really completed the run and challenges the claim by asking for proof.","response":"Uh-huh. Let me see the route on your watch.","clip_file":"grunt-3.MP3","clip_seconds":2.299},"questions":{"q1a":{"options":{"A":"sob","B":"grunt","C":"yawn","D":"laughter","E":"gasp","F":"sigh"},"gold":"E","predicted":"E","correct":true},"q1b":{"options":{"A":"sob","B":"gasp","C":"grunt","D":"yawn","E":"laughter","F":"sigh"},"gold":"C","predicted":"F","correct":false},"q2":{"options":{"A":"\"B doubts that A really completed the run and challenges the claim by asking for proof.\" describes Dialogue 1, and \"B is impressed by A's endurance and enthusiastically celebrates the accomplishment.\" describes Dialogue 2.","B":"\"B is impressed by A's endurance and enthusiastically celebrates the accomplishment.\" describes Dialogue 1, and \"B doubts that A really completed the run and challenges the claim by asking for proof.\" describes Dialogue 2."},"gold":"B","predicted":"B","correct":true},"q3":{"options":{"A":"\"You ran all twenty-six miles? That's amazing!\" follows Dialogue 1, and \"Uh-huh. Let me see the route on your watch.\" follows Dialogue 2.","B":"\"Uh-huh. Let me see the route on your watch.\" follows Dialogue 1, and \"You ran all twenty-six miles? That's amazing!\" follows Dialogue 2."},"gold":"A","predicted":"A","correct":true}}},{"pair_id":"gasp_laughter_001","contrast":"gasp-laughter","attempts":1,"shared_turn1":"I meant to send my resignation email to my manager, but I accidentally copied the entire company.","turn1_voice_label":"male","contrastive_rationale":"The first reaction treats the email as an urgent problem requiring damage control, while the second treats it as an absurd blunder worth teasing about. Asking about recalling the email would undercut the playful response, and the joke would be insensitive after an alarmed reaction.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The gasp conveys alarm and urgent concern, while the laughter conveys amused teasing, with clearly distinct fitting responses."},"dialogue1":{"version":"v2","audio":"gasp_laughter_001_v2.mp3","audio_seconds":11.042,"vocalization":"laughter","voc_tag":"[laughter]","interpretation":"B finds the spectacularly public mistake absurd and playfully teases A about making the announcement impossible to miss.","response":"Well, that is certainly one way to make sure everyone gets the news.","clip_file":"laughter-3.mp3","clip_seconds":5.042},"dialogue2":{"version":"v1","audio":"gasp_laughter_001_v1.mp3","audio_seconds":7.071,"vocalization":"gasp","voc_tag":"[gasp]","interpretation":"B is alarmed by the potentially damaging mistake and urgently focuses on whether A can limit the fallout.","response":"Oh no—can you recall it before everyone reads it?","clip_file":"gasp-16.MP3","clip_seconds":1.071},"questions":{"q1a":{"options":{"A":"grunt","B":"yawn","C":"sigh","D":"laughter","E":"sob","F":"gasp"},"gold":"D","predicted":"D","correct":true},"q1b":{"options":{"A":"sigh","B":"grunt","C":"yawn","D":"sob","E":"gasp","F":"laughter"},"gold":"E","predicted":"E","correct":true},"q2":{"options":{"A":"\"B finds the spectacularly public mistake absurd and playfully teases A about making the announcement impossible to miss.\" describes Dialogue 1, and \"B is alarmed by the potentially damaging mistake and urgently focuses on whether A can limit the fallout.\" describes Dialogue 2.","B":"\"B is alarmed by the potentially damaging mistake and urgently focuses on whether A can limit the fallout.\" describes Dialogue 1, and \"B finds the spectacularly public mistake absurd and playfully teases A about making the announcement impossible to miss.\" describes Dialogue 2."},"gold":"A","predicted":"A","correct":true},"q3":{"options":{"A":"\"Oh no—can you recall it before everyone reads it?\" follows Dialogue 1, and \"Well, that is certainly one way to make sure everyone gets the news.\" follows Dialogue 2.","B":"\"Well, that is certainly one way to make sure everyone gets the news.\" follows Dialogue 1, and \"Oh no—can you recall it before everyone reads it?\" follows Dialogue 2."},"gold":"B","predicted":"B","correct":true}}},{"pair_id":"gasp_sigh_001","contrast":"gasp-sigh","attempts":1,"shared_turn1":"The board just voted to cancel the festival, even though it opens this weekend.","turn1_voice_label":"male","contrastive_rationale":"The first reaction expresses shocked disbelief and challenges the decision, while the second conveys resigned acceptance and takes practical action. Calling vendors immediately after an incredulous reaction is strongly dispreferred, just as protesting the decision is mismatched with resigned logistical follow-through.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The gasp conveys incredulous shock while the sigh conveys resigned practical acceptance, with clearly distinct continuations."},"dialogue1":{"version":"v1","audio":"gasp_sigh_001_v1.mp3","audio_seconds":4.893,"vocalization":"gasp","voc_tag":"[gasp]","interpretation":"B is shocked by the last-minute decision and incredulously challenges how the board could cancel an event after so much preparation.","response":"Cancel it? After everyone has worked for months?","clip_file":"gasp-8.mp3","clip_seconds":0.653},"dialogue2":{"version":"v2","audio":"gasp_sigh_001_v2.mp3","audio_seconds":5.176,"vocalization":"sigh","voc_tag":"[sigh]","interpretation":"B reluctantly accepts that the festival is over and shifts to handling the disappointing practical consequences.","response":"I'll call the vendors and tell them not to come.","clip_file":"sigh-13.mp3","clip_seconds":0.936},"questions":{"q1a":{"options":{"A":"gasp","B":"yawn","C":"sob","D":"grunt","E":"laughter","F":"sigh"},"gold":"A","predicted":"A","correct":true},"q1b":{"options":{"A":"grunt","B":"yawn","C":"gasp","D":"laughter","E":"sob","F":"sigh"},"gold":"F","predicted":"F","correct":true},"q2":{"options":{"A":"\"B reluctantly accepts that the festival is over and shifts to handling the disappointing practical consequences.\" describes Dialogue 1, and \"B is shocked by the last-minute decision and incredulously challenges how the board could cancel an event after so much preparation.\" describes Dialogue 2.","B":"\"B is shocked by the last-minute decision and incredulously challenges how the board could cancel an event after so much preparation.\" describes Dialogue 1, and \"B reluctantly accepts that the festival is over and shifts to handling the disappointing practical consequences.\" describes Dialogue 2."},"gold":"B","predicted":"B","correct":true},"q3":{"options":{"A":"\"Cancel it? After everyone has worked for months?\" follows Dialogue 1, and \"I'll call the vendors and tell them not to come.\" follows Dialogue 2.","B":"\"I'll call the vendors and tell them not to come.\" follows Dialogue 1, and \"Cancel it? After everyone has worked for months?\" follows Dialogue 2."},"gold":"A","predicted":"A","correct":true}}},{"pair_id":"gasp_sob_001","contrast":"gasp-sob","attempts":1,"shared_turn1":"The doctor says the treatment worked, but they'll need to keep Mom overnight for observation.","turn1_voice_label":"female","contrastive_rationale":"The gasp conveys anxious concern and prompts an urgent question about a possible problem, while the sob conveys emotional relief and celebrates the successful treatment. Reassuring celebration after alarm, or an alarmed challenge after relieved tears, would be strongly dispreferred.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The gasp conveys alarm about observation while the sob conveys overwhelmed relief at the successful treatment, with distinct natural follow-up responses."},"dialogue1":{"version":"v2","audio":"gasp_sob_001_v2.mp3","audio_seconds":13.324,"vocalization":"sob","voc_tag":"[sob]","interpretation":"B is overwhelmed with relief that the treatment succeeded after fearing for Mom's health.","response":"It worked—she's going to be okay.","clip_file":"sob-18.MP3","clip_seconds":8.124},"dialogue2":{"version":"v1","audio":"gasp_sob_001_v1.mp3","audio_seconds":6.784,"vocalization":"gasp","voc_tag":"[gasp]","interpretation":"B is alarmed by the unexpected overnight stay and urgently seeks reassurance that there is not a complication.","response":"Overnight? Is something wrong?","clip_file":"gasp-5.mp3","clip_seconds":1.584},"questions":{"q1a":{"options":{"A":"yawn","B":"grunt","C":"gasp","D":"laughter","E":"sigh","F":"sob"},"gold":"F","predicted":"F","correct":true},"q1b":{"options":{"A":"sigh","B":"sob","C":"laughter","D":"grunt","E":"gasp","F":"yawn"},"gold":"E","predicted":"E","correct":true},"q2":{"options":{"A":"\"B is alarmed by the unexpected overnight stay and urgently seeks reassurance that there is not a complication.\" describes Dialogue 1, and \"B is overwhelmed with relief that the treatment succeeded after fearing for Mom's health.\" describes Dialogue 2.","B":"\"B is overwhelmed with relief that the treatment succeeded after fearing for Mom's health.\" describes Dialogue 1, and \"B is alarmed by the unexpected overnight stay and urgently seeks reassurance that there is not a complication.\" describes Dialogue 2."},"gold":"B","predicted":"B","correct":true},"q3":{"options":{"A":"\"Overnight? Is something wrong?\" follows Dialogue 1, and \"It worked—she's going to be okay.\" follows Dialogue 2.","B":"\"It worked—she's going to be okay.\" follows Dialogue 1, and \"Overnight? Is something wrong?\" follows Dialogue 2."},"gold":"B","predicted":"B","correct":true}}},{"pair_id":"gasp_yawn_001","contrast":"gasp-yawn","attempts":1,"shared_turn1":"I got us front-row tickets to Dr. Alvarez's 7 a.m. talk about the new space telescope images tomorrow.","turn1_voice_label":"female","contrastive_rationale":"One reaction conveys delighted enthusiasm for a rare event, while the other conveys fatigue-driven refusal. Asking A to give the ticket away would clash with the excited response, and insisting on attending would clash with the exhausted refusal.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The gasp conveys eager excitement while the yawn conveys fatigue-driven refusal, with clearly distinct natural responses."},"dialogue1":{"version":"v1","audio":"gasp_yawn_001_v1.mp3","audio_seconds":8.008,"vocalization":"gasp","voc_tag":"[gasp]","interpretation":"B is thrilled by the unexpectedly special opportunity and eagerly wants to attend despite the early hour.","response":"Front row? That's incredible—we have to go.","clip_file":"gasp-4.MP3","clip_seconds":0.888},"dialogue2":{"version":"v2","audio":"gasp_yawn_001_v2.mp3","audio_seconds":9.236,"vocalization":"yawn","voc_tag":"[yawn]","interpretation":"B is focused on how exhausting the early start would be and decides they cannot attend.","response":"At seven? I can't do that; please take someone else.","clip_file":"yawn-3.mp3","clip_seconds":2.116},"questions":{"q1a":{"options":{"A":"sob","B":"grunt","C":"sigh","D":"laughter","E":"yawn","F":"gasp"},"gold":"F","predicted":"F","correct":true},"q1b":{"options":{"A":"grunt","B":"yawn","C":"sigh","D":"sob","E":"laughter","F":"gasp"},"gold":"B","predicted":"B","correct":true},"q2":{"options":{"A":"\"B is thrilled by the unexpectedly special opportunity and eagerly wants to attend despite the early hour.\" describes Dialogue 1, and \"B is focused on how exhausting the early start would be and decides they cannot attend.\" describes Dialogue 2.","B":"\"B is focused on how exhausting the early start would be and decides they cannot attend.\" describes Dialogue 1, and \"B is thrilled by the unexpectedly special opportunity and eagerly wants to attend despite the early hour.\" describes Dialogue 2."},"gold":"A","predicted":"A","correct":true},"q3":{"options":{"A":"\"At seven? I can't do that; please take someone else.\" follows Dialogue 1, and \"Front row? That's incredible—we have to go.\" follows Dialogue 2.","B":"\"Front row? That's incredible—we have to go.\" follows Dialogue 1, and \"At seven? I can't do that; please take someone else.\" follows Dialogue 2."},"gold":"B","predicted":"B","correct":true}}},{"pair_id":"grunt_laughter_001","contrast":"grunt-laughter","attempts":1,"shared_turn1":"I booked us an escape room for Saturday night.","turn1_voice_label":"female","contrastive_rationale":"The grunt leads to an objection and criticism of the plan, while the laughter leads to enthusiastic approval. Saying the date is perfect after an annoyed objection, or protesting hatred of it after delighted amusement, would strongly conflict with the intended reactions.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The grunt conveys a clear annoyed objection while the laughter conveys delighted approval, with naturally contrasting responses."},"dialogue1":{"version":"v1","audio":"grunt_laughter_001_v1.mp3","audio_seconds":4.162,"vocalization":"grunt","voc_tag":"[grunt]","interpretation":"B is annoyed that A chose an activity B strongly dislikes and objects to the plan.","response":"You know I hate being locked in rooms for fun.","clip_file":"grunt-15.MP3","clip_seconds":1.202},"dialogue2":{"version":"v2","audio":"grunt_laughter_001_v2.mp3","audio_seconds":5.154,"vocalization":"laughter","voc_tag":"[laughter]","interpretation":"B is delighted by the playful date idea and warmly approves of A's choice.","response":"An escape room? That’s exactly my kind of date.","clip_file":"laughter-10.MP3","clip_seconds":2.194},"questions":{"q1a":{"options":{"A":"laughter","B":"sob","C":"grunt","D":"yawn","E":"gasp","F":"sigh"},"gold":"C","predicted":"C","correct":true},"q1b":{"options":{"A":"sigh","B":"yawn","C":"gasp","D":"sob","E":"grunt","F":"laughter"},"gold":"F","predicted":"F","correct":true},"q2":{"options":{"A":"\"B is annoyed that A chose an activity B strongly dislikes and objects to the plan.\" describes Dialogue 1, and \"B is delighted by the playful date idea and warmly approves of A's choice.\" describes Dialogue 2.","B":"\"B is delighted by the playful date idea and warmly approves of A's choice.\" describes Dialogue 1, and \"B is annoyed that A chose an activity B strongly dislikes and objects to the plan.\" describes Dialogue 2."},"gold":"A","predicted":"A","correct":true},"q3":{"options":{"A":"\"You know I hate being locked in rooms for fun.\" follows Dialogue 1, and \"An escape room? That’s exactly my kind of date.\" follows Dialogue 2.","B":"\"An escape room? That’s exactly my kind of date.\" follows Dialogue 1, and \"You know I hate being locked in rooms for fun.\" follows Dialogue 2."},"gold":"A","predicted":"A","correct":true}}},{"pair_id":"grunt_sigh_001","contrast":"grunt-sigh","attempts":1,"shared_turn1":"The insurer approved our claim, so they'll cover the repairs after all.","turn1_voice_label":"male","contrastive_rationale":"The first reaction expresses distrust and challenges the apparent good news, while the second releases pent-up worry and expresses relief. Treating a skeptical reaction as gratitude, or a relieved reaction as suspicion, would make the continuations poorly matched.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The grunt conveys skeptical resistance while the sigh conveys relieved release, with clearly distinct and natural continuations."},"dialogue1":{"version":"v2","audio":"grunt_sigh_001_v2.mp3","audio_seconds":5.962,"vocalization":"sigh","voc_tag":"[sigh]","interpretation":"B feels relieved that the financial burden of the repairs has finally been lifted.","response":"Thank goodness—we couldn't afford that bill ourselves.","clip_file":"sigh-10.MP3","clip_seconds":1.802},"dialogue2":{"version":"v1","audio":"grunt_sigh_001_v1.mp3","audio_seconds":5.44,"vocalization":"grunt","voc_tag":"[grunt]","interpretation":"B remains skeptical that the insurer will follow through and resists treating the approval as settled.","response":"I'll believe it when the payment actually arrives.","clip_file":"grunt-10.MP3","clip_seconds":1.28},"questions":{"q1a":{"options":{"A":"sigh","B":"laughter","C":"yawn","D":"sob","E":"grunt","F":"gasp"},"gold":"A","predicted":"A","correct":true},"q1b":{"options":{"A":"gasp","B":"grunt","C":"laughter","D":"sigh","E":"sob","F":"yawn"},"gold":"B","predicted":"B","correct":true},"q2":{"options":{"A":"\"B remains skeptical that the insurer will follow through and resists treating the approval as settled.\" describes Dialogue 1, and \"B feels relieved that the financial burden of the repairs has finally been lifted.\" describes Dialogue 2.","B":"\"B feels relieved that the financial burden of the repairs has finally been lifted.\" describes Dialogue 1, and \"B remains skeptical that the insurer will follow through and resists treating the approval as settled.\" describes Dialogue 2."},"gold":"B","predicted":"B","correct":true},"q3":{"options":{"A":"\"I'll believe it when the payment actually arrives.\" follows Dialogue 1, and \"Thank goodness—we couldn't afford that bill ourselves.\" follows Dialogue 2.","B":"\"Thank goodness—we couldn't afford that bill ourselves.\" follows Dialogue 1, and \"I'll believe it when the payment actually arrives.\" follows Dialogue 2."},"gold":"B","predicted":"B","correct":true}}},{"pair_id":"grunt_sob_001","contrast":"grunt-sob","attempts":1,"shared_turn1":"I digitized every one of Dad's old camcorder tapes—there are twelve hours of footage.","turn1_voice_label":"male","contrastive_rationale":"The first reaction treats the footage as an inconveniently long task and requests condensation, while the second treats it as emotionally precious and insists on preserving it. Asking for a five-minute reel after the emotional reaction would undercut the desire to see Dad, while demanding every minute after the impatient reaction would conflict with the request to shorten it.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The grunt conveys impatient overwhelm while the sob conveys grief-driven urgency to preserve the footage, yielding clearly distinct continuations."},"dialogue1":{"version":"v1","audio":"grunt_sob_001_v1.mp3","audio_seconds":8.661,"vocalization":"grunt","voc_tag":"[grunt]","interpretation":"B is impatient with the daunting amount of material and asks A to provide a much shorter version.","response":"Could you just make a five-minute reel instead?","clip_file":"grunt-5.MP3","clip_seconds":2.821},"dialogue2":{"version":"v2","audio":"grunt_sob_001_v2.mp3","audio_seconds":8.06,"vocalization":"sob","voc_tag":"[sob]","interpretation":"B is overwhelmed by missing Dad and urgently wants to preserve the chance to see as much of him as possible.","response":"Please don't cut any of it—I want to see him.","clip_file":"sob-17.MP3","clip_seconds":2.22},"questions":{"q1a":{"options":{"A":"gasp","B":"yawn","C":"grunt","D":"sigh","E":"laughter","F":"sob"},"gold":"C","predicted":"C","correct":true},"q1b":{"options":{"A":"sigh","B":"sob","C":"grunt","D":"yawn","E":"laughter","F":"gasp"},"gold":"B","predicted":"E","correct":false},"q2":{"options":{"A":"\"B is overwhelmed by missing Dad and urgently wants to preserve the chance to see as much of him as possible.\" describes Dialogue 1, and \"B is impatient with the daunting amount of material and asks A to provide a much shorter version.\" describes Dialogue 2.","B":"\"B is impatient with the daunting amount of material and asks A to provide a much shorter version.\" describes Dialogue 1, and \"B is overwhelmed by missing Dad and urgently wants to preserve the chance to see as much of him as possible.\" describes Dialogue 2."},"gold":"B","predicted":"A","correct":false},"q3":{"options":{"A":"\"Please don't cut any of it—I want to see him.\" follows Dialogue 1, and \"Could you just make a five-minute reel instead?\" follows Dialogue 2.","B":"\"Could you just make a five-minute reel instead?\" follows Dialogue 1, and \"Please don't cut any of it—I want to see him.\" follows Dialogue 2."},"gold":"B","predicted":"A","correct":false}}},{"pair_id":"grunt_yawn_001","contrast":"grunt-yawn","attempts":2,"shared_turn1":"I changed the schedule for tomorrow's client meeting and put together a detailed rundown to review with you tonight.","turn1_voice_label":"female","contrastive_rationale":"The first reaction objects to A's unilateral decision, while the second signals fatigue and defers the discussion. Asking for an explanation after the second reaction or merely postponing after the first would fail to address the respective implied concern.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The grunt conveys objection to an unilateral change, while the yawn conveys fatigue and a request to defer review."},"dialogue1":{"version":"v2","audio":"grunt_yawn_001_v2.mp3","audio_seconds":10.777,"vocalization":"yawn","voc_tag":"[yawn]","interpretation":"B is too tired to absorb a detailed discussion tonight and asks to postpone the review.","response":"I'm too tired to take this in tonight; can we review it tomorrow?","clip_file":"yawn-6.MP3","clip_seconds":3.657},"dialogue2":{"version":"v1","audio":"grunt_yawn_001_v1.mp3","audio_seconds":7.695,"vocalization":"grunt","voc_tag":"[grunt]","interpretation":"B is annoyed that A altered a shared meeting plan without consulting them and demands an explanation.","response":"Why did you change the schedule without checking with me?","clip_file":"grunt-7.mp3","clip_seconds":0.575},"questions":{"q1a":{"options":{"A":"grunt","B":"sigh","C":"sob","D":"gasp","E":"laughter","F":"yawn"},"gold":"F","predicted":"F","correct":true},"q1b":{"options":{"A":"sigh","B":"gasp","C":"sob","D":"yawn","E":"grunt","F":"laughter"},"gold":"E","predicted":"A","correct":false},"q2":{"options":{"A":"\"B is annoyed that A altered a shared meeting plan without consulting them and demands an explanation.\" describes Dialogue 1, and \"B is too tired to absorb a detailed discussion tonight and asks to postpone the review.\" describes Dialogue 2.","B":"\"B is too tired to absorb a detailed discussion tonight and asks to postpone the review.\" describes Dialogue 1, and \"B is annoyed that A altered a shared meeting plan without consulting them and demands an explanation.\" describes Dialogue 2."},"gold":"B","predicted":"A","correct":false},"q3":{"options":{"A":"\"Why did you change the schedule without checking with me?\" follows Dialogue 1, and \"I'm too tired to take this in tonight; can we review it tomorrow?\" follows Dialogue 2.","B":"\"I'm too tired to take this in tonight; can we review it tomorrow?\" follows Dialogue 1, and \"Why did you change the schedule without checking with me?\" follows Dialogue 2."},"gold":"B","predicted":"B","correct":true}}},{"pair_id":"laughter_sigh_001","contrast":"laughter-sigh","attempts":1,"shared_turn1":"I thought I could unclog the sink with a coat hanger, and now the water won't stop running.","turn1_voice_label":"female","contrastive_rationale":"The first continuation playfully ridicules A's failed repair, while the second gives an urgent damage-control instruction. A teasing remark after the resigned reaction would neglect the immediate problem, and an emergency instruction after the playful reaction would lose the intended comic response.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The laughter supports playful teasing, while the sigh supports frustrated damage control, with clearly distinct continuations."},"dialogue1":{"version":"v2","audio":"laughter_sigh_001_v2.mp3","audio_seconds":7.719,"vocalization":"sigh","voc_tag":"[sigh]","interpretation":"B is frustrated by the avoidable mishap and shifts immediately to containing the damage.","response":"Turn off the valve; I'll call a plumber.","clip_file":"sigh-1.MP3","clip_seconds":1.959},"dialogue2":{"version":"v1","audio":"laughter_sigh_001_v1.mp3","audio_seconds":8.947,"vocalization":"laughter","voc_tag":"[laughter]","interpretation":"B finds A's attempt to fix the sink absurdly counterproductive and playfully teases them for making the problem worse.","response":"You somehow turned a clog into a fountain.","clip_file":"laughter-9.MP3","clip_seconds":3.187},"questions":{"q1a":{"options":{"A":"grunt","B":"laughter","C":"sigh","D":"yawn","E":"sob","F":"gasp"},"gold":"C","predicted":"C","correct":true},"q1b":{"options":{"A":"laughter","B":"sigh","C":"sob","D":"gasp","E":"grunt","F":"yawn"},"gold":"A","predicted":"A","correct":true},"q2":{"options":{"A":"\"B is frustrated by the avoidable mishap and shifts immediately to containing the damage.\" describes Dialogue 1, and \"B finds A's attempt to fix the sink absurdly counterproductive and playfully teases them for making the problem worse.\" describes Dialogue 2.","B":"\"B finds A's attempt to fix the sink absurdly counterproductive and playfully teases them for making the problem worse.\" describes Dialogue 1, and \"B is frustrated by the avoidable mishap and shifts immediately to containing the damage.\" describes Dialogue 2."},"gold":"A","predicted":"A","correct":true},"q3":{"options":{"A":"\"You somehow turned a clog into a fountain.\" follows Dialogue 1, and \"Turn off the valve; I'll call a plumber.\" follows Dialogue 2.","B":"\"Turn off the valve; I'll call a plumber.\" follows Dialogue 1, and \"You somehow turned a clog into a fountain.\" follows Dialogue 2."},"gold":"B","predicted":"B","correct":true}}},{"pair_id":"laughter_sob_001","contrast":"laughter-sob","attempts":1,"shared_turn1":"I found the last video we took of your dad—he's giving a toast at our wedding, then he starts doing that ridiculous chicken dance.","turn1_voice_label":"female","contrastive_rationale":"The first continuation affectionately teases Dad's comic behavior, while the second mourns and cherishes his presence. Treating the grief response as a joke, or answering the emotional reaction with teasing, would be strongly mismatched.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The laughter and sob support distinct affectionate-amusement versus grief-and-longing readings, with appropriately matched responses."},"dialogue1":{"version":"v2","audio":"laughter_sob_001_v2.mp3","audio_seconds":12.958,"vocalization":"sob","voc_tag":"[sob]","interpretation":"B is overwhelmed by grief and tenderness at seeing their dad alive, joyful, and hearing his voice again.","response":"I forgot how much I missed hearing his voice.","clip_file":"sob-4.MP3","clip_seconds":3.918},"dialogue2":{"version":"v1","audio":"laughter_sob_001_v1.mp3","audio_seconds":12.567,"vocalization":"laughter","voc_tag":"[laughter]","interpretation":"B finds their dad's unabashedly silly dancing affectionately funny and joins in the shared memory with playful amusement.","response":"He really could never resist stealing the spotlight.","clip_file":"laughter-8.MP3","clip_seconds":3.526},"questions":{"q1a":{"options":{"A":"sigh","B":"laughter","C":"yawn","D":"grunt","E":"gasp","F":"sob"},"gold":"F","predicted":"F","correct":true},"q1b":{"options":{"A":"sob","B":"yawn","C":"laughter","D":"gasp","E":"grunt","F":"sigh"},"gold":"C","predicted":"C","correct":true},"q2":{"options":{"A":"\"B is overwhelmed by grief and tenderness at seeing their dad alive, joyful, and hearing his voice again.\" describes Dialogue 1, and \"B finds their dad's unabashedly silly dancing affectionately funny and joins in the shared memory with playful amusement.\" describes Dialogue 2.","B":"\"B finds their dad's unabashedly silly dancing affectionately funny and joins in the shared memory with playful amusement.\" describes Dialogue 1, and \"B is overwhelmed by grief and tenderness at seeing their dad alive, joyful, and hearing his voice again.\" describes Dialogue 2."},"gold":"A","predicted":"A","correct":true},"q3":{"options":{"A":"\"He really could never resist stealing the spotlight.\" follows Dialogue 1, and \"I forgot how much I missed hearing his voice.\" follows Dialogue 2.","B":"\"I forgot how much I missed hearing his voice.\" follows Dialogue 1, and \"He really could never resist stealing the spotlight.\" follows Dialogue 2."},"gold":"B","predicted":"B","correct":true}}},{"pair_id":"laughter_yawn_001","contrast":"laughter-yawn","attempts":1,"shared_turn1":"I got us tickets to a midnight screening of that terrible monster movie we loved in college.","turn1_voice_label":"male","contrastive_rationale":"One reaction celebrates a fondly ridiculous shared memory, while the other objects to the late timing because of fatigue. An excited reference to the movie's absurd creature clashes with the tired reaction, and a complaint about falling asleep undercuts the celebratory one.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The laughter conveys nostalgic delight, while the yawn conveys fatigue-driven reluctance, with clearly distinct fitting responses."},"dialogue1":{"version":"v1","audio":"laughter_yawn_001_v1.mp3","audio_seconds":6.129,"vocalization":"laughter","voc_tag":"[laughter]","interpretation":"B delightedly recognizes the movie's ridiculous charm and shares A's nostalgic enthusiasm for going.","response":"Yes! The one with the rubber shark!","clip_file":"laughter-17.MP3","clip_seconds":1.489},"dialogue2":{"version":"v2","audio":"laughter_yawn_001_v2.mp3","audio_seconds":9.68,"vocalization":"yawn","voc_tag":"[yawn]","interpretation":"B is focused on how late the screening starts and signals that they would be too tired to enjoy it.","response":"At midnight? I'll be asleep before the opening credits.","clip_file":"yawn-15.mp3","clip_seconds":5.04},"questions":{"q1a":{"options":{"A":"sigh","B":"sob","C":"laughter","D":"yawn","E":"grunt","F":"gasp"},"gold":"C","predicted":"C","correct":true},"q1b":{"options":{"A":"yawn","B":"sob","C":"gasp","D":"grunt","E":"sigh","F":"laughter"},"gold":"A","predicted":"A","correct":true},"q2":{"options":{"A":"\"B is focused on how late the screening starts and signals that they would be too tired to enjoy it.\" describes Dialogue 1, and \"B delightedly recognizes the movie's ridiculous charm and shares A's nostalgic enthusiasm for going.\" describes Dialogue 2.","B":"\"B delightedly recognizes the movie's ridiculous charm and shares A's nostalgic enthusiasm for going.\" describes Dialogue 1, and \"B is focused on how late the screening starts and signals that they would be too tired to enjoy it.\" describes Dialogue 2."},"gold":"B","predicted":"B","correct":true},"q3":{"options":{"A":"\"At midnight? I'll be asleep before the opening credits.\" follows Dialogue 1, and \"Yes! The one with the rubber shark!\" follows Dialogue 2.","B":"\"Yes! The one with the rubber shark!\" follows Dialogue 1, and \"At midnight? I'll be asleep before the opening credits.\" follows Dialogue 2."},"gold":"B","predicted":"B","correct":true}}},{"pair_id":"sigh_sob_001","contrast":"sigh-sob","attempts":1,"shared_turn1":"I signed the papers to sell Mom's house today; the buyers take possession on Friday.","turn1_voice_label":"male","contrastive_rationale":"The first reaction signals resigned practical acceptance and leads to organizing the move, while the second expresses grief and asks for emotional closure. A logistical moving plan would be jarringly detached after the second reaction, whereas the personal farewell request does not fit the first reaction's task-focused resignation.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The sigh conveys reluctant practical acceptance, while the sob conveys acute grief and a need for farewell, with clearly distinct fitting responses."},"dialogue1":{"version":"v1","audio":"sigh_sob_001_v1.mp3","audio_seconds":6.767,"vocalization":"sigh","voc_tag":"[sigh]","interpretation":"B reluctantly accepts that the house must be let go and turns to handling the remaining practical work.","response":"All right, then I'll arrange for the movers on Thursday.","clip_file":"sigh-2.MP3","clip_seconds":1.567},"dialogue2":{"version":"v2","audio":"sigh_sob_001_v2.mp3","audio_seconds":9.771,"vocalization":"sob","voc_tag":"[sob]","interpretation":"B is overwhelmed by grief at losing the family home and needs a final personal farewell.","response":"Please, can we go back once more and say goodbye to her garden?","clip_file":"sob-11.MP3","clip_seconds":4.571},"questions":{"q1a":{"options":{"A":"gasp","B":"yawn","C":"sigh","D":"sob","E":"laughter","F":"grunt"},"gold":"C","predicted":"C","correct":true},"q1b":{"options":{"A":"sigh","B":"laughter","C":"gasp","D":"yawn","E":"grunt","F":"sob"},"gold":"F","predicted":"F","correct":true},"q2":{"options":{"A":"\"B is overwhelmed by grief at losing the family home and needs a final personal farewell.\" describes Dialogue 1, and \"B reluctantly accepts that the house must be let go and turns to handling the remaining practical work.\" describes Dialogue 2.","B":"\"B reluctantly accepts that the house must be let go and turns to handling the remaining practical work.\" describes Dialogue 1, and \"B is overwhelmed by grief at losing the family home and needs a final personal farewell.\" describes Dialogue 2."},"gold":"B","predicted":"B","correct":true},"q3":{"options":{"A":"\"All right, then I'll arrange for the movers on Thursday.\" follows Dialogue 1, and \"Please, can we go back once more and say goodbye to her garden?\" follows Dialogue 2.","B":"\"Please, can we go back once more and say goodbye to her garden?\" follows Dialogue 1, and \"All right, then I'll arrange for the movers on Thursday.\" follows Dialogue 2."},"gold":"A","predicted":"A","correct":true}}},{"pair_id":"sigh_yawn_001","contrast":"sigh-yawn","attempts":2,"shared_turn1":"I finally found the bug that's been crashing the app, and I made a two-hour screen recording explaining every step I took to fix it.","turn1_voice_label":"female","contrastive_rationale":"The first reaction treats the discovery as a resolved crisis and urges deployment, whereas the second reacts to the prospect of a long explanation by requesting brevity. Asking for a summary after the relieved reaction is dispreferred because the urgent next step is deployment, while urging deployment after the disengaged reaction ignores B's clear reluctance to sit through the recording.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The sigh conveys relief and deployment urgency, whereas the yawn conveys boredom with the lengthy explanation and requests brevity."},"dialogue1":{"version":"v1","audio":"sigh_yawn_001_v1.mp3","audio_seconds":10.036,"vocalization":"sigh","voc_tag":"[sigh]","interpretation":"B is relieved that the disruptive problem has finally been solved and wants A to focus on getting the repair deployed.","response":"That is such a relief—please push the fix before it crashes again.","clip_file":"sigh-17.MP3","clip_seconds":2.116},"dialogue2":{"version":"v2","audio":"sigh_yawn_001_v2.mp3","audio_seconds":13.484,"vocalization":"yawn","voc_tag":"[yawn]","interpretation":"B is losing attention at the prospect of a lengthy technical explanation and asks for a much shorter account.","response":"Can you just give me the two-minute version?","clip_file":"yawn-9.mp3","clip_seconds":5.564},"questions":{"q1a":{"options":{"A":"grunt","B":"yawn","C":"laughter","D":"sigh","E":"sob","F":"gasp"},"gold":"D","predicted":"D","correct":true},"q1b":{"options":{"A":"yawn","B":"grunt","C":"laughter","D":"sob","E":"sigh","F":"gasp"},"gold":"A","predicted":"A","correct":true},"q2":{"options":{"A":"\"B is relieved that the disruptive problem has finally been solved and wants A to focus on getting the repair deployed.\" describes Dialogue 1, and \"B is losing attention at the prospect of a lengthy technical explanation and asks for a much shorter account.\" describes Dialogue 2.","B":"\"B is losing attention at the prospect of a lengthy technical explanation and asks for a much shorter account.\" describes Dialogue 1, and \"B is relieved that the disruptive problem has finally been solved and wants A to focus on getting the repair deployed.\" describes Dialogue 2."},"gold":"A","predicted":"A","correct":true},"q3":{"options":{"A":"\"That is such a relief—please push the fix before it crashes again.\" follows Dialogue 1, and \"Can you just give me the two-minute version?\" follows Dialogue 2.","B":"\"Can you just give me the two-minute version?\" follows Dialogue 1, and \"That is such a relief—please push the fix before it crashes again.\" follows Dialogue 2."},"gold":"A","predicted":"A","correct":true}}},{"pair_id":"sob_yawn_001","contrast":"sob-yawn","attempts":1,"shared_turn1":"I edited all of Grandpa's old interviews into a three-hour documentary for the reunion.","turn1_voice_label":"female","contrastive_rationale":"The first reaction values the recording as an emotionally important preservation of Grandpa, while the second treats its length as a practical problem for viewers. Asking to preserve every minute after disengagement is strongly mismatched, just as demanding cuts after an overwhelmed emotional reaction is dispreferred.","judge":{"vocalizations_both_plausible":true,"interpretations_clearly_contrastive":true,"responses_clearly_contrastive":true,"negative_vocalization_semantics_preserved":true,"overall":"PASS","reason":"The sob conveys emotionally moved preservation of Grandpa's memories, while the yawn conveys boredom-driven pressure to shorten the documentary, with clearly incompatible continuations."},"dialogue1":{"version":"v1","audio":"sob_yawn_001_v1.mp3","audio_seconds":8.712,"vocalization":"sob","voc_tag":"[sob]","interpretation":"B is overcome by grief and gratitude at the prospect of hearing Grandpa's preserved voice and urges A not to remove any of it.","response":"That means more to me than you know—don't cut any of it.","clip_file":"sob-15.MP3","clip_seconds":2.952},"dialogue2":{"version":"v2","audio":"sob_yawn_001_v2.mp3","audio_seconds":7.719,"vocalization":"yawn","voc_tag":"[yawn]","interpretation":"B expects a three-hour film to lose the reunion audience's attention and pushes A to make a much shorter version.","response":"Three hours is too long—make a shorter version.","clip_file":"yawn-16.mp3","clip_seconds":1.959},"questions":{"q1a":{"options":{"A":"laughter","B":"sigh","C":"yawn","D":"gasp","E":"sob","F":"grunt"},"gold":"E","predicted":"E","correct":true},"q1b":{"options":{"A":"grunt","B":"sigh","C":"sob","D":"yawn","E":"gasp","F":"laughter"},"gold":"D","predicted":"D","correct":true},"q2":{"options":{"A":"\"B is overcome by grief and gratitude at the prospect of hearing Grandpa's preserved voice and urges A not to remove any of it.\" describes Dialogue 1, and \"B expects a three-hour film to lose the reunion audience's attention and pushes A to make a much shorter version.\" describes Dialogue 2.","B":"\"B expects a three-hour film to lose the reunion audience's attention and pushes A to make a much shorter version.\" describes Dialogue 1, and \"B is overcome by grief and gratitude at the prospect of hearing Grandpa's preserved voice and urges A not to remove any of it.\" describes Dialogue 2."},"gold":"A","predicted":"A","correct":true},"q3":{"options":{"A":"\"That means more to me than you know—don't cut any of it.\" follows Dialogue 1, and \"Three hours is too long—make a shorter version.\" follows Dialogue 2.","B":"\"Three hours is too long—make a shorter version.\" follows Dialogue 1, and \"That means more to me than you know—don't cut any of it.\" follows Dialogue 2."},"gold":"A","predicted":"A","correct":true}}}],"built_at":"2026-08-23T04:12:38.094681+00:00"}</script>
+  <script>
+    const D = JSON.parse(document.getElementById("payload").textContent);
+    const S = D.summary;
+    const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+    // ---------- header ----------
+    document.getElementById("lede").textContent =
+      `${S.n} pairs, two separate audio files each. Turn 1 is identical inside a pair; the `
+      + `two vocalizations that can follow it are never mixed into one clip — each plays as `
+      + `its own dialogue, in a per-item randomized order. Written by ${D.writer}, evaluated `
+      + `by ${D.eval_model}.`;
+
+    // ---------- curation: pipeline ----------
+    const PIPELINE = [
+      ["1", "Write", "gpt writer call against the full benchmark spec — 2-turn format, contrastive-pair rules, Turn 1 requirements, worked examples."],
+      ["2", "Validate", "mechanical checks, no API call: shape, leakage (no vocalization word or giveaway phrase in Turn 1), the two golds actually differ."],
+      ["3", "Judge", "a second model call verifies 4 swap-test criteria (right). Reject → rebuild with the specific failures fed back, up to 4 attempts."],
+      ["4", "Accept", "record the pair plus its judge verdict and attempt count."],
+    ];
+    document.getElementById("pipeline").innerHTML = PIPELINE.map(([n, t, d], i) =>
+      (i > 0 ? `<div class="arrow">→</div>` : "") +
+      `<div class="step"><div class="n">Step ${n}</div><div class="t">${t}</div><div class="d">${esc(d)}</div></div>`
+    ).join("");
+
+    const attemptsEntries = Object.entries(D.attempts_histogram);
+    const totalAttemptItems = attemptsEntries.reduce((a, [, v]) => a + v, 0);
+    document.getElementById("attempts-summary").textContent =
+      attemptsEntries.map(([n, c]) => `${c} pair${c === 1 ? "" : "s"} passed on attempt ${n}`).join(", ")
+      + ` (${totalAttemptItems} of ${totalAttemptItems} generated)`;
+
+    document.getElementById("criteria").innerHTML = D.judge_properties.map((p) => {
+      const rate = D.judge_pass_rate[p.key];
+      return `<div class="criterion"><span class="rate">${rate}%</span>`
+        + `<div class="name">${esc(p.key)}</div><div class="desc">${esc(p.text)}</div></div>`;
+    }).join("");
+
+    // ---------- metrics table ----------
+    document.getElementById("qdefs").innerHTML =
+      `<thead><tr><th>Question</th><th>Tests</th><th>Format</th><th>Chance</th></tr></thead><tbody>`
+      + D.q_defs.map((q) =>
+          `<tr><td class="qlabel">${q.label}</td><td>${esc(q.title)} — ${esc(q.desc)}</td>`
+          + `<td class="shape">${esc(q.shape)}</td><td class="shape">${q.chance}%</td></tr>`
+        ).join("")
+      + `</tbody>`;
+
+    // ---------- results ----------
+    document.getElementById("eval-model-name").textContent = D.eval_model;
+    document.getElementById("n-items").textContent = S.n;
+
+    function statTile(big, cap, chanceText, low) {
+      return `<div class="stat"><div class="big serif${low ? " low" : ""}">${big}</div>`
+        + `<div class="cap">${cap}</div>${chanceText ? `<div class="chance">chance ${chanceText}</div>` : ""}</div>`;
+    }
+    const headline = D.q_defs.map((q) => {
+      const s = S.q[q.key];
+      return statTile(`${s.pct}%`, `${q.label} · ${q.title}`, `${q.chance}%`, s.pct <= q.chance + 5);
+    }).join("") +
+      statTile(`${S.all_four.pct}%`, `all four correct · ${S.all_four.correct}/${S.all_four.n}`, null, false) +
+      statTile(`${S.matching_when_both_ids_correct.pct}%`, `Q2 match when both sounds ID'd · ${S.matching_when_both_ids_correct.correct}/${S.matching_when_both_ids_correct.n}`, null, false) +
+      statTile(`${S.matching_when_an_id_wrong.pct}%`, `Q2 match when a sound was missed · ${S.matching_when_an_id_wrong.correct}/${S.matching_when_an_id_wrong.n}`, null, false);
+    document.getElementById("headline-stats").innerHTML = headline;
+
+    function barRow(label, value, count, chance) {
+      const low = value <= chance + 0.01;
+      return `<div class="bar-row"><div class="label">${esc(label)}</div>`
+        + `<div class="track"><div class="fill${low ? " low" : ""}" style="width:${Math.max(value, 0.8)}%"></div>`
+        + `<div class="chance-tick" style="left:${chance}%"></div></div>`
+        + `<div class="count">${count}</div></div>`;
+    }
+    function renderVocBars(elId, dataKey, chance) {
+      const rows = D.voc_order.filter((v) => S[dataKey][v]).map((v) => {
+        const s = S[dataKey][v];
+        return barRow(D.voc_label[v], s.pct, `${s.correct}/${s.n}`, chance);
+      }).join("");
+      document.getElementById(elId).innerHTML = rows;
+    }
+    renderVocBars("bars-id", "id_by_vocalization", 16.7);
+
+    // ---------- pairs list ----------
+    const vocSel = document.getElementById("filter-voc");
+    vocSel.innerHTML = `<option value="">All vocalizations</option>`
+      + D.voc_order.map((v) => `<option value="${v}">${esc(D.voc_label[v])}</option>`).join("");
+    const resSel = document.getElementById("filter-result");
+    resSel.innerHTML = [
+      ["", "All results"], ["all4", "All four correct"], ["matchwrong", "Any matching (Q2/Q3) wrong"],
+      ["anyid", "Either sound ID missed"], ["anywrong", "Any question wrong"],
+    ].map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
+    const search = document.getElementById("search");
+
+    function verdict(ok) {
+      return `<span class="verdict ${ok ? "ok" : "miss"}">${ok ? "correct" : "wrong"}</span>`;
+    }
+    function optList(options, gold, predicted, labelFn) {
+      return `<ul class="opts">` + Object.entries(options).map(([key, value]) => {
+        const isGold = key === gold, isPred = key === predicted;
+        const tags = [isGold ? "correct" : "", isPred ? "model" : ""].filter(Boolean).join(" · ");
+        return `<li class="${isGold ? "gold " : ""}${isPred ? "pred" : ""}">`
+          + `<span class="key">${esc(key)}</span><span>${esc(labelFn(value))}</span>`
+          + `<span class="tag">${tags}</span></li>`;
+      }).join("") + `</ul>`;
+    }
+
+    function dialogueBlock(order, d) {
+      return `<div class="dialogue">
+        <div class="order">Dialogue ${order} · version ${esc(d.version)}</div>
+        <audio controls preload="none" src="audio_prompt/${esc(d.audio)}"></audio>
+        <p class="voc"><b>${esc(d.voc_tag)}</b></p>
+        <p class="interp">${esc(d.interpretation)}</p>
+        <p class="resp">“${esc(d.response)}”</p>
+      </div>`;
+    }
+
+    function questionBlock(qdef, q, wide) {
+      const labelFn = (v) => v;
+      return `<div class="qblock${wide ? " qwide" : ""}">
+        <div class="qhead"><span>${qdef.label} · ${esc(qdef.title)}</span>${verdict(q.correct)}</div>
+        ${optList(q.options, q.gold, q.predicted, labelFn)}
+      </div>`;
+    }
+
+    function card(item) {
+      return `<div class="card">
+        <div class="card-head">
+          <h3>${esc(item.pair_id)}</h3>
+          <span class="badge">${esc(item.contrast)} · voice ${esc(item.turn1_voice_label)} · attempt ${item.attempts}</span>
+        </div>
+        <div class="turn1"><div class="who">Speaker A — Turn 1 (identical in both dialogues)</div>${esc(item.shared_turn1)}</div>
+        <div class="dialogues">
+          ${dialogueBlock(1, item.dialogue1)}
+          ${dialogueBlock(2, item.dialogue2)}
+        </div>
+        <div class="qgrid">
+          ${questionBlock(D.q_defs[0], item.questions.q1a)}
+          ${questionBlock(D.q_defs[1], item.questions.q1b)}
+          ${questionBlock(D.q_defs[2], item.questions.q2, true)}
+          ${questionBlock(D.q_defs[3], item.questions.q3, true)}
+        </div>
+        <p class="rationale">${esc(item.contrastive_rationale)}</p>
+      </div>`;
+    }
+
+    function matches(item) {
+      const voc = vocSel.value, res = resSel.value, q = search.value.trim().toLowerCase();
+      if (voc && item.dialogue1.vocalization !== voc && item.dialogue2.vocalization !== voc) return false;
+      const all4 = D.q_defs.every((d) => item.questions[d.key].correct);
+      if (res === "all4" && !all4) return false;
+      if (res === "matchwrong" && item.questions.q2.correct && item.questions.q3.correct) return false;
+      if (res === "anyid" && item.questions.q1a.correct && item.questions.q1b.correct) return false;
+      if (res === "anywrong" && all4) return false;
+      if (q) {
+        const hay = [item.pair_id, item.shared_turn1, item.contrastive_rationale,
+          item.dialogue1.interpretation, item.dialogue1.response, item.dialogue2.interpretation, item.dialogue2.response]
+          .join(" ").toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    }
+
+    function render() {
+      const shown = D.items.filter(matches);
+      document.getElementById("list").innerHTML =
+        shown.length ? shown.map(card).join("") : `<p class="empty">Nothing matches those filters.</p>`;
+      document.getElementById("list-meta").textContent = `${shown.length} of ${D.items.length} pairs`;
+    }
+    [vocSel, resSel].forEach((el) => el.addEventListener("change", render));
+    search.addEventListener("input", render);
+    render();
+
+    // ---------- footer ----------
+    const voices = Object.entries(D.voice_pool || {}).map(([label, id]) => `${label} (${id})`).join(", ");
+    const voiceCounts = Object.entries(D.voice_counts || {}).map(([l, n]) => `${l}=${n}`).join(", ");
+    document.getElementById("footer").innerHTML =
+      `Writer ${esc(D.writer)} · verifier same model, 4-criterion swap-test judge · `
+      + `eval ${esc(D.eval_model)}, seed ${D.seed} · speech ${esc(D.tts_model)}, voices ${esc(voices)} `
+      + `(split ${esc(voiceCounts)} across pairs) · reactions are real recordings, never synthesized `
+      + `· built ${esc((D.built_at || "").slice(0, 10))}`;
+  </script>
+</body>
+</html>

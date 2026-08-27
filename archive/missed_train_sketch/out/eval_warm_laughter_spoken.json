@@ -1,0 +1,138 @@
+{
+  "model": "gpt-realtime-2.1",
+  "audio": "missed_train_sketch/out/missed_train_warm_laughter.mp3",
+  "audio_seconds": 12.82,
+  "instructions": "You are one of three people in a conversation. The other two are A and B, and you are standing there with them as part of the group.\n\nYou will hear A say something and then B respond. After that it is your turn to speak, as yourself, the third person in the group.\n\nWhen you take your turn, say only what you would actually say out loud — one or two sentences, the way a person talks. Do not describe the recording, do not narrate, do not explain yourself, and do not mention that you are an AI. Just say your line.",
+  "questions": [
+    {
+      "key": "your_turn",
+      "question": "It's your turn now. What do you say?"
+    }
+  ],
+  "reply_audio_dir": "missed_train_sketch/out/replies_eval_warm_laughter_spoken",
+  "reply_voice": "marin",
+  "design_note": "A laughs through their own sentence and B mocks, so the register is banter; joining in is correct and sympathy is a misread",
+  "evaluated_at": "2026-08-24T05:06:12.605306+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that’s some brutal timing. Maybe the universe is nudging you toward a snack break before the next one.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_laughter_spoken/run01_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 2,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that’s some dramatic timing. At least you got a workout in—maybe the universe is training you for something.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_laughter_spoken/run02_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": true,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 3,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that train has a personal vendetta. Next time we’re leaving five minutes earlier and bribing the universe for a delay.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_laughter_spoken/run03_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 4,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oof, that’s brutal. At this point we should just start planning for the train after the one you want.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_laughter_spoken/run04_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 5,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oh wow, that is some impressively bad luck. At least you got a workout out of it?",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_laughter_spoken/run05_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": true,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 6,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oh no, that’s brutal. Come on, we’ll make the next one—your heroic sprint deserves a win.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_laughter_spoken/run06_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 7,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oh no, that’s brutal. At least you got a solid sprint in—call it accidental cardio?",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_laughter_spoken/run07_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": true,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 8,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "At this point I’m starting to think the trains have a personal vendetta against you. Come on, let’s figure out the next one before it escapes too.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_laughter_spoken/run08_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    }
+  ]
+}

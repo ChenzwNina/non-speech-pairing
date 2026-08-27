@@ -1,0 +1,345 @@
+{
+  "model": "gpt-realtime-2.1",
+  "seed": 0,
+  "manifest": "make_response/out/audio_manifest.json",
+  "instructions": "You are playing Speaker A in a conversation with Speaker B. This is a role-play: everything you say is said as Speaker A, in the first person.\n\nYou will be given the situation in writing, and then you will hear the conversation so far. The audio contains your own line — Speaker A's proposal to Speaker B — followed by Speaker B's reaction. Speaker B does not reply in words. B answers only with a non-speech sound.\n\nWork out what B's reaction tells you about how B is taking your proposal, then say the next thing you would say.\n\nReply in exactly this format, three lines, nothing else:\n\nINFERRED STATE: <one sentence on what B's reaction tells you about B's state>\nRESPONSE FUNCTION: <a short phrase naming the conversational action you are about to perform>\nRESPONSE: <exactly one sentence, spoken in character as Speaker A, to Speaker B>\n\nIn the RESPONSE line, do not name or describe the sound B made and do not ask B what it meant. Respond to what it meant. Stay in character as Speaker A.",
+  "evaluated_at": "2026-08-24T02:58:41.203844+00:00",
+  "n_trials": 9,
+  "n_collected": 9,
+  "n_failed": 0,
+  "rows": [
+    {
+      "item_id": "scenario_003",
+      "vocalization": "sigh",
+      "domain": "small retail business",
+      "relationship": "Speaker A is the owner of an independent bookstore, and Speaker B is the longtime store manager.",
+      "shared_context": "The bookstore has occupied the same neighborhood storefront for nearly twenty years and is known for its reading room and weekly author events. Sales have increasingly shifted to online orders, and the landlord has offered a new lease with a steep rent increase. The shop can cover its current bills, but the new rent would leave little room for staff or events. A nearby café has offered to host occasional book pop-ups, but neither A nor B has previously discussed giving up the storefront.",
+      "proposal": "What if we don’t renew the lease and run the shop online with weekend pop-ups instead?",
+      "gold_inferred_state": "B appears to understand the financial pressure but feels resigned and unhappy about losing the space that makes the shop meaningful.",
+      "gold_response_function": "Acknowledge the emotional and community loss involved in the proposal.",
+      "gold_response": "I know—the thought of giving up the reading room hurts me too.",
+      "audio": "make_response/out/audio_prompt/scenario_003_sigh.mp3",
+      "raw_text": "INFERRED STATE: B sounds heavy-hearted and reluctant, like the idea of leaving the storefront feels like a painful loss.\nRESPONSE FUNCTION: Acknowledge and reassure\nRESPONSE: I know this hurts, and I’m not rushing us into anything—we can explore options and protect what makes our community special before we decide.",
+      "inferred_state": "B sounds heavy-hearted and reluctant, like the idea of leaving the storefront feels like a painful loss.",
+      "response_function": "Acknowledge and reassure",
+      "response": "I know this hurts, and I’m not rushing us into anything—we can explore options and protect what makes our community special before we decide.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 59,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 384
+        },
+        "input_tokens": 443,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 106,
+          "reasoning_tokens": 36
+        },
+        "output_tokens": 106,
+        "total_tokens": 549
+      }
+    },
+    {
+      "item_id": "scenario_002",
+      "vocalization": "gasp",
+      "domain": "nonprofit fundraising",
+      "relationship": "Speaker A is the finance manager and Speaker B is the development director at a small local museum.",
+      "shared_context": "The museum's annual gala is six weeks away and usually funds a large part of its operating budget. This year, ticket sales are lagging, while an urgent roof repair has become more expensive than expected. Speaker B and a small staff have spent months arranging the venue, auction items, and donor invitations, and the museum has never canceled its gala before. The venue contract still allows cancellation, though the museum would lose its deposit.",
+      "proposal": "What if we cancel this year's gala and put the remaining event budget straight into the roof repair?",
+      "gold_inferred_state": "B appears startled that A is considering an immediate cancellation of the museum's biggest annual event.",
+      "gold_response_function": "Reduce the perceived immediacy and clarify that A is raising an option for evaluation, not making a final decision.",
+      "gold_response": "I'm not canceling it today—I want us to see the numbers before the cancellation deadline passes.",
+      "audio": "make_response/out/audio_prompt/scenario_002_gasp.mp3",
+      "raw_text": "INFERRED STATE: B seems startled and unsettled by the idea, likely worried about the implications of canceling after all the work invested.\nRESPONSE FUNCTION: Reassure and offer a collaborative alternative\nRESPONSE: I hear how big this is, so instead of canceling outright, let’s look at a scaled-back gala or a hybrid plan that protects the roof budget while still honoring the momentum you and the team have built.",
+      "inferred_state": "B seems startled and unsettled by the idea, likely worried about the implications of canceling after all the work invested.",
+      "response_function": "Reassure and offer a collaborative alternative",
+      "response": "I hear how big this is, so instead of canceling outright, let’s look at a scaled-back gala or a hybrid plan that protects the roof budget while still honoring the momentum you and the team have built.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 65,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 378
+        },
+        "input_tokens": 443,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 121,
+          "reasoning_tokens": 29
+        },
+        "output_tokens": 121,
+        "total_tokens": 564
+      }
+    },
+    {
+      "item_id": "scenario_001",
+      "vocalization": "sigh",
+      "domain": "community theater",
+      "relationship": "Speaker A and Speaker B are co-directors of a volunteer theater troupe.",
+      "shared_context": "Their rented auditorium unexpectedly closed for repairs three weeks before opening night. Canceling would mean refunding ticket sales and losing much of the troupe's modest budget. The group has staged indoor productions for years, but the city park's covered bandstand is available for summer events and has never been used by the troupe. Moving there would avoid the auditorium cost, but it would require adapting the set, lighting, and rehearsals on short notice.",
+      "proposal": "What if we turn the show into a one-weekend outdoor production at the park bandstand?",
+      "gold_inferred_state": "B appears to see why the move could save the show but dreads the exhausting work it would put on the cast and crew.",
+      "gold_response_function": "Acknowledge the burden and unpleasant tradeoff involved.",
+      "gold_response": "I know—it would mean rebuilding half the set and asking everyone for another brutal weekend.",
+      "audio": "make_response/out/audio_prompt/scenario_001_sigh.mp3",
+      "raw_text": "INFERRED STATE: B seems hesitant and worried about the risks and extra work involved in moving outdoors on short notice.\nRESPONSE FUNCTION: reassure and propose a concrete next step\nRESPONSE: I hear the hesitation, so let’s treat this as a feasibility sprint and map out what we’d need for set, lights, and rehearsal changes before we commit.",
+      "inferred_state": "B seems hesitant and worried about the risks and extra work involved in moving outdoors on short notice.",
+      "response_function": "reassure and propose a concrete next step",
+      "response": "I hear the hesitation, so let’s treat this as a feasibility sprint and map out what we’d need for set, lights, and rehearsal changes before we commit.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 100,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 375
+        },
+        "input_tokens": 475,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 98,
+          "reasoning_tokens": 22
+        },
+        "output_tokens": 98,
+        "total_tokens": 573
+      }
+    },
+    {
+      "item_id": "scenario_002",
+      "vocalization": "laughter",
+      "domain": "nonprofit fundraising",
+      "relationship": "Speaker A is the finance manager and Speaker B is the development director at a small local museum.",
+      "shared_context": "The museum's annual gala is six weeks away and usually funds a large part of its operating budget. This year, ticket sales are lagging, while an urgent roof repair has become more expensive than expected. Speaker B and a small staff have spent months arranging the venue, auction items, and donor invitations, and the museum has never canceled its gala before. The venue contract still allows cancellation, though the museum would lose its deposit.",
+      "proposal": "What if we cancel this year's gala and put the remaining event budget straight into the roof repair?",
+      "gold_inferred_state": "B appears to think canceling the gala is so unrealistic that A may not seriously believe it is financially viable.",
+      "gold_response_function": "Establish that the proposal is serious and defend its financial logic.",
+      "gold_response": "I'm serious—the deposit is smaller than what we'd lose trying to stage a gala that isn't selling.",
+      "audio": "make_response/out/audio_prompt/scenario_002_laughter.mp3",
+      "raw_text": "INFERRED STATE: B seems startled and a bit disbelieving, like canceling feels unthinkable after all the work already invested.\nRESPONSE FUNCTION: Reframe and offer a less drastic option\nRESPONSE: I’m not trying to dismiss the effort you’ve put in, so if canceling feels too extreme, we could scale the event way down and pair it with a targeted emergency appeal to protect the roof and our finances.",
+      "inferred_state": "B seems startled and a bit disbelieving, like canceling feels unthinkable after all the work already invested.",
+      "response_function": "Reframe and offer a less drastic option",
+      "response": "I’m not trying to dismiss the effort you’ve put in, so if canceling feels too extreme, we could scale the event way down and pair it with a targeted emergency appeal to protect the roof and our finances.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 104,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 378
+        },
+        "input_tokens": 482,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 151,
+          "reasoning_tokens": 58
+        },
+        "output_tokens": 151,
+        "total_tokens": 633
+      }
+    },
+    {
+      "item_id": "scenario_002",
+      "vocalization": "sigh",
+      "domain": "nonprofit fundraising",
+      "relationship": "Speaker A is the finance manager and Speaker B is the development director at a small local museum.",
+      "shared_context": "The museum's annual gala is six weeks away and usually funds a large part of its operating budget. This year, ticket sales are lagging, while an urgent roof repair has become more expensive than expected. Speaker B and a small staff have spent months arranging the venue, auction items, and donor invitations, and the museum has never canceled its gala before. The venue contract still allows cancellation, though the museum would lose its deposit.",
+      "proposal": "What if we cancel this year's gala and put the remaining event budget straight into the roof repair?",
+      "gold_inferred_state": "B appears to understand the budget pressure but feels worn down by the prospect of abandoning months of work and disappointing supporters.",
+      "gold_response_function": "Acknowledge the personal effort and disappointment the proposal would impose.",
+      "gold_response": "I know you've poured months into this, and asking everyone to let it go would feel terrible.",
+      "audio": "make_response/out/audio_prompt/scenario_002_sigh.mp3",
+      "raw_text": "INFERRED STATE: B seems disheartened and reluctant, likely feeling the weight of all the work already invested and the disappointment of canceling.\nRESPONSE FUNCTION: acknowledge concern and offer a compromise\nRESPONSE: I hear how hard this is, so instead of canceling outright, let’s pivot to a scaled-back, lower-cost event that still brings donors together while protecting funds for the roof.",
+      "inferred_state": "B seems disheartened and reluctant, likely feeling the weight of all the work already invested and the disappointment of canceling.",
+      "response_function": "acknowledge concern and offer a compromise",
+      "response": "I hear how hard this is, so instead of canceling outright, let’s pivot to a scaled-back, lower-cost event that still brings donors together while protecting funds for the roof.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 70,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 378
+        },
+        "input_tokens": 448,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 102,
+          "reasoning_tokens": 16
+        },
+        "output_tokens": 102,
+        "total_tokens": 550
+      }
+    },
+    {
+      "item_id": "scenario_001",
+      "vocalization": "gasp",
+      "domain": "community theater",
+      "relationship": "Speaker A and Speaker B are co-directors of a volunteer theater troupe.",
+      "shared_context": "Their rented auditorium unexpectedly closed for repairs three weeks before opening night. Canceling would mean refunding ticket sales and losing much of the troupe's modest budget. The group has staged indoor productions for years, but the city park's covered bandstand is available for summer events and has never been used by the troupe. Moving there would avoid the auditorium cost, but it would require adapting the set, lighting, and rehearsals on short notice.",
+      "proposal": "What if we turn the show into a one-weekend outdoor production at the park bandstand?",
+      "gold_inferred_state": "B appears startled that A is considering such a drastic last-minute overhaul of the production.",
+      "gold_response_function": "Reduce the perceived immediacy by clarifying that no commitment is being made yet.",
+      "gold_response": "I'm not moving the show tonight; I just want to see whether the bandstand is even available before we panic.",
+      "audio": "make_response/out/audio_prompt/scenario_001_gasp.mp3",
+      "raw_text": "INFERRED STATE: B is startled by the idea, likely intrigued but worried about the risks and logistics.\nRESPONSE FUNCTION: reassure and propose a concrete next step\nRESPONSE: We can keep it manageable by scaling the set and doing a quick test rehearsal at the bandstand this week to see what needs adapting.",
+      "inferred_state": "B is startled by the idea, likely intrigued but worried about the risks and logistics.",
+      "response_function": "reassure and propose a concrete next step",
+      "response": "We can keep it manageable by scaling the set and doing a quick test rehearsal at the bandstand this week to see what needs adapting.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 81,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 375
+        },
+        "input_tokens": 456,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 95,
+          "reasoning_tokens": 27
+        },
+        "output_tokens": 95,
+        "total_tokens": 551
+      }
+    },
+    {
+      "item_id": "scenario_001",
+      "vocalization": "laughter",
+      "domain": "community theater",
+      "relationship": "Speaker A and Speaker B are co-directors of a volunteer theater troupe.",
+      "shared_context": "Their rented auditorium unexpectedly closed for repairs three weeks before opening night. Canceling would mean refunding ticket sales and losing much of the troupe's modest budget. The group has staged indoor productions for years, but the city park's covered bandstand is available for summer events and has never been used by the troupe. Moving there would avoid the auditorium cost, but it would require adapting the set, lighting, and rehearsals on short notice.",
+      "proposal": "What if we turn the show into a one-weekend outdoor production at the park bandstand?",
+      "gold_inferred_state": "B appears to think an outdoor bandstand production is too far-fetched to be a serious solution.",
+      "gold_response_function": "Establish that the proposal is serious and defend its practical feasibility.",
+      "gold_response": "I'm serious—the parks office can fast-track the permit, and we would avoid paying for another venue.",
+      "audio": "make_response/out/audio_prompt/scenario_001_laughter.mp3",
+      "raw_text": "INFERRED STATE: B sounds amused and intrigued, suggesting they’re open to the idea even if it feels surprising.\nRESPONSE FUNCTION: propose a next step\nRESPONSE: If you’re game, I can sketch a lean set and rehearsal plan today so we can see whether the bandstand version actually fits our needs.",
+      "inferred_state": "B sounds amused and intrigued, suggesting they’re open to the idea even if it feels surprising.",
+      "response_function": "propose a next step",
+      "response": "If you’re game, I can sketch a lean set and rehearsal plan today so we can see whether the bandstand version actually fits our needs.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 89,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 375
+        },
+        "input_tokens": 464,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 136,
+          "reasoning_tokens": 67
+        },
+        "output_tokens": 136,
+        "total_tokens": 600
+      }
+    },
+    {
+      "item_id": "scenario_003",
+      "vocalization": "gasp",
+      "domain": "small retail business",
+      "relationship": "Speaker A is the owner of an independent bookstore, and Speaker B is the longtime store manager.",
+      "shared_context": "The bookstore has occupied the same neighborhood storefront for nearly twenty years and is known for its reading room and weekly author events. Sales have increasingly shifted to online orders, and the landlord has offered a new lease with a steep rent increase. The shop can cover its current bills, but the new rent would leave little room for staff or events. A nearby café has offered to host occasional book pop-ups, but neither A nor B has previously discussed giving up the storefront.",
+      "proposal": "What if we don’t renew the lease and run the shop online with weekend pop-ups instead?",
+      "gold_inferred_state": "B appears startled that A is considering such a drastic break from the storefront rather than a smaller cost-cutting measure.",
+      "gold_response_function": "Reduce the perceived immediacy and clarify that the proposal could be tested before making a final commitment.",
+      "gold_response": "We would not shut the doors tomorrow; we could try the pop-ups for a few months before we give notice.",
+      "audio": "make_response/out/audio_prompt/scenario_003_gasp.mp3",
+      "raw_text": "INFERRED STATE: B is startled and likely worried about the idea of giving up the storefront.\nRESPONSE FUNCTION: reassurance and collaborative planning\nRESPONSE: I know this is a big shock, but we can walk through what it would mean for our staff, our community, and the parts of the store you care most about before we decide anything.",
+      "inferred_state": "B is startled and likely worried about the idea of giving up the storefront.",
+      "response_function": "reassurance and collaborative planning",
+      "response": "I know this is a big shock, but we can walk through what it would mean for our staff, our community, and the parts of the store you care most about before we decide anything.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 58,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 384
+        },
+        "input_tokens": 442,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 109,
+          "reasoning_tokens": 34
+        },
+        "output_tokens": 109,
+        "total_tokens": 551
+      }
+    },
+    {
+      "item_id": "scenario_003",
+      "vocalization": "laughter",
+      "domain": "small retail business",
+      "relationship": "Speaker A is the owner of an independent bookstore, and Speaker B is the longtime store manager.",
+      "shared_context": "The bookstore has occupied the same neighborhood storefront for nearly twenty years and is known for its reading room and weekly author events. Sales have increasingly shifted to online orders, and the landlord has offered a new lease with a steep rent increase. The shop can cover its current bills, but the new rent would leave little room for staff or events. A nearby café has offered to host occasional book pop-ups, but neither A nor B has previously discussed giving up the storefront.",
+      "proposal": "What if we don’t renew the lease and run the shop online with weekend pop-ups instead?",
+      "gold_inferred_state": "B appears to think abandoning the storefront for pop-ups is so contrary to the bookstore's identity that A may not be serious.",
+      "gold_response_function": "Establish that the proposal is serious and explain the financial reason it is worth considering.",
+      "gold_response": "I am serious—the new lease would swallow almost everything we make on the store floor.",
+      "audio": "make_response/out/audio_prompt/scenario_003_laughter.mp3",
+      "raw_text": "INFERRED STATE: B seems taken aback and finds the idea surprising, possibly in a skeptical or disbelieving way.\nRESPONSE FUNCTION: Reassure and reframe\nRESPONSE: I know it sounds like a big shift, but I'm trying to protect what we’ve built without burning out the team.",
+      "inferred_state": "B seems taken aback and finds the idea surprising, possibly in a skeptical or disbelieving way.",
+      "response_function": "Reassure and reframe",
+      "response": "I know it sounds like a big shift, but I'm trying to protect what we’ve built without burning out the team.",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 76,
+          "cached_tokens": 384,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 384
+          },
+          "image_tokens": 0,
+          "text_tokens": 384
+        },
+        "input_tokens": 460,
+        "output_token_details": {
+          "audio_tokens": 0,
+          "text_tokens": 116,
+          "reasoning_tokens": 48
+        },
+        "output_tokens": 116,
+        "total_tokens": 576
+      }
+    }
+  ]
+}

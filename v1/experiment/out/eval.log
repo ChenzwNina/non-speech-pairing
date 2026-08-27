@@ -1,0 +1,54 @@
+28 item(s) · model gpt-realtime-2.1 · seed 0 · one session, two questions
+[1/28] grunt_sob_001_v2         Q1 sob      →sob       ok Q2 B/A X
+[2/28] gasp_laughter_001_v2     Q1 laughter →laughter  ok Q2 F/A ok
+[3/28] grunt_yawn_001_v1        Q1 grunt    →sigh      X  Q2 A/A ok
+[4/28] laughter_sigh_001_v2     Q1 sigh     →laughter  X  Q2 E/B X
+[5/28] sigh_yawn_001_v2         Q1 yawn     →yawn      ok Q2 C/B ok
+[6/28] sigh_yawn_001_v1         Q1 sigh     →sigh      ok Q2 F/B X
+[7/28] gasp_sigh_001_v1         Q1 gasp     →gasp      ok Q2 E/B ok
+[8/28] laughter_yawn_001_v1     Q1 laughter →laughter  ok Q2 C/B ok
+[9/28] grunt_sob_001_v1         Q1 grunt    →grunt     ok Q2 D/B ok
+[10/28] gasp_grunt_001_v1        Q1 gasp     →gasp      ok Q2 D/B X
+[11/28] gasp_laughter_001_v1     Q1 gasp     →gasp      ok Q2 D/B ok
+[12/28] laughter_sigh_001_v1     Q1 laughter →laughter  ok Q2 C/A ok
+[13/28] gasp_yawn_001_v2         Q1 yawn     →yawn      ok Q2 A/B ok
+[14/28] grunt_laughter_001_v2    Q1 laughter →sigh      X  Q2 C/A X
+[15/28] laughter_sob_001_v2      Q1 sob      →sob       ok Q2 B/A ok
+[16/28] sob_yawn_001_v1          Q1 sob      →sob       ok Q2 D/B ok
+[17/28] grunt_sigh_001_v1        Q1 grunt    →grunt     ok Q2 A/A ok
+[18/28] sigh_sob_001_v1          Q1 sigh     →sigh      ok Q2 B/B X
+[19/28] laughter_yawn_001_v2     Q1 yawn     →yawn      ok Q2 E/B ok
+[20/28] gasp_grunt_001_v2        Q1 grunt    →laughter  X  Q2 F/B ok
+[21/28] sob_yawn_001_v2          Q1 yawn     →yawn      ok Q2 B/A ok
+[22/28] gasp_sigh_001_v2         Q1 sigh     →sigh      ok Q2 E/A X
+[23/28] laughter_sob_001_v1      Q1 laughter →laughter  ok Q2 E/A ok
+[24/28] grunt_yawn_001_v2        Q1 yawn     →yawn      ok Q2 F/B ok
+[25/28] sigh_sob_001_v2          Q1 sob      →sob       ok Q2 D/B ok
+[26/28] grunt_sigh_001_v2        Q1 sigh     →sigh      ok Q2 A/A ok
+[27/28] grunt_laughter_001_v1    Q1 grunt    →grunt     ok Q2 F/A ok
+[28/28] gasp_yawn_001_v1         Q1 gasp     →gasp      ok Q2 E/B ok
+
+==============================================================
+Q1 vocalization (6-way, chance 16.7%): 24/28 = 85.7%
+Q2 next reply   (2-way, chance 50.0%): 21/28 = 75.0%
+both correct:                          19/28 = 67.9%
+  Q2 when Q1 right: 19/24 = 79.2%
+  Q2 when Q1 wrong: 2/4 = 50.0%
+
+Q1 by vocalization:
+  gasp      4/4 = 100.0%
+  grunt     3/5 = 60.0%
+  laughter  4/5 = 80.0%
+  sigh      4/5 = 80.0%
+  sob       4/4 = 100.0%
+  yawn      5/5 = 100.0%
+
+Q2 by vocalization:
+  gasp      3/4 = 75.0%
+  grunt     5/5 = 100.0%
+  laughter  4/5 = 80.0%
+  sigh      1/5 = 20.0%
+  sob       3/4 = 75.0%
+  yawn      5/5 = 100.0%
+
+wrote /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/predicting_response/out/eval_realtime.json

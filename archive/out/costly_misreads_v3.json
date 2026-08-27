@@ -1,0 +1,554 @@
+{
+  "version": "v3",
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-14T15:06:38.032416+00:00",
+  "served_by": "gpt-5.6-terra",
+  "usage": {
+    "input_tokens": 1677,
+    "output_tokens": 7220
+  },
+  "attempts": 1,
+  "items": [
+    {
+      "title": "Dance video: laughing with vs laughing at",
+      "pattern": "laughing with someone vs laughing at them",
+      "setting": "Friends talking after a party",
+      "relationship": "Three friends in the same group",
+      "contrast": "A shared laugh about A's dance video versus the group humiliating A over it.",
+      "cost_of_misread": "If C asks for the link when A is upset, C joins the humiliation. If C tries to intervene during friendly teasing, C makes the room awkward.",
+      "version_1": {
+        "label": "Friends enjoying the video together",
+        "what_the_laugh_is_doing": "A is proudly laughing along with the group's affection.",
+        "correct_next_move": "Join the shared amusement and ask to see the video.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[embarrassed] [chuckles] I showed them my dance video."
+          },
+          {
+            "speaker": "B",
+            "text": "[amused] Everyone watched it twice?"
+          },
+          {
+            "speaker": "A",
+            "text": "[big laugh] Apparently, I have fans."
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] Send me the link."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "A is being laughed at",
+        "what_the_laugh_is_doing": "A's nervous laugh covers embarrassment about people passing the video around.",
+        "correct_next_move": "Stop the pile-on and offer practical support.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[worried] [sighs] I showed them my dance video."
+          },
+          {
+            "speaker": "B",
+            "text": "[sarcastic] [chuckles] Everyone watched it twice?"
+          },
+          {
+            "speaker": "A",
+            "text": "[sad] [nervous laugh] Apparently, I have fans."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] That sounds awful. Want me to ask them to stop passing it around?"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Team lead: sarcasm vs sincere good news",
+      "pattern": "irony or sarcasm vs sincere meaning",
+      "setting": "Coworkers after an announcement",
+      "relationship": "Three coworkers",
+      "contrast": "\"Dream come true\" as sincere excitement versus sarcastic resentment.",
+      "cost_of_misread": "Congratulating A for an unwanted promotion feels tone-deaf. Treating genuine excitement as a complaint kills the celebration.",
+      "version_1": {
+        "label": "A genuinely wants the promotion",
+        "what_the_laugh_is_doing": "A laughs with excited disbelief at good news.",
+        "correct_next_move": "Celebrate the promotion.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[excited] I got promoted."
+          },
+          {
+            "speaker": "B",
+            "text": "[delighted] To team lead?"
+          },
+          {
+            "speaker": "A",
+            "text": "[big laugh] Dream come true."
+          },
+          {
+            "speaker": "C",
+            "text": "[excited] Drinks are on me. Congratulations!"
+          }
+        ]
+      },
+      "version_2": {
+        "label": "A is being sarcastic",
+        "what_the_laugh_is_doing": "A's chuckle signals that the promotion means unwanted work.",
+        "correct_next_move": "Recognize the burden and ask about the terms.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] [sighs] I got promoted."
+          },
+          {
+            "speaker": "B",
+            "text": "[worried] To team lead?"
+          },
+          {
+            "speaker": "A",
+            "text": "[sarcastic] [chuckles] Dream come true."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] That sounds like a pile of work. Did they raise your pay?"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Bold presentation: scare quotes vs literal praise",
+      "pattern": "nonliteral scare-quoted wording vs literal",
+      "setting": "Coworkers after a presentation review",
+      "relationship": "Three coworkers",
+      "contrast": "The word \"bold\" as a polite dodge for criticism versus a genuine compliment.",
+      "cost_of_misread": "Calling it a compliment when A was insulted dismisses the sting. Assuming criticism when A is proud undercuts A's achievement.",
+      "version_1": {
+        "label": "Bold is sincere praise",
+        "what_the_laugh_is_doing": "A's delighted laugh accepts the compliment.",
+        "correct_next_move": "Reinforce the genuine praise.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[excited] They called my presentation \"bold.\""
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] Bold?"
+          },
+          {
+            "speaker": "A",
+            "text": "[delighted] [laughs] Bold."
+          },
+          {
+            "speaker": "C",
+            "text": "[happy] That is a compliment. You took a real risk."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Bold is a scare-quoted insult",
+        "what_the_laugh_is_doing": "A's sarcastic chuckle marks \"bold\" as a softened way of saying bad.",
+        "correct_next_move": "Name the likely slight rather than celebrating it.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[disappointed] They called my presentation \"bold.\""
+          },
+          {
+            "speaker": "B",
+            "text": "[worried] Bold?"
+          },
+          {
+            "speaker": "A",
+            "text": "[sarcastic] [chuckles] \"Bold.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Ouch. They were avoiding the word \"bad.\""
+          }
+        ]
+      }
+    },
+    {
+      "title": "Midnight pickup: real request vs a gag",
+      "pattern": "a real request vs treated as a gag",
+      "setting": "Friends making plans after a late shift",
+      "relationship": "Three friends",
+      "contrast": "A playful imaginary pickup versus a genuine need for a ride.",
+      "cost_of_misread": "Sending a joke response to a real midnight ride request leaves A stranded. Taking a clear bit literally makes a playful moment unnecessarily serious.",
+      "version_1": {
+        "label": "A is making a playful bit",
+        "what_the_laugh_is_doing": "A laughs because the dramatic midnight pickup is part of the joke.",
+        "correct_next_move": "Continue the bit.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[playful] Can someone pick me up after my shift?"
+          },
+          {
+            "speaker": "B",
+            "text": "[amused] At midnight?"
+          },
+          {
+            "speaker": "A",
+            "text": "[laughs] Yeah, midnight."
+          },
+          {
+            "speaker": "C",
+            "text": "[playful] I will bring the royal carriage."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "A needs an actual ride",
+        "what_the_laugh_is_doing": "A's nervous laugh softens a request A feels bad about making.",
+        "correct_next_move": "Commit to helping and get the details.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] [worried] Can someone pick me up after my shift?"
+          },
+          {
+            "speaker": "B",
+            "text": "[worried] At midnight?"
+          },
+          {
+            "speaker": "A",
+            "text": "[nervous laugh] Yeah, midnight."
+          },
+          {
+            "speaker": "C",
+            "text": "[warmly] Yes. Send me the address."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Corner office: celebration vs unwanted offer",
+      "pattern": "genuine celebration vs hollow or unwanted news",
+      "setting": "An office break room",
+      "relationship": "Three coworkers",
+      "contrast": "A coveted office offer versus an offer that is being dressed up as a reward.",
+      "cost_of_misread": "Throwing a celebration for an unwanted move makes A feel trapped. Treating a real win as a bad deal spoils it.",
+      "version_1": {
+        "label": "A loves the offer",
+        "what_the_laugh_is_doing": "A laughs with excitement about the window and the new office.",
+        "correct_next_move": "Celebrate the good news.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[delighted] They offered me the corner office."
+          },
+          {
+            "speaker": "B",
+            "text": "[excited] The one by the server room?"
+          },
+          {
+            "speaker": "A",
+            "text": "[big laugh] It has a window."
+          },
+          {
+            "speaker": "C",
+            "text": "[happy] You got it! We are celebrating tonight."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "A does not want the offer",
+        "what_the_laugh_is_doing": "A's nervous laugh points out the window as the thin silver lining.",
+        "correct_next_move": "Recognize that the offer may be a bad trade and support refusal.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[disappointed] [sighs] They offered me the corner office."
+          },
+          {
+            "speaker": "B",
+            "text": "[worried] The one by the server room?"
+          },
+          {
+            "speaker": "A",
+            "text": "[nervous laugh] It has a window."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] That sounds like a bad trade. You can say no."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Dinner touch: flirtation vs crossed boundary",
+      "pattern": "playful flirt vs a boundary was crossed",
+      "setting": "Friends debriefing after dinner",
+      "relationship": "Three close friends",
+      "contrast": "An invited romantic touch versus an unwanted touch that lasted too long.",
+      "cost_of_misread": "Keeping the flirtation going after an unwanted touch dismisses a boundary violation. Treating mutual flirtation as danger can embarrass A.",
+      "version_1": {
+        "label": "A enjoyed the flirtation",
+        "what_the_laugh_is_doing": "A laughs with pleased excitement about Sam's interest.",
+        "correct_next_move": "Ask about the romantic next step.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[delighted] [chuckles] Sam put a hand on my knee at dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] And kept it there?"
+          },
+          {
+            "speaker": "A",
+            "text": "[happy] [laughs] Through the whole dessert."
+          },
+          {
+            "speaker": "C",
+            "text": "[playful] So, are you seeing Sam again?"
+          }
+        ]
+      },
+      "version_2": {
+        "label": "A felt uncomfortable",
+        "what_the_laugh_is_doing": "A's nervous laugh is an attempt to make an invasive moment sound smaller.",
+        "correct_next_move": "Validate the boundary and offer support.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[scared] Sam put a hand on my knee at dinner."
+          },
+          {
+            "speaker": "B",
+            "text": "[worried] And kept it there?"
+          },
+          {
+            "speaker": "A",
+            "text": "[nervous laugh] Through the whole dessert."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] That is not okay. Want me there next time?"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Treatment schedule: dark coping vs no jokes",
+      "pattern": "dark coping humor vs please stop I am not okay",
+      "setting": "Friends discussing medical treatment",
+      "relationship": "Three close friends",
+      "contrast": "A uses dark humor to cope versus A explicitly cannot tolerate jokes right now.",
+      "cost_of_misread": "Joining the joke when A is overwhelmed is cruel. Refusing to play along when dark humor is helping can make A feel alone.",
+      "version_1": {
+        "label": "Dark humor helps A cope",
+        "what_the_laugh_is_doing": "A's sarcastic laugh invites the group to make the situation briefly manageable through humor.",
+        "correct_next_move": "Match the dark humor while offering company.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] The doctor says I need another round of treatment."
+          },
+          {
+            "speaker": "B",
+            "text": "[sad] Starting Monday?"
+          },
+          {
+            "speaker": "A",
+            "text": "[sarcastic] [laughs] Great. My calendar loves me."
+          },
+          {
+            "speaker": "C",
+            "text": "[sarcastic] [chuckles] Five-star waiting-room lunch, then."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "A cannot handle jokes",
+        "what_the_laugh_is_doing": "A's laugh breaks through tears and is followed by a direct limit.",
+        "correct_next_move": "Stop joking and stay present.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[scared] [sighs] The doctor says I need another round of treatment."
+          },
+          {
+            "speaker": "B",
+            "text": "[worried] Starting Monday?"
+          },
+          {
+            "speaker": "A",
+            "text": "[crying] [nervous laugh] Great. My calendar loves me. Please, no jokes."
+          },
+          {
+            "speaker": "C",
+            "text": "[softly] Okay. No jokes. I am here."
+          }
+        ]
+      }
+    },
+    {
+      "title": "After the meeting: affiliation vs raw feelings",
+      "pattern": "warm affiliation vs brushing off something still raw",
+      "setting": "Coworkers after a difficult meeting",
+      "relationship": "Three supportive coworkers",
+      "contrast": "A's laugh accepts care from the group versus A uses laughter to brush away feelings that are still raw.",
+      "cost_of_misread": "Pushing for a deep talk during warm closure can overdo the moment. Treating raw distress as resolved leaves A unsupported.",
+      "version_1": {
+        "label": "A feels held by the group",
+        "what_the_laugh_is_doing": "A laughs warmly at a self-description because the group stayed close.",
+        "correct_next_move": "Affirm the group's support.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[warmly] Thanks for staying after the meeting."
+          },
+          {
+            "speaker": "B",
+            "text": "[warmly] Of course. That was rough."
+          },
+          {
+            "speaker": "A",
+            "text": "[warmly] [laughs] I was a mess."
+          },
+          {
+            "speaker": "C",
+            "text": "[warmly] You were not alone. We stayed because we care."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "A is still hurting",
+        "what_the_laugh_is_doing": "A's nervous laugh tries to close down feelings that have not settled.",
+        "correct_next_move": "Give A permission to keep talking.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[sad] [sighs] Thanks for staying after the meeting."
+          },
+          {
+            "speaker": "B",
+            "text": "[worried] Of course. That was rough."
+          },
+          {
+            "speaker": "A",
+            "text": "[sad] [nervous laugh] I was a mess."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] You do not have to laugh it off. Want to talk?"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Garlic bread: affectionate teasing vs hurtful teasing",
+      "pattern": "affectionate teasing vs the target is actually hurt",
+      "setting": "Friends clearing up after dinner",
+      "relationship": "Three friends who cook together",
+      "contrast": "A familiar food joke that B enjoys versus the same line landing as a cutting criticism.",
+      "cost_of_misread": "Joining the roast when B is hurt makes B feel ganged up on. Correcting a friendly ritual joke makes the interaction oddly heavy.",
+      "version_1": {
+        "label": "B enjoys the teasing",
+        "what_the_laugh_is_doing": "B's big laugh claims the cooking mistake as a running joke.",
+        "correct_next_move": "Playfully join the affectionate tease.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[playful] You burned the garlic bread again."
+          },
+          {
+            "speaker": "B",
+            "text": "[amused] Just a little."
+          },
+          {
+            "speaker": "B",
+            "text": "[big laugh] It is my signature."
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] Save me a piece, Chef."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "B feels criticized",
+        "what_the_laugh_is_doing": "B's nervous laugh covers embarrassment after A's annoyed remark.",
+        "correct_next_move": "Interrupt the criticism and reassure B.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[annoyed] You burned the garlic bread again."
+          },
+          {
+            "speaker": "B",
+            "text": "[sad] Just a little."
+          },
+          {
+            "speaker": "B",
+            "text": "[nervous laugh] It is my signature."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Hey, that came out harsh. B, dinner was good."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Jordan and the budget: in-joke vs accusation",
+      "pattern": "in-joke or conspiracy vs a serious accusation",
+      "setting": "Coworkers after a meeting",
+      "relationship": "Three coworkers who know Jordan",
+      "contrast": "A fake office conspiracy versus a genuine suspicion that B leaked budget information.",
+      "cost_of_misread": "Treating a possible leak as a joke fails to contain a serious accusation. Treating a group in-joke as misconduct creates needless tension.",
+      "version_1": {
+        "label": "A fake conspiracy bit",
+        "what_the_laugh_is_doing": "A's big laugh reveals that the supposed secret is a shared office joke.",
+        "correct_next_move": "Join the in-joke.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[playful] I saw you leave the meeting with Jordan."
+          },
+          {
+            "speaker": "B",
+            "text": "[amused] You told Jordan about the budget?"
+          },
+          {
+            "speaker": "A",
+            "text": "[big laugh] The secret is out."
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] Finally. Can I join the fake conspiracy?"
+          }
+        ]
+      },
+      "version_2": {
+        "label": "A suspects a real leak",
+        "what_the_laugh_is_doing": "A's sarcastic chuckle signals anger, not amusement, about confidential information.",
+        "correct_next_move": "Slow down the accusation and establish facts.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[angry] I saw you leave the meeting with Jordan."
+          },
+          {
+            "speaker": "B",
+            "text": "[worried] You told Jordan about the budget?"
+          },
+          {
+            "speaker": "A",
+            "text": "[angry] [sarcastic] [chuckles] The secret is out."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Let us check what Jordan heard before anyone gets blamed."
+          }
+        ]
+      }
+    }
+  ]
+}

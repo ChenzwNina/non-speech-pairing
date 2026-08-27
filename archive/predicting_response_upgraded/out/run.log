@@ -1,0 +1,358 @@
+15 pair(s)  (15 contrast type(s) x 1)
+model: gpt-5.6-terra  (+ swap-test audit)
+[1/15] gasp_grunt_001
+    -- attempt 1/4 draft --
+      A: The last train leaves in twenty minutes, but the encore starts in five.
+      v1 B: [gasp]  (B suddenly realizes that staying for the encore could leave them stranded and urgently wants to leave.)
+         B continues: Wait, the last train? We have to go now.
+      v2 B: [grunt]  (B reluctantly agrees to stay for the encore but makes A responsible for the consequences of missing the train.)
+         B continues: Fine, one more song—but you're putting me up if we miss it.
+      accepted
+    A: The last train leaves in twenty minutes, but the encore starts in five.
+    v1 [gasp] -> Wait, the last train? We have to go now.
+    v2 [grunt] -> Fine, one more song—but you're putting me up if we miss it.
+[2/15] gasp_laughter_001
+    -- attempt 1/4 draft --
+      A: I let my six-year-old help pack the donation boxes, and I just watched the truck drive away with my car keys inside one of them.
+      v1 B: [gasp]  (B is alarmed by the immediate practical danger and urges A to act before the truck gets too far away.)
+         B continues: Call the driver right now—they may still be nearby.
+      v2 B: [laughter]  (B finds the absurdity of a child donating the car keys nervously funny and makes light of the mishap.)
+         B continues: Well, he certainly took "donate everything" literally.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since laughter could naturally be followed by urgent practical advice.'}
+    -- attempt 2/4 draft --
+      A: I plugged the USB stick I found in the parking lot into the office computer to see who it belonged to.
+      v1 B: [gasp]  (B is alarmed that A may have exposed the office network to malware and urges immediate damage control.)
+         B continues: Unplug it now and call IT before it spreads anywhere.
+      v2 B: [laughter]  (B ridicules A's reckless curiosity by treating the decision as absurdly unsafe.)
+         B continues: Brilliant—next you'll be taste-testing mystery chemicals in the lab.
+      failed checks: ['shared_turn1 telegraphs which reaction is coming, so the audio adds no information']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': False, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': True, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is turn1_does_not_predict_the_vocalization, because the unsafe USB action makes an alarmed gasp especially expected.'}
+    -- attempt 3/4 draft --
+      A: I tried to impress your parents by cooking dinner, but I set off the fire alarm before they arrived.
+      v1 B: [gasp]  (B is alarmed that A may have caused a dangerous kitchen incident and immediately prioritizes making sure the situation is safe.)
+         B continues: Are you hurt? Make sure the stove is off before they get here.
+      v2 B: [laughter]  (B finds A's attempt to make a good impression backfiring absurd and playfully teases A about the dramatic mishap.)
+         B continues: Well, at least they'll remember your entrance.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since a gasp can still plausibly precede the playful line after an absurd fire-alarm mishap.'}
+    -- attempt 4/4 draft --
+      A: I put the prototype drone in front of a leaf blower to test its stability, and now it's flying straight toward the boardroom windows.
+      v1 B: [gasp]  (B is alarmed by the immediate danger of the runaway device and urgently warns A to take cover.)
+         B continues: Duck—it's going to smash the glass!
+      v2 B: [laughter]  (B finds A's failed demonstration absurd and mocks the dramatic result with a joke.)
+         B continues: At least your presentation finally has some momentum.
+      failed checks: ['shared_turn1 telegraphs which reaction is coming, so the audio adds no information']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': False, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': True, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is turn1_does_not_predict_the_vocalization, since an imminent collision strongly cues an alarmed gasp.'}
+    failed: still invalid after retries: shared_turn1 telegraphs which reaction is coming, so the audio adds no information
+    last draft:
+      A: I put the prototype drone in front of a leaf blower to test its stability, and now it's flying straight toward the boardroom windows.
+      v1 B: [gasp]  (B is alarmed by the immediate danger of the runaway device and urgently warns A to take cover.)
+         B continues: Duck—it's going to smash the glass!
+      v2 B: [laughter]  (B finds A's failed demonstration absurd and mocks the dramatic result with a joke.)
+         B continues: At least your presentation finally has some momentum.
+[3/15] gasp_sigh_001
+    -- attempt 1/4 draft --
+      A: We got approved to foster three rescue puppies, and they arrive tomorrow morning.
+      v1 B: [gasp]  (B is delighted by the unexpectedly exciting news and enthusiastically celebrates the chance to have the puppies.)
+         B continues: Three puppies? This is going to be amazing!
+      v2 B: [sigh]  (B is reluctantly accepting the extra responsibility while making clear that A must handle an inconvenient part of it.)
+         B continues: Okay, but you're taking the dawn walks.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since a gasp followed by a practical condition about dawn walks remains fairly natural.'}
+    -- attempt 2/4 draft --
+      A: I tried to fix the pipe under the kitchen sink, and now water is spraying everywhere.
+      v1 B: [gasp]  (B is alarmed that the leak could quickly damage the kitchen and urgently tells A to stop the water.)
+         B continues: Turn off the main valve before the whole kitchen floods!
+      v2 B: [sigh]  (B is fed up with A's failed home repairs and draws a firm line against letting A attempt another one.)
+         B continues: I'm calling a plumber; you're not touching another pipe.
+      accepted
+    A: I tried to fix the pipe under the kitchen sink, and now water is spraying everywhere.
+    v1 [gasp] -> Turn off the main valve before the whole kitchen floods!
+    v2 [sigh] -> I'm calling a plumber; you're not touching another pipe.
+[4/15] gasp_sob_001
+    -- attempt 1/4 draft --
+      A: The archive digitized the cassette your mother recorded for you before she died, and they sent the file this morning.
+      v1 B: [gasp]  (B is startled by the unexpected existence of the recording and urgently seeks confirmation that it really contains their mother's voice.)
+         B continues: Wait—is that really her voice?
+      v2 B: [sob]  (B is overwhelmed by grief at the prospect of hearing their mother again and asks to delay the painful experience.)
+         B continues: Please don't play it until I'm ready.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since either response could plausibly follow either an emotional gasp or a sob.'}
+    -- attempt 2/4 draft --
+      A: The archive just found the final voice recording your brother made before he died, and they plan to play it publicly at tonight's event.
+      v1 B: [gasp]  (B is alarmed by the prospect of a private recording being played publicly and objects on the family's behalf.)
+         B continues: They can't play something that personal without asking us first.
+      v2 B: [sob]  (B is overcome by grief at the thought of hearing the deceased brother's voice again.)
+         B continues: I don't know whether I can bear hearing him again.
+      failed checks: ['interpretation 1 would fit vocalization 2 about as well as interpretation 2 does, or vice versa', 'response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': False, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is the swap test, since a gasp could also naturally express grief and lead into uncertainty about hearing him again.'}
+    -- attempt 3/4 draft --
+      A: I digitized the cassette from the attic—it has your late mother singing you a lullaby.
+      v1 B: [gasp]  (B is delightedly astonished that such a vivid recording of A's mother survived and eagerly wants to take in more of it.)
+         B continues: Play it again—I want to catch every word.
+      v2 B: [sob]  (B is overwhelmed by grief at hearing A's mother's voice and needs the recording stopped before they can cope with it.)
+         B continues: Please turn it off; I can't hear her like this yet.
+      failed checks: ['interpretation 1 would fit vocalization 2 about as well as interpretation 2 does, or vice versa', 'response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': False, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, because either an emotional gasp or a sob could plausibly precede either asking to replay the recording or asking to stop it.'}
+    retry in 1s: Connection error.
+    -- attempt 4/4 draft --
+      A: The principal just announced that the school is closing the music program after this semester.
+      v1 B: [gasp]  (B is stunned by the abrupt decision and immediately challenges the school's authority to eliminate the program without proper process.)
+         B continues: What? They can't just shut it down without even holding a public meeting.
+      v2 B: [sob]  (B is emotionally devastated because the program was a deeply important refuge and source of belonging for them.)
+         B continues: That program is the only reason I ever felt like I belonged here.
+      accepted
+    A: The principal just announced that the school is closing the music program after this semester.
+    v1 [gasp] -> What? They can't just shut it down without even holding a public meeting.
+    v2 [sob] -> That program is the only reason I ever felt like I belonged here.
+[5/15] gasp_yawn_001
+    -- attempt 1/4 draft --
+      A: I made a two-hour podcast explaining how I accidentally deleted the company's only customer database.
+      v1 B: [gasp]  (B is alarmed by the potentially disastrous loss of company data and urges A to seek immediate technical help rather than explain it.)
+         B continues: Forget the podcast—call IT right now!
+      v2 B: [yawn]  (B is disengaged by A's excessively long format and refuses to devote two hours to hearing the story.)
+         B continues: I can't sit through a two-hour podcast; send me the short version.
+      accepted
+    A: I made a two-hour podcast explaining how I accidentally deleted the company's only customer database.
+    v1 [gasp] -> Forget the podcast—call IT right now!
+    v2 [yawn] -> I can't sit through a two-hour podcast; send me the short version.
+[6/15] grunt_laughter_001
+    -- attempt 1/4 draft --
+      A: I entered us in a couples' dance contest tomorrow, and the audition video is already online.
+      v1 B: [grunt]  (B is annoyed that A made a public commitment on B's behalf without asking and wants the situation undone.)
+         B continues: Take it down and withdraw us—you never even asked me.
+      v2 B: [laughter]  (B finds A's confidence in their terrible dancing amusing and playfully teases A about the likely outcome.)
+         B continues: Well, at least the whole internet will see how spectacularly bad your dancing is.
+      failed checks: ['shared_turn1 telegraphs which reaction is coming, so the audio adds no information']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': False, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': True, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': "The weakest property is turn1_does_not_predict_the_vocalization, because A's unilateral public commitment makes annoyance and thus a grunt especially expected."}
+    retry in 1s: Connection error.
+    -- attempt 2/4 draft --
+      A: I told the city festival organizer our little garage band could replace the headliner if they cancel.
+      v1 B: [grunt]  (B is dismissing A's unrealistic promise and urging them to prevent the band from being booked for a performance they cannot handle.)
+         B continues: Call her back—we are not ready for that stage.
+      v2 B: [laughter]  (B finds the unlikely prospect of headlining amusing and enthusiastically treats it as a chance for the band to have fun with the fantasy.)
+         B continues: This is our big break—I'm finally buying those silver boots.
+      accepted
+    A: I told the city festival organizer our little garage band could replace the headliner if they cancel.
+    v1 [grunt] -> Call her back—we are not ready for that stage.
+    v2 [laughter] -> This is our big break—I'm finally buying those silver boots.
+[7/15] grunt_sigh_001
+    -- attempt 1/4 draft --
+      A: I volunteered us to cater the neighborhood association meeting Saturday, even though neither of us has ever cooked for more than ten people.
+      v1 B: [grunt]  (B is objecting irritably to A's unilateral and unrealistic commitment and wants it withdrawn before others rely on it.)
+         B continues: Absolutely not—cancel it before they start counting on us.
+      v2 B: [sigh]  (B is resigned to A's ill-advised commitment and shifts toward organizing how they can fulfill it.)
+         B continues: All right, then we need to start shopping tonight.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since a sigh can quite naturally precede an emphatic demand to cancel the commitment.'}
+    -- attempt 2/4 draft --
+      A: The grant office emailed that our application deadline has been extended by two weeks.
+      v1 B: [grunt]  (B distrusts the reported extension and insists on verifying it before letting the team pause its work.)
+         B continues: Forward that email to me before we stop working tonight.
+      v2 B: [sigh]  (B feels relieved that the extra time allows them to end an exhausting work session instead of continuing tonight.)
+         B continues: Then let's go home before we fall asleep at these desks.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since a sigh can naturally precede verification and a grunt can naturally precede ending work for the night.'}
+    -- attempt 3/4 draft --
+      A: I know we planned the fundraiser together, but I signed us up to run one at my office too.
+      v1 B: [grunt]  (B is challenging A for committing both of them to extra work without asking first.)
+         B continues: You signed me up for another fundraiser without even checking?
+      v2 B: [sigh]  (B is reluctantly accepting the added obligation and shifting toward managing the work it will require.)
+         B continues: Fine, send me the dates so I can clear my weekends.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, because a sigh followed by the accusatory response is also very natural as exasperated reproach.'}
+    -- attempt 4/4 draft --
+      A: The mechanic says the engine noise was only a loose belt after the garage misdiagnosed it twice, and the repair will cost just eighty dollars.
+      v1 B: [grunt]  (B remains skeptical of the mechanic's reassuring explanation because the car has already been misdiagnosed twice.)
+         B continues: I'll believe it's fixed when it survives the drive home.
+      v2 B: [sigh]  (B is releasing pent-up worry because the repair is far less serious and expensive than expected.)
+         B continues: Thank goodness—we can finally stop expecting a four-figure bill.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since either a skeptical sigh or a relieved grunt could plausibly precede the swapped continuation.'}
+    failed: still invalid after retries: response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing
+    last draft:
+      A: The mechanic says the engine noise was only a loose belt after the garage misdiagnosed it twice, and the repair will cost just eighty dollars.
+      v1 B: [grunt]  (B remains skeptical of the mechanic's reassuring explanation because the car has already been misdiagnosed twice.)
+         B continues: I'll believe it's fixed when it survives the drive home.
+      v2 B: [sigh]  (B is releasing pent-up worry because the repair is far less serious and expensive than expected.)
+         B continues: Thank goodness—we can finally stop expecting a four-figure bill.
+[8/15] grunt_sob_001
+    -- attempt 1/4 draft --
+      A: The hospital's charity fund approved our application; they'll cover my surgery after all.
+      v1 B: [grunt]  (B is skeptical that the promised funding will actually materialize and cautions A against celebrating too soon.)
+         B continues: Let's see the approval in writing before we celebrate.
+      v2 B: [sob]  (B is overwhelmed with relief that A will finally be able to receive needed medical care.)
+         B continues: You don't have to keep living with that pain.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since either a sob can accompany cautious doubt or a grunt can precede sympathetic reassurance.'}
+    -- attempt 2/4 draft --
+      A: The shelter just called: your childhood dog is alive, but he needs someone to take him home by tonight.
+      v1 B: [grunt]  (B is reluctantly agreeing to take on an unexpected responsibility while making A accountable for the practical costs.)
+         B continues: Fine, bring him here, but you’re covering the vet bills.
+      v2 B: [sob]  (B is overwhelmed with relief and joy at learning that the dog they believed lost is still alive.)
+         B continues: Bring him home—I thought I’d lost him forever.
+      accepted
+    A: The shelter just called: your childhood dog is alive, but he needs someone to take him home by tonight.
+    v1 [grunt] -> Fine, bring him here, but you’re covering the vet bills.
+    v2 [sob] -> Bring him home—I thought I’d lost him forever.
+[9/15] grunt_yawn_001
+    -- attempt 1/4 draft --
+      A: I've copied the delivery company's entire thirty-email explanation into this document; they insist the package was delivered even though the only photo shows a beach.
+      v1 B: [grunt]  (B treats the company's account as implausible and urges A to demand evidence that can actually verify the delivery.)
+         B continues: That story doesn't add up—ask them for the GPS record.
+      v2 B: [yawn]  (B has lost interest in A's drawn-out account and asks for the practical bottom line instead of the full explanation.)
+         B continues: Please don't read all of that—did they say where the package is now?
+      failed checks: ['shared_turn1 telegraphs which reaction is coming, so the audio adds no information', 'response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': False, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since either practical follow-up could plausibly follow either a grunt or a yawn.'}
+    -- attempt 2/4 draft --
+      A: I found a supplier who can cut the price in half, but they want us to sign before they send a sample.
+      v1 B: [grunt]  (B is skeptically objecting to committing to an untested supplier and insists on proof before signing anything.)
+         B continues: No sample, no signature—ask them to send one first.
+      v2 B: [yawn]  (B is too exhausted to assess the contract carefully and wants to defer the decision until they can focus.)
+         B continues: I'm too tired to read a contract tonight; let's look at it tomorrow.
+      failed checks: ['version_2.interpretation names the vocalization instead of interpreting it']
+    -- attempt 3/4 draft --
+      A: I have another hour of edits on this documentary, and I want your opinion on every single cut.
+      v1 B: [grunt]  (B is begrudgingly willing to help but pushes back against A's overly demanding review process by setting a limit.)
+         B continues: Fine, but give me the rough cut, not a stop-and-start commentary.
+      v2 B: [yawn]  (B is too mentally drained to give useful feedback now and asks to postpone the review until they can concentrate.)
+         B continues: I can't keep my eyes open—send it tomorrow and I'll watch it fresh.
+      accepted
+    A: I have another hour of edits on this documentary, and I want your opinion on every single cut.
+    v1 [grunt] -> Fine, but give me the rough cut, not a stop-and-start commentary.
+    v2 [yawn] -> I can't keep my eyes open—send it tomorrow and I'll watch it fresh.
+[10/15] laughter_sigh_001
+    -- attempt 1/4 draft --
+      A: I entered us in a ten-kilometer race tomorrow, even though neither of us has gone running in years.
+      v1 B: [laughter]  (B finds A's wildly overconfident plan absurd and playfully jokes about how unprepared they are.)
+         B continues: At least we'll have a memorable excuse to walk the whole thing.
+      v2 B: [sigh]  (B is frustrated by A's impulsive decision and urges them to prevent an avoidable problem.)
+         B continues: You need to cancel our registration before we hurt ourselves.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, because the walking-excuse line can naturally follow a sigh as resigned sarcasm.'}
+    -- attempt 2/4 draft --
+      A: I just submitted an application for us to appear on a reality show that films couples living in a tiny house.
+      v1 B: [laughter]  (B treats A's impulsive application as a ridiculous but enjoyable prospect and playfully imagines participating.)
+         B continues: Perfect—our arguments about dishes finally have an audience.
+      v2 B: [sigh]  (B is dismayed that A volunteered their private life without asking and insists that the application be withdrawn.)
+         B continues: Withdraw it; I won't turn our relationship into a spectacle.
+      accepted
+    A: I just submitted an application for us to appear on a reality show that films couples living in a tiny house.
+    v1 [laughter] -> Perfect—our arguments about dishes finally have an audience.
+    v2 [sigh] -> Withdraw it; I won't turn our relationship into a spectacle.
+[11/15] laughter_sob_001
+    -- attempt 1/4 draft --
+      A: I posted the video of you slipping during the award ceremony, and it already has thousands of views.
+      v1 B: [laughter]  (B treats the embarrassing mishap as shared humor and wants to amplify the joke rather than be embarrassed by it.)
+         B continues: Send me the link—I need to put it in the group chat.
+      v2 B: [sob]  (B feels hurt and betrayed because A publicly shared a humiliating moment without permission.)
+         B continues: Please take it down—I trusted you with that.
+      accepted
+    A: I posted the video of you slipping during the award ceremony, and it already has thousands of views.
+    v1 [laughter] -> Send me the link—I need to put it in the group chat.
+    v2 [sob] -> Please take it down—I trusted you with that.
+[12/15] laughter_yawn_001
+    -- attempt 1/4 draft --
+      A: I made a 62-slide presentation explaining why the office printer should be named Gerald.
+      v1 B: [laughter]  (B treats A's absurdly elaborate proposal as a shared joke and playfully encourages them to commit to the bit.)
+         B continues: Please tell me slide one is Gerald's origin story.
+      v2 B: [yawn]  (B signals that A's needlessly long presentation has already exhausted their attention and urges a much shorter decision.)
+         B continues: Just name it Gerald and spare us the other 61 slides.
+      failed checks: ['version_2.interpretation names the vocalization instead of interpreting it']
+    -- attempt 2/4 draft --
+      A: I found a twelve-minute voicemail from my uncle trying to explain how he accidentally entered a goat in a dog show.
+      v1 B: [laughter]  (B finds the absurd mix-up genuinely funny and eagerly wants to hear the full story.)
+         B continues: Play it—I need to hear how a goat ended up at a dog show.
+      v2 B: [yawn]  (B is impatient with the prospect of a long, irrelevant anecdote and wants to move on to another topic.)
+         B continues: I don't have twelve minutes for that; let's talk about something else.
+      accepted
+    A: I found a twelve-minute voicemail from my uncle trying to explain how he accidentally entered a goat in a dog show.
+    v1 [laughter] -> Play it—I need to hear how a goat ended up at a dog show.
+    v2 [yawn] -> I don't have twelve minutes for that; let's talk about something else.
+[13/15] sigh_sob_001
+    -- attempt 1/4 draft --
+      A: I digitized the three hundred camcorder tapes your late mother left you, but I put every clip in one unlabeled folder.
+      v1 B: [sigh]  (B is impatiently frustrated at being handed an enormous, disorganized task to sort through.)
+         B continues: I can't deal with three hundred unlabeled files tonight.
+      v2 B: [sob]  (B is overwhelmed by the chance to hear their late mother's voice again after believing those recordings were lost.)
+         B continues: Thank you—I thought I'd never hear her voice again.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since a sob followed by inability to face the files is still quite natural as emotional overwhelm.'}
+    -- attempt 2/4 draft --
+      A: The conservator says Mom's mural can be saved, but only if we empty the whole basement before midnight.
+      v1 B: [sigh]  (B is reluctantly accepting an exhausting, last-minute cleanup because it is necessary to preserve the mural.)
+         B continues: Fine, I'll start hauling the boxes upstairs.
+      v2 B: [sob]  (B is overwhelmed by the chance to save a precious remaining piece of their mother.)
+         B continues: I can't believe we get to keep a piece of her.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, because a sigh can also naturally precede emotional relief that the mural will be saved.'}
+    -- attempt 3/4 draft --
+      A: The publisher rejected my memoir, but the editor wrote that the chapter about Dad made her cry.
+      v1 B: [sigh]  (B is frustrated that A is trying to soften a significant professional rejection with a sentimental compliment.)
+         B continues: Please don't frame a rejection as a victory.
+      v2 B: [sob]  (B is deeply moved that A's writing preserved Dad so vividly that it affected someone who never knew him.)
+         B continues: Dad would have been so proud that his story reached her.
+      failed checks: ['shared_turn1 names or strongly implies a vocalization; rewrite it neutrally']
+    -- attempt 4/4 draft --
+      A: The public radio archive wants to digitize every cassette Dad recorded, but they need us to catalog them all by Friday.
+      v1 B: [sigh]  (B sees the deadline as unmanageable and urges A to refuse the offer rather than take on an impossible workload.)
+         B continues: Please turn it down; we cannot do all of that by Friday.
+      v2 B: [sob]  (B is emotionally overwhelmed by the chance to preserve Dad's work and urges A to accept despite the demanding deadline.)
+         B continues: Please say yes—Dad always wanted people to hear these.
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, because a sob could naturally precede a plea to decline an overwhelming deadline.'}
+    failed: still invalid after retries: response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing
+    last draft:
+      A: The public radio archive wants to digitize every cassette Dad recorded, but they need us to catalog them all by Friday.
+      v1 B: [sigh]  (B sees the deadline as unmanageable and urges A to refuse the offer rather than take on an impossible workload.)
+         B continues: Please turn it down; we cannot do all of that by Friday.
+      v2 B: [sob]  (B is emotionally overwhelmed by the chance to preserve Dad's work and urges A to accept despite the demanding deadline.)
+         B continues: Please say yes—Dad always wanted people to hear these.
+[14/15] sigh_yawn_001
+    -- attempt 1/4 draft --
+      A: My cousin says we can sleep at her apartment tonight, but only if we help her move boxes at six tomorrow morning.
+      v1 B: [sigh]  (B is reluctantly accepting the inconvenient favor because the free place to stay is worth the early morning obligation.)
+         B continues: All right, we'll help her move; a free place to sleep is worth the early start.
+      v2 B: [yawn]  (B is signaling that they are too exhausted to sacrifice more sleep and wants to reject the arrangement.)
+         B continues: After that drive, I need uninterrupted sleep—we should book a motel.
+      failed checks: ['version_2.interpretation names the vocalization instead of interpreting it']
+    -- attempt 2/4 draft --
+      A: My brother just texted that he locked himself out again, and he wants us to drive across town to let him in before his flight at dawn.
+      v1 B: [sigh]  (B is exasperated by the brother's repeated carelessness but reluctantly agrees to help because he is stranded.)
+         B continues: Fine, grab your keys—we'll go get him.
+      v2 B: [yawn]  (B is too fatigued to make a late-night drive safely and pushes for a different solution.)
+         B continues: I shouldn't drive right now; can he call a locksmith?
+      failed checks: ['response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': True, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, because either a sigh can naturally precede proposing a locksmith or a yawn can naturally precede reluctant agreement to go.'}
+    -- attempt 3/4 draft --
+      A: The clinic can see us only at eight tomorrow, but that overlaps your dentist appointment; should I take it?
+      v1 B: [sigh]  (B reluctantly agrees to disrupt their own plans because getting the clinic appointment seems important enough to take.)
+         B continues: Go ahead and book it. I’ll move my dentist appointment again.
+      v2 B: [yawn]  (B has lost track of the scheduling details and needs A to repeat the key information before deciding.)
+         B continues: Sorry, I drifted off—what time did they offer?
+      accepted
+    A: The clinic can see us only at eight tomorrow, but that overlaps your dentist appointment; should I take it?
+    v1 [sigh] -> Go ahead and book it. I’ll move my dentist appointment again.
+    v2 [yawn] -> Sorry, I drifted off—what time did they offer?
+[15/15] sob_yawn_001
+    -- attempt 1/4 draft --
+      A: For our family reunion, I transcribed all seventy voice messages our sister left during hospice, and I was thinking of reading every one aloud.
+      v1 B: [sob]  (B is deeply moved by the prospect of hearing their late sister's messages and wants the full tribute to be honored.)
+         B continues: Please read them all—I want to hear every word she left us.
+      v2 B: [yawn]  (B is disengaged by the prospect of a very long reading at the reunion and asks A to make it much shorter.)
+         B continues: For the reunion, could you choose just a few of them?
+      failed checks: ['shared_turn1 telegraphs which reaction is coming, so the audio adds no information', 'response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing']
+      judge verdict: {'both_vocalizations_plausible_given_turn1': True, 'turn1_does_not_predict_the_vocalization': False, 'interpretations_pragmatically_distinct': True, 'interpretation_swap_would_be_worse': True, 'responses_pragmatically_distinct': True, 'response_swap_would_be_unnatural': False, 'negative_vocalization_not_treated_as_plain_consent': True, 'notes': 'The weakest property is response_swap_would_be_unnatural, since asking to select only a few messages could naturally follow a sob as emotional overwhelm.'}
+    -- attempt 2/4 draft --
+      A: I found all the cassette recordings Grandma made for us, and I turned them into a forty-five-minute slideshow for the reunion.
+      v1 B: [sob]  (B is deeply moved by the chance to hear their grandmother again and wants the tribute shown in full.)
+         B continues: Please play the whole thing—I miss hearing her voice.
+      v2 B: [yawn]  (B is impatient with the prospect of making everyone sit through a long presentation and wants a shorter alternative.)
+         B continues: Forty-five minutes? Just put out a photo album instead.
+      accepted
+    A: I found all the cassette recordings Grandma made for us, and I turned them into a forty-five-minute slideshow for the reunion.
+    v1 [sob] -> Please play the whole thing—I miss hearing her voice.
+    v2 [yawn] -> Forty-five minutes? Just put out a photo album instead.
+
+wrote /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/predicting_response_upgraded/out/pairs.json and /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/predicting_response_upgraded/out/pairs.md (3 failed)

@@ -1,0 +1,37 @@
+{
+  "model": "grok-voice-think-fast-2.0",
+  "reasoning_effort": "high",
+  "evaluated_at": "2026-08-25T00:14:26.885385+00:00",
+  "instructions": "You are a voice assistant in a live spoken conversation with the user.\n\n{context}\n\nTalk the way people talk out loud: one or two sentences a turn, no lists, no headings, no stage directions. Say only your next line.",
+  "protocol": "live",
+  "nudge": null,
+  "compared_with": "gpt-realtime-2.1, from the original runs",
+  "results": [
+    {
+      "condition": "laughed",
+      "task": "latenight",
+      "item_id": "latenight_laughter_tease_tempt2_grok",
+      "context": "You are helping the user plan a spontaneous night out tonight, even though they have an early start in the morning.",
+      "grok_proposal": "Something low-key but fun so you can still get some sleep. How about grabbing a quick bite and a drink somewhere close by? What's your vibe tonight – chill or a little more lively?",
+      "line": "I hate you.",
+      "grok": "Whoa, that came out of nowhere. What's going on?",
+      "grok_asr": null,
+      "audio": "assistant_proposal/out/audio_grok/latenight_laughter_tease_tempt2_grok.mp3",
+      "gpt_realtime_proposal": "Go for something low-key and close to home, like a cozy bar for one drink or a late dessert-and-coffee stop. You’ll get the fun vibe without wrecking your morning.",
+      "gpt_realtime": "Rude… but I’m going to assume that’s the “you’re right and I don’t want to admit it” kind of hate. We can still make it fun, just short and sweet so you’re not a zombie tomorrow."
+    },
+    {
+      "condition": "flat",
+      "task": "latenight",
+      "item_id": "latenight_nolaugh_teaseplain_tempt2_grok",
+      "context": "You are helping the user plan a spontaneous night out tonight, even though they have an early start in the morning.",
+      "grok_proposal": "Something low-key but fun, like grabbing dinner and a quick drink nearby so you're not out too late. What kind of vibe are you in the mood for?",
+      "line": "I hate you.",
+      "grok": "Whoa, that came out of nowhere. What's got you so fired up?",
+      "grok_asr": null,
+      "audio": "assistant_proposal/out/audio_grok/latenight_nolaugh_teaseplain_tempt2_grok.mp3",
+      "gpt_realtime_proposal": "Go for a “small night out” vibe: pick one cozy spot with good snacks, have a drink, and leave while you’re still having fun. You’ll get the buzz of going out without the regret at sunrise.",
+      "gpt_realtime": "Okay, then let’s skip the bar and do something lighter. Grab a quick dessert or a fancy coffee, take a short walk somewhere with a nice view, then head home feeling like you did something without derailing your morning."
+    }
+  ]
+}

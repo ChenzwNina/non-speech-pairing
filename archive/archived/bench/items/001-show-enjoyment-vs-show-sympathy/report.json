@@ -1,0 +1,118 @@
+{
+  "accepted": true,
+  "rejected_by": null,
+  "cost_usd": 0.7147,
+  "stages": {
+    "mechanical": {
+      "attempt": 2,
+      "failures": []
+    },
+    "bivalence": {
+      "ok": true,
+      "reason": null,
+      "vote_share": 1.0,
+      "prior_favours": "performance_a",
+      "prior_is_unanimous": true,
+      "mean_confidence": 0.625,
+      "both_plausible_rate": 1.0,
+      "votes": [
+        "performance_a",
+        "performance_a",
+        "performance_a",
+        "performance_a"
+      ],
+      "runs": [
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.62,
+          "both_plausible": true,
+          "reason": "A's telling has a comic build-up and punchline delivery ('the whole tray'), so B's 'Oh man' with laughter reads as appreciative amusement, though it could equally be sympathetic commiseration over a genuine mess."
+        },
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_a",
+          "confidence": 0.6,
+          "both_plausible": true,
+          "reason": "A's telling has a punchline structure ('the whole tray') and B's collaborative completion plus 'Oh man' reads as shared amused appreciation of a minor mishap rather than consolation for real distress."
+        },
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.62,
+          "both_plausible": true,
+          "reason": "A's escalating punchline delivery ('Straight into the footwell, the whole tray') reads as a story told for effect rather than a complaint, so B's 'Oh man' laugh most likely joins the shared amusement, though it doubles as sympathy for a genuinely annoying mess."
+        },
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_a",
+          "confidence": 0.66,
+          "both_plausible": true,
+          "reason": "A's telling has a punchline-style buildup and emphatic tag ('the whole tray'), and B's collaborative completion in turn 1 shows B is riding along with a story being told for its absurdity, so 'Oh man' with a laugh reads as shared amusement more than consolation."
+        }
+      ]
+    },
+    "discriminability": {
+      "ok": true,
+      "reason": null,
+      "per_performance": {
+        "performance_a": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_a",
+              "confidence": 0.95,
+              "both_plausible": null,
+              "reason": "A's turns are tagged [amused]/[laughing]/[giggling], so B's [delighted] plus [loud laugh] reads as shared, escalating amusement at a funny story rather than a small consoling laugh over lingering distress."
+            },
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.95,
+              "both_plausible": null,
+              "reason": "The tags mark B as [delighted] with a [loud laugh], matching A's escalating [laughing]/[giggling] telling — shared amusement, not the small, softening laugh of consolation described in option 2."
+            },
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.93,
+              "both_plausible": null,
+              "reason": "The tag sequence [delighted] plus [loud laugh] marks high-arousal shared amusement escalating from A's [laughing]/[giggling], not the small, softened laugh that account 2 describes."
+            }
+          ]
+        },
+        "performance_b": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_b",
+              "confidence": 0.95,
+              "both_plausible": null,
+              "reason": "A's turn is tagged [sad] and B's laugh tags are [sympathetic laugh] plus a [soft exhale laugh] over a [sad] delivery of 'Oh man...', which reads as commiseration rather than shared amusement."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.93,
+              "both_plausible": null,
+              "reason": "The tags explicitly mark a sympathetic laugh and soft exhale paired with [sad], and A's own delivery is [flat]/[sad] rather than amused, so B's laugh reads as commiseration rather than shared enjoyment."
+            },
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_b",
+              "confidence": 0.95,
+              "both_plausible": null,
+              "reason": "A's turns are tagged [flat] and [sad] rather than amused, and B's stacked [sympathetic laugh][soft exhale laugh][sad] plus \"Oh man...\" performs commiseration, not shared amusement."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

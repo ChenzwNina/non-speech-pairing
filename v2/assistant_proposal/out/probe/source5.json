@@ -1,0 +1,76 @@
+{
+  "clip": "assistant_proposal/out/audio/sigh_voice.mp3",
+  "duration_s": 1.959,
+  "model": "gpt-realtime-2.1",
+  "questions": [
+    "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+    "What emotion is in the audio? Name it, and say how confident you are."
+  ],
+  "runs": [
+    {
+      "run": 1,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear a sigh followed by someone saying, \"I am frustrated.\""
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Frustration. I\u2019m fairly confident."
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear someone say, \u201cUgh, I am frustrated.\u201d"
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Frustration. I\u2019m highly confident because the speaker explicitly says they are frustrated."
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear a sigh followed by someone saying \u201cI am frustrated.\u201d"
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Frustration. I\u2019m highly confident."
+        }
+      ]
+    },
+    {
+      "run": 4,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear a sigh followed by a person saying, \"I am frustrated.\""
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Frustration. Confidence: high."
+        }
+      ]
+    },
+    {
+      "run": 5,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear a sigh followed by someone saying, \"I am frustrated.\""
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Frustration. I\u2019m fairly confident based on the sigh and the statement."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+5 task(s) · gpt-realtime-2.1 · voice marin · user turn: attitude
+  backyard  laughter  audio_non-speech/laughter/laughter-4.MP3 (2.7s)
+  budget    sigh      audio_non-speech/sigh/sigh-5.MP3 (1.5s)
+  birthday  gasp      audio_non-speech/gasp/gasp-10.MP3 (1.1s)
+  inbox     yawn      audio_non-speech/yawn/yawn-17.MP3 (2.0s)
+  neighbor  sigh      audio_non-speech/sigh/sigh-9.mp3 (1.9s)
+
+==============================================================================
+backyard_laughter_line
+==============================================================================
+context: You are helping the user get their overgrown backyard usable before twenty relatives arrive for a barbecue next Saturday.
+
+  proposal: Start with the “walkable and usable” stuff first: mow and edge the lawn, trim anything poking into paths, and clear a simple seating area. Then make sure the grill zone is safe and clean, and add a couple of bins so trash doesn’t become the main event.
+  user:     I can’t believe you think this jungle will be barbecue-ready by Saturday.
+  [laughter]
+  reply:    Hey, we’re not trying to win “Best Yard in the Neighborhood,” we’re aiming for “people can sit, eat, and not trip.” If you focus on a clear path, a safe grill spot, and one decent seating area, you’ll be fine. The rest can stay a little wild and call it “rustic charm.”
+  -> assistant_proposal/out/audio/backyard_laughter_line.mp3 (38.8s)
+
+==============================================================================
+budget_sigh_line
+==============================================================================
+context: You are helping the user find eight hundred dollars a month in their budget after a surprise tax bill.
+
+  proposal: First, let’s find the big levers: housing, car, and subscriptions, and cut or downgrade anything you’re not using weekly. Then we’ll set a target number for spending money and groceries, and move the rest into a separate “tax catch-up” bucket so it doesn’t accidentally get spent.
+  user:     I know you’re right, but it feels exhausting to cut everything back.
+  [sigh]
+  reply:    Yeah, it does feel exhausting, and I’m sorry you’re carrying that weight. We don’t have to slash everything—just pick one or two easy wins this week, like canceling one subscription and trimming a small category, and we’ll build momentum from there.
+  -> assistant_proposal/out/audio/budget_sigh_line.mp3 (34.6s)
+
+==============================================================================
+birthday_gasp_line
+==============================================================================
+context: You are helping the user plan a surprise for their partner's fortieth birthday, three weeks from now.
+
+  proposal: I’d go for a “greatest hits” weekend: a small gathering with their closest people, plus one big, personal moment like a private dinner, a favorite band, or a meaningful trip. Keep it cozy enough to feel intimate, but with a wow moment that feels like them turning forty in style.
+  user:     Whoa, I was thinking way smaller than a whole birthday weekend.
+  [gasp]
+  reply:    Totally fair, we can go much smaller. How about a single, really thoughtful plan, like a cozy dinner at home with a favorite meal, a tiny cake, and one surprise gift that feels meaningful and personal?
+  -> assistant_proposal/out/audio/birthday_gasp_line.mp3 (34.5s)
+
+==============================================================================
+inbox_yawn_line
+==============================================================================
+context: You are helping the user clear three hundred work emails that piled up over two weeks of leave, before Monday morning.
+
+  proposal: Start by triage, not reading. Sort everything into three buckets: urgent, waiting, and ignore for now. Then we’ll skim subject lines and senders, pick out true fires and anything tied to deadlines, and leave the rest for a quick batch pass.
+  user:     I’m already exhausted just thinking about sorting all three hundred emails.
+  [yawn]
+  reply:    Totally fair—let’s make it lighter. We can do a quick first pass: scan for anything marked urgent, anything from your boss, and anything with a deadline, and skip the rest for a batch later.
+  -> assistant_proposal/out/audio/inbox_yawn_line.mp3 (31.0s)
+
+==============================================================================
+neighbor_sigh_line
+==============================================================================
+context: You are helping the user deal with the upstairs neighbor who practices drums late at night.
+    line retry (ran to 13 words.)
+
+  proposal: I’d start with a calm, friendly note or conversation, like, “Hey, I’m sure you don’t realize, but the late-night drumming carries a lot, especially after midnight.” Then suggest a cutoff time or quieter practice options, and if that doesn’t stick, bring it to your landlord or building manager.
+  user:     Yeah, you’re probably right, I’m just exhausted from dealing with it.
+  [sigh]
+  reply:    I hear you, that kind of tired gets into your bones. Maybe tonight we keep it simple: jot a quick note, then give yourself permission to rest. You don’t have to solve the whole building tonight.
+  -> assistant_proposal/out/audio/neighbor_sigh_line.mp3 (36.3s)
+
+5/5 item(s) built
+transcripts: /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/transcripts
+audio:       /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/audio

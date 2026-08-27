@@ -1,0 +1,60 @@
+{
+  "model": "gpt-4o",
+  "temperature": 1.0,
+  "generated_at": "2026-08-10T20:17:03.455030+00:00",
+  "pair_mode": "combinations",
+  "topics": [
+    "domestic"
+  ],
+  "system_prompt": "\n\n    You are an expert in natural human-to-human spoken dialogue and the pragmatics of laughter.\n\n    IMPORTANT:\n    Your task is to generate a four-turn, natural spoken dialogue whose SAME conversational context and SAME current-turn wording can plausibly support TWO different pragmatic functions of laughter specified by the user. The conversation should center on the topic specified by the user and depict a natural everyday situation within that domain. At this stage, generate ONLY the lexical transcript.\n    \n    The dialogue should contain:\n    1. a short dialogue history that establishes a natural conversational situation;\n    2. a current turn whose lexical content could naturally accompany laughter;\n    3. enough sequential context for BOTH target laughter functions to be plausible interpretations once different vocal realizations are added later.\n\n    [Rules you must follow]\n    1. TWO-FUNCTION COMPATIBILITY\n    The user will provide two target pragmatic functions of laughter. Construct ONE shared dialogue, not two separate dialogues. The exact same dialogue history and current-turn wording must be compatible with BOTH target functions.\n\n    2. PRAGMATIC UNDERSPECIFICATION\n    The lexical transcript must NOT make either target laughter function obvious by itself. A reader who sees only the words should not be able to confidently determine which of the two laughter functions is intended. The distinction between the two functions should be resolvable only after different laughter-centered vocal realizations are added in a later step.\n\n    3. NATURALNESS\n    Both target laughter functions must be natural and plausible in exactly the same conversational context. The dialogue should resemble something two people could genuinely say in everyday spoken interaction.\n\n    4. INTERACTIONAL CONTRAST\n    The two target functions must correspond to meaningfully different interpretations of what the laughter would be doing socially. Ideally, the two laughter functions should support different ways of construing the preceding event, utterance, or ongoing activity.\n\n    5. DIALOGUE STRUCTURE\n    - Use exactly two speakers: A and B.\n    - A and B should interact back and forth naturally.\n    - Use one sentence per turn.\n    - Keep the dialogue short.\n    - The current turn must be spoken by either A or B.\n    - The current turn should contain only lexical content; do NOT insert \"[laughter]\" or any vocal annotation yet.\n\n    6. DO NOT LEAK THE FUNCTION\n    Avoid lexical expressions that explicitly encode one target function.\n\n    For example, if contrasting amusement and sympathy, avoid making the current turn explicitly say:\n    - \"That's hilarious.\"\n    - \"I feel so bad for you.\"\n\n    The words themselves should leave room for both interpretations.\n\n    The user will provide:\n    - a topic;\n    - the name of Function 1;\n    - the definition of Function 1;\n    - examples of Function 1;\n    - the name of Function 2;\n    - the definition of Function 2;\n    - examples of Function 2.\n\n    Use the definitions and examples to understand the pragmatic distinction.\n\n    Do NOT copy the supplied example situations or wording. Generate a new conversational situation.\n\n    Before returning the transcript, verify internally that:\n    1. both laughter functions are plausible in the same context;\n    2. the lexical transcript does not determine the function;\n    3. no vocal/acoustic information has been inserted;\n    4. the two functions represent genuinely different social actions;\n    5. adding different laughter realizations later could plausibly disambiguate them.\n\n    [Output format]\n    Return ONLY a single JSON object, with no markdown fences and no commentary before or after it:\n\n    {\n      \"prior_turns\": [\n        {\"speaker\": \"A\", \"text\": \"...\"},\n        {\"speaker\": \"B\", \"text\": \"...\"},\n        {\"speaker\": \"A\", \"text\": \"...\"}\n      ],\n      \"current_turn\": {\"speaker\": \"B\", \"text\": \"...\"}\n    }\n\n    - \"prior_turns\" must contain exactly 3 turns, forming the dialogue history.\n    - \"current_turn\" is the single turn where laughter will be inserted in a later step; it may be spoken by either A or B.\n    - \"speaker\" must be exactly \"A\" or \"B\".\n    - Every \"text\" value is lexical content only: no \"[laughter]\", no vocal annotation, no stage directions.\n\n",
+  "user_prompt_template": "\n    [dialogue topic]: {topic}.\n\n    [laughter function 1]:\n    Function name - {function_a}\n    Definition - {definition_a}\n    Example - {example_a}\n    Example explanation - {example_explanation_a}\n\n    [laughter function 2]:\n    Function name - {function_b}\n    Definition - {definition_b}\n    Example - {example_b}\n    Example explanation - {example_explanation_b}\n\n\n    Help me generate ONE short, natural spoken dialogue that can plausibly support BOTH laughter functions above.  Feel free to imagine the dialogue content but it should based on common sense.\n",
+  "results": [
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__marking-incongruity",
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Marking incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter used meta-communicatively to point out to the interlocutor that an incongruity is present in what is being said, rather than to display enjoyment of it; it subtly adds the laugher's own stance on the content.",
+          "example": "(Ex. 11) John: 'there tends to be a phone call' ; Ian: 'Can you make it? we're desperate <laughter/>' ; John: 'Can you make it in half an hour's time, you know <laughter/>.'",
+          "example_explanation": "John marks the absurdity of a client being 'desperate' for a music class and the incongruity of being asked to be at their place for a lesson within a very short time window - he flags the incongruity rather than showing enjoyment of it."
+        }
+      ],
+      "user_prompt": "\n    [dialogue topic]: domestic.\n\n    [laughter function 1]:\n    Function name - Show enjoyment of incongruity\n    Definition - Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\n    Example - (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\n    Example explanation - In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n    [laughter function 2]:\n    Function name - Marking incongruity\n    Definition - Laughter used meta-communicatively to point out to the interlocutor that an incongruity is present in what is being said, rather than to display enjoyment of it; it subtly adds the laugher's own stance on the content.\n    Example - (Ex. 11) John: 'there tends to be a phone call' ; Ian: 'Can you make it? we're desperate <laughter/>' ; John: 'Can you make it in half an hour's time, you know <laughter/>.'\n    Example explanation - John marks the absurdity of a client being 'desperate' for a music class and the incongruity of being asked to be at their place for a lesson within a very short time window - he flags the incongruity rather than showing enjoyment of it.\n\n\n    Help me generate ONE short, natural spoken dialogue that can plausibly support BOTH laughter functions above.  Feel free to imagine the dialogue content but it should based on common sense.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"I'm thinking of rearranging the living room again.\"},{\"speaker\":\"B\",\"text\":\"Didn't you just do that last month?\"},{\"speaker\":\"A\",\"text\":\"Well, yes, but I feel like the couch is judging me when I sit down.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Maybe it's just trying to get more light for its photosynthesis career.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "I'm thinking of rearranging the living room again."
+          },
+          {
+            "speaker": "B",
+            "text": "Didn't you just do that last month?"
+          },
+          {
+            "speaker": "A",
+            "text": "Well, yes, but I feel like the couch is judging me when I sit down."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Maybe it's just trying to get more light for its photosynthesis career."
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1358,
+        "completion_tokens": 88,
+        "total_tokens": 1446
+      }
+    }
+  ]
+}

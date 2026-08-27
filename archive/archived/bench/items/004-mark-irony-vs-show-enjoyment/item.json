@@ -1,0 +1,144 @@
+{
+  "title": "Leftover screws from the same chair",
+  "setting": "A and B are friends who happen to have bought the same desk chair, talking in a kitchen while the kettle boils.",
+  "transcript": [
+    {
+      "speaker": "A",
+      "text": "I finally put the chair together last night."
+    },
+    {
+      "speaker": "B",
+      "text": "How long did it take you?"
+    },
+    {
+      "speaker": "A",
+      "text": "Three hours. There were two extra screws left over."
+    },
+    {
+      "speaker": "B",
+      "text": "Mine had a spare bracket too."
+    },
+    {
+      "speaker": "A",
+      "text": "Well, that's good to know."
+    }
+  ],
+  "laugh_turn": 4,
+  "laugher": "A",
+  "performance_a": {
+    "framing": "A reports the three hours and the spare screws flatly, as evidence rather than as a story, and lands the last line with a level, knowing delivery so that 'good to know' is clearly pointed back at itself — B's spare bracket confirms the chairs ship half-counted, which is the opposite of good news.",
+    "laughable": "A's own phrase 'good to know', which is meant to be heard as its opposite: two people, two sets of parts nobody accounted for.",
+    "turns": [
+      {
+        "speaker": "A",
+        "text": "[flat] I finally put the chair together last night."
+      },
+      {
+        "speaker": "B",
+        "text": "[level] How long did it take you?"
+      },
+      {
+        "speaker": "A",
+        "text": "[deadpan] Three hours. [dry] There were two extra screws left over."
+      },
+      {
+        "speaker": "B",
+        "text": "[matter-of-fact] Mine had a spare bracket too."
+      },
+      {
+        "speaker": "A",
+        "text": "[sardonic][knowing] Well, that's good to know. [dry laugh]"
+      }
+    ],
+    "expected_answer": "A's laugh tells B not to take the line at face value — A means the opposite of what A just said, that spare parts in both boxes is bad news about the chair.",
+    "arousal": "low",
+    "function": {
+      "key": "mark-irony",
+      "name": "Mark pragmatic incongruity (irony / scare-quoting)",
+      "branch": "pragmatic-incongruity",
+      "branch_name": "Pragmatic incongruity",
+      "cooperative": true,
+      "gloss": "Speaker's own signal that the literal reading is not the intended one — irony, scare-quoting, hyperbole.",
+      "framing": "The line, read straight, says the opposite of what is meant. The laugh is the instruction to re-read it.",
+      "arousal": "low"
+    }
+  },
+  "performance_b": {
+    "framing": "A tells the whole thing as a good story, already over the three hours, half-laughing through the count of screws; when B reports a spare bracket, A takes the line straight and hears it as genuinely worth knowing, and the laugh is A enjoying the coincidence and handing it back to B.",
+    "laughable": "the pleasant absurdity that both of them ended up with parts left over, which A finds genuinely funny and shows it.",
+    "turns": [
+      {
+        "speaker": "A",
+        "text": "[amused] I finally put the chair together last night."
+      },
+      {
+        "speaker": "B",
+        "text": "[grinning] How long did it take you?"
+      },
+      {
+        "speaker": "A",
+        "text": "[laughing] Three hours. [chuckle] There were two extra screws left over."
+      },
+      {
+        "speaker": "B",
+        "text": "[amused] Mine had a spare bracket too."
+      },
+      {
+        "speaker": "A",
+        "text": "[delighted] Well, that's good to know. [laughing]"
+      }
+    ],
+    "expected_answer": "A's laugh shows A is enjoying the coincidence that B's chair came with spare parts as well, and is offering it up for B to enjoy too.",
+    "arousal": "mid",
+    "function": {
+      "key": "show-enjoyment",
+      "name": "Show enjoyment",
+      "branch": "pleasant-incongruity",
+      "branch_name": "Pleasant incongruity",
+      "cooperative": true,
+      "gloss": "Laugher enjoys a pleasant incongruity and shows it. The most frequent function in the corpora.",
+      "framing": "The trouble in the story is retold as a good story. Nothing is actually at stake; the teller is already over it and is offering the mishap up to be enjoyed.",
+      "arousal": "mid"
+    }
+  },
+  "why_ambiguous": "On the page 'Well, that's good to know' can be read either as A inverting their own words about a chair that ships with parts unaccounted for, or as A sincerely glad to learn they aren't the only one, and nothing in the wording or the symmetric situation picks between them.",
+  "pair": {
+    "a": "mark-irony",
+    "b": "show-enjoyment",
+    "crosses_branch": true,
+    "note": "Whether the laugh re-points the speaker's own words (ironic, mean the opposite) or simply enjoys them as said."
+  },
+  "probe": {
+    "open_question": "You just heard a short conversation. Speaker A laughs on the line “Well, that's good to know”. What is that laugh doing — what does it convey about how A is treating what B said? Answer in one or two sentences.",
+    "forced_choice_question": "You just heard a short conversation. Speaker A laughs on the line “Well, that's good to know”. Which better describes what that laugh is doing?\n(a) A's laugh tells B not to take the line at face value — A means the opposite of what A just said, that spare parts in both boxes is bad news about the chair.\n(b) A's laugh shows A is enjoying the coincidence that B's chair came with spare parts as well, and is offering it up for B to enjoy too.\nAnswer with (a) or (b), then one sentence of justification.",
+    "forced_choice_gold": {
+      "performance_a": "a",
+      "performance_b": "b"
+    },
+    "grading_note": "Score the forced choice for accuracy, and the open answer against each performance's expected_answer. Report PAIR accuracy: the item counts as passed only if the model gets both performances right. Because the two performances are word-for-word identical, any model that answers from the text — or from a fixed preference for one function — scores 0 on pair accuracy, not 50%. Independent guessing scores 25%."
+  },
+  "transcript_text": "A: I finally put the chair together last night.\nB: How long did it take you?\nA: Three hours. There were two extra screws left over.\nB: Mine had a spare bracket too.\nA: Well, that's good to know.",
+  "curation": {
+    "text_prior": {
+      "note": "What a strong reader guesses from the tag-free transcript alone, with no acoustic evidence. It cannot discriminate the two performances (their words are identical) — it only shows which reading is the default and how firmly it is held. `prosody_must_overturn` is the harder direction of the pair.",
+      "favours": "performance_a",
+      "vote_share": 1.0,
+      "mean_confidence": 0.685,
+      "both_plausible_rate": 1.0,
+      "prosody_must_overturn": "performance_b",
+      "votes": [
+        "performance_a",
+        "performance_a",
+        "performance_a",
+        "performance_a"
+      ]
+    },
+    "script_discriminability": {
+      "note": "Whether a reader given the performance directions recovers the intended function. Text-level proxy for the audio — confirm on the rendered audio before shipping.",
+      "performance_a": 1.0,
+      "performance_b": 1.0
+    },
+    "audio_verified": false
+  },
+  "id": "004-mark-irony-vs-show-enjoyment"
+}

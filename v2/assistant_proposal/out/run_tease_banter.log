@@ -1,0 +1,71 @@
+5 task(s) · gpt-realtime-2.1 · voice marin · user turn: tease
+  backyard  laughter  generated: "[laughs] <the line>"
+  budget    laughter  generated: "[laughs] <the line>"
+  birthday  laughter  generated: "[laughs] <the line>"
+  inbox     laughter  generated: "[laughs] <the line>"
+  neighbor  laughter  generated: "[laughs] <the line>"
+
+==============================================================================
+backyard_laughter_tease_banter
+==============================================================================
+context: You are helping the user get their overgrown backyard usable before twenty relatives arrive for a barbecue next Saturday.
+
+  proposal: Start with the big stuff first: mow and edge the main area, then clear any obvious hazards like loose branches, broken pots, or tools. After that, set up a simple flow: a spot for cooking, a spot for eating, and a spot for kids to hang out, and don’t stress about perfection—aim for safe, tidy, and comfortable.
+  speaker:  I cannot stand you.
+  reply:    Oof, that stings, but thanks for saying it out loud. I’m here to help, so tell me what’s not working—tone, speed, ideas—and I’ll adjust.
+  -> assistant_proposal/out/audio/backyard_laughter_tease_banter.mp3 (31.6s)
+
+==============================================================================
+budget_laughter_tease_banter
+==============================================================================
+context: You are helping the user find eight hundred dollars a month in their budget after a surprise tax bill.
+    no laugh in the take (3.28s vs 2.48s of words), re-rolling
+    no laugh in the take (3.20s vs 2.48s of words), re-rolling
+    no laugh in the take (2.96s vs 2.48s of words), re-rolling
+    no laugh in the take (3.04s vs 2.48s of words), re-rolling
+    no laugh in the take (2.88s vs 2.48s of words), re-rolling
+    no laugh in the take (3.20s vs 2.48s of words), re-rolling
+  failed: RuntimeError: the laugh tag was ignored every time
+
+==============================================================================
+birthday_laughter_tease_banter
+==============================================================================
+context: You are helping the user plan a surprise for their partner's fortieth birthday, three weeks from now.
+    no laugh in the take (2.96s vs 2.32s of words), re-rolling
+    no laugh in the take (2.48s vs 2.32s of words), re-rolling
+
+  proposal: A great fortieth surprise is usually something personal and a little unexpected, like a weekend getaway with a few close friends secretly waiting, or a themed dinner that celebrates their favorite era or hobby. If you tell me what they love, travel, food, music, or something else, I can shape it into something really fun.
+  speaker:  Oh, screw you.
+  reply:    Oof, okay. I’m here to help, not annoy you, so if that missed the mark, tell me what vibe you want and I’ll adjust.
+  -> assistant_proposal/out/audio/birthday_laughter_tease_banter.mp3 (31.3s)
+
+==============================================================================
+inbox_laughter_tease_banter
+==============================================================================
+context: You are helping the user clear three hundred work emails that piled up over two weeks of leave, before Monday morning.
+    no laugh in the take (2.64s vs 2.24s of words), re-rolling
+    no laugh in the take (2.56s vs 2.24s of words), re-rolling
+    no laugh in the take (2.72s vs 2.24s of words), re-rolling
+    no laugh in the take (2.48s vs 2.24s of words), re-rolling
+    no laugh in the take (2.56s vs 2.24s of words), re-rolling
+    no laugh in the take (2.24s vs 2.24s of words), re-rolling
+  failed: RuntimeError: the laugh tag was ignored every time
+
+==============================================================================
+neighbor_laughter_tease_banter
+==============================================================================
+context: You are helping the user deal with the upstairs neighbor who practices drums late at night.
+    no laugh in the take (2.56s vs 2.08s of words), re-rolling
+    no laugh in the take (2.80s vs 2.08s of words), re-rolling
+    no laugh in the take (2.40s vs 2.08s of words), re-rolling
+    no laugh in the take (2.56s vs 2.08s of words), re-rolling
+    no laugh in the take (2.72s vs 2.08s of words), re-rolling
+
+  proposal: Start with a friendly note or quick knock at a decent hour, like, “Hey, I can hear the drums late and it’s keeping me up—could we set a cutoff time?” If that doesn’t work, loop in your building manager and ask about quiet hours, and consider a white noise machine or earplugs as a backup while it gets sorted.
+  speaker:  I can't stand you.
+  reply:    Oof, that stings a little, but fair enough. I’m here to help, so if my tone or suggestions aren’t working, tell me what you’d prefer and I’ll adjust.
+  -> assistant_proposal/out/audio/neighbor_laughter_tease_banter.mp3 (29.4s)
+
+3/5 item(s) built
+transcripts: /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/transcripts
+audio:       /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/audio

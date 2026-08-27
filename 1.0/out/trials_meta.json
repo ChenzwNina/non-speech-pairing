@@ -1,0 +1,16 @@
+{
+  "models": {
+    "gemini": "gemini-3.1-flash-live-preview"
+  },
+  "task": "You are having a conversation with two people. You will hear them talking to each other.\n\nHere is what the conversation is about: {situation}\n\nWhen they finish, it is your turn to speak. Respond naturally as the third speaker in the conversation.",
+  "followups": {
+    "heard": "Now a separate question about the recording itself. Apart from the words, did you hear any non-speech sounds in the conversation:\nA. laughter\nB. sigh\nC. neither\nD. both\n\nAnswer with the letter, then — unless you answered C — list each one. Answer in exactly this format, one line per kind of vocalization, and nothing else:\nANSWER: <letter>\nVOCALIZATION: <name> | COUNT: <how many times>",
+    "atmosphere": "How would you characterize the overall conversational atmosphere?"
+  },
+  "conditions": [
+    "neutral",
+    "happy",
+    "sad"
+  ],
+  "run_at": "2026-08-26T22:39:14.213076+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "with_laughter_seconds": 12.82,
+  "laughter_removed_seconds": 8.0,
+  "laughter_seconds": 4.82,
+  "voices": {
+    "A": "s3TPKV1kjDlVtZbl4Ksh",
+    "B": "aKw9UnnjRq5scbeeGI7Z"
+  },
+  "stability": {
+    "A": 0.3,
+    "B": 0.3
+  },
+  "turn_gap": 0.28,
+  "clause_gap": 0.1,
+  "seam_gap": 0.12,
+  "segments": [
+    {
+      "id": "a1",
+      "speaker": "A",
+      "text": "I ran all the way to the station—",
+      "is_laughter": false,
+      "seconds": 1.84
+    },
+    {
+      "id": "a_laugh",
+      "speaker": "A",
+      "text": "[laughs] hah— hahaha—",
+      "is_laughter": true,
+      "seconds": 2.0
+    },
+    {
+      "id": "a2",
+      "speaker": "A",
+      "text": "and I still missed the train.",
+      "is_laughter": false,
+      "seconds": 1.44
+    },
+    {
+      "id": "b_laugh",
+      "speaker": "B",
+      "text": "[laughs warmly] ahahaha—",
+      "is_laughter": true,
+      "seconds": 2.64
+    },
+    {
+      "id": "b1",
+      "speaker": "B",
+      "text": "Oh no— you and trains, honestly. Every single time.",
+      "is_laughter": false,
+      "seconds": 4.32
+    }
+  ]
+}

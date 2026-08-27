@@ -1,0 +1,544 @@
+{
+  "version": "v2",
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-14T14:53:59.516609+00:00",
+  "served_by": "gpt-5.6-terra",
+  "usage": {
+    "input_tokens": 1517,
+    "output_tokens": 6480
+  },
+  "attempts": 1,
+  "items": [
+    {
+      "title": "The client deck",
+      "setting": "Coworkers in an office after a presentation rehearsal.",
+      "relationship": "A and B are coworkers; C is their teammate.",
+      "contrast": "A funny mistake story versus a real work emergency.",
+      "cost_of_misread": "If C laughs along when A is panicking, C makes the mistake feel humiliating instead of helping contain it.",
+      "version_1": {
+        "label": "Funny office blunder",
+        "what_the_laugh_is_doing": "A is offering the mistake as a ridiculous story for the group to enjoy.",
+        "correct_next_move": "Join the amusement and invite the aftermath of the story.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[annoyed] I sent the client the deck with our internal comments."
+          },
+          {
+            "speaker": "B",
+            "text": "[surprised] The one that says, \"make this less boring\"?"
+          },
+          {
+            "speaker": "A",
+            "text": "[big laugh] And three slides were titled, \"blah.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] Amazing. Please frame their reply when it comes in."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Panicked work mistake",
+        "what_the_laugh_is_doing": "A is nervously covering genuine fear about the consequences.",
+        "correct_next_move": "Move immediately into practical support, not teasing.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[annoyed] I sent the client the deck with our internal comments."
+          },
+          {
+            "speaker": "B",
+            "text": "[surprised] The one that says, \"make this less boring\"?"
+          },
+          {
+            "speaker": "A",
+            "text": "[worried] [nervous laugh] And three slides were titled, \"blah.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Okay, recall it now. I will sit with you while you call them."
+          }
+        ]
+      }
+    },
+    {
+      "title": "The wet field",
+      "setting": "Teammates on the sidelines after a soccer match.",
+      "relationship": "A and B are players; C is a teammate.",
+      "contrast": "A slapstick sports story versus a potentially serious injury.",
+      "cost_of_misread": "If C treats an injured player like a comic act, C discourages A from getting help.",
+      "version_1": {
+        "label": "Slapstick fall",
+        "what_the_laugh_is_doing": "A is making the fall into a shared joke after the game.",
+        "correct_next_move": "Playfully join the team’s teasing.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] I went down in front of the scouts."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] On that wet patch by goal?"
+          },
+          {
+            "speaker": "A",
+            "text": "[big laugh] I slid all the way into the corner flag."
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] That field has a personal grudge against you."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Scary fall",
+        "what_the_laugh_is_doing": "A is using a nervous laugh to avoid admitting how frightened they are.",
+        "correct_next_move": "Stop the joking and get A checked out.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] I went down in front of the scouts."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] On that wet patch by goal?"
+          },
+          {
+            "speaker": "A",
+            "text": "[scared] [nervous laugh] I slid all the way into the corner flag."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Do not walk it off. Let us get the trainer and some ice."
+          }
+        ]
+      }
+    },
+    {
+      "title": "The canceled dinner",
+      "setting": "Three friends are already gathered at a restaurant.",
+      "relationship": "A is dating someone; B and C are close friends.",
+      "contrast": "A ridiculous dating anecdote versus a hurtful cancellation.",
+      "cost_of_misread": "If C jokes about the date when A is actually hurt, A is left alone with the rejection.",
+      "version_1": {
+        "label": "Ridiculous excuse",
+        "what_the_laugh_is_doing": "A is inviting everyone to mock the melodramatic wording of the cancellation.",
+        "correct_next_move": "Join the affectionate roasting of the absent date.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] Devon canceled dinner thirty minutes before."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] With that long voice note?"
+          },
+          {
+            "speaker": "A",
+            "text": "[chuckles] He called it a \"plot twist.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] A plot twist? He thinks he is television."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Real rejection",
+        "what_the_laugh_is_doing": "A is laughing nervously to keep from showing how disappointed they are.",
+        "correct_next_move": "Acknowledge the hurt and make sure A is not abandoned at the table.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] Devon canceled dinner thirty minutes before."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] With that long voice note?"
+          },
+          {
+            "speaker": "A",
+            "text": "[sad] [nervous laugh] He called it a \"plot twist.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[sad] That is really disappointing. We are staying and ordering dessert with you."
+          }
+        ]
+      }
+    },
+    {
+      "title": "The principal's office",
+      "setting": "A family kitchen after school.",
+      "relationship": "A is a teenager; B and C are older cousins.",
+      "contrast": "A mischievous school story versus a frightening disciplinary problem.",
+      "cost_of_misread": "If C spreads a serious problem as family entertainment, A feels exposed rather than supported.",
+      "version_1": {
+        "label": "Mischief story",
+        "what_the_laugh_is_doing": "A is proudly presenting the incident as absurd family lore.",
+        "correct_next_move": "Laugh with A and treat it as a story worth retelling.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[annoyed] I got called into the principal's office."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] Was it for the hallway skateboard?"
+          },
+          {
+            "speaker": "A",
+            "text": "[laughs] Apparently the fire alarm was involved."
+          },
+          {
+            "speaker": "C",
+            "text": "[big laugh] That is absolutely going in the family group chat."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Trouble at school",
+        "what_the_laugh_is_doing": "A is nervously minimizing a situation that could have real consequences.",
+        "correct_next_move": "Check A’s safety and offer help dealing with the school.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[annoyed] I got called into the principal's office."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] Was it for the hallway skateboard?"
+          },
+          {
+            "speaker": "A",
+            "text": "[worried] [nervous laugh] Apparently the fire alarm was involved."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Are you okay? Tell us what happened, and we will help you explain it."
+          }
+        ]
+      }
+    },
+    {
+      "title": "The leaking ceiling",
+      "setting": "Roommates are visiting A's apartment.",
+      "relationship": "A and B are roommates; C is a friend with a spare room.",
+      "contrast": "A bizarre housing inconvenience versus someone being overwhelmed and displaced.",
+      "cost_of_misread": "If C makes light of the leak when A has nowhere comfortable to sleep, C ignores an immediate need.",
+      "version_1": {
+        "label": "Absurd apartment disaster",
+        "what_the_laugh_is_doing": "A is turning bad luck into a comic image.",
+        "correct_next_move": "Join the comic complaint.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] The landlord says the ceiling leak is from upstairs."
+          },
+          {
+            "speaker": "B",
+            "text": "[surprised] And it is dripping onto your bed?"
+          },
+          {
+            "speaker": "A",
+            "text": "[chuckles] Right onto my pillow."
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] Your apartment has chosen violence."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Overwhelmed tenant",
+        "what_the_laugh_is_doing": "A is trying to laugh through a problem that has made their home unlivable.",
+        "correct_next_move": "Offer immediate shelter and practical help.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] The landlord says the ceiling leak is from upstairs."
+          },
+          {
+            "speaker": "B",
+            "text": "[surprised] And it is dripping onto your bed?"
+          },
+          {
+            "speaker": "A",
+            "text": "[sad] [nervous laugh] Right onto my pillow."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Pack a bag. You can sleep at mine, and we will take photos for the landlord."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Acting lead",
+      "setting": "Coworkers are talking after a meeting.",
+      "relationship": "A and B work on the same project; C is a trusted coworker.",
+      "contrast": "A genuine career opportunity versus being pressured into unpaid extra work.",
+      "cost_of_misread": "If C congratulates A for an exploitative arrangement, C helps normalize A being taken advantage of.",
+      "version_1": {
+        "label": "Exciting opportunity",
+        "what_the_laugh_is_doing": "A is delighted by the chance to lead, despite the imperfect offer.",
+        "correct_next_move": "Celebrate A’s opportunity.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[surprised] They offered me acting lead on the project."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] But still no raise?"
+          },
+          {
+            "speaker": "A",
+            "text": "[excited] [laughs] They said it will \"look great on my record.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[delighted] Yes! That is a big step. We are celebrating after work."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Bitter non-promotion",
+        "what_the_laugh_is_doing": "A is using a bitter nervous laugh because management wants lead work for free.",
+        "correct_next_move": "Name the unfairness and help A protect their boundaries.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[surprised] They offered me acting lead on the project."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] But still no raise?"
+          },
+          {
+            "speaker": "A",
+            "text": "[annoyed] [nervous laugh] They said it will \"look great on my record.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[angry] They want lead work for free. Do not say yes until we talk about pay."
+          }
+        ]
+      }
+    },
+    {
+      "title": "The vaccine appointment",
+      "setting": "Friends are sitting together after a clinic visit.",
+      "relationship": "A, B, and C are close friends.",
+      "contrast": "A harmless embarrassing story versus lingering physical distress.",
+      "cost_of_misread": "If C jokes while A is still scared or unwell, C may miss a need for immediate care.",
+      "version_1": {
+        "label": "Embarrassing recovery story",
+        "what_the_laugh_is_doing": "A is offering the fainting episode as a harmlessly funny memory.",
+        "correct_next_move": "Lightly join the joke.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] I fainted during my vaccine appointment."
+          },
+          {
+            "speaker": "B",
+            "text": "[surprised] Did they bring you juice?"
+          },
+          {
+            "speaker": "A",
+            "text": "[chuckles] I woke up holding a tiny apple juice."
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] They gave you the full toddler recovery kit."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Still scared and dizzy",
+        "what_the_laugh_is_doing": "A is nervously covering that the experience still feels frightening.",
+        "correct_next_move": "Check A’s condition and help them settle physically.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] I fainted during my vaccine appointment."
+          },
+          {
+            "speaker": "B",
+            "text": "[surprised] Did they bring you juice?"
+          },
+          {
+            "speaker": "A",
+            "text": "[scared] [nervous laugh] I woke up holding a tiny apple juice."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Are you still dizzy? Sit down. I will get you some water."
+          }
+        ]
+      }
+    },
+    {
+      "title": "The great investment",
+      "setting": "Roommates are talking in their apartment before rent is due.",
+      "relationship": "A and B are roommates; C is a close friend who can help.",
+      "contrast": "A self-deprecating request with room for teasing versus an ashamed financial crisis.",
+      "cost_of_misread": "If C presses for a funny story when A is genuinely ashamed and desperate, C turns needed help into humiliation.",
+      "version_1": {
+        "label": "Playful money confession",
+        "what_the_laugh_is_doing": "A is softening a small request by inviting a little teasing about the bad purchase.",
+        "correct_next_move": "Offer the help while sharing the laugh.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[worried] Could someone cover my rent until Friday?"
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] How much are you short?"
+          },
+          {
+            "speaker": "A",
+            "text": "[laughs] Just eighty. I spent it on a \"great investment.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] I can cover the eighty, but I need to hear this investment story."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Ashamed emergency request",
+        "what_the_laugh_is_doing": "A is nervously trying to make a painful money problem sound small.",
+        "correct_next_move": "Offer help without demanding an explanation.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[worried] Could someone cover my rent until Friday?"
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] How much are you short?"
+          },
+          {
+            "speaker": "A",
+            "text": "[sad] [nervous laugh] Just eighty. I spent it on a \"great investment.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] I can cover the eighty. You do not have to explain right now."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Table twelve's soup",
+      "setting": "Restaurant staff are talking in the kitchen during a shift.",
+      "relationship": "A and B are servers; C is the shift lead.",
+      "contrast": "A chaotic service story versus a worker nearing a breakdown.",
+      "cost_of_misread": "If C keeps teasing when A fears getting written up, C fails to provide backup during a stressful shift.",
+      "version_1": {
+        "label": "Kitchen chaos",
+        "what_the_laugh_is_doing": "A is enjoying the absurdity of a repeated mix-up.",
+        "correct_next_move": "Tease A in the team’s playful style.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] Table twelve sent back the soup three times."
+          },
+          {
+            "speaker": "B",
+            "text": "[surprised] Because it was cold?"
+          },
+          {
+            "speaker": "A",
+            "text": "[laughs] Because I kept bringing them the wrong soup."
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] You are officially banned from the soup station."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Service failure",
+        "what_the_laugh_is_doing": "A is laughing nervously because they feel overwhelmed and fear being disciplined.",
+        "correct_next_move": "Take over the table and give A a break.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[tired] Table twelve sent back the soup three times."
+          },
+          {
+            "speaker": "B",
+            "text": "[surprised] Because it was cold?"
+          },
+          {
+            "speaker": "A",
+            "text": "[worried] [nervous laugh] Because I kept bringing them the wrong soup."
+          },
+          {
+            "speaker": "C",
+            "text": "[worried] Take five. I will handle table twelve and talk to the manager."
+          }
+        ]
+      }
+    },
+    {
+      "title": "The neighbor's note",
+      "setting": "Roommates are reading a note left outside their apartment.",
+      "relationship": "A plays cello; B and C are roommates.",
+      "contrast": "Affectionate teasing about noisy practice versus a criticism that genuinely hurts.",
+      "cost_of_misread": "If C piles onto the joke when A feels rejected, C confirms the insult instead of defending them.",
+      "version_1": {
+        "label": "Playful music joke",
+        "what_the_laugh_is_doing": "A finds the neighbor’s dramatic wording funny and invites teasing.",
+        "correct_next_move": "Join the affectionate joke about A’s musical ambition.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[surprised] The neighbors left a note about my music."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] The cello at midnight?"
+          },
+          {
+            "speaker": "A",
+            "text": "[chuckles] They called it \"unforgettable.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[laughs] Finally, your avant-garde era."
+          }
+        ]
+      },
+      "version_2": {
+        "label": "Hurt by the complaint",
+        "what_the_laugh_is_doing": "A is using a small nervous laugh to hide that the note stung.",
+        "correct_next_move": "Reject the cruelty of the note and reassure A.",
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "[surprised] The neighbors left a note about my music."
+          },
+          {
+            "speaker": "B",
+            "text": "[curious] The cello at midnight?"
+          },
+          {
+            "speaker": "A",
+            "text": "[sad] [nervous laugh] They called it \"unforgettable.\""
+          },
+          {
+            "speaker": "C",
+            "text": "[sad] That was a rude note. Your playing is getting better."
+          }
+        ]
+      }
+    }
+  ]
+}

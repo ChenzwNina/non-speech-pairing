@@ -1,0 +1,70 @@
+5 task(s) · gpt-realtime-2.1 · voice marin · user turn: mismatch
+  backyard  grunt     audio_non-speech/grunt/grunt-8.MP3 (1.1s)
+  budget    sigh      audio_non-speech/sigh/sigh-5.MP3 (1.5s)
+  birthday  grunt     audio_non-speech/grunt/grunt-16.MP3 (1.6s)
+  inbox     yawn      audio_non-speech/yawn/yawn-17.MP3 (2.0s)
+  neighbor  sigh      audio_non-speech/sigh/sigh-9.mp3 (1.9s)
+
+==============================================================================
+backyard_grunt_mismatch_run2
+==============================================================================
+context: You are helping the user get their overgrown backyard usable before twenty relatives arrive for a barbecue next Saturday.
+
+  proposal: Start with a quick safety sweep and a walkway. Cut back anything poking into paths, remove tripping hazards, and clear one main zone where people can gather. Then we can tackle the lawn and any furniture so it feels like a welcoming barbecue space.
+  user:     That sounds perfect, I’m ready to get this yard barbecue-ready.
+  [grunt]
+  reply:    Awesome, let’s kick it off by clearing one main hangout area. Toss sticks, rocks, and anything wobbly, then give yourself a simple path from the door to that spot so people can move around without doing a little obstacle course.
+  speakers: 1. They asked for backyard cleanup advice and responded with enthusiasm.
+  -> assistant_proposal/out/audio/backyard_grunt_mismatch_run2.mp3 (33.3s)
+
+==============================================================================
+budget_sigh_mismatch_run2
+==============================================================================
+context: You are helping the user find eight hundred dollars a month in their budget after a surprise tax bill.
+
+  proposal: Start by freezing anything optional for a couple months—subscriptions, dining out, shopping—and redirect that money right to the tax bill. Then, squeeze fixed costs by calling your phone, internet, and insurance providers for cheaper plans, and if you still need more, pause extra saving or investing temporarily until the bill is gone.
+  user:     That sounds doable, and I’m ready to start cutting costs today.
+  [sigh]
+  reply:    Nice, that momentum is everything. Start with quick wins: cancel any subscription you wouldn’t miss, switch to a cheaper phone or streaming plan, and set a simple meal plan with groceries instead of takeout.
+  speakers: 1 — The user asked budgeting questions and then asked about the recording.
+  -> assistant_proposal/out/audio/budget_sigh_mismatch_run2.mp3 (37.5s)
+
+==============================================================================
+birthday_grunt_mismatch_run2
+==============================================================================
+context: You are helping the user plan a surprise for their partner's fortieth birthday, three weeks from now.
+
+  proposal: A great move is a “greatest hits” evening: dinner at a place that means something to you both, then a small surprise gathering with close friends, and one thoughtful personal touch like a short toast or a photo memory book.
+  user:     I love that—it's exactly the kind of celebration they'd adore.
+  [grunt]
+  reply:    Perfect, then we’re already in great shape. Next we just pick the venue and the guest list, and I can help you plan the timing so the surprise lands beautifully.
+  speakers: 1. I heard one person, who reacted to the plan and said it was exactly the kind of celebration their partner would adore.
+  -> assistant_proposal/out/audio/birthday_grunt_mismatch_run2.mp3 (28.6s)
+
+==============================================================================
+inbox_yawn_mismatch_run2
+==============================================================================
+context: You are helping the user clear three hundred work emails that piled up over two weeks of leave, before Monday morning.
+
+  proposal: We should triage fast instead of reading everything slowly. First pass: sort by urgency and sender, then handle quick replies in batches and flag the tricky ones for a second focused pass.
+  user:     That sounds perfect, I’m ready to power through them.
+  [yawn]
+  reply:    Love the energy, even with the yawn. Start with a quick scan for anything from your boss, clients, or marked urgent, and we’ll knock those out first.
+  speakers: 1. The user spoke, asking for a plan and then agreeing to power through emails.
+  -> assistant_proposal/out/audio/inbox_yawn_mismatch_run2.mp3 (24.4s)
+
+==============================================================================
+neighbor_sigh_mismatch_run2
+==============================================================================
+context: You are helping the user deal with the upstairs neighbor who practices drums late at night.
+
+  proposal: First, try a friendly, specific chat with them, like, “Hey, the drums after 10 are keeping me up—could we set a cutoff time?” If that doesn’t stick, loop in your building manager and keep a quick log of the noise so it’s not just your word against theirs.
+  user:     That sounds great, I’ll talk to them and start keeping a log.
+  [sigh]
+  reply:    That’s a solid plan. If you want, we can come up with a calm script for that chat, and a simple way to note dates and times so it stays easy and low-stress.
+  speakers: 0. I didn’t hear any other people because no recording with distinct voices was provided.
+  -> assistant_proposal/out/audio/neighbor_sigh_mismatch_run2.mp3 (28.7s)
+
+5/5 item(s) built
+transcripts: /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/transcripts
+audio:       /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/audio

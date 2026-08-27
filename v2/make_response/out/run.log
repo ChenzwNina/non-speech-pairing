@@ -1,0 +1,34 @@
+3 scenario(s) x 3 conditions = 9 test items  ·  model gpt-5.6-terra
+prompt: prompt_scenario.txt  (+ 8-point verifier)
+
+[1/3] scenario_001
+    domain: community theater  (Speaker A and Speaker B are co-directors of a volunteer theater troupe.)
+    A proposes: What if we turn the show into a one-weekend outdoor production at the park bandstand?
+      [laughter]  Establish that the proposal is serious and defend its practical feasibility.
+        A: I'm serious—the parks office can fast-track the permit, and we would avoid paying for another venue.
+      [sigh]  Acknowledge the burden and unpleasant tradeoff involved.
+        A: I know—it would mean rebuilding half the set and asking everyone for another brutal weekend.
+      [gasp]  Reduce the perceived immediacy by clarifying that no commitment is being made yet.
+        A: I'm not moving the show tonight; I just want to see whether the bandstand is even available before we panic.
+
+[2/3] scenario_002
+    domain: nonprofit fundraising  (Speaker A is the finance manager and Speaker B is the development director at a small local museum.)
+    A proposes: What if we cancel this year's gala and put the remaining event budget straight into the roof repair?
+      [laughter]  Establish that the proposal is serious and defend its financial logic.
+        A: I'm serious—the deposit is smaller than what we'd lose trying to stage a gala that isn't selling.
+      [sigh]  Acknowledge the personal effort and disappointment the proposal would impose.
+        A: I know you've poured months into this, and asking everyone to let it go would feel terrible.
+      [gasp]  Reduce the perceived immediacy and clarify that A is raising an option for evaluation, not making a final decision.
+        A: I'm not canceling it today—I want us to see the numbers before the cancellation deadline passes.
+
+[3/3] scenario_003
+    domain: small retail business  (Speaker A is the owner of an independent bookstore, and Speaker B is the longtime store manager.)
+    A proposes: What if we don’t renew the lease and run the shop online with weekend pop-ups instead?
+      [laughter]  Establish that the proposal is serious and explain the financial reason it is worth considering.
+        A: I am serious—the new lease would swallow almost everything we make on the store floor.
+      [sigh]  Acknowledge the emotional and community loss involved in the proposal.
+        A: I know—the thought of giving up the reading room hurts me too.
+      [gasp]  Reduce the perceived immediacy and clarify that the proposal could be tested before making a final commitment.
+        A: We would not shut the doors tomorrow; we could try the pop-ups for a few months before we give notice.
+
+wrote /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/make_response/out/scenarios.json and /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/make_response/out/scenarios.md

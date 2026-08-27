@@ -1,0 +1,2307 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-23T07:35:09.420666+00:00",
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "turns_per_item": 8,
+  "events_per_item": 2,
+  "seed": 0,
+  "verified": true,
+  "pipeline": "stage 1 plans the latent ground truth (no dialogue); stage 2 realizes it as 8 turns and reports the actual evidence turns; stage 3 verifies independently. A failing transcript is rebuilt against the same fixed plan — the ground truth is never edited to fit the transcript.",
+  "results": [
+    {
+      "item_id": "grunt_gasp_001",
+      "contrast": "grunt-gasp",
+      "assigned_domain": "school and student life",
+      "error": "GenerationFailed: no plan could be realized: event_1: a competing interpretation of the same vocalization at that point is about as well supported as the intended one",
+      "last_problems": [
+        "event_1: a competing interpretation of the same vocalization at that point is about as well supported as the intended one"
+      ],
+      "last_plan": {
+        "domain": "Two students discussing a last-minute request to serve on the freshman-orientation team at their school.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "grunt",
+          "interpretation": "B gives a grudging acknowledgment that they will go along with A's enrollment of them on the orientation team because the service hours would resolve B's credit shortfall, even though B had made clear that they did not want to give up the time.",
+          "evidence_plan": "Earlier context should establish that the orientation team urgently needs a pair of student volunteers, that B is short of required service hours but has been reluctant to spend time on this event, and that A has decided to register both of them before the available places disappear."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "gasp",
+          "interpretation": "A reacts with alarm after B reveals that the official orientation schedule conflicts with A's nonrepeatable chemistry practical, exposing that A's quick decision has put an important assessment at risk.",
+          "evidence_plan": "Earlier context should establish that A must attend a chemistry practical that cannot easily be made up, that A believed orientation would occur after school based on an earlier schedule, and that B has just found or received authoritative information showing that the orientation session is actually during the practical."
+        }
+      },
+      "last_draft": {
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The orientation office needs one more pair of student volunteers today. Their flyer said the session was after school, so I thought it would not touch my chemistry practical; Dr. Lin said that practical has no makeup."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I still need six service hours to graduate, but I was planning to keep Friday free. I really do not want to give up the afternoon for orientation."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I am registering both of us now before those two places disappear. Those hours clear your shortfall, and the team needs us."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "[grunt]"
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "Good. I used the time from the flyer, so I can still be at the lab and meet the team afterward."
+          },
+          {
+            "turn": 6,
+            "speaker": "B",
+            "text": "The registration email includes the official schedule: check-in is at one and the session runs until four. That is exactly when your chemistry practical is."
+          },
+          {
+            "turn": 7,
+            "speaker": "A",
+            "text": "[gasp]"
+          },
+          {
+            "turn": 8,
+            "speaker": "B",
+            "text": "The confirmation says changes have to go through the orientation office, so you should contact them before they close."
+          }
+        ],
+        "event_1": {
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A says the orientation office urgently needs a final pair, while B says they are six service hours short but do not want to give up Friday afternoon. A then says they are registering both of them immediately and that the hours will clear B's shortfall."
+        },
+        "event_2": {
+          "evidence_turns": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "evidence_summary": "A says the chemistry practical has no makeup and initially relies on a flyer placing orientation after school. After registering both students and expecting to attend the lab first, B reads the official registration schedule showing orientation runs from one to four, exactly during the practical."
+        }
+      },
+      "last_verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": false,
+          "event_2": true
+        },
+        "overall": "FAIL",
+        "reason": "Event 1 fails intended_interpretation_clearly_best because B's grunt after being enrolled without consent is about equally compatible with a protest or disapproval as with grudging agreement to go along."
+      }
+    },
+    {
+      "item_id": "gasp_laughter_001",
+      "contrast": "gasp-laughter",
+      "domain": "Neighbours discussing repeated obstruction of the shared apartment fire stairwell and how to address it without escalating conflict in the building.",
+      "assigned_domain": "neighbours and shared spaces",
+      "plan": {
+        "domain": "Neighbours discussing repeated obstruction of the shared apartment fire stairwell and how to address it without escalating conflict in the building.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with alarm when A mentions security footage showing the distinctive folding handcart B used, because B realizes the evidence may expose that they were responsible for the obstruction they had just condemned.",
+          "evidence_plan": "Earlier context should establish that residents have repeatedly found the fire stairwell blocked, that B has strongly supported reporting the responsible neighbour, and that A has obtained or reviewed security footage which shows a distinctive folding handcart associated with B near the stairwell at the relevant time."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "laughter",
+          "interpretation": "A playfully mocks B after B admits leaving the handcart in the stairwell, highlighting the irony that B had been the most vocal advocate for punishing whoever caused the problem.",
+          "evidence_plan": "Before this reaction, the conversation should establish the building's concern about keeping the shared fire stairwell clear, B's earlier forceful criticism of the unknown offender, A's indication that the footage points toward B's handcart, and B's eventual acknowledgement that they left it there while carrying items upstairs."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "The fire stairwell has been blocked twice this week, and the manager says it has to stay clear."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "Then we should report whoever is doing it. Leaving things on an escape route is completely irresponsible."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "I checked the security footage from Tuesday. It shows that distinctive blue folding handcart you use beside the stairwell at the relevant time."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "Before we involve the manager, is there something you want to clarify? We can sort it out quietly if it was an accident."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "I did leave it there while I carried boxes upstairs. I meant to come straight back for it, but I got distracted."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[laughter]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "All right, I earned that. I will apologize to the manager and make sure it never happens again."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with alarm when A mentions security footage showing the distinctive folding handcart B used, because B realizes the evidence may expose that they were responsible for the obstruction they had just condemned.",
+          "evidence_plan": "Earlier context should establish that residents have repeatedly found the fire stairwell blocked, that B has strongly supported reporting the responsible neighbour, and that A has obtained or reviewed security footage which shows a distinctive folding handcart associated with B near the stairwell at the relevant time.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A says the fire stairwell has repeatedly been blocked, B strongly urges reporting the responsible person, and A says security footage shows B's distinctive blue folding handcart by the stairwell at the relevant time."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "laughter",
+          "interpretation": "A playfully mocks B after B admits leaving the handcart in the stairwell, highlighting the irony that B had been the most vocal advocate for punishing whoever caused the problem.",
+          "evidence_plan": "Before this reaction, the conversation should establish the building's concern about keeping the shared fire stairwell clear, B's earlier forceful criticism of the unknown offender, A's indication that the footage points toward B's handcart, and B's eventual acknowledgement that they left it there while carrying items upstairs.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "evidence_summary": "The residents are concerned about keeping the fire stairwell clear, B had forcefully called for reporting the offender, A connected the footage to B's handcart, and B admits leaving the cart there while carrying boxes upstairs."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "B reacts with alarm when A mentions security footage showing the distinctive folding handcart B used, because B realizes the evidence may expose that they were responsible for the obstruction they had just condemned.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A says the fire stairwell has repeatedly been blocked, B strongly urges reporting the responsible person, and A says security footage shows B's distinctive blue folding handcart by the stairwell at the relevant time."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "laughter",
+          "q_what_it_means": "A playfully mocks B after B admits leaving the handcart in the stairwell, highlighting the irony that B had been the most vocal advocate for punishing whoever caused the problem.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3,
+              6
+            ],
+            "summary": "The residents are concerned about keeping the fire stairwell clear, B had forcefully called for reporting the offender, A connected the footage to B's handcart, and B admits leaving the cart there while carrying boxes upstairs."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 4359,
+        "output_tokens": 2848
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "The cited turns establish B’s incriminating reversal and later admission, making alarm at exposure and A’s amused ridicule of B’s hypocrisy the clearest contextual readings while the words alone leave the precise vocal reactions open."
+      }
+    },
+    {
+      "item_id": "sigh_gasp_001",
+      "contrast": "sigh-gasp",
+      "domain": "Two friends are preparing a handmade tabletop escape-room puzzle as a side project for a library hobby fair.",
+      "assigned_domain": "hobbies and side projects",
+      "plan": {
+        "domain": "Two friends are preparing a handmade tabletop escape-room puzzle as a side project for a library hobby fair.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "sigh",
+          "interpretation": "B reluctantly concedes that the elaborate powered puzzle mechanism they have spent weeks designing cannot be used under the fair’s newly confirmed space and equipment restrictions, and that A’s plainer card-based backup is the only workable entry.",
+          "evidence_plan": "Earlier context must establish that B is personally invested in an ambitious mechanism that needs more table space and external equipment than a simple puzzle would, that A has already prepared a less ambitious self-contained backup, and that the organizer’s confirmed rules rule out the requirements of B’s original design."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "gasp",
+          "interpretation": "A is struck by admiration at B’s unexpectedly ingenious redesign: despite having just accepted the modest fallback, B has found a compact manual way to preserve the original puzzle’s central trick within the restrictions.",
+          "evidence_plan": "Before this event, the transcript must establish the limitations that made B’s original design seem unusable, B’s earlier reluctant acceptance of A’s basic backup, and B’s subsequent description of a genuinely compact, hand-operated redesign that keeps the distinctive mechanism A had understood to be impossible under the fair’s rules. It should also establish that A was already content with the backup, making A’s reaction chiefly appreciation of B’s ingenuity rather than concern about whether they will have an entry."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I finished a self-contained card-deck backup for the fair. It fits in a shoebox, even if it is plainer than your route-changing maze."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "I spent three weekends on that maze. Its motor and external battery pack drive the hidden carriage, and the two-panel layout needs far more than a little table."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "Mara just confirmed one 30-inch table per project, no outlets or batteries, and every piece has to stay on the tabletop."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[sigh]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "That's all right; I'm genuinely happy with the deck. The book-clue cards are finished, and we can enter them as they are."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "I was ready to submit the deck, but the route-changing trick can survive: a thumb wheel beneath a postcard-sized board can advance a hidden paper carriage one notch at a time. No power, no loose equipment, and it fits beside the cards."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "The path can still change only after the right clue, but players will turn the wheel themselves."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "sigh",
+          "interpretation": "B reluctantly concedes that the elaborate powered puzzle mechanism they have spent weeks designing cannot be used under the fair’s newly confirmed space and equipment restrictions, and that A’s plainer card-based backup is the only workable entry.",
+          "evidence_plan": "Earlier context must establish that B is personally invested in an ambitious mechanism that needs more table space and external equipment than a simple puzzle would, that A has already prepared a less ambitious self-contained backup, and that the organizer’s confirmed rules rule out the requirements of B’s original design.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A has completed a compact card-deck backup, while B explains that the maze uses a motor, an external battery pack, and a wide two-panel layout. A then reports the confirmed single-table, no-power, tabletop-only rules."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "gasp",
+          "interpretation": "A is struck by admiration at B’s unexpectedly ingenious redesign: despite having just accepted the modest fallback, B has found a compact manual way to preserve the original puzzle’s central trick within the restrictions.",
+          "evidence_plan": "Before this event, the transcript must establish the limitations that made B’s original design seem unusable, B’s earlier reluctant acceptance of A’s basic backup, and B’s subsequent description of a genuinely compact, hand-operated redesign that keeps the distinctive mechanism A had understood to be impossible under the fair’s rules. It should also establish that A was already content with the backup, making A’s reaction chiefly appreciation of B’s ingenuity rather than concern about whether they will have an entry.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "evidence_summary": "The earlier turns establish that the powered, wide maze violates the fair rules and that A is already content to enter the completed card deck. B then says B was ready to submit the deck but describes a postcard-sized thumb-wheel redesign that manually preserves the hidden route-changing carriage."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "sigh",
+          "q_what_it_means": "B reluctantly concedes that the elaborate powered puzzle mechanism they have spent weeks designing cannot be used under the fair’s newly confirmed space and equipment restrictions, and that A’s plainer card-based backup is the only workable entry.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A has completed a compact card-deck backup, while B explains that the maze uses a motor, an external battery pack, and a wide two-panel layout. A then reports the confirmed single-table, no-power, tabletop-only rules."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "A is struck by admiration at B’s unexpectedly ingenious redesign: despite having just accepted the modest fallback, B has found a compact manual way to preserve the original puzzle’s central trick within the restrictions.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            "summary": "The earlier turns establish that the powered, wide maze violates the fair rules and that A is already content to enter the completed card deck. B then says B was ready to submit the deck but describes a postcard-sized thumb-wheel redesign that manually preserves the hidden route-changing carriage."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 2,
+        "transcript": 3
+      },
+      "usage": {
+        "input_tokens": 21993,
+        "output_tokens": 19225
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are natural context-dependent reactions, and the cited turns establish the constraints, fallback, and compact redesign that make the intended readings clearly preferable."
+      }
+    },
+    {
+      "item_id": "sob_gasp_001",
+      "contrast": "sob-gasp",
+      "domain": "Two housemates sorting donations after a kitchen cleanup accidentally send an irreplaceable family recipe binder away.",
+      "assigned_domain": "household problems",
+      "plan": {
+        "domain": "Two housemates sorting donations after a kitchen cleanup accidentally send an irreplaceable family recipe binder away.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B realizes with alarm that their attempt to clear the kitchen counter has put A's only binder of inherited handwritten recipes into a sealed donation box that is about to be collected.",
+          "evidence_plan": "Earlier context should establish that the blue recipe binder contains A's late grandmother's original handwritten recipes and is uniquely important to A, that B moved items from the counter into a charity-donation box while tidying, and that A has placed the sealed box outside for an imminent collection."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is overwhelmed by the loss of the irreplaceable family binder after learning that the donation collection has already gone and the box cannot be traced or retrieved.",
+          "evidence_plan": "Before this reaction, the conversation should establish that B's earlier mistake endangered the sentimental binder, that the charity truck has already collected the donation box, and that attempts to contact the collection service have confirmed there is no practical way to identify or recover that particular box."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "Please keep the blue recipe binder on the counter; it has my late grandmother's original handwritten recipes, and it's the only copy."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "While I was clearing the kitchen, I put everything from the counter into the charity-donation box."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "I sealed that box and set it outside for the truck, which is due any minute. Was the binder there?"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "I ran outside, but the truck has already collected it. I called the service, and they said the boxes are unloaded together without individual labels."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "They checked with the driver and depot, but they cannot identify or pull back one particular sealed box now."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[sob]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "I am so sorry. I should never have put anything from that counter in the donation box."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B realizes with alarm that their attempt to clear the kitchen counter has put A's only binder of inherited handwritten recipes into a sealed donation box that is about to be collected.",
+          "evidence_plan": "Earlier context should establish that the blue recipe binder contains A's late grandmother's original handwritten recipes and is uniquely important to A, that B moved items from the counter into a charity-donation box while tidying, and that A has placed the sealed box outside for an imminent collection.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A explains that the blue binder contains the only originals of their late grandmother's handwritten recipes; B says they put everything from the counter into a charity box; A says that sealed box is outside for an imminent collection and asks whether the binder was in it."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is overwhelmed by the loss of the irreplaceable family binder after learning that the donation collection has already gone and the box cannot be traced or retrieved.",
+          "evidence_plan": "Before this reaction, the conversation should establish that B's earlier mistake endangered the sentimental binder, that the charity truck has already collected the donation box, and that attempts to contact the collection service have confirmed there is no practical way to identify or recover that particular box.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "evidence_summary": "The binder is established as A's only copy of inherited handwritten recipes and as having been moved into the donation box. A then says the truck has already collected the box and the service cannot track individually labeled boxes, while B confirms neither the driver nor depot can identify or retrieve it."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "B realizes with alarm that their attempt to clear the kitchen counter has put A's only binder of inherited handwritten recipes into a sealed donation box that is about to be collected.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A explains that the blue binder contains the only originals of their late grandmother's handwritten recipes; B says they put everything from the counter into a charity box; A says that sealed box is outside for an imminent collection and asks whether the binder was in it."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "sob",
+          "q_what_it_means": "A is overwhelmed by the loss of the irreplaceable family binder after learning that the donation collection has already gone and the box cannot be traced or retrieved.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3,
+              5,
+              6
+            ],
+            "summary": "The binder is established as A's only copy of inherited handwritten recipes and as having been moved into the donation box. A then says the truck has already collected the box and the service cannot track individually labeled boxes, while B confirms neither the driver nor depot can identify or retrieve it."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 2,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 11929,
+        "output_tokens": 8210
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations naturally and contextually convey B’s alarmed realization and A’s grief over the now-unrecoverable irreplaceable binder; the cited turns directly establish each situation."
+      }
+    },
+    {
+      "item_id": "gasp_yawn_001",
+      "contrast": "gasp-yawn",
+      "domain": "Two siblings are trying to secure a specialist assessment appointment before one sibling's referral expires, while evaluating the clinic's proposed paid fast-track program.",
+      "assigned_domain": "health and appointments",
+      "plan": {
+        "domain": "Two siblings are trying to secure a specialist assessment appointment before one sibling's referral expires, while evaluating the clinic's proposed paid fast-track program.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with alarm when A reports that the clinic's first ordinary assessment slot is after B's referral will expire, threatening the appointment B has been waiting months to obtain.",
+          "evidence_plan": "Earlier context should establish that B has waited a long time for this specialist assessment, that the referral has a firm upcoming expiry date, and that A has contacted the clinic to check the available appointment options."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "yawn",
+          "interpretation": "A pointedly conveys bored skepticism toward the clinic's paid fast-track orientation after B describes its long, generic wellness curriculum, since the program is being marketed as help with an urgent appointment problem without actually producing an earlier assessment slot.",
+          "evidence_plan": "Before this reaction, the conversation should establish the urgency created by B's expiring referral and lack of regular appointment availability, that the clinic has offered a paid fast-track program as an alternative, and that B has described the program as a lengthy set of generic sessions rather than a route to an earlier specialist assessment."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I called the clinic about your specialist assessment. I know you have been waiting since November, and the referral expires on the 30th."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "Did they find anything before then?"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "Their first ordinary assessment slot is July 8, nine days after the referral ends."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "They offered a paid fast-track program instead, as though it might solve the timing problem."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "I read the details: it is six weeks of generic wellness workshops and phone sessions, and it does not give me an earlier specialist assessment."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[yawn]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "Then we should ask my doctor for a referral extension rather than pay for that."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with alarm when A reports that the clinic's first ordinary assessment slot is after B's referral will expire, threatening the appointment B has been waiting months to obtain.",
+          "evidence_plan": "Earlier context should establish that B has waited a long time for this specialist assessment, that the referral has a firm upcoming expiry date, and that A has contacted the clinic to check the available appointment options.",
+          "evidence_turns": [
+            1,
+            3
+          ],
+          "evidence_summary": "A says B has waited since November, that the referral expires on the 30th, and that A contacted the clinic; A then reports that the first ordinary slot is nine days after the referral ends."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "yawn",
+          "interpretation": "A pointedly conveys bored skepticism toward the clinic's paid fast-track orientation after B describes its long, generic wellness curriculum, since the program is being marketed as help with an urgent appointment problem without actually producing an earlier assessment slot.",
+          "evidence_plan": "Before this reaction, the conversation should establish the urgency created by B's expiring referral and lack of regular appointment availability, that the clinic has offered a paid fast-track program as an alternative, and that B has described the program as a lengthy set of generic sessions rather than a route to an earlier specialist assessment.",
+          "evidence_turns": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "evidence_summary": "The referral has an upcoming expiry and no ordinary appointment is available in time. A says the clinic offered a paid fast-track program, while B explains that it consists of six weeks of generic sessions and does not provide an earlier specialist assessment."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "B reacts with alarm when A reports that the clinic's first ordinary assessment slot is after B's referral will expire, threatening the appointment B has been waiting months to obtain.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              3
+            ],
+            "summary": "A says B has waited since November, that the referral expires on the 30th, and that A contacted the clinic; A then reports that the first ordinary slot is nine days after the referral ends."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "yawn",
+          "q_what_it_means": "A pointedly conveys bored skepticism toward the clinic's paid fast-track orientation after B describes its long, generic wellness curriculum, since the program is being marketed as help with an urgent appointment problem without actually producing an earlier assessment slot.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              3,
+              5,
+              6
+            ],
+            "summary": "The referral has an upcoming expiry and no ordinary appointment is available in time. A says the clinic offered a paid fast-track program, while B explains that it consists of six weeks of generic sessions and does not provide an earlier specialist assessment."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 4660,
+        "output_tokens": 2933
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are naturally and contextually motivated by the referral deadline and the ineffective paid program; the words establish the circumstances but leave multiple possible reactions, while the gasp and pointed yawn select alarm and dismissive boredom respectively."
+      }
+    },
+    {
+      "item_id": "laughter_grunt_001",
+      "contrast": "laughter-grunt",
+      "domain": "Two friends trying to secure sold-out concert tickets for a weekend trip they have been planning together.",
+      "assigned_domain": "friendship",
+      "plan": {
+        "domain": "Two friends trying to secure sold-out concert tickets for a weekend trip they have been planning together.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B responds with delighted, affectionate disbelief that A's supposedly far-fetched contest entry actually secured the tickets after B had doubted that A's improvised approach could work.",
+          "evidence_plan": "Earlier context should establish that the concert is important to both friends, that ordinary ticket options have failed, that A chose an unconventional contest-based route despite B's doubts, and that A has already revealed that the entry succeeded."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "grunt",
+          "interpretation": "A begrudgingly accepts B's fair insistence that A handle the unpleasant dawn ticket collection, since A pushed for the contest route and B had made clear that an early pickup would conflict with B's late work shift.",
+          "evidence_plan": "Earlier context should establish that the prize tickets must be collected at an inconveniently early time, that B has a legitimate late work commitment the night before, that A initiated and defended the contest plan, and that B has asked A to take responsibility for collecting both tickets."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "Every resale listing for Saturday vanished, and this concert was the whole reason we planned the weekend."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "I know. Your radio-station contest idea still sounds wildly optimistic; my closing shift Friday runs until midnight, so I cannot spend the night chasing tickets."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "Mock my terrible rhyme all you want—the station just emailed: we won the pair."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[laughter]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "There is one catch: the prize desk opens at 5:30 Saturday, and they release unclaimed tickets at six."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "Since you championed the contest, please collect both; after that midnight closing shift, I cannot make a dawn trip across town."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[grunt]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "Thanks. I will meet you at the station afterward, and breakfast is on me."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B responds with delighted, affectionate disbelief that A's supposedly far-fetched contest entry actually secured the tickets after B had doubted that A's improvised approach could work.",
+          "evidence_plan": "Earlier context should establish that the concert is important to both friends, that ordinary ticket options have failed, that A chose an unconventional contest-based route despite B's doubts, and that A has already revealed that the entry succeeded.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A says the sold-out concert is the reason for their weekend trip, B calls A's radio contest idea wildly optimistic, and A reveals that their rhyme entry won a pair of tickets."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "grunt",
+          "interpretation": "A begrudgingly accepts B's fair insistence that A handle the unpleasant dawn ticket collection, since A pushed for the contest route and B had made clear that an early pickup would conflict with B's late work shift.",
+          "evidence_plan": "Earlier context should establish that the prize tickets must be collected at an inconveniently early time, that B has a legitimate late work commitment the night before, that A initiated and defended the contest plan, and that B has asked A to take responsibility for collecting both tickets.",
+          "evidence_turns": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "evidence_summary": "B says a Friday closing shift lasts until midnight, A reveals that A's contest entry won, A explains the tickets must be collected at 5:30 Saturday, and B asks A to collect both tickets because A championed the contest."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "laughter",
+          "q_what_it_means": "B responds with delighted, affectionate disbelief that A's supposedly far-fetched contest entry actually secured the tickets after B had doubted that A's improvised approach could work.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A says the sold-out concert is the reason for their weekend trip, B calls A's radio contest idea wildly optimistic, and A reveals that their rhyme entry won a pair of tickets."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "grunt",
+          "q_what_it_means": "A begrudgingly accepts B's fair insistence that A handle the unpleasant dawn ticket collection, since A pushed for the contest route and B had made clear that an early pickup would conflict with B's late work shift.",
+          "q_which_evidence": {
+            "turns": [
+              2,
+              3,
+              5,
+              6
+            ],
+            "summary": "B says a Friday closing shift lasts until midnight, A reveals that A's contest entry won, A explains the tickets must be collected at 5:30 Saturday, and B asks A to collect both tickets because A championed the contest."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 4763,
+        "output_tokens": 4335
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both sounds naturally and contextually convey B’s delighted reversal after doubting the contest and A’s reluctant acceptance of the early collection duty; the surrounding words establish the situations without uniquely dictating those vocal reactions."
+      }
+    },
+    {
+      "item_id": "grunt_sigh_001",
+      "contrast": "grunt-sigh",
+      "domain": "Two co-parents are coordinating their child's last-minute promise to bring allergy-safe baked goods to a school potluck.",
+      "assigned_domain": "family life",
+      "plan": {
+        "domain": "Two co-parents are coordinating their child's last-minute promise to bring allergy-safe baked goods to a school potluck.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "grunt",
+          "interpretation": "B signals skeptical disapproval of A's claim that the potluck contribution will be easy to manage, because A volunteered a large allergy-safe order despite knowing B is unavailable to help and has already warned that ordinary ingredients will not work.",
+          "evidence_plan": "Earlier context should establish that A committed the family to supplying a substantial number of treats, that the child attending has a serious ingredient restriction, and that B had previously made clear they would be working and could not take on last-minute baking. A should present an overly simple plan that overlooks those constraints before B reacts."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sigh",
+          "interpretation": "A reluctantly lets go of the hoped-for homemade contribution after the family’s timing, B's unavailability, and the allergy requirement have made the available shortcuts unsuitable.",
+          "evidence_plan": "Before this reaction, the conversation should establish A's desire to keep the promise made on the child's behalf, B's lack of time to assist, and the practical reasons that the suggested boxed, shop-bought, or hurried alternatives cannot safely meet the dietary requirement or be obtained in time."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I told Leo we'd bring three dozen homemade treats for his 8 a.m. class potluck tomorrow."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "Leo's dairy and peanut allergy is serious, so ordinary mixes and icing are out, and I'm covering the evening shift."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "It'll be easy—I'll grab a boxed mix and frosting on my way home and make all three dozen tonight."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[grunt]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "I only promised homemade because Leo was so excited to contribute something himself."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "The safe shop is sold out until Friday, every grocery mix nearby warns of peanut traces, and I won't be home before midnight."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[sigh]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "I'll message the teacher that Leo can bring paper plates instead of food."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "grunt",
+          "interpretation": "B signals skeptical disapproval of A's claim that the potluck contribution will be easy to manage, because A volunteered a large allergy-safe order despite knowing B is unavailable to help and has already warned that ordinary ingredients will not work.",
+          "evidence_plan": "Earlier context should establish that A committed the family to supplying a substantial number of treats, that the child attending has a serious ingredient restriction, and that B had previously made clear they would be working and could not take on last-minute baking. A should present an overly simple plan that overlooks those constraints before B reacts.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A committed the family to three dozen treats, B stated Leo's serious dairy and peanut allergy and evening-shift unavailability, and A then proposed an overly simple boxed-mix plan."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sigh",
+          "interpretation": "A reluctantly lets go of the hoped-for homemade contribution after the family’s timing, B's unavailability, and the allergy requirement have made the available shortcuts unsuitable.",
+          "evidence_plan": "Before this reaction, the conversation should establish A's desire to keep the promise made on the child's behalf, B's lack of time to assist, and the practical reasons that the suggested boxed, shop-bought, or hurried alternatives cannot safely meet the dietary requirement or be obtained in time.",
+          "evidence_turns": [
+            1,
+            2,
+            5,
+            6
+          ],
+          "evidence_summary": "A had promised Leo homemade treats and wanted to preserve that promise, while B's work shift, Leo's allergy, sold-out safe shop, and unsafe grocery mixes made the available last-minute options unworkable."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "grunt",
+          "q_what_it_means": "B signals skeptical disapproval of A's claim that the potluck contribution will be easy to manage, because A volunteered a large allergy-safe order despite knowing B is unavailable to help and has already warned that ordinary ingredients will not work.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A committed the family to three dozen treats, B stated Leo's serious dairy and peanut allergy and evening-shift unavailability, and A then proposed an overly simple boxed-mix plan."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "sigh",
+          "q_what_it_means": "A reluctantly lets go of the hoped-for homemade contribution after the family’s timing, B's unavailability, and the allergy requirement have made the available shortcuts unsuitable.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              5,
+              6
+            ],
+            "summary": "A had promised Leo homemade treats and wanted to preserve that promise, while B's work shift, Leo's allergy, sold-out safe shop, and unsafe grocery mixes made the available last-minute options unworkable."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 4874,
+        "output_tokens": 3257
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations naturally and contextually convey B's skepticism about the unsafe simplistic plan and A's reluctant abandonment of the homemade promise; the words establish constraints without uniquely dictating either reaction."
+      }
+    },
+    {
+      "item_id": "sob_grunt_001",
+      "contrast": "sob-grunt",
+      "domain": "Two former youth soccer teammates are organizing a retirement reception for their longtime coach.",
+      "assigned_domain": "planning an event",
+      "plan": {
+        "domain": "Two former youth soccer teammates are organizing a retirement reception for their longtime coach.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "sob",
+          "interpretation": "B is overcome with relieved gratitude when A reveals that the retiring coach kept B's old captain's note and specifically hopes B will attend, overturning B's fear that abruptly leaving the team years ago had permanently hurt the coach.",
+          "evidence_plan": "Earlier context must establish that A and B are planning the coach's reception, that B left the team abruptly and has worried ever since that the coach felt betrayed, and that A has learned the coach preserved a personal note from B and asked that B be included in the event."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "grunt",
+          "interpretation": "A conveys exasperated disapproval after B admits to inviting every former player despite A's earlier warning that the booked room has a strict capacity limit and that space must be protected for the coach's family and current team.",
+          "evidence_plan": "Earlier context must establish the reception's limited venue capacity, A's explicit concern about reserving places for the coach's family and current players, B's wish to make the reunion feel inclusive, and B's subsequent disclosure that invitations have already been sent to the entire former roster."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "Coach Ramirez's retirement reception is next month. The community room holds sixty, so we need to reserve places for her family and the current varsity squad before inviting alumni."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "I still want the old roster included if we can manage it. I disappeared halfway through senior season, and I've always assumed Coach Ramirez saw that as betraying the team."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "She didn't. When I said you might stay away, she pulled your captain's note from her desk and told me to make sure you knew she hopes you'll come."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[sob]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "I want it to feel like a reunion too, but we can't use the family and current-team seats for alumni; the room really does stop at sixty."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "I understand. I already sent invitations to every former player, though. I thought the more people who came, the better."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[grunt]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "I'll send a follow-up tonight asking everyone to confirm, then we can prioritize the reserved seats."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "sob",
+          "interpretation": "B is overcome with relieved gratitude when A reveals that the retiring coach kept B's old captain's note and specifically hopes B will attend, overturning B's fear that abruptly leaving the team years ago had permanently hurt the coach.",
+          "evidence_plan": "Earlier context must establish that A and B are planning the coach's reception, that B left the team abruptly and has worried ever since that the coach felt betrayed, and that A has learned the coach preserved a personal note from B and asked that B be included in the event.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A identifies the event as Coach Ramirez's retirement reception; B says they left the team midway through senior season and feared Coach Ramirez felt betrayed; A says the coach kept B's captain's note and hopes B will attend."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "grunt",
+          "interpretation": "A conveys exasperated disapproval after B admits to inviting every former player despite A's earlier warning that the booked room has a strict capacity limit and that space must be protected for the coach's family and current team.",
+          "evidence_plan": "Earlier context must establish the reception's limited venue capacity, A's explicit concern about reserving places for the coach's family and current players, B's wish to make the reunion feel inclusive, and B's subsequent disclosure that invitations have already been sent to the entire former roster.",
+          "evidence_turns": [
+            1,
+            2,
+            5,
+            6
+          ],
+          "evidence_summary": "A explains that the sixty-person room must preserve places for the coach's family and current squad, while B wants the former roster included. A repeats the restriction, and B then admits to having invited every former player."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "sob",
+          "q_what_it_means": "B is overcome with relieved gratitude when A reveals that the retiring coach kept B's old captain's note and specifically hopes B will attend, overturning B's fear that abruptly leaving the team years ago had permanently hurt the coach.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A identifies the event as Coach Ramirez's retirement reception; B says they left the team midway through senior season and feared Coach Ramirez felt betrayed; A says the coach kept B's captain's note and hopes B will attend."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "grunt",
+          "q_what_it_means": "A conveys exasperated disapproval after B admits to inviting every former player despite A's earlier warning that the booked room has a strict capacity limit and that space must be protected for the coach's family and current team.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              5,
+              6
+            ],
+            "summary": "A explains that the sixty-person room must preserve places for the coach's family and current squad, while B wants the former roster included. A repeats the restriction, and B then admits to having invited every former player."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 4959,
+        "output_tokens": 3868
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are natural context-dependent reactions, with the cited turns directly establishing B's relieved response to the coach's acceptance and A's disapproving exasperation at the capacity-threatening invitations; the surrounding words permit reactions rather than explicitly announcing them."
+      }
+    },
+    {
+      "item_id": "yawn_grunt_001",
+      "contrast": "yawn-grunt",
+      "domain": "Two siblings are shopping for a replacement washing machine after their old one begins leaking, balancing an urgent delivery deadline against a tightly planned household budget.",
+      "assigned_domain": "shopping and money",
+      "plan": {
+        "domain": "Two siblings are shopping for a replacement washing machine after their old one begins leaking, balancing an urgent delivery deadline against a tightly planned household budget.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "yawn",
+          "interpretation": "B signals impatient boredom with A's drawn-out coupon and reward-point calculations, implicitly urging A to stop trying to optimize every small saving and make a choice before the needed delivery window closes.",
+          "evidence_plan": "Earlier context should establish that the old machine is unusable and that ordering by a particular cutoff is necessary for prompt delivery. It should also establish that A is determined not to overpay and has begun comparing several minor discounts or loyalty offers, while B has already emphasized that waiting or visiting more stores could sacrifice the practical delivery option."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "grunt",
+          "interpretation": "A gives grudging assent to B's recommendation to buy the available machine at the higher displayed price, abandoning A's earlier spending cap because the apparently cheaper alternatives omit essential delivery, installation, or removal costs.",
+          "evidence_plan": "Before this point, the transcript should establish A's original maximum budget and B's preference for an immediately available model. It should also reveal that the lower advertised options A favored would require extra charges or delays that make them unsuitable for the leaking-machine situation, and that B has presented the in-stock package as the more realistic choice."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "The washer is leaking across the laundry-room floor, so we need a replacement today, but I promised to keep the total under $700."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "This store can deliver, install, and take away the old one tomorrow only if we order the in-stock model before four. Looking at more stores could cost us that window."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "I know, but this coupon saves $20, my reward points cover another $15, and the card offer might beat both if I compare the three listings carefully."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[yawn]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "The $620 online listings are tempting, though."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "They add $120 for delivery, $90 for installation, and $50 to remove the old machine, and they cannot come until next week. The in-stock $760 package includes all of that tomorrow; should I place the order?"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[grunt]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "All right, I’ll submit it now so they can take the old washer away tomorrow."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "yawn",
+          "interpretation": "B signals impatient boredom with A's drawn-out coupon and reward-point calculations, implicitly urging A to stop trying to optimize every small saving and make a choice before the needed delivery window closes.",
+          "evidence_plan": "Earlier context should establish that the old machine is unusable and that ordering by a particular cutoff is necessary for prompt delivery. It should also establish that A is determined not to overpay and has begun comparing several minor discounts or loyalty offers, while B has already emphasized that waiting or visiting more stores could sacrifice the practical delivery option.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A says the leaking washer requires a replacement today, B explains the before-four cutoff for next-day service, and A delays over several small coupons, points, and card offers."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "grunt",
+          "interpretation": "A gives grudging assent to B's recommendation to buy the available machine at the higher displayed price, abandoning A's earlier spending cap because the apparently cheaper alternatives omit essential delivery, installation, or removal costs.",
+          "evidence_plan": "Before this point, the transcript should establish A's original maximum budget and B's preference for an immediately available model. It should also reveal that the lower advertised options A favored would require extra charges or delays that make them unsuitable for the leaking-machine situation, and that B has presented the in-stock package as the more realistic choice.",
+          "evidence_turns": [
+            1,
+            2,
+            5,
+            6
+          ],
+          "evidence_summary": "A set a $700 total cap, B identified the immediate in-stock delivery option, and B explains that the cheaper $620 listings add delivery, installation, and removal fees and are delayed until next week, while the $760 package includes those services tomorrow."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "yawn",
+          "q_what_it_means": "B signals impatient boredom with A's drawn-out coupon and reward-point calculations, implicitly urging A to stop trying to optimize every small saving and make a choice before the needed delivery window closes.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A says the leaking washer requires a replacement today, B explains the before-four cutoff for next-day service, and A delays over several small coupons, points, and card offers."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "grunt",
+          "q_what_it_means": "A gives grudging assent to B's recommendation to buy the available machine at the higher displayed price, abandoning A's earlier spending cap because the apparently cheaper alternatives omit essential delivery, installation, or removal costs.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              5,
+              6
+            ],
+            "summary": "A set a $700 total cap, B identified the immediate in-stock delivery option, and B explains that the cheaper $620 listings add delivery, installation, and removal fees and are delayed until next week, while the $760 package includes those services tomorrow."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 5005,
+        "output_tokens": 2751
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "B’s yawn is contextually directed at A’s deadline-threatening penny-saving deliberation, and A’s grunt is best read as reluctant consent after the full-cost comparison; the surrounding words establish the circumstances but do not themselves determine the vocalizations’ impatience and grudgingness."
+      }
+    },
+    {
+      "item_id": "laughter_sigh_001",
+      "contrast": "laughter-sigh",
+      "domain": "Two friends are navigating an unfamiliar coastal city on the final evening of a budget trip, trying to reach their airport before an early flight home.",
+      "assigned_domain": "travel",
+      "plan": {
+        "domain": "Two friends are navigating an unfamiliar coastal city on the final evening of a budget trip, trying to reach their airport before an early flight home.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B playfully mocks A’s confidence in the elaborate money-saving route after A dismissed B’s simpler transfer suggestion and the carefully researched itinerary has led them to the tourist harbor rather than the airport connection.",
+          "evidence_plan": "Earlier turns should establish that A insisted on combining several cheap local services instead of paying for the straightforward airport transfer, despite B’s warning that the similarly named harbor and airport stops are easy to confuse. They should also establish that A had presented the route as carefully checked and comfortably timed, before A realizes that the booking or map directions point them to the tourist harbor."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sigh",
+          "interpretation": "A reluctantly concedes that B’s costly direct ride is now the sensible choice, because A’s failed bargain route has removed the time buffer A had been relying on and made protecting their early flight more important than preserving the trip budget.",
+          "evidence_plan": "Earlier turns should establish that A has been determined to stay within a tightly planned remaining budget and initially rejected the direct ride as wasteful. After the harbor mistake, the conversation should establish that the next cheap connection would leave too little margin for the early flight, while B explains that the direct ride is the only dependable option still available."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "We have €55 left, so I am not spending €42 on the airport transfer. My ferry, tram, and shuttle combination is €13; I checked every departure, and it still gives us two hours before our early flight."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "The direct transfer is simpler, and the stops here are confusing: Harbor Airport is not the airport stop, while Marina Harbor is the tourist waterfront. Are you sure your itinerary has the right one?"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "Wait—my booking says Marina Harbor, and those souvenir boats are definitely not an airport connection. I must have followed the wrong pin."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[laughter]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "The next cheap shuttle from this harbor will not get us there until 6:15, and our flight boards at 6:40. I was counting on the two-hour buffer, and paying €42 now wrecks the budget."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "The direct ride can leave now and should reach the terminal by 5:35. With the ferry and shuttle timing already gone, it is the only dependable option left."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[sigh]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "I have ordered the direct ride. We can sort out the final €42 when we get home; for now, let us get to the terminal."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B playfully mocks A’s confidence in the elaborate money-saving route after A dismissed B’s simpler transfer suggestion and the carefully researched itinerary has led them to the tourist harbor rather than the airport connection.",
+          "evidence_plan": "Earlier turns should establish that A insisted on combining several cheap local services instead of paying for the straightforward airport transfer, despite B’s warning that the similarly named harbor and airport stops are easy to confuse. They should also establish that A had presented the route as carefully checked and comfortably timed, before A realizes that the booking or map directions point them to the tourist harbor.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A rejects the €42 direct transfer for a carefully checked €13 multi-service route, B warns that Marina Harbor and the airport stop are easy to confuse, and A then discovers the booking leads to the tourist harbor."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sigh",
+          "interpretation": "A reluctantly concedes that B’s costly direct ride is now the sensible choice, because A’s failed bargain route has removed the time buffer A had been relying on and made protecting their early flight more important than preserving the trip budget.",
+          "evidence_plan": "Earlier turns should establish that A has been determined to stay within a tightly planned remaining budget and initially rejected the direct ride as wasteful. After the harbor mistake, the conversation should establish that the next cheap connection would leave too little margin for the early flight, while B explains that the direct ride is the only dependable option still available.",
+          "evidence_turns": [
+            1,
+            5,
+            6
+          ],
+          "evidence_summary": "A says the remaining budget is only €55 and initially rejects the direct ride, then explains that the next cheap connection would arrive just before boarding; B states that the direct ride is now the only dependable way to reach the terminal in time."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "laughter",
+          "q_what_it_means": "B playfully mocks A’s confidence in the elaborate money-saving route after A dismissed B’s simpler transfer suggestion and the carefully researched itinerary has led them to the tourist harbor rather than the airport connection.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A rejects the €42 direct transfer for a carefully checked €13 multi-service route, B warns that Marina Harbor and the airport stop are easy to confuse, and A then discovers the booking leads to the tourist harbor."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "sigh",
+          "q_what_it_means": "A reluctantly concedes that B’s costly direct ride is now the sensible choice, because A’s failed bargain route has removed the time buffer A had been relying on and made protecting their early flight more important than preserving the trip budget.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              5,
+              6
+            ],
+            "summary": "A says the remaining budget is only €55 and initially rejects the direct ride, then explains that the next cheap connection would arrive just before boarding; B states that the direct ride is now the only dependable way to reach the terminal in time."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 5122,
+        "output_tokens": 2796
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are naturally and contextually anchored by the cited route mistake and resulting loss of the budget option, while the words establish the predicament but do not themselves specify B’s playful mockery or A’s reluctant concession."
+      }
+    },
+    {
+      "item_id": "laughter_sob_001",
+      "contrast": "laughter-sob",
+      "domain": "Workplace interactions: two coworkers are finalizing a high-stakes client renewal packet before a deadline.",
+      "assigned_domain": "workplace interactions",
+      "plan": {
+        "domain": "Workplace interactions: two coworkers are finalizing a high-stakes client renewal packet before a deadline.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B playfully deflates A’s boast after A’s elaborate backup system proves to contain the wrong document versions.",
+          "evidence_plan": "Earlier context should establish that A insisted their detailed filing system made the renewal packet safe, that B had gently questioned the need for it, and that A has just discovered the archive lacks the signed version."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is overwhelmed with relief after B confirms the signed renewal was recovered, ending A’s fear of costing the team the account.",
+          "evidence_plan": "Earlier context should establish that the missing signed packet could jeopardize an important client renewal, that A feels personally responsible for its loss, and that B has confirmed a recoverable copy exists before A reacts."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "The renewal packet is safe in my four-folder archive: drafts, redlines, approvals, and executed copies. With the client deadline at five, nothing can slip through."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "I know you trust the color coding, but did we really need four folders for one renewal? I put a copy in the deal room too."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "The archive has every draft except the signed version. I was the one who filed it, and if we miss that signature, we could lose the account."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[laughter]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "I told everyone my system made this renewal foolproof; if I misplaced the executed packet, I may have cost the team our biggest client."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "Check the deal room: I found a signed scan, and legal says it is the recoverable copy we need."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[sob]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "I’ll upload it now and send the complete packet before five."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B playfully deflates A’s boast after A’s elaborate backup system proves to contain the wrong document versions.",
+          "evidence_plan": "Earlier context should establish that A insisted their detailed filing system made the renewal packet safe, that B had gently questioned the need for it, and that A has just discovered the archive lacks the signed version.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A confidently describes a detailed four-folder filing system, B gently questions the need for it, and A then discovers that the archive lacks the signed version."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is overwhelmed with relief after B confirms the signed renewal was recovered, ending A’s fear of costing the team the account.",
+          "evidence_plan": "Earlier context should establish that the missing signed packet could jeopardize an important client renewal, that A feels personally responsible for its loss, and that B has confirmed a recoverable copy exists before A reacts.",
+          "evidence_turns": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "evidence_summary": "The packet has a five o’clock deadline, A says the missing signature could lose the account and fears having cost the team its biggest client, then B finds a signed scan that legal can use."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "laughter",
+          "q_what_it_means": "B playfully deflates A’s boast after A’s elaborate backup system proves to contain the wrong document versions.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A confidently describes a detailed four-folder filing system, B gently questions the need for it, and A then discovers that the archive lacks the signed version."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "sob",
+          "q_what_it_means": "A is overwhelmed with relief after B confirms the signed renewal was recovered, ending A’s fear of costing the team the account.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              3,
+              5,
+              6
+            ],
+            "summary": "The packet has a five o’clock deadline, A says the missing signature could lose the account and fears having cost the team its biggest client, then B finds a signed scan that legal can use."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 2,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 6903,
+        "output_tokens": 4600
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "B’s prior mild teasing and the irony of A’s elaborate archive missing the signed copy make playful deflation the best reading of the laughter, while the recovery of the legally usable scan makes A’s sob most clearly relief after acute fear."
+      }
+    },
+    {
+      "item_id": "yawn_laughter_001",
+      "contrast": "yawn-laughter",
+      "domain": "Two friends are baking a layered cake for a community bake-sale table, with limited time before they must deliver it.",
+      "assigned_domain": "food and cooking",
+      "plan": {
+        "domain": "Two friends are baking a layered cake for a community bake-sale table, with limited time before they must deliver it.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "yawn",
+          "interpretation": "B signals impatience with A’s extended stories about the recipe and decoration choices, indirectly pushing A to stop lingering over details and start the time-sensitive preparation.",
+          "evidence_plan": "Earlier context should establish that the cake must be finished and delivered within a limited window, that B volunteered expecting to help with practical kitchen tasks, and that A has repeatedly diverted from those tasks into lengthy anecdotes or minor design deliberations."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "laughter",
+          "interpretation": "A playfully mocks B’s attempt to save time after B dismisses A’s warning about letting the batter rest and reveals that the improvised freezer shortcut has left it in an absurdly unusable state.",
+          "evidence_plan": "Earlier context should establish that A explained the resting step was necessary for the cake’s texture, that B was already impatient to move faster, and that B chose a shortcut instead of following that instruction before revealing the conspicuously bad result. The friends’ relationship should support gentle teasing rather than anger."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "We have two hours before the bake-sale table needs this cake, and my aunt always said her vanilla layers were better after she chose the frosting color to match the napkins."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "I volunteered to mix, bake, and wash up, so let's get the bowls moving before the delivery deadline catches us."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "Right, but should the piped border be roses or little stars? At the last sale, Mrs. Chen told me a whole story about why roses made her buy an extra slice."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[yawn]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "Fine, practical step first: once the batter is combined, it needs to rest for twenty minutes or the layers will turn rubbery."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "Twenty minutes sounded expensive, so I put the bowl in the freezer while you measured. Now the batter is frozen solid around the whisk."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[laughter]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "All right, chef, hand me a spoon and we'll rescue it before we miss the table."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "yawn",
+          "interpretation": "B signals impatience with A’s extended stories about the recipe and decoration choices, indirectly pushing A to stop lingering over details and start the time-sensitive preparation.",
+          "evidence_plan": "Earlier context should establish that the cake must be finished and delivered within a limited window, that B volunteered expecting to help with practical kitchen tasks, and that A has repeatedly diverted from those tasks into lengthy anecdotes or minor design deliberations.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A says the cake must reach the bake-sale table in two hours, B says they volunteered for practical kitchen work before the deadline, and A keeps discussing decoration details and a related story instead of beginning preparation."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "laughter",
+          "interpretation": "A playfully mocks B’s attempt to save time after B dismisses A’s warning about letting the batter rest and reveals that the improvised freezer shortcut has left it in an absurdly unusable state.",
+          "evidence_plan": "Earlier context should establish that A explained the resting step was necessary for the cake’s texture, that B was already impatient to move faster, and that B chose a shortcut instead of following that instruction before revealing the conspicuously bad result. The friends’ relationship should support gentle teasing rather than anger.",
+          "evidence_turns": [
+            5,
+            6
+          ],
+          "evidence_summary": "A explains that the batter needs a twenty-minute rest to avoid rubbery layers, and B reveals that they ignored the wait by using the freezer, leaving the batter frozen around the whisk."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "yawn",
+          "q_what_it_means": "B signals impatience with A’s extended stories about the recipe and decoration choices, indirectly pushing A to stop lingering over details and start the time-sensitive preparation.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A says the cake must reach the bake-sale table in two hours, B says they volunteered for practical kitchen work before the deadline, and A keeps discussing decoration details and a related story instead of beginning preparation."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "laughter",
+          "q_what_it_means": "A playfully mocks B’s attempt to save time after B dismisses A’s warning about letting the batter rest and reveals that the improvised freezer shortcut has left it in an absurdly unusable state.",
+          "q_which_evidence": {
+            "turns": [
+              5,
+              6
+            ],
+            "summary": "A explains that the batter needs a twenty-minute rest to avoid rubbery layers, and B reveals that they ignored the wait by using the freezer, leaving the batter frozen around the whisk."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 5008,
+        "output_tokens": 2587
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are natural contextual reactions, the cited turns establish their respective time-pressure and freezer-mishap causes, and neither intended pragmatic move is merely supplied by the sound category alone."
+      }
+    },
+    {
+      "item_id": "sigh_sob_001",
+      "contrast": "sigh-sob",
+      "domain": "Two adult siblings are clearing their late father's workshop while moving their mother from the family house into a smaller apartment.",
+      "assigned_domain": "moving house",
+      "plan": {
+        "domain": "Two adult siblings are clearing their late father's workshop while moving their mother from the family house into a smaller apartment.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "sigh",
+          "interpretation": "B reluctantly accepts that their father's large workbench cannot accompany their mother, after having hoped it could remain in the family despite the apartment's space and access limits.",
+          "evidence_plan": "Earlier turns should establish that the move has a firm deadline, that B has been especially determined to keep the workbench because of its connection to their father, and that A has checked the new apartment and confirmed that the bench cannot fit through the access route or be accommodated there."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is overwhelmed by grief and tender recognition when B reveals that their father had carefully saved A's childhood cards and drawings in the workbench they are about to give away, showing an affection A had not known about.",
+          "evidence_plan": "Earlier turns should establish that the siblings are clearing their late father's belongings, that the workbench must be passed on despite B's attachment to it, and that A and B discover a hidden drawer containing A's old cards or drawings that their father preserved over many years."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "Since Dad died, we've been clearing this workshop, and Mom's move is Friday, so it has to be empty by Thursday night."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "I know, but I still want his workbench to stay in the family. He built every cabinet in this house on it; maybe we can get it into Mom's apartment somehow."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "I measured the apartment and checked with the superintendent: the elevator door and the hallway turn are too narrow, and there is nowhere to put it once it is inside."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[sigh]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "I'll call the community woodshop, then. They can collect the bench tomorrow and keep it in use."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "Wait—there's a false drawer here. It is full of your old cards and drawings, from kindergarten through college, each tucked into a dated envelope. Dad kept every one."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[sob]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "He must have opened this drawer whenever he wanted to see what you were making."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "sigh",
+          "interpretation": "B reluctantly accepts that their father's large workbench cannot accompany their mother, after having hoped it could remain in the family despite the apartment's space and access limits.",
+          "evidence_plan": "Earlier turns should establish that the move has a firm deadline, that B has been especially determined to keep the workbench because of its connection to their father, and that A has checked the new apartment and confirmed that the bench cannot fit through the access route or be accommodated there.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A sets a Thursday deadline for emptying the late father's workshop before their mother's Friday move. B says they want to keep their father's workbench in the family, while A reports that the apartment's elevator, hallway, and available space cannot accommodate it."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is overwhelmed by grief and tender recognition when B reveals that their father had carefully saved A's childhood cards and drawings in the workbench they are about to give away, showing an affection A had not known about.",
+          "evidence_plan": "Earlier turns should establish that the siblings are clearing their late father's belongings, that the workbench must be passed on despite B's attachment to it, and that A and B discover a hidden drawer containing A's old cards or drawings that their father preserved over many years.",
+          "evidence_turns": [
+            1,
+            5,
+            6
+          ],
+          "evidence_summary": "The siblings are clearing their late father's workshop, and A arranges for the workbench to be collected by the community woodshop. Before it goes, B finds a false drawer containing A's cards and drawings from kindergarten through college, each preserved in a dated envelope."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "sigh",
+          "q_what_it_means": "B reluctantly accepts that their father's large workbench cannot accompany their mother, after having hoped it could remain in the family despite the apartment's space and access limits.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A sets a Thursday deadline for emptying the late father's workshop before their mother's Friday move. B says they want to keep their father's workbench in the family, while A reports that the apartment's elevator, hallway, and available space cannot accommodate it."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "sob",
+          "q_what_it_means": "A is overwhelmed by grief and tender recognition when B reveals that their father had carefully saved A's childhood cards and drawings in the workbench they are about to give away, showing an affection A had not known about.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              5,
+              6
+            ],
+            "summary": "The siblings are clearing their late father's workshop, and A arranges for the workbench to be collected by the community woodshop. Before it goes, B finds a false drawer containing A's cards and drawings from kindergarten through college, each preserved in a dated envelope."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 3,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 26674,
+        "output_tokens": 20053
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are natural, context-dependent reactions to well-supported discoveries and constraints; the words establish the situations but do not explicitly state either speaker's reaction."
+      }
+    },
+    {
+      "item_id": "sigh_yawn_001",
+      "contrast": "sigh-yawn",
+      "domain": "Two flatmates troubleshooting an aging home Wi-Fi router before one of them needs a stable connection for an important remote job interview.",
+      "assigned_domain": "technology and devices",
+      "plan": {
+        "domain": "Two flatmates troubleshooting an aging home Wi-Fi router before one of them needs a stable connection for an important remote job interview.",
+        "event_1": {
+          "target_turn": 5,
+          "speaker": "A",
+          "vocalization": "yawn",
+          "interpretation": "A conspicuously dismisses B's latest elaborate theory blaming the smart television for the outages, signaling that B is chasing coincidences instead of addressing the ordinary router problem A has already identified.",
+          "evidence_plan": "Earlier context should establish that B urgently needs reliable internet for a remote interview, has repeatedly attributed the failures to a specific device or unusual pattern, and has resisted A's practical diagnosis. It should also establish that the connection drops across multiple devices and that the router is old or no longer properly supported."
+        },
+        "event_2": {
+          "target_turn": 8,
+          "speaker": "B",
+          "vocalization": "sigh",
+          "interpretation": "B reluctantly acknowledges that keeping the router alive with free workarounds is no longer realistic, because the established cross-device failures and lack of support have made A's case for replacing it hard to avoid before the interview.",
+          "evidence_plan": "Earlier context should establish that B hoped to avoid buying new equipment and believed a simple tweak would carry them through the interview. It should also establish that A has checked the router's status, found evidence that the problem is not limited to the television, and explained that the device's age or support cutoff leaves no dependable repair option."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "The connection has dropped on my laptop, both our phones, and the television today. This router is nine years old, and the manufacturer stopped updating it two years ago."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "My remote interview is tomorrow morning, and the failures began after we connected the smart television. I think its streaming app is flooding the network."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "The television was unplugged this morning, yet my laptop still lost connection twice. I checked the router's status page; it is struggling with every device, not just the TV."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "Maybe the television changed a setting before we unplugged it, or it is still trying to reconnect in the background. We could switch channels and avoid buying anything new."
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "[yawn]"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "I still think a factory reset and putting the television on a guest network could carry us through tomorrow."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "A reset cannot restore the updates this model no longer receives, and the status page shows repeated failures across devices. There is no dependable free fix before your interview; we need a replacement router."
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "[sigh]"
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 5,
+          "speaker": "A",
+          "vocalization": "yawn",
+          "interpretation": "A conspicuously dismisses B's latest elaborate theory blaming the smart television for the outages, signaling that B is chasing coincidences instead of addressing the ordinary router problem A has already identified.",
+          "evidence_plan": "Earlier context should establish that B urgently needs reliable internet for a remote interview, has repeatedly attributed the failures to a specific device or unusual pattern, and has resisted A's practical diagnosis. It should also establish that the connection drops across multiple devices and that the router is old or no longer properly supported.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "evidence_summary": "A establishes that the outages affect several devices and that the old router has not been updated, while B urgently needs internet for an interview and repeatedly attributes the problem to the smart television despite A's test with it unplugged."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 8,
+          "speaker": "B",
+          "vocalization": "sigh",
+          "interpretation": "B reluctantly acknowledges that keeping the router alive with free workarounds is no longer realistic, because the established cross-device failures and lack of support have made A's case for replacing it hard to avoid before the interview.",
+          "evidence_plan": "Earlier context should establish that B hoped to avoid buying new equipment and believed a simple tweak would carry them through the interview. It should also establish that A has checked the router's status, found evidence that the problem is not limited to the television, and explained that the device's age or support cutoff leaves no dependable repair option.",
+          "evidence_turns": [
+            1,
+            3,
+            4,
+            6,
+            7
+          ],
+          "evidence_summary": "The connection fails across multiple devices, the router is old and unsupported, and B keeps proposing free settings changes or a reset. A explains that those steps cannot restore support or provide a dependable solution before the interview."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 5,
+          "q_which_vocalization": "yawn",
+          "q_what_it_means": "A conspicuously dismisses B's latest elaborate theory blaming the smart television for the outages, signaling that B is chasing coincidences instead of addressing the ordinary router problem A has already identified.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "summary": "A establishes that the outages affect several devices and that the old router has not been updated, while B urgently needs internet for an interview and repeatedly attributes the problem to the smart television despite A's test with it unplugged."
+          },
+          "speaker": "A"
+        },
+        "event_2": {
+          "q_which_turn": 8,
+          "q_which_vocalization": "sigh",
+          "q_what_it_means": "B reluctantly acknowledges that keeping the router alive with free workarounds is no longer realistic, because the established cross-device failures and lack of support have made A's case for replacing it hard to avoid before the interview.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              3,
+              4,
+              6,
+              7
+            ],
+            "summary": "The connection fails across multiple devices, the router is old and unsupported, and B keeps proposing free settings changes or a reset. A explains that those steps cannot restore support or provide a dependable solution before the interview."
+          },
+          "speaker": "B"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 5119,
+        "output_tokens": 3728
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "The cross-device evidence versus B’s repeated TV-focused workarounds makes A’s dismissive yawn and B’s reluctant sigh the best context-dependent readings, while the words alone do not determine either reaction."
+      }
+    },
+    {
+      "item_id": "sob_yawn_001",
+      "contrast": "sob-yawn",
+      "domain": "Two friends who volunteer with a local animal rescue are preparing an elderly dog for a meeting with the adult daughter of the dog's former guardian.",
+      "assigned_domain": "pets and animals",
+      "plan": {
+        "domain": "Two friends who volunteer with a local animal rescue are preparing an elderly dog for a meeting with the adult daughter of the dog's former guardian.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "yawn",
+          "interpretation": "B signals that A's lengthy speculation about every possible adoption problem is becoming unhelpful, gently pushing A to stop rehearsing unlikely worries and focus on the imminent meeting and the dog's known needs.",
+          "evidence_plan": "Earlier context should establish that A has been carefully fostering the elderly dog and feels responsible for choosing a safe home, that a meeting with a prospective adopter is about to happen, and that A has been repeatedly raising increasingly hypothetical concerns despite B having already summarized the dog's actual routines and needs."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is overwhelmed with relief and tenderness after learning that the visitor is the former guardian's daughter and that the dog immediately recognizes something familiar from its old home, making A feel the dog will not be leaving for an unknown future after all.",
+          "evidence_plan": "Earlier context should establish that the dog entered rescue after its longtime guardian could no longer care for it, that A has seen the dog struggle with the disruption and has worried about sending it to a stranger, and that B reveals before this reaction that the visitor is the guardian's daughter and has brought a familiar item or memory to which the dog responds."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I've fostered Mabel for six weeks, ever since Mrs. Alvarez had to move into memory care. She has finally started sleeping through the night here, and I promised myself I would not rush her into another upheaval."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "Dana is due in twenty minutes. We know Mabel needs slow walks, her arthritis pill in supper, and a quiet room at night, and Dana said her house can manage all of that."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "But what if Dana's neighbors have noisy parties, or a delivery truck startles Mabel, or grandchildren visit unexpectedly, or the pill schedule changes when Dana travels? Maybe we should postpone until we can account for every possibility."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[yawn]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "I know I am spiraling. Mabel kept waiting by the door for Mrs. Alvarez during her first weeks here, and I cannot bear the thought of handing her to someone who feels like a stranger."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "Dana is not a stranger: she is Mrs. Alvarez's adult daughter. She brought the blue knitted blanket from her mother's armchair, and when she held it out, Mabel pressed her nose into it and started thumping her tail."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[sob]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "Dana is waiting in the garden. Let's bring Mabel out to her slowly."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "yawn",
+          "interpretation": "B signals that A's lengthy speculation about every possible adoption problem is becoming unhelpful, gently pushing A to stop rehearsing unlikely worries and focus on the imminent meeting and the dog's known needs.",
+          "evidence_plan": "Earlier context should establish that A has been carefully fostering the elderly dog and feels responsible for choosing a safe home, that a meeting with a prospective adopter is about to happen, and that A has been repeatedly raising increasingly hypothetical concerns despite B having already summarized the dog's actual routines and needs.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A explains that Mabel is an elderly foster dog whose placement matters deeply, B says the meeting is imminent and lists Mabel's established needs, and A then raises a string of increasingly hypothetical concerns about Dana's home."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is overwhelmed with relief and tenderness after learning that the visitor is the former guardian's daughter and that the dog immediately recognizes something familiar from its old home, making A feel the dog will not be leaving for an unknown future after all.",
+          "evidence_plan": "Earlier context should establish that the dog entered rescue after its longtime guardian could no longer care for it, that A has seen the dog struggle with the disruption and has worried about sending it to a stranger, and that B reveals before this reaction that the visitor is the guardian's daughter and has brought a familiar item or memory to which the dog responds.",
+          "evidence_turns": [
+            1,
+            5,
+            6
+          ],
+          "evidence_summary": "A says Mabel entered foster care after her longtime guardian moved into memory care, recalls Mabel waiting for that guardian, and worries about placing her with a stranger. B then reveals that Dana is the guardian's adult daughter and that Mabel responds warmly to a familiar blanket from her old home."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "yawn",
+          "q_what_it_means": "B signals that A's lengthy speculation about every possible adoption problem is becoming unhelpful, gently pushing A to stop rehearsing unlikely worries and focus on the imminent meeting and the dog's known needs.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A explains that Mabel is an elderly foster dog whose placement matters deeply, B says the meeting is imminent and lists Mabel's established needs, and A then raises a string of increasingly hypothetical concerns about Dana's home."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "sob",
+          "q_what_it_means": "A is overwhelmed with relief and tenderness after learning that the visitor is the former guardian's daughter and that the dog immediately recognizes something familiar from its old home, making A feel the dog will not be leaving for an unknown future after all.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              5,
+              6
+            ],
+            "summary": "A says Mabel entered foster care after her longtime guardian moved into memory care, recalls Mabel waiting for that guardian, and worries about placing her with a stranger. B then reveals that Dana is the guardian's adult daughter and that Mabel responds warmly to a familiar blanket from her old home."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 2
+      },
+      "usage": {
+        "input_tokens": 8431,
+        "output_tokens": 5505
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are naturally timed, and the cited turns specifically establish B’s reaction to A’s escalating hypotheticals and A’s emotional relief at Mabel’s tangible connection to Dana and her former home."
+      }
+    }
+  ]
+}

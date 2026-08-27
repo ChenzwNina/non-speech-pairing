@@ -1,0 +1,30 @@
+{
+  "writer_model": "gpt-5.6-terra",
+  "generated_at": "2026-08-24T03:24:59.993752+00:00",
+  "vocalization": "laughter",
+  "design": "two contexts, one vocalization category, the same laughter recordings used in both; only the situation differs",
+  "scenarios": {
+    "mocking": {
+      "domain": "neighborhood fundraiser baking",
+      "relationship": "longtime friends and volunteer partners",
+      "shared_context": "A and B are responsible for bringing sixty pastries to a neighborhood fundraiser at 8 a.m. tomorrow. It is already 8 p.m., and B's oven heats unevenly unless it is watched closely. A has attempted macarons twice before; one batch spread into a single sheet and the other cracked before it could be packed.",
+      "proposal": "Let's make sixty macarons from scratch tonight instead of buying cookies.",
+      "why_laughter_reads_this_way": "The proposal collides with the short deadline, unreliable oven, and A's established record with this exact difficult pastry, so disbelief is more natural than warm shared amusement; there is no fortunate payoff or longstanding plan being fulfilled.",
+      "expected_inferred_state": "A should infer that B takes the proposal as implausibly ambitious rather than as a casual suggestion.",
+      "expected_response_function": "insist on seriousness and justify the plan",
+      "gold_response": "I'm serious—I borrowed the café's convection oven, and I already weighed everything out.",
+      "condition": "mocking"
+    },
+    "genuine": {
+      "domain": "community garden harvest contest",
+      "relationship": "next-door neighbors who share a garden plot",
+      "shared_context": "A and B have entered the neighborhood harvest contest for the past two years with pumpkins small enough to carry in one hand. Each time, they painted the pumpkins gold and put a paper ribbon on them that said “Champion.” This week, their shared plot produced a 38-pound pumpkin, and the contest check-in is Saturday morning.",
+      "proposal": "Let’s put it in the little red wagon and enter our champion on Saturday.",
+      "why_laughter_reads_this_way": "The oversized pumpkin makes their old paper-ribbon joke unexpectedly real, so B’s laughter naturally treats the proposal as a shared payoff and agreement. Derision is less natural because the proposal is practical and the contest is imminent.",
+      "expected_inferred_state": "A should infer that B is delighted by the payoff and is on board with entering the pumpkin.",
+      "expected_response_function": "move to the practical next step",
+      "gold_response": "Great, I’ll bring the wagon around after work.",
+      "condition": "genuine"
+    }
+  }
+}

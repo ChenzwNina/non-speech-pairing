@@ -1,0 +1,1392 @@
+{
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "generated_at": "2026-08-12T16:15:09.427285+00:00",
+  "pair_mode": "combinations",
+  "topics": [
+    "domestic",
+    "school"
+  ],
+  "system_prompt": "\nYou are an expert in natural spoken dialogue and the pragmatics of laughter.\n\nTASK\nGenerate ONE four-turn spoken dialogue in which a laugh added to the FINAL turn\ncould plausibly perform either of the TWO laughter functions supplied by the user.\nGenerate only the lexical transcript: do not write laughter, prosody, tone labels,\nstage directions, or acoustic descriptions.\n\nThe goal is NOT to make the dialogue vague. The goal is to build one concrete,\nnatural conversational event that supplies the prerequisites for BOTH functions.\nThe words may contain mild criticism, irony-capable wording, hesitation, a request,\nan awkward admission, or another function-relevant cue when a target function\nrequires it.\n\nPRIORITY ORDER\nWhen instructions pull in different directions, use this order:\n1. BOTH target-function preconditions must genuinely be satisfied.\n2. The pair-specific condition, if supplied, must be satisfied.\n3. The dialogue must sound like ordinary human conversation and make common sense.\n4. The final turn must provide usable evidence for BOTH readings without making\n   either reading overwhelmingly more natural.\n5. Keep the dialogue concise and follow the required output format.\n\nPAIR CONSTRUCTION\nBefore writing, reason internally about the pair. Do not output this reasoning.\n\nA. Find the overlap.\nIdentify one conversational event that can simultaneously satisfy both functions'\npreconditions. If no such event exists, choose the closest genuinely plausible\nconfiguration allowed by the supplied pair condition; do not fake compatibility\nby making the wording empty or generic.\n\nB. Respect participant roles.\nUse each structural profile's laugher role and laughable origin.\n- If both functions require the final speaker to be the producer, make the final\n  speaker's own contribution supply the relevant act.\n- If one function is responsive to the partner while the other attaches to the\n  final speaker's own contribution, design the final turn to do both: respond to\n  the partner AND contribute the relevant material itself.\n\nC. Preserve necessary lexical hooks.\nIf a target function needs a lexical hook, the transcript MUST make that hook\navailable. Do not remove a required cue merely to create ambiguity.\nExamples of legitimate cues include:\n- a mild criticism or disagreement for softening;\n- a suggestion, opinion, or favor for benevolence induction;\n- a socially awkward moment for smoothing;\n- a partner's vulnerable or awkward display for sympathy;\n- wording that can be read nonliterally for irony;\n- one expression with a nonstandard/enriched sense for scare-quoting;\n- hesitation, hedge, repair, or questionable word choice for lexical editing;\n- a detectable clash with background expectations for incongruity functions.\n\nD. Make the cues overlap when possible.\nThe best transcript uses the SAME piece of wording or the SAME event as evidence\nfor both functions. For example, a mildly critical remark may also formulate an\nabsurd reversal; an uncertain adjective may also soften a negative evaluation.\nAvoid constructing two unrelated mini-events, one for each function.\n\nFINAL-TURN DESIGN\nThe fourth turn is where laughter will later be inserted.\n\nPrefer a final turn that is:\n- short and spoken-like;\n- specific rather than generic;\n- responsive to the immediately preceding turn;\n- rich enough to support both target readings;\n- plausible with a small or medium laugh added naturally.\n\nDo NOT impose blanket neutrality. A final turn may contain criticism, evaluation,\nirony-capable wording, disagreement, hesitation, a request, or another delicate\nact when the target functions require it.\n\nHowever, avoid wording that lexicalizes ONLY ONE function so strongly that the\nother becomes implausible. In particular, avoid:\n- a fully explicit joke whose only reasonable uptake is amusement;\n- a direct insult or harsh criticism when a pleasant reading is also required;\n- an explicit statement such as \"I'm joking\", \"I'm being sarcastic\", \"don't be\n  offended\", or \"I feel sorry for you\";\n- explaining the pragmatic stance instead of letting laughter contribute it;\n- contrived wordplay or theatrical punchlines that people would not normally say.\n\nBALANCE PRINCIPLE\nLexical evidence for a function is GOOD when that function requires it.\nReject a cue only when it supports one target function at the expense of the\nother.\n\nThe desired ambiguity is:\n    \"What is the laughter doing here?\"\nnot:\n    \"What is this utterance doing at all?\"\n\nThe lexical transcript may make the underlying social action visible. What should\nremain open is which target function best describes the later laughter's\ncontribution to that action.\n\nNATURALNESS\nUse an everyday situation appropriate to the requested topic. The dialogue should\nsound like something two people might actually say without knowing they are in an\nexperiment.\n\nAvoid:\n- exposition inserted only to satisfy a definition;\n- unnatural vagueness such as \"That's something\" or \"So that's that\";\n- overly polished one-liners;\n- repeating the function definitions in conversational wording;\n- obscure scenarios requiring special knowledge.\n\nDIALOGUE STRUCTURE\n- Exactly two speakers: A and B.\n- Exactly four turns: A -> B -> A -> B.\n- The first three turns are dialogue history.\n- The fourth B turn is the current turn where laughter will later be inserted.\n- One sentence per turn.\n- Keep each turn concise and spoken-like.\n- Lexical content only: no laughter tags, brackets, stage directions, tone labels,\n  or prosodic descriptions.\n\nUSE OF DEFINITIONS, EXAMPLES, PROFILES, AND PAIR CONDITION\n- Definitions specify what each function must mean in this task.\n- Examples illustrate the mechanism; do NOT copy their scenario or wording.\n- Structural-profile PRECONDITIONS are hard requirements whenever compatible.\n- The pair-specific condition is a direct design requirement for this pair and\n  takes precedence over generic stylistic preferences.\n- \"Likely next move\" is diagnostic context, not a hard requirement: two different\n  laughter functions may still permit the same next spoken response.\n\nMANDATORY INTERNAL CHECKS\nBefore returning the transcript, check all of the following. Do not output the\nchecks.\n\n1. DUAL-PRECONDITION TEST\nPoint to the exact event/wording that satisfies Function 1's precondition and the\nexact event/wording that satisfies Function 2's precondition. If either is absent,\nrewrite the dialogue.\n\n2. PAIR-CONDITION TEST\nIf a pair-specific condition was supplied, does the transcript instantiate it\nliterally rather than merely approximately? If not, rewrite it.\n\n3. DUAL-EVIDENCE TEST\nCan you identify positive lexical/contextual evidence for BOTH target readings?\n\"Nothing rules it out\" is not enough. Each function needs an affirmative reason.\n\n4. DOMINANCE TEST\nAfter imagining laughter in the final turn, would a reasonable analyst regard one\nfunction as clearly natural and the other as strained? If yes, rewrite it. Mild\nasymmetry is acceptable; one reading being merely technically possible is not.\n\n5. SHARED-LOCUS TEST\nWhenever possible, do both readings attach to the same phrase/event in the final\nturn or its immediate context? If they depend on unrelated parts of the dialogue,\nrewrite toward a tighter overlap.\n\n6. NATURALNESS TEST\nWould two people plausibly say these exact four sentences in ordinary speech? If\nnot, simplify or rewrite.\n\n7. LAUGH-PLACEMENT TEST\nCould a laugh occur naturally within or immediately after the final turn without\nchanging its words? If not, rewrite it.\n\nReturn only a candidate that passes all seven checks.\n\nOUTPUT FORMAT\nReturn ONLY one valid JSON object:\n\n{\n  \"prior_turns\": [\n    {\"speaker\": \"A\", \"text\": \"...\"},\n    {\"speaker\": \"B\", \"text\": \"...\"},\n    {\"speaker\": \"A\", \"text\": \"...\"}\n  ],\n  \"current_turn\": {\n    \"speaker\": \"B\",\n    \"text\": \"...\"\n  }\n}\n\nThe dialogue is exactly four turns in total.\n- `prior_turns` contains exactly the first three turns: A, then B, then A.\n- `current_turn` contains only the fourth turn: B.\n- Do not duplicate the fourth turn in `prior_turns`.\n- Do not return markdown or explanation.\n",
+  "user_prompt_template": "\n[dialogue topic]: {topic}\n\n[laughter function 1]\nFunction name: {function_a}\nDefinition: {definition_a}\nExample: {example_a}\nExample explanation: {example_explanation_a}\n\n[laughter function 2]\nFunction name: {function_b}\nDefinition: {definition_b}\nExample: {example_b}\nExample explanation: {example_explanation_b}\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n",
+  "results": [
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__softening-trouble-telling",
+      "pair_id": "domestic__show-enjoyment-of-incongruity__softening-trouble-telling",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Softening / trouble-telling",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.",
+          "example": "(Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'",
+          "example_explanation": "Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Softening / trouble-telling\nDefinition: Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.\nExample: (Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'\nExample explanation: Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own socially delicate contribution, such as criticism, dissent, refusal, an inconvenient answer, or painful self-disclosure.\n    trigger event: The speaker produces an utterance that carries interpersonal or face cost.\n    laughter action: Reduce the force, seriousness, or intrusiveness of the delicate contribution and help manage the uneasiness around it.\n    lexical anchor: Action-level: the turn must actually contain the delicate act, such as mild fault-finding, disagreement, refusal, inconvenient information, or trouble-telling.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Can you hold the bookshelf while I check whether it's level?\"},{\"speaker\":\"B\",\"text\":\"It still looks a little crooked from here.\"},{\"speaker\":\"A\",\"text\":\"The bubble's nearly in the middle, so I think it's fine.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Sure, it's perfectly level if the whole house is leaning.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Can you hold the bookshelf while I check whether it's level?"
+          },
+          {
+            "speaker": "B",
+            "text": "It still looks a little crooked from here."
+          },
+          {
+            "speaker": "A",
+            "text": "The bubble's nearly in the middle, so I think it's fine."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Sure, it's perfectly level if the whole house is leaning."
+        }
+      },
+      "usage": {
+        "input_tokens": 2464,
+        "output_tokens": 308
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__benevolence-induction",
+      "pair_id": "domestic__show-enjoyment-of-incongruity__benevolence-induction",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Benevolence induction",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.",
+          "example": "(Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'",
+          "example_explanation": "John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Benevolence induction\nDefinition: Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.\nExample: (Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'\nExample explanation: John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own request, suggestion, opinion, favor, or other contribution that is exposed to evaluation, disagreement, or refusal.\n    trigger event: The speaker makes a contribution for which friendly agreement, leniency, or non-harsh evaluation is interactionally relevant.\n    laughter action: Solicit goodwill, agreement, friendliness, or leniency from the interlocutor and discourage harsh evaluation of the contribution.\n    lexical anchor: Action-level: a request, suggestion, opinion, favor, admission, or similarly evaluable contribution; no particular word is required.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Your clean clothes are still covering the spare-room chair.\"},{\"speaker\":\"B\",\"text\":\"I was going to put them away before your parents came.\"},{\"speaker\":\"A\",\"text\":\"They'll be here in twenty minutes, so can you move them now?\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Could we just call it the temporary wardrobe until they leave?\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Your clean clothes are still covering the spare-room chair."
+          },
+          {
+            "speaker": "B",
+            "text": "I was going to put them away before your parents came."
+          },
+          {
+            "speaker": "A",
+            "text": "They'll be here in twenty minutes, so can you move them now?"
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Could we just call it the temporary wardrobe until they leave?"
+        }
+      },
+      "usage": {
+        "input_tokens": 2509,
+        "output_tokens": 686
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__smoothing",
+      "pair_id": "domestic__show-enjoyment-of-incongruity__smoothing",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Smoothing",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter used to resolve social awkwardness in general (e.g., embarrassment) or to help the flow of the conversation when a conversational partner reacts in an unexpected way; it minimizes potential social discomfort.",
+          "example": "(Ex. 14) Interviewer: 'Right, you seem to be pretty well qualified.' ; John: 'I hope so <laughter>yes</laughter>'",
+          "example_explanation": "The laughter smooths the response to a compliment: since it is culturally frowned upon to speak well of oneself, the little laugh helps John avoid being viewed as presumptuous and arrogant."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Smoothing\nDefinition: Laughter used to resolve social awkwardness in general (e.g., embarrassment) or to help the flow of the conversation when a conversational partner reacts in an unexpected way; it minimizes potential social discomfort.\nExample: (Ex. 14) Interviewer: 'Right, you seem to be pretty well qualified.' ; John: 'I hope so <laughter>yes</laughter>'\nExample explanation: The laughter smooths the response to a compliment: since it is culturally frowned upon to speak well of oneself, the little laugh helps John avoid being viewed as presumptuous and arrogant.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: either\n    event initiator: either / interaction\n    event focus: Mild social or conversational awkwardness in the interaction itself.\n    trigger event: Embarrassment, a socially awkward moment, or an unexpected conversational response creates potential discomfort or disrupts the expected flow.\n    laughter action: Minimize the awkwardness and help the conversation continue smoothly.\n    lexical anchor: None required: the relevant cue may come from the interactional situation rather than a particular expression.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did you put my wool sweater in the dryer?\"},{\"speaker\":\"B\",\"text\":\"I may have used the hot setting by mistake.\"},{\"speaker\":\"A\",\"text\":\"Well, it would fit the dog now.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"So I've made him a very expensive dog sweater.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did you put my wool sweater in the dryer?"
+          },
+          {
+            "speaker": "B",
+            "text": "I may have used the hot setting by mistake."
+          },
+          {
+            "speaker": "A",
+            "text": "Well, it would fit the dog now."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "So I've made him a very expensive dog sweater."
+        }
+      },
+      "usage": {
+        "input_tokens": 2433,
+        "output_tokens": 519
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__show-sympathy",
+      "pair_id": "domestic__show-enjoyment-of-incongruity__show-sympathy",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Show sympathy",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter produced in RESPONSE to another's socially incongruous act (softening, benevolence induction, smoothing) - either antiphonally (laughter answering laughter of that class) or to the act itself - showing understanding of the partner's social discomfort, displaying closeness and assuring them they are not being judged for what they share.",
+          "example": "(Ex. 15) MH: '...everybody saw was not the' ; Interv.: 'Mhm.' ; MH: 'fit strapping Heseltine which I wished' ; Interv.: 'You looked terrible.' ; MH: 'which I wished to portray.' ; Interv.: <laughter/>. || (Ex. 16) A: 'These are the stairs?? ... we are going to do this like this.... I put the staircases because I've badly drawn!' ; B: <laughter/>.",
+          "example_explanation": "Both laughs respond to a display of some kind of weakness by the interlocutor, showing understanding of the social discomfort expressed and assuring the partner they are not being judged."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Show sympathy\nDefinition: Laughter produced in RESPONSE to another's socially incongruous act (softening, benevolence induction, smoothing) - either antiphonally (laughter answering laughter of that class) or to the act itself - showing understanding of the partner's social discomfort, displaying closeness and assuring them they are not being judged for what they share.\nExample: (Ex. 15) MH: '...everybody saw was not the' ; Interv.: 'Mhm.' ; MH: 'fit strapping Heseltine which I wished' ; Interv.: 'You looked terrible.' ; MH: 'which I wished to portray.' ; Interv.: <laughter/>. || (Ex. 16) A: 'These are the stairs?? ... we are going to do this like this.... I put the staircases because I've badly drawn!' ; B: <laughter/>.\nExample explanation: Both laughs respond to a display of some kind of weakness by the interlocutor, showing understanding of the social discomfort expressed and assuring the partner they are not being judged.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: recipient\n    event initiator: partner\n    event focus: The partner's socially uncomfortable, face-sensitive, or vulnerable contribution.\n    trigger event: The partner displays social discomfort or produces a socially incongruous act, such as softening, benevolence induction, smoothing, or another vulnerable contribution.\n    laughter action: Show understanding of the partner's discomfort, display closeness, and reassure the partner that they are not being judged harshly.\n    lexical anchor: None required: the laughter responds to the partner's social display or discomfort.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Have you seen your gray sweater?\"},{\"speaker\":\"B\",\"text\":\"It's folded beside the cat's bed, and it looks tiny.\"},{\"speaker\":\"A\",\"text\":\"I washed it on hot by mistake, so apparently I'm dressing Milo now.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Well, he has been asking for a winter wardrobe.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Have you seen your gray sweater?"
+          },
+          {
+            "speaker": "B",
+            "text": "It's folded beside the cat's bed, and it looks tiny."
+          },
+          {
+            "speaker": "A",
+            "text": "I washed it on hot by mistake, so apparently I'm dressing Milo now."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Well, he has been asking for a winter wardrobe."
+        }
+      },
+      "usage": {
+        "input_tokens": 2549,
+        "output_tokens": 751
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__marking-irony",
+      "pair_id": "domestic__show-enjoyment-of-incongruity__marking-irony",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did you hear the smoke alarm when I opened the oven?\"},{\"speaker\":\"B\",\"text\":\"Yeah, is dinner all right?\"},{\"speaker\":\"A\",\"text\":\"The lasagna's black on top, but I think we can save the middle.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Great, even the smoke alarm approves of your cooking.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did you hear the smoke alarm when I opened the oven?"
+          },
+          {
+            "speaker": "B",
+            "text": "Yeah, is dinner all right?"
+          },
+          {
+            "speaker": "A",
+            "text": "The lasagna's black on top, but I think we can save the middle."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Great, even the smoke alarm approves of your cooking."
+        }
+      },
+      "usage": {
+        "input_tokens": 2447,
+        "output_tokens": 330
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__scare-quoting-invite-enrichment",
+      "pair_id": "domestic__show-enjoyment-of-incongruity__scare-quoting-invite-enrichment",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Scare-quoting / invite enrichment",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling that a particular expression is being used in a way that deviates slightly from its most standard understanding, inviting the addressee to enrich/reinterpret its meaning (cf. scare-quoting).",
+          "example": "(Ex. 18) A: 'I don't know if you can help that man or not.' ; B: 'I'll have <laughter>a word</laughter> with him Terry' ; A: '[...] Because Mr had represented him.'",
+          "example_explanation": "The laughter signals that the expression 'a word' is not to be read in its most standard sense."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Scare-quoting / invite enrichment\nDefinition: Laughter signalling that a particular expression is being used in a way that deviates slightly from its most standard understanding, inviting the addressee to enrich/reinterpret its meaning (cf. scare-quoting).\nExample: (Ex. 18) A: 'I don't know if you can help that man or not.' ; B: 'I'll have <laughter>a word</laughter> with him Terry' ; A: '[...] Because Mr had represented him.'\nExample explanation: The laughter signals that the expression 'a word' is not to be read in its most standard sense.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: A particular word or phrase whose standard interpretation is not quite the locally intended one.\n    trigger event: The speaker uses an expression for which the context supports a richer, loosened, narrowed, or otherwise nonstandard interpretation.\n    laughter action: Flag the expression as requiring enrichment or reinterpretation beyond its most standard meaning.\n    lexical anchor: Required: a specific word or phrase that can support both a standard interpretation and a contextually enriched one.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Why is there pancake batter on the ceiling?\"},{\"speaker\":\"B\",\"text\":\"I tried flipping one without a spatula.\"},{\"speaker\":\"A\",\"text\":\"And did the smoke alarm really need to join in?\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"That's my new kitchen timer.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Why is there pancake batter on the ceiling?"
+          },
+          {
+            "speaker": "B",
+            "text": "I tried flipping one without a spatula."
+          },
+          {
+            "speaker": "A",
+            "text": "And did the smoke alarm really need to join in?"
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "That's my new kitchen timer."
+        }
+      },
+      "usage": {
+        "input_tokens": 2452,
+        "output_tokens": 436
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__lexical-uncertainty-editing-phrase",
+      "pair_id": "domestic__show-enjoyment-of-incongruity__lexical-uncertainty-editing-phrase",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Lexical uncertainty / editing phrase",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter functioning as an editing phrase, signalling the speaker's need to reformulate, hedge or correct her/his own previous contribution (uncertainty about the lexical choice just made).",
+          "example": "(Ex. 19) Lecturer: '...There are a whole range of things he can't do, he can't direct congress, he can't appoint who he wants freely, he can't make treaties with whom he wants when he wants, he can't start wars <laughter>if he wants to start wars</laughter>.'",
+          "example_explanation": "The laughter is used as an editing phrase, signalling the speaker's need to reformulate and correct his previous contribution."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Lexical uncertainty / editing phrase\nDefinition: Laughter functioning as an editing phrase, signalling the speaker's need to reformulate, hedge or correct her/his own previous contribution (uncertainty about the lexical choice just made).\nExample: (Ex. 19) Lecturer: '...There are a whole range of things he can't do, he can't direct congress, he can't appoint who he wants freely, he can't make treaties with whom he wants when he wants, he can't start wars <laughter>if he wants to start wars</laughter>.'\nExample explanation: The laughter is used as an editing phrase, signalling the speaker's need to reformulate and correct his previous contribution.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own wording or formulation rather than the external event being described.\n    trigger event: The speaker treats a just-produced word or phrase as imprecise, excessive, ambiguous, or otherwise in need of reformulation, hedging, qualification, or correction.\n    laughter action: Mark the formulation as provisional and manage an ongoing self-repair or editing process.\n    lexical anchor: Required: a provisional word or phrase plus an adjacent reformulation, qualifier, hedge, or correction that makes the editing relation recoverable.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"What do you think of the living room now that I've cleared it out?\"},{\"speaker\":\"B\",\"text\":\"You got rid of the bookcase too?\"},{\"speaker\":\"A\",\"text\":\"It made the room feel cramped.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"It looks very minimalist—well, basically empty.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "What do you think of the living room now that I've cleared it out?"
+          },
+          {
+            "speaker": "B",
+            "text": "You got rid of the bookcase too?"
+          },
+          {
+            "speaker": "A",
+            "text": "It made the room feel cramped."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "It looks very minimalist—well, basically empty."
+        }
+      },
+      "usage": {
+        "input_tokens": 2477,
+        "output_tokens": 327
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__softening-trouble-telling__marking-irony",
+      "pair_id": "domestic__softening-trouble-telling__marking-irony",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Softening / trouble-telling",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.",
+          "example": "(Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'",
+          "example_explanation": "Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Softening / trouble-telling\nDefinition: Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.\nExample: (Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'\nExample explanation: Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own socially delicate contribution, such as criticism, dissent, refusal, an inconvenient answer, or painful self-disclosure.\n    trigger event: The speaker produces an utterance that carries interpersonal or face cost.\n    laughter action: Reduce the force, seriousness, or intrusiveness of the delicate contribution and help manage the uneasiness around it.\n    lexical anchor: Action-level: the turn must actually contain the delicate act, such as mild fault-finding, disagreement, refusal, inconvenient information, or trouble-telling.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"I put that shelf up over the washing machine.\"},{\"speaker\":\"B\",\"text\":\"Does it feel sturdy?\"},{\"speaker\":\"A\",\"text\":\"Mostly, though it dips when I set the detergent on it.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Perfect, we've got a shelf that can't hold the detergent.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "I put that shelf up over the washing machine."
+          },
+          {
+            "speaker": "B",
+            "text": "Does it feel sturdy?"
+          },
+          {
+            "speaker": "A",
+            "text": "Mostly, though it dips when I set the detergent on it."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Perfect, we've got a shelf that can't hold the detergent."
+        }
+      },
+      "usage": {
+        "input_tokens": 2380,
+        "output_tokens": 529
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__benevolence-induction__marking-irony",
+      "pair_id": "domestic__benevolence-induction__marking-irony",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Benevolence induction",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.",
+          "example": "(Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'",
+          "example_explanation": "John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Benevolence induction\nDefinition: Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.\nExample: (Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'\nExample explanation: John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own request, suggestion, opinion, favor, or other contribution that is exposed to evaluation, disagreement, or refusal.\n    trigger event: The speaker makes a contribution for which friendly agreement, leniency, or non-harsh evaluation is interactionally relevant.\n    laughter action: Solicit goodwill, agreement, friendliness, or leniency from the interlocutor and discourage harsh evaluation of the contribution.\n    lexical anchor: Action-level: a request, suggestion, opinion, favor, admission, or similarly evaluable contribution; no particular word is required.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Does that shelf look level to you?\"},{\"speaker\":\"B\",\"text\":\"The left side's definitely lower.\"},{\"speaker\":\"A\",\"text\":\"I really don't want to take it down and start again.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Then maybe we call it rustic and leave it there.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Does that shelf look level to you?"
+          },
+          {
+            "speaker": "B",
+            "text": "The left side's definitely lower."
+          },
+          {
+            "speaker": "A",
+            "text": "I really don't want to take it down and start again."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Then maybe we call it rustic and leave it there."
+        }
+      },
+      "usage": {
+        "input_tokens": 2425,
+        "output_tokens": 297
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__smoothing__marking-irony",
+      "pair_id": "domestic__smoothing__marking-irony",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Smoothing",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter used to resolve social awkwardness in general (e.g., embarrassment) or to help the flow of the conversation when a conversational partner reacts in an unexpected way; it minimizes potential social discomfort.",
+          "example": "(Ex. 14) Interviewer: 'Right, you seem to be pretty well qualified.' ; John: 'I hope so <laughter>yes</laughter>'",
+          "example_explanation": "The laughter smooths the response to a compliment: since it is culturally frowned upon to speak well of oneself, the little laugh helps John avoid being viewed as presumptuous and arrogant."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Smoothing\nDefinition: Laughter used to resolve social awkwardness in general (e.g., embarrassment) or to help the flow of the conversation when a conversational partner reacts in an unexpected way; it minimizes potential social discomfort.\nExample: (Ex. 14) Interviewer: 'Right, you seem to be pretty well qualified.' ; John: 'I hope so <laughter>yes</laughter>'\nExample explanation: The laughter smooths the response to a compliment: since it is culturally frowned upon to speak well of oneself, the little laugh helps John avoid being viewed as presumptuous and arrogant.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / interaction\n    event focus: Mild social or conversational awkwardness in the interaction itself.\n    trigger event: Embarrassment, a socially awkward moment, or an unexpected conversational response creates potential discomfort or disrupts the expected flow.\n    laughter action: Minimize the awkwardness and help the conversation continue smoothly.\n    lexical anchor: None required: the relevant cue may come from the interactional situation rather than a particular expression.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did the red bathmat go in with the white towels?\"},{\"speaker\":\"B\",\"text\":\"I only noticed after everything came out pink.\"},{\"speaker\":\"A\",\"text\":\"They're my favorite towels, but I know you were trying to help.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Yep, another flawless laundry day at our house.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did the red bathmat go in with the white towels?"
+          },
+          {
+            "speaker": "B",
+            "text": "I only noticed after everything came out pink."
+          },
+          {
+            "speaker": "A",
+            "text": "They're my favorite towels, but I know you were trying to help."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Yep, another flawless laundry day at our house."
+        }
+      },
+      "usage": {
+        "input_tokens": 2349,
+        "output_tokens": 671
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__show-sympathy__marking-irony",
+      "pair_id": "domestic__show-sympathy__marking-irony",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show sympathy",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter produced in RESPONSE to another's socially incongruous act (softening, benevolence induction, smoothing) - either antiphonally (laughter answering laughter of that class) or to the act itself - showing understanding of the partner's social discomfort, displaying closeness and assuring them they are not being judged for what they share.",
+          "example": "(Ex. 15) MH: '...everybody saw was not the' ; Interv.: 'Mhm.' ; MH: 'fit strapping Heseltine which I wished' ; Interv.: 'You looked terrible.' ; MH: 'which I wished to portray.' ; Interv.: <laughter/>. || (Ex. 16) A: 'These are the stairs?? ... we are going to do this like this.... I put the staircases because I've badly drawn!' ; B: <laughter/>.",
+          "example_explanation": "Both laughs respond to a display of some kind of weakness by the interlocutor, showing understanding of the social discomfort expressed and assuring the partner they are not being judged."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Show sympathy\nDefinition: Laughter produced in RESPONSE to another's socially incongruous act (softening, benevolence induction, smoothing) - either antiphonally (laughter answering laughter of that class) or to the act itself - showing understanding of the partner's social discomfort, displaying closeness and assuring them they are not being judged for what they share.\nExample: (Ex. 15) MH: '...everybody saw was not the' ; Interv.: 'Mhm.' ; MH: 'fit strapping Heseltine which I wished' ; Interv.: 'You looked terrible.' ; MH: 'which I wished to portray.' ; Interv.: <laughter/>. || (Ex. 16) A: 'These are the stairs?? ... we are going to do this like this.... I put the staircases because I've badly drawn!' ; B: <laughter/>.\nExample explanation: Both laughs respond to a display of some kind of weakness by the interlocutor, showing understanding of the social discomfort expressed and assuring the partner they are not being judged.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: recipient\n    event initiator: partner\n    event focus: The partner's socially uncomfortable, face-sensitive, or vulnerable contribution.\n    trigger event: The partner displays social discomfort or produces a socially incongruous act, such as softening, benevolence induction, smoothing, or another vulnerable contribution.\n    laughter action: Show understanding of the partner's discomfort, display closeness, and reassure the partner that they are not being judged harshly.\n    lexical anchor: None required: the laughter responds to the partner's social display or discomfort.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Why is the washing machine full of pink water?\"},{\"speaker\":\"B\",\"text\":\"Did you put the red towel in with the whites?\"},{\"speaker\":\"A\",\"text\":\"I did, and I think I've just ruined all your work shirts.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Perfect, I was getting tired of wearing white anyway.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Why is the washing machine full of pink water?"
+          },
+          {
+            "speaker": "B",
+            "text": "Did you put the red towel in with the whites?"
+          },
+          {
+            "speaker": "A",
+            "text": "I did, and I think I've just ruined all your work shirts."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Perfect, I was getting tired of wearing white anyway."
+        }
+      },
+      "usage": {
+        "input_tokens": 2465,
+        "output_tokens": 324
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__marking-irony__scare-quoting-invite-enrichment",
+      "pair_id": "domestic__marking-irony__scare-quoting-invite-enrichment",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        },
+        {
+          "function": "Scare-quoting / invite enrichment",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling that a particular expression is being used in a way that deviates slightly from its most standard understanding, inviting the addressee to enrich/reinterpret its meaning (cf. scare-quoting).",
+          "example": "(Ex. 18) A: 'I don't know if you can help that man or not.' ; B: 'I'll have <laughter>a word</laughter> with him Terry' ; A: '[...] Because Mr had represented him.'",
+          "example_explanation": "The laughter signals that the expression 'a word' is not to be read in its most standard sense."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\n[laughter function 2]\nFunction name: Scare-quoting / invite enrichment\nDefinition: Laughter signalling that a particular expression is being used in a way that deviates slightly from its most standard understanding, inviting the addressee to enrich/reinterpret its meaning (cf. scare-quoting).\nExample: (Ex. 18) A: 'I don't know if you can help that man or not.' ; B: 'I'll have <laughter>a word</laughter> with him Terry' ; A: '[...] Because Mr had represented him.'\nExample explanation: The laughter signals that the expression 'a word' is not to be read in its most standard sense.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: A particular word or phrase whose standard interpretation is not quite the locally intended one.\n    trigger event: The speaker uses an expression for which the context supports a richer, loosened, narrowed, or otherwise nonstandard interpretation.\n    laughter action: Flag the expression as requiring enrichment or reinterpretation beyond its most standard meaning.\n    lexical anchor: Required: a specific word or phrase that can support both a standard interpretation and a contextually enriched one.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"My parents are coming over in twenty minutes, and the kitchen's a disaster.\"},{\"speaker\":\"B\",\"text\":\"I thought you said they weren't coming until tonight.\"},{\"speaker\":\"A\",\"text\":\"They changed plans, so can you help me make it presentable?\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Sure, it only needs a little tidying.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "My parents are coming over in twenty minutes, and the kitchen's a disaster."
+          },
+          {
+            "speaker": "B",
+            "text": "I thought you said they weren't coming until tonight."
+          },
+          {
+            "speaker": "A",
+            "text": "They changed plans, so can you help me make it presentable?"
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Sure, it only needs a little tidying."
+        }
+      },
+      "usage": {
+        "input_tokens": 2368,
+        "output_tokens": 300
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "domestic__marking-irony__lexical-uncertainty-editing-phrase",
+      "pair_id": "domestic__marking-irony__lexical-uncertainty-editing-phrase",
+      "sample": 1,
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        },
+        {
+          "function": "Lexical uncertainty / editing phrase",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter functioning as an editing phrase, signalling the speaker's need to reformulate, hedge or correct her/his own previous contribution (uncertainty about the lexical choice just made).",
+          "example": "(Ex. 19) Lecturer: '...There are a whole range of things he can't do, he can't direct congress, he can't appoint who he wants freely, he can't make treaties with whom he wants when he wants, he can't start wars <laughter>if he wants to start wars</laughter>.'",
+          "example_explanation": "The laughter is used as an editing phrase, signalling the speaker's need to reformulate and correct his previous contribution."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: domestic\n\n[laughter function 1]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\n[laughter function 2]\nFunction name: Lexical uncertainty / editing phrase\nDefinition: Laughter functioning as an editing phrase, signalling the speaker's need to reformulate, hedge or correct her/his own previous contribution (uncertainty about the lexical choice just made).\nExample: (Ex. 19) Lecturer: '...There are a whole range of things he can't do, he can't direct congress, he can't appoint who he wants freely, he can't make treaties with whom he wants when he wants, he can't start wars <laughter>if he wants to start wars</laughter>.'\nExample explanation: The laughter is used as an editing phrase, signalling the speaker's need to reformulate and correct his previous contribution.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own wording or formulation rather than the external event being described.\n    trigger event: The speaker treats a just-produced word or phrase as imprecise, excessive, ambiguous, or otherwise in need of reformulation, hedging, qualification, or correction.\n    laughter action: Mark the formulation as provisional and manage an ongoing self-repair or editing process.\n    lexical anchor: Required: a provisional word or phrase plus an adjacent reformulation, qualifier, hedge, or correction that makes the editing relation recoverable.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did you finish cleaning the kitchen before the landlord comes?\"},{\"speaker\":\"B\",\"text\":\"I did the counters and the floor, so I thought I had.\"},{\"speaker\":\"A\",\"text\":\"There’s still grease all over the oven door.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Right, it’s spotless—or, well, presentable if nobody looks too closely.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did you finish cleaning the kitchen before the landlord comes?"
+          },
+          {
+            "speaker": "B",
+            "text": "I did the counters and the floor, so I thought I had."
+          },
+          {
+            "speaker": "A",
+            "text": "There’s still grease all over the oven door."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Right, it’s spotless—or, well, presentable if nobody looks too closely."
+        }
+      },
+      "usage": {
+        "input_tokens": 2393,
+        "output_tokens": 356
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__show-enjoyment-of-incongruity__softening-trouble-telling",
+      "pair_id": "school__show-enjoyment-of-incongruity__softening-trouble-telling",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Softening / trouble-telling",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.",
+          "example": "(Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'",
+          "example_explanation": "Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Softening / trouble-telling\nDefinition: Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.\nExample: (Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'\nExample explanation: Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own socially delicate contribution, such as criticism, dissent, refusal, an inconvenient answer, or painful self-disclosure.\n    trigger event: The speaker produces an utterance that carries interpersonal or face cost.\n    laughter action: Reduce the force, seriousness, or intrusiveness of the delicate contribution and help manage the uneasiness around it.\n    lexical anchor: Action-level: the turn must actually contain the delicate act, such as mild fault-finding, disagreement, refusal, inconvenient information, or trouble-telling.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Can I run my history presentation by you before class?\"},{\"speaker\":\"B\",\"text\":\"Sure, how long is it supposed to be?\"},{\"speaker\":\"A\",\"text\":\"Ten minutes, but my practice run took twenty-eight.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"You might need to trim it a little, unless ten minutes means twenty-eight now.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Can I run my history presentation by you before class?"
+          },
+          {
+            "speaker": "B",
+            "text": "Sure, how long is it supposed to be?"
+          },
+          {
+            "speaker": "A",
+            "text": "Ten minutes, but my practice run took twenty-eight."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "You might need to trim it a little, unless ten minutes means twenty-eight now."
+        }
+      },
+      "usage": {
+        "input_tokens": 2464,
+        "output_tokens": 368
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__show-enjoyment-of-incongruity__benevolence-induction",
+      "pair_id": "school__show-enjoyment-of-incongruity__benevolence-induction",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Benevolence induction",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.",
+          "example": "(Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'",
+          "example_explanation": "John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Benevolence induction\nDefinition: Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.\nExample: (Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'\nExample explanation: John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own request, suggestion, opinion, favor, or other contribution that is exposed to evaluation, disagreement, or refusal.\n    trigger event: The speaker makes a contribution for which friendly agreement, leniency, or non-harsh evaluation is interactionally relevant.\n    laughter action: Solicit goodwill, agreement, friendliness, or leniency from the interlocutor and discourage harsh evaluation of the contribution.\n    lexical anchor: Action-level: a request, suggestion, opinion, favor, admission, or similarly evaluable contribution; no particular word is required.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Ms Patel wants to know why our project outline is still empty.\"},{\"speaker\":\"B\",\"text\":\"I thought you were filling it in.\"},{\"speaker\":\"A\",\"text\":\"No, you said you'd explain it to her.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Could you tell her the blank page is our minimalist first draft?\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Ms Patel wants to know why our project outline is still empty."
+          },
+          {
+            "speaker": "B",
+            "text": "I thought you were filling it in."
+          },
+          {
+            "speaker": "A",
+            "text": "No, you said you'd explain it to her."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Could you tell her the blank page is our minimalist first draft?"
+        }
+      },
+      "usage": {
+        "input_tokens": 2509,
+        "output_tokens": 447
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__show-enjoyment-of-incongruity__smoothing",
+      "pair_id": "school__show-enjoyment-of-incongruity__smoothing",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Smoothing",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter used to resolve social awkwardness in general (e.g., embarrassment) or to help the flow of the conversation when a conversational partner reacts in an unexpected way; it minimizes potential social discomfort.",
+          "example": "(Ex. 14) Interviewer: 'Right, you seem to be pretty well qualified.' ; John: 'I hope so <laughter>yes</laughter>'",
+          "example_explanation": "The laughter smooths the response to a compliment: since it is culturally frowned upon to speak well of oneself, the little laugh helps John avoid being viewed as presumptuous and arrogant."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Smoothing\nDefinition: Laughter used to resolve social awkwardness in general (e.g., embarrassment) or to help the flow of the conversation when a conversational partner reacts in an unexpected way; it minimizes potential social discomfort.\nExample: (Ex. 14) Interviewer: 'Right, you seem to be pretty well qualified.' ; John: 'I hope so <laughter>yes</laughter>'\nExample explanation: The laughter smooths the response to a compliment: since it is culturally frowned upon to speak well of oneself, the little laugh helps John avoid being viewed as presumptuous and arrogant.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: either\n    event initiator: either / interaction\n    event focus: Mild social or conversational awkwardness in the interaction itself.\n    trigger event: Embarrassment, a socially awkward moment, or an unexpected conversational response creates potential discomfort or disrupts the expected flow.\n    laughter action: Minimize the awkwardness and help the conversation continue smoothly.\n    lexical anchor: None required: the relevant cue may come from the interactional situation rather than a particular expression.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"I heard you accidentally called Mr. Jones Dad in class.\"},{\"speaker\":\"B\",\"text\":\"Yeah, I was just trying to ask him for a pencil.\"},{\"speaker\":\"A\",\"text\":\"At least he didn't ground you.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"No, he just gave me homework, which is basically the school version.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "I heard you accidentally called Mr. Jones Dad in class."
+          },
+          {
+            "speaker": "B",
+            "text": "Yeah, I was just trying to ask him for a pencil."
+          },
+          {
+            "speaker": "A",
+            "text": "At least he didn't ground you."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "No, he just gave me homework, which is basically the school version."
+        }
+      },
+      "usage": {
+        "input_tokens": 2433,
+        "output_tokens": 445
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__show-enjoyment-of-incongruity__show-sympathy",
+      "pair_id": "school__show-enjoyment-of-incongruity__show-sympathy",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Show sympathy",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter produced in RESPONSE to another's socially incongruous act (softening, benevolence induction, smoothing) - either antiphonally (laughter answering laughter of that class) or to the act itself - showing understanding of the partner's social discomfort, displaying closeness and assuring them they are not being judged for what they share.",
+          "example": "(Ex. 15) MH: '...everybody saw was not the' ; Interv.: 'Mhm.' ; MH: 'fit strapping Heseltine which I wished' ; Interv.: 'You looked terrible.' ; MH: 'which I wished to portray.' ; Interv.: <laughter/>. || (Ex. 16) A: 'These are the stairs?? ... we are going to do this like this.... I put the staircases because I've badly drawn!' ; B: <laughter/>.",
+          "example_explanation": "Both laughs respond to a display of some kind of weakness by the interlocutor, showing understanding of the social discomfort expressed and assuring the partner they are not being judged."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Show sympathy\nDefinition: Laughter produced in RESPONSE to another's socially incongruous act (softening, benevolence induction, smoothing) - either antiphonally (laughter answering laughter of that class) or to the act itself - showing understanding of the partner's social discomfort, displaying closeness and assuring them they are not being judged for what they share.\nExample: (Ex. 15) MH: '...everybody saw was not the' ; Interv.: 'Mhm.' ; MH: 'fit strapping Heseltine which I wished' ; Interv.: 'You looked terrible.' ; MH: 'which I wished to portray.' ; Interv.: <laughter/>. || (Ex. 16) A: 'These are the stairs?? ... we are going to do this like this.... I put the staircases because I've badly drawn!' ; B: <laughter/>.\nExample explanation: Both laughs respond to a display of some kind of weakness by the interlocutor, showing understanding of the social discomfort expressed and assuring the partner they are not being judged.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: recipient\n    event initiator: partner\n    event focus: The partner's socially uncomfortable, face-sensitive, or vulnerable contribution.\n    trigger event: The partner displays social discomfort or produces a socially incongruous act, such as softening, benevolence induction, smoothing, or another vulnerable contribution.\n    laughter action: Show understanding of the partner's discomfort, display closeness, and reassure the partner that they are not being judged harshly.\n    lexical anchor: None required: the laughter responds to the partner's social display or discomfort.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"I don't think I can go back to English tomorrow.\"},{\"speaker\":\"B\",\"text\":\"What happened?\"},{\"speaker\":\"A\",\"text\":\"I called Mr Patel 'Mum' in front of the whole class.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Well, at least you've made parents' evening more efficient.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "I don't think I can go back to English tomorrow."
+          },
+          {
+            "speaker": "B",
+            "text": "What happened?"
+          },
+          {
+            "speaker": "A",
+            "text": "I called Mr Patel 'Mum' in front of the whole class."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Well, at least you've made parents' evening more efficient."
+        }
+      },
+      "usage": {
+        "input_tokens": 2549,
+        "output_tokens": 364
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__show-enjoyment-of-incongruity__marking-irony",
+      "pair_id": "school__show-enjoyment-of-incongruity__marking-irony",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did Leo finally send his part of the history project?\"},{\"speaker\":\"B\",\"text\":\"He sent one title slide and misspelled his own name.\"},{\"speaker\":\"A\",\"text\":\"And we're presenting it tomorrow morning.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Well, he's obviously the perfectionist of the group.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did Leo finally send his part of the history project?"
+          },
+          {
+            "speaker": "B",
+            "text": "He sent one title slide and misspelled his own name."
+          },
+          {
+            "speaker": "A",
+            "text": "And we're presenting it tomorrow morning."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Well, he's obviously the perfectionist of the group."
+        }
+      },
+      "usage": {
+        "input_tokens": 2447,
+        "output_tokens": 399
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__show-enjoyment-of-incongruity__scare-quoting-invite-enrichment",
+      "pair_id": "school__show-enjoyment-of-incongruity__scare-quoting-invite-enrichment",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Scare-quoting / invite enrichment",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling that a particular expression is being used in a way that deviates slightly from its most standard understanding, inviting the addressee to enrich/reinterpret its meaning (cf. scare-quoting).",
+          "example": "(Ex. 18) A: 'I don't know if you can help that man or not.' ; B: 'I'll have <laughter>a word</laughter> with him Terry' ; A: '[...] Because Mr had represented him.'",
+          "example_explanation": "The laughter signals that the expression 'a word' is not to be read in its most standard sense."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Scare-quoting / invite enrichment\nDefinition: Laughter signalling that a particular expression is being used in a way that deviates slightly from its most standard understanding, inviting the addressee to enrich/reinterpret its meaning (cf. scare-quoting).\nExample: (Ex. 18) A: 'I don't know if you can help that man or not.' ; B: 'I'll have <laughter>a word</laughter> with him Terry' ; A: '[...] Because Mr had represented him.'\nExample explanation: The laughter signals that the expression 'a word' is not to be read in its most standard sense.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: A particular word or phrase whose standard interpretation is not quite the locally intended one.\n    trigger event: The speaker uses an expression for which the context supports a richer, loosened, narrowed, or otherwise nonstandard interpretation.\n    laughter action: Flag the expression as requiring enrichment or reinterpretation beyond its most standard meaning.\n    lexical anchor: Required: a specific word or phrase that can support both a standard interpretation and a contextually enriched one.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did Maya finish editing your group report?\"},{\"speaker\":\"B\",\"text\":\"She opened it five minutes before we submitted.\"},{\"speaker\":\"A\",\"text\":\"Did she manage to change anything?\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"She made a major revision: she changed the font.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did Maya finish editing your group report?"
+          },
+          {
+            "speaker": "B",
+            "text": "She opened it five minutes before we submitted."
+          },
+          {
+            "speaker": "A",
+            "text": "Did she manage to change anything?"
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "She made a major revision: she changed the font."
+        }
+      },
+      "usage": {
+        "input_tokens": 2452,
+        "output_tokens": 663
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__show-enjoyment-of-incongruity__lexical-uncertainty-editing-phrase",
+      "pair_id": "school__show-enjoyment-of-incongruity__lexical-uncertainty-editing-phrase",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Lexical uncertainty / editing phrase",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter functioning as an editing phrase, signalling the speaker's need to reformulate, hedge or correct her/his own previous contribution (uncertainty about the lexical choice just made).",
+          "example": "(Ex. 19) Lecturer: '...There are a whole range of things he can't do, he can't direct congress, he can't appoint who he wants freely, he can't make treaties with whom he wants when he wants, he can't start wars <laughter>if he wants to start wars</laughter>.'",
+          "example_explanation": "The laughter is used as an editing phrase, signalling the speaker's need to reformulate and correct his previous contribution."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Show enjoyment of incongruity\nDefinition: Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\nExample: (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\nExample explanation: In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n[laughter function 2]\nFunction name: Lexical uncertainty / editing phrase\nDefinition: Laughter functioning as an editing phrase, signalling the speaker's need to reformulate, hedge or correct her/his own previous contribution (uncertainty about the lexical choice just made).\nExample: (Ex. 19) Lecturer: '...There are a whole range of things he can't do, he can't direct congress, he can't appoint who he wants freely, he can't make treaties with whom he wants when he wants, he can't start wars <laughter>if he wants to start wars</laughter>.'\nExample explanation: The laughter is used as an editing phrase, signalling the speaker's need to reformulate and correct his previous contribution.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / shared situation\n    event focus: A humorous mismatch between an utterance or event and shared background knowledge or expectations.\n    trigger event: A recognizable clash with what would normally be expected becomes available and is construable as witty, rewarding, or pleasantly funny.\n    laughter action: Display appreciation and enjoyment of the incongruity, potentially inviting shared amusement.\n    lexical anchor: Optional: wording or a described event that makes the humorous mismatch recoverable.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own wording or formulation rather than the external event being described.\n    trigger event: The speaker treats a just-produced word or phrase as imprecise, excessive, ambiguous, or otherwise in need of reformulation, hedging, qualification, or correction.\n    laughter action: Mark the formulation as provisional and manage an ongoing self-repair or editing process.\n    lexical anchor: Required: a provisional word or phrase plus an adjacent reformulation, qualifier, hedge, or correction that makes the editing relation recoverable.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did your group get the science project done?\"},{\"speaker\":\"B\",\"text\":\"Maya stayed late with me in the library.\"},{\"speaker\":\"A\",\"text\":\"So you two split the work evenly?\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"I finished our project—or, more accurately, I supervised the printer while Maya finished it.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did your group get the science project done?"
+          },
+          {
+            "speaker": "B",
+            "text": "Maya stayed late with me in the library."
+          },
+          {
+            "speaker": "A",
+            "text": "So you two split the work evenly?"
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "I finished our project—or, more accurately, I supervised the printer while Maya finished it."
+        }
+      },
+      "usage": {
+        "input_tokens": 2477,
+        "output_tokens": 390
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__softening-trouble-telling__marking-irony",
+      "pair_id": "school__softening-trouble-telling__marking-irony",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Softening / trouble-telling",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.",
+          "example": "(Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'",
+          "example_explanation": "Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Softening / trouble-telling\nDefinition: Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.\nExample: (Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'\nExample explanation: Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own socially delicate contribution, such as criticism, dissent, refusal, an inconvenient answer, or painful self-disclosure.\n    trigger event: The speaker produces an utterance that carries interpersonal or face cost.\n    laughter action: Reduce the force, seriousness, or intrusiveness of the delicate contribution and help manage the uneasiness around it.\n    lexical anchor: Action-level: the turn must actually contain the delicate act, such as mild fault-finding, disagreement, refusal, inconvenient information, or trouble-telling.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Do you think my biology slides are ready for class tomorrow?\"},{\"speaker\":\"B\",\"text\":\"Have you tried viewing them from the back of the room?\"},{\"speaker\":\"A\",\"text\":\"No, but I kept all my notes on each slide so I wouldn't forget anything.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"The back row is going to love those tiny paragraphs.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Do you think my biology slides are ready for class tomorrow?"
+          },
+          {
+            "speaker": "B",
+            "text": "Have you tried viewing them from the back of the room?"
+          },
+          {
+            "speaker": "A",
+            "text": "No, but I kept all my notes on each slide so I wouldn't forget anything."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "The back row is going to love those tiny paragraphs."
+        }
+      },
+      "usage": {
+        "input_tokens": 2380,
+        "output_tokens": 463
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__benevolence-induction__marking-irony",
+      "pair_id": "school__benevolence-induction__marking-irony",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Benevolence induction",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.",
+          "example": "(Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'",
+          "example_explanation": "John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Benevolence induction\nDefinition: Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.\nExample: (Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'\nExample explanation: John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own request, suggestion, opinion, favor, or other contribution that is exposed to evaluation, disagreement, or refusal.\n    trigger event: The speaker makes a contribution for which friendly agreement, leniency, or non-harsh evaluation is interactionally relevant.\n    laughter action: Solicit goodwill, agreement, friendliness, or leniency from the interlocutor and discourage harsh evaluation of the contribution.\n    lexical anchor: Action-level: a request, suggestion, opinion, favor, admission, or similarly evaluable contribution; no particular word is required.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Have you finished your slides for tomorrow's history presentation?\"},{\"speaker\":\"B\",\"text\":\"I've got the title slide and half of the first one.\"},{\"speaker\":\"A\",\"text\":\"We still need six more before class.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Maybe we can call the empty slides a minimalist teaching strategy.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Have you finished your slides for tomorrow's history presentation?"
+          },
+          {
+            "speaker": "B",
+            "text": "I've got the title slide and half of the first one."
+          },
+          {
+            "speaker": "A",
+            "text": "We still need six more before class."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Maybe we can call the empty slides a minimalist teaching strategy."
+        }
+      },
+      "usage": {
+        "input_tokens": 2425,
+        "output_tokens": 255
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__smoothing__marking-irony",
+      "pair_id": "school__smoothing__marking-irony",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Smoothing",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter used to resolve social awkwardness in general (e.g., embarrassment) or to help the flow of the conversation when a conversational partner reacts in an unexpected way; it minimizes potential social discomfort.",
+          "example": "(Ex. 14) Interviewer: 'Right, you seem to be pretty well qualified.' ; John: 'I hope so <laughter>yes</laughter>'",
+          "example_explanation": "The laughter smooths the response to a compliment: since it is culturally frowned upon to speak well of oneself, the little laugh helps John avoid being viewed as presumptuous and arrogant."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Smoothing\nDefinition: Laughter used to resolve social awkwardness in general (e.g., embarrassment) or to help the flow of the conversation when a conversational partner reacts in an unexpected way; it minimizes potential social discomfort.\nExample: (Ex. 14) Interviewer: 'Right, you seem to be pretty well qualified.' ; John: 'I hope so <laughter>yes</laughter>'\nExample explanation: The laughter smooths the response to a compliment: since it is culturally frowned upon to speak well of oneself, the little laugh helps John avoid being viewed as presumptuous and arrogant.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: either\n    event initiator: either / interaction\n    event focus: Mild social or conversational awkwardness in the interaction itself.\n    trigger event: Embarrassment, a socially awkward moment, or an unexpected conversational response creates potential discomfort or disrupts the expected flow.\n    laughter action: Minimize the awkwardness and help the conversation continue smoothly.\n    lexical anchor: None required: the relevant cue may come from the interactional situation rather than a particular expression.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Why did Ms. Patel keep you after the test?\"},{\"speaker\":\"B\",\"text\":\"She caught me copying Liam's answer, and I still got it wrong.\"},{\"speaker\":\"A\",\"text\":\"Oh, I wasn't expecting that.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Yeah, definitely my proudest academic moment.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Why did Ms. Patel keep you after the test?"
+          },
+          {
+            "speaker": "B",
+            "text": "She caught me copying Liam's answer, and I still got it wrong."
+          },
+          {
+            "speaker": "A",
+            "text": "Oh, I wasn't expecting that."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Yeah, definitely my proudest academic moment."
+        }
+      },
+      "usage": {
+        "input_tokens": 2349,
+        "output_tokens": 431
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__show-sympathy__marking-irony",
+      "pair_id": "school__show-sympathy__marking-irony",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Show sympathy",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter produced in RESPONSE to another's socially incongruous act (softening, benevolence induction, smoothing) - either antiphonally (laughter answering laughter of that class) or to the act itself - showing understanding of the partner's social discomfort, displaying closeness and assuring them they are not being judged for what they share.",
+          "example": "(Ex. 15) MH: '...everybody saw was not the' ; Interv.: 'Mhm.' ; MH: 'fit strapping Heseltine which I wished' ; Interv.: 'You looked terrible.' ; MH: 'which I wished to portray.' ; Interv.: <laughter/>. || (Ex. 16) A: 'These are the stairs?? ... we are going to do this like this.... I put the staircases because I've badly drawn!' ; B: <laughter/>.",
+          "example_explanation": "Both laughs respond to a display of some kind of weakness by the interlocutor, showing understanding of the social discomfort expressed and assuring the partner they are not being judged."
+        },
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Show sympathy\nDefinition: Laughter produced in RESPONSE to another's socially incongruous act (softening, benevolence induction, smoothing) - either antiphonally (laughter answering laughter of that class) or to the act itself - showing understanding of the partner's social discomfort, displaying closeness and assuring them they are not being judged for what they share.\nExample: (Ex. 15) MH: '...everybody saw was not the' ; Interv.: 'Mhm.' ; MH: 'fit strapping Heseltine which I wished' ; Interv.: 'You looked terrible.' ; MH: 'which I wished to portray.' ; Interv.: <laughter/>. || (Ex. 16) A: 'These are the stairs?? ... we are going to do this like this.... I put the staircases because I've badly drawn!' ; B: <laughter/>.\nExample explanation: Both laughs respond to a display of some kind of weakness by the interlocutor, showing understanding of the social discomfort expressed and assuring the partner they are not being judged.\n\n[laughter function 2]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: recipient\n    event initiator: partner\n    event focus: The partner's socially uncomfortable, face-sensitive, or vulnerable contribution.\n    trigger event: The partner displays social discomfort or produces a socially incongruous act, such as softening, benevolence induction, smoothing, or another vulnerable contribution.\n    laughter action: Show understanding of the partner's discomfort, display closeness, and reassure the partner that they are not being judged harshly.\n    lexical anchor: None required: the laughter responds to the partner's social display or discomfort.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did your science presentation go okay?\"},{\"speaker\":\"B\",\"text\":\"Yeah, once I stopped reading straight off the slides.\"},{\"speaker\":\"A\",\"text\":\"Mine was worse; I called photosynthesis “photography” three times before anyone corrected me.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"We’ve all had a completely flawless presentation like that.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did your science presentation go okay?"
+          },
+          {
+            "speaker": "B",
+            "text": "Yeah, once I stopped reading straight off the slides."
+          },
+          {
+            "speaker": "A",
+            "text": "Mine was worse; I called photosynthesis “photography” three times before anyone corrected me."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "We’ve all had a completely flawless presentation like that."
+        }
+      },
+      "usage": {
+        "input_tokens": 2465,
+        "output_tokens": 957
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__marking-irony__scare-quoting-invite-enrichment",
+      "pair_id": "school__marking-irony__scare-quoting-invite-enrichment",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        },
+        {
+          "function": "Scare-quoting / invite enrichment",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling that a particular expression is being used in a way that deviates slightly from its most standard understanding, inviting the addressee to enrich/reinterpret its meaning (cf. scare-quoting).",
+          "example": "(Ex. 18) A: 'I don't know if you can help that man or not.' ; B: 'I'll have <laughter>a word</laughter> with him Terry' ; A: '[...] Because Mr had represented him.'",
+          "example_explanation": "The laughter signals that the expression 'a word' is not to be read in its most standard sense."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\n[laughter function 2]\nFunction name: Scare-quoting / invite enrichment\nDefinition: Laughter signalling that a particular expression is being used in a way that deviates slightly from its most standard understanding, inviting the addressee to enrich/reinterpret its meaning (cf. scare-quoting).\nExample: (Ex. 18) A: 'I don't know if you can help that man or not.' ; B: 'I'll have <laughter>a word</laughter> with him Terry' ; A: '[...] Because Mr had represented him.'\nExample explanation: The laughter signals that the expression 'a word' is not to be read in its most standard sense.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: A particular word or phrase whose standard interpretation is not quite the locally intended one.\n    trigger event: The speaker uses an expression for which the context supports a richer, loosened, narrowed, or otherwise nonstandard interpretation.\n    laughter action: Flag the expression as requiring enrichment or reinterpretation beyond its most standard meaning.\n    lexical anchor: Required: a specific word or phrase that can support both a standard interpretation and a contextually enriched one.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did Ms. Chen really assign a review packet for today?\"},{\"speaker\":\"B\",\"text\":\"Yeah, she called it a quick review before the quiz.\"},{\"speaker\":\"A\",\"text\":\"It's forty pages, and we have to finish it by lunch.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Right, a quick review that only takes the whole morning.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did Ms. Chen really assign a review packet for today?"
+          },
+          {
+            "speaker": "B",
+            "text": "Yeah, she called it a quick review before the quiz."
+          },
+          {
+            "speaker": "A",
+            "text": "It's forty pages, and we have to finish it by lunch."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Right, a quick review that only takes the whole morning."
+        }
+      },
+      "usage": {
+        "input_tokens": 2368,
+        "output_tokens": 613
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    },
+    {
+      "id": "school__marking-irony__lexical-uncertainty-editing-phrase",
+      "pair_id": "school__marking-irony__lexical-uncertainty-editing-phrase",
+      "sample": 1,
+      "topic": "school",
+      "laughter_functions": [
+        {
+          "function": "Marking irony",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.",
+          "example": "(Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'",
+          "example_explanation": "The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically."
+        },
+        {
+          "function": "Lexical uncertainty / editing phrase",
+          "laughable_type": "Pragmatic incongruity (incongruity branch)",
+          "definition": "Laughter functioning as an editing phrase, signalling the speaker's need to reformulate, hedge or correct her/his own previous contribution (uncertainty about the lexical choice just made).",
+          "example": "(Ex. 19) Lecturer: '...There are a whole range of things he can't do, he can't direct congress, he can't appoint who he wants freely, he can't make treaties with whom he wants when he wants, he can't start wars <laughter>if he wants to start wars</laughter>.'",
+          "example_explanation": "The laughter is used as an editing phrase, signalling the speaker's need to reformulate and correct his previous contribution."
+        }
+      ],
+      "pair_condition": "",
+      "pair_viability": "",
+      "user_prompt": "\n[dialogue topic]: school\n\n[laughter function 1]\nFunction name: Marking irony\nDefinition: Laughter signalling to the interlocutor that what is about to be said, or has just been said, is not to be taken literally but should be interpreted as an ironic comment - marking an incongruity between what is said and what is meant, and masking the laugher's real opinion.\nExample: (Ex. 17) Lecturer: '...And then of course you've got Ronald Reagan ... and <laughter/> history ended with Ronald Reagan.'\nExample explanation: The professor's laughter indicates that the upcoming statement is not to be taken seriously but ironically.\n\n[laughter function 2]\nFunction name: Lexical uncertainty / editing phrase\nDefinition: Laughter functioning as an editing phrase, signalling the speaker's need to reformulate, hedge or correct her/his own previous contribution (uncertainty about the lexical choice just made).\nExample: (Ex. 19) Lecturer: '...There are a whole range of things he can't do, he can't direct congress, he can't appoint who he wants freely, he can't make treaties with whom he wants when he wants, he can't start wars <laughter>if he wants to start wars</laughter>.'\nExample explanation: The laughter is used as an editing phrase, signalling the speaker's need to reformulate and correct his previous contribution.\n\nGenerate ONE short, natural spoken dialogue for this topic in which laughter added\nto B's final turn can plausibly be analyzed as either function.\n\nDo not make the transcript neutral merely for the sake of ambiguity. Build the\nspecific conversational conditions that both definitions require, and let the\nsame final-turn wording carry evidence for both readings.\n\n\n    [laughter function 1 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own proposition or evaluative stance whose literal interpretation differs from the intended ironic meaning.\n    trigger event: The speaker produces, or is about to produce, wording whose literal reading conflicts with the contextually intended stance.\n    laughter action: Signal that the utterance should not be taken literally but interpreted ironically, indirectly conveying or masking the speaker's real opinion.\n    lexical anchor: Required: an expression or proposition whose literal interpretation can plausibly contrast with the intended stance.\n\n    [laughter function 2 - structural profile]\n    laugher role: producer\n    event initiator: self / laugher\n    event focus: The speaker's own wording or formulation rather than the external event being described.\n    trigger event: The speaker treats a just-produced word or phrase as imprecise, excessive, ambiguous, or otherwise in need of reformulation, hedging, qualification, or correction.\n    laughter action: Mark the formulation as provisional and manage an ongoing self-repair or editing process.\n    lexical anchor: Required: a provisional word or phrase plus an adjacent reformulation, qualifier, hedge, or correction that makes the editing relation recoverable.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did Ms. Patel really assign another practice essay for tomorrow?\"},{\"speaker\":\"B\",\"text\":\"She called it optional in class.\"},{\"speaker\":\"A\",\"text\":\"But she just posted that it counts for twenty percent.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"Right, so it’s optional—or, well, optional if you don’t mind losing twenty percent.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did Ms. Patel really assign another practice essay for tomorrow?"
+          },
+          {
+            "speaker": "B",
+            "text": "She called it optional in class."
+          },
+          {
+            "speaker": "A",
+            "text": "But she just posted that it counts for twenty percent."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "Right, so it’s optional—or, well, optional if you don’t mind losing twenty percent."
+        }
+      },
+      "usage": {
+        "input_tokens": 2393,
+        "output_tokens": 398
+      },
+      "served_by": "gpt-5.6-sol",
+      "attempts": 1,
+      "repaired_duplicate_turn": false
+    }
+  ]
+}

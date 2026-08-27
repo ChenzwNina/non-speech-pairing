@@ -1,0 +1,2562 @@
+{
+  "models": {
+    "openai": "gpt-realtime-2.1",
+    "grok": "grok-voice-think-fast-2.0",
+    "gemini": "gemini-3.1-flash-live-preview",
+    "qwen": "qwen-audio-3.0-realtime-plus"
+  },
+  "task": "You will hear one short audio clip and nothing else. It is a single sound made by a person: it might be laughter, it might be a sigh or an exhale, it might be an ordinary spoken word, or it might be nothing at all.\n\nReport only what is actually in the clip. Do not guess what would be likely.\n\nAnswer in exactly two lines:\nSOUND: one of laugh, sigh, breath, word, other, nothing\nWORDS: any actual words spoken, or none",
+  "min_agree": 3,
+  "checked_at": "2026-08-25T08:28:45.891010+00:00",
+  "clean": 115,
+  "suspicious": 9,
+  "clips": [
+    {
+      "item_id": "emb_001",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_001_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_001",
+      "condition": "happy",
+      "turn": 4,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_001_happy_1_t04_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "grok": "laugh"
+      },
+      "words": {
+        "qwen": "hehe"
+      },
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_001",
+      "condition": "happy",
+      "turn": 7,
+      "position": "end",
+      "token": "[laughs] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_001_happy_2_t07_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "grok": "laugh",
+        "openai": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_001",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_001_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "qwen": "ah"
+      },
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_001",
+      "condition": "sad",
+      "turn": 4,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_001_sad_1_t04_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "grok": "error"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_001",
+      "condition": "sad",
+      "turn": 7,
+      "position": "end",
+      "token": "[sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_001_sad_2_t07_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "word",
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_002",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_002_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_002",
+      "condition": "happy",
+      "turn": 3,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_002_happy_1_t03_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "grok": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh"
+      },
+      "words": {
+        "gemini": "히히",
+        "qwen": "hehe"
+      },
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_002",
+      "condition": "happy",
+      "turn": 6,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_002_happy_2_t06_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_002",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_002_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "other",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_002",
+      "condition": "sad",
+      "turn": 3,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_002_sad_1_t03_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_002",
+      "condition": "sad",
+      "turn": 6,
+      "position": "end",
+      "token": "[sigh] ah",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_002_sad_2_t06_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "gemini": "sigh",
+        "openai": "sigh",
+        "qwen": "sigh",
+        "grok": "error"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_003",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_003_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "grok": "word",
+        "gemini": "laugh",
+        "qwen": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_003",
+      "condition": "happy",
+      "turn": 2,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_003_happy_1_t02_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "grok": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_003",
+      "condition": "happy",
+      "turn": 4,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_003_happy_2_t04_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_003",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_003_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_003",
+      "condition": "sad",
+      "turn": 2,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_003_sad_1_t02_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_003",
+      "condition": "sad",
+      "turn": 4,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_003_sad_2_t04_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "word",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_004",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_004_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "openai": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_004",
+      "condition": "happy",
+      "turn": 2,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_004_happy_1_t02_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "openai": "laugh",
+        "gemini": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_004",
+      "condition": "happy",
+      "turn": 5,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_004_happy_2_t05_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_004",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_004_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "word",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_004",
+      "condition": "sad",
+      "turn": 2,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_004_sad_1_t02_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "word",
+        "openai": "sigh",
+        "qwen": "sigh",
+        "gemini": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_004",
+      "condition": "sad",
+      "turn": 5,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_004_sad_2_t05_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "word",
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_005",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_005_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "grok": "error",
+        "openai": "laugh",
+        "qwen": "laugh",
+        "gemini": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_005",
+      "condition": "happy",
+      "turn": 4,
+      "position": "end",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_005_happy_1_t04_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "grok": "laugh"
+      },
+      "words": {
+        "qwen": "hehe"
+      },
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_005",
+      "condition": "happy",
+      "turn": 7,
+      "position": "start",
+      "token": "[chuckle] ha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_005_happy_2_t07_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "grok": "word",
+        "openai": "laugh",
+        "qwen": "laugh",
+        "gemini": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_005",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_005_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "word",
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_005",
+      "condition": "sad",
+      "turn": 4,
+      "position": "end",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_005_sad_1_t04_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "nothing"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_005",
+      "condition": "sad",
+      "turn": 7,
+      "position": "start",
+      "token": "[sigh] ah",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_005_sad_2_t07_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "openai": "sigh",
+        "gemini": "sigh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_006",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_006_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "openai": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_006",
+      "condition": "happy",
+      "turn": 2,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_006_happy_1_t02_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "grok": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "openai": "laugh"
+      },
+      "words": {
+        "qwen": "hehe"
+      },
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_006",
+      "condition": "happy",
+      "turn": 5,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_006_happy_2_t05_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh",
+        "openai": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_006",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_006_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_006",
+      "condition": "sad",
+      "turn": 2,
+      "position": "start",
+      "token": "[sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_006_sad_1_t02_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "word",
+        "openai": "sigh",
+        "qwen": "sigh",
+        "gemini": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_006",
+      "condition": "sad",
+      "turn": 5,
+      "position": "end",
+      "token": "[heavy sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_006_sad_2_t05_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "word",
+        "grok": "word"
+      },
+      "words": {
+        "openai": "hmm"
+      },
+      "majority": "word",
+      "votes": 2,
+      "clean": false
+    },
+    {
+      "item_id": "emb_007",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_007_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_007",
+      "condition": "happy",
+      "turn": 4,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_007_happy_1_t04_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_007",
+      "condition": "happy",
+      "turn": 7,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_007_happy_2_t07_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "grok": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "qwen": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_007",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_007_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "sigh",
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_007",
+      "condition": "sad",
+      "turn": 4,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_007_sad_1_t04_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "error"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_007",
+      "condition": "sad",
+      "turn": 7,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_007_sad_2_t07_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "sigh",
+        "qwen": "sigh",
+        "openai": "word",
+        "gemini": "sigh"
+      },
+      "words": {
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_008",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_008_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_008",
+      "condition": "happy",
+      "turn": 4,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_008_happy_1_t04_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh",
+        "gemini": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_008",
+      "condition": "happy",
+      "turn": 5,
+      "position": "end",
+      "token": "[chuckle] heh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_008_happy_2_t05_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_008",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_008_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "sigh",
+        "gemini": "breath",
+        "openai": "sigh",
+        "qwen": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_008",
+      "condition": "sad",
+      "turn": 4,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_008_sad_1_t04_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "error",
+        "qwen": "sigh",
+        "openai": "sigh",
+        "gemini": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_008",
+      "condition": "sad",
+      "turn": 5,
+      "position": "end",
+      "token": "[sigh] ahh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_008_sad_2_t05_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "sigh",
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_009",
+      "condition": "happy",
+      "turn": 1,
+      "position": "start",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_009_happy_0_t01_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "openai": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_009",
+      "condition": "happy",
+      "turn": 4,
+      "position": "end",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_009_happy_1_t04_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_009",
+      "condition": "happy",
+      "turn": 5,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_009_happy_2_t05_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "openai": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_009",
+      "condition": "sad",
+      "turn": 1,
+      "position": "start",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_009_sad_0_t01_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "word",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "openai": "uh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_009",
+      "condition": "sad",
+      "turn": 4,
+      "position": "end",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_009_sad_1_t04_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "grok": "sigh",
+        "qwen": "sigh",
+        "openai": "sigh",
+        "gemini": "breath"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_009",
+      "condition": "sad",
+      "turn": 5,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_009_sad_2_t05_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "breath",
+        "qwen": "sigh",
+        "grok": "nothing"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 2,
+      "clean": false
+    },
+    {
+      "item_id": "emb_010",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_010_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_010",
+      "condition": "happy",
+      "turn": 4,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_010_happy_1_t04_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_010",
+      "condition": "happy",
+      "turn": 5,
+      "position": "end",
+      "token": "[giggle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_010_happy_2_t05_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_010",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_010_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "word",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "openai": "uh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_010",
+      "condition": "sad",
+      "turn": 4,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_010_sad_1_t04_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_010",
+      "condition": "sad",
+      "turn": 5,
+      "position": "end",
+      "token": "[sigh] ah",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_010_sad_2_t05_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_011",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_011_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_011",
+      "condition": "happy",
+      "turn": 4,
+      "position": "end",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_011_happy_1_t04_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "word"
+      },
+      "words": {
+        "gemini": "히히",
+        "qwen": "hehe"
+      },
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_011",
+      "condition": "happy",
+      "turn": 7,
+      "position": "start",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_011_happy_2_t07_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_011",
+      "condition": "sad",
+      "turn": 2,
+      "position": "end",
+      "token": "[sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_011_sad_0_t02_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_011",
+      "condition": "sad",
+      "turn": 5,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_011_sad_1_t05_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "breath",
+        "qwen": "sigh",
+        "grok": "error"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 2,
+      "clean": false
+    },
+    {
+      "item_id": "emb_011",
+      "condition": "sad",
+      "turn": 8,
+      "position": "end",
+      "token": "[sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_011_sad_2_t08_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "gemini": "sigh",
+        "qwen": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_012",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_012_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_012",
+      "condition": "happy",
+      "turn": 2,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_012_happy_1_t02_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_012",
+      "condition": "happy",
+      "turn": 4,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_012_happy_2_t04_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "openai": "laugh",
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_012",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_012_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "word",
+        "grok": "sigh"
+      },
+      "words": {
+        "qwen": "ugh",
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_012",
+      "condition": "sad",
+      "turn": 2,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_012_sad_1_t02_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "word",
+        "grok": "error"
+      },
+      "words": {
+        "openai": "hmm"
+      },
+      "majority": "sigh",
+      "votes": 2,
+      "clean": false
+    },
+    {
+      "item_id": "emb_012",
+      "condition": "sad",
+      "turn": 4,
+      "position": "end",
+      "token": "[sigh] ah",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_012_sad_2_t04_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "openai": "sigh",
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "grok": "word"
+      },
+      "words": {
+        "gemini": "nonePhotographing the Night Sky: Star Trails and Celestial Beauty"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_013",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_013_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_013",
+      "condition": "happy",
+      "turn": 4,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_013_happy_1_t04_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_013",
+      "condition": "happy",
+      "turn": 7,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_013_happy_2_t07_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_013",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_013_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "gemini": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_013",
+      "condition": "sad",
+      "turn": 4,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_013_sad_1_t04_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_013",
+      "condition": "sad",
+      "turn": 7,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_013_sad_2_t07_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "word",
+        "grok": "word"
+      },
+      "words": {
+        "gemini": "ugh",
+        "openai": "ugh"
+      },
+      "majority": "word",
+      "votes": 2,
+      "clean": false
+    },
+    {
+      "item_id": "emb_014",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_014_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_014",
+      "condition": "happy",
+      "turn": 3,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_014_happy_1_t03_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {
+        "qwen": "hehe"
+      },
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_014",
+      "condition": "happy",
+      "turn": 4,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_014_happy_2_t04_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "gemini": "laugh",
+        "qwen": "laugh",
+        "openai": "laugh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_014",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_014_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "word",
+        "grok": "sigh"
+      },
+      "words": {
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_014",
+      "condition": "sad",
+      "turn": 3,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_014_sad_1_t03_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "breath",
+        "openai": "sigh",
+        "grok": "error"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 2,
+      "clean": false
+    },
+    {
+      "item_id": "emb_014",
+      "condition": "sad",
+      "turn": 4,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_014_sad_2_t04_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_015",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_015_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_015",
+      "condition": "happy",
+      "turn": 3,
+      "position": "end",
+      "token": "[laughs] hehe",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_015_happy_1_t03_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "word"
+      },
+      "words": {
+        "qwen": "he he"
+      },
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_015",
+      "condition": "happy",
+      "turn": 6,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_015_happy_2_t06_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_015",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_015_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_015",
+      "condition": "sad",
+      "turn": 3,
+      "position": "end",
+      "token": "[heavy sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_015_sad_1_t03_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_015",
+      "condition": "sad",
+      "turn": 6,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_015_sad_2_t06_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_016",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_016_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_016",
+      "condition": "happy",
+      "turn": 2,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_016_happy_1_t02_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {
+        "qwen": "he he"
+      },
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_016",
+      "condition": "happy",
+      "turn": 4,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_016_happy_2_t04_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_016",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_016_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "word",
+        "grok": "sigh"
+      },
+      "words": {
+        "qwen": "ugh",
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_016",
+      "condition": "sad",
+      "turn": 2,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_016_sad_1_t02_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "breath",
+        "openai": "sigh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 2,
+      "clean": false
+    },
+    {
+      "item_id": "emb_016",
+      "condition": "sad",
+      "turn": 4,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_016_sad_2_t04_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_017",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_017_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_017",
+      "condition": "happy",
+      "turn": 2,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_017_happy_1_t02_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_017",
+      "condition": "happy",
+      "turn": 4,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_017_happy_2_t04_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_017",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_017_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_017",
+      "condition": "sad",
+      "turn": 2,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_017_sad_1_t02_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_017",
+      "condition": "sad",
+      "turn": 4,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_017_sad_2_t04_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "gemini": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_018",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_018_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_018",
+      "condition": "happy",
+      "turn": 3,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_018_happy_1_t03_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "error"
+      },
+      "words": {
+        "qwen": "hehe"
+      },
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_018",
+      "condition": "happy",
+      "turn": 6,
+      "position": "end",
+      "token": "[chuckle] ha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_018_happy_2_t06_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_018",
+      "condition": "happy",
+      "turn": 8,
+      "position": "end",
+      "token": "[laughs] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_018_happy_3_t08_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_018",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_018_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "word",
+        "grok": "sigh"
+      },
+      "words": {
+        "qwen": "Ugh",
+        "gemini": "ugh ugh",
+        "openai": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_018",
+      "condition": "sad",
+      "turn": 3,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_018_sad_1_t03_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_018",
+      "condition": "sad",
+      "turn": 6,
+      "position": "end",
+      "token": "[sigh] ah",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_018_sad_2_t06_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "error"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_018",
+      "condition": "sad",
+      "turn": 8,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_018_sad_3_t08_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {
+        "qwen": "ugh"
+      },
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_019",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_019_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_019",
+      "condition": "happy",
+      "turn": 3,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_019_happy_1_t03_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "openai": "laugh",
+        "gemini": "laugh",
+        "grok": "laugh"
+      },
+      "words": {
+        "qwen": "hehe"
+      },
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_019",
+      "condition": "happy",
+      "turn": 6,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_019_happy_2_t06_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_019",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] ugh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_019_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_019",
+      "condition": "sad",
+      "turn": 4,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_019_sad_1_t04_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_019",
+      "condition": "sad",
+      "turn": 6,
+      "position": "end",
+      "token": "[sigh] ah",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_019_sad_2_t06_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "error"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_020",
+      "condition": "happy",
+      "turn": 1,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_020_happy_0_t01_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_020",
+      "condition": "happy",
+      "turn": 3,
+      "position": "start",
+      "token": "[laughs] hehe",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_020_happy_1_t03_start.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "word"
+      },
+      "words": {
+        "qwen": "he he"
+      },
+      "majority": "laugh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_020",
+      "condition": "happy",
+      "turn": 6,
+      "position": "end",
+      "token": "[chuckle] haha",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_020_happy_2_t06_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_020",
+      "condition": "happy",
+      "turn": 7,
+      "position": "end",
+      "token": "[laughs] haha",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_020_happy_3_t07_end.mp3",
+      "expected": "laugh",
+      "labels": {
+        "qwen": "laugh",
+        "gemini": "laugh",
+        "openai": "laugh",
+        "grok": "laugh"
+      },
+      "words": {},
+      "majority": "laugh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_020",
+      "condition": "sad",
+      "turn": 1,
+      "position": "end",
+      "token": "[sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_020_sad_0_t01_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "sigh"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 4,
+      "clean": true
+    },
+    {
+      "item_id": "emb_020",
+      "condition": "sad",
+      "turn": 3,
+      "position": "start",
+      "token": "[heavy sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_020_sad_1_t03_start.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "breath",
+        "openai": "sigh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 2,
+      "clean": false
+    },
+    {
+      "item_id": "emb_020",
+      "condition": "sad",
+      "turn": 6,
+      "position": "end",
+      "token": "[sigh] hhh",
+      "speaker": "B",
+      "path": "benchmark/out/audio_voc/emb_020_sad_2_t06_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "sigh",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 3,
+      "clean": true
+    },
+    {
+      "item_id": "emb_020",
+      "condition": "sad",
+      "turn": 7,
+      "position": "end",
+      "token": "[heavy sigh] hhh",
+      "speaker": "A",
+      "path": "benchmark/out/audio_voc/emb_020_sad_3_t07_end.mp3",
+      "expected": "sigh",
+      "labels": {
+        "qwen": "sigh",
+        "gemini": "sigh",
+        "openai": "other",
+        "grok": "word"
+      },
+      "words": {},
+      "majority": "sigh",
+      "votes": 2,
+      "clean": false
+    }
+  ]
+}

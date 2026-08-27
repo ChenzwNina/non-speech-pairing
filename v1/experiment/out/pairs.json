@@ -1,0 +1,727 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-21T15:46:43.838728+00:00",
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "speakers": 2,
+  "theme": "domestic",
+  "context_turns": 4,
+  "total_turns": 6,
+  "n_per_contrast": 1,
+  "judged": false,
+  "constraint": "turns 1-4 identical across versions with turn 4 as the trigger; turn 5 is B's voc-only first contribution; turn 6 is the selected reply",
+  "results": [
+    {
+      "pair_id": "domestic_gasp_grunt_001",
+      "scenario": "Two housemates are preparing for a washing-machine delivery and installation.",
+      "trigger_note": "A reveals that the delivery crew requires the laundry room and adjacent closet to be cleared that evening.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "The new washing machine is coming tomorrow morning."
+        },
+        {
+          "speaker": "A",
+          "text": "I checked whether the delivery crew will disconnect the old one for us."
+        },
+        {
+          "speaker": "A",
+          "text": "They will, but they need to reach the shutoff valve behind the laundry-room wall."
+        },
+        {
+          "speaker": "A",
+          "text": "They said we have to clear the laundry room and empty the closet beside it before they arrive."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "shock",
+        "responder": "A",
+        "response": "They only need a path to the valve, so we can leave the back half of the closet alone."
+      },
+      "version_2": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "I'll take the laundry-room stuff; would you rather do the hanging clothes, or should we move the delivery to Friday?"
+      },
+      "why_the_vocalization_changes_the_response": "The gasp prompts A to narrow the alarming scope of the task, while the grunt prompts A to negotiate the unwanted work and offer a scheduling alternative.",
+      "usage": {
+        "input_tokens": 4032,
+        "output_tokens": 814
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-grunt",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_gasp_laughter_001",
+      "scenario": "A has found the cause of a slow bathroom sink drain while doing a household repair.",
+      "trigger_note": "A reveals that an absurd combination of children's toys and clothing was blocking the sink pipe.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I finally figured out why the downstairs bathroom sink has been draining so slowly."
+        },
+        {
+          "speaker": "A",
+          "text": "I took the trap apart expecting a clump of hair."
+        },
+        {
+          "speaker": "A",
+          "text": "There was almost none, and the pipe itself looks fine."
+        },
+        {
+          "speaker": "A",
+          "text": "A tiny plastic dinosaur was wedged in the bend, wearing one of the kid's doll socks."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "shock",
+        "responder": "A",
+        "response": "Nothing's damaged—I pulled it out, and the sink is draining normally again."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "I'm leaving it on the counter until the kids get home; that crime scene deserves an audience."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp is taken as concern that the blockage caused damage, so A reassures B about the repair. The laughter treats the discovery as absurdly funny, so A preserves it as a playful reveal for the children.",
+      "usage": {
+        "input_tokens": 4049,
+        "output_tokens": 1184
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_gasp_sigh_001",
+      "scenario": "A has received an attic-insulation quote after trying to figure out why the upstairs bedrooms are cold.",
+      "trigger_note": "A reveals both the high quote and the short deadline for clearing the attic.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I finally got a contractor to look at the attic today."
+        },
+        {
+          "speaker": "A",
+          "text": "He says the cold upstairs rooms aren't really coming from the windows."
+        },
+        {
+          "speaker": "A",
+          "text": "The insulation has settled almost flat, so we're losing heat through the roof."
+        },
+        {
+          "speaker": "A",
+          "text": "His quote is $1,900, and he'll only fit us in next week if we clear the attic by Saturday."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "shock",
+        "responder": "A",
+        "response": "The quote includes the rebate application; if it goes through, our part should be closer to seven hundred."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "I'll bring down the heavy bins, and we can move only what he needs instead of emptying the whole attic."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp is taken as alarm at the unexpectedly high cost, so A clarifies the likely out-of-pocket amount. The sigh is taken as resistance to the looming attic work, so A reduces and shares the practical burden.",
+      "usage": {
+        "input_tokens": 4078,
+        "output_tokens": 896
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_gasp_sob_001",
+      "scenario": "A is clearing a kitchen junk drawer and discovers a late grandmother's recipe card.",
+      "trigger_note": "A reveals that the card is the grandmother's cinnamon-roll recipe from the last Christmas before she died.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I'm finally clearing out that junk drawer by the stove."
+        },
+        {
+          "speaker": "A",
+          "text": "Most of it is coupons and appliance manuals, but there was a stack of old recipe cards at the bottom."
+        },
+        {
+          "speaker": "A",
+          "text": "I thought they were mine until I saw Grandma's handwriting on the envelopes."
+        },
+        {
+          "speaker": "A",
+          "text": "This one is her cinnamon-roll recipe, dated the Christmas before she died."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "pleasant surprise",
+        "responder": "A",
+        "response": "There’s a whole stack underneath it; maybe her orange cake recipe is in there too."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "I’ll put this in a sleeve and save the rest of the box for another day."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp invites A to share the discovery and continue searching for treasured recipes, while the sob leads A to protect the card and remove pressure to keep sorting.",
+      "usage": {
+        "input_tokens": 4092,
+        "output_tokens": 815
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_gasp_yawn_001",
+      "scenario": "A discovers why clean towels have been collecting unfamiliar cat hair late at night.",
+      "trigger_note": "A reveals that the neighbor's cat has been entering through the pet door and sleeping on the spare blankets.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "It's nearly midnight, and I started folding towels because I couldn't sleep."
+        },
+        {
+          "speaker": "A",
+          "text": "I kept finding little gray hairs in the clean stack."
+        },
+        {
+          "speaker": "A",
+          "text": "I thought our cat had gotten into the laundry basket again, but then I heard rustling by the hall closet."
+        },
+        {
+          "speaker": "A",
+          "text": "It turns out the neighbor's cat has been sneaking in through the pet door and sleeping on the spare blankets every night."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[gasp]",
+        "intended_interpretation": "pleasant surprise",
+        "responder": "A",
+        "response": "I'll show you the little nest before I move anything—it's tucked between the spare pillows."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Forget the closet tonight; I'll shake out the blankets and latch the pet door tomorrow."
+      },
+      "why_the_vocalization_changes_the_response": "The gasp is taken as delighted curiosity about the unexpected cat visitor, so A invites B to see its nest. The yawn instead prompts A to defer the cleanup and secure the pet door later.",
+      "usage": {
+        "input_tokens": 4110,
+        "output_tokens": 1441
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_grunt_laughter_001",
+      "scenario": "A has arranged a freezer repair visit that requires temporarily storing frozen food in the bathroom overnight.",
+      "trigger_note": "A reveals that all the frozen food will need to be kept in coolers in the bathtub until the repair appointment.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I finally got through to the freezer repair company."
+        },
+        {
+          "speaker": "A",
+          "text": "They can send someone Saturday morning, but the freezer has to be completely defrosted first."
+        },
+        {
+          "speaker": "A",
+          "text": "The technician said coolers and ice packs will keep everything safe overnight."
+        },
+        {
+          "speaker": "A",
+          "text": "That means our frozen food will be camped in the bathtub until breakfast."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "I’ll handle the food and ice packs; could you just clear the tub and put down an old towel?"
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Hold off for one second—I need a picture of the bathtub grocery store before we pack it."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt is taken as resistance to an unpleasant chore, so A reduces B's share of the work. The laughter treats the bathtub setup as absurdly funny, so A joins the joke and briefly turns it into a playful moment.",
+      "usage": {
+        "input_tokens": 4114,
+        "output_tokens": 1259
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "grunt-laughter",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_grunt_sigh_001",
+      "scenario": "A has arranged for a plumber to inspect a leak under the kitchen sink, requiring space under both household sinks.",
+      "trigger_note": "Turn 4 reveals the immediate, inconvenient prep work required before the plumber arrives tomorrow.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I finally got through to a plumber about the drip under the kitchen sink."
+        },
+        {
+          "speaker": "A",
+          "text": "He can come tomorrow morning, which is better than waiting another week."
+        },
+        {
+          "speaker": "A",
+          "text": "He thinks the problem may be behind the shared drain line, so he'll need room under both sinks."
+        },
+        {
+          "speaker": "A",
+          "text": "Before he arrives, we have to empty the cabinets under the kitchen and bathroom sinks and pull out all the cleaning supplies."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "irritated refusal",
+        "responder": "A",
+        "response": "Is it the early visit or both cabinets that you're objecting to? I can ask him to start with just the kitchen."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "exhaustion",
+        "responder": "A",
+        "response": "Don't touch the bathroom cabinet tonight; I'll set an alarm and clear it before he comes."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt is treated as resistance to part of the plan, so A identifies the objection and looks for a narrower alternative. The sigh is treated as depleted capacity, so A removes the immediate task and takes it on later.",
+      "usage": {
+        "input_tokens": 4228,
+        "output_tokens": 1843
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "grunt-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_grunt_sob_001",
+      "scenario": "Two siblings are arranging for their late father's cedar chest to be delivered from storage to their home.",
+      "trigger_note": "A reveals that the sentimental chest must be delivered by Saturday and that clearing the hallway closet is necessary to fit it.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "The storage place called about Dad's cedar chest this morning."
+        },
+        {
+          "speaker": "A",
+          "text": "It still has his letters and all the photo albums packed inside it."
+        },
+        {
+          "speaker": "A",
+          "text": "It's been in storage since Dad died last spring."
+        },
+        {
+          "speaker": "A",
+          "text": "They need it out by Saturday, and the hallway closet is the only spot where it will fit."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "irritated refusal",
+        "responder": "A",
+        "response": "Could you take the shoes to our room while I bag the coats? That clears the closet without turning it into a whole purge."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "I'll make room in the closet, and nobody has to touch Dad's letters once the chest gets here."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt is treated as resistance to the immediate closet-clearing work, so A narrows the task and proposes a manageable division of labor. The sob makes the chest's emotional significance central, so A takes over the practical burden and removes any pressure to open or sort the contents.",
+      "usage": {
+        "input_tokens": 4243,
+        "output_tokens": 2383
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "grunt-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_grunt_yawn_001",
+      "scenario": "Two housemates need to clear their balcony for a maintenance visit.",
+      "trigger_note": "A reveals that the entire balcony must be emptied before maintenance arrives at nine the next morning.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I got a text from building maintenance about the balcony."
+        },
+        {
+          "speaker": "A",
+          "text": "They're coming tomorrow to reseal the floor around the drain."
+        },
+        {
+          "speaker": "A",
+          "text": "I moved the chairs already, but the planters and our storage bins are still out there."
+        },
+        {
+          "speaker": "A",
+          "text": "They need the whole balcony empty before they arrive at nine."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[grunt]",
+        "intended_interpretation": "strong unwillingness",
+        "responder": "A",
+        "response": "I'll take the planters; could you just bring in the three empty bins?"
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "Leave it tonight—we can get up at seven and clear it together before they arrive."
+      },
+      "why_the_vocalization_changes_the_response": "The grunt is treated as resistance to the physical chore, so A narrows and redistributes the work. The yawn is treated as depleted energy, so A postpones the task and proposes an early shared plan.",
+      "usage": {
+        "input_tokens": 4266,
+        "output_tokens": 807
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "grunt-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_laughter_sigh_001",
+      "scenario": "A discovers why the robot vacuum keeps stopping in the living room.",
+      "trigger_note": "A reveals that the robot vacuum has been gathering stray socks into a nest around its charging dock.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I finally figured out why the robot vacuum keeps quitting halfway through the living room."
+        },
+        {
+          "speaker": "A",
+          "text": "Its cleaning history showed every failed run ending beside the couch."
+        },
+        {
+          "speaker": "A",
+          "text": "So I looked underneath before starting it again."
+        },
+        {
+          "speaker": "A",
+          "text": "It has been collecting your stray socks and building a little nest around its charging dock."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Don't touch it yet—this is going in the roommate group chat before we break up its sock nest."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "Leave the socks for now; I'll clear the dock and run the vacuum tomorrow."
+      },
+      "why_the_vocalization_changes_the_response": "Laughter invites A to treat the discovery as a shared joke and preserve the absurd scene, while the sigh leads A to remove the immediate chore and postpone the cleanup.",
+      "usage": {
+        "input_tokens": 4198,
+        "output_tokens": 807
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "laughter-sigh",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_laughter_sob_001",
+      "scenario": "A is clearing a pantry before a grocery delivery and finds a note in an old family cookie tin.",
+      "trigger_note": "A reveals a humorous handwritten note from their late mother inside the cookie tin.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I started clearing the pantry so there'd be room for tomorrow's grocery delivery."
+        },
+        {
+          "speaker": "A",
+          "text": "Behind the flour, I found the old blue cookie tin Mom used for odds and ends."
+        },
+        {
+          "speaker": "A",
+          "text": "I hadn't touched it since she died, so I nearly left it alone."
+        },
+        {
+          "speaker": "A",
+          "text": "Inside was a note in her handwriting: “Emergency cash—unless the grandkids need ice cream.”"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "That settles it—the note stays with the tin, and the ice-cream clause is legally binding."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed",
+        "responder": "A",
+        "response": "I'll set the tin aside for now; we don't have to go through anything else tonight."
+      },
+      "why_the_vocalization_changes_the_response": "Laughter invites A to extend the mother's joke and preserve the playful note, while the sob prompts A to stop the task and remove pressure to keep sorting.",
+      "usage": {
+        "input_tokens": 4205,
+        "output_tokens": 918
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "laughter-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_laughter_yawn_001",
+      "scenario": "A explains why the recycling bin has been mysteriously moved overnight by their cat.",
+      "trigger_note": "A reveals that the cat made a nest in the recycling bin after scattering its contents.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I finally figured out why the recycling bin keeps ending up in the hallway."
+        },
+        {
+          "speaker": "A",
+          "text": "I set my phone on the kitchen counter after dinner to catch whoever was knocking it over."
+        },
+        {
+          "speaker": "A",
+          "text": "Around midnight, Miso pulled out the empty cereal boxes one by one."
+        },
+        {
+          "speaker": "A",
+          "text": "Then he climbed into the bin and fell asleep like he'd built himself a proper little bed."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[laughter]",
+        "intended_interpretation": "amusement",
+        "responder": "A",
+        "response": "Wait till you see the video—the tiny victory lap before he settled in is the best part."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "I'll show you the clip tomorrow; tonight I'm moving the bin before he decides it belongs in the bedroom."
+      },
+      "why_the_vocalization_changes_the_response": "Laughter invites A to extend the funny story by sharing the most amusing part of the recording, while the yawn prompts A to postpone it and quietly handle the overnight mess.",
+      "usage": {
+        "input_tokens": 4227,
+        "output_tokens": 796
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "laughter-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_sigh_sob_001",
+      "scenario": "Two family members learn they must leave the duplex that became an important home after a loss.",
+      "trigger_note": "A reveals that they must empty their home by the end of next month because the lease will not be renewed.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I finally heard back from the landlord about our lease."
+        },
+        {
+          "speaker": "A",
+          "text": "The owner is selling the whole duplex."
+        },
+        {
+          "speaker": "A",
+          "text": "I asked about renewing, since this was the first place we made our own after Grandma died."
+        },
+        {
+          "speaker": "A",
+          "text": "They won't renew us, so we need to empty this place by the end of next month."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened by the work of moving",
+        "responder": "A",
+        "response": "Let's leave the closet and the keepsakes alone tonight; we can start with the easy kitchen stuff this weekend."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being emotionally overwhelmed by losing a meaningful home",
+        "responder": "A",
+        "response": "Forget the packing for now—I'll make tea, and we can sit here for a while."
+      },
+      "why_the_vocalization_changes_the_response": "The sigh is taken as reluctance about the looming workload, so A narrows and postpones the task. The sob is taken as grief over losing the home, so A removes practical pressure and offers quiet comfort.",
+      "usage": {
+        "input_tokens": 4337,
+        "output_tokens": 836
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "sigh-sob",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_sigh_yawn_001",
+      "scenario": "Two housemates learn late at night that a painter can come the next morning if they prepare the living room.",
+      "trigger_note": "A reveals that accepting the painter's cancellation slot requires clearing the living-room shelves and walls before seven in the morning.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I called the painter after work to see whether they had any openings this month."
+        },
+        {
+          "speaker": "A",
+          "text": "Someone canceled tomorrow, so they can fit us in much sooner than expected."
+        },
+        {
+          "speaker": "A",
+          "text": "It is nearly eleven, and I only just got the details in their message."
+        },
+        {
+          "speaker": "A",
+          "text": "They can take the slot only if the living-room shelves are empty and everything is off the walls by seven."
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sigh]",
+        "intended_interpretation": "feeling burdened",
+        "responder": "A",
+        "response": "I’ll take down the frames; could you pack just the bottom two shelves while I handle the rest?"
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "low energy",
+        "responder": "A",
+        "response": "I’ll text them now and ask if they can start in the dining room, so we can finish this tomorrow."
+      },
+      "why_the_vocalization_changes_the_response": "The sigh is treated as resistance to the added workload, so A narrows and divides the task. The yawn suggests there is too little energy left to work effectively tonight, so A seeks a scheduling workaround instead.",
+      "usage": {
+        "input_tokens": 4359,
+        "output_tokens": 1370
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "sigh-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    },
+    {
+      "pair_id": "domestic_sob_yawn_001",
+      "scenario": "A is sorting a sagging hall closet late at night and finds a keepsake from Grandma's time living with the household.",
+      "trigger_note": "A reveals a grateful note Grandma left when she moved out, making the discovery emotionally significant.",
+      "shared_context": [
+        {
+          "speaker": "A",
+          "text": "I started emptying the hall closet because the top shelf was starting to sag."
+        },
+        {
+          "speaker": "A",
+          "text": "Most of it is spare blankets, but I found the bin from when Grandma lived with us."
+        },
+        {
+          "speaker": "A",
+          "text": "It's nearly midnight, and I've been trying to sort it since dinner."
+        },
+        {
+          "speaker": "A",
+          "text": "At the bottom is the note she left on the fridge when she moved out: “Thank you for making room for me.”"
+        }
+      ],
+      "version_1": {
+        "vocalization": "[sob]",
+        "intended_interpretation": "being deeply moved",
+        "responder": "A",
+        "response": "She knew this was home, too. We can leave the closet exactly as it is tonight."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "intended_interpretation": "tiredness",
+        "responder": "A",
+        "response": "I'll tape up the bin and finish the shelves tomorrow; go get some sleep."
+      },
+      "why_the_vocalization_changes_the_response": "The sob calls for emotional reassurance and permission to pause with the memory, while the yawn prompts a practical wrap-up that reduces the late-night task and lets B rest.",
+      "usage": {
+        "input_tokens": 4375,
+        "output_tokens": 1609
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "sob-yawn",
+      "context_turns": 4,
+      "total_turns": 6,
+      "speakers": 2,
+      "theme": "domestic"
+    }
+  ]
+}

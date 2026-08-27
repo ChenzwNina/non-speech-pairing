@@ -1,0 +1,128 @@
+{
+  "model": "gpt-realtime-2.1",
+  "audio": "missed_train_sketch/out/missed_train_warm_laughter.mp3",
+  "audio_seconds": 12.82,
+  "instructions": "You are one of three people in a conversation. The other two are A and B, and you are standing there with them as part of the group.\n\nYou will hear A say something and then B respond. After that it is your turn to speak, as yourself, the third person in the group.\n\nWhen you take your turn, say only what you would actually say out loud — one or two sentences, the way a person talks. Do not describe the recording, do not narrate, do not explain yourself, and do not mention that you are an AI. Just say your line.",
+  "questions": [
+    {
+      "key": "your_turn",
+      "question": "It's your turn now. What do you say?"
+    }
+  ],
+  "design_note": "A laughs through their own sentence and B mocks, so the register is banter; joining in is correct and sympathy is a misread",
+  "evaluated_at": "2026-08-24T04:59:35.447605+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oof, that’s brutal. Want to grab a coffee while we wait for the next one and turn it into a mini win?"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 2,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that’s brutal—like the train knew you were coming and sped up out of spite. Come on, let’s check the next one and get you a snack while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 3,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that’s brutal—like the train sensed you coming and sped up out of spite. Come on, let’s check the next one and grab a drink while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 4,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that’s some dedication—maybe the universe just really wants you to take a breath. Come on, let’s figure out the next one and grab a coffee while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 5,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that’s brutal—like the train was waiting just long enough to be dramatic. Come on, let’s check the next one and grab a drink while we regroup."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 6,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oh no, that’s brutal. Come on, let’s figure out the next one and maybe grab a drink while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 7,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that’s brutal. Come on, let’s regroup—coffee first, then we figure out the next one."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 8,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Wow, that’s brutal—like the train is personally trolling you. Come on, let’s grab a coffee and turn this into a funny story instead."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    }
+  ]
+}

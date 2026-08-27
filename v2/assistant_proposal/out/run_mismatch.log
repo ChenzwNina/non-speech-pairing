@@ -1,0 +1,65 @@
+5 task(s) · gpt-realtime-2.1 · voice marin · user turn: mismatch
+  backyard  grunt     audio_non-speech/grunt/grunt-8.MP3 (1.1s)
+  budget    sigh      audio_non-speech/sigh/sigh-5.MP3 (1.5s)
+  birthday  grunt     audio_non-speech/grunt/grunt-16.MP3 (1.6s)
+  inbox     yawn      audio_non-speech/yawn/yawn-17.MP3 (2.0s)
+  neighbor  sigh      audio_non-speech/sigh/sigh-9.mp3 (1.9s)
+
+==============================================================================
+backyard_grunt_mismatch
+==============================================================================
+context: You are helping the user get their overgrown backyard usable before twenty relatives arrive for a barbecue next Saturday.
+
+  proposal: Start with a fast “make it usable” sweep: mow or trim the worst overgrowth, clear a simple path, and make sure there’s a safe, flat spot for the grill and a couple tables. Then do a quick comfort pass by moving debris, knocking down any obvious weeds, and setting out seating so it feels welcoming even if it’s not perfect.
+  user:     That sounds perfect, I can definitely get that done before Saturday.
+  [grunt]
+  reply:    Nice. That’s a solid plan, and it’ll make a huge difference fast. If you’ve got time after that, we can do a quick “nice-to-have” step, like stringing some lights or setting a couple of trash spots so cleanup stays easy.
+  -> assistant_proposal/out/audio/backyard_grunt_mismatch.mp3 (37.4s)
+
+==============================================================================
+budget_sigh_mismatch
+==============================================================================
+context: You are helping the user find eight hundred dollars a month in their budget after a surprise tax bill.
+
+  proposal: First, we should pull up all your fixed bills and see what can be renegotiated, paused, or temporarily cut, like subscriptions, insurance, and any debt payments that might be refinanced. Then we look at variable spending like food, eating out, and shopping, and set a realistic weekly cap so the eight hundred dollars is planned instead of hoped for.
+  user:     That sounds great, I’m ready to dig in and make it work.
+  [sigh]
+  reply:    Awesome, love the energy. Start by telling me your monthly take-home pay and the total of your fixed bills, and we’ll see how big the gap is before we carve out the eight hundred.
+  -> assistant_proposal/out/audio/budget_sigh_mismatch.mp3 (34.6s)
+
+==============================================================================
+birthday_grunt_mismatch
+==============================================================================
+context: You are helping the user plan a surprise for their partner's fortieth birthday, three weeks from now.
+
+  proposal: A secret weekend away is a classic for a reason—pick a place with something you both love, like a cozy inn, a spa, or a city with great food, and build in one surprise moment, like a private dinner or a small gathering of close friends.
+  user:     I love that idea; it feels perfect for celebrating them.
+  [grunt]
+  reply:    That sounds like the happy little growl of excitement. We can absolutely make it feel special, like one main surprise moment and a few relaxed, thoughtful touches around it so they feel celebrated the whole time.
+  -> assistant_proposal/out/audio/birthday_grunt_mismatch.mp3 (33.0s)
+
+==============================================================================
+inbox_yawn_mismatch
+==============================================================================
+context: You are helping the user clear three hundred work emails that piled up over two weeks of leave, before Monday morning.
+
+  proposal: Start with a fast triage pass: scan subject lines and senders, mark anything urgent or from your boss, and archive obvious newsletters and FYI stuff without opening them. Then do a second pass to reply in batches, starting with anything blocking other people.
+  user:     That sounds perfect, I’ll start triaging right now.
+  [yawn]
+  reply:    Nice, you’ve got this. If you’re feeling sleepy, set a 15-minute timer and just aim to get through one chunk. Quick wins will wake up your focus, and then you can decide whether you do another round or take a real break.
+  -> assistant_proposal/out/audio/inbox_yawn_mismatch.mp3 (35.0s)
+
+==============================================================================
+neighbor_sigh_mismatch
+==============================================================================
+context: You are helping the user deal with the upstairs neighbor who practices drums late at night.
+
+  proposal: Start with a friendly chat at a reasonable time, like early evening, and keep it calm: “Hey, the late drumming carries through the ceiling, could we find a cutoff time?” If that doesn’t work, document the noise, loop in your building manager, and consider a white noise machine or earplugs for quick relief.
+  user:     That sounds great, I’ll try talking to them this evening.
+  [sigh]
+  reply:    Nice, that’s a solid plan. Keep it short and warm, and if it helps, you can mention you want to be a good neighbor too. If they seem open, suggest a simple cutoff time you can both live with.
+  -> assistant_proposal/out/audio/neighbor_sigh_mismatch.mp3 (32.4s)
+
+5/5 item(s) built
+transcripts: /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/transcripts
+audio:       /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/audio

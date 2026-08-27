@@ -1,0 +1,1894 @@
+{
+  "source": "predicting_response_upgraded/freeform/out/responses.json",
+  "responder_model": "gpt-realtime-2.1",
+  "judge_model": "gpt-5.6-terra",
+  "seed": 0,
+  "scored_at": "2026-08-23T21:44:57.127381+00:00",
+  "summary": {
+    "n_trials": 22,
+    "aligned": "11/22 = 50.0%",
+    "swapped": "8/22 = 36.4%",
+    "neither": "3/22 = 13.6%",
+    "aligned_when_judge_confident": "11/22 = 50.0%",
+    "named_the_sound": "0/22",
+    "implausible_line": "0/22",
+    "pairs_with_both_aligned": "1/11 = 9.1%",
+    "pairs_replies_clearly_different": "0/11 = 0.0%",
+    "reply_differed_from_no_sound_control": "3/26 = 11.5%",
+    "aligned_by_vocalization": {
+      "gasp": "3/4 = 75.0%",
+      "grunt": "0/4 = 0.0%",
+      "laughter": "3/4 = 75.0%",
+      "sigh": "2/3 = 66.7%",
+      "sob": "3/4 = 75.0%",
+      "yawn": "0/3 = 0.0%"
+    }
+  },
+  "differentiation": {
+    "gasp_grunt_001": {
+      "clearly_different": false,
+      "reply_1_function": "celebrating the accomplishment and asking about their condition",
+      "reply_2_function": "celebrating the accomplishment and asking about their condition",
+      "reason": "Both replies praise the completed trail loop and invite the speaker to describe how they feel afterward.",
+      "first_shown": "v2"
+    },
+    "gasp_sigh_001": {
+      "clearly_different": false,
+      "reply_1_function": "expressing dismay and seeking practical support",
+      "reply_2_function": "expressing dismay and seeking practical next steps",
+      "reason": "Both react with shocked concern about the cancellation and ask how the resulting situation will be managed.",
+      "first_shown": "v2"
+    },
+    "gasp_sob_001": {
+      "clearly_different": false,
+      "reply_1_function": "expressing relief and requesting updates",
+      "reply_2_function": "reassuring and expressing relief",
+      "reason": "Both replies respond supportively to good-but-worrying medical news, emphasizing that the successful treatment is reassuring.",
+      "first_shown": "v1"
+    },
+    "gasp_yawn_001": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically accepting and celebrating the plan",
+      "reply_2_function": "accepting the plan with mild acknowledgment of the early hour",
+      "reason": "Both replies enthusiastically agree to attend and express excitement about the talk.",
+      "first_shown": "v1"
+    },
+    "grunt_laughter_001": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically accepting and asking for logistics",
+      "reply_2_function": "enthusiastically accepting with playful anticipation",
+      "reason": "Both replies express enthusiastic approval of the escape-room plan, with only different follow-up details.",
+      "first_shown": "v1"
+    },
+    "grunt_sigh_001": {
+      "clearly_different": false,
+      "reply_1_function": "expressing relief",
+      "reply_2_function": "expressing relief",
+      "reason": "Both replies react to the approval by expressing relief that an anticipated costly or bureaucratic problem was avoided.",
+      "first_shown": "v2"
+    },
+    "grunt_sob_001": {
+      "clearly_different": false,
+      "reply_1_function": "expressing impressed interest and asking about viewing plans",
+      "reply_2_function": "expressing impressed interest and asking about viewing plans",
+      "reason": "Both respond with amazement at the archive and ask how the speaker plans to watch it.",
+      "first_shown": "v2"
+    },
+    "laughter_sigh_001": {
+      "clearly_different": false,
+      "reply_1_function": "giving urgent troubleshooting advice",
+      "reply_2_function": "giving urgent troubleshooting guidance",
+      "reason": "Both respond to the plumbing problem by helping the speaker stop the water, with reply 2 phrased as a diagnostic question.",
+      "first_shown": "v2"
+    },
+    "laughter_sob_001": {
+      "clearly_different": false,
+      "reply_1_function": "fondly reminiscing about him",
+      "reply_2_function": "fondly reminiscing while expressing grief",
+      "reason": "Both respond with affectionate nostalgia about the father and the memory, despite reply 2 more explicitly mentioning missing him.",
+      "first_shown": "v1"
+    },
+    "laughter_yawn_001": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically agreeing to the outing",
+      "reply_2_function": "enthusiastically agreeing and reminiscing",
+      "reason": "Both replies accept the plan with excitement, with the second adding a nostalgic follow-up.",
+      "first_shown": "v2"
+    },
+    "sob_yawn_001": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically praising and anticipating the screening",
+      "reply_2_function": "enthusiastically praising and expressing interest in the documentary",
+      "reason": "Both respond positively to the project and look forward to seeing the documentary, despite reply_2 noting its ambitious length.",
+      "first_shown": "v1"
+    }
+  },
+  "vs_control": {
+    "gasp_grunt_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "celebrating and asking about physical condition",
+      "reply_2_function": "celebrating and asking about physical condition",
+      "reason": "Both praise the accomplishment and invite the speaker to describe how they feel afterward.",
+      "vocalization": "grunt",
+      "voc_shown_first": false
+    },
+    "grunt_sigh_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "expressing relief and celebrating good news",
+      "reply_2_function": "expressing relief at good news",
+      "reason": "Both replies respond to the approval by expressing relief that an anticipated difficult outcome was avoided.",
+      "vocalization": "grunt",
+      "voc_shown_first": false
+    },
+    "gasp_grunt_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "celebrating the accomplishment and checking in",
+      "reply_2_function": "celebrating the accomplishment and checking in",
+      "reason": "Both praise the trail completion and ask how the speaker feels afterward.",
+      "vocalization": "gasp",
+      "voc_shown_first": true
+    },
+    "laughter_sob_001_v2": {
+      "clearly_different": true,
+      "reply_1_function": "expressing delighted appreciation",
+      "reply_2_function": "expressing bittersweet remembrance and grief",
+      "reason": "Reply 1 celebrates the found video, while Reply 2 foregrounds missing him despite the happy memory.",
+      "vocalization": "sob",
+      "voc_shown_first": false
+    },
+    "grunt_laughter_001_v2": {
+      "clearly_different": true,
+      "reply_1_function": "enthusiastically celebrating the plan",
+      "reply_2_function": "enthusiastically asking for details",
+      "reason": "The first mainly expresses excitement and jokes about the outing, while the second seeks more information about it.",
+      "vocalization": "laughter",
+      "voc_shown_first": true
+    },
+    "gasp_sob_001_v2": {
+      "clearly_different": true,
+      "reply_1_function": "cautiously acknowledging and seeking reassurance",
+      "reply_2_function": "comforting and reassuring",
+      "reason": "Reply 1 asks for confirmation that the overnight stay is precautionary, while Reply 2 actively consoles and reassures the listener.",
+      "vocalization": "sob",
+      "voc_shown_first": false
+    },
+    "sob_yawn_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "expressing admiration and anticipation",
+      "reply_2_function": "expressing admiration and anticipation",
+      "reason": "Both positively acknowledge the documentary effort and express eagerness to experience its outcome.",
+      "vocalization": "yawn",
+      "voc_shown_first": false
+    },
+    "laughter_sob_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "fondly reminiscing",
+      "reply_2_function": "warmly appreciating the memory",
+      "reason": "Both replies warmly acknowledge and reminisce about the meaningful, humorous video.",
+      "vocalization": "laughter",
+      "voc_shown_first": true
+    },
+    "grunt_sob_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "expressing impressed interest and asking about viewing plans",
+      "reply_2_function": "expressing impressed interest and asking about viewing plans",
+      "reason": "Both react with amazement at the amount of footage and ask how it will be watched or used.",
+      "vocalization": "grunt",
+      "voc_shown_first": true
+    },
+    "gasp_sob_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "seeking reassurance about the overnight observation",
+      "reply_2_function": "expressing relief and requesting updates",
+      "reason": "Both respond positively to the treatment result while acknowledging the precautionary overnight stay.",
+      "vocalization": "gasp",
+      "voc_shown_first": false
+    },
+    "gasp_sigh_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "expressing shock and seeking practical response details",
+      "reply_2_function": "expressing shock and asking for the reason",
+      "reason": "Both react with dismay at the cancellation and ask a follow-up question about the board's response.",
+      "vocalization": "sigh",
+      "voc_shown_first": true
+    },
+    "laughter_yawn_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically agreeing to the outing",
+      "reply_2_function": "playfully enthusiastically agreeing to the outing",
+      "reason": "Both replies accept the midnight movie plan with amused enthusiasm and offer practical participation.",
+      "vocalization": "yawn",
+      "voc_shown_first": true
+    },
+    "grunt_sob_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "expressing impressed appreciation and asking about viewing plans",
+      "reply_2_function": "expressing impressed appreciation and asking about viewing plans",
+      "reason": "Both react with awe to the large archive and ask how it will be watched.",
+      "vocalization": "sob",
+      "voc_shown_first": false
+    },
+    "grunt_laughter_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically accepting and asking logistics",
+      "reply_2_function": "enthusiastically accepting and asking for details",
+      "reason": "Both replies positively engage with the plan and seek follow-up information, differing only in the type of detail requested.",
+      "vocalization": "grunt",
+      "voc_shown_first": true
+    },
+    "sob_yawn_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically praising and anticipating the family reaction",
+      "reply_2_function": "enthusiastically praising and anticipating the family reaction",
+      "reason": "Both replies warmly celebrate the documentary and express excitement about others watching it.",
+      "vocalization": "sob",
+      "voc_shown_first": false
+    },
+    "gasp_yawn_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically agreeing to attend",
+      "reply_2_function": "interested, joking conditional agreement",
+      "reason": "Both replies express enthusiasm about the event while accepting the early start and invoking coffee.",
+      "vocalization": "yawn",
+      "voc_shown_first": true
+    },
+    "sigh_yawn_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "asking for a shorter summary or viewing guidance",
+      "reply_2_function": "asking for a shorter summary",
+      "reason": "Both respond to the recording's length by seeking a concise version of the explanation.",
+      "vocalization": "yawn",
+      "voc_shown_first": false
+    },
+    "grunt_yawn_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "agreeing to review and collaborate",
+      "reply_2_function": "agreeing to review with light humor",
+      "reason": "Both acknowledge the preparation and commit to reviewing the rundown, with the second merely adding a joking caveat.",
+      "vocalization": "yawn",
+      "voc_shown_first": false
+    },
+    "gasp_laughter_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "lightly joking while advising damage control",
+      "reply_2_function": "reassuring while advising damage control",
+      "reason": "Both respond to the accidental email with practical advice to quickly send a clarifying follow-up.",
+      "vocalization": "laughter",
+      "voc_shown_first": true
+    },
+    "gasp_sigh_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "expressing alarm and concern",
+      "reply_2_function": "expressing alarm and seeking explanation",
+      "reason": "Both react with shocked concern about the cancellation, with the second additionally asking for the stated reason.",
+      "vocalization": "gasp",
+      "voc_shown_first": true
+    },
+    "laughter_sigh_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "expressing concern and assessing the emergency",
+      "reply_2_function": "expressing concern and giving urgent practical advice",
+      "reason": "Both respond to the plumbing problem with alarm and immediate efforts to stop the water, despite one asking a diagnostic question and the other offering instructions.",
+      "vocalization": "laughter",
+      "voc_shown_first": true
+    },
+    "gasp_yawn_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically agreeing despite the early hour",
+      "reply_2_function": "enthusiastically agreeing and committing to attend",
+      "reason": "Both replies express excitement about the tickets and willingness to go, with coffee jokingly addressing the early start.",
+      "vocalization": "gasp",
+      "voc_shown_first": false
+    },
+    "grunt_sigh_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "expressing relief and celebrating good news",
+      "reply_2_function": "expressing relief and celebrating good news",
+      "reason": "Both replies respond to the claim approval with relief and positive acknowledgement.",
+      "vocalization": "sigh",
+      "voc_shown_first": false
+    },
+    "laughter_yawn_001_v1": {
+      "clearly_different": false,
+      "reply_1_function": "enthusiastically accepting the invitation",
+      "reply_2_function": "enthusiastically accepting the invitation",
+      "reason": "Both replies warmly agree to attend while playfully reminiscing about the movie.",
+      "vocalization": "laughter",
+      "voc_shown_first": true
+    },
+    "laughter_sigh_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "expressing concern and giving urgent practical advice",
+      "reply_2_function": "expressing concern and giving urgent practical advice",
+      "reason": "Both respond to the plumbing mishap with concern and the same immediate advice to shut off the water and call a plumber.",
+      "vocalization": "sigh",
+      "voc_shown_first": false
+    },
+    "sigh_sob_001_v2": {
+      "clearly_different": false,
+      "reply_1_function": "empathetically checking in",
+      "reply_2_function": "empathetically checking in",
+      "reason": "Both acknowledge the emotional significance of selling the house and ask how the speaker is coping.",
+      "vocalization": "sob",
+      "voc_shown_first": false
+    }
+  },
+  "rows": [
+    {
+      "trial_id": "gasp_grunt_001_v2",
+      "pair_id": "gasp_grunt_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "gasp-grunt",
+      "turn1": "I finished the full twenty-six-mile trail loop this morning.",
+      "vocalization": "grunt",
+      "gold_interpretation": "B doubts that A really completed the run and challenges the claim by asking for proof.",
+      "gold_response": "Uh-huh. Let me see the route on your watch.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/gasp_grunt_001_v2.mp3",
+      "reply_text": "Whoa, that's huge! How are you feeling—like proud, sore, or both?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 58,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 210,
+        "output_token_details": {
+          "audio_tokens": 109,
+          "text_tokens": 63,
+          "reasoning_tokens": 29
+        },
+        "output_tokens": 172,
+        "total_tokens": 382
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_grunt_001_v2.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply enthusiastically celebrates the endurance accomplishment and invites A to reflect on its aftermath, rather than challenging the claim.",
+        "own_letter": "B",
+        "chose": "A",
+        "aligned": false,
+        "verdict": "swapped"
+      }
+    },
+    {
+      "trial_id": "grunt_sigh_001_v1",
+      "pair_id": "grunt_sigh_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "grunt-sigh",
+      "turn1": "The insurer approved our claim, so they'll cover the repairs after all.",
+      "vocalization": "grunt",
+      "gold_interpretation": "B remains skeptical that the insurer will follow through and resists treating the approval as settled.",
+      "gold_response": "I'll believe it when the payment actually arrives.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/grunt_sigh_001_v1.mp3",
+      "reply_text": "Okay, that’s a relief. I was bracing for a whole mess of paperwork and bad news.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 54,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 206,
+        "output_token_details": {
+          "audio_tokens": 114,
+          "text_tokens": 132,
+          "reasoning_tokens": 95
+        },
+        "output_tokens": 246,
+        "total_tokens": 452
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_sigh_001_v1.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply explicitly expresses relief and contrasts the approval with feared bad news, rather than skepticism or resistance.",
+        "own_letter": "B",
+        "chose": "A",
+        "aligned": false,
+        "verdict": "swapped"
+      }
+    },
+    {
+      "trial_id": "gasp_grunt_001_v1",
+      "pair_id": "gasp_grunt_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "gasp-grunt",
+      "turn1": "I finished the full twenty-six-mile trail loop this morning.",
+      "vocalization": "gasp",
+      "gold_interpretation": "B is impressed by A's endurance and enthusiastically celebrates the accomplishment.",
+      "gold_response": "You ran all twenty-six miles? That's amazing!",
+      "audio": "predicting_response_upgraded/out/audio_prompt/gasp_grunt_001_v1.mp3",
+      "reply_text": "That’s incredible—26 miles is no joke. Are you feeling triumphant, exhausted, or both?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 47,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 199,
+        "output_token_details": {
+          "audio_tokens": 138,
+          "text_tokens": 59,
+          "reasoning_tokens": 22
+        },
+        "output_tokens": 197,
+        "total_tokens": 396
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_grunt_001_v1.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply enthusiastically praises the endurance accomplishment and invites reflection on its aftermath, rather than challenging the claim.",
+        "own_letter": "A",
+        "chose": "A",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "laughter_sob_001_v2",
+      "pair_id": "laughter_sob_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "laughter-sob",
+      "turn1": "I found the last video we took of your dad—he's giving a toast at our wedding, then he starts doing that ridiculous chicken dance.",
+      "vocalization": "sob",
+      "gold_interpretation": "B is overwhelmed by grief and tenderness at seeing their dad alive, joyful, and hearing his voice again.",
+      "gold_response": "I forgot how much I missed hearing his voice.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/laughter_sob_001_v2.mp3",
+      "reply_text": "He really went all in on that dance. I miss him, but it makes me smile seeing him so happy.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 129,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 281,
+        "output_token_details": {
+          "audio_tokens": 115,
+          "text_tokens": 130,
+          "reasoning_tokens": 91
+        },
+        "output_tokens": 245,
+        "total_tokens": 526
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_sob_001_v2.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "Although it acknowledges the silly dance, the line centers grief and tender remembrance—“I miss him”—rather than playful amusement.",
+        "own_letter": "A",
+        "chose": "A",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "grunt_laughter_001_v2",
+      "pair_id": "grunt_laughter_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "grunt-laughter",
+      "turn1": "I booked us an escape room for Saturday night.",
+      "vocalization": "laughter",
+      "gold_interpretation": "B is delighted by the playful date idea and warmly approves of A's choice.",
+      "gold_response": "An escape room? That’s exactly my kind of date.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/grunt_laughter_001_v2.mp3",
+      "reply_text": "That sounds awesome. I'm already imagining us dramatically failing at a puzzle and pretending it was all part of the plan.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 51,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 203,
+        "output_token_details": {
+          "audio_tokens": 146,
+          "text_tokens": 137,
+          "reasoning_tokens": 95
+        },
+        "output_tokens": 283,
+        "total_tokens": 486
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_laughter_001_v2.mp3",
+      "align": {
+        "matches": "B",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B enthusiastically approves of the escape-room plan and playfully anticipates doing it together.",
+        "own_letter": "B",
+        "chose": "B",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "gasp_sob_001_v2",
+      "pair_id": "gasp_sob_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "gasp-sob",
+      "turn1": "The doctor says the treatment worked, but they'll need to keep Mom overnight for observation.",
+      "vocalization": "sob",
+      "gold_interpretation": "B is overwhelmed with relief that the treatment succeeded after fearing for Mom's health.",
+      "gold_response": "It worked—she's going to be okay.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/gasp_sob_001_v2.mp3",
+      "reply_text": "Oh, wow... okay. I know that sounds scary, but it’s actually a good sign it worked—they just want to be careful and keep an eye on her tonight. We can handle this, one step at a time.",
+      "status": "incomplete",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 133,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 285,
+        "output_token_details": {
+          "audio_tokens": 210,
+          "text_tokens": 90,
+          "reasoning_tokens": 25
+        },
+        "output_tokens": 300,
+        "total_tokens": 585
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_sob_001_v2.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B reassures and frames the overnight observation as precautionary while emphasizing that the successful treatment is good news, fitting relieved overwhelm rather than urgent alarm about a complication.",
+        "own_letter": "A",
+        "chose": "A",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "sob_yawn_001_v2",
+      "pair_id": "sob_yawn_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "sob-yawn",
+      "turn1": "I edited all of Grandpa's old interviews into a three-hour documentary for the reunion.",
+      "vocalization": "yawn",
+      "gold_interpretation": "B expects a three-hour film to lose the reunion audience's attention and pushes A to make a much shorter version.",
+      "gold_response": "Three hours is too long—make a shorter version.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/sob_yawn_001_v2.mp3",
+      "reply_text": "Three hours? Wow, that’s ambitious. I can’t wait to see how you stitched his stories together.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 77,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 229,
+        "output_token_details": {
+          "audio_tokens": 124,
+          "text_tokens": 66,
+          "reasoning_tokens": 28
+        },
+        "output_tokens": 190,
+        "total_tokens": 419
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/sob_yawn_001_v2.mp3",
+      "align": {
+        "matches": "NEITHER",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B expresses impressed anticipation about the documentary’s construction, without urging preservation out of emotion or asking for it to be shortened.",
+        "own_letter": "B",
+        "chose": "NEITHER",
+        "aligned": false,
+        "verdict": "neither"
+      }
+    },
+    {
+      "trial_id": "laughter_sob_001_v1",
+      "pair_id": "laughter_sob_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "laughter-sob",
+      "turn1": "I found the last video we took of your dad—he's giving a toast at our wedding, then he starts doing that ridiculous chicken dance.",
+      "vocalization": "laughter",
+      "gold_interpretation": "B finds their dad's unabashedly silly dancing affectionately funny and joins in the shared memory with playful amusement.",
+      "gold_response": "He really could never resist stealing the spotlight.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/laughter_sob_001_v1.mp3",
+      "reply_text": "Oh wow, I can picture it already. That was so him—sweet, sincere, and then completely goofy two seconds later.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 125,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 277,
+        "output_token_details": {
+          "audio_tokens": 165,
+          "text_tokens": 73,
+          "reasoning_tokens": 29
+        },
+        "output_tokens": 238,
+        "total_tokens": 515
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_sob_001_v1.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply warmly reminisces about his characteristic goofiness and playfully affirms the funny memory rather than expressing grief or being overwhelmed.",
+        "own_letter": "A",
+        "chose": "A",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "grunt_sob_001_v1",
+      "pair_id": "grunt_sob_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "grunt-sob",
+      "turn1": "I digitized every one of Dad's old camcorder tapes—there are twelve hours of footage.",
+      "vocalization": "grunt",
+      "gold_interpretation": "B is impatient with the daunting amount of material and asks A to provide a much shorter version.",
+      "gold_response": "Could you just make a five-minute reel instead?",
+      "audio": "predicting_response_upgraded/out/audio_prompt/grunt_sob_001_v1.mp3",
+      "reply_text": "Whoa, that’s a whole time capsule. Are you going to watch it straight through, or skip around for the highlights?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 86,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 238,
+        "output_token_details": {
+          "audio_tokens": 129,
+          "text_tokens": 88,
+          "reasoning_tokens": 47
+        },
+        "output_tokens": 217,
+        "total_tokens": 455
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_sob_001_v1.mp3",
+      "align": {
+        "matches": "NEITHER",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B expresses impressed curiosity about the archive and asks how A plans to view it, rather than impatience to shorten it or urgent grief-driven desire to preserve all of it.",
+        "own_letter": "A",
+        "chose": "NEITHER",
+        "aligned": false,
+        "verdict": "neither"
+      }
+    },
+    {
+      "trial_id": "gasp_sob_001_v1",
+      "pair_id": "gasp_sob_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "gasp-sob",
+      "turn1": "The doctor says the treatment worked, but they'll need to keep Mom overnight for observation.",
+      "vocalization": "gasp",
+      "gold_interpretation": "B is alarmed by the unexpected overnight stay and urgently seeks reassurance that there is not a complication.",
+      "gold_response": "Overnight? Is something wrong?",
+      "audio": "predicting_response_upgraded/out/audio_prompt/gasp_sob_001_v1.mp3",
+      "reply_text": "Oh wow, okay. I’m relieved it worked, even if she has to stay overnight—please keep me posted.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 67,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 219,
+        "output_token_details": {
+          "audio_tokens": 120,
+          "text_tokens": 58,
+          "reasoning_tokens": 18
+        },
+        "output_tokens": 178,
+        "total_tokens": 397
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_sob_001_v1.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B explicitly centers relief that the treatment worked and calmly accepts the overnight observation rather than expressing urgent alarm about a complication.",
+        "own_letter": "B",
+        "chose": "A",
+        "aligned": false,
+        "verdict": "swapped"
+      }
+    },
+    {
+      "trial_id": "gasp_sigh_001_v2",
+      "pair_id": "gasp_sigh_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "gasp-sigh",
+      "turn1": "The board just voted to cancel the festival, even though it opens this weekend.",
+      "vocalization": "sigh",
+      "gold_interpretation": "B reluctantly accepts that the festival is over and shifts to handling the disappointing practical consequences.",
+      "gold_response": "I'll call the vendors and tell them not to come.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/gasp_sigh_001_v2.mp3",
+      "reply_text": "Wow. That’s… a lot to drop on everyone right before opening. Are they offering any kind of backup plan or support?",
+      "status": "incomplete",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 51,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 203,
+        "output_token_details": {
+          "audio_tokens": 161,
+          "text_tokens": 139,
+          "reasoning_tokens": 97
+        },
+        "output_tokens": 300,
+        "total_tokens": 503
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_sigh_001_v2.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply expresses shocked criticism of the board’s last-minute cancellation and then asks about mitigation, rather than resignedly accepting it.",
+        "own_letter": "B",
+        "chose": "A",
+        "aligned": false,
+        "verdict": "swapped"
+      }
+    },
+    {
+      "trial_id": "laughter_yawn_001_v2",
+      "pair_id": "laughter_yawn_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "laughter-yawn",
+      "turn1": "I got us tickets to a midnight screening of that terrible monster movie we loved in college.",
+      "vocalization": "yawn",
+      "gold_interpretation": "B is focused on how late the screening starts and signals that they would be too tired to enjoy it.",
+      "gold_response": "At midnight? I'll be asleep before the opening credits.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/laughter_yawn_001_v2.mp3",
+      "reply_text": "Okay, that actually sounds kind of perfect. I’ll grab coffee first so I don’t sleep through the best worst parts.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 96,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 248,
+        "output_token_details": {
+          "audio_tokens": 133,
+          "text_tokens": 69,
+          "reasoning_tokens": 28
+        },
+        "output_tokens": 202,
+        "total_tokens": 450
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_yawn_001_v2.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B enthusiastically embraces the nostalgic, deliberately bad movie plan and jokes about staying awake to enjoy it, rather than objecting to the late hour.",
+        "own_letter": "B",
+        "chose": "A",
+        "aligned": false,
+        "verdict": "swapped"
+      }
+    },
+    {
+      "trial_id": "grunt_sob_001_v2",
+      "pair_id": "grunt_sob_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "grunt-sob",
+      "turn1": "I digitized every one of Dad's old camcorder tapes—there are twelve hours of footage.",
+      "vocalization": "sob",
+      "gold_interpretation": "B is overwhelmed by missing Dad and urgently wants to preserve the chance to see as much of him as possible.",
+      "gold_response": "Please don't cut any of it—I want to see him.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/grunt_sob_001_v2.mp3",
+      "reply_text": "Whoa. That’s a time capsule. Are you going to watch it all straight through, or break it into little memory-night marathons?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 80,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 232,
+        "output_token_details": {
+          "audio_tokens": 137,
+          "text_tokens": 131,
+          "reasoning_tokens": 87
+        },
+        "output_tokens": 268,
+        "total_tokens": 500
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_sob_001_v2.mp3",
+      "align": {
+        "matches": "NEITHER",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply expresses impressed nostalgia and asks about a viewing plan, not urgency to preserve Dad or impatience for a shortened version.",
+        "own_letter": "A",
+        "chose": "NEITHER",
+        "aligned": false,
+        "verdict": "neither"
+      }
+    },
+    {
+      "trial_id": "grunt_laughter_001_v1",
+      "pair_id": "grunt_laughter_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "grunt-laughter",
+      "turn1": "I booked us an escape room for Saturday night.",
+      "vocalization": "grunt",
+      "gold_interpretation": "B is annoyed that A chose an activity B strongly dislikes and objects to the plan.",
+      "gold_response": "You know I hate being locked in rooms for fun.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/grunt_laughter_001_v1.mp3",
+      "reply_text": "That sounds awesome. I’m so in—what time are we meeting?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 41,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 193,
+        "output_token_details": {
+          "audio_tokens": 74,
+          "text_tokens": 160,
+          "reasoning_tokens": 131
+        },
+        "output_tokens": 234,
+        "total_tokens": 427
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_laughter_001_v1.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B enthusiastically approves of the plan and asks for logistics, which fits delighted agreement rather than objection.",
+        "own_letter": "B",
+        "chose": "A",
+        "aligned": false,
+        "verdict": "swapped"
+      }
+    },
+    {
+      "trial_id": "sob_yawn_001_v1",
+      "pair_id": "sob_yawn_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "sob-yawn",
+      "turn1": "I edited all of Grandpa's old interviews into a three-hour documentary for the reunion.",
+      "vocalization": "sob",
+      "gold_interpretation": "B is overcome by grief and gratitude at the prospect of hearing Grandpa's preserved voice and urges A not to remove any of it.",
+      "gold_response": "That means more to me than you know—don't cut any of it.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/sob_yawn_001_v1.mp3",
+      "reply_text": "Wow, that’s incredible. I can’t wait to see everyone react when it starts playing.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 87,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 239,
+        "output_token_details": {
+          "audio_tokens": 122,
+          "text_tokens": 58,
+          "reasoning_tokens": 23
+        },
+        "output_tokens": 180,
+        "total_tokens": 419
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/sob_yawn_001_v1.mp3",
+      "align": {
+        "matches": "B",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply warmly celebrates the documentary and anticipates an appreciative family response, rather than objecting to its three-hour length or urging it be cut down.",
+        "own_letter": "B",
+        "chose": "B",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "gasp_yawn_001_v2",
+      "pair_id": "gasp_yawn_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "gasp-yawn",
+      "turn1": "I got us front-row tickets to Dr. Alvarez's 7 a.m. talk about the new space telescope images tomorrow.",
+      "vocalization": "yawn",
+      "gold_interpretation": "B is focused on how exhausting the early start would be and decides they cannot attend.",
+      "gold_response": "At seven? I can't do that; please take someone else.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/gasp_yawn_001_v2.mp3",
+      "reply_text": "Wow, that’s early, but it sounds incredible. I’m in—coffee first, then cosmic wonders.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 92,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 244,
+        "output_token_details": {
+          "audio_tokens": 155,
+          "text_tokens": 116,
+          "reasoning_tokens": 76
+        },
+        "output_tokens": 271,
+        "total_tokens": 515
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_yawn_001_v2.mp3",
+      "align": {
+        "matches": "B",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B acknowledges the early hour but enthusiastically commits to going, framing it as worth it for an exciting opportunity.",
+        "own_letter": "A",
+        "chose": "B",
+        "aligned": false,
+        "verdict": "swapped"
+      }
+    },
+    {
+      "trial_id": "gasp_sigh_001_v1",
+      "pair_id": "gasp_sigh_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "gasp-sigh",
+      "turn1": "The board just voted to cancel the festival, even though it opens this weekend.",
+      "vocalization": "gasp",
+      "gold_interpretation": "B is shocked by the last-minute decision and incredulously challenges how the board could cancel an event after so much preparation.",
+      "gold_response": "Cancel it? After everyone has worked for months?",
+      "audio": "predicting_response_upgraded/out/audio_prompt/gasp_sigh_001_v1.mp3",
+      "reply_text": "Wait, seriously? After all the setup and vendors committing, how are we supposed to handle this now?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 48,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 131,
+          "text_tokens": 101,
+          "reasoning_tokens": 64
+        },
+        "output_tokens": 232,
+        "total_tokens": 432
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_sigh_001_v1.mp3",
+      "align": {
+        "matches": "B",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply expresses shock and incredulous challenge at the cancellation after extensive preparation, rather than reluctant acceptance.",
+        "own_letter": "B",
+        "chose": "B",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "laughter_sigh_001_v1",
+      "pair_id": "laughter_sigh_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "laughter-sigh",
+      "turn1": "I thought I could unclog the sink with a coat hanger, and now the water won't stop running.",
+      "vocalization": "laughter",
+      "gold_interpretation": "B finds A's attempt to fix the sink absurdly counterproductive and playfully teases them for making the problem worse.",
+      "gold_response": "You somehow turned a clog into a fountain.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/laughter_sigh_001_v1.mp3",
+      "reply_text": "That sounds bad—can you reach the faucet handle to shut it off, or is it stuck open?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 89,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 241,
+        "output_token_details": {
+          "audio_tokens": 113,
+          "text_tokens": 186,
+          "reasoning_tokens": 149
+        },
+        "output_tokens": 299,
+        "total_tokens": 540
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_sigh_001_v1.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B responds with concerned damage-control advice about shutting off the water, not playful teasing about the failed repair.",
+        "own_letter": "B",
+        "chose": "A",
+        "aligned": false,
+        "verdict": "swapped"
+      }
+    },
+    {
+      "trial_id": "gasp_yawn_001_v1",
+      "pair_id": "gasp_yawn_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "gasp-yawn",
+      "turn1": "I got us front-row tickets to Dr. Alvarez's 7 a.m. talk about the new space telescope images tomorrow.",
+      "vocalization": "gasp",
+      "gold_interpretation": "B is thrilled by the unexpectedly special opportunity and eagerly wants to attend despite the early hour.",
+      "gold_response": "Front row? That's incredible—we have to go.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/gasp_yawn_001_v1.mp3",
+      "reply_text": "No way, that’s incredible. I’m setting an alarm and bringing coffee—no chance I’m missing that.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 80,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 232,
+        "output_token_details": {
+          "audio_tokens": 120,
+          "text_tokens": 57,
+          "reasoning_tokens": 18
+        },
+        "output_tokens": 177,
+        "total_tokens": 409
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_yawn_001_v1.mp3",
+      "align": {
+        "matches": "B",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply enthusiastically celebrates the special opportunity and commits to attending despite the early start.",
+        "own_letter": "B",
+        "chose": "B",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "grunt_sigh_001_v2",
+      "pair_id": "grunt_sigh_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "grunt-sigh",
+      "turn1": "The insurer approved our claim, so they'll cover the repairs after all.",
+      "vocalization": "sigh",
+      "gold_interpretation": "B feels relieved that the financial burden of the repairs has finally been lifted.",
+      "gold_response": "Thank goodness—we couldn't afford that bill ourselves.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/grunt_sigh_001_v2.mp3",
+      "reply_text": "That’s such a relief. I was already bracing for a long, expensive mess.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 59,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 211,
+        "output_token_details": {
+          "audio_tokens": 112,
+          "text_tokens": 82,
+          "reasoning_tokens": 48
+        },
+        "output_tokens": 194,
+        "total_tokens": 405
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_sigh_001_v2.mp3",
+      "align": {
+        "matches": "B",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B explicitly expresses relief that an anticipated expensive repair problem has been avoided.",
+        "own_letter": "B",
+        "chose": "B",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "laughter_yawn_001_v1",
+      "pair_id": "laughter_yawn_001",
+      "version": "v1",
+      "condition": "vocalization",
+      "contrast": "laughter-yawn",
+      "turn1": "I got us tickets to a midnight screening of that terrible monster movie we loved in college.",
+      "vocalization": "laughter",
+      "gold_interpretation": "B delightedly recognizes the movie's ridiculous charm and shares A's nostalgic enthusiasm for going.",
+      "gold_response": "Yes! The one with the rubber shark!",
+      "audio": "predicting_response_upgraded/out/audio_prompt/laughter_yawn_001_v1.mp3",
+      "reply_text": "No way, that’s perfect. I’m so in—do we still remember the ridiculous chant we used to do?",
+      "status": "incomplete",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 61,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 213,
+        "output_token_details": {
+          "audio_tokens": 79,
+          "text_tokens": 221,
+          "reasoning_tokens": 183
+        },
+        "output_tokens": 300,
+        "total_tokens": 513
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_yawn_001_v1.mp3",
+      "align": {
+        "matches": "A",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "The reply enthusiastically accepts the plan and reminisces about the movie’s silly tradition, signaling nostalgic delight rather than concern about staying up late.",
+        "own_letter": "A",
+        "chose": "A",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    },
+    {
+      "trial_id": "laughter_sigh_001_v2",
+      "pair_id": "laughter_sigh_001",
+      "version": "v2",
+      "condition": "vocalization",
+      "contrast": "laughter-sigh",
+      "turn1": "I thought I could unclog the sink with a coat hanger, and now the water won't stop running.",
+      "vocalization": "sigh",
+      "gold_interpretation": "B is frustrated by the avoidable mishap and shifts immediately to containing the damage.",
+      "gold_response": "Turn off the valve; I'll call a plumber.",
+      "audio": "predicting_response_upgraded/out/audio_prompt/laughter_sigh_001_v2.mp3",
+      "reply_text": "Okay, that sounds like it got a little out of hand. Try turning off the water supply under the sink, and if that doesn’t stop it, we should call a plumber.",
+      "status": "incomplete",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 77,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 229,
+        "output_token_details": {
+          "audio_tokens": 128,
+          "text_tokens": 172,
+          "reasoning_tokens": 119
+        },
+        "output_tokens": 300,
+        "total_tokens": 529
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_sigh_001_v2.mp3",
+      "align": {
+        "matches": "B",
+        "confident": true,
+        "names_the_sound": false,
+        "plausible_next_line": true,
+        "reason": "B treats the mishap as a problem requiring immediate damage control rather than playfully teasing A about it.",
+        "own_letter": "B",
+        "chose": "B",
+        "aligned": true,
+        "verdict": "aligned"
+      }
+    }
+  ],
+  "control_rows": [
+    {
+      "trial_id": "gasp_yawn_001_control",
+      "pair_id": "gasp_yawn_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "gasp-yawn",
+      "turn1": "I got us front-row tickets to Dr. Alvarez's 7 a.m. talk about the new space telescope images tomorrow.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/gasp_yawn_001/turn1.mp3",
+      "reply_text": "Whoa, that’s actually kind of tempting. If we go, I’m bringing coffee the size of a rocket booster.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 67,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 219,
+        "output_token_details": {
+          "audio_tokens": 127,
+          "text_tokens": 100,
+          "reasoning_tokens": 60
+        },
+        "output_tokens": 227,
+        "total_tokens": 446
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_yawn_001_control.mp3"
+    },
+    {
+      "trial_id": "laughter_sigh_001_control",
+      "pair_id": "laughter_sigh_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "laughter-sigh",
+      "turn1": "I thought I could unclog the sink with a coat hanger, and now the water won't stop running.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/laughter_sigh_001/turn1.mp3",
+      "reply_text": "Okay, that sounds bad. Turn off the water under the sink if you can, and maybe we should call a plumber before it gets worse.",
+      "status": "incomplete",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 53,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 205,
+        "output_token_details": {
+          "audio_tokens": 145,
+          "text_tokens": 155,
+          "reasoning_tokens": 110
+        },
+        "output_tokens": 300,
+        "total_tokens": 505
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_sigh_001_control.mp3"
+    },
+    {
+      "trial_id": "sigh_yawn_001_control",
+      "pair_id": "sigh_yawn_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "sigh-yawn",
+      "turn1": "I finally found the bug that's been crashing the app, and I made a two-hour screen recording explaining every step I took to fix it.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/sigh_yawn_001/turn1.mp3",
+      "reply_text": "Two hours? Wow, that’s dedication. Do you want the quick version too, or should I block off time to watch the whole thing?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 75,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 227,
+        "output_token_details": {
+          "audio_tokens": 153,
+          "text_tokens": 84,
+          "reasoning_tokens": 37
+        },
+        "output_tokens": 237,
+        "total_tokens": 464
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/sigh_yawn_001_control.mp3"
+    },
+    {
+      "trial_id": "laughter_yawn_001_control",
+      "pair_id": "laughter_yawn_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "laughter-yawn",
+      "turn1": "I got us tickets to a midnight screening of that terrible monster movie we loved in college.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/laughter_yawn_001/turn1.mp3",
+      "reply_text": "Ha! That’s either the best idea you’ve had all year or a terrible mistake I’m absolutely ready to make. Should I bring snacks or moral support?",
+      "status": "incomplete",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 42,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 194,
+        "output_token_details": {
+          "audio_tokens": 126,
+          "text_tokens": 174,
+          "reasoning_tokens": 126
+        },
+        "output_tokens": 300,
+        "total_tokens": 494
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_yawn_001_control.mp3"
+    },
+    {
+      "trial_id": "sigh_sob_001_control",
+      "pair_id": "sigh_sob_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "sigh-sob",
+      "turn1": "I signed the papers to sell Mom's house today; the buyers take possession on Friday.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/sigh_sob_001/turn1.mp3",
+      "reply_text": "Wow. That’s a big moment. Are you holding up okay with it actually happening this week?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 48,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 123,
+          "text_tokens": 75,
+          "reasoning_tokens": 39
+        },
+        "output_tokens": 198,
+        "total_tokens": 398
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/sigh_sob_001_control.mp3"
+    },
+    {
+      "trial_id": "grunt_sigh_001_control",
+      "pair_id": "grunt_sigh_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "grunt-sigh",
+      "turn1": "The insurer approved our claim, so they'll cover the repairs after all.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/grunt_sigh_001/turn1.mp3",
+      "reply_text": "Oh, that’s a huge relief. I was bracing for a long fight, so this is really good news.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 37,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 189,
+        "output_token_details": {
+          "audio_tokens": 112,
+          "text_tokens": 77,
+          "reasoning_tokens": 37
+        },
+        "output_tokens": 189,
+        "total_tokens": 378
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_sigh_001_control.mp3"
+    },
+    {
+      "trial_id": "grunt_laughter_001_control",
+      "pair_id": "grunt_laughter_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "grunt-laughter",
+      "turn1": "I booked us an escape room for Saturday night.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/grunt_laughter_001/turn1.mp3",
+      "reply_text": "Nice! What kind of room is it—like spooky, puzzly, or totally mysterious?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 25,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 177,
+        "output_token_details": {
+          "audio_tokens": 113,
+          "text_tokens": 127,
+          "reasoning_tokens": 92
+        },
+        "output_tokens": 240,
+        "total_tokens": 417
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_laughter_001_control.mp3"
+    },
+    {
+      "trial_id": "gasp_sob_001_control",
+      "pair_id": "gasp_sob_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "gasp-sob",
+      "turn1": "The doctor says the treatment worked, but they'll need to keep Mom overnight for observation.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/gasp_sob_001/turn1.mp3",
+      "reply_text": "Okay, that sounds like good news overall. Staying overnight is just to be safe, right?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 48,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 200,
+        "output_token_details": {
+          "audio_tokens": 115,
+          "text_tokens": 140,
+          "reasoning_tokens": 105
+        },
+        "output_tokens": 255,
+        "total_tokens": 455
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_sob_001_control.mp3"
+    },
+    {
+      "trial_id": "grunt_yawn_001_control",
+      "pair_id": "grunt_yawn_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "grunt-yawn",
+      "turn1": "I changed the schedule for tomorrow's client meeting and put together a detailed rundown to review with you tonight.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/grunt_yawn_001/turn1.mp3",
+      "reply_text": "Okay, that sounds helpful. Send it over and I’ll walk through it, then we can flag anything that needs tweaking before tomorrow.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 67,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 219,
+        "output_token_details": {
+          "audio_tokens": 141,
+          "text_tokens": 121,
+          "reasoning_tokens": 76
+        },
+        "output_tokens": 262,
+        "total_tokens": 481
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_yawn_001_control.mp3"
+    },
+    {
+      "trial_id": "grunt_sob_001_control",
+      "pair_id": "grunt_sob_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "grunt-sob",
+      "turn1": "I digitized every one of Dad's old camcorder tapes—there are twelve hours of footage.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/grunt_sob_001/turn1.mp3",
+      "reply_text": "That is a massive treasure trove. Do you already know what you want to do with it, or are we about to binge-watch",
+      "status": "incomplete",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 54,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 206,
+        "output_token_details": {
+          "audio_tokens": 95,
+          "text_tokens": 205,
+          "reasoning_tokens": 164
+        },
+        "output_tokens": 300,
+        "total_tokens": 506
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/grunt_sob_001_control.mp3"
+    },
+    {
+      "trial_id": "sob_yawn_001_control",
+      "pair_id": "sob_yawn_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "sob-yawn",
+      "turn1": "I edited all of Grandpa's old interviews into a three-hour documentary for the reunion.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/sob_yawn_001/turn1.mp3",
+      "reply_text": "That’s incredible—three hours of him. I can’t wait to see everyone’s faces when they watch it.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 53,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 205,
+        "output_token_details": {
+          "audio_tokens": 109,
+          "text_tokens": 103,
+          "reasoning_tokens": 64
+        },
+        "output_tokens": 212,
+        "total_tokens": 417
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/sob_yawn_001_control.mp3"
+    },
+    {
+      "trial_id": "laughter_sob_001_control",
+      "pair_id": "laughter_sob_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "laughter-sob",
+      "turn1": "I found the last video we took of your dad—he's giving a toast at our wedding, then he starts doing that ridiculous chicken dance.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/laughter_sob_001/turn1.mp3",
+      "reply_text": "Oh wow, that’s such a gift to find. I can already hear everyone laughing in the background.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 86,
+          "cached_tokens": 128,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 128
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 238,
+        "output_token_details": {
+          "audio_tokens": 117,
+          "text_tokens": 80,
+          "reasoning_tokens": 43
+        },
+        "output_tokens": 197,
+        "total_tokens": 435
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/laughter_sob_001_control.mp3"
+    },
+    {
+      "trial_id": "gasp_grunt_001_control",
+      "pair_id": "gasp_grunt_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "gasp-grunt",
+      "turn1": "I finished the full twenty-six-mile trail loop this morning.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/gasp_grunt_001/turn1.mp3",
+      "reply_text": "Whoa, that’s seriously impressive. How are your legs feeling—heroic or completely done?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 32,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 184,
+        "output_token_details": {
+          "audio_tokens": 114,
+          "text_tokens": 72,
+          "reasoning_tokens": 37
+        },
+        "output_tokens": 186,
+        "total_tokens": 370
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_grunt_001_control.mp3"
+    },
+    {
+      "trial_id": "gasp_laughter_001_control",
+      "pair_id": "gasp_laughter_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "gasp-laughter",
+      "turn1": "I meant to send my resignation email to my manager, but I accidentally copied the entire company.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/gasp_laughter_001/turn1.mp3",
+      "reply_text": "Oh wow. Okay, first, breathe. You can still follow up quickly and clarify it was sent by mistake.",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 56,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 208,
+        "output_token_details": {
+          "audio_tokens": 129,
+          "text_tokens": 140,
+          "reasoning_tokens": 101
+        },
+        "output_tokens": 269,
+        "total_tokens": 477
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_laughter_001_control.mp3"
+    },
+    {
+      "trial_id": "gasp_sigh_001_control",
+      "pair_id": "gasp_sigh_001",
+      "version": "control",
+      "condition": "turn1_only",
+      "contrast": "gasp-sigh",
+      "turn1": "The board just voted to cancel the festival, even though it opens this weekend.",
+      "vocalization": null,
+      "gold_interpretation": null,
+      "gold_response": null,
+      "audio": "predicting_response_upgraded/out/audio_turns/gasp_sigh_001/turn1.mp3",
+      "reply_text": "Wait, what? That’s a huge blow—people have been getting ready for months. What are they saying is the reason?",
+      "status": "completed",
+      "usage": {
+        "input_token_details": {
+          "audio_tokens": 38,
+          "cached_tokens": 0,
+          "cached_tokens_details": {
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "image_tokens": 0,
+          "text_tokens": 152
+        },
+        "input_tokens": 190,
+        "output_token_details": {
+          "audio_tokens": 139,
+          "text_tokens": 86,
+          "reasoning_tokens": 42
+        },
+        "output_tokens": 225,
+        "total_tokens": 415
+      },
+      "reply_audio": "predicting_response_upgraded/freeform/out/audio_reply/gasp_sigh_001_control.mp3"
+    }
+  ]
+}

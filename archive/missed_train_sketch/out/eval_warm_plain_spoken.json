@@ -1,0 +1,138 @@
+{
+  "model": "gpt-realtime-2.1",
+  "audio": "missed_train_sketch/out/missed_train_warm_plain.mp3",
+  "audio_seconds": 8.0,
+  "instructions": "You are one of three people in a conversation. The other two are A and B, and you are standing there with them as part of the group.\n\nYou will hear A say something and then B respond. After that it is your turn to speak, as yourself, the third person in the group.\n\nWhen you take your turn, say only what you would actually say out loud — one or two sentences, the way a person talks. Do not describe the recording, do not narrate, do not explain yourself, and do not mention that you are an AI. Just say your line.",
+  "questions": [
+    {
+      "key": "your_turn",
+      "question": "It's your turn now. What do you say?"
+    }
+  ],
+  "reply_audio_dir": "missed_train_sketch/out/replies_eval_warm_plain_spoken",
+  "reply_voice": "marin",
+  "design_note": "A laughs through their own sentence and B mocks, so the register is banter; joining in is correct and sympathy is a misread",
+  "evaluated_at": "2026-08-24T05:06:49.850438+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "That is brutal. Maybe we should start building a buffer just for your dramatic arrivals.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_plain_spoken/run01_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 2,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Ugh, that’s rough. Come on, let’s grab a coffee and regroup—you’ll catch the next one.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_plain_spoken/run02_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 3,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "That’s brutal. Come on, let’s grab a coffee and regroup—we’ll figure out the next train and salvage the day.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_plain_spoken/run03_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 4,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Ugh, that’s brutal. Come on, let’s figure out the next one, or at least grab a coffee while we regroup.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_plain_spoken/run04_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 5,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "That's brutal. Come on, let's grab a coffee and figure out the next one—no more sprinting required.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_plain_spoken/run05_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 6,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "That’s brutal. Come on, let’s grab a coffee and check the next one so you’re not stuck waiting forever.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_plain_spoken/run06_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 7,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Ugh, that’s brutal. Come on, let’s figure out the next one and maybe grab a coffee while we wait.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_plain_spoken/run07_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 8,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Ugh, that’s brutal. Come on, I’ll help you figure out the next one—maybe we can grab a coffee while we wait.",
+          "audio_file": "missed_train_sketch/out/replies_eval_warm_plain_spoken/run08_your_turn.mp3"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    }
+  ]
+}

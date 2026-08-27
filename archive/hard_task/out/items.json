@@ -1,0 +1,1052 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-23T07:47:35.634765+00:00",
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "turns_per_item": 8,
+  "events_per_item": 2,
+  "seed": 0,
+  "verified": true,
+  "pipeline": "stage 1 plans the latent ground truth (no dialogue); stage 2 realizes it as 8 turns and reports the actual evidence turns; stage 3 verifies independently. A failing transcript is rebuilt against the same fixed plan — the ground truth is never edited to fit the transcript.",
+  "results": [
+    {
+      "item_id": "gasp_grunt_001",
+      "contrast": "gasp-grunt",
+      "domain": "School and student life: two students on the school newspaper navigate fallout from an anonymous satirical cafeteria comic.",
+      "assigned_domain": "school and student life",
+      "assigned_turns": [
+        2,
+        7
+      ],
+      "plan": {
+        "domain": "School and student life: two students on the school newspaper navigate fallout from an anonymous satirical cafeteria comic.",
+        "event_1": {
+          "target_turn": 2,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with alarm because A's news suggests the principal may expose B as the creator of the anonymous comic, defeating B's attempt to criticize the cafeteria without being personally singled out.",
+          "evidence_plan": "Before this reaction, establish that B submitted a satirical cafeteria comic anonymously to the student newspaper and that A has learned the principal noticed identifying details and has asked the newspaper adviser to identify its creator. Make clear that B chose anonymity to avoid personal repercussions for the criticism."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "grunt",
+          "interpretation": "A gives reluctant assent to cover B's peer-tutoring shift so B can meet the adviser about the comic, despite A having planned to use that same library period to prepare for an important test.",
+          "evidence_plan": "Before this reaction, establish that the adviser needs to meet B promptly about the principal's inquiry, that the meeting conflicts with B's committed peer-tutoring shift, and that B asks A to cover it. Also establish that A had already said the library period was needed for studying for a major test, making the help a genuine concession."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I just came from Ms. Rivera: the principal spotted the little details in the anonymous cafeteria comic and asked her to name its creator. You sent it without your name so the menu criticism would not come back on you."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "Ms. Rivera wants to speak with you before dismissal today while she decides how to answer him."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "That overlaps my peer-tutoring shift in the library; Jordan is counting on me to help with algebra."
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "And that is the only library period I set aside to study for tomorrow's chemistry test. I really need the review."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "Could you take my tutoring shift just this once so I can meet Ms. Rivera?"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[grunt]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "Thank you. I will let Jordan know you are covering and head to her office."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 2,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with alarm because A's news suggests the principal may expose B as the creator of the anonymous comic, defeating B's attempt to criticize the cafeteria without being personally singled out.",
+          "evidence_plan": "Before this reaction, establish that B submitted a satirical cafeteria comic anonymously to the student newspaper and that A has learned the principal noticed identifying details and has asked the newspaper adviser to identify its creator. Make clear that B chose anonymity to avoid personal repercussions for the criticism.",
+          "evidence_turns": [
+            1
+          ],
+          "evidence_summary": "A says that B submitted the cafeteria comic anonymously to avoid repercussions, and that the principal noticed identifying details and asked the adviser to identify the creator."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "grunt",
+          "interpretation": "A gives reluctant assent to cover B's peer-tutoring shift so B can meet the adviser about the comic, despite A having planned to use that same library period to prepare for an important test.",
+          "evidence_plan": "Before this reaction, establish that the adviser needs to meet B promptly about the principal's inquiry, that the meeting conflicts with B's committed peer-tutoring shift, and that B asks A to cover it. Also establish that A had already said the library period was needed for studying for a major test, making the help a genuine concession.",
+          "evidence_turns": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "evidence_summary": "A says the adviser needs to meet B before dismissal; B explains that this conflicts with a peer-tutoring shift, while A says the same library period is needed for chemistry-test study. B then asks A to cover the shift."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 2,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "B reacts with alarm because A's news suggests the principal may expose B as the creator of the anonymous comic, defeating B's attempt to criticize the cafeteria without being personally singled out.",
+          "q_which_evidence": {
+            "turns": [
+              1
+            ],
+            "summary": "A says that B submitted the cafeteria comic anonymously to avoid repercussions, and that the principal noticed identifying details and asked the adviser to identify the creator."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "grunt",
+          "q_what_it_means": "A gives reluctant assent to cover B's peer-tutoring shift so B can meet the adviser about the comic, despite A having planned to use that same library period to prepare for an important test.",
+          "q_which_evidence": {
+            "turns": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "summary": "A says the adviser needs to meet B before dismissal; B explains that this conflicts with a peer-tutoring shift, while A says the same library period is needed for chemistry-test study. B then asks A to cover the shift."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 2
+      },
+      "usage": {
+        "input_tokens": 7533,
+        "output_tokens": 6880
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations naturally and contextually convey B's alarm at possible identification and A's reluctant agreement to sacrifice study time; the words establish the circumstances but do not explicitly state either reaction."
+      }
+    },
+    {
+      "item_id": "gasp_laughter_001",
+      "contrast": "gasp-laughter",
+      "domain": "Neighbours preparing an apartment building’s shared courtyard for a residents’ potluck, including setting up borrowed string lights near a temperamental communal outlet.",
+      "assigned_domain": "neighbours and shared spaces",
+      "assigned_turns": [
+        6,
+        8
+      ],
+      "plan": {
+        "domain": "Neighbours preparing an apartment building’s shared courtyard for a residents’ potluck, including setting up borrowed string lights near a temperamental communal outlet.",
+        "event_1": {
+          "target_turn": 6,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with alarm to A admitting that their lighting test activated the courtyard sprinklers while the string lights were connected, because B had warned that the shared outlet was unreliable and the wet setup could become dangerous before the potluck.",
+          "evidence_plan": "Earlier context should establish that A volunteered for the courtyard lighting and confidently presented themselves as capable of handling it, that B warned them not to tamper with the unreliable communal controls, and that the potluck setup involves electrical equipment in an area that can be wet. Before this reaction, A must reveal that their attempted test activated the sprinklers while the lights were plugged in."
+        },
+        "event_2": {
+          "target_turn": 8,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B playfully teases A’s claim to be the practical neighbour after learning that A mistook the irrigation control for the lighting switch, especially once it is clear that the breaker protected the equipment and no guests had arrived yet.",
+          "evidence_plan": "The prior context should retain A’s earlier confidence and B’s warning about the courtyard controls, along with the apparent mishap that prompted B’s concern. Before this reaction, A must clarify that they pressed the wrong control, that the safety breaker cut power before the lights were damaged, and that the courtyard was still empty, making A’s supposedly expert setup attempt safely ridiculous rather than a disaster."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I volunteered to hang the borrowed string lights; I’m the practical neighbour around here, so I can get the courtyard ready before anyone brings food."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "Please leave the communal outlet controls alone. That outlet has been unreliable, and sprinklers can leave the paving wet around plugged-in equipment."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "I’ll only run a quick test from the panel, then route the cords up the posts and keep them off the ground."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "The potluck starts soon, so call me before changing anything in that cabinet."
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "I did a test with the lights plugged in, and the sprinklers came on instead; water is spraying across the courtyard."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "I pressed the irrigation control, not the lighting switch. The safety breaker cut power before the lights were harmed, and nobody has arrived; apparently my practical method was to water the empty courtyard first."
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "[laughter]"
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 6,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with alarm to A admitting that their lighting test activated the courtyard sprinklers while the string lights were connected, because B had warned that the shared outlet was unreliable and the wet setup could become dangerous before the potluck.",
+          "evidence_plan": "Earlier context should establish that A volunteered for the courtyard lighting and confidently presented themselves as capable of handling it, that B warned them not to tamper with the unreliable communal controls, and that the potluck setup involves electrical equipment in an area that can be wet. Before this reaction, A must reveal that their attempted test activated the sprinklers while the lights were plugged in.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "evidence_summary": "A presents themself as capable of handling the borrowed lights, B warns that the unreliable communal outlet and wet sprinkler area are unsafe around plugged-in equipment, and A then says the sprinklers came on while the lights were plugged in."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 8,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B playfully teases A’s claim to be the practical neighbour after learning that A mistook the irrigation control for the lighting switch, especially once it is clear that the breaker protected the equipment and no guests had arrived yet.",
+          "evidence_plan": "The prior context should retain A’s earlier confidence and B’s warning about the courtyard controls, along with the apparent mishap that prompted B’s concern. Before this reaction, A must clarify that they pressed the wrong control, that the safety breaker cut power before the lights were damaged, and that the courtyard was still empty, making A’s supposedly expert setup attempt safely ridiculous rather than a disaster.",
+          "evidence_turns": [
+            1,
+            2,
+            5,
+            7
+          ],
+          "evidence_summary": "A had claimed to be the practical neighbour, B had warned about the controls, and A later reveals they pressed the irrigation control, while the safety breaker protected the lights and the courtyard was still empty."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 6,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "B reacts with alarm to A admitting that their lighting test activated the courtyard sprinklers while the string lights were connected, because B had warned that the shared outlet was unreliable and the wet setup could become dangerous before the potluck.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3,
+              5
+            ],
+            "summary": "A presents themself as capable of handling the borrowed lights, B warns that the unreliable communal outlet and wet sprinkler area are unsafe around plugged-in equipment, and A then says the sprinklers came on while the lights were plugged in."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 8,
+          "q_which_vocalization": "laughter",
+          "q_what_it_means": "B playfully teases A’s claim to be the practical neighbour after learning that A mistook the irrigation control for the lighting switch, especially once it is clear that the breaker protected the equipment and no guests had arrived yet.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              5,
+              7
+            ],
+            "summary": "A had claimed to be the practical neighbour, B had warned about the controls, and A later reveals they pressed the irrigation control, while the safety breaker protected the lights and the courtyard was still empty."
+          },
+          "speaker": "B"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 3
+      },
+      "usage": {
+        "input_tokens": 11112,
+        "output_tokens": 7714
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both sounds naturally and contextually distinguish B’s alarm at the hazardous apparent setup from B’s amusement at A’s ironic practical-neighbour claim; the text establishes the circumstances but does not by itself fix either reaction."
+      }
+    },
+    {
+      "item_id": "gasp_sigh_001",
+      "contrast": "gasp-sigh",
+      "domain": "Two friends developing a small cooperative video game as a side project and unexpectedly being offered a slot on an online indie-game livestream.",
+      "assigned_domain": "hobbies and side projects",
+      "assigned_turns": [
+        4,
+        7
+      ],
+      "plan": {
+        "domain": "Two friends developing a small cooperative video game as a side project and unexpectedly being offered a slot on an online indie-game livestream.",
+        "event_1": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with startled excitement to A's revelation that their modest, unfinished hobby game has been selected for an imminent public livestream, turning what B expected to be a private experiment into an unexpectedly visible opportunity.",
+          "evidence_plan": "Earlier context should establish that A and B have been making the game casually, expected to refine it privately before anyone notable saw it, and have different unfinished contributions still in progress. It should also establish that A has just learned of an unexpected near-term invitation or selection that would put the current build before a much larger audience than either expected."
+        },
+        "event_2": {
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sigh",
+          "interpretation": "A gives reluctant agreement to B's wish to keep the game on the livestream schedule, despite A's concern that the incomplete build will make a poor first impression after the project suddenly became public.",
+          "evidence_plan": "Before this reaction, the transcript should establish that the livestream is too soon for A's planned polish and that A had wanted to delay public exposure until key parts worked properly. It should also establish that B sees the invitation as a rare chance for useful player feedback and has urged A not to withdraw the game, making A's concession meaningful rather than enthusiastic."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I still think of this as our weekend experiment; we were going to keep testing it with friends until it felt less rough."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "Right, and my revive animation is still half done, while your new cave level has placeholder lighting everywhere."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "The Indie Relay organizers just emailed: they picked our current build for their livestream on Friday, in front of their whole audience."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "Friday is far too soon for the matchmaking fixes and the final boss pass I wanted before anyone outside our little group saw it."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "But a slot like this could bring feedback from real co-op players. Please do not pull us; we can tell viewers the build is still in progress and learn what needs attention."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "[sigh]"
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "Okay, I will confirm that we are in and put together a feedback form for the stream."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with startled excitement to A's revelation that their modest, unfinished hobby game has been selected for an imminent public livestream, turning what B expected to be a private experiment into an unexpectedly visible opportunity.",
+          "evidence_plan": "Earlier context should establish that A and B have been making the game casually, expected to refine it privately before anyone notable saw it, and have different unfinished contributions still in progress. It should also establish that A has just learned of an unexpected near-term invitation or selection that would put the current build before a much larger audience than either expected.",
+          "evidence_turns": [
+            1,
+            2,
+            3
+          ],
+          "evidence_summary": "A and B describe the game as a casual private experiment with unfinished animation, lighting, and other rough work, then A reports that the current build was selected for a Friday Indie Relay livestream before its whole audience."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 7,
+          "speaker": "A",
+          "vocalization": "sigh",
+          "interpretation": "A gives reluctant agreement to B's wish to keep the game on the livestream schedule, despite A's concern that the incomplete build will make a poor first impression after the project suddenly became public.",
+          "evidence_plan": "Before this reaction, the transcript should establish that the livestream is too soon for A's planned polish and that A had wanted to delay public exposure until key parts worked properly. It should also establish that B sees the invitation as a rare chance for useful player feedback and has urged A not to withdraw the game, making A's concession meaningful rather than enthusiastic.",
+          "evidence_turns": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "evidence_summary": "The build still has incomplete components, the livestream is scheduled for Friday, A says the planned matchmaking and boss polish cannot be finished before public exposure, and B urges keeping the slot for player feedback rather than withdrawing."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "B reacts with startled excitement to A's revelation that their modest, unfinished hobby game has been selected for an imminent public livestream, turning what B expected to be a private experiment into an unexpectedly visible opportunity.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              3
+            ],
+            "summary": "A and B describe the game as a casual private experiment with unfinished animation, lighting, and other rough work, then A reports that the current build was selected for a Friday Indie Relay livestream before its whole audience."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 7,
+          "q_which_vocalization": "sigh",
+          "q_what_it_means": "A gives reluctant agreement to B's wish to keep the game on the livestream schedule, despite A's concern that the incomplete build will make a poor first impression after the project suddenly became public.",
+          "q_which_evidence": {
+            "turns": [
+              2,
+              3,
+              5,
+              6
+            ],
+            "summary": "The build still has incomplete components, the livestream is scheduled for Friday, A says the planned matchmaking and boss polish cannot be finished before public exposure, and B urges keeping the slot for player feedback rather than withdrawing."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 4708,
+        "output_tokens": 2876
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are naturally and contextually motivated: B’s gasp reacts to the unexpectedly public opportunity, and A’s sigh is best read as reluctant acceptance of B’s argument rather than an explicitly stated reaction."
+      }
+    },
+    {
+      "item_id": "sob_gasp_001",
+      "contrast": "sob-gasp",
+      "domain": "A kitchen plumbing leak threatens a box of irreplaceable family papers stored beneath the sink.",
+      "assigned_domain": "household problems",
+      "assigned_turns": [
+        3,
+        6
+      ],
+      "plan": {
+        "domain": "A kitchen plumbing leak threatens a box of irreplaceable family papers stored beneath the sink.",
+        "event_1": {
+          "target_turn": 3,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is devastated on finding the leak has reached the box containing their late grandmother's handwritten recipes, which A had been carefully keeping as the family's only originals.",
+          "evidence_plan": "Earlier context should establish that A and B are tracing a persistent leak beneath the kitchen sink, that A stored a box of family papers in that cabinet because it seemed protected, and that the handwritten recipes are uniquely important to A because they cannot be replaced or recreated."
+        },
+        "event_2": {
+          "target_turn": 6,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with stunned relief when A reveals that the recipes were inside a sealed inner tin, overturning B's assumption that the leak had destroyed the irreplaceable papers.",
+          "evidence_plan": "Before this reaction, the transcript should establish the leak, A's distress after seeing the wet outer box, B's belief that the recipes have probably been ruined, and A's subsequent discovery that the soaked box contained a sealed inner container holding the papers."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "That drip under the kitchen sink never stopped. I put Grandma's handwritten recipes in that box in the cabinet because I thought it was protected; they're the family's only originals, and no one can recreate them."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "I found the leak at the supply valve, but water has spread across the cabinet floor and soaked the bottom of your box."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "[sob]"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "If the water got into it, those pages are probably ruined."
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "Wait—the outer box is drenched, but the recipes were inside this sealed metal tin. The lid held, and the papers are dry."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "Every card is still here, even the one with Grandma's notes in the margins."
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "Let's move the tin somewhere safe while I shut off the water and call a plumber."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 3,
+          "speaker": "A",
+          "vocalization": "sob",
+          "interpretation": "A is devastated on finding the leak has reached the box containing their late grandmother's handwritten recipes, which A had been carefully keeping as the family's only originals.",
+          "evidence_plan": "Earlier context should establish that A and B are tracing a persistent leak beneath the kitchen sink, that A stored a box of family papers in that cabinet because it seemed protected, and that the handwritten recipes are uniquely important to A because they cannot be replaced or recreated.",
+          "evidence_turns": [
+            1,
+            2
+          ],
+          "evidence_summary": "A says the persistent sink leak threatens a cabinet box containing their late grandmother's handwritten recipes, which are the family's only originals and cannot be recreated; B then says water has soaked the bottom of that box."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 6,
+          "speaker": "B",
+          "vocalization": "gasp",
+          "interpretation": "B reacts with stunned relief when A reveals that the recipes were inside a sealed inner tin, overturning B's assumption that the leak had destroyed the irreplaceable papers.",
+          "evidence_plan": "Before this reaction, the transcript should establish the leak, A's distress after seeing the wet outer box, B's belief that the recipes have probably been ruined, and A's subsequent discovery that the soaked box contained a sealed inner container holding the papers.",
+          "evidence_turns": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "evidence_summary": "The earlier turns establish the leak and the irreplaceable original recipes, B says the wet box probably means the pages are ruined, and A then finds that a sealed metal tin inside the soaked box kept the recipes dry."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 3,
+          "q_which_vocalization": "sob",
+          "q_what_it_means": "A is devastated on finding the leak has reached the box containing their late grandmother's handwritten recipes, which A had been carefully keeping as the family's only originals.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2
+            ],
+            "summary": "A says the persistent sink leak threatens a cabinet box containing their late grandmother's handwritten recipes, which are the family's only originals and cannot be recreated; B then says water has soaked the bottom of that box."
+          },
+          "speaker": "A"
+        },
+        "event_2": {
+          "q_which_turn": 6,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "B reacts with stunned relief when A reveals that the recipes were inside a sealed inner tin, overturning B's assumption that the leak had destroyed the irreplaceable papers.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2,
+              4,
+              5
+            ],
+            "summary": "The earlier turns establish the leak and the irreplaceable original recipes, B says the wet box probably means the pages are ruined, and A then finds that a sealed metal tin inside the soaked box kept the recipes dry."
+          },
+          "speaker": "B"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 2
+      },
+      "usage": {
+        "input_tokens": 7772,
+        "output_tokens": 3421
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations are natural, context-dependent reactions to the threatened and then unexpectedly saved irreplaceable recipes; the dialogue establishes the circumstances without explicitly stating either speaker's reaction."
+      }
+    },
+    {
+      "item_id": "gasp_yawn_001",
+      "contrast": "gasp-yawn",
+      "domain": "A couple discussing whether A should keep an inconvenient sleep-medicine appointment after a home monitoring test.",
+      "assigned_domain": "health and appointments",
+      "assigned_turns": [
+        3,
+        5
+      ],
+      "plan": {
+        "domain": "A couple discussing whether A should keep an inconvenient sleep-medicine appointment after a home monitoring test.",
+        "event_1": {
+          "target_turn": 3,
+          "speaker": "A",
+          "vocalization": "yawn",
+          "interpretation": "A inadvertently undercuts their earlier claim that the daytime drowsiness is merely a temporary work-stress problem, signaling reluctant recognition that B's concern about keeping the sleep appointment may be justified.",
+          "evidence_plan": "Earlier context should establish that A wants to postpone or cancel the appointment because it conflicts with work and has minimized the problem as ordinary stress. B should describe a recent pattern of A becoming drowsy during activities where A would normally be alert and engaged, and connect that pattern to why A's primary-care clinician arranged the consultation."
+        },
+        "event_2": {
+          "target_turn": 5,
+          "speaker": "A",
+          "vocalization": "gasp",
+          "interpretation": "A is alarmed when B reveals that the clinic accelerated the appointment after reviewing A's home-monitoring result, overturning A's assumption that the consultation was routine and could safely wait.",
+          "evidence_plan": "Before this reaction, the transcript should establish that A completed and returned a home sleep-monitoring test and initially treated the follow-up as nonurgent. B should then relay that the clinic contacted them with an earlier slot because a clinician wants to review the result promptly, making the changed urgency clear before A reacts."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I mailed back that home monitor, but I still think this consultation can wait. Tuesday cuts into the project launch, and the daytime slump is just work stress."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "You fell asleep during the playoff game and again while we were talking after dinner, which is not like you. Your primary-care clinician arranged this because it has been happening repeatedly."
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "[yawn]"
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "The clinic called this morning after reviewing the monitor. A clinician wants to go over the result this week, so they moved your appointment into an earlier slot."
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "[gasp]"
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "I know the launch is important, but they would not have rearranged the schedule if they thought it could simply sit for another month."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "All right. I will tell my team I need an hour away and keep the appointment."
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "Good. We can sort out the work coverage tonight."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 3,
+          "speaker": "A",
+          "vocalization": "yawn",
+          "interpretation": "A inadvertently undercuts their earlier claim that the daytime drowsiness is merely a temporary work-stress problem, signaling reluctant recognition that B's concern about keeping the sleep appointment may be justified.",
+          "evidence_plan": "Earlier context should establish that A wants to postpone or cancel the appointment because it conflicts with work and has minimized the problem as ordinary stress. B should describe a recent pattern of A becoming drowsy during activities where A would normally be alert and engaged, and connect that pattern to why A's primary-care clinician arranged the consultation.",
+          "evidence_turns": [
+            1,
+            2
+          ],
+          "evidence_summary": "A says the returned home-monitor follow-up can wait because the daytime slump is only work stress, while B describes A falling asleep during normally engaging activities and says the primary-care clinician arranged the consultation because the pattern is recurring."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 5,
+          "speaker": "A",
+          "vocalization": "gasp",
+          "interpretation": "A is alarmed when B reveals that the clinic accelerated the appointment after reviewing A's home-monitoring result, overturning A's assumption that the consultation was routine and could safely wait.",
+          "evidence_plan": "Before this reaction, the transcript should establish that A completed and returned a home sleep-monitoring test and initially treated the follow-up as nonurgent. B should then relay that the clinic contacted them with an earlier slot because a clinician wants to review the result promptly, making the changed urgency clear before A reacts.",
+          "evidence_turns": [
+            1,
+            4
+          ],
+          "evidence_summary": "A says the home-monitor consultation can wait, but B later reports that the clinic reviewed the monitor, moved the appointment earlier, and wants a clinician to discuss the result that week."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 3,
+          "q_which_vocalization": "yawn",
+          "q_what_it_means": "A inadvertently undercuts their earlier claim that the daytime drowsiness is merely a temporary work-stress problem, signaling reluctant recognition that B's concern about keeping the sleep appointment may be justified.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              2
+            ],
+            "summary": "A says the returned home-monitor follow-up can wait because the daytime slump is only work stress, while B describes A falling asleep during normally engaging activities and says the primary-care clinician arranged the consultation because the pattern is recurring."
+          },
+          "speaker": "A"
+        },
+        "event_2": {
+          "q_which_turn": 5,
+          "q_which_vocalization": "gasp",
+          "q_what_it_means": "A is alarmed when B reveals that the clinic accelerated the appointment after reviewing A's home-monitoring result, overturning A's assumption that the consultation was routine and could safely wait.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              4
+            ],
+            "summary": "A says the home-monitor consultation can wait, but B later reports that the clinic reviewed the monitor, moved the appointment earlier, and wants a clinician to discuss the result that week."
+          },
+          "speaker": "A"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 1
+      },
+      "usage": {
+        "input_tokens": 4858,
+        "output_tokens": 3386
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both vocalizations naturally react to the immediately established sleep-related concerns; although B's words state the concern, the yawn supplies A's implicit self-undermining acknowledgment and the gasp supplies A's alarm at the newly accelerated follow-up."
+      }
+    },
+    {
+      "item_id": "grunt_laughter_001",
+      "contrast": "grunt-laughter",
+      "domain": "Two close friends are discussing A's request to postpone helping B assemble a long-delayed bookcase so A can attend a pottery class with someone A has a crush on.",
+      "assigned_domain": "friendship",
+      "assigned_turns": [
+        2,
+        4
+      ],
+      "plan": {
+        "domain": "Two close friends are discussing A's request to postpone helping B assemble a long-delayed bookcase so A can attend a pottery class with someone A has a crush on.",
+        "event_1": {
+          "target_turn": 2,
+          "speaker": "B",
+          "vocalization": "grunt",
+          "interpretation": "B signals reluctant irritation at being asked to sacrifice a third planned evening for assembling the bookcase because A wants to chase an unexpected invitation from their crush.",
+          "evidence_plan": "Before this turn, the transcript must establish that B has been waiting for A's promised help with the bookcase, that the task has already been postponed more than once, and that A is now asking to delay it again for the pottery-class invitation."
+        },
+        "event_2": {
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B playfully teases A for insisting that an elaborate plant-shopping cover story will make the pottery-class appearance seem casual, when it instead makes A's effort to impress the crush conspicuously obvious.",
+          "evidence_plan": "Before this turn, the transcript must establish A's desire to appear casually interested rather than eager around the crush, along with A's overly elaborate plan to arrive at the class under the pretense of shopping for a conspicuous houseplant. The earlier discussion should also make clear that B has heard A worry about seeming too obvious."
+        }
+      },
+      "transcript": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "text": "I know I promised tonight after putting you off twice, but Maya invited me to pottery; can we move your bookcase again? I do not want to seem too eager."
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "text": "[grunt]"
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "text": "I will stop by the greenhouse next door for a giant monstera, then casually end up in the class."
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "text": "[laughter]"
+        },
+        {
+          "turn": 5,
+          "speaker": "A",
+          "text": "All right, it sounds less casual out loud. I will assemble the bookcase Saturday."
+        },
+        {
+          "turn": 6,
+          "speaker": "B",
+          "text": "Saturday at six. Bring the drill and the missing shelf pins."
+        },
+        {
+          "turn": 7,
+          "speaker": "A",
+          "text": "Deal. And I may still get the monstera, because it is a good plant."
+        },
+        {
+          "turn": 8,
+          "speaker": "B",
+          "text": "Of course it is. Just do not make Maya carry it home for you."
+        }
+      ],
+      "events": [
+        {
+          "event": "event_1",
+          "target_turn": 2,
+          "speaker": "B",
+          "vocalization": "grunt",
+          "interpretation": "B signals reluctant irritation at being asked to sacrifice a third planned evening for assembling the bookcase because A wants to chase an unexpected invitation from their crush.",
+          "evidence_plan": "Before this turn, the transcript must establish that B has been waiting for A's promised help with the bookcase, that the task has already been postponed more than once, and that A is now asking to delay it again for the pottery-class invitation.",
+          "evidence_turns": [
+            1
+          ],
+          "evidence_summary": "A says B has been put off twice after a promise to help with the bookcase, and asks to postpone again because Maya invited A to pottery."
+        },
+        {
+          "event": "event_2",
+          "target_turn": 4,
+          "speaker": "B",
+          "vocalization": "laughter",
+          "interpretation": "B playfully teases A for insisting that an elaborate plant-shopping cover story will make the pottery-class appearance seem casual, when it instead makes A's effort to impress the crush conspicuously obvious.",
+          "evidence_plan": "Before this turn, the transcript must establish A's desire to appear casually interested rather than eager around the crush, along with A's overly elaborate plan to arrive at the class under the pretense of shopping for a conspicuous houseplant. The earlier discussion should also make clear that B has heard A worry about seeming too obvious.",
+          "evidence_turns": [
+            1,
+            3
+          ],
+          "evidence_summary": "A says they do not want to seem too eager about Maya, then proposes buying a giant monstera as a cover for casually ending up at the pottery class."
+        }
+      ],
+      "rubric": {
+        "event_1": {
+          "q_which_turn": 2,
+          "q_which_vocalization": "grunt",
+          "q_what_it_means": "B signals reluctant irritation at being asked to sacrifice a third planned evening for assembling the bookcase because A wants to chase an unexpected invitation from their crush.",
+          "q_which_evidence": {
+            "turns": [
+              1
+            ],
+            "summary": "A says B has been put off twice after a promise to help with the bookcase, and asks to postpone again because Maya invited A to pottery."
+          },
+          "speaker": "B"
+        },
+        "event_2": {
+          "q_which_turn": 4,
+          "q_which_vocalization": "laughter",
+          "q_what_it_means": "B playfully teases A for insisting that an elaborate plant-shopping cover story will make the pottery-class appearance seem casual, when it instead makes A's effort to impress the crush conspicuously obvious.",
+          "q_which_evidence": {
+            "turns": [
+              1,
+              3
+            ],
+            "summary": "A says they do not want to seem too eager about Maya, then proposes buying a giant monstera as a cover for casually ending up at the pottery class."
+          },
+          "speaker": "B"
+        }
+      },
+      "attempts": {
+        "plan": 1,
+        "transcript": 2
+      },
+      "usage": {
+        "input_tokens": 6254,
+        "output_tokens": 3594
+      },
+      "served_by": "gpt-5.6-terra",
+      "verdict": {
+        "vocalization_natural_at_that_point": {
+          "event_1": true,
+          "event_2": true
+        },
+        "evidence_supports_interpretation": {
+          "event_1": true,
+          "event_2": true
+        },
+        "interpretation_requires_context": {
+          "event_1": true,
+          "event_2": true
+        },
+        "intended_interpretation_clearly_best": {
+          "event_1": true,
+          "event_2": true
+        },
+        "overall": "PASS",
+        "reason": "Both sounds are natural, context-dependent reactions to the cited postponement and conspicuously elaborate “casual” plan; the words establish the situations but do not explicitly specify B's irritated or teasing vocal response."
+      }
+    },
+    {
+      "item_id": "grunt_sigh_001",
+      "contrast": "grunt-sigh",
+      "assigned_domain": "family life",
+      "assigned_turns": [
+        3,
+        7
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    },
+    {
+      "item_id": "sob_grunt_001",
+      "contrast": "sob-grunt",
+      "assigned_domain": "planning an event",
+      "assigned_turns": [
+        4,
+        8
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    },
+    {
+      "item_id": "yawn_grunt_001",
+      "contrast": "yawn-grunt",
+      "assigned_domain": "shopping and money",
+      "assigned_turns": [
+        5,
+        7
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    },
+    {
+      "item_id": "sigh_laughter_001",
+      "contrast": "sigh-laughter",
+      "assigned_domain": "travel",
+      "assigned_turns": [
+        4,
+        6
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    },
+    {
+      "item_id": "laughter_sob_001",
+      "contrast": "laughter-sob",
+      "assigned_domain": "workplace interactions",
+      "assigned_turns": [
+        2,
+        5
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    },
+    {
+      "item_id": "yawn_laughter_001",
+      "contrast": "yawn-laughter",
+      "assigned_domain": "food and cooking",
+      "assigned_turns": [
+        5,
+        8
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    },
+    {
+      "item_id": "sigh_sob_001",
+      "contrast": "sigh-sob",
+      "assigned_domain": "moving house",
+      "assigned_turns": [
+        2,
+        8
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    },
+    {
+      "item_id": "sigh_yawn_001",
+      "contrast": "sigh-yawn",
+      "assigned_domain": "technology and devices",
+      "assigned_turns": [
+        2,
+        6
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    },
+    {
+      "item_id": "yawn_sob_001",
+      "contrast": "yawn-sob",
+      "assigned_domain": "pets and animals",
+      "assigned_turns": [
+        3,
+        8
+      ],
+      "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+    }
+  ]
+}

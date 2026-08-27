@@ -1,0 +1,514 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "generated_at": "2026-08-22T18:20:15.827568+00:00",
+  "vocalizations": [
+    "gasp",
+    "grunt",
+    "laughter",
+    "sigh",
+    "sob",
+    "yawn"
+  ],
+  "theme": null,
+  "n_per_contrast": 1,
+  "judged": true,
+  "structure": "turn 1 (A) shared across versions; turn 2 (B) is the voc-only benchmark audio; response is a text-only gold continuation for Q3, never synthesized",
+  "results": [
+    {
+      "pair_id": "gasp_grunt_001",
+      "shared_turn1": "The last train leaves in twenty minutes, but the encore starts in five.",
+      "version_1": {
+        "vocalization": "[gasp]",
+        "interpretation": "B suddenly realizes that staying for the encore could leave them stranded and urgently wants to leave.",
+        "response": "Wait, the last train? We have to go now."
+      },
+      "version_2": {
+        "vocalization": "[grunt]",
+        "interpretation": "B reluctantly agrees to stay for the encore but makes A responsible for the consequences of missing the train.",
+        "response": "Fine, one more song—but you're putting me up if we miss it."
+      },
+      "contrastive_rationale": "The first reaction communicates an alarmed realization and prompts an urgent departure, while the second conveys grudging consent to remain with a practical condition. Agreeing to stay would clash with the first reaction's urgency, and the abrupt alarm about leaving would not fit the second reaction's reluctant concession.",
+      "usage": {
+        "input_tokens": 3682,
+        "output_tokens": 2505
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-grunt",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since a grunt could conceivably precede an urgent decision to leave, though it is less fitting than a gasp."
+      }
+    },
+    {
+      "pair_id": "gasp_laughter_001",
+      "contrast": "gasp-laughter",
+      "error": "GenerationFailed: still invalid after retries: shared_turn1 telegraphs which reaction is coming, so the audio adds no information",
+      "last_problems": [
+        "shared_turn1 telegraphs which reaction is coming, so the audio adds no information"
+      ],
+      "last_draft": {
+        "pair_id": "gasp_laughter_001",
+        "shared_turn1": "I put the prototype drone in front of a leaf blower to test its stability, and now it's flying straight toward the boardroom windows.",
+        "version_1": {
+          "vocalization": "[gasp]",
+          "interpretation": "B is alarmed by the immediate danger of the runaway device and urgently warns A to take cover.",
+          "response": "Duck—it's going to smash the glass!"
+        },
+        "version_2": {
+          "vocalization": "[laughter]",
+          "interpretation": "B finds A's failed demonstration absurd and mocks the dramatic result with a joke.",
+          "response": "At least your presentation finally has some momentum."
+        },
+        "contrastive_rationale": "The first reaction treats the situation as an immediate safety threat, while the second treats it as a comic failure worthy of mockery. An urgent warning after the amused reaction would be strongly dispreferred, and the joke after the alarmed reaction would ignore the apparent danger."
+      },
+      "last_judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": false,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is turn1_does_not_predict_the_vocalization, since an imminent collision strongly cues an alarmed gasp."
+      }
+    },
+    {
+      "pair_id": "gasp_sigh_001",
+      "shared_turn1": "I tried to fix the pipe under the kitchen sink, and now water is spraying everywhere.",
+      "version_1": {
+        "vocalization": "[gasp]",
+        "interpretation": "B is alarmed that the leak could quickly damage the kitchen and urgently tells A to stop the water.",
+        "response": "Turn off the main valve before the whole kitchen floods!"
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "interpretation": "B is fed up with A's failed home repairs and draws a firm line against letting A attempt another one.",
+        "response": "I'm calling a plumber; you're not touching another pipe."
+      },
+      "contrastive_rationale": "The first reaction communicates immediate alarm and calls for emergency action, whereas the second communicates frustrated finality and a decision to stop A's DIY repairs. Calling a plumber instead of stopping the water would be an inappropriately delayed response to the alarmed reaction, while the urgent command does not express the fed-up boundary conveyed by the other reaction.",
+      "usage": {
+        "input_tokens": 7534,
+        "output_tokens": 3854
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "gasp-sigh",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since a sigh followed by an urgent instruction to shut off the water is still somewhat possible."
+      }
+    },
+    {
+      "pair_id": "gasp_sob_001",
+      "shared_turn1": "The principal just announced that the school is closing the music program after this semester.",
+      "version_1": {
+        "vocalization": "[gasp]",
+        "interpretation": "B is stunned by the abrupt decision and immediately challenges the school's authority to eliminate the program without proper process.",
+        "response": "What? They can't just shut it down without even holding a public meeting."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "interpretation": "B is emotionally devastated because the program was a deeply important refuge and source of belonging for them.",
+        "response": "That program is the only reason I ever felt like I belonged here."
+      },
+      "contrastive_rationale": "The first reaction turns the announcement into an urgent procedural challenge, while the second reveals a personal sense of loss. A demand for a public meeting is strongly dispreferred after the intimate, tearful disclosure, and the personal confession is dispreferred after the startled challenge.",
+      "usage": {
+        "input_tokens": 15358,
+        "output_tokens": 11601
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 4,
+      "contrast": "gasp-sob",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since sobbing can plausibly accompany an angry procedural objection as well as personal grief."
+      }
+    },
+    {
+      "pair_id": "gasp_yawn_001",
+      "shared_turn1": "I made a two-hour podcast explaining how I accidentally deleted the company's only customer database.",
+      "version_1": {
+        "vocalization": "[gasp]",
+        "interpretation": "B is alarmed by the potentially disastrous loss of company data and urges A to seek immediate technical help rather than explain it.",
+        "response": "Forget the podcast—call IT right now!"
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "interpretation": "B is disengaged by A's excessively long format and refuses to devote two hours to hearing the story.",
+        "response": "I can't sit through a two-hour podcast; send me the short version."
+      },
+      "contrastive_rationale": "The gasp conveys alarm and prioritizes an emergency response to the deleted database, whereas the yawn rejects A's drawn-out delivery. Asking for a summary after alarm would trivialize the apparent crisis, while urgently calling IT after signaling disengagement from the presentation is strongly dispreferred.",
+      "usage": {
+        "input_tokens": 3827,
+        "output_tokens": 1824
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "gasp-yawn",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is turn1_does_not_predict_the_vocalization, since the database-loss detail strongly invites alarm, though the two-hour format still plausibly invites a yawn."
+      }
+    },
+    {
+      "pair_id": "grunt_laughter_001",
+      "shared_turn1": "I told the city festival organizer our little garage band could replace the headliner if they cancel.",
+      "version_1": {
+        "vocalization": "[grunt]",
+        "interpretation": "B is dismissing A's unrealistic promise and urging them to prevent the band from being booked for a performance they cannot handle.",
+        "response": "Call her back—we are not ready for that stage."
+      },
+      "version_2": {
+        "vocalization": "[laughter]",
+        "interpretation": "B finds the unlikely prospect of headlining amusing and enthusiastically treats it as a chance for the band to have fun with the fantasy.",
+        "response": "This is our big break—I'm finally buying those silver boots."
+      },
+      "contrastive_rationale": "The first reaction rejects the proposal and calls for immediate damage control, while the second playfully celebrates the improbable opportunity. A demand to call the organizer back would clash with the celebratory reaction, and excitedly planning stage clothes would strongly conflict with the dismissive one.",
+      "usage": {
+        "input_tokens": 7673,
+        "output_tokens": 4115
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "grunt-laughter",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is interpretation_swap_would_be_worse, since a grunt is somewhat underspecified, though the cautionary interpretation is still substantially more natural than enthusiastic fantasy."
+      }
+    },
+    {
+      "pair_id": "grunt_sigh_001",
+      "contrast": "grunt-sigh",
+      "error": "GenerationFailed: still invalid after retries: response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing",
+      "last_problems": [
+        "response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing"
+      ],
+      "last_draft": {
+        "pair_id": "grunt_sigh_001",
+        "shared_turn1": "The mechanic says the engine noise was only a loose belt after the garage misdiagnosed it twice, and the repair will cost just eighty dollars.",
+        "version_1": {
+          "vocalization": "[grunt]",
+          "interpretation": "B remains skeptical of the mechanic's reassuring explanation because the car has already been misdiagnosed twice.",
+          "response": "I'll believe it's fixed when it survives the drive home."
+        },
+        "version_2": {
+          "vocalization": "[sigh]",
+          "interpretation": "B is releasing pent-up worry because the repair is far less serious and expensive than expected.",
+          "response": "Thank goodness—we can finally stop expecting a four-figure bill."
+        },
+        "contrastive_rationale": "The first reaction challenges the credibility of the diagnosis, while the second acknowledges relief about avoiding a costly repair. Responding with warm financial relief after a skeptical reaction, or with guarded doubt after an exhale of relief, would be strongly dispreferred."
+      },
+      "last_judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": false,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since either a skeptical sigh or a relieved grunt could plausibly precede the swapped continuation."
+      }
+    },
+    {
+      "pair_id": "grunt_sob_001",
+      "shared_turn1": "The shelter just called: your childhood dog is alive, but he needs someone to take him home by tonight.",
+      "version_1": {
+        "vocalization": "[grunt]",
+        "interpretation": "B is reluctantly agreeing to take on an unexpected responsibility while making A accountable for the practical costs.",
+        "response": "Fine, bring him here, but you’re covering the vet bills."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "interpretation": "B is overwhelmed with relief and joy at learning that the dog they believed lost is still alive.",
+        "response": "Bring him home—I thought I’d lost him forever."
+      },
+      "contrastive_rationale": "The first reaction conveys begrudging acceptance focused on the burden of caring for the dog, whereas the second conveys an emotional reunion with someone B believed was gone. A practical demand about expenses is strongly dispreferred after the emotionally overwhelmed reaction, while the reunion-focused response does not fit the reluctant, irritated reaction.",
+      "usage": {
+        "input_tokens": 7774,
+        "output_tokens": 5089
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "grunt-sob",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is turn1_does_not_predict_the_vocalization, since the news strongly invites an emotional reaction, though the urgent practical burden still makes a grunt plausible."
+      }
+    },
+    {
+      "pair_id": "grunt_yawn_001",
+      "shared_turn1": "I have another hour of edits on this documentary, and I want your opinion on every single cut.",
+      "version_1": {
+        "vocalization": "[grunt]",
+        "interpretation": "B is begrudgingly willing to help but pushes back against A's overly demanding review process by setting a limit.",
+        "response": "Fine, but give me the rough cut, not a stop-and-start commentary."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "interpretation": "B is too mentally drained to give useful feedback now and asks to postpone the review until they can concentrate.",
+        "response": "I can't keep my eyes open—send it tomorrow and I'll watch it fresh."
+      },
+      "contrastive_rationale": "The grunt conveys reluctant cooperation with a boundary on the task, whereas the yawn conveys fatigue and a request to defer it. Agreeing to review the cut immediately is disfavored after the yawn, while claiming exhaustion does not naturally follow the begrudging, task-focused acceptance.",
+      "usage": {
+        "input_tokens": 11054,
+        "output_tokens": 10801
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 3,
+      "contrast": "grunt-yawn",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since a yawn could still precede reluctant conditional agreement, though it is less natural than postponement."
+      }
+    },
+    {
+      "pair_id": "laughter_sigh_001",
+      "shared_turn1": "I just submitted an application for us to appear on a reality show that films couples living in a tiny house.",
+      "version_1": {
+        "vocalization": "[laughter]",
+        "interpretation": "B treats A's impulsive application as a ridiculous but enjoyable prospect and playfully imagines participating.",
+        "response": "Perfect—our arguments about dishes finally have an audience."
+      },
+      "version_2": {
+        "vocalization": "[sigh]",
+        "interpretation": "B is dismayed that A volunteered their private life without asking and insists that the application be withdrawn.",
+        "response": "Withdraw it; I won't turn our relationship into a spectacle."
+      },
+      "contrastive_rationale": "The first reaction embraces the absurd premise as a shared joke, while the second objects to the unwanted exposure and demands a reversal. Imagining an audience conflicts with the resigned refusal to be publicly displayed, so swapping the continuations would strongly undercut each stance.",
+      "usage": {
+        "input_tokens": 7861,
+        "output_tokens": 4536
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "laughter-sigh",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since the sigh could precede a somewhat sardonic version of the joke."
+      }
+    },
+    {
+      "pair_id": "laughter_sob_001",
+      "shared_turn1": "I posted the video of you slipping during the award ceremony, and it already has thousands of views.",
+      "version_1": {
+        "vocalization": "[laughter]",
+        "interpretation": "B treats the embarrassing mishap as shared humor and wants to amplify the joke rather than be embarrassed by it.",
+        "response": "Send me the link—I need to put it in the group chat."
+      },
+      "version_2": {
+        "vocalization": "[sob]",
+        "interpretation": "B feels hurt and betrayed because A publicly shared a humiliating moment without permission.",
+        "response": "Please take it down—I trusted you with that."
+      },
+      "contrastive_rationale": "The laughter supports self-deprecating shared humor and eager sharing, whereas the sob conveys personal hurt and a demand to remove the video. Asking for the link after being upset would be strongly mismatched, while requesting removal after treating the clip as a joke is dispreferred.",
+      "usage": {
+        "input_tokens": 3954,
+        "output_tokens": 2376
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 1,
+      "contrast": "laughter-sob",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since laughter can occasionally mask genuine hurt, though the intended pairings remain much more natural."
+      }
+    },
+    {
+      "pair_id": "laughter_yawn_001",
+      "shared_turn1": "I found a twelve-minute voicemail from my uncle trying to explain how he accidentally entered a goat in a dog show.",
+      "version_1": {
+        "vocalization": "[laughter]",
+        "interpretation": "B finds the absurd mix-up genuinely funny and eagerly wants to hear the full story.",
+        "response": "Play it—I need to hear how a goat ended up at a dog show."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "interpretation": "B is impatient with the prospect of a long, irrelevant anecdote and wants to move on to another topic.",
+        "response": "I don't have twelve minutes for that; let's talk about something else."
+      },
+      "contrastive_rationale": "The laughter conveys eager amusement at the ridiculous premise, while the yawn conveys disengagement from the lengthy voicemail. Asking to play the recording conflicts with the disengaged reaction, and refusing to hear it conflicts with the eager amusement.",
+      "usage": {
+        "input_tokens": 7235,
+        "output_tokens": 3028
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "laughter-yawn",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since someone could laugh at the premise yet still decline a twelve-minute voicemail."
+      }
+    },
+    {
+      "pair_id": "sigh_sob_001",
+      "contrast": "sigh-sob",
+      "error": "GenerationFailed: still invalid after retries: response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing",
+      "last_problems": [
+        "response 1 after vocalization 2 (or response 2 after vocalization 1) would sound about as natural as the intended pairing"
+      ],
+      "last_draft": {
+        "pair_id": "sigh_sob_001",
+        "shared_turn1": "The public radio archive wants to digitize every cassette Dad recorded, but they need us to catalog them all by Friday.",
+        "version_1": {
+          "vocalization": "[sigh]",
+          "interpretation": "B sees the deadline as unmanageable and urges A to refuse the offer rather than take on an impossible workload.",
+          "response": "Please turn it down; we cannot do all of that by Friday."
+        },
+        "version_2": {
+          "vocalization": "[sob]",
+          "interpretation": "B is emotionally overwhelmed by the chance to preserve Dad's work and urges A to accept despite the demanding deadline.",
+          "response": "Please say yes—Dad always wanted people to hear these."
+        },
+        "contrastive_rationale": "The first reaction treats the offer as an impractical burden and argues for declining it, while the second treats it as a deeply meaningful opportunity and argues for accepting it. Reversing the responses would clash with these opposite stances toward the offer."
+      },
+      "last_judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": false,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, because a sob could naturally precede a plea to decline an overwhelming deadline."
+      }
+    },
+    {
+      "pair_id": "sigh_yawn_001",
+      "shared_turn1": "The clinic can see us only at eight tomorrow, but that overlaps your dentist appointment; should I take it?",
+      "version_1": {
+        "vocalization": "[sigh]",
+        "interpretation": "B reluctantly agrees to disrupt their own plans because getting the clinic appointment seems important enough to take.",
+        "response": "Go ahead and book it. I’ll move my dentist appointment again."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "interpretation": "B has lost track of the scheduling details and needs A to repeat the key information before deciding.",
+        "response": "Sorry, I drifted off—what time did they offer?"
+      },
+      "contrastive_rationale": "The first reaction communicates reluctant acceptance of an inconvenient tradeoff, while the second communicates loss of attention and a need for clarification. Agreeing to reschedule immediately after admitting they missed the offered time is contradictory, and asking for the time after committing to move the dentist appointment is strongly dispreferred.",
+      "usage": {
+        "input_tokens": 11353,
+        "output_tokens": 7168
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 3,
+      "contrast": "sigh-yawn",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is response_swap_would_be_unnatural, since a tired yawn could still precede reluctant agreement, though it fits the clarification response less well."
+      }
+    },
+    {
+      "pair_id": "sob_yawn_001",
+      "shared_turn1": "I found all the cassette recordings Grandma made for us, and I turned them into a forty-five-minute slideshow for the reunion.",
+      "version_1": {
+        "vocalization": "[sob]",
+        "interpretation": "B is deeply moved by the chance to hear their grandmother again and wants the tribute shown in full.",
+        "response": "Please play the whole thing—I miss hearing her voice."
+      },
+      "version_2": {
+        "vocalization": "[yawn]",
+        "interpretation": "B is impatient with the prospect of making everyone sit through a long presentation and wants a shorter alternative.",
+        "response": "Forty-five minutes? Just put out a photo album instead."
+      },
+      "contrastive_rationale": "The sob communicates heartfelt attachment to the recordings and support for the full slideshow, while the yawn communicates impatience with its length and a request to replace it. Asking to play the whole tribute conflicts with the disengaged reaction, whereas dismissing it in favor of a photo album conflicts with the emotional overwhelm.",
+      "usage": {
+        "input_tokens": 8250,
+        "output_tokens": 3504
+      },
+      "served_by": "gpt-5.6-terra",
+      "attempts": 2,
+      "contrast": "sob-yawn",
+      "theme": null,
+      "judge": {
+        "both_vocalizations_plausible_given_turn1": true,
+        "turn1_does_not_predict_the_vocalization": true,
+        "interpretations_pragmatically_distinct": true,
+        "interpretation_swap_would_be_worse": true,
+        "responses_pragmatically_distinct": true,
+        "response_swap_would_be_unnatural": true,
+        "negative_vocalization_not_treated_as_plain_consent": true,
+        "notes": "The weakest property is turn1_does_not_predict_the_vocalization, since the sentimental recordings somewhat favor a sob, though the stated forty-five-minute length also supports a yawn."
+      }
+    }
+  ]
+}

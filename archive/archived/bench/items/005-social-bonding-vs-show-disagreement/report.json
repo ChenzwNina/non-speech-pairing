@@ -1,0 +1,118 @@
+{
+  "accepted": true,
+  "rejected_by": null,
+  "cost_usd": 2.2409,
+  "stages": {
+    "mechanical": {
+      "attempt": 2,
+      "failures": []
+    },
+    "bivalence": {
+      "ok": true,
+      "reason": null,
+      "vote_share": 1.0,
+      "prior_favours": "performance_a",
+      "prior_is_unanimous": true,
+      "mean_confidence": 0.688,
+      "both_plausible_rate": 1.0,
+      "votes": [
+        "performance_a",
+        "performance_a",
+        "performance_a",
+        "performance_a"
+      ],
+      "runs": [
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_a",
+          "confidence": 0.73,
+          "both_plausible": true,
+          "reason": "\"Of course you do\" concedes rather than contests the claim, landing as fond recognition of a habit B already knows about after a series of affirming echoes."
+        },
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_a",
+          "confidence": 0.62,
+          "both_plausible": true,
+          "reason": "B's short echoing prompts ('Before six', 'Every day, then') read as drawing A out rather than challenging, and 'Of course you do' with the laugh lands as affectionate recognition of a known habit — though the same phrase can carry a teasing skepticism, which keeps account 1 live."
+        },
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.68,
+          "both_plausible": true,
+          "reason": "\"Of course you do\" registers a familiar, predictable habit with affectionate recognition rather than disbelief, though the same phrase can carry mock skepticism about a daily-since-April claim."
+        },
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.72,
+          "both_plausible": true,
+          "reason": "B's escalating echoes ('Before six,' 'Every day, then') and the possessive 'Of course you do' read as affectionate recognition of a known habit rather than disbelief, though the same phrase could carry mock-skeptical teasing."
+        }
+      ]
+    },
+    "discriminability": {
+      "ok": true,
+      "reason": null,
+      "per_performance": {
+        "performance_a": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.95,
+              "both_plausible": null,
+              "reason": "The tags [warm laugh][tender] plus the affectionate 'Of course you do' mark the laugh as fond recognition of a known habit, not skepticism — and the exchange gives B nothing to doubt."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_a",
+              "confidence": 0.91,
+              "both_plausible": null,
+              "reason": "The tags [warm laugh][tender] plus 'Of course you do' after B's affectionate drawn-out 'Every day, then' mark the laugh as fond recognition of a known habit rather than skeptical dismissal."
+            },
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.95,
+              "both_plausible": null,
+              "reason": "The tags [warm laugh][tender] plus the affectionate 'Of course you do' after B's earlier admiring and drawn-out warmth mark the laugh as fond recognition of a known habit, not skepticism or refusal to believe."
+            }
+          ]
+        },
+        "performance_b": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.97,
+              "both_plausible": null,
+              "reason": "The tags stack a disbelieving laugh with a dismissive delivery on a sarcastic 'Of course you do,' capping a run of flat and unconvinced replies — the laugh reads as skeptical rejection, not fondness."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.97,
+              "both_plausible": null,
+              "reason": "The tags stack a disbelieving laugh with a dismissive delivery after a chain of dry, unconvinced skepticism, so the laugh functions as rejection of A's claim rather than affection."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.97,
+              "both_plausible": null,
+              "reason": "The tags mark it as a disbelieving laugh followed by dismissive delivery, capping a run of flat and unconvinced skepticism, so the laugh rejects A's claim rather than expressing fondness."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

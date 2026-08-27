@@ -1,0 +1,88 @@
+15 item(s) · 8 turns each · two vocalization events
+model: gpt-5.6-terra  (+ verifier)
+[1/15] gasp_grunt_001  (school and student life, turns 2/7)
+    transcript rejected (event_2: the interpretation follows from the sound category alone, wit); attempt 1/3
+    turn 2 B [gasp] <- evidence [1]
+      B reacts with alarm because A's news suggests the principal may expose B as the creator of the anonymous comic, defeating B's attempt to criticize the cafeteria without being personally singled out.
+    turn 7 A [grunt] <- evidence [3, 4, 5, 6]
+      A gives reluctant assent to cover B's peer-tutoring shift so B can meet the adviser about the comic, despite A having planned to use that same library period to prepare for an important test.
+[2/15] gasp_laughter_001  (neighbours and shared spaces, turns 6/8)
+    transcript rejected (event_2: a competing interpretation of the same vocalization at that p); attempt 1/3
+    transcript rejected (event_2: a competing interpretation of the same vocalization at that p); attempt 2/3
+    turn 6 B [gasp] <- evidence [1, 2, 3, 5]
+      B reacts with alarm to A admitting that their lighting test activated the courtyard sprinklers while the string lights were connected, because B had warned that the shared outlet was unreliable and the wet setup could become dangerous before the potluck.
+    turn 8 B [laughter] <- evidence [1, 2, 5, 7]
+      B playfully teases A’s claim to be the practical neighbour after learning that A mistook the irrigation control for the lighting switch, especially once it is clear that the breaker protected the equipment and no guests had arrived yet.
+[3/15] gasp_sigh_001  (hobbies and side projects, turns 4/7)
+    turn 4 B [gasp] <- evidence [1, 2, 3]
+      B reacts with startled excitement to A's revelation that their modest, unfinished hobby game has been selected for an imminent public livestream, turning what B expected to be a private experiment into an unexpectedly visible opportunity.
+    turn 7 A [sigh] <- evidence [2, 3, 5, 6]
+      A gives reluctant agreement to B's wish to keep the game on the livestream schedule, despite A's concern that the incomplete build will make a poor first impression after the project suddenly became public.
+[4/15] sob_gasp_001  (household problems, turns 3/6)
+    transcript rejected (event_1: the cited evidence turns do not genuinely support the intende); attempt 1/3
+    turn 3 A [sob] <- evidence [1, 2]
+      A is devastated on finding the leak has reached the box containing their late grandmother's handwritten recipes, which A had been carefully keeping as the family's only originals.
+    turn 6 B [gasp] <- evidence [1, 2, 4, 5]
+      B reacts with stunned relief when A reveals that the recipes were inside a sealed inner tin, overturning B's assumption that the leak had destroyed the irreplaceable papers.
+[5/15] gasp_yawn_001  (health and appointments, turns 3/5)
+    turn 3 A [yawn] <- evidence [1, 2]
+      A inadvertently undercuts their earlier claim that the daytime drowsiness is merely a temporary work-stress problem, signaling reluctant recognition that B's concern about keeping the sleep appointment may be justified.
+    turn 5 A [gasp] <- evidence [1, 4]
+      A is alarmed when B reveals that the clinic accelerated the appointment after reviewing A's home-monitoring result, overturning A's assumption that the consultation was routine and could safely wait.
+[6/15] grunt_laughter_001  (friendship, turns 2/4)
+    transcript rejected (turn 3 is too long for natural speech); attempt 1/3
+    turn 2 B [grunt] <- evidence [1]
+      B signals reluctant irritation at being asked to sacrifice a third planned evening for assembling the bookcase because A wants to chase an unexpected invitation from their crush.
+    turn 4 B [laughter] <- evidence [1, 3]
+      B playfully teases A for insisting that an elaborate plant-shopping cover story will make the pottery-class appearance seem casual, when it instead makes A's effort to impress the crush conspicuously obvious.
+[7/15] grunt_sigh_001  (family life, turns 3/7)
+    transcript rejected (event_1: a competing interpretation of the same vocalization at that p); attempt 1/3
+    transcript rejected (event_1: a competing interpretation of the same vocalization at that p); attempt 2/3
+    transcript rejected (event_1: a competing interpretation of the same vocalization at that p); attempt 3/3
+    plan 1 could not be realized; replanning
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+[8/15] sob_grunt_001  (planning an event, turns 4/8)
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+[9/15] yawn_grunt_001  (shopping and money, turns 5/7)
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+[10/15] sigh_laughter_001  (travel, turns 4/6)
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+[11/15] laughter_sob_001  (workplace interactions, turns 2/5)
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+[12/15] yawn_laughter_001  (food and cooking, turns 5/8)
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+[13/15] sigh_sob_001  (moving house, turns 2/8)
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+[14/15] sigh_yawn_001  (technology and devices, turns 2/6)
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+[15/15] yawn_sob_001  (pets and animals, turns 3/8)
+      retry in 1s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 2s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+      retry in 4s: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+    failed: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+
+wrote /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/hard_task/out/items.json and /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/hard_task/out/items.md (9 failed)

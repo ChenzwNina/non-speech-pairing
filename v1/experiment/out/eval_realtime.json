@@ -1,0 +1,2202 @@
+{
+  "model": "gpt-realtime-2.1",
+  "seed": 0,
+  "separate_sessions": false,
+  "manifest": "predicting_response/out/audio_manifest.json",
+  "evaluated_at": "2026-08-21T04:29:55.857768+00:00",
+  "summary": {
+    "n": 28,
+    "errors": 0,
+    "q1_vocalization": "24/28 = 85.7%",
+    "q2_response": "21/28 = 75.0%",
+    "both": "19/28 = 67.9%",
+    "q2_when_q1_correct": "19/24 = 79.2%",
+    "q2_when_q1_wrong": "2/4 = 50.0%",
+    "q1_by_vocalization": {
+      "gasp": "4/4 = 100.0%",
+      "grunt": "3/5 = 60.0%",
+      "laughter": "4/5 = 80.0%",
+      "sigh": "4/5 = 80.0%",
+      "sob": "4/4 = 100.0%",
+      "yawn": "5/5 = 100.0%"
+    },
+    "q2_by_vocalization": {
+      "gasp": "3/4 = 75.0%",
+      "grunt": "5/5 = 100.0%",
+      "laughter": "4/5 = 80.0%",
+      "sigh": "1/5 = 20.0%",
+      "sob": "3/4 = 75.0%",
+      "yawn": "5/5 = 100.0%"
+    },
+    "q2_by_contrast": {
+      "gasp-grunt": "1/2 = 50.0%",
+      "gasp-laughter": "2/2 = 100.0%",
+      "gasp-sigh": "1/2 = 50.0%",
+      "gasp-yawn": "2/2 = 100.0%",
+      "grunt-laughter": "1/2 = 50.0%",
+      "grunt-sigh": "2/2 = 100.0%",
+      "grunt-sob": "1/2 = 50.0%",
+      "grunt-yawn": "2/2 = 100.0%",
+      "laughter-sigh": "1/2 = 50.0%",
+      "laughter-sob": "2/2 = 100.0%",
+      "laughter-yawn": "2/2 = 100.0%",
+      "sigh-sob": "1/2 = 50.0%",
+      "sigh-yawn": "1/2 = 50.0%",
+      "sob-yawn": "2/2 = 100.0%"
+    },
+    "q1_confusion": {
+      "gasp": {
+        "gasp": 4
+      },
+      "grunt": {
+        "sigh": 1,
+        "grunt": 3,
+        "laughter": 1
+      },
+      "laughter": {
+        "laughter": 4,
+        "sigh": 1
+      },
+      "sigh": {
+        "laughter": 1,
+        "sigh": 4
+      },
+      "sob": {
+        "sob": 4
+      },
+      "yawn": {
+        "yawn": 5
+      }
+    }
+  },
+  "rows": [
+    {
+      "item_id": "grunt_sob_001_v2",
+      "pair_id": "grunt_sob_001",
+      "version": "v2",
+      "contrast": "grunt-sob",
+      "audio": "predicting_response/out/audio_prompt/grunt_sob_001_v2.mp3",
+      "gold_vocalization": "sob",
+      "intended_interpretation": "relief after distress",
+      "q1_options": {
+        "A": "sigh",
+        "B": "sob",
+        "C": "yawn",
+        "D": "laughter",
+        "E": "gasp",
+        "F": "grunt"
+      },
+      "q1_gold": "B",
+      "q2_options": {
+        "A": "You're right, I shouldn't have answered for you. I'll call back and put the offer on hold until you've decided.",
+        "B": "I'll book the lease-signing appointment now, then we can start moving your boxes over tonight."
+      },
+      "q2_gold": "B",
+      "q1_raw": "B",
+      "q1_predicted": "B",
+      "q1_predicted_vocalization": "sob",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "You're right, I shouldn't have answered for you. I'll call back and put the offer on hold until you've decided.",
+      "q2_correct": false,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 188,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 335,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 30,
+            "reasoning_tokens": 25
+          },
+          "output_tokens": 30,
+          "total_tokens": 365
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 188,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 238
+          },
+          "input_tokens": 426,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 36,
+            "reasoning_tokens": 31
+          },
+          "output_tokens": 36,
+          "total_tokens": 462
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "gasp_laughter_001_v2",
+      "pair_id": "gasp_laughter_001",
+      "version": "v2",
+      "contrast": "gasp-laughter",
+      "audio": "predicting_response/out/audio_prompt/gasp_laughter_001_v2.mp3",
+      "gold_vocalization": "laughter",
+      "intended_interpretation": "genuine amusement",
+      "q1_options": {
+        "A": "sigh",
+        "B": "grunt",
+        "C": "yawn",
+        "D": "sob",
+        "E": "gasp",
+        "F": "laughter"
+      },
+      "q1_gold": "F",
+      "q2_options": {
+        "A": "All right, the banners stay—we'll make the typo the cleanup's running joke.",
+        "B": "I'll call the shop now and get those banners taken down before anyone else sees them."
+      },
+      "q2_gold": "A",
+      "q1_raw": "F",
+      "q1_predicted": "F",
+      "q1_predicted_vocalization": "laughter",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "All right, the banners stay—we'll make the typo the cleanup's running joke.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 197,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 344,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 21,
+            "reasoning_tokens": 16
+          },
+          "output_tokens": 21,
+          "total_tokens": 365
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 197,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 230
+          },
+          "input_tokens": 427,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 40,
+            "reasoning_tokens": 35
+          },
+          "output_tokens": 40,
+          "total_tokens": 467
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "grunt_yawn_001_v1",
+      "pair_id": "grunt_yawn_001",
+      "version": "v1",
+      "contrast": "grunt-yawn",
+      "audio": "predicting_response/out/audio_prompt/grunt_yawn_001_v1.mp3",
+      "gold_vocalization": "grunt",
+      "intended_interpretation": "reluctant agreement",
+      "q1_options": {
+        "A": "sigh",
+        "B": "laughter",
+        "C": "gasp",
+        "D": "sob",
+        "E": "grunt",
+        "F": "yawn"
+      },
+      "q1_gold": "E",
+      "q2_options": {
+        "A": "All right, I'll get us dinner, and we'll stay to knock the videos out tonight.",
+        "B": "No, I’m not keeping us here when we’re already worn out; I’ll ask her to schedule the training during a staffed shift next week."
+      },
+      "q2_gold": "A",
+      "q1_raw": "A",
+      "q1_predicted": "A",
+      "q1_predicted_vocalization": "sigh",
+      "q1_correct": false,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "All right, I'll get us dinner, and we'll stay to knock the videos out tonight.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 160,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 307,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 24,
+            "reasoning_tokens": 19
+          },
+          "output_tokens": 24,
+          "total_tokens": 331
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 160,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 244
+          },
+          "input_tokens": 404,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 89,
+            "reasoning_tokens": 84
+          },
+          "output_tokens": 89,
+          "total_tokens": 493
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "laughter_sigh_001_v2",
+      "pair_id": "laughter_sigh_001",
+      "version": "v2",
+      "contrast": "laughter-sigh",
+      "audio": "predicting_response/out/audio_prompt/laughter_sigh_001_v2.mp3",
+      "gold_vocalization": "sigh",
+      "intended_interpretation": "disappointment",
+      "q1_options": {
+        "A": "sob",
+        "B": "yawn",
+        "C": "grunt",
+        "D": "gasp",
+        "E": "laughter",
+        "F": "sigh"
+      },
+      "q1_gold": "F",
+      "q2_options": {
+        "A": "Okay, I should have checked with you first; I’ll ask Dana to move us to a quieter booth before noon.",
+        "B": "Then we’re owning it—I’ll bring eye patches, and we’ll make that dunk tank the best booth there."
+      },
+      "q2_gold": "A",
+      "q1_raw": "E",
+      "q1_predicted": "E",
+      "q1_predicted_vocalization": "laughter",
+      "q1_correct": false,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Then we’re owning it—I’ll bring eye patches, and we’ll make that dunk tank the best booth there.",
+      "q2_correct": false,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 160,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 307,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 43,
+            "reasoning_tokens": 38
+          },
+          "output_tokens": 43,
+          "total_tokens": 350
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 160,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 403,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 34,
+            "reasoning_tokens": 29
+          },
+          "output_tokens": 34,
+          "total_tokens": 437
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "sigh_yawn_001_v2",
+      "pair_id": "sigh_yawn_001",
+      "version": "v2",
+      "contrast": "sigh-yawn",
+      "audio": "predicting_response/out/audio_prompt/sigh_yawn_001_v2.mp3",
+      "gold_vocalization": "yawn",
+      "intended_interpretation": "exhaustion",
+      "q1_options": {
+        "A": "grunt",
+        "B": "sigh",
+        "C": "yawn",
+        "D": "laughter",
+        "E": "gasp",
+        "F": "sob"
+      },
+      "q1_gold": "C",
+      "q2_options": {
+        "A": "No, that is a broken process. I'll call accounting and get permission to use one shared file.",
+        "B": "We're stopping for today; I'll lock these up, and we can finish after you've had some sleep."
+      },
+      "q2_gold": "B",
+      "q1_raw": "C",
+      "q1_predicted": "C",
+      "q1_predicted_vocalization": "yawn",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "We're stopping for today; I'll lock these up, and we can finish after you've had some sleep.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 170,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 317,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 25,
+            "reasoning_tokens": 20
+          },
+          "output_tokens": 25,
+          "total_tokens": 342
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 170,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 236
+          },
+          "input_tokens": 406,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 33,
+            "reasoning_tokens": 28
+          },
+          "output_tokens": 33,
+          "total_tokens": 439
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "sigh_yawn_001_v1",
+      "pair_id": "sigh_yawn_001",
+      "version": "v1",
+      "contrast": "sigh-yawn",
+      "audio": "predicting_response/out/audio_prompt/sigh_yawn_001_v1.mp3",
+      "gold_vocalization": "sigh",
+      "intended_interpretation": "frustration",
+      "q1_options": {
+        "A": "sob",
+        "B": "yawn",
+        "C": "laughter",
+        "D": "gasp",
+        "E": "grunt",
+        "F": "sigh"
+      },
+      "q1_gold": "F",
+      "q2_options": {
+        "A": "No, that is a broken process. I'll call accounting and get permission to use one shared file.",
+        "B": "We're stopping for today; I'll lock these up, and we can finish after you've had some sleep."
+      },
+      "q2_gold": "A",
+      "q1_raw": "F",
+      "q1_predicted": "F",
+      "q1_predicted_vocalization": "sigh",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "We're stopping for today; I'll lock these up, and we can finish after you've had some sleep.",
+      "q2_correct": false,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 169,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 316,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 27,
+            "reasoning_tokens": 22
+          },
+          "output_tokens": 27,
+          "total_tokens": 343
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 169,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 236
+          },
+          "input_tokens": 405,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 31,
+            "reasoning_tokens": 26
+          },
+          "output_tokens": 31,
+          "total_tokens": 436
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "gasp_sigh_001_v1",
+      "pair_id": "gasp_sigh_001",
+      "version": "v1",
+      "contrast": "gasp-sigh",
+      "audio": "predicting_response/out/audio_prompt/gasp_sigh_001_v1.mp3",
+      "gold_vocalization": "gasp",
+      "intended_interpretation": "shock",
+      "q1_options": {
+        "A": "yawn",
+        "B": "sigh",
+        "C": "grunt",
+        "D": "laughter",
+        "E": "gasp",
+        "F": "sob"
+      },
+      "q1_gold": "E",
+      "q2_options": {
+        "A": "Yeah, we can’t keep doing dishes in the sink; I’ll authorize the repair today.",
+        "B": "Hold off on the repair—I’m calling around for a cheaper quote before we spend that."
+      },
+      "q2_gold": "B",
+      "q1_raw": "E",
+      "q1_predicted": "E",
+      "q1_predicted_vocalization": "gasp",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Hold off on the repair—I’m calling around for a cheaper quote before we spend that.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 149,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 296,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 19,
+            "reasoning_tokens": 14
+          },
+          "output_tokens": 19,
+          "total_tokens": 315
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 149,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 233
+          },
+          "input_tokens": 382,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 32,
+            "reasoning_tokens": 27
+          },
+          "output_tokens": 32,
+          "total_tokens": 414
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "laughter_yawn_001_v1",
+      "pair_id": "laughter_yawn_001",
+      "version": "v1",
+      "contrast": "laughter-yawn",
+      "audio": "predicting_response/out/audio_prompt/laughter_yawn_001_v1.mp3",
+      "gold_vocalization": "laughter",
+      "intended_interpretation": "genuine amusement",
+      "q1_options": {
+        "A": "sigh",
+        "B": "sob",
+        "C": "laughter",
+        "D": "grunt",
+        "E": "yawn",
+        "F": "gasp"
+      },
+      "q1_gold": "C",
+      "q2_options": {
+        "A": "Right, I’ll shelve the video and give them the two-minute tour instead.",
+        "B": "Perfect, I’ll keep the full cut and use it to open the orientation."
+      },
+      "q2_gold": "B",
+      "q1_raw": "C",
+      "q1_predicted": "C",
+      "q1_predicted_vocalization": "laughter",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Perfect, I’ll keep the full cut and use it to open the orientation.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 195,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 342,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 19,
+            "reasoning_tokens": 14
+          },
+          "output_tokens": 19,
+          "total_tokens": 361
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 195,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 229
+          },
+          "input_tokens": 424,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 77,
+            "reasoning_tokens": 72
+          },
+          "output_tokens": 77,
+          "total_tokens": 501
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "grunt_sob_001_v1",
+      "pair_id": "grunt_sob_001",
+      "version": "v1",
+      "contrast": "grunt-sob",
+      "audio": "predicting_response/out/audio_prompt/grunt_sob_001_v1.mp3",
+      "gold_vocalization": "grunt",
+      "intended_interpretation": "annoyance",
+      "q1_options": {
+        "A": "yawn",
+        "B": "gasp",
+        "C": "sigh",
+        "D": "grunt",
+        "E": "sob",
+        "F": "laughter"
+      },
+      "q1_gold": "D",
+      "q2_options": {
+        "A": "I'll book the lease-signing appointment now, then we can start moving your boxes over tonight.",
+        "B": "You're right, I shouldn't have answered for you. I'll call back and put the offer on hold until you've decided."
+      },
+      "q2_gold": "B",
+      "q1_raw": "D",
+      "q1_predicted": "D",
+      "q1_predicted_vocalization": "grunt",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "You're right, I shouldn't have answered for you. I'll call back and put the offer on hold until you've decided.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 186,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 333,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 31,
+            "reasoning_tokens": 26
+          },
+          "output_tokens": 31,
+          "total_tokens": 364
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 186,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 238
+          },
+          "input_tokens": 424,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 50,
+            "reasoning_tokens": 45
+          },
+          "output_tokens": 50,
+          "total_tokens": 474
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "gasp_grunt_001_v1",
+      "pair_id": "gasp_grunt_001",
+      "version": "v1",
+      "contrast": "gasp-grunt",
+      "audio": "predicting_response/out/audio_prompt/gasp_grunt_001_v1.mp3",
+      "gold_vocalization": "gasp",
+      "intended_interpretation": "fear",
+      "q1_options": {
+        "A": "sob",
+        "B": "laughter",
+        "C": "grunt",
+        "D": "gasp",
+        "E": "yawn",
+        "F": "sigh"
+      },
+      "q1_gold": "D",
+      "q2_options": {
+        "A": "You're right, I got carried away. I'll call her back and withdraw before she locks us in.",
+        "B": "Okay, I'll confirm the slot and book us extra rehearsals every night this week."
+      },
+      "q2_gold": "A",
+      "q1_raw": "D",
+      "q1_predicted": "D",
+      "q1_predicted_vocalization": "gasp",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Okay, I'll confirm the slot and book us extra rehearsals every night this week.",
+      "q2_correct": false,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 166,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 313,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 38,
+            "reasoning_tokens": 33
+          },
+          "output_tokens": 38,
+          "total_tokens": 351
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 166,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 233
+          },
+          "input_tokens": 399,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 33,
+            "reasoning_tokens": 28
+          },
+          "output_tokens": 33,
+          "total_tokens": 432
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "gasp_laughter_001_v1",
+      "pair_id": "gasp_laughter_001",
+      "version": "v1",
+      "contrast": "gasp-laughter",
+      "audio": "predicting_response/out/audio_prompt/gasp_laughter_001_v1.mp3",
+      "gold_vocalization": "gasp",
+      "intended_interpretation": "shock",
+      "q1_options": {
+        "A": "sigh",
+        "B": "sob",
+        "C": "yawn",
+        "D": "gasp",
+        "E": "grunt",
+        "F": "laughter"
+      },
+      "q1_gold": "D",
+      "q2_options": {
+        "A": "All right, the banners stay—we'll make the typo the cleanup's running joke.",
+        "B": "I'll call the shop now and get those banners taken down before anyone else sees them."
+      },
+      "q2_gold": "B",
+      "q1_raw": "D",
+      "q1_predicted": "D",
+      "q1_predicted_vocalization": "gasp",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "I'll call the shop now and get those banners taken down before anyone else sees them.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 186,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 333,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 58,
+            "reasoning_tokens": 53
+          },
+          "output_tokens": 58,
+          "total_tokens": 391
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 186,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 230
+          },
+          "input_tokens": 416,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 29,
+            "reasoning_tokens": 24
+          },
+          "output_tokens": 29,
+          "total_tokens": 445
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "laughter_sigh_001_v1",
+      "pair_id": "laughter_sigh_001",
+      "version": "v1",
+      "contrast": "laughter-sigh",
+      "audio": "predicting_response/out/audio_prompt/laughter_sigh_001_v1.mp3",
+      "gold_vocalization": "laughter",
+      "intended_interpretation": "shared amusement",
+      "q1_options": {
+        "A": "gasp",
+        "B": "grunt",
+        "C": "laughter",
+        "D": "sigh",
+        "E": "sob",
+        "F": "yawn"
+      },
+      "q1_gold": "C",
+      "q2_options": {
+        "A": "Then we’re owning it—I’ll bring eye patches, and we’ll make that dunk tank the best booth there.",
+        "B": "Okay, I should have checked with you first; I’ll ask Dana to move us to a quieter booth before noon."
+      },
+      "q2_gold": "A",
+      "q1_raw": "C",
+      "q1_predicted": "C",
+      "q1_predicted_vocalization": "laughter",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "Then we’re owning it—I’ll bring eye patches, and we’ll make that dunk tank the best booth there.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 201,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 348,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 26,
+            "reasoning_tokens": 21
+          },
+          "output_tokens": 26,
+          "total_tokens": 374
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 201,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 444,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 32,
+            "reasoning_tokens": 27
+          },
+          "output_tokens": 32,
+          "total_tokens": 476
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "gasp_yawn_001_v2",
+      "pair_id": "gasp_yawn_001",
+      "version": "v2",
+      "contrast": "gasp-yawn",
+      "audio": "predicting_response/out/audio_prompt/gasp_yawn_001_v2.mp3",
+      "gold_vocalization": "yawn",
+      "intended_interpretation": "lack of interest",
+      "q1_options": {
+        "A": "yawn",
+        "B": "grunt",
+        "C": "gasp",
+        "D": "laughter",
+        "E": "sigh",
+        "F": "sob"
+      },
+      "q1_gold": "A",
+      "q2_options": {
+        "A": "Then I'm booking us spots before that viewing deck fills up.",
+        "B": "All right, I'll drop the observatory idea and find us something with more energy."
+      },
+      "q2_gold": "B",
+      "q1_raw": "A",
+      "q1_predicted": "A",
+      "q1_predicted_vocalization": "yawn",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "All right, I'll drop the observatory idea and find us something with more energy.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 228,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 375,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 398
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 228,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 225
+          },
+          "input_tokens": 453,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 56,
+            "reasoning_tokens": 51
+          },
+          "output_tokens": 56,
+          "total_tokens": 509
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "grunt_laughter_001_v2",
+      "pair_id": "grunt_laughter_001",
+      "version": "v2",
+      "contrast": "grunt-laughter",
+      "audio": "predicting_response/out/audio_prompt/grunt_laughter_001_v2.mp3",
+      "gold_vocalization": "laughter",
+      "intended_interpretation": "genuine amusement",
+      "q1_options": {
+        "A": "sob",
+        "B": "grunt",
+        "C": "sigh",
+        "D": "laughter",
+        "E": "yawn",
+        "F": "gasp"
+      },
+      "q1_gold": "D",
+      "q2_options": {
+        "A": "You're right, I’ll send a clean follow-up from my laptop and apologize for the signature.",
+        "B": "Okay, that is objectively funny—I’m leaving it alone unless the client mentions it."
+      },
+      "q2_gold": "B",
+      "q1_raw": "C",
+      "q1_predicted": "C",
+      "q1_predicted_vocalization": "sigh",
+      "q1_correct": false,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "You're right, I’ll send a clean follow-up from my laptop and apologize for the signature.",
+      "q2_correct": false,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 167,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 314,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 22,
+            "reasoning_tokens": 17
+          },
+          "output_tokens": 22,
+          "total_tokens": 336
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 167,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 232
+          },
+          "input_tokens": 399,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 37,
+            "reasoning_tokens": 32
+          },
+          "output_tokens": 37,
+          "total_tokens": 436
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "laughter_sob_001_v2",
+      "pair_id": "laughter_sob_001",
+      "version": "v2",
+      "contrast": "laughter-sob",
+      "audio": "predicting_response/out/audio_prompt/laughter_sob_001_v2.mp3",
+      "gold_vocalization": "sob",
+      "intended_interpretation": "being deeply moved",
+      "q1_options": {
+        "A": "sigh",
+        "B": "sob",
+        "C": "yawn",
+        "D": "laughter",
+        "E": "grunt",
+        "F": "gasp"
+      },
+      "q1_gold": "B",
+      "q2_options": {
+        "A": "I'll keep that one out of the slideshow and save it for just us after the party.",
+        "B": "Then I'm putting that clip at the end of the slideshow—his terrible singing will make everyone smile."
+      },
+      "q2_gold": "A",
+      "q1_raw": "B",
+      "q1_predicted": "B",
+      "q1_predicted_vocalization": "sob",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "I'll keep that one out of the slideshow and save it for just us after the party.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 244,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 391,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 26,
+            "reasoning_tokens": 21
+          },
+          "output_tokens": 26,
+          "total_tokens": 417
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 244,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 234
+          },
+          "input_tokens": 478,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 29,
+            "reasoning_tokens": 24
+          },
+          "output_tokens": 29,
+          "total_tokens": 507
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "sob_yawn_001_v1",
+      "pair_id": "sob_yawn_001",
+      "version": "v1",
+      "contrast": "sob-yawn",
+      "audio": "predicting_response/out/audio_prompt/sob_yawn_001_v1.mp3",
+      "gold_vocalization": "sob",
+      "intended_interpretation": "being deeply moved",
+      "q1_options": {
+        "A": "sigh",
+        "B": "gasp",
+        "C": "grunt",
+        "D": "sob",
+        "E": "laughter",
+        "F": "yawn"
+      },
+      "q1_gold": "D",
+      "q2_options": {
+        "A": "I've kept you up too late; I’ll save this now and make a short cut in the morning.",
+        "B": "That message is the ending, then—I’ll keep the whole clip, even if the video runs long."
+      },
+      "q2_gold": "B",
+      "q1_raw": "D",
+      "q1_predicted": "D",
+      "q1_predicted_vocalization": "sob",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "That message is the ending, then—I’ll keep the whole clip, even if the video runs long.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 241,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 388,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 27,
+            "reasoning_tokens": 22
+          },
+          "output_tokens": 27,
+          "total_tokens": 415
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 241,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 238
+          },
+          "input_tokens": 479,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 32,
+            "reasoning_tokens": 27
+          },
+          "output_tokens": 32,
+          "total_tokens": 511
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "grunt_sigh_001_v1",
+      "pair_id": "grunt_sigh_001",
+      "version": "v1",
+      "contrast": "grunt-sigh",
+      "audio": "predicting_response/out/audio_prompt/grunt_sigh_001_v1.mp3",
+      "gold_vocalization": "grunt",
+      "intended_interpretation": "skepticism",
+      "q1_options": {
+        "A": "grunt",
+        "B": "gasp",
+        "C": "sigh",
+        "D": "yawn",
+        "E": "sob",
+        "F": "laughter"
+      },
+      "q1_gold": "A",
+      "q2_options": {
+        "A": "I won't have anyone patch it yet; I'll get a structural engineer to inspect it before we touch that wall.",
+        "B": "Then I'll cancel the structural engineer and ask the painter to patch it this week."
+      },
+      "q2_gold": "A",
+      "q1_raw": "A",
+      "q1_predicted": "A",
+      "q1_predicted_vocalization": "grunt",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "I won't have anyone patch it yet; I'll get a structural engineer to inspect it before we touch that wall.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 158,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 305,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 328
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 158,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 234
+          },
+          "input_tokens": 392,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 33,
+            "reasoning_tokens": 28
+          },
+          "output_tokens": 33,
+          "total_tokens": 425
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "sigh_sob_001_v1",
+      "pair_id": "sigh_sob_001",
+      "version": "v1",
+      "contrast": "sigh-sob",
+      "audio": "predicting_response/out/audio_prompt/sigh_sob_001_v1.mp3",
+      "gold_vocalization": "sigh",
+      "intended_interpretation": "exhaustion",
+      "q1_options": {
+        "A": "laughter",
+        "B": "sigh",
+        "C": "grunt",
+        "D": "gasp",
+        "E": "yawn",
+        "F": "sob"
+      },
+      "q1_gold": "B",
+      "q2_options": {
+        "A": "You're right, we already have too much on our plates. I'll take the keys back and tell her we can't run it.",
+        "B": "Then we'll keep it going. I'll message the club tonight, and we'll make sure Ms. Chen's garden doesn't disappear."
+      },
+      "q2_gold": "A",
+      "q1_raw": "B",
+      "q1_predicted": "B",
+      "q1_predicted_vocalization": "sigh",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Then we'll keep it going. I'll message the club tonight, and we'll make sure Ms. Chen's garden doesn't disappear.",
+      "q2_correct": false,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 171,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 318,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 26,
+            "reasoning_tokens": 21
+          },
+          "output_tokens": 26,
+          "total_tokens": 344
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 171,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 245
+          },
+          "input_tokens": 416,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 51,
+            "reasoning_tokens": 46
+          },
+          "output_tokens": 51,
+          "total_tokens": 467
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "laughter_yawn_001_v2",
+      "pair_id": "laughter_yawn_001",
+      "version": "v2",
+      "contrast": "laughter-yawn",
+      "audio": "predicting_response/out/audio_prompt/laughter_yawn_001_v2.mp3",
+      "gold_vocalization": "yawn",
+      "intended_interpretation": "boredom",
+      "q1_options": {
+        "A": "grunt",
+        "B": "laughter",
+        "C": "sigh",
+        "D": "gasp",
+        "E": "yawn",
+        "F": "sob"
+      },
+      "q1_gold": "E",
+      "q2_options": {
+        "A": "Perfect, I’ll keep the full cut and use it to open the orientation.",
+        "B": "Right, I’ll shelve the video and give them the two-minute tour instead."
+      },
+      "q2_gold": "B",
+      "q1_raw": "E",
+      "q1_predicted": "E",
+      "q1_predicted_vocalization": "yawn",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Right, I’ll shelve the video and give them the two-minute tour instead.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 194,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 341,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 24,
+            "reasoning_tokens": 19
+          },
+          "output_tokens": 24,
+          "total_tokens": 365
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 194,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 229
+          },
+          "input_tokens": 423,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 33,
+            "reasoning_tokens": 28
+          },
+          "output_tokens": 33,
+          "total_tokens": 456
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "gasp_grunt_001_v2",
+      "pair_id": "gasp_grunt_001",
+      "version": "v2",
+      "contrast": "gasp-grunt",
+      "audio": "predicting_response/out/audio_prompt/gasp_grunt_001_v2.mp3",
+      "gold_vocalization": "grunt",
+      "intended_interpretation": "reluctant agreement",
+      "q1_options": {
+        "A": "grunt",
+        "B": "gasp",
+        "C": "sob",
+        "D": "yawn",
+        "E": "sigh",
+        "F": "laughter"
+      },
+      "q1_gold": "A",
+      "q2_options": {
+        "A": "You're right, I got carried away. I'll call her back and withdraw before she locks us in.",
+        "B": "Okay, I'll confirm the slot and book us extra rehearsals every night this week."
+      },
+      "q2_gold": "B",
+      "q1_raw": "F",
+      "q1_predicted": "F",
+      "q1_predicted_vocalization": "laughter",
+      "q1_correct": false,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Okay, I'll confirm the slot and book us extra rehearsals every night this week.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 163,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 310,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 27,
+            "reasoning_tokens": 22
+          },
+          "output_tokens": 27,
+          "total_tokens": 337
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 163,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 233
+          },
+          "input_tokens": 396,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 39,
+            "reasoning_tokens": 34
+          },
+          "output_tokens": 39,
+          "total_tokens": 435
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "sob_yawn_001_v2",
+      "pair_id": "sob_yawn_001",
+      "version": "v2",
+      "contrast": "sob-yawn",
+      "audio": "predicting_response/out/audio_prompt/sob_yawn_001_v2.mp3",
+      "gold_vocalization": "yawn",
+      "intended_interpretation": "exhaustion",
+      "q1_options": {
+        "A": "grunt",
+        "B": "yawn",
+        "C": "laughter",
+        "D": "gasp",
+        "E": "sigh",
+        "F": "sob"
+      },
+      "q1_gold": "B",
+      "q2_options": {
+        "A": "I've kept you up too late; I’ll save this now and make a short cut in the morning.",
+        "B": "That message is the ending, then—I’ll keep the whole clip, even if the video runs long."
+      },
+      "q2_gold": "A",
+      "q1_raw": "B",
+      "q1_predicted": "B",
+      "q1_predicted_vocalization": "yawn",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "I've kept you up too late; I’ll save this now and make a short cut in the morning.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 196,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 343,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 20,
+            "reasoning_tokens": 15
+          },
+          "output_tokens": 20,
+          "total_tokens": 363
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 196,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 238
+          },
+          "input_tokens": 434,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 33,
+            "reasoning_tokens": 28
+          },
+          "output_tokens": 33,
+          "total_tokens": 467
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "gasp_sigh_001_v2",
+      "pair_id": "gasp_sigh_001",
+      "version": "v2",
+      "contrast": "gasp-sigh",
+      "audio": "predicting_response/out/audio_prompt/gasp_sigh_001_v2.mp3",
+      "gold_vocalization": "sigh",
+      "intended_interpretation": "resignation",
+      "q1_options": {
+        "A": "gasp",
+        "B": "grunt",
+        "C": "laughter",
+        "D": "yawn",
+        "E": "sigh",
+        "F": "sob"
+      },
+      "q1_gold": "E",
+      "q2_options": {
+        "A": "Hold off on the repair—I’m calling around for a cheaper quote before we spend that.",
+        "B": "Yeah, we can’t keep doing dishes in the sink; I’ll authorize the repair today."
+      },
+      "q2_gold": "B",
+      "q1_raw": "E",
+      "q1_predicted": "E",
+      "q1_predicted_vocalization": "sigh",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "Hold off on the repair—I’m calling around for a cheaper quote before we spend that.",
+      "q2_correct": false,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 149,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 296,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 28,
+            "reasoning_tokens": 23
+          },
+          "output_tokens": 28,
+          "total_tokens": 324
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 149,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 233
+          },
+          "input_tokens": 382,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 42,
+            "reasoning_tokens": 37
+          },
+          "output_tokens": 42,
+          "total_tokens": 424
+        }
+      },
+      "both_correct": false
+    },
+    {
+      "item_id": "laughter_sob_001_v1",
+      "pair_id": "laughter_sob_001",
+      "version": "v1",
+      "contrast": "laughter-sob",
+      "audio": "predicting_response/out/audio_prompt/laughter_sob_001_v1.mp3",
+      "gold_vocalization": "laughter",
+      "intended_interpretation": "shared amusement",
+      "q1_options": {
+        "A": "sigh",
+        "B": "yawn",
+        "C": "gasp",
+        "D": "grunt",
+        "E": "laughter",
+        "F": "sob"
+      },
+      "q1_gold": "E",
+      "q2_options": {
+        "A": "Then I'm putting that clip at the end of the slideshow—his terrible singing will make everyone smile.",
+        "B": "I'll keep that one out of the slideshow and save it for just us after the party."
+      },
+      "q2_gold": "A",
+      "q1_raw": "E",
+      "q1_predicted": "E",
+      "q1_predicted_vocalization": "laughter",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "Then I'm putting that clip at the end of the slideshow—his terrible singing will make everyone smile.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 249,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 396,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 83,
+            "reasoning_tokens": 78
+          },
+          "output_tokens": 83,
+          "total_tokens": 479
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 249,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 234
+          },
+          "input_tokens": 483,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 35,
+            "reasoning_tokens": 30
+          },
+          "output_tokens": 35,
+          "total_tokens": 518
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "grunt_yawn_001_v2",
+      "pair_id": "grunt_yawn_001",
+      "version": "v2",
+      "contrast": "grunt-yawn",
+      "audio": "predicting_response/out/audio_prompt/grunt_yawn_001_v2.mp3",
+      "gold_vocalization": "yawn",
+      "intended_interpretation": "tiredness",
+      "q1_options": {
+        "A": "grunt",
+        "B": "gasp",
+        "C": "sigh",
+        "D": "laughter",
+        "E": "sob",
+        "F": "yawn"
+      },
+      "q1_gold": "F",
+      "q2_options": {
+        "A": "All right, I'll get us dinner, and we'll stay to knock the videos out tonight.",
+        "B": "No, I’m not keeping us here when we’re already worn out; I’ll ask her to schedule the training during a staffed shift next week."
+      },
+      "q2_gold": "B",
+      "q1_raw": "F",
+      "q1_predicted": "F",
+      "q1_predicted_vocalization": "yawn",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "No, I’m not keeping us here when we’re already worn out; I’ll ask her to schedule the training during a staffed shift next week.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 150,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 297,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 20,
+            "reasoning_tokens": 15
+          },
+          "output_tokens": 20,
+          "total_tokens": 317
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 150,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 244
+          },
+          "input_tokens": 394,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 34,
+            "reasoning_tokens": 29
+          },
+          "output_tokens": 34,
+          "total_tokens": 428
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "sigh_sob_001_v2",
+      "pair_id": "sigh_sob_001",
+      "version": "v2",
+      "contrast": "sigh-sob",
+      "audio": "predicting_response/out/audio_prompt/sigh_sob_001_v2.mp3",
+      "gold_vocalization": "sob",
+      "intended_interpretation": "being deeply moved",
+      "q1_options": {
+        "A": "grunt",
+        "B": "laughter",
+        "C": "sigh",
+        "D": "sob",
+        "E": "yawn",
+        "F": "gasp"
+      },
+      "q1_gold": "D",
+      "q2_options": {
+        "A": "You're right, we already have too much on our plates. I'll take the keys back and tell her we can't run it.",
+        "B": "Then we'll keep it going. I'll message the club tonight, and we'll make sure Ms. Chen's garden doesn't disappear."
+      },
+      "q2_gold": "B",
+      "q1_raw": "D",
+      "q1_predicted": "D",
+      "q1_predicted_vocalization": "sob",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Then we'll keep it going. I'll message the club tonight, and we'll make sure Ms. Chen's garden doesn't disappear.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 205,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 352,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 22,
+            "reasoning_tokens": 17
+          },
+          "output_tokens": 22,
+          "total_tokens": 374
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 205,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 245
+          },
+          "input_tokens": 450,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 29,
+            "reasoning_tokens": 24
+          },
+          "output_tokens": 29,
+          "total_tokens": 479
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "grunt_sigh_001_v2",
+      "pair_id": "grunt_sigh_001",
+      "version": "v2",
+      "contrast": "grunt-sigh",
+      "audio": "predicting_response/out/audio_prompt/grunt_sigh_001_v2.mp3",
+      "gold_vocalization": "sigh",
+      "intended_interpretation": "relief",
+      "q1_options": {
+        "A": "sigh",
+        "B": "gasp",
+        "C": "yawn",
+        "D": "laughter",
+        "E": "grunt",
+        "F": "sob"
+      },
+      "q1_gold": "A",
+      "q2_options": {
+        "A": "Then I'll cancel the structural engineer and ask the painter to patch it this week.",
+        "B": "I won't have anyone patch it yet; I'll get a structural engineer to inspect it before we touch that wall."
+      },
+      "q2_gold": "A",
+      "q1_raw": "A",
+      "q1_predicted": "A",
+      "q1_predicted_vocalization": "sigh",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "Then I'll cancel the structural engineer and ask the painter to patch it this week.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 156,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 303,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 30,
+            "reasoning_tokens": 25
+          },
+          "output_tokens": 30,
+          "total_tokens": 333
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 156,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 234
+          },
+          "input_tokens": 390,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 33,
+            "reasoning_tokens": 28
+          },
+          "output_tokens": 33,
+          "total_tokens": 423
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "grunt_laughter_001_v1",
+      "pair_id": "grunt_laughter_001",
+      "version": "v1",
+      "contrast": "grunt-laughter",
+      "audio": "predicting_response/out/audio_prompt/grunt_laughter_001_v1.mp3",
+      "gold_vocalization": "grunt",
+      "intended_interpretation": "annoyance",
+      "q1_options": {
+        "A": "sigh",
+        "B": "laughter",
+        "C": "gasp",
+        "D": "yawn",
+        "E": "sob",
+        "F": "grunt"
+      },
+      "q1_gold": "F",
+      "q2_options": {
+        "A": "You're right, I’ll send a clean follow-up from my laptop and apologize for the signature.",
+        "B": "Okay, that is objectively funny—I’m leaving it alone unless the client mentions it."
+      },
+      "q2_gold": "A",
+      "q1_raw": "F",
+      "q1_predicted": "F",
+      "q1_predicted_vocalization": "grunt",
+      "q1_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "You're right, I’ll send a clean follow-up from my laptop and apologize for the signature.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 158,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 305,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 31,
+            "reasoning_tokens": 26
+          },
+          "output_tokens": 31,
+          "total_tokens": 336
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 158,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 232
+          },
+          "input_tokens": 390,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 35,
+            "reasoning_tokens": 30
+          },
+          "output_tokens": 35,
+          "total_tokens": 425
+        }
+      },
+      "both_correct": true
+    },
+    {
+      "item_id": "gasp_yawn_001_v1",
+      "pair_id": "gasp_yawn_001",
+      "version": "v1",
+      "contrast": "gasp-yawn",
+      "audio": "predicting_response/out/audio_prompt/gasp_yawn_001_v1.mp3",
+      "gold_vocalization": "gasp",
+      "intended_interpretation": "pleasant surprise",
+      "q1_options": {
+        "A": "sigh",
+        "B": "grunt",
+        "C": "laughter",
+        "D": "yawn",
+        "E": "gasp",
+        "F": "sob"
+      },
+      "q1_gold": "E",
+      "q2_options": {
+        "A": "All right, I'll drop the observatory idea and find us something with more energy.",
+        "B": "Then I'm booking us spots before that viewing deck fills up."
+      },
+      "q2_gold": "B",
+      "q1_raw": "E",
+      "q1_predicted": "E",
+      "q1_predicted_vocalization": "gasp",
+      "q1_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "Then I'm booking us spots before that viewing deck fills up.",
+      "q2_correct": true,
+      "usage": {
+        "q1": {
+          "input_token_details": {
+            "audio_tokens": 159,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 147
+          },
+          "input_tokens": 306,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 25,
+            "reasoning_tokens": 20
+          },
+          "output_tokens": 25,
+          "total_tokens": 331
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 159,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 225
+          },
+          "input_tokens": 384,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 34,
+            "reasoning_tokens": 29
+          },
+          "output_tokens": 34,
+          "total_tokens": 418
+        }
+      },
+      "both_correct": true
+    }
+  ]
+}

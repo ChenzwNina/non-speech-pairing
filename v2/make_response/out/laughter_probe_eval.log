@@ -1,0 +1,69 @@
+6 trial(s) · gpt-realtime-2.1 · one fresh session each
+[1/6] genuine_laughter-5
+    infers  : B seems amused and pleased, and likely on board with the plan.
+    function: confirm and build momentum
+    says    : Awesome, then let’s give it a fresh gold coat and make sure the wagon can handle that big beauty.
+[2/6] mocking_laughter-10
+    infers  : B seems amused but skeptical, like they don't trust this plan to work.
+    function: revise proposal
+    says    : Okay, fair point—let’s go with something reliable and grab store-bought cookies or another simple pastry so we can actually deliver sixty by morning.
+[3/6] mocking_laughter-5
+    infers  : B finds the idea amusing but clearly thinks it's unrealistic or too risky given our track record and timing.
+    function: propose a safer alternative
+    says    : Okay, fair point—let’s skip the macarons and either buy a big batch of reliable cookies or make something simple we can get done without babysitting your oven.
+[4/6] mocking_laughter-4
+    infers  : B is amused but clearly thinks my idea is unrealistic and risky given our track record and the time crunch.
+    function: propose a safer alternative
+    says    : Okay, fair point—let’s buy cookies for the fundraiser and save the macaron experiments for a less stressful day.
+[5/6] genuine_laughter-10
+    infers  : B seems amused and pleased by the idea, but maybe a little unsure about how it will actually work.
+    function: reassure and plan
+    says    : We can keep it simple—I'll steady the pumpkin while you pull, and we'll head over early so check-in is easy.
+[6/6] genuine_laughter-4
+    infers  : B sounds delighted and amused, and seems enthusiastic about the plan.
+    function: confirm and move to planning
+    says    : Perfect—if you're in, I'll bring the wagon over Friday evening so we can load it up without rushing.
+
+==============================================================================
+SAME LAUGHTER CLIPS, DIFFERENT CONTEXT
+==============================================================================
+
+--- mocking ---
+A proposed: Let's make sixty macarons from scratch tonight instead of buying cookies.
+gold function: insist on seriousness and justify the plan
+
+  clip laughter-10.MP3
+    infers  : B seems amused but skeptical, like they don't trust this plan to work.
+    function: revise proposal
+    says    : Okay, fair point—let’s go with something reliable and grab store-bought cookies or another simple pastry so we can actually deliver sixty by morning.
+
+  clip laughter-5.MP3
+    infers  : B finds the idea amusing but clearly thinks it's unrealistic or too risky given our track record and timing.
+    function: propose a safer alternative
+    says    : Okay, fair point—let’s skip the macarons and either buy a big batch of reliable cookies or make something simple we can get done without babysitting your oven.
+
+  clip laughter-4.MP3
+    infers  : B is amused but clearly thinks my idea is unrealistic and risky given our track record and the time crunch.
+    function: propose a safer alternative
+    says    : Okay, fair point—let’s buy cookies for the fundraiser and save the macaron experiments for a less stressful day.
+
+--- genuine ---
+A proposed: Let’s put it in the little red wagon and enter our champion on Saturday.
+gold function: move to the practical next step
+
+  clip laughter-5.MP3
+    infers  : B seems amused and pleased, and likely on board with the plan.
+    function: confirm and build momentum
+    says    : Awesome, then let’s give it a fresh gold coat and make sure the wagon can handle that big beauty.
+
+  clip laughter-10.MP3
+    infers  : B seems amused and pleased by the idea, but maybe a little unsure about how it will actually work.
+    function: reassure and plan
+    says    : We can keep it simple—I'll steady the pumpkin while you pull, and we'll head over early so check-in is easy.
+
+  clip laughter-4.MP3
+    infers  : B sounds delighted and amused, and seems enthusiastic about the plan.
+    function: confirm and move to planning
+    says    : Perfect—if you're in, I'll bring the wagon over Friday evening so we can load it up without rushing.
+
+wrote /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/make_response/out/laughter_probe/eval.json

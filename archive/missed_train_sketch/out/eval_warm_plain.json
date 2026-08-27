@@ -1,0 +1,128 @@
+{
+  "model": "gpt-realtime-2.1",
+  "audio": "missed_train_sketch/out/missed_train_warm_plain.mp3",
+  "audio_seconds": 8.0,
+  "instructions": "You are one of three people in a conversation. The other two are A and B, and you are standing there with them as part of the group.\n\nYou will hear A say something and then B respond. After that it is your turn to speak, as yourself, the third person in the group.\n\nWhen you take your turn, say only what you would actually say out loud — one or two sentences, the way a person talks. Do not describe the recording, do not narrate, do not explain yourself, and do not mention that you are an AI. Just say your line.",
+  "questions": [
+    {
+      "key": "your_turn",
+      "question": "It's your turn now. What do you say?"
+    }
+  ],
+  "design_note": "A laughs through their own sentence and B mocks, so the register is banter; joining in is correct and sympathy is a misread",
+  "evaluated_at": "2026-08-24T05:00:03.588563+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "That's brutal—timing like that feels cursed. Do you want to grab a coffee and check the next one together?"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 2,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "That’s brutal. Come on, let’s grab a coffee while we figure out the next one—no point in sprinting twice."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 3,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oof, that’s brutal. Come on, let’s figure out the next one and maybe grab a drink while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 4,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oof, that’s rough. Want to grab a coffee and wait for the next one together?"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 5,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oof, that’s rough—missing it after sprinting is the worst. Come on, let’s check the next one and maybe grab a drink while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 6,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Ugh, that’s such a gut punch after sprinting. Want to grab a coffee while you wait for the next one?"
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 7,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "That’s brutal. Come on, let’s grab a coffee and turn this into a tiny adventure instead of a total flop."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 8,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Ugh, that’s brutal. Come on, let’s figure out the next one and maybe grab a drink while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    }
+  ]
+}

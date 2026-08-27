@@ -1,0 +1,60 @@
+5 task(s) · gpt-realtime-2.1 · voice marin · user turn: tease
+  dessert   laughter  generated: "[laughs] <the line>"
+  weekend   laughter  generated: "[laughs] <the line>"
+  skipday   laughter  generated: "[laughs] <the line>"
+  splurge   laughter  generated: "[laughs] <the line>"
+  latenight laughter  generated: "[laughs] <the line>"
+
+==============================================================================
+dessert_laughter_tease_tempt
+==============================================================================
+context: You are helping the user decide what to order for dessert, after an already enormous dinner out.
+
+  proposal: Honestly, after a huge dinner, I’d go light and fun: split something small like a scoop of sorbet or a single slice of cheesecake. That way you get the sweet ending without feeling like you need to be rolled out of the restaurant.
+  speaker:  You're such a bad influence.
+  reply:    I know, I know—but I’m the kind of bad influence that just wants you to have one perfect bite. If you split it, it’s basically teamwork with a spoon.
+  -> assistant_proposal/out/audio/dessert_laughter_tease_tempt.mp3 (28.2s)
+
+==============================================================================
+weekend_laughter_tease_tempt
+==============================================================================
+context: You are helping the user plan a last-minute weekend away, in a month when they had promised themselves they would save money.
+
+  proposal: We could do a budget-friendly mini escape, like a nearby town, a cheap motel, lots of walking, and one nice meal instead of a whole weekend of spending. If you want, I can help pick a place that feels like a getaway without wrecking your savings plan.
+  speaker:  You're going to get me in trouble.
+  reply:    Only the good kind of trouble, like finding a really cute coffee shop instead of splurging on a fancy dinner. We can keep it light: one night, one treat, and lots of free wandering.
+  -> assistant_proposal/out/audio/weekend_laughter_tease_tempt.mp3 (27.8s)
+
+==============================================================================
+skipday_laughter_tease_tempt
+==============================================================================
+context: You are helping the user work out how to take tomorrow off work at short notice, for no particular reason.
+
+  proposal: We can keep it simple and honest without oversharing. Say something like, “I need to take a personal day tomorrow,” and offer to handle anything urgent before you log off. If your workplace expects a reason, you can just call it a personal matter.
+  speaker:  You're terrible.
+  reply:    Fair, that was a little stiff. Try a more human version: “Hey, I need a personal day tomorrow. I’ll make sure anything urgent is covered.” It sounds confident without being dramatic.
+  -> assistant_proposal/out/audio/skipday_laughter_tease_tempt.mp3 (27.6s)
+
+==============================================================================
+splurge_laughter_tease_tempt
+==============================================================================
+context: You are helping the user decide about the very expensive espresso machine they have been circling for months.
+
+  proposal: I’d say don’t buy it just because you’ve been circling it. If you still want it after comparing a cheaper option and setting a firm budget, then go for it and enjoy the heck out of it.
+  speaker:  You're the worst.
+  reply:    I know, it’s a gift. I’m just trying to keep Future You from glaring at the price tag every morning while you wait for the espresso to kick in.
+  -> assistant_proposal/out/audio/splurge_laughter_tease_tempt.mp3 (20.0s)
+
+==============================================================================
+latenight_laughter_tease_tempt
+==============================================================================
+context: You are helping the user decide how to spend a Tuesday night, when they have an early start in the morning.
+
+  proposal: Since you’ve got an early start, pick something cozy and low-effort, like a simple dinner, a short show, and then a gentle wind-down. You’ll feel smug tomorrow when you wake up rested.
+  speaker:  I hate you.
+  reply:    Ha, okay, that’s fair, I can be a bit bossy. Still, I’m rooting for you to have a nice evening and an easy morning.
+  -> assistant_proposal/out/audio/latenight_laughter_tease_tempt.mp3 (22.1s)
+
+5/5 item(s) built
+transcripts: /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/transcripts
+audio:       /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/audio

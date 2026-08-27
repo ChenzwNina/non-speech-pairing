@@ -1,0 +1,118 @@
+{
+  "accepted": true,
+  "rejected_by": null,
+  "cost_usd": 0.9924,
+  "stages": {
+    "mechanical": {
+      "attempt": 2,
+      "failures": []
+    },
+    "bivalence": {
+      "ok": true,
+      "reason": null,
+      "vote_share": 0.75,
+      "prior_favours": "performance_b",
+      "prior_is_unanimous": false,
+      "mean_confidence": 0.605,
+      "both_plausible_rate": 1.0,
+      "votes": [
+        "performance_a",
+        "performance_b",
+        "performance_b",
+        "performance_b"
+      ],
+      "runs": [
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.6,
+          "both_plausible": true,
+          "reason": "The escalating self-incriminating reveal — drinking half of a stranger's cup before noticing — is structured as a punchline told for B's enjoyment rather than a reluctant admission, though the same words could carry sheepish embarrassment."
+        },
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_b",
+          "confidence": 0.62,
+          "both_plausible": true,
+          "reason": "A saw a name that wasn't theirs and kept drinking anyway, and the drawn-out admission of noticing 'about halfway through' reads as sheepish self-incrimination being softened rather than a mix-up being offered as a shared joke."
+        },
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_b",
+          "confidence": 0.6,
+          "both_plausible": true,
+          "reason": "A is admitting to drinking a stranger's coffee halfway before noticing — the laugh most likely cushions a self-implicating confession, though the story's absurdity makes a shared-amusement reading nearly as plausible."
+        },
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_b",
+          "confidence": 0.6,
+          "both_plausible": true,
+          "reason": "A is confessing to drinking a stranger's coffee halfway down and only then noticing, which is a minor self-implicating admission the laugh softens, though the absurdity also makes it tellable as a funny story."
+        }
+      ]
+    },
+    "discriminability": {
+      "ok": true,
+      "reason": null,
+      "per_performance": {
+        "performance_a": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.9,
+              "both_plausible": null,
+              "reason": "The escalating amused → laughing → giggling exchange and A's [delighted] punchline frame the mix-up as a shared joke A is enjoying telling, not a confession being softened."
+            },
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.9,
+              "both_plausible": null,
+              "reason": "The whole exchange is tagged with positive-valence amusement (amused, chuckle, laughing, giggling, delighted) and B is laughing along, so A's turn-4 laugh reads as shared enjoyment of a funny story rather than embarrassed hedging."
+            },
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.9,
+              "both_plausible": null,
+              "reason": "The whole exchange is tagged amused/laughing/giggling with both speakers laughing together, and 'About halfway through it!' is delivered as a delighted punchline rather than a hedged confession."
+            }
+          ]
+        },
+        "performance_b": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_b",
+              "confidence": 0.93,
+              "both_plausible": null,
+              "reason": "The tag chain moves from [uncomfortable] to [embarrassed] with an [embarrassed laugh], and B's [quiet]/[gentle] prompts frame it as a reluctant confession being softened rather than an amusing anecdote shared for mutual enjoyment."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.93,
+              "both_plausible": null,
+              "reason": "The tags trace a discomfort-to-embarrassment arc with no amusement cues, so the [embarrassed laugh] reads as a self-conscious softener for a shameful admission rather than shared enjoyment."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.93,
+              "both_plausible": null,
+              "reason": "The tags track a consistent arc from [uncomfortable] to [embarrassed], and the laugh is tagged [embarrassed laugh] rather than amused, so it reads as nervous self-deprecation cushioning a confession, not shared amusement."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

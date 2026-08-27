@@ -1,0 +1,155 @@
+{
+  "model": "claude-opus-5",
+  "effort": "high",
+  "generated_at": "2026-08-10T22:35:59.854397+00:00",
+  "pair_mode": "combinations",
+  "topics": [
+    "domestic"
+  ],
+  "system_prompt": "\n\n   You are an expert in natural human-to-human spoken dialogue and the pragmatics of laughter.\n\n    IMPORTANT:\n    Your task is to generate a four-turn natural spoken dialogue whose SAME\n    conversational context and SAME current-turn wording can genuinely support\n    TWO different pragmatic functions of laughter specified by the user.\n\n    At this stage, generate ONLY the lexical transcript.\n    Do NOT generate laughter, vocal tags, prosody, tone, or acoustic descriptions.\n\n    The goal is to construct a pragmatically underspecified lexical context:\n    before hearing the laughter, neither target function should clearly dominate.\n    The later laughter-centered vocal realization should be necessary to\n    disambiguate between the two interpretations.\n\n    PAIR-SPECIFIC DESIGN\n\n    Before generating the dialogue, reason internally about the two target\n    laughter functions.\n\n    Identify:\n    1. what conversational conditions are compatible with BOTH functions;\n    2. how the functions differ in the social action performed by laughter;\n    3. what lexical cues would strongly favor Function 1;\n    4. what lexical cues would strongly favor Function 2;\n    5. what conversational event could remain genuinely ambiguous between them.\n\n    Do not output this analysis.\n\n    Do NOT simply create a dialogue that strongly expresses one function and\n    assume that a different laughter style could force the other interpretation.\n\n\n    [Rules you must follow]\n\n    1. TWO-FUNCTION COMPATIBILITY\n\n    Construct ONE shared dialogue, not two separate dialogues.\n\n    Exactly the same:\n    - speakers;\n    - preceding event;\n    - dialogue history;\n    - turn order;\n    - current-turn wording\n\n    must support both target laughter functions.\n\n\n    2. BALANCED PRAGMATIC UNDERSPECIFICATION\n\n    The two functions should be approximately equally plausible from the\n    lexical transcript alone.\n\n    A reader seeing only the words should not be able to confidently determine\n    which target laughter function is intended.\n\n    It is NOT sufficient that one function is highly obvious while the other\n    is merely technically possible.\n\n    Neither function should clearly dominate before the vocal realization\n    is added.\n\n\n    3. CURRENT-TURN DESIGN\n\n    The fourth turn is the lexical carrier for the later laughter manipulation.\n\n    Prefer a current turn that is:\n    - short;\n    - natural;\n    - semantically simple;\n    - conversationally responsive or observational;\n    - compatible with laughter;\n    - noncommittal about the speaker's pragmatic stance.\n\n    The current turn should leave room for the laughter itself to contribute\n    essential social meaning.\n\n    Avoid current turns that already perform one target function through\n    words alone.\n\n    In particular, avoid:\n    - obvious punchlines;\n    - explicit jokes or witty elaborations;\n    - explicit sympathy;\n    - explicit criticism;\n    - explicit sarcasm;\n    - explicit agreement or disagreement;\n    - strong evaluative wording;\n    - statements that explicitly explain the speaker's stance.\n\n    For example, prefer a relatively open observation such as:\n    \"That's the third time this week.\"\n\n    over an obvious humorous punchline such as:\n    \"Maybe the couch is starting a photosynthesis career.\"\n\n\n    4. NATURALNESS\n\n    The ambiguity must arise naturally.\n\n    Do not make the dialogue unnaturally vague, generic, or incoherent simply\n    to support both functions.\n\n    The conversation should resemble something two people could genuinely\n    say in an everyday spoken interaction.\n\n\n    5. INTERACTIONAL CONTRAST\n\n    The two target functions must correspond to genuinely different social\n    actions or interpretations of the ongoing interaction.\n\n    The difference must not be merely emotion, intensity, positivity,\n    or arousal.\n\n    Ideally, the two functions should support different ways of construing\n    the preceding event, utterance, or activity.\n\n\n    6. DIALOGUE STRUCTURE\n\n    - Use exactly two speakers: A and B.\n    - Follow exactly the sequence A → B → A → B.\n    - The first three turns form the dialogue history.\n    - The fourth B turn is the current turn.\n    - Use one sentence per turn.\n    - Keep every turn concise and spoken-like.\n    - Use lexical content only.\n    - Do NOT insert laughter, brackets, stage directions, vocal annotations,\n    tone descriptions, or prosodic descriptions.\n\n\n    7. DO NOT COPY THE PROVIDED EXAMPLES\n\n    The user-provided examples illustrate what each function means.\n    They are not templates for the dialogue.\n\n    Use them only to understand the pragmatic distinction.\n    Create a completely new conversational situation.\n\n\n    MANDATORY REJECTION TEST\n\n    Before returning the transcript, verify it internally.\n\n    TEXT-ONLY TEST:\n    Without audio or laughter annotations, can a reasonable reader confidently\n    identify one target function?\n    If yes, reject the transcript and generate another.\n\n    BALANCE TEST:\n    Is one function substantially more natural than the other from the words alone?\n    If yes, reject the transcript and generate another.\n\n    AUDIO-SWAP TEST:\n    Could two versions of exactly this transcript, differing only in the later\n    laughter-centered vocal realization, naturally convey Function 1 and Function 2?\n    If no, reject the transcript and generate another.\n\n    LEXICAL-LEAKAGE TEST:\n    Does the current turn itself already express one target function through an\n    obvious joke, sympathy, sarcasm, criticism, evaluation, or another\n    function-specific lexical cue?\n    If yes, reject the transcript and generate another.\n\n    Only return a transcript that passes ALL tests.\n\n\n    [Output format]\n\n    Return ONLY one valid JSON object:\n\n    {\n    \"prior_turns\": [\n        {\"speaker\": \"A\", \"text\": \"...\"},\n        {\"speaker\": \"B\", \"text\": \"...\"},\n        {\"speaker\": \"A\", \"text\": \"...\"}\n    ],\n    \"current_turn\": {\n        \"speaker\": \"B\",\n        \"text\": \"...\"\n    }\n    }\n\n    Do not return markdown or any additional explanation.\n",
+  "user_prompt_template": "\n    [dialogue topic]: {topic}.\n\n    [laughter function 1]:\n    Function name - {function_a}\n    Definition - {definition_a}\n    Example - {example_a}\n    Example explanation - {example_explanation_a}\n\n    [laughter function 2]:\n    Function name - {function_b}\n    Definition - {definition_b}\n    Example - {example_b}\n    Example explanation - {example_explanation_b}\n\n\n    Help me generate ONE short, natural spoken dialogue that can plausibly support BOTH laughter functions above.  Feel free to imagine the dialogue content but it should based on common sense.\n",
+  "results": [
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__marking-incongruity",
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Marking incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter used meta-communicatively to point out to the interlocutor that an incongruity is present in what is being said, rather than to display enjoyment of it; it subtly adds the laugher's own stance on the content.",
+          "example": "(Ex. 11) John: 'there tends to be a phone call' ; Ian: 'Can you make it? we're desperate <laughter/>' ; John: 'Can you make it in half an hour's time, you know <laughter/>.'",
+          "example_explanation": "John marks the absurdity of a client being 'desperate' for a music class and the incongruity of being asked to be at their place for a lesson within a very short time window - he flags the incongruity rather than showing enjoyment of it."
+        }
+      ],
+      "user_prompt": "\n    [dialogue topic]: domestic.\n\n    [laughter function 1]:\n    Function name - Show enjoyment of incongruity\n    Definition - Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\n    Example - (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\n    Example explanation - In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n    [laughter function 2]:\n    Function name - Marking incongruity\n    Definition - Laughter used meta-communicatively to point out to the interlocutor that an incongruity is present in what is being said, rather than to display enjoyment of it; it subtly adds the laugher's own stance on the content.\n    Example - (Ex. 11) John: 'there tends to be a phone call' ; Ian: 'Can you make it? we're desperate <laughter/>' ; John: 'Can you make it in half an hour's time, you know <laughter/>.'\n    Example explanation - John marks the absurdity of a client being 'desperate' for a music class and the incongruity of being asked to be at their place for a lesson within a very short time window - he flags the incongruity rather than showing enjoyment of it.\n\n\n    Help me generate ONE short, natural spoken dialogue that can plausibly support BOTH laughter functions above.  Feel free to imagine the dialogue content but it should based on common sense.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"I spent the whole morning reorganizing the pantry by category.\"},{\"speaker\":\"B\",\"text\":\"Okay, so where did the cereal end up?\"},{\"speaker\":\"A\",\"text\":\"In the bin I labeled 'breakfast, maybe.'\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"So the labels have question marks in them now.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "I spent the whole morning reorganizing the pantry by category."
+          },
+          {
+            "speaker": "B",
+            "text": "Okay, so where did the cereal end up?"
+          },
+          {
+            "speaker": "A",
+            "text": "In the bin I labeled 'breakfast, maybe.'"
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "So the labels have question marks in them now."
+        }
+      },
+      "usage": {
+        "input_tokens": 3271,
+        "output_tokens": 609
+      },
+      "served_by": "claude-opus-5"
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__softening-trouble-telling",
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Softening / trouble-telling",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.",
+          "example": "(Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'",
+          "example_explanation": "Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible."
+        }
+      ],
+      "user_prompt": "\n    [dialogue topic]: domestic.\n\n    [laughter function 1]:\n    Function name - Show enjoyment of incongruity\n    Definition - Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\n    Example - (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\n    Example explanation - In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n    [laughter function 2]:\n    Function name - Softening / trouble-telling\n    Definition - Laughter accompanying acts that reduce intrusion - criticism, an opinion differing from the partner's, an inconvenient answer, or talk about something painful about oneself - signalling to the interlocutor not to take the words too seriously and helping the laugher cope with the uneasy content.\n    Example - (Ex. 12) (While drawing the apartment they designed) Speaker B: 'ah you didn't put anything in the bathroom <laughter/>.'\n    Example explanation - Speaker B softens the criticism addressed to her partner about his drawing, making the observation as minimally aggressive and impolite as possible.\n\n\n    Help me generate ONE short, natural spoken dialogue that can plausibly support BOTH laughter functions above.  Feel free to imagine the dialogue content but it should based on common sense.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"I froze the leftover curry in an ice cube tray so we can just defrost one portion at a time.\"},{\"speaker\":\"B\",\"text\":\"Wait, which tray did you use?\"},{\"speaker\":\"A\",\"text\":\"The blue one in the freezer door.\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"That's the one we use for drinks.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "I froze the leftover curry in an ice cube tray so we can just defrost one portion at a time."
+          },
+          {
+            "speaker": "B",
+            "text": "Wait, which tray did you use?"
+          },
+          {
+            "speaker": "A",
+            "text": "The blue one in the freezer door."
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "That's the one we use for drinks."
+        }
+      },
+      "usage": {
+        "input_tokens": 3248,
+        "output_tokens": 966
+      },
+      "served_by": "claude-opus-5"
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__benevolence-induction",
+      "topic": "domestic",
+      "laughter_functions": [
+        {
+          "function": "Show enjoyment of incongruity",
+          "laughable_type": "Pleasant incongruity (incongruity branch)",
+          "definition": "Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).",
+          "example": "(Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'",
+          "example_explanation": "In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone."
+        },
+        {
+          "function": "Benevolence induction",
+          "laughable_type": "Social incongruity (incongruity branch)",
+          "definition": "Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.",
+          "example": "(Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'",
+          "example_explanation": "John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were."
+        }
+      ],
+      "user_prompt": "\n    [dialogue topic]: domestic.\n\n    [laughter function 1]:\n    Function name - Show enjoyment of incongruity\n    Definition - Laughter appreciating a clash between the laughable and background information that is perceived as witty, rewarding and/or somehow pleasant (jokes, puns, goofy behaviour, conversational humour).\n    Example - (Ex. 9) Lecturer: 'The other announcement erm is er Dr *** has asked me to address some delinquents, no that's not fair, some er hardworking but misguided students...' ; Audience: <laughter/>. || (Ex. 10) Lecturer: '...General Douglas MacArthur, in case you don't know, won the second world war singlehandedly.' Audience: <laughter/> ; L: 'er <laughter/> it's not funny, he believed it!'\n    Example explanation - In (9) students laugh appreciating the lecturer's joke in which they are incongruously compared to delinquents; in (10) they laugh recognising the sarcastic tone and enjoying the incongruity between what was said and what was meant, plus the impossible eventuality that one man could win a war alone.\n\n    [laughter function 2]:\n    Function name - Benevolence induction\n    Definition - Laughter accompanying suggestions, opinions or the asking of a favour, looking for agreement and friendliness, with the aim of inducing agreement and benevolence in the interlocutor - i.e., asking the addressee not to evaluate the contribution too harshly.\n    Example - (Ex. 13) Interviewer: 'Do you play in the cathedral yourself or..?' ; John: 'I have done it in the past, not recently. There have been other things <laughter>occupying me recently</laughter>.' ; Interviewer: 'Right. Yeah.'\n    Example explanation - John laughs while saying something slightly negative about himself in a job interview, inducing the interviewer not to judge the admission harshly - and also avoiding having to explain what the 'other things' were.\n\n\n    Help me generate ONE short, natural spoken dialogue that can plausibly support BOTH laughter functions above.  Feel free to imagine the dialogue content but it should based on common sense.\n",
+      "transcript": "{\"prior_turns\":[{\"speaker\":\"A\",\"text\":\"Did you ever get around to fixing the towel rail in the bathroom?\"},{\"speaker\":\"B\",\"text\":\"I put one screw in and then the drill battery died.\"},{\"speaker\":\"A\",\"text\":\"That was back in February, wasn't it?\"}],\"current_turn\":{\"speaker\":\"B\",\"text\":\"The other screw is still sitting on the windowsill waiting for me.\"}}",
+      "transcript_json": {
+        "prior_turns": [
+          {
+            "speaker": "A",
+            "text": "Did you ever get around to fixing the towel rail in the bathroom?"
+          },
+          {
+            "speaker": "B",
+            "text": "I put one screw in and then the drill battery died."
+          },
+          {
+            "speaker": "A",
+            "text": "That was back in February, wasn't it?"
+          }
+        ],
+        "current_turn": {
+          "speaker": "B",
+          "text": "The other screw is still sitting on the windowsill waiting for me."
+        }
+      },
+      "usage": {
+        "input_tokens": 6677,
+        "output_tokens": 332
+      },
+      "served_by": "claude-opus-5",
+      "attempts": 2
+    }
+  ]
+}

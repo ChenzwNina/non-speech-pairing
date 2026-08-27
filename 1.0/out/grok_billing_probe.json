@@ -1,0 +1,28 @@
+{
+  "date": "2026-08-26",
+  "timezone": "PDT",
+  "format": {"rate": 24000, "channels": 1, "sample_width": 2, "bytes_per_second": 48000},
+  "note": "Audio seconds are decoded payload bytes / 48000. Connection seconds are measured session wall-clock, reported separately and never used as an audio estimate.",
+  "windows": [
+    {"name": "probe-close", "start": "21:47:42", "end": "21:47:48",
+     "sessions": 15, "audio_seconds": 7.2, "connection_seconds": 5.7,
+     "design": "10 sessions send a 0.72s clip and close at once; 5 connect and close sending nothing",
+     "verdict": "not discriminating: audio and connection land on the same number"},
+    {"name": "idle-heavy", "start": "21:48:44", "end": "21:52:49",
+     "sessions": 8, "audio_seconds": 118.1, "connection_seconds": 245.6,
+     "design": "4 bulk sends closed without a silence tail (never committed) + 4 sessions held open 60s with zero audio",
+     "verdict": "240s of connection time carrying no audio at all"},
+    {"name": "audio-heavy", "start": "21:53:57", "end": "21:54:37",
+     "sessions": 16, "audio_seconds": 244.2, "connection_seconds": 39.0,
+     "design": "8 sessions each send 30.5s of audio, wait for input_audio_buffer.committed, close",
+     "verdict": "all 8 committed: the server ingested every second of it"}
+  ],
+  "totals": {"audio_seconds": 369.5, "connection_seconds": 290.3},
+  "how_to_read": {
+    "console_delta_near_370s": "metered on audio actually sent",
+    "console_delta_near_290s_concentrated_in_2148_2152": "metered on connection time, which explains the 66,000s",
+    "console_delta_far_larger": "metered on something else again; neither quantity accounts for it"
+  },
+  "server_acknowledgement": "input_audio_buffer.speech_started -> speech_stopped -> committed observed, so appended audio is genuinely ingested",
+  "usage_reported_by_api": "none: RealtimeResponseUsage returns input_tokens, output_tokens and total_tokens all null for grok"
+}

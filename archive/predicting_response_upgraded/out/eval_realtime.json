@@ -1,0 +1,2142 @@
+{
+  "model": "gpt-realtime-2.1",
+  "seed": 0,
+  "manifest": "predicting_response_upgraded/out/audio_manifest.json",
+  "evaluated_at": "2026-08-23T04:10:25.889018+00:00",
+  "summary": {
+    "n": 15,
+    "errors": 0,
+    "q1a_dialogue1_id": "15/15 = 100.0%",
+    "q1b_dialogue2_id": "12/15 = 80.0%",
+    "q2_interpretation_matching": "13/15 = 86.7%",
+    "q3_response_matching": "14/15 = 93.3%",
+    "all_four_correct": "12/15 = 80.0%",
+    "matching_when_both_ids_correct": "12/12 = 100.0%",
+    "matching_when_an_id_missed": "1/3 = 33.3%",
+    "q1_by_vocalization": {
+      "gasp": "3/3 = 100.0%",
+      "grunt": "2/2 = 100.0%",
+      "laughter": "2/2 = 100.0%",
+      "sigh": "4/4 = 100.0%",
+      "sob": "3/3 = 100.0%",
+      "yawn": "1/1 = 100.0%"
+    }
+  },
+  "rows": [
+    {
+      "item_id": "gasp_laughter_001",
+      "pair_id": "gasp_laughter_001",
+      "contrast": "gasp-laughter",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/gasp_laughter_001_v2.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/gasp_laughter_001_v1.mp3",
+      "d1_is_version": "v2",
+      "d2_is_version": "v1",
+      "gold_vocalization_d1": "laughter",
+      "gold_vocalization_d2": "gasp",
+      "q1a_options": {
+        "A": "grunt",
+        "B": "yawn",
+        "C": "sigh",
+        "D": "laughter",
+        "E": "sob",
+        "F": "gasp"
+      },
+      "q1a_gold": "D",
+      "q1b_options": {
+        "A": "sigh",
+        "B": "grunt",
+        "C": "yawn",
+        "D": "sob",
+        "E": "gasp",
+        "F": "laughter"
+      },
+      "q1b_gold": "E",
+      "q2_options": {
+        "A": "\"B finds the spectacularly public mistake absurd and playfully teases A about making the announcement impossible to miss.\" describes Dialogue 1, and \"B is alarmed by the potentially damaging mistake and urgently focuses on whether A can limit the fallout.\" describes Dialogue 2.",
+        "B": "\"B is alarmed by the potentially damaging mistake and urgently focuses on whether A can limit the fallout.\" describes Dialogue 1, and \"B finds the spectacularly public mistake absurd and playfully teases A about making the announcement impossible to miss.\" describes Dialogue 2."
+      },
+      "q2_gold": "A",
+      "q3_options": {
+        "A": "\"Oh no—can you recall it before everyone reads it?\" follows Dialogue 1, and \"Well, that is certainly one way to make sure everyone gets the news.\" follows Dialogue 2.",
+        "B": "\"Well, that is certainly one way to make sure everyone gets the news.\" follows Dialogue 1, and \"Oh no—can you recall it before everyone reads it?\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "D",
+      "q1a_predicted": "D",
+      "q1a_predicted_text": "laughter",
+      "q1a_correct": true,
+      "q1b_raw": "E",
+      "q1b_predicted": "E",
+      "q1b_predicted_text": "gasp",
+      "q1b_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B finds the spectacularly public mistake absurd and playfully teases A about making the announcement impossible to miss.\" describes Dialogue 1, and \"B is alarmed by the potentially damaging mistake and urgently focuses on whether A can limit the fallout.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "B",
+      "q3_predicted": "B",
+      "q3_predicted_text": "\"Well, that is certainly one way to make sure everyone gets the news.\" follows Dialogue 1, and \"Oh no—can you recall it before everyone reads it?\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 110,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 273,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 22,
+            "reasoning_tokens": 17
+          },
+          "output_tokens": 22,
+          "total_tokens": 295
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 180,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 423,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 21,
+            "reasoning_tokens": 16
+          },
+          "output_tokens": 21,
+          "total_tokens": 444
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 180,
+            "cached_tokens": 384,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 401
+          },
+          "input_tokens": 581,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 38,
+            "reasoning_tokens": 33
+          },
+          "output_tokens": 38,
+          "total_tokens": 619
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 180,
+            "cached_tokens": 512,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 529
+          },
+          "input_tokens": 709,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 47,
+            "reasoning_tokens": 42
+          },
+          "output_tokens": 47,
+          "total_tokens": 756
+        }
+      }
+    },
+    {
+      "item_id": "grunt_yawn_001",
+      "pair_id": "grunt_yawn_001",
+      "contrast": "grunt-yawn",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/grunt_yawn_001_v2.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/grunt_yawn_001_v1.mp3",
+      "d1_is_version": "v2",
+      "d2_is_version": "v1",
+      "gold_vocalization_d1": "yawn",
+      "gold_vocalization_d2": "grunt",
+      "q1a_options": {
+        "A": "grunt",
+        "B": "sigh",
+        "C": "sob",
+        "D": "gasp",
+        "E": "laughter",
+        "F": "yawn"
+      },
+      "q1a_gold": "F",
+      "q1b_options": {
+        "A": "sigh",
+        "B": "gasp",
+        "C": "sob",
+        "D": "yawn",
+        "E": "grunt",
+        "F": "laughter"
+      },
+      "q1b_gold": "E",
+      "q2_options": {
+        "A": "\"B is annoyed that A altered a shared meeting plan without consulting them and demands an explanation.\" describes Dialogue 1, and \"B is too tired to absorb a detailed discussion tonight and asks to postpone the review.\" describes Dialogue 2.",
+        "B": "\"B is too tired to absorb a detailed discussion tonight and asks to postpone the review.\" describes Dialogue 1, and \"B is annoyed that A altered a shared meeting plan without consulting them and demands an explanation.\" describes Dialogue 2."
+      },
+      "q2_gold": "B",
+      "q3_options": {
+        "A": "\"Why did you change the schedule without checking with me?\" follows Dialogue 1, and \"I'm too tired to take this in tonight; can we review it tomorrow?\" follows Dialogue 2.",
+        "B": "\"I'm too tired to take this in tonight; can we review it tomorrow?\" follows Dialogue 1, and \"Why did you change the schedule without checking with me?\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "F",
+      "q1a_predicted": "F",
+      "q1a_predicted_text": "yawn",
+      "q1a_correct": true,
+      "q1b_raw": "A",
+      "q1b_predicted": "A",
+      "q1b_predicted_text": "sigh",
+      "q1b_correct": false,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B is annoyed that A altered a shared meeting plan without consulting them and demands an explanation.\" describes Dialogue 1, and \"B is too tired to absorb a detailed discussion tonight and asks to postpone the review.\" describes Dialogue 2.",
+      "q2_correct": false,
+      "q3_raw": "B",
+      "q3_predicted": "B",
+      "q3_predicted_text": "\"I'm too tired to take this in tonight; can we review it tomorrow?\" follows Dialogue 1, and \"Why did you change the schedule without checking with me?\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 107,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 270,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 19,
+            "reasoning_tokens": 14
+          },
+          "output_tokens": 19,
+          "total_tokens": 289
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 183,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 192
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 426,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 32,
+            "reasoning_tokens": 27
+          },
+          "output_tokens": 32,
+          "total_tokens": 458
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 183,
+            "cached_tokens": 384,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 387
+          },
+          "input_tokens": 570,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 63,
+            "reasoning_tokens": 58
+          },
+          "output_tokens": 63,
+          "total_tokens": 633
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 183,
+            "cached_tokens": 512,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 513
+          },
+          "input_tokens": 696,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 157,
+            "reasoning_tokens": 152
+          },
+          "output_tokens": 157,
+          "total_tokens": 853
+        }
+      }
+    },
+    {
+      "item_id": "grunt_sob_001",
+      "pair_id": "grunt_sob_001",
+      "contrast": "grunt-sob",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/grunt_sob_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/grunt_sob_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "grunt",
+      "gold_vocalization_d2": "sob",
+      "q1a_options": {
+        "A": "gasp",
+        "B": "yawn",
+        "C": "grunt",
+        "D": "sigh",
+        "E": "laughter",
+        "F": "sob"
+      },
+      "q1a_gold": "C",
+      "q1b_options": {
+        "A": "sigh",
+        "B": "sob",
+        "C": "grunt",
+        "D": "yawn",
+        "E": "laughter",
+        "F": "gasp"
+      },
+      "q1b_gold": "B",
+      "q2_options": {
+        "A": "\"B is overwhelmed by missing Dad and urgently wants to preserve the chance to see as much of him as possible.\" describes Dialogue 1, and \"B is impatient with the daunting amount of material and asks A to provide a much shorter version.\" describes Dialogue 2.",
+        "B": "\"B is impatient with the daunting amount of material and asks A to provide a much shorter version.\" describes Dialogue 1, and \"B is overwhelmed by missing Dad and urgently wants to preserve the chance to see as much of him as possible.\" describes Dialogue 2."
+      },
+      "q2_gold": "B",
+      "q3_options": {
+        "A": "\"Please don't cut any of it—I want to see him.\" follows Dialogue 1, and \"Could you just make a five-minute reel instead?\" follows Dialogue 2.",
+        "B": "\"Could you just make a five-minute reel instead?\" follows Dialogue 1, and \"Please don't cut any of it—I want to see him.\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "C",
+      "q1a_predicted": "C",
+      "q1a_predicted_text": "grunt",
+      "q1a_correct": true,
+      "q1b_raw": "E",
+      "q1b_predicted": "E",
+      "q1b_predicted_text": "laughter",
+      "q1b_correct": false,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B is overwhelmed by missing Dad and urgently wants to preserve the chance to see as much of him as possible.\" describes Dialogue 1, and \"B is impatient with the daunting amount of material and asks A to provide a much shorter version.\" describes Dialogue 2.",
+      "q2_correct": false,
+      "q3_raw": "A",
+      "q3_predicted": "A",
+      "q3_predicted_text": "\"Please don't cut any of it—I want to see him.\" follows Dialogue 1, and \"Could you just make a five-minute reel instead?\" follows Dialogue 2.",
+      "q3_correct": false,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 86,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 249,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 50,
+            "reasoning_tokens": 45
+          },
+          "output_tokens": 50,
+          "total_tokens": 299
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 166,
+            "cached_tokens": 192,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 409,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 65,
+            "reasoning_tokens": 60
+          },
+          "output_tokens": 65,
+          "total_tokens": 474
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 166,
+            "cached_tokens": 384,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 399
+          },
+          "input_tokens": 565,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 135,
+            "reasoning_tokens": 130
+          },
+          "output_tokens": 135,
+          "total_tokens": 700
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 166,
+            "cached_tokens": 512,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 517
+          },
+          "input_tokens": 683,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 96,
+            "reasoning_tokens": 91
+          },
+          "output_tokens": 96,
+          "total_tokens": 779
+        }
+      }
+    },
+    {
+      "item_id": "gasp_grunt_001",
+      "pair_id": "gasp_grunt_001",
+      "contrast": "gasp-grunt",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/gasp_grunt_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/gasp_grunt_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "gasp",
+      "gold_vocalization_d2": "grunt",
+      "q1a_options": {
+        "A": "sob",
+        "B": "grunt",
+        "C": "yawn",
+        "D": "laughter",
+        "E": "gasp",
+        "F": "sigh"
+      },
+      "q1a_gold": "E",
+      "q1b_options": {
+        "A": "sob",
+        "B": "gasp",
+        "C": "grunt",
+        "D": "yawn",
+        "E": "laughter",
+        "F": "sigh"
+      },
+      "q1b_gold": "C",
+      "q2_options": {
+        "A": "\"B doubts that A really completed the run and challenges the claim by asking for proof.\" describes Dialogue 1, and \"B is impressed by A's endurance and enthusiastically celebrates the accomplishment.\" describes Dialogue 2.",
+        "B": "\"B is impressed by A's endurance and enthusiastically celebrates the accomplishment.\" describes Dialogue 1, and \"B doubts that A really completed the run and challenges the claim by asking for proof.\" describes Dialogue 2."
+      },
+      "q2_gold": "B",
+      "q3_options": {
+        "A": "\"You ran all twenty-six miles? That's amazing!\" follows Dialogue 1, and \"Uh-huh. Let me see the route on your watch.\" follows Dialogue 2.",
+        "B": "\"Uh-huh. Let me see the route on your watch.\" follows Dialogue 1, and \"You ran all twenty-six miles? That's amazing!\" follows Dialogue 2."
+      },
+      "q3_gold": "A",
+      "q1a_raw": "E",
+      "q1a_predicted": "E",
+      "q1a_predicted_text": "gasp",
+      "q1a_correct": true,
+      "q1b_raw": "F",
+      "q1b_predicted": "F",
+      "q1b_predicted_text": "sigh",
+      "q1b_correct": false,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "\"B is impressed by A's endurance and enthusiastically celebrates the accomplishment.\" describes Dialogue 1, and \"B doubts that A really completed the run and challenges the claim by asking for proof.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "A",
+      "q3_predicted": "A",
+      "q3_predicted_text": "\"You ran all twenty-six miles? That's amazing!\" follows Dialogue 1, and \"Uh-huh. Let me see the route on your watch.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 47,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 210,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 233
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 105,
+            "cached_tokens": 192,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 348,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 371
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 105,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 379
+          },
+          "input_tokens": 484,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 103,
+            "reasoning_tokens": 98
+          },
+          "output_tokens": 103,
+          "total_tokens": 587
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 105,
+            "cached_tokens": 448,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 499
+          },
+          "input_tokens": 604,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 92,
+            "reasoning_tokens": 87
+          },
+          "output_tokens": 92,
+          "total_tokens": 696
+        }
+      }
+    },
+    {
+      "item_id": "grunt_sigh_001",
+      "pair_id": "grunt_sigh_001",
+      "contrast": "grunt-sigh",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/grunt_sigh_001_v2.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/grunt_sigh_001_v1.mp3",
+      "d1_is_version": "v2",
+      "d2_is_version": "v1",
+      "gold_vocalization_d1": "sigh",
+      "gold_vocalization_d2": "grunt",
+      "q1a_options": {
+        "A": "sigh",
+        "B": "laughter",
+        "C": "yawn",
+        "D": "sob",
+        "E": "grunt",
+        "F": "gasp"
+      },
+      "q1a_gold": "A",
+      "q1b_options": {
+        "A": "gasp",
+        "B": "grunt",
+        "C": "laughter",
+        "D": "sigh",
+        "E": "sob",
+        "F": "yawn"
+      },
+      "q1b_gold": "B",
+      "q2_options": {
+        "A": "\"B remains skeptical that the insurer will follow through and resists treating the approval as settled.\" describes Dialogue 1, and \"B feels relieved that the financial burden of the repairs has finally been lifted.\" describes Dialogue 2.",
+        "B": "\"B feels relieved that the financial burden of the repairs has finally been lifted.\" describes Dialogue 1, and \"B remains skeptical that the insurer will follow through and resists treating the approval as settled.\" describes Dialogue 2."
+      },
+      "q2_gold": "B",
+      "q3_options": {
+        "A": "\"I'll believe it when the payment actually arrives.\" follows Dialogue 1, and \"Thank goodness—we couldn't afford that bill ourselves.\" follows Dialogue 2.",
+        "B": "\"Thank goodness—we couldn't afford that bill ourselves.\" follows Dialogue 1, and \"I'll believe it when the payment actually arrives.\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "A",
+      "q1a_predicted": "A",
+      "q1a_predicted_text": "sigh",
+      "q1a_correct": true,
+      "q1b_raw": "B",
+      "q1b_predicted": "B",
+      "q1b_predicted_text": "grunt",
+      "q1b_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "\"B feels relieved that the financial burden of the repairs has finally been lifted.\" describes Dialogue 1, and \"B remains skeptical that the insurer will follow through and resists treating the approval as settled.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "B",
+      "q3_predicted": "B",
+      "q3_predicted_text": "\"Thank goodness—we couldn't afford that bill ourselves.\" follows Dialogue 1, and \"I'll believe it when the payment actually arrives.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 59,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 222,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 18,
+            "reasoning_tokens": 13
+          },
+          "output_tokens": 18,
+          "total_tokens": 240
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 113,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 192
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 356,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 26,
+            "reasoning_tokens": 21
+          },
+          "output_tokens": 26,
+          "total_tokens": 382
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 113,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 383
+          },
+          "input_tokens": 496,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 36,
+            "reasoning_tokens": 31
+          },
+          "output_tokens": 36,
+          "total_tokens": 532
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 113,
+            "cached_tokens": 448,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 493
+          },
+          "input_tokens": 606,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 82,
+            "reasoning_tokens": 77
+          },
+          "output_tokens": 82,
+          "total_tokens": 688
+        }
+      }
+    },
+    {
+      "item_id": "laughter_yawn_001",
+      "pair_id": "laughter_yawn_001",
+      "contrast": "laughter-yawn",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/laughter_yawn_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/laughter_yawn_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "laughter",
+      "gold_vocalization_d2": "yawn",
+      "q1a_options": {
+        "A": "sigh",
+        "B": "sob",
+        "C": "laughter",
+        "D": "yawn",
+        "E": "grunt",
+        "F": "gasp"
+      },
+      "q1a_gold": "C",
+      "q1b_options": {
+        "A": "yawn",
+        "B": "sob",
+        "C": "gasp",
+        "D": "grunt",
+        "E": "sigh",
+        "F": "laughter"
+      },
+      "q1b_gold": "A",
+      "q2_options": {
+        "A": "\"B is focused on how late the screening starts and signals that they would be too tired to enjoy it.\" describes Dialogue 1, and \"B delightedly recognizes the movie's ridiculous charm and shares A's nostalgic enthusiasm for going.\" describes Dialogue 2.",
+        "B": "\"B delightedly recognizes the movie's ridiculous charm and shares A's nostalgic enthusiasm for going.\" describes Dialogue 1, and \"B is focused on how late the screening starts and signals that they would be too tired to enjoy it.\" describes Dialogue 2."
+      },
+      "q2_gold": "B",
+      "q3_options": {
+        "A": "\"At midnight? I'll be asleep before the opening credits.\" follows Dialogue 1, and \"Yes! The one with the rubber shark!\" follows Dialogue 2.",
+        "B": "\"Yes! The one with the rubber shark!\" follows Dialogue 1, and \"At midnight? I'll be asleep before the opening credits.\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "C",
+      "q1a_predicted": "C",
+      "q1a_predicted_text": "laughter",
+      "q1a_correct": true,
+      "q1b_raw": "A",
+      "q1b_predicted": "A",
+      "q1b_predicted_text": "yawn",
+      "q1b_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "\"B delightedly recognizes the movie's ridiculous charm and shares A's nostalgic enthusiasm for going.\" describes Dialogue 1, and \"B is focused on how late the screening starts and signals that they would be too tired to enjoy it.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "B",
+      "q3_predicted": "B",
+      "q3_predicted_text": "\"Yes! The one with the rubber shark!\" follows Dialogue 1, and \"At midnight? I'll be asleep before the opening credits.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 61,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 224,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 18,
+            "reasoning_tokens": 13
+          },
+          "output_tokens": 18,
+          "total_tokens": 242
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 157,
+            "cached_tokens": 192,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 400,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 24,
+            "reasoning_tokens": 19
+          },
+          "output_tokens": 24,
+          "total_tokens": 424
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 157,
+            "cached_tokens": 384,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 395
+          },
+          "input_tokens": 552,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 63,
+            "reasoning_tokens": 58
+          },
+          "output_tokens": 63,
+          "total_tokens": 615
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 157,
+            "cached_tokens": 512,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 509
+          },
+          "input_tokens": 666,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 86,
+            "reasoning_tokens": 81
+          },
+          "output_tokens": 86,
+          "total_tokens": 752
+        }
+      }
+    },
+    {
+      "item_id": "gasp_sob_001",
+      "pair_id": "gasp_sob_001",
+      "contrast": "gasp-sob",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/gasp_sob_001_v2.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/gasp_sob_001_v1.mp3",
+      "d1_is_version": "v2",
+      "d2_is_version": "v1",
+      "gold_vocalization_d1": "sob",
+      "gold_vocalization_d2": "gasp",
+      "q1a_options": {
+        "A": "yawn",
+        "B": "grunt",
+        "C": "gasp",
+        "D": "laughter",
+        "E": "sigh",
+        "F": "sob"
+      },
+      "q1a_gold": "F",
+      "q1b_options": {
+        "A": "sigh",
+        "B": "sob",
+        "C": "laughter",
+        "D": "grunt",
+        "E": "gasp",
+        "F": "yawn"
+      },
+      "q1b_gold": "E",
+      "q2_options": {
+        "A": "\"B is alarmed by the unexpected overnight stay and urgently seeks reassurance that there is not a complication.\" describes Dialogue 1, and \"B is overwhelmed with relief that the treatment succeeded after fearing for Mom's health.\" describes Dialogue 2.",
+        "B": "\"B is overwhelmed with relief that the treatment succeeded after fearing for Mom's health.\" describes Dialogue 1, and \"B is alarmed by the unexpected overnight stay and urgently seeks reassurance that there is not a complication.\" describes Dialogue 2."
+      },
+      "q2_gold": "B",
+      "q3_options": {
+        "A": "\"Overnight? Is something wrong?\" follows Dialogue 1, and \"It worked—she's going to be okay.\" follows Dialogue 2.",
+        "B": "\"It worked—she's going to be okay.\" follows Dialogue 1, and \"Overnight? Is something wrong?\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "F",
+      "q1a_predicted": "F",
+      "q1a_predicted_text": "sob",
+      "q1a_correct": true,
+      "q1b_raw": "E",
+      "q1b_predicted": "E",
+      "q1b_predicted_text": "gasp",
+      "q1b_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "\"B is overwhelmed with relief that the treatment succeeded after fearing for Mom's health.\" describes Dialogue 1, and \"B is alarmed by the unexpected overnight stay and urgently seeks reassurance that there is not a complication.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "B",
+      "q3_predicted": "B",
+      "q3_predicted_text": "\"It worked—she's going to be okay.\" follows Dialogue 1, and \"Overnight? Is something wrong?\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 133,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 296,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 25,
+            "reasoning_tokens": 20
+          },
+          "output_tokens": 25,
+          "total_tokens": 321
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 200,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 443,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 22,
+            "reasoning_tokens": 17
+          },
+          "output_tokens": 22,
+          "total_tokens": 465
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 200,
+            "cached_tokens": 448,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 389
+          },
+          "input_tokens": 589,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 49,
+            "reasoning_tokens": 44
+          },
+          "output_tokens": 49,
+          "total_tokens": 638
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 200,
+            "cached_tokens": 576,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 497
+          },
+          "input_tokens": 697,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 101,
+            "reasoning_tokens": 96
+          },
+          "output_tokens": 101,
+          "total_tokens": 798
+        }
+      }
+    },
+    {
+      "item_id": "sigh_yawn_001",
+      "pair_id": "sigh_yawn_001",
+      "contrast": "sigh-yawn",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/sigh_yawn_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/sigh_yawn_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "sigh",
+      "gold_vocalization_d2": "yawn",
+      "q1a_options": {
+        "A": "grunt",
+        "B": "yawn",
+        "C": "laughter",
+        "D": "sigh",
+        "E": "sob",
+        "F": "gasp"
+      },
+      "q1a_gold": "D",
+      "q1b_options": {
+        "A": "yawn",
+        "B": "grunt",
+        "C": "laughter",
+        "D": "sob",
+        "E": "sigh",
+        "F": "gasp"
+      },
+      "q1b_gold": "A",
+      "q2_options": {
+        "A": "\"B is relieved that the disruptive problem has finally been solved and wants A to focus on getting the repair deployed.\" describes Dialogue 1, and \"B is losing attention at the prospect of a lengthy technical explanation and asks for a much shorter account.\" describes Dialogue 2.",
+        "B": "\"B is losing attention at the prospect of a lengthy technical explanation and asks for a much shorter account.\" describes Dialogue 1, and \"B is relieved that the disruptive problem has finally been solved and wants A to focus on getting the repair deployed.\" describes Dialogue 2."
+      },
+      "q2_gold": "A",
+      "q3_options": {
+        "A": "\"That is such a relief—please push the fix before it crashes again.\" follows Dialogue 1, and \"Can you just give me the two-minute version?\" follows Dialogue 2.",
+        "B": "\"Can you just give me the two-minute version?\" follows Dialogue 1, and \"That is such a relief—please push the fix before it crashes again.\" follows Dialogue 2."
+      },
+      "q3_gold": "A",
+      "q1a_raw": "D",
+      "q1a_predicted": "D",
+      "q1a_predicted_text": "sigh",
+      "q1a_correct": true,
+      "q1b_raw": "A",
+      "q1b_predicted": "A",
+      "q1b_predicted_text": "yawn",
+      "q1b_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B is relieved that the disruptive problem has finally been solved and wants A to focus on getting the repair deployed.\" describes Dialogue 1, and \"B is losing attention at the prospect of a lengthy technical explanation and asks for a much shorter account.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "A",
+      "q3_predicted": "A",
+      "q3_predicted_text": "\"That is such a relief—please push the fix before it crashes again.\" follows Dialogue 1, and \"Can you just give me the two-minute version?\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 100,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 263,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 18,
+            "reasoning_tokens": 13
+          },
+          "output_tokens": 18,
+          "total_tokens": 281
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 234,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 477,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 500
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 234,
+            "cached_tokens": 448,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 401
+          },
+          "input_tokens": 635,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 59,
+            "reasoning_tokens": 54
+          },
+          "output_tokens": 59,
+          "total_tokens": 694
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 234,
+            "cached_tokens": 576,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 525
+          },
+          "input_tokens": 759,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 45,
+            "reasoning_tokens": 40
+          },
+          "output_tokens": 45,
+          "total_tokens": 804
+        }
+      }
+    },
+    {
+      "item_id": "gasp_sigh_001",
+      "pair_id": "gasp_sigh_001",
+      "contrast": "gasp-sigh",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/gasp_sigh_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/gasp_sigh_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "gasp",
+      "gold_vocalization_d2": "sigh",
+      "q1a_options": {
+        "A": "gasp",
+        "B": "yawn",
+        "C": "sob",
+        "D": "grunt",
+        "E": "laughter",
+        "F": "sigh"
+      },
+      "q1a_gold": "A",
+      "q1b_options": {
+        "A": "grunt",
+        "B": "yawn",
+        "C": "gasp",
+        "D": "laughter",
+        "E": "sob",
+        "F": "sigh"
+      },
+      "q1b_gold": "F",
+      "q2_options": {
+        "A": "\"B reluctantly accepts that the festival is over and shifts to handling the disappointing practical consequences.\" describes Dialogue 1, and \"B is shocked by the last-minute decision and incredulously challenges how the board could cancel an event after so much preparation.\" describes Dialogue 2.",
+        "B": "\"B is shocked by the last-minute decision and incredulously challenges how the board could cancel an event after so much preparation.\" describes Dialogue 1, and \"B reluctantly accepts that the festival is over and shifts to handling the disappointing practical consequences.\" describes Dialogue 2."
+      },
+      "q2_gold": "B",
+      "q3_options": {
+        "A": "\"Cancel it? After everyone has worked for months?\" follows Dialogue 1, and \"I'll call the vendors and tell them not to come.\" follows Dialogue 2.",
+        "B": "\"I'll call the vendors and tell them not to come.\" follows Dialogue 1, and \"Cancel it? After everyone has worked for months?\" follows Dialogue 2."
+      },
+      "q3_gold": "A",
+      "q1a_raw": "A",
+      "q1a_predicted": "A",
+      "q1a_predicted_text": "gasp",
+      "q1a_correct": true,
+      "q1b_raw": "F",
+      "q1b_predicted": "F",
+      "q1b_predicted_text": "sigh",
+      "q1b_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "\"B is shocked by the last-minute decision and incredulously challenges how the board could cancel an event after so much preparation.\" describes Dialogue 1, and \"B reluctantly accepts that the festival is over and shifts to handling the disappointing practical consequences.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "A",
+      "q3_predicted": "A",
+      "q3_predicted_text": "\"Cancel it? After everyone has worked for months?\" follows Dialogue 1, and \"I'll call the vendors and tell them not to come.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 48,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 211,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 234
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 99,
+            "cached_tokens": 192,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 342,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 26,
+            "reasoning_tokens": 21
+          },
+          "output_tokens": 26,
+          "total_tokens": 368
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 99,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 401
+          },
+          "input_tokens": 500,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 40,
+            "reasoning_tokens": 35
+          },
+          "output_tokens": 40,
+          "total_tokens": 540
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 99,
+            "cached_tokens": 448,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 517
+          },
+          "input_tokens": 616,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 39,
+            "reasoning_tokens": 34
+          },
+          "output_tokens": 39,
+          "total_tokens": 655
+        }
+      }
+    },
+    {
+      "item_id": "sigh_sob_001",
+      "pair_id": "sigh_sob_001",
+      "contrast": "sigh-sob",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/sigh_sob_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/sigh_sob_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "sigh",
+      "gold_vocalization_d2": "sob",
+      "q1a_options": {
+        "A": "gasp",
+        "B": "yawn",
+        "C": "sigh",
+        "D": "sob",
+        "E": "laughter",
+        "F": "grunt"
+      },
+      "q1a_gold": "C",
+      "q1b_options": {
+        "A": "sigh",
+        "B": "laughter",
+        "C": "gasp",
+        "D": "yawn",
+        "E": "grunt",
+        "F": "sob"
+      },
+      "q1b_gold": "F",
+      "q2_options": {
+        "A": "\"B is overwhelmed by grief at losing the family home and needs a final personal farewell.\" describes Dialogue 1, and \"B reluctantly accepts that the house must be let go and turns to handling the remaining practical work.\" describes Dialogue 2.",
+        "B": "\"B reluctantly accepts that the house must be let go and turns to handling the remaining practical work.\" describes Dialogue 1, and \"B is overwhelmed by grief at losing the family home and needs a final personal farewell.\" describes Dialogue 2."
+      },
+      "q2_gold": "B",
+      "q3_options": {
+        "A": "\"All right, then I'll arrange for the movers on Thursday.\" follows Dialogue 1, and \"Please, can we go back once more and say goodbye to her garden?\" follows Dialogue 2.",
+        "B": "\"Please, can we go back once more and say goodbye to her garden?\" follows Dialogue 1, and \"All right, then I'll arrange for the movers on Thursday.\" follows Dialogue 2."
+      },
+      "q3_gold": "A",
+      "q1a_raw": "C",
+      "q1a_predicted": "C",
+      "q1a_predicted_text": "sigh",
+      "q1a_correct": true,
+      "q1b_raw": "F",
+      "q1b_predicted": "F",
+      "q1b_predicted_text": "sob",
+      "q1b_correct": true,
+      "q2_raw": "B",
+      "q2_predicted": "B",
+      "q2_predicted_text": "\"B reluctantly accepts that the house must be let go and turns to handling the remaining practical work.\" describes Dialogue 1, and \"B is overwhelmed by grief at losing the family home and needs a final personal farewell.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "A",
+      "q3_predicted": "A",
+      "q3_predicted_text": "\"All right, then I'll arrange for the movers on Thursday.\" follows Dialogue 1, and \"Please, can we go back once more and say goodbye to her garden?\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 67,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 230,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 24,
+            "reasoning_tokens": 19
+          },
+          "output_tokens": 24,
+          "total_tokens": 254
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 164,
+            "cached_tokens": 192,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 407,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 430
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 164,
+            "cached_tokens": 384,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 389
+          },
+          "input_tokens": 553,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 57,
+            "reasoning_tokens": 52
+          },
+          "output_tokens": 57,
+          "total_tokens": 610
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 164,
+            "cached_tokens": 512,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 517
+          },
+          "input_tokens": 681,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 45,
+            "reasoning_tokens": 40
+          },
+          "output_tokens": 45,
+          "total_tokens": 726
+        }
+      }
+    },
+    {
+      "item_id": "sob_yawn_001",
+      "pair_id": "sob_yawn_001",
+      "contrast": "sob-yawn",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/sob_yawn_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/sob_yawn_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "sob",
+      "gold_vocalization_d2": "yawn",
+      "q1a_options": {
+        "A": "laughter",
+        "B": "sigh",
+        "C": "yawn",
+        "D": "gasp",
+        "E": "sob",
+        "F": "grunt"
+      },
+      "q1a_gold": "E",
+      "q1b_options": {
+        "A": "grunt",
+        "B": "sigh",
+        "C": "sob",
+        "D": "yawn",
+        "E": "gasp",
+        "F": "laughter"
+      },
+      "q1b_gold": "D",
+      "q2_options": {
+        "A": "\"B is overcome by grief and gratitude at the prospect of hearing Grandpa's preserved voice and urges A not to remove any of it.\" describes Dialogue 1, and \"B expects a three-hour film to lose the reunion audience's attention and pushes A to make a much shorter version.\" describes Dialogue 2.",
+        "B": "\"B expects a three-hour film to lose the reunion audience's attention and pushes A to make a much shorter version.\" describes Dialogue 1, and \"B is overcome by grief and gratitude at the prospect of hearing Grandpa's preserved voice and urges A not to remove any of it.\" describes Dialogue 2."
+      },
+      "q2_gold": "A",
+      "q3_options": {
+        "A": "\"That means more to me than you know—don't cut any of it.\" follows Dialogue 1, and \"Three hours is too long—make a shorter version.\" follows Dialogue 2.",
+        "B": "\"Three hours is too long—make a shorter version.\" follows Dialogue 1, and \"That means more to me than you know—don't cut any of it.\" follows Dialogue 2."
+      },
+      "q3_gold": "A",
+      "q1a_raw": "E",
+      "q1a_predicted": "E",
+      "q1a_predicted_text": "sob",
+      "q1a_correct": true,
+      "q1b_raw": "D",
+      "q1b_predicted": "D",
+      "q1b_predicted_text": "yawn",
+      "q1b_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B is overcome by grief and gratitude at the prospect of hearing Grandpa's preserved voice and urges A not to remove any of it.\" describes Dialogue 1, and \"B expects a three-hour film to lose the reunion audience's attention and pushes A to make a much shorter version.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "A",
+      "q3_predicted": "A",
+      "q3_predicted_text": "\"That means more to me than you know—don't cut any of it.\" follows Dialogue 1, and \"Three hours is too long—make a shorter version.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 87,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 250,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 30,
+            "reasoning_tokens": 25
+          },
+          "output_tokens": 30,
+          "total_tokens": 280
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 164,
+            "cached_tokens": 64,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 64
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 407,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 24,
+            "reasoning_tokens": 19
+          },
+          "output_tokens": 24,
+          "total_tokens": 431
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 164,
+            "cached_tokens": 384,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 415
+          },
+          "input_tokens": 579,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 46,
+            "reasoning_tokens": 41
+          },
+          "output_tokens": 46,
+          "total_tokens": 625
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 164,
+            "cached_tokens": 512,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 541
+          },
+          "input_tokens": 705,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 34,
+            "reasoning_tokens": 29
+          },
+          "output_tokens": 34,
+          "total_tokens": 739
+        }
+      }
+    },
+    {
+      "item_id": "grunt_laughter_001",
+      "pair_id": "grunt_laughter_001",
+      "contrast": "grunt-laughter",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/grunt_laughter_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/grunt_laughter_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "grunt",
+      "gold_vocalization_d2": "laughter",
+      "q1a_options": {
+        "A": "laughter",
+        "B": "sob",
+        "C": "grunt",
+        "D": "yawn",
+        "E": "gasp",
+        "F": "sigh"
+      },
+      "q1a_gold": "C",
+      "q1b_options": {
+        "A": "sigh",
+        "B": "yawn",
+        "C": "gasp",
+        "D": "sob",
+        "E": "grunt",
+        "F": "laughter"
+      },
+      "q1b_gold": "F",
+      "q2_options": {
+        "A": "\"B is annoyed that A chose an activity B strongly dislikes and objects to the plan.\" describes Dialogue 1, and \"B is delighted by the playful date idea and warmly approves of A's choice.\" describes Dialogue 2.",
+        "B": "\"B is delighted by the playful date idea and warmly approves of A's choice.\" describes Dialogue 1, and \"B is annoyed that A chose an activity B strongly dislikes and objects to the plan.\" describes Dialogue 2."
+      },
+      "q2_gold": "A",
+      "q3_options": {
+        "A": "\"You know I hate being locked in rooms for fun.\" follows Dialogue 1, and \"An escape room? That’s exactly my kind of date.\" follows Dialogue 2.",
+        "B": "\"An escape room? That’s exactly my kind of date.\" follows Dialogue 1, and \"You know I hate being locked in rooms for fun.\" follows Dialogue 2."
+      },
+      "q3_gold": "A",
+      "q1a_raw": "C",
+      "q1a_predicted": "C",
+      "q1a_predicted_text": "grunt",
+      "q1a_correct": true,
+      "q1b_raw": "F",
+      "q1b_predicted": "F",
+      "q1b_predicted_text": "laughter",
+      "q1b_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B is annoyed that A chose an activity B strongly dislikes and objects to the plan.\" describes Dialogue 1, and \"B is delighted by the playful date idea and warmly approves of A's choice.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "A",
+      "q3_predicted": "A",
+      "q3_predicted_text": "\"You know I hate being locked in rooms for fun.\" follows Dialogue 1, and \"An escape room? That’s exactly my kind of date.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 41,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 204,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 19,
+            "reasoning_tokens": 14
+          },
+          "output_tokens": 19,
+          "total_tokens": 223
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 92,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 192
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 335,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 22,
+            "reasoning_tokens": 17
+          },
+          "output_tokens": 22,
+          "total_tokens": 357
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 92,
+            "cached_tokens": 320,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 383
+          },
+          "input_tokens": 475,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 38,
+            "reasoning_tokens": 33
+          },
+          "output_tokens": 38,
+          "total_tokens": 513
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 92,
+            "cached_tokens": 448,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 503
+          },
+          "input_tokens": 595,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 34,
+            "reasoning_tokens": 29
+          },
+          "output_tokens": 34,
+          "total_tokens": 629
+        }
+      }
+    },
+    {
+      "item_id": "laughter_sob_001",
+      "pair_id": "laughter_sob_001",
+      "contrast": "laughter-sob",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/laughter_sob_001_v2.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/laughter_sob_001_v1.mp3",
+      "d1_is_version": "v2",
+      "d2_is_version": "v1",
+      "gold_vocalization_d1": "sob",
+      "gold_vocalization_d2": "laughter",
+      "q1a_options": {
+        "A": "sigh",
+        "B": "laughter",
+        "C": "yawn",
+        "D": "grunt",
+        "E": "gasp",
+        "F": "sob"
+      },
+      "q1a_gold": "F",
+      "q1b_options": {
+        "A": "sob",
+        "B": "yawn",
+        "C": "laughter",
+        "D": "gasp",
+        "E": "grunt",
+        "F": "sigh"
+      },
+      "q1b_gold": "C",
+      "q2_options": {
+        "A": "\"B is overwhelmed by grief and tenderness at seeing their dad alive, joyful, and hearing his voice again.\" describes Dialogue 1, and \"B finds their dad's unabashedly silly dancing affectionately funny and joins in the shared memory with playful amusement.\" describes Dialogue 2.",
+        "B": "\"B finds their dad's unabashedly silly dancing affectionately funny and joins in the shared memory with playful amusement.\" describes Dialogue 1, and \"B is overwhelmed by grief and tenderness at seeing their dad alive, joyful, and hearing his voice again.\" describes Dialogue 2."
+      },
+      "q2_gold": "A",
+      "q3_options": {
+        "A": "\"He really could never resist stealing the spotlight.\" follows Dialogue 1, and \"I forgot how much I missed hearing his voice.\" follows Dialogue 2.",
+        "B": "\"I forgot how much I missed hearing his voice.\" follows Dialogue 1, and \"He really could never resist stealing the spotlight.\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "F",
+      "q1a_predicted": "F",
+      "q1a_predicted_text": "sob",
+      "q1a_correct": true,
+      "q1b_raw": "C",
+      "q1b_predicted": "C",
+      "q1b_predicted_text": "laughter",
+      "q1b_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B is overwhelmed by grief and tenderness at seeing their dad alive, joyful, and hearing his voice again.\" describes Dialogue 1, and \"B finds their dad's unabashedly silly dancing affectionately funny and joins in the shared memory with playful amusement.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "B",
+      "q3_predicted": "B",
+      "q3_predicted_text": "\"I forgot how much I missed hearing his voice.\" follows Dialogue 1, and \"He really could never resist stealing the spotlight.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 129,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 292,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 25,
+            "reasoning_tokens": 20
+          },
+          "output_tokens": 25,
+          "total_tokens": 317
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 254,
+            "cached_tokens": 256,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 497,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 21,
+            "reasoning_tokens": 16
+          },
+          "output_tokens": 21,
+          "total_tokens": 518
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 254,
+            "cached_tokens": 448,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 405
+          },
+          "input_tokens": 659,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 28,
+            "reasoning_tokens": 23
+          },
+          "output_tokens": 28,
+          "total_tokens": 687
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 254,
+            "cached_tokens": 576,
+            "cached_tokens_details": {
+              "audio_tokens": 192,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 517
+          },
+          "input_tokens": 771,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 45,
+            "reasoning_tokens": 40
+          },
+          "output_tokens": 45,
+          "total_tokens": 816
+        }
+      }
+    },
+    {
+      "item_id": "gasp_yawn_001",
+      "pair_id": "gasp_yawn_001",
+      "contrast": "gasp-yawn",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/gasp_yawn_001_v1.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/gasp_yawn_001_v2.mp3",
+      "d1_is_version": "v1",
+      "d2_is_version": "v2",
+      "gold_vocalization_d1": "gasp",
+      "gold_vocalization_d2": "yawn",
+      "q1a_options": {
+        "A": "sob",
+        "B": "grunt",
+        "C": "sigh",
+        "D": "laughter",
+        "E": "yawn",
+        "F": "gasp"
+      },
+      "q1a_gold": "F",
+      "q1b_options": {
+        "A": "grunt",
+        "B": "yawn",
+        "C": "sigh",
+        "D": "sob",
+        "E": "laughter",
+        "F": "gasp"
+      },
+      "q1b_gold": "B",
+      "q2_options": {
+        "A": "\"B is thrilled by the unexpectedly special opportunity and eagerly wants to attend despite the early hour.\" describes Dialogue 1, and \"B is focused on how exhausting the early start would be and decides they cannot attend.\" describes Dialogue 2.",
+        "B": "\"B is focused on how exhausting the early start would be and decides they cannot attend.\" describes Dialogue 1, and \"B is thrilled by the unexpectedly special opportunity and eagerly wants to attend despite the early hour.\" describes Dialogue 2."
+      },
+      "q2_gold": "A",
+      "q3_options": {
+        "A": "\"At seven? I can't do that; please take someone else.\" follows Dialogue 1, and \"Front row? That's incredible—we have to go.\" follows Dialogue 2.",
+        "B": "\"Front row? That's incredible—we have to go.\" follows Dialogue 1, and \"At seven? I can't do that; please take someone else.\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "F",
+      "q1a_predicted": "F",
+      "q1a_predicted_text": "gasp",
+      "q1a_correct": true,
+      "q1b_raw": "B",
+      "q1b_predicted": "B",
+      "q1b_predicted_text": "yawn",
+      "q1b_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B is thrilled by the unexpectedly special opportunity and eagerly wants to attend despite the early hour.\" describes Dialogue 1, and \"B is focused on how exhausting the early start would be and decides they cannot attend.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "B",
+      "q3_predicted": "B",
+      "q3_predicted_text": "\"Front row? That's incredible—we have to go.\" follows Dialogue 1, and \"At seven? I can't do that; please take someone else.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 80,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 243,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 266
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 172,
+            "cached_tokens": 192,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 415,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 23,
+            "reasoning_tokens": 18
+          },
+          "output_tokens": 23,
+          "total_tokens": 438
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 172,
+            "cached_tokens": 384,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 387
+          },
+          "input_tokens": 559,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 40,
+            "reasoning_tokens": 35
+          },
+          "output_tokens": 40,
+          "total_tokens": 599
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 172,
+            "cached_tokens": 512,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 507
+          },
+          "input_tokens": 679,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 42,
+            "reasoning_tokens": 37
+          },
+          "output_tokens": 42,
+          "total_tokens": 721
+        }
+      }
+    },
+    {
+      "item_id": "laughter_sigh_001",
+      "pair_id": "laughter_sigh_001",
+      "contrast": "laughter-sigh",
+      "audio_d1": "predicting_response_upgraded/out/audio_prompt/laughter_sigh_001_v2.mp3",
+      "audio_d2": "predicting_response_upgraded/out/audio_prompt/laughter_sigh_001_v1.mp3",
+      "d1_is_version": "v2",
+      "d2_is_version": "v1",
+      "gold_vocalization_d1": "sigh",
+      "gold_vocalization_d2": "laughter",
+      "q1a_options": {
+        "A": "grunt",
+        "B": "laughter",
+        "C": "sigh",
+        "D": "yawn",
+        "E": "sob",
+        "F": "gasp"
+      },
+      "q1a_gold": "C",
+      "q1b_options": {
+        "A": "laughter",
+        "B": "sigh",
+        "C": "sob",
+        "D": "gasp",
+        "E": "grunt",
+        "F": "yawn"
+      },
+      "q1b_gold": "A",
+      "q2_options": {
+        "A": "\"B is frustrated by the avoidable mishap and shifts immediately to containing the damage.\" describes Dialogue 1, and \"B finds A's attempt to fix the sink absurdly counterproductive and playfully teases them for making the problem worse.\" describes Dialogue 2.",
+        "B": "\"B finds A's attempt to fix the sink absurdly counterproductive and playfully teases them for making the problem worse.\" describes Dialogue 1, and \"B is frustrated by the avoidable mishap and shifts immediately to containing the damage.\" describes Dialogue 2."
+      },
+      "q2_gold": "A",
+      "q3_options": {
+        "A": "\"You somehow turned a clog into a fountain.\" follows Dialogue 1, and \"Turn off the valve; I'll call a plumber.\" follows Dialogue 2.",
+        "B": "\"Turn off the valve; I'll call a plumber.\" follows Dialogue 1, and \"You somehow turned a clog into a fountain.\" follows Dialogue 2."
+      },
+      "q3_gold": "B",
+      "q1a_raw": "C",
+      "q1a_predicted": "C",
+      "q1a_predicted_text": "sigh",
+      "q1a_correct": true,
+      "q1b_raw": "A",
+      "q1b_predicted": "A",
+      "q1b_predicted_text": "laughter",
+      "q1b_correct": true,
+      "q2_raw": "A",
+      "q2_predicted": "A",
+      "q2_predicted_text": "\"B is frustrated by the avoidable mishap and shifts immediately to containing the damage.\" describes Dialogue 1, and \"B finds A's attempt to fix the sink absurdly counterproductive and playfully teases them for making the problem worse.\" describes Dialogue 2.",
+      "q2_correct": true,
+      "q3_raw": "B",
+      "q3_predicted": "B",
+      "q3_predicted_text": "\"Turn off the valve; I'll call a plumber.\" follows Dialogue 1, and \"You somehow turned a clog into a fountain.\" follows Dialogue 2.",
+      "q3_correct": true,
+      "usage": {
+        "q1a": {
+          "input_token_details": {
+            "audio_tokens": 77,
+            "cached_tokens": 0,
+            "cached_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "image_tokens": 0,
+            "text_tokens": 163
+          },
+          "input_tokens": 240,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 18,
+            "reasoning_tokens": 13
+          },
+          "output_tokens": 18,
+          "total_tokens": 258
+        },
+        "q1b": {
+          "input_token_details": {
+            "audio_tokens": 166,
+            "cached_tokens": 192,
+            "cached_tokens_details": {
+              "audio_tokens": 64,
+              "image_tokens": 0,
+              "text_tokens": 128
+            },
+            "image_tokens": 0,
+            "text_tokens": 243
+          },
+          "input_tokens": 409,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 22,
+            "reasoning_tokens": 17
+          },
+          "output_tokens": 22,
+          "total_tokens": 431
+        },
+        "q2": {
+          "input_token_details": {
+            "audio_tokens": 166,
+            "cached_tokens": 384,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 256
+            },
+            "image_tokens": 0,
+            "text_tokens": 401
+          },
+          "input_tokens": 567,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 42,
+            "reasoning_tokens": 37
+          },
+          "output_tokens": 42,
+          "total_tokens": 609
+        },
+        "q3": {
+          "input_token_details": {
+            "audio_tokens": 166,
+            "cached_tokens": 512,
+            "cached_tokens_details": {
+              "audio_tokens": 128,
+              "image_tokens": 0,
+              "text_tokens": 384
+            },
+            "image_tokens": 0,
+            "text_tokens": 513
+          },
+          "input_tokens": 679,
+          "output_token_details": {
+            "audio_tokens": 0,
+            "text_tokens": 46,
+            "reasoning_tokens": 41
+          },
+          "output_tokens": 46,
+          "total_tokens": 725
+        }
+      }
+    }
+  ]
+}

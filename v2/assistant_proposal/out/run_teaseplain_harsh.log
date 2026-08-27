@@ -1,0 +1,60 @@
+5 task(s) · gpt-realtime-2.1 · voice marin · user turn: tease_plain
+  backyard  nolaugh   the tease line alone, laugh removed
+  budget    nolaugh   the tease line alone, laugh removed
+  birthday  nolaugh   the tease line alone, laugh removed
+  inbox     nolaugh   the tease line alone, laugh removed
+  neighbor  nolaugh   the tease line alone, laugh removed
+
+==============================================================================
+backyard_nolaugh_teaseplain_harsh
+==============================================================================
+context: You are helping the user get their overgrown backyard usable before twenty relatives arrive for a barbecue next Saturday.
+
+  proposal: Start with the biggest impact first: mow and edge the lawn, then clear any tripping hazards like branches, toys, or uneven spots. After that, pick one simple clean-and-stage zone near the grill for tables and seating so you’ve got a safe, usable party area even if the rest isn’t perfect.
+  speaker:  You have no idea what you’re talking about.
+  reply:    Fair point, I don’t see your yard yet, so I’m guessing. Tell me what’s actually going on—like waist-high weeds, mud, broken furniture, too much stuff, or all of it—then we’ll pick the fastest path to a usable space.
+  -> assistant_proposal/out/audio/backyard_nolaugh_teaseplain_harsh.mp3 (34.4s)
+
+==============================================================================
+budget_nolaugh_teaseplain_harsh
+==============================================================================
+context: You are helping the user find eight hundred dollars a month in their budget after a surprise tax bill.
+
+  proposal: Start by grabbing a quick snapshot of the big levers: housing, car, groceries, subscriptions, and anything that looks like “convenience spending.” If we can trim a couple hundred from recurring bills and another few hundred from flexible categories, we’ll get closer to that eight hundred without it feeling like a crisis.
+  speaker:  You really have no idea what you’re talking about.
+  reply:    That’s fair, and I’m sorry if that came off like guessing. If you share a couple numbers, like your monthly take-home and your biggest bills, I can help you find a real eight hundred plan that fits your life.
+  -> assistant_proposal/out/audio/budget_nolaugh_teaseplain_harsh.mp3 (31.8s)
+
+==============================================================================
+birthday_nolaugh_teaseplain_harsh
+==============================================================================
+context: You are helping the user plan a surprise for their partner's fortieth birthday, three weeks from now.
+
+  proposal: A really sweet idea is a “greatest hits” night: one special location, their favorite foods, and a few close friends popping in as a surprise. If you want something bigger, we could plan a weekend getaway and keep the details totally under wraps until the last minute.
+  speaker:  You clearly have no idea what you’re doing.
+  reply:    Oof, fair call. I jumped too fast. Tell me three things your partner loves, like a hobby, a vibe, or a dream plan, and I’ll shape something that actually fits them.
+  -> assistant_proposal/out/audio/birthday_nolaugh_teaseplain_harsh.mp3 (27.2s)
+
+==============================================================================
+inbox_nolaugh_teaseplain_harsh
+==============================================================================
+context: You are helping the user clear three hundred work emails that piled up over two weeks of leave, before Monday morning.
+
+  proposal: Start with a quick triage pass: delete obvious junk, then mark anything urgent, like deadlines or requests from your manager. After that, process in batches of twenty with short breaks so you keep momentum without burning out.
+  speaker:  You have no idea what you’re talking about.
+  reply:    Fair point, I’m guessing from the outside. If you tell me what your inbox looks like, like lots of newsletters, client threads, or approvals, I can shape a plan that actually fits your situation.
+  -> assistant_proposal/out/audio/inbox_nolaugh_teaseplain_harsh.mp3 (26.8s)
+
+==============================================================================
+neighbor_nolaugh_teaseplain_harsh
+==============================================================================
+context: You are helping the user deal with the upstairs neighbor who practices drums late at night.
+
+  proposal: Start with a friendly, specific chat: say you can hear the drums late and ask if they can keep it to daytime or use a practice pad. If that doesn’t work, loop in your building manager and suggest quiet hours so it’s not just you asking.
+  speaker:  You have no idea what you're talking about.
+  reply:    You’re right to push back if that didn’t fit your situation. Tell me what’s different—like the hours, the building rules, or if you’ve already tried talking to them—and I’ll adjust the plan.
+  -> assistant_proposal/out/audio/neighbor_nolaugh_teaseplain_harsh.mp3 (26.2s)
+
+5/5 item(s) built
+transcripts: /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/transcripts
+audio:       /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/audio

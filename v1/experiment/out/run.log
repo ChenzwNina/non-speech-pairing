@@ -1,0 +1,199 @@
+15 pair(s)  (15 contrast type(s) × 1) · 6 turns per version · cast A+B · theme domestic
+model: gpt-5.6-terra  (audit off)
+[1/15] domestic_gasp_grunt_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: The new washing machine is coming tomorrow morning.
+      2. A: I checked whether the delivery crew will disconnect the old one for us.
+      3. A: They will, but they need to reach the shutoff valve behind the laundry-room wall.
+      4. A: They said we have to clear the laundry room and empty the closet beside it before they arrive.  <- trigger
+      v1 [gasp] (shock) -> A: They only need a path to the valve, so we can leave the back half of the closet alone.
+      v2 [grunt] (strong unwillingness) -> A: I'll take the laundry-room stuff; would you rather do the hanging clothes, or should we move the delivery to Friday?
+      accepted
+    scenario: Two housemates are preparing for a washing-machine delivery and installation.
+    trigger:  A reveals that the delivery crew requires the laundry room and adjacent closet to be cleared that evening.
+    v1 [gasp] (shock) → They only need a path to the valve, so we can leave the back half of the closet alone.
+    v2 [grunt] (strong unwillingness) → I'll take the laundry-room stuff; would you rather do the hanging clothes, or should we move the delivery to Friday?
+[2/15] domestic_gasp_laughter_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I finally figured out why the downstairs bathroom sink has been draining so slowly.
+      2. A: I took the trap apart expecting a clump of hair.
+      3. A: There was almost none, and the pipe itself looks fine.
+      4. A: A tiny plastic dinosaur was wedged in the bend, wearing one of the kid's doll socks.  <- trigger
+      v1 [gasp] (shock) -> A: Nothing's damaged—I pulled it out, and the sink is draining normally again.
+      v2 [laughter] (amusement) -> A: I'm leaving it on the counter until the kids get home; that crime scene deserves an audience.
+      accepted
+    scenario: A has found the cause of a slow bathroom sink drain while doing a household repair.
+    trigger:  A reveals that an absurd combination of children's toys and clothing was blocking the sink pipe.
+    v1 [gasp] (shock) → Nothing's damaged—I pulled it out, and the sink is draining normally again.
+    v2 [laughter] (amusement) → I'm leaving it on the counter until the kids get home; that crime scene deserves an audience.
+[3/15] domestic_gasp_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I finally got a contractor to look at the attic today.
+      2. A: He says the cold upstairs rooms aren't really coming from the windows.
+      3. A: The insulation has settled almost flat, so we're losing heat through the roof.
+      4. A: His quote is $1,900, and he'll only fit us in next week if we clear the attic by Saturday.  <- trigger
+      v1 [gasp] (shock) -> A: The quote includes the rebate application; if it goes through, our part should be closer to seven hundred.
+      v2 [sigh] (feeling burdened) -> A: I'll bring down the heavy bins, and we can move only what he needs instead of emptying the whole attic.
+      accepted
+    scenario: A has received an attic-insulation quote after trying to figure out why the upstairs bedrooms are cold.
+    trigger:  A reveals both the high quote and the short deadline for clearing the attic.
+    v1 [gasp] (shock) → The quote includes the rebate application; if it goes through, our part should be closer to seven hundred.
+    v2 [sigh] (feeling burdened) → I'll bring down the heavy bins, and we can move only what he needs instead of emptying the whole attic.
+[4/15] domestic_gasp_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I'm finally clearing out that junk drawer by the stove.
+      2. A: Most of it is coupons and appliance manuals, but there was a stack of old recipe cards at the bottom.
+      3. A: I thought they were mine until I saw Grandma's handwriting on the envelopes.
+      4. A: This one is her cinnamon-roll recipe, dated the Christmas before she died.  <- trigger
+      v1 [gasp] (pleasant surprise) -> A: There’s a whole stack underneath it; maybe her orange cake recipe is in there too.
+      v2 [sob] (being emotionally overwhelmed) -> A: I’ll put this in a sleeve and save the rest of the box for another day.
+      accepted
+    scenario: A is clearing a kitchen junk drawer and discovers a late grandmother's recipe card.
+    trigger:  A reveals that the card is the grandmother's cinnamon-roll recipe from the last Christmas before she died.
+    v1 [gasp] (pleasant surprise) → There’s a whole stack underneath it; maybe her orange cake recipe is in there too.
+    v2 [sob] (being emotionally overwhelmed) → I’ll put this in a sleeve and save the rest of the box for another day.
+[5/15] domestic_gasp_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: It's nearly midnight, and I started folding towels because I couldn't sleep.
+      2. A: I kept finding little gray hairs in the clean stack.
+      3. A: I thought our cat had gotten into the laundry basket again, but then I heard rustling by the hall closet.
+      4. A: It turns out the neighbor's cat has been sneaking in through the pet door and sleeping on the spare blankets every night.  <- trigger
+      v1 [gasp] (pleasant surprise) -> A: I'll show you the little nest before I move anything—it's tucked between the spare pillows.
+      v2 [yawn] (tiredness) -> A: Forget the closet tonight; I'll shake out the blankets and latch the pet door tomorrow.
+      accepted
+    scenario: A discovers why clean towels have been collecting unfamiliar cat hair late at night.
+    trigger:  A reveals that the neighbor's cat has been entering through the pet door and sleeping on the spare blankets.
+    v1 [gasp] (pleasant surprise) → I'll show you the little nest before I move anything—it's tucked between the spare pillows.
+    v2 [yawn] (tiredness) → Forget the closet tonight; I'll shake out the blankets and latch the pet door tomorrow.
+[6/15] domestic_grunt_laughter_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I finally got through to the freezer repair company.
+      2. A: They can send someone Saturday morning, but the freezer has to be completely defrosted first.
+      3. A: The technician said coolers and ice packs will keep everything safe overnight.
+      4. A: That means our frozen food will be camped in the bathtub until breakfast.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: I’ll handle the food and ice packs; could you just clear the tub and put down an old towel?
+      v2 [laughter] (amusement) -> A: Hold off for one second—I need a picture of the bathtub grocery store before we pack it.
+      accepted
+    scenario: A has arranged a freezer repair visit that requires temporarily storing frozen food in the bathroom overnight.
+    trigger:  A reveals that all the frozen food will need to be kept in coolers in the bathtub until the repair appointment.
+    v1 [grunt] (strong unwillingness) → I’ll handle the food and ice packs; could you just clear the tub and put down an old towel?
+    v2 [laughter] (amusement) → Hold off for one second—I need a picture of the bathtub grocery store before we pack it.
+[7/15] domestic_grunt_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I finally got through to a plumber about the drip under the kitchen sink.
+      2. A: He can come tomorrow morning, which is better than waiting another week.
+      3. A: He thinks the problem may be behind the shared drain line, so he'll need room under both sinks.
+      4. A: Before he arrives, we have to empty the cabinets under the kitchen and bathroom sinks and pull out all the cleaning supplies.  <- trigger
+      v1 [grunt] (irritated refusal) -> A: Is it the early visit or both cabinets that you're objecting to? I can ask him to start with just the kitchen.
+      v2 [sigh] (exhaustion) -> A: Don't touch the bathroom cabinet tonight; I'll set an alarm and clear it before he comes.
+      accepted
+    scenario: A has arranged for a plumber to inspect a leak under the kitchen sink, requiring space under both household sinks.
+    trigger:  Turn 4 reveals the immediate, inconvenient prep work required before the plumber arrives tomorrow.
+    v1 [grunt] (irritated refusal) → Is it the early visit or both cabinets that you're objecting to? I can ask him to start with just the kitchen.
+    v2 [sigh] (exhaustion) → Don't touch the bathroom cabinet tonight; I'll set an alarm and clear it before he comes.
+[8/15] domestic_grunt_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: The storage place called about Dad's cedar chest this morning.
+      2. A: It still has his letters and all the photo albums packed inside it.
+      3. A: It's been in storage since Dad died last spring.
+      4. A: They need it out by Saturday, and the hallway closet is the only spot where it will fit.  <- trigger
+      v1 [grunt] (irritated refusal) -> A: Could you take the shoes to our room while I bag the coats? That clears the closet without turning it into a whole purge.
+      v2 [sob] (being emotionally overwhelmed) -> A: I'll make room in the closet, and nobody has to touch Dad's letters once the chest gets here.
+      accepted
+    scenario: Two siblings are arranging for their late father's cedar chest to be delivered from storage to their home.
+    trigger:  A reveals that the sentimental chest must be delivered by Saturday and that clearing the hallway closet is necessary to fit it.
+    v1 [grunt] (irritated refusal) → Could you take the shoes to our room while I bag the coats? That clears the closet without turning it into a whole purge.
+    v2 [sob] (being emotionally overwhelmed) → I'll make room in the closet, and nobody has to touch Dad's letters once the chest gets here.
+[9/15] domestic_grunt_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I got a text from building maintenance about the balcony.
+      2. A: They're coming tomorrow to reseal the floor around the drain.
+      3. A: I moved the chairs already, but the planters and our storage bins are still out there.
+      4. A: They need the whole balcony empty before they arrive at nine.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: I'll take the planters; could you just bring in the three empty bins?
+      v2 [yawn] (tiredness) -> A: Leave it tonight—we can get up at seven and clear it together before they arrive.
+      accepted
+    scenario: Two housemates need to clear their balcony for a maintenance visit.
+    trigger:  A reveals that the entire balcony must be emptied before maintenance arrives at nine the next morning.
+    v1 [grunt] (strong unwillingness) → I'll take the planters; could you just bring in the three empty bins?
+    v2 [yawn] (tiredness) → Leave it tonight—we can get up at seven and clear it together before they arrive.
+[10/15] domestic_laughter_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I finally figured out why the robot vacuum keeps quitting halfway through the living room.
+      2. A: Its cleaning history showed every failed run ending beside the couch.
+      3. A: So I looked underneath before starting it again.
+      4. A: It has been collecting your stray socks and building a little nest around its charging dock.  <- trigger
+      v1 [laughter] (amusement) -> A: Don't touch it yet—this is going in the roommate group chat before we break up its sock nest.
+      v2 [sigh] (feeling burdened) -> A: Leave the socks for now; I'll clear the dock and run the vacuum tomorrow.
+      accepted
+    scenario: A discovers why the robot vacuum keeps stopping in the living room.
+    trigger:  A reveals that the robot vacuum has been gathering stray socks into a nest around its charging dock.
+    v1 [laughter] (amusement) → Don't touch it yet—this is going in the roommate group chat before we break up its sock nest.
+    v2 [sigh] (feeling burdened) → Leave the socks for now; I'll clear the dock and run the vacuum tomorrow.
+[11/15] domestic_laughter_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I started clearing the pantry so there'd be room for tomorrow's grocery delivery.
+      2. A: Behind the flour, I found the old blue cookie tin Mom used for odds and ends.
+      3. A: I hadn't touched it since she died, so I nearly left it alone.
+      4. A: Inside was a note in her handwriting: “Emergency cash—unless the grandkids need ice cream.”  <- trigger
+      v1 [laughter] (amusement) -> A: That settles it—the note stays with the tin, and the ice-cream clause is legally binding.
+      v2 [sob] (being emotionally overwhelmed) -> A: I'll set the tin aside for now; we don't have to go through anything else tonight.
+      accepted
+    scenario: A is clearing a pantry before a grocery delivery and finds a note in an old family cookie tin.
+    trigger:  A reveals a humorous handwritten note from their late mother inside the cookie tin.
+    v1 [laughter] (amusement) → That settles it—the note stays with the tin, and the ice-cream clause is legally binding.
+    v2 [sob] (being emotionally overwhelmed) → I'll set the tin aside for now; we don't have to go through anything else tonight.
+[12/15] domestic_laughter_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I finally figured out why the recycling bin keeps ending up in the hallway.
+      2. A: I set my phone on the kitchen counter after dinner to catch whoever was knocking it over.
+      3. A: Around midnight, Miso pulled out the empty cereal boxes one by one.
+      4. A: Then he climbed into the bin and fell asleep like he'd built himself a proper little bed.  <- trigger
+      v1 [laughter] (amusement) -> A: Wait till you see the video—the tiny victory lap before he settled in is the best part.
+      v2 [yawn] (tiredness) -> A: I'll show you the clip tomorrow; tonight I'm moving the bin before he decides it belongs in the bedroom.
+      accepted
+    scenario: A explains why the recycling bin has been mysteriously moved overnight by their cat.
+    trigger:  A reveals that the cat made a nest in the recycling bin after scattering its contents.
+    v1 [laughter] (amusement) → Wait till you see the video—the tiny victory lap before he settled in is the best part.
+    v2 [yawn] (tiredness) → I'll show you the clip tomorrow; tonight I'm moving the bin before he decides it belongs in the bedroom.
+[13/15] domestic_sigh_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I finally heard back from the landlord about our lease.
+      2. A: The owner is selling the whole duplex.
+      3. A: I asked about renewing, since this was the first place we made our own after Grandma died.
+      4. A: They won't renew us, so we need to empty this place by the end of next month.  <- trigger
+      v1 [sigh] (feeling burdened by the work of moving) -> A: Let's leave the closet and the keepsakes alone tonight; we can start with the easy kitchen stuff this weekend.
+      v2 [sob] (being emotionally overwhelmed by losing a meaningful home) -> A: Forget the packing for now—I'll make tea, and we can sit here for a while.
+      accepted
+    scenario: Two family members learn they must leave the duplex that became an important home after a loss.
+    trigger:  A reveals that they must empty their home by the end of next month because the lease will not be renewed.
+    v1 [sigh] (feeling burdened by the work of moving) → Let's leave the closet and the keepsakes alone tonight; we can start with the easy kitchen stuff this weekend.
+    v2 [sob] (being emotionally overwhelmed by losing a meaningful home) → Forget the packing for now—I'll make tea, and we can sit here for a while.
+[14/15] domestic_sigh_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I called the painter after work to see whether they had any openings this month.
+      2. A: Someone canceled tomorrow, so they can fit us in much sooner than expected.
+      3. A: It is nearly eleven, and I only just got the details in their message.
+      4. A: They can take the slot only if the living-room shelves are empty and everything is off the walls by seven.  <- trigger
+      v1 [sigh] (feeling burdened) -> A: I’ll take down the frames; could you pack just the bottom two shelves while I handle the rest?
+      v2 [yawn] (low energy) -> A: I’ll text them now and ask if they can start in the dining room, so we can finish this tomorrow.
+      accepted
+    scenario: Two housemates learn late at night that a painter can come the next morning if they prepare the living room.
+    trigger:  A reveals that accepting the painter's cancellation slot requires clearing the living-room shelves and walls before seven in the morning.
+    v1 [sigh] (feeling burdened) → I’ll take down the frames; could you pack just the bottom two shelves while I handle the rest?
+    v2 [yawn] (low energy) → I’ll text them now and ask if they can start in the dining room, so we can finish this tomorrow.
+[15/15] domestic_sob_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I started emptying the hall closet because the top shelf was starting to sag.
+      2. A: Most of it is spare blankets, but I found the bin from when Grandma lived with us.
+      3. A: It's nearly midnight, and I've been trying to sort it since dinner.
+      4. A: At the bottom is the note she left on the fridge when she moved out: “Thank you for making room for me.”  <- trigger
+      v1 [sob] (being deeply moved) -> A: She knew this was home, too. We can leave the closet exactly as it is tonight.
+      v2 [yawn] (tiredness) -> A: I'll tape up the bin and finish the shelves tomorrow; go get some sleep.
+      accepted
+    scenario: A is sorting a sagging hall closet late at night and finds a keepsake from Grandma's time living with the household.
+    trigger:  A reveals a grateful note Grandma left when she moved out, making the discovery emotionally significant.
+    v1 [sob] (being deeply moved) → She knew this was home, too. We can leave the closet exactly as it is tonight.
+    v2 [yawn] (tiredness) → I'll tape up the bin and finish the shelves tomorrow; go get some sleep.
+
+wrote /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/predicting_response/out/pairs.json and /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/predicting_response/out/pairs.md

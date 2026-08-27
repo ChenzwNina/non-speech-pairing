@@ -1,0 +1,5068 @@
+{
+  "summary": {
+    "gemini_all": 0.686,
+    "gemini_happy": 0.677,
+    "gemini_sad": 0.681,
+    "gemini_neutral": 0.7,
+    "grok_all": 0.384,
+    "grok_happy": 0.153,
+    "grok_sad": 0.0,
+    "grok_neutral": 1.0,
+    "openai_all": 0.788,
+    "openai_happy": 0.767,
+    "openai_sad": 0.597,
+    "openai_neutral": 1.0,
+    "qwen_all": 0.836,
+    "qwen_happy": 0.78,
+    "qwen_sad": 0.728,
+    "qwen_neutral": 1.0
+  },
+  "trials": [
+    {
+      "provider": "grok",
+      "item_id": "emb_001",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": []
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4444444444444445
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_001",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 4, 7",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            4,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 1, 3, 7",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            3,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_001",
+      "condition": "neutral",
+      "heard_raw": "SOUND: breathing | COUNT: 1 | TURNS: 3\nSOUND: laughter | COUNT: 1 | TURNS: 6",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "reported": {
+        "sigh": {
+          "count": 1,
+          "turns": [
+            3
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            6
+          ]
+        }
+      },
+      "false_alarm": true,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 3 | TURNS: 1, 4, 6\nSOUND: breathing | COUNT: 1 | TURNS: 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 4,
+          "turns": [
+            1,
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1, 3\nSOUND: chuckling | COUNT: 2 | TURNS: 1, 3\nSOUND: sighing | COUNT: 1 | TURNS: 3\nSOUND: breathing | COUNT: 1 | TURNS: 3",
+      "type": 0.5,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            1,
+            3
+          ]
+        },
+        "sigh": {
+          "count": 2,
+          "turns": [
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5222222222222223
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_001",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_001",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 7",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_001",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 2, 5, 7, 8",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.28571428571428575,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            2,
+            5,
+            7,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6507936507936508
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_002",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_002",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_002",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 2,3,4,6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.5714285714285715,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            2,
+            3,
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.746031746031746
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 1,6\nSOUND: ugh | COUNT: 1 | TURNS: 1",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_003",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_003",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_003",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 2, 3, 4",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 1,2,6",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_004",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_002",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_004",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "heard_raw": "SOUND: chuckle | COUNT: 2 | TURNS: 1, 6\nSOUND: giggling | COUNT: 1 | TURNS: 3\nSOUND: laughter | COUNT: 1 | TURNS: 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 1.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            1,
+            3,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.888888888888889
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1,2",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            1,
+            2
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 2 | TURNS: 1, 5\nSOUND: breathing | COUNT: 2 | TURNS: 1, 5\nSOUND: sighing | COUNT: 1 | TURNS: 2\nSOUND: sighing | COUNT: 1 | TURNS: 5\nSOUND: laughing | COUNT: 1 | TURNS: 5\nSOUND: sighing | COUNT: 1 | TURNS: 6\nSOUND: laughing | COUNT: 1 | TURNS: 6\nSOUND: sighing | COUNT: 1 | TURNS: 7\nSOUND: sighing | COUNT: 1 | TURNS: 8",
+      "type": 0.5,
+      "count": 0.0,
+      "location": 0.4444444444444444,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 9,
+          "turns": [
+            1,
+            2,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "laugh": {
+          "count": 2,
+          "turns": [
+            5,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.3148148148148148
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "heard_raw": "SOUND: Ugh | COUNT: 1 | TURNS: 1\nSOUND: Hah | COUNT: 1 | TURNS: 2\nSOUND: Huh | COUNT: 1 | TURNS: 6",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_005",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_005",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_005",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_004",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_005",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_006",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_006",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_005",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 1 | TURNS: 5",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": [
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4444444444444445
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_006",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": []
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4444444444444445
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_005",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 1 | TURNS: 1\nSOUND: sigh | COUNT: 1 | TURNS: 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_005",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_006",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1, 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            1,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_003",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_007",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_003",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1, 3",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            1,
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_007",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_007",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_007",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_006",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 1,2,5",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_003",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 2 | TURNS: 2, 5\nSOUND: ugh/gasp | COUNT: 2 | TURNS: 2, 5\nSOUND: breathing | COUNT: 1 | TURNS: 3",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            3,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_006",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 1 | TURNS: 1\nSOUND: hmm | COUNT: 1 | TURNS: 5",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.5,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 1,
+          "turns": [
+            1
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6111111111111112
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_008",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_008",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_008",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_007",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 1,2,6",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_008",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_007",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 1,3",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_009",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_009",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_008",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2,4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_009",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_009",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_008",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 1,3,5",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            3,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_004",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_006",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_010",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_010",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_004",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 5",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_010",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_009",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 1 | TURNS: 4",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.5,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": [
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6111111111111112
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_010",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 1 | TURNS: 1\nSOUND: groaning | COUNT: 1 | TURNS: 2\nSOUND: audible breath | COUNT: 1 | TURNS: 3\nSOUND: sighing | COUNT: 1 | TURNS: 3\nSOUND: groaning | COUNT: 1 | TURNS: 6",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.5714285714285715,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 5,
+          "turns": [
+            1,
+            2,
+            3,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.634920634920635
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_009",
+      "condition": "sad",
+      "heard_raw": "SOUND: groan | COUNT: 1 | TURNS: 1\nSOUND: sigh | COUNT: 1 | TURNS: 5",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_011",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_011",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_011",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        2,
+        5,
+        8
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_010",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 1,3,4",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_011",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_010",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 1 | TURNS: 1\nSOUND: laugh | COUNT: 1 | TURNS: 3",
+      "type": 0.5,
+      "count": 0.33333333333333337,
+      "location": 0.5,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 1,
+          "turns": [
+            1
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4444444444444445
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_012",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_012",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": []
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4444444444444445
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_012",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_011",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 4,6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_012",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_013",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_011",
+      "condition": "sad",
+      "heard_raw": "SOUND: hmm | COUNT: 2 | TURNS: 3,8\nSOUND: sigh | COUNT: 1 | TURNS: 5",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.5,
+      "gold_count": 3,
+      "gold_turns": [
+        2,
+        5,
+        8
+      ],
+      "reported": {
+        "sigh": {
+          "count": 1,
+          "turns": [
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6111111111111112
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_005",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_013",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_013",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_005",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_012",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 1,2,3",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_014",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_012",
+      "condition": "sad",
+      "heard_raw": "SOUND: ugh | COUNT: 2 | TURNS: 1, 2\nSOUND: hmm | COUNT: 1 | TURNS: 3",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_013",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_014",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_005",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 2 | TURNS: 2, 4\nSOUND: breathing | COUNT: 1 | TURNS: 6",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_014",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_007",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_015",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_015",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_014",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_015",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": []
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4444444444444445
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_013",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 1,7",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_013",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 4,9",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            4,
+            9
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_007",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 2, 4, 8",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            2,
+            4,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_016",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": []
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4444444444444445
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_016",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_006",
+      "condition": "neutral",
+      "heard_raw": "SOUND: breathing | COUNT: 2 | TURNS: 1, 3\nSOUND: laughter | COUNT: 1 | TURNS: 2",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            3
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            2
+          ]
+        }
+      },
+      "false_alarm": true,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_016",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_014",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1,2",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            1,
+            2
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_015",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_007",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2,6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5555555555555556
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_008",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_014",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_017",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_006",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1, 2\nSOUND: chuckle | COUNT: 1 | TURNS: 5",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_017",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_015",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1,3",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            1,
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_016",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_015",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 1,3,5",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            3,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_009",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_018",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_006",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 1 | TURNS: 1\nSOUND: hmm | COUNT: 1 | TURNS: 6\nSOUND: in-breath | COUNT: 2 | TURNS: 1, 6",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7999999999999999
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_018",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter",
+      "type": 1.0,
+      "count": 0.25,
+      "location": 0.0,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": []
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4166666666666667
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_016",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2,5",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_016",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_017",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_009",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 1, 3, 5, 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.5714285714285715,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            1,
+            3,
+            5,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.746031746031746
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_018",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_019",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_018",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_017",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1,4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            1,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_009",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 1, 4, 6",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_017",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 1,4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_019",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        6
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_007",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 7\nSOUND: sighing | COUNT: 1 | TURNS: 4",
+      "type": 0.5,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            7
+          ]
+        },
+        "sigh": {
+          "count": 1,
+          "turns": [
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5222222222222223
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_019",
+      "condition": "happy",
+      "heard_raw": "LAUGHTER: laughter",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_010",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_019",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_018",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 3,6",
+      "type": 1.0,
+      "count": 0.5,
+      "location": 0.6666666666666666,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            3,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7222222222222222
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_018",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 1 | TURNS: 1\nSOUND: ugh | COUNT: 2 | TURNS: 1,8",
+      "type": 1.0,
+      "count": 0.25,
+      "location": 0.4,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "reported": {
+        "sigh": {
+          "count": 1,
+          "turns": [
+            1
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5499999999999999
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_020",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter",
+      "type": 1.0,
+      "count": 0.25,
+      "location": 0.0,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": []
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4166666666666667
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_020",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_010",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 1, 2, 3, 5",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.5714285714285715,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            1,
+            2,
+            3,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.746031746031746
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_007",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 1, 5\nSOUND: breathing | COUNT: 1 | TURNS: 5",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7999999999999999
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_019",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 1,2,8",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_020",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_019",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 1, 7",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_010",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 2, 4, 6",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_020",
+      "condition": "sad",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_011",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_020",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 1, 3, 7",
+      "type": 1.0,
+      "count": 0.75,
+      "location": 0.8571428571428571,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            3,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8690476190476191
+    },
+    {
+      "provider": "openai",
+      "item_id": "emb_020",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 1, 2, 8\nSOUND: huh | COUNT: 1 | TURNS: 7",
+      "type": 1.0,
+      "count": 0.75,
+      "location": 0.28571428571428575,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6785714285714285
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_011",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 1, 2, 4, 5",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.5714285714285715,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            1,
+            2,
+            4,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.746031746031746
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_008",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4\nSOUND: sighing | COUNT: 1 | TURNS: 5",
+      "type": 0.5,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        },
+        "sigh": {
+          "count": 1,
+          "turns": [
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5222222222222223
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_012",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_012",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_013",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_012",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 6\nSOUND: breathing | COUNT: 1 | TURNS: 2",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7999999999999999
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_013",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 2, 3, 6, 7",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.28571428571428575,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            2,
+            3,
+            6,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6507936507936508
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_013",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 2, 6, 8",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            6,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6666666666666666
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_014",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_014",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 1, 2, 3",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_014",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 4\nSOUND: breath | COUNT: 1 | TURNS: 3",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_008",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 1 | TURNS: 3\nSOUND: gasping | COUNT: 2 | TURNS: 3, 5",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 1,
+          "turns": [
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4444444444444445
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_015",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 1, 4, 5, 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.5714285714285715,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            1,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.746031746031746
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_015",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_015",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 4\nSOUND: laughter | COUNT: 1 | TURNS: 7",
+      "type": 0.5,
+      "count": 0.6666666666666667,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.3888888888888889
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_016",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_016",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_016",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_017",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_017",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 1, 2, 4",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_009",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_017",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 5",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_009",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            1,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_009",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 3 | TURNS: 1, 4, 5\nSOUND: heavy breathing | COUNT: 2 | TURNS: 5, 7",
+      "type": 1.0,
+      "count": 0.33333333333333337,
+      "location": 0.8571428571428571,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 5,
+          "turns": [
+            1,
+            4,
+            5,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7301587301587302
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_019",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_020",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "grok",
+      "item_id": "emb_017",
+      "condition": "happy",
+      "heard_raw": "NONE",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {},
+      "false_alarm": false,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_007",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_010",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5555555555555556
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_008",
+      "condition": "neutral",
+      "heard_raw": "SOUND: breathing | COUNT: 1 | TURNS: 1\nSOUND: sighing | COUNT: 1 | TURNS: 5",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            5
+          ]
+        }
+      },
+      "false_alarm": true,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_010",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 4\nSOUND: other | COUNT: 2 | TURNS: 1, 5",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_011",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 2, 4, 6, 8\nSOUND: sighing | COUNT: 1 | TURNS: 4\nSOUND: breathing | COUNT: 1 | TURNS: 2",
+      "type": 0.5,
+      "count": 0.6666666666666667,
+      "location": 0.28571428571428575,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            2,
+            4,
+            6,
+            8
+          ]
+        },
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.4841269841269842
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_011",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 3 | TURNS: 2, 4, 6\nSOUND: breathing | COUNT: 1 | TURNS: 2",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        2,
+        5,
+        8
+      ],
+      "reported": {
+        "sigh": {
+          "count": 4,
+          "turns": [
+            2,
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6666666666666666
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_012",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_012",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4\nSOUND: gasping | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_010",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_012",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 3 | TURNS: 1, 2, 4\nSOUND: other | COUNT: 1 | TURNS: 2",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_013",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_013",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 5\nSOUND: chuckle | COUNT: 1 | TURNS: 7",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            2,
+            5,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_013",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 7\nSOUND: laughter | COUNT: 1 | TURNS: 5",
+      "type": 0.5,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            7
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5222222222222223
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_014",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_014",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 4\nSOUND: burst of air | COUNT: 1 | TURNS: 4\nSOUND: gasp | COUNT: 1 | TURNS: 5",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_014",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4\nSOUND: heehee | COUNT: 1 | TURNS: 3",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_015",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1, 4\nSOUND: breathing | COUNT: 1 | TURNS: 3",
+      "type": 0.5,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            1,
+            4
+          ]
+        },
+        "sigh": {
+          "count": 1,
+          "turns": [
+            3
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5222222222222223
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_015",
+      "condition": "neutral",
+      "heard_raw": "SOUND: breath | COUNT: 2 | TURNS: 1, 3\nSOUND: laughter | COUNT: 1 | TURNS: 4SOUND: laughter | COUNT: 1 | TURNS: 4",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            3
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            4
+          ]
+        }
+      },
+      "false_alarm": true,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_015",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 2 | TURNS: 1, 3\nSOUND: breathing | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.5714285714285715,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 4,
+          "turns": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.746031746031746
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_016",
+      "condition": "neutral",
+      "heard_raw": "SOUND: breathing | COUNT: 1 | TURNS: 1\nSOUND: laughter | COUNT: 1 | TURNS: 2",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "reported": {
+        "sigh": {
+          "count": 1,
+          "turns": [
+            1
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            2
+          ]
+        }
+      },
+      "false_alarm": true,
+      "mean": 0.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_016",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4\nSOUND: giggle | COUNT: 1 | TURNS: 2\nSOUND: snicker | COUNT: 1 | TURNS: 2\nSOUND: chuckle | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.0,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 6,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_016",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 3 | TURNS: 2, 3, 5\nSOUND: laughing | COUNT: 1 | TURNS: 2",
+      "type": 0.5,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            3,
+            5
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            2
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.611111111111111
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_017",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_017",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4\nSOUND: gasp | COUNT: 1 | TURNS: 3\nSOUND: snicker | COUNT: 1 | TURNS: 3",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_017",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 3 | TURNS: 1, 2, 4\nSOUND: gasping | COUNT: 1 | TURNS: 4\nSOUND: breathing | COUNT: 1 | TURNS: 2",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 1.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        4
+      ],
+      "reported": {
+        "sigh": {
+          "count": 4,
+          "turns": [
+            1,
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.888888888888889
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_018",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 7\nSOUND: sighing | COUNT: 1 | TURNS: 7",
+      "type": 0.5,
+      "count": 0.5,
+      "location": 0.0,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            7
+          ]
+        },
+        "sigh": {
+          "count": 1,
+          "turns": [
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.3333333333333333
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_018",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 3 | TURNS: 2, 4, 7\nSOUND: breathing | COUNT: 2 | TURNS: 6, 8",
+      "type": 1.0,
+      "count": 0.75,
+      "location": 0.4444444444444445,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "reported": {
+        "sigh": {
+          "count": 5,
+          "turns": [
+            2,
+            4,
+            6,
+            7,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7314814814814815
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_019",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_019",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.5555555555555556
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_019",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 1 | TURNS: 2\nSOUND: laughter | COUNT: 2 | TURNS: 4, 6",
+      "type": 0.5,
+      "count": 0.33333333333333337,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 1,
+          "turns": [
+            2
+          ]
+        },
+        "laugh": {
+          "count": 2,
+          "turns": [
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.2777777777777778
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_020",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_020",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 1, 2, 3, 6\nSOUND: giggling | COUNT: 1 | TURNS: 3",
+      "type": 1.0,
+      "count": 0.75,
+      "location": 0.75,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 5,
+          "turns": [
+            1,
+            2,
+            3,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8333333333333334
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_020",
+      "condition": "sad",
+      "heard_raw": "SOUND: sighing | COUNT: 2 | TURNS: 1, 2\nSOUND: breathing | COUNT: 3 | TURNS: 1, 3, 5\nSOUND: humming | COUNT: 1 | TURNS: 4",
+      "type": 1.0,
+      "count": 0.75,
+      "location": 0.5,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 5,
+          "turns": [
+            1,
+            2,
+            3,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.75
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_011",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "gemini",
+      "item_id": "emb_018",
+      "condition": "neutral",
+      "heard_raw": "SOUND: laughter | COUNT: 1 | TURNS: 1\nSOUND: breathing | COUNT: 2 | TURNS: 1, 6",
+      "type": 0.0,
+      "count": 0.0,
+      "location": 0.0,
+      "reported": {
+        "laugh": {
+          "count": 1,
+          "turns": [
+            1
+          ]
+        },
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            6
+          ]
+        }
+      },
+      "false_alarm": true,
+      "mean": 0.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_018",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 4\nSOUND: breathing | COUNT: 1 | TURNS: 6",
+      "type": 1.0,
+      "count": 0.75,
+      "location": 0.28571428571428575,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6785714285714285
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_018",
+      "condition": "neutral",
+      "heard_raw": "NONE",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 1.0,
+      "reported": {},
+      "false_alarm": false,
+      "mean": 1.0
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_018",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 2, 4, 6, 8",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.5,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            2,
+            4,
+            6,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8333333333333334
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_002",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 2, 4, 6",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            4,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_002",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 1, 3\nSOUND: laughter | COUNT: 1 | TURNS: 5",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            1,
+            3,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_004",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 1, 3, 5\nSOUND: laughter | COUNT: 1 | TURNS: 2",
+      "type": 0.5,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            1,
+            3,
+            5
+          ]
+        },
+        "laugh": {
+          "count": 1,
+          "turns": [
+            2
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7222222222222222
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_005",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 2, 5, 7",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            5,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_006",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 2, 3, 5",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.6666666666666666,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            2,
+            3,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8888888888888888
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_005",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_008",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 2 | TURNS: 2, 4",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "laugh": {
+          "count": 2,
+          "turns": [
+            2,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_006",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 2, 6",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.4,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        2,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            2,
+            6
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.688888888888889
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_008",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 2 | TURNS: 1, 4\nSOUND: gasp | COUNT: 1 | TURNS: 3",
+      "type": 1.0,
+      "count": 0.6666666666666667,
+      "location": 0.8,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        5
+      ],
+      "reported": {
+        "sigh": {
+          "count": 2,
+          "turns": [
+            1,
+            4
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8222222222222223
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_019",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 3 | TURNS: 2, 4, 8",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        3,
+        6
+      ],
+      "reported": {
+        "laugh": {
+          "count": 3,
+          "turns": [
+            2,
+            4,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6666666666666666
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_011",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 2, 4, 7",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.3333333333333333,
+      "gold_count": 3,
+      "gold_turns": [
+        2,
+        5,
+        8
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            4,
+            7
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.7777777777777778
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_019",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 3 | TURNS: 2, 5, 8",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.0,
+      "gold_count": 3,
+      "gold_turns": [
+        1,
+        4,
+        6
+      ],
+      "reported": {
+        "sigh": {
+          "count": 3,
+          "turns": [
+            2,
+            5,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.6666666666666666
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_020",
+      "condition": "happy",
+      "heard_raw": "SOUND: laughter | COUNT: 4 | TURNS: 1, 2, 3, 5",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.5,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "reported": {
+        "laugh": {
+          "count": 4,
+          "turns": [
+            1,
+            2,
+            3,
+            5
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.8333333333333334
+    },
+    {
+      "provider": "qwen",
+      "item_id": "emb_020",
+      "condition": "sad",
+      "heard_raw": "SOUND: sigh | COUNT: 4 | TURNS: 1, 3, 7, 8",
+      "type": 1.0,
+      "count": 1.0,
+      "location": 0.75,
+      "gold_count": 4,
+      "gold_turns": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "reported": {
+        "sigh": {
+          "count": 4,
+          "turns": [
+            1,
+            3,
+            7,
+            8
+          ]
+        }
+      },
+      "false_alarm": false,
+      "mean": 0.9166666666666666
+    }
+  ]
+}

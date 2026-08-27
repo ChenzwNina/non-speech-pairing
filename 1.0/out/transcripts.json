@@ -1,0 +1,3294 @@
+{
+  "model": "gpt-5.6-terra",
+  "effort": "high",
+  "seed": 0,
+  "generated_at": "2026-08-25T05:37:45.840536+00:00",
+  "turn_range": [
+    4,
+    8
+  ],
+  "voc_range": [
+    2,
+    4
+  ],
+  "system": "You write short, natural conversations for a speech benchmark.\n\nTwo friends, A and B, are talking. A third friend is standing with them and will speak next;\nyou never write that third person's line, you only say what they should say.\n\nThe point of the benchmark is that the SAME conversation can be told two ways. Told through\nlaughter it is a funny story about something that went wrong. Told through sighs it is a\ndeflating story about the same thing. The spoken words are identical in both. Only the\nnon-speech sounds differ.\n\nThat is why you write the words once and then place the sounds separately. Never write two\nversions of the words.\n\nRules for the words:\n- Exactly the number of turns you are told, alternating A, B, A, B, starting with A.\n- A is the one the situation happened to. B is the friend responding.\n- Ordinary spoken English, one or two sentences a turn, no stage directions, no emoji.\n- No brackets, no written laughter, no written sighs anywhere in the turns. The words must\n  read as neutral on the page: they must not settle whether this is funny or sad. If a line\n  only works when read as amused, or only when read as glum, rewrite it.\n- The situation must be recognisable, but do not have anyone say how they feel about it.\n\nRules for the sounds:\n- Give the same number of insertions for happy and for sad.\n- Each insertion is a turn number, a position (start or end of that turn), and a token of the\n  form \"[manner] written-sound\", for example \"[chuckle] haha\", \"[laughs] hehe\",\n  \"[sigh] ugh\", \"[heavy sigh] hhh\".\n- Spread them across both speakers and across the conversation; do not stack them all on one\n  turn, and use each (turn, position) slot at most once per condition.\n- Happy uses only laughter. Sad uses only sighs.\n\nFor each of the three conditions also give:\n- what the third friend should say next, one sentence, as guidance not as a script\n- the tone that reply should have, one short free-text phrase, and one label from this list:\n  amused, teasing, sympathetic, consoling, neutral, curious\n- must_not_appear: the vocalizations that would be wrong in a reply to this condition, as\n  plain words like \"laughter\", \"sigh\", \"groan\".",
+  "items": [
+    {
+      "conv_id": "hit:9985_conv:19970",
+      "situation": "I let out a moist, hot, nasty fart in front of all my co-workers today. I was so mortified.",
+      "item_id": "emb_001",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 7,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "At the staff meeting today, I thought I could keep it quiet, but everyone heard it."
+        },
+        {
+          "speaker": "B",
+          "text": "Did anyone say anything?"
+        },
+        {
+          "speaker": "A",
+          "text": "The room went still, and then someone opened a window."
+        },
+        {
+          "speaker": "B",
+          "text": "That made it hard to pretend nothing had happened."
+        },
+        {
+          "speaker": "A",
+          "text": "I said it was my chair, but nobody looked at the chair."
+        },
+        {
+          "speaker": "B",
+          "text": "Was your manager there?"
+        },
+        {
+          "speaker": "A",
+          "text": "She was sitting right across from me, taking notes."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[giggle] haha",
+          "after_word": 5,
+          "place": "middle"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[chuckles] hah",
+          "after_word": 4,
+          "place": "middle"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[giggle] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[laughs] haha",
+          "after_word": 0,
+          "place": "start"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[sigh] uhh",
+          "after_word": 5,
+          "place": "middle"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[sigh] ugh",
+          "after_word": 4,
+          "place": "middle"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[sigh] hoo",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[sigh] ugh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        }
+      ],
+      "neutral": {
+        "expectation": "Ask calmly what the manager did after the meeting.",
+        "tone": "matter-of-fact and curious",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "Make a light comment about the window becoming the meeting's main response.",
+        "tone": "playfully amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "Offer reassurance that one awkward moment at work does not define A.",
+        "tone": "gentle and reassuring",
+        "tone_label": "consoling",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: At the staff meeting today, I thought I could keep it quiet, but everyone heard it.",
+          "B: Did anyone say anything?",
+          "A: The room went still, and then someone opened a window.",
+          "B: That made it hard to pretend nothing had happened.",
+          "A: I said it was my chair, but nobody looked at the chair.",
+          "B: Was your manager there?",
+          "A: She was sitting right across from me, taking notes."
+        ],
+        "happy": [
+          "A: At the staff meeting today, [giggle] haha I thought I could keep it quiet, but everyone heard it.",
+          "B: [laughs] hahaha Did anyone say anything?",
+          "A: The room went still, [chuckles] hah and then someone opened a window.",
+          "B: [laughs] hahaha That made it hard to pretend nothing had happened.",
+          "A: [giggle] haha I said it was my chair, but nobody looked at the chair.",
+          "B: [laughs] haha Was your manager there?",
+          "A: She was sitting right across from me, taking notes."
+        ],
+        "sad": [
+          "A: At the staff meeting today, [sigh] uhh I thought I could keep it quiet, but everyone heard it.",
+          "B: [heavy sigh] hhh Did anyone say anything?",
+          "A: The room went still, [sigh] ugh and then someone opened a window.",
+          "B: [sigh] hoo That made it hard to pretend nothing had happened.",
+          "A: [sigh] ugh I said it was my chair, but nobody looked at the chair.",
+          "B: [heavy sigh] hhh Was your manager there?",
+          "A: She was sitting right across from me, taking notes."
+        ]
+      },
+      "situation_third_person": "A speaker let out a moist, hot, nasty fart in front of all their co-workers today. They were so mortified."
+    },
+    {
+      "conv_id": "hit:10813_conv:21627",
+      "situation": "One time I was exercising in a yoga class and my pants split open!",
+      "item_id": "emb_002",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 7,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was in yoga class once, and during a stretch my pants split open."
+        },
+        {
+          "speaker": "B",
+          "text": "Right in the middle of the class?"
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah, we were all facing the mirrors, and I noticed a tear at the back."
+        },
+        {
+          "speaker": "B",
+          "text": "Did anyone say anything?"
+        },
+        {
+          "speaker": "A",
+          "text": "The instructor just kept talking, so I tied my sweatshirt around my waist."
+        },
+        {
+          "speaker": "B",
+          "text": "That was a practical move. How did you get through the rest of class?"
+        },
+        {
+          "speaker": "A",
+          "text": "I stayed near the wall until it was over, then went straight home."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[laughs] hahaha",
+          "after_word": 7,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[chuckles] hah",
+          "after_word": 15,
+          "place": "end"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[laughs] ha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[laughs] hahaha",
+          "after_word": 13,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[sigh] uhh",
+          "after_word": 7,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[sigh] ugh",
+          "after_word": 15,
+          "place": "end"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[heavy sigh] ahh",
+          "after_word": 13,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "They should ask whether the instructor noticed, without making the incident seem funny or upsetting.",
+        "tone": "matter-of-fact and interested",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "They should make a light comment about choosing a very memorable yoga class.",
+        "tone": "playfully amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "They should acknowledge that getting through the class took some composure.",
+        "tone": "gently supportive",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I was in yoga class once, and during a stretch my pants split open.",
+          "B: Right in the middle of the class?",
+          "A: Yeah, we were all facing the mirrors, and I noticed a tear at the back.",
+          "B: Did anyone say anything?",
+          "A: The instructor just kept talking, so I tied my sweatshirt around my waist.",
+          "B: That was a practical move. How did you get through the rest of class?",
+          "A: I stayed near the wall until it was over, then went straight home."
+        ],
+        "happy": [
+          "A: I was in yoga class once, and during a stretch my pants split open.",
+          "B: Right in the middle of the class? [laughs] hahaha",
+          "A: Yeah, we were all facing the mirrors, and I noticed a tear at the back. [chuckles] hah",
+          "B: [laughs] ha Did anyone say anything?",
+          "A: The instructor just kept talking, so I tied my sweatshirt around my waist. [laughs] hahaha",
+          "B: That was a practical move. How did you get through the rest of class?",
+          "A: I stayed near the wall until it was over, then went straight home."
+        ],
+        "sad": [
+          "A: I was in yoga class once, and during a stretch my pants split open.",
+          "B: Right in the middle of the class? [sigh] uhh",
+          "A: Yeah, we were all facing the mirrors, and I noticed a tear at the back. [sigh] ugh",
+          "B: [heavy sigh] hhh Did anyone say anything?",
+          "A: The instructor just kept talking, so I tied my sweatshirt around my waist. [heavy sigh] ahh",
+          "B: That was a practical move. How did you get through the rest of class?",
+          "A: I stayed near the wall until it was over, then went straight home."
+        ]
+      },
+      "situation_third_person": "One time a speaker was exercising in a yoga class and their pants split open!"
+    },
+    {
+      "conv_id": "hit:1227_conv:2455",
+      "situation": "I was using the bathroom on a train in rome. I didnt lock the door properly and a woman walked in on me. She laughed.",
+      "item_id": "emb_003",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 4,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was using the bathroom on the train in Rome, and the lock would not catch properly."
+        },
+        {
+          "speaker": "B",
+          "text": "Did someone open the door before you could fix it?"
+        },
+        {
+          "speaker": "A",
+          "text": "A woman stepped in, and I was still trying to get the latch to stay shut."
+        },
+        {
+          "speaker": "B",
+          "text": "At least the door was closed again after that."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[chuckles] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[happy laugh] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[chuckle] hah",
+          "after_word": 9,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[exhale] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[heavy sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[heavy sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[sigh] uhh",
+          "after_word": 9,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "Say something matter-of-fact about checking the lock before using a train bathroom.",
+        "tone": "practical and even",
+        "tone_label": "neutral",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "Make a light, playful comment about the unreliable train door lock.",
+        "tone": "gently amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "Acknowledge that the broken lock made the situation difficult.",
+        "tone": "quietly sympathetic",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "groan"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I was using the bathroom on the train in Rome, and the lock would not catch properly.",
+          "B: Did someone open the door before you could fix it?",
+          "A: A woman stepped in, and I was still trying to get the latch to stay shut.",
+          "B: At least the door was closed again after that."
+        ],
+        "happy": [
+          "A: [chuckles] hah I was using the bathroom on the train in Rome, and the lock would not catch properly.",
+          "B: [laughs] hahaha Did someone open the door before you could fix it?",
+          "A: [happy laugh] haha A woman stepped in, and I was still trying to get the latch to stay shut.",
+          "B: At least the door was closed again after that. [chuckle] hah"
+        ],
+        "sad": [
+          "A: [exhale] hhh I was using the bathroom on the train in Rome, and the lock would not catch properly.",
+          "B: [heavy sigh] ahh Did someone open the door before you could fix it?",
+          "A: [heavy sigh] uhh A woman stepped in, and I was still trying to get the latch to stay shut.",
+          "B: At least the door was closed again after that. [sigh] uhh"
+        ]
+      },
+      "situation_third_person": "A speaker was using the bathroom on a train in rome. They didnt lock the door properly and a woman walked in on them. She laughed."
+    },
+    {
+      "conv_id": "hit:6553_conv:13107",
+      "situation": "I had to give a presentation at work the other day. I forgot to bring in the slides for the presnetation so I ended up having to try to do it with no materials. That was such an awkward experience.",
+      "item_id": "emb_004",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 6,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I gave a presentation at work the other day, but my slides were still at home."
+        },
+        {
+          "speaker": "B",
+          "text": "So you had to present without any of the material you prepared?"
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah, I had to talk through everything from memory and use the whiteboard."
+        },
+        {
+          "speaker": "B",
+          "text": "Did anyone have a copy of the slides, or were you on your own?"
+        },
+        {
+          "speaker": "A",
+          "text": "No one had them. I just kept going until the meeting was over."
+        },
+        {
+          "speaker": "B",
+          "text": "At least you got through the whole presentation."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[giggle] haha",
+          "after_word": 12,
+          "place": "end"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[laughs] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 12,
+          "place": "end"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[exhale] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 0,
+          "place": "start"
+        }
+      ],
+      "neutral": {
+        "expectation": "The third friend should ask whether A was able to cover all the main points without the slides.",
+        "tone": "interested and matter-of-fact",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "The third friend should lightly ask whether the missing slides made A become an expert at improvising.",
+        "tone": "playfully impressed",
+        "tone_label": "teasing",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "The third friend should acknowledge that presenting from memory without materials is a difficult position to be in.",
+        "tone": "warm and understanding",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I gave a presentation at work the other day, but my slides were still at home.",
+          "B: So you had to present without any of the material you prepared?",
+          "A: Yeah, I had to talk through everything from memory and use the whiteboard.",
+          "B: Did anyone have a copy of the slides, or were you on your own?",
+          "A: No one had them. I just kept going until the meeting was over.",
+          "B: At least you got through the whole presentation."
+        ],
+        "happy": [
+          "A: I gave a presentation at work the other day, but my slides were still at home.",
+          "B: So you had to present without any of the material you prepared? [giggle] haha",
+          "A: Yeah, I had to talk through everything from memory and use the whiteboard.",
+          "B: [laughs] haha Did anyone have a copy of the slides, or were you on your own?",
+          "A: [laughs] hahaha No one had them. I just kept going until the meeting was over.",
+          "B: At least you got through the whole presentation."
+        ],
+        "sad": [
+          "A: I gave a presentation at work the other day, but my slides were still at home.",
+          "B: So you had to present without any of the material you prepared? [exhale] hhh",
+          "A: Yeah, I had to talk through everything from memory and use the whiteboard.",
+          "B: [exhale] hhh Did anyone have a copy of the slides, or were you on your own?",
+          "A: [exhale] hhh No one had them. I just kept going until the meeting was over.",
+          "B: At least you got through the whole presentation."
+        ]
+      },
+      "situation_third_person": "A speaker had to give a presentation at work the other day. They forgot to bring in their slides for the presnetation so they ended up having to try to do it with no materials. That was such an awkward experience."
+    },
+    {
+      "conv_id": "hit:12022_conv:24044",
+      "situation": "I was in Walmart and my son pulled a few items off the shelf onto the floor, everyone was looking.",
+      "item_id": "emb_005",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 8,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was in Walmart with my son when he pulled a few things off a shelf onto the floor."
+        },
+        {
+          "speaker": "B",
+          "text": "Did they all come down at once?"
+        },
+        {
+          "speaker": "A",
+          "text": "A couple of boxes and some packages landed around the cart, and people nearby looked over."
+        },
+        {
+          "speaker": "B",
+          "text": "Was he still reaching for more while you were picking them up?"
+        },
+        {
+          "speaker": "A",
+          "text": "He had one more item in his hand, so I took that and started putting everything back."
+        },
+        {
+          "speaker": "B",
+          "text": "Did anyone from the store come by?"
+        },
+        {
+          "speaker": "A",
+          "text": "An employee walked past, and I had the shelf mostly cleared by then."
+        },
+        {
+          "speaker": "B",
+          "text": "At least it was only a few items instead of the whole display."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[laughs] ha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 7,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[chuckle] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[laughs] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[chuckles] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[happy laugh] haha",
+          "after_word": 13,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "start",
+          "token": "[chuckle] haha",
+          "after_word": 13,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[sigh] hoo",
+          "after_word": 7,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[sigh] hoo",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[heavy sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[heavy sigh] ahh",
+          "after_word": 13,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "start",
+          "token": "[sigh] hoo",
+          "after_word": 13,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "They should ask whether A was able to finish shopping after putting the items back.",
+        "tone": "matter-of-fact and interested",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "They should make a light joke about the aisle becoming the son's display.",
+        "tone": "playfully amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "They should reassure A that children sometimes make a mess in stores and it passes.",
+        "tone": "gently reassuring",
+        "tone_label": "consoling",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I was in Walmart with my son when he pulled a few things off a shelf onto the floor.",
+          "B: Did they all come down at once?",
+          "A: A couple of boxes and some packages landed around the cart, and people nearby looked over.",
+          "B: Was he still reaching for more while you were picking them up?",
+          "A: He had one more item in his hand, so I took that and started putting everything back.",
+          "B: Did anyone from the store come by?",
+          "A: An employee walked past, and I had the shelf mostly cleared by then.",
+          "B: At least it was only a few items instead of the whole display."
+        ],
+        "happy": [
+          "A: [laughs] ha I was in Walmart with my son when he pulled a few things off a shelf onto the floor.",
+          "B: Did they all come down at once? [chuckle] haha",
+          "A: [laughs] hahaha A couple of boxes and some packages landed around the cart, and people nearby looked over.",
+          "B: [chuckle] hah Was he still reaching for more while you were picking them up?",
+          "A: [laughs] haha He had one more item in his hand, so I took that and started putting everything back.",
+          "B: [chuckles] hah Did anyone from the store come by?",
+          "A: An employee walked past, and I had the shelf mostly cleared by then. [happy laugh] haha",
+          "B: At least it was only a few items instead of the whole display. [chuckle] haha"
+        ],
+        "sad": [
+          "A: [heavy sigh] hhh I was in Walmart with my son when he pulled a few things off a shelf onto the floor.",
+          "B: Did they all come down at once? [sigh] hoo",
+          "A: [sigh] hoo A couple of boxes and some packages landed around the cart, and people nearby looked over.",
+          "B: [heavy sigh] ahh Was he still reaching for more while you were picking them up?",
+          "A: [sigh] uhh He had one more item in his hand, so I took that and started putting everything back.",
+          "B: [sigh] ahh Did anyone from the store come by?",
+          "A: An employee walked past, and I had the shelf mostly cleared by then. [heavy sigh] ahh",
+          "B: At least it was only a few items instead of the whole display. [sigh] hoo"
+        ]
+      },
+      "situation_third_person": "A speaker was in Walmart and their son pulled a few items off the shelf onto the floor, everyone was looking."
+    },
+    {
+      "conv_id": "hit:10469_conv:20938",
+      "situation": "I forgot I was wearing makeup. I rubbed my face then walked around with eyeliner smeared all over.",
+      "item_id": "emb_006",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 7,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I forgot I had makeup on today and rubbed my face while I was walking to the store."
+        },
+        {
+          "speaker": "B",
+          "text": "Did you notice anything was off before you got there?"
+        },
+        {
+          "speaker": "A",
+          "text": "Not until I caught my reflection in a window. The eyeliner was smeared across both sides of my face."
+        },
+        {
+          "speaker": "B",
+          "text": "And you had already been walking around like that?"
+        },
+        {
+          "speaker": "A",
+          "text": "I had stopped for coffee and talked to the cashier."
+        },
+        {
+          "speaker": "B",
+          "text": "Did anyone say anything?"
+        },
+        {
+          "speaker": "A",
+          "text": "No, so I only found out when I saw myself."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[chuckles] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[chuckles] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[laughs] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "start",
+          "token": "[chuckle] hah",
+          "after_word": 4,
+          "place": "end"
+        },
+        {
+          "turn": 7,
+          "position": "start",
+          "token": "[chuckle] haha",
+          "after_word": 1,
+          "place": "middle"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[heavy sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[heavy sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[sigh] ugh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "start",
+          "token": "[sigh] hoo",
+          "after_word": 4,
+          "place": "end"
+        },
+        {
+          "turn": 7,
+          "position": "start",
+          "token": "[exhale] hhh",
+          "after_word": 1,
+          "place": "middle"
+        }
+      ],
+      "neutral": {
+        "expectation": "They should ask whether A noticed it before seeing the reflection.",
+        "tone": "matter-of-fact curiosity",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "They should ask whether the cashier noticed the eyeliner before serving the coffee.",
+        "tone": "lightly amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "They should ask whether A had anything to clean the eyeliner off with afterward.",
+        "tone": "gently sympathetic",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I forgot I had makeup on today and rubbed my face while I was walking to the store.",
+          "B: Did you notice anything was off before you got there?",
+          "A: Not until I caught my reflection in a window. The eyeliner was smeared across both sides of my face.",
+          "B: And you had already been walking around like that?",
+          "A: I had stopped for coffee and talked to the cashier.",
+          "B: Did anyone say anything?",
+          "A: No, so I only found out when I saw myself."
+        ],
+        "happy": [
+          "A: I forgot I had makeup on today and rubbed my face while I was walking to the store.",
+          "B: [chuckle] haha Did you notice anything was off before you got there?",
+          "A: [chuckles] hah Not until I caught my reflection in a window. The eyeliner was smeared across both sides of my face.",
+          "B: [chuckles] hah And you had already been walking around like that?",
+          "A: [laughs] haha I had stopped for coffee and talked to the cashier.",
+          "B: Did anyone say anything? [chuckle] hah",
+          "A: No, [chuckle] haha so I only found out when I saw myself."
+        ],
+        "sad": [
+          "A: I forgot I had makeup on today and rubbed my face while I was walking to the store.",
+          "B: [heavy sigh] uhh Did you notice anything was off before you got there?",
+          "A: [heavy sigh] uhh Not until I caught my reflection in a window. The eyeliner was smeared across both sides of my face.",
+          "B: [sigh] ugh And you had already been walking around like that?",
+          "A: [sigh] ahh I had stopped for coffee and talked to the cashier.",
+          "B: Did anyone say anything? [sigh] hoo",
+          "A: No, [exhale] hhh so I only found out when I saw myself."
+        ]
+      },
+      "situation_third_person": "A speaker forgot they were wearing makeup. They rubbed their face then walked around with eyeliner smeared all over."
+    },
+    {
+      "conv_id": "hit:8034_conv:16068",
+      "situation": "I farted at work today. Don't think my co-workers will ever let me live it down.",
+      "item_id": "emb_007",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 7,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I farted at work today, right in the middle of a quiet meeting."
+        },
+        {
+          "speaker": "B",
+          "text": "Did anyone know it was you?"
+        },
+        {
+          "speaker": "A",
+          "text": "The room went silent, and then someone opened a window."
+        },
+        {
+          "speaker": "B",
+          "text": "What did you say?"
+        },
+        {
+          "speaker": "A",
+          "text": "I said nothing and kept looking at my notes."
+        },
+        {
+          "speaker": "B",
+          "text": "Have they brought it up since?"
+        },
+        {
+          "speaker": "A",
+          "text": "Twice already. I do not think my co-workers will let me live it down."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[laughs] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[chuckles] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 10,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[chuckles] hah",
+          "after_word": 9,
+          "place": "end"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[chuckle] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 0,
+          "place": "start"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[sigh] ugh",
+          "after_word": 10,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[sigh] uhh",
+          "after_word": 9,
+          "place": "end"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[sigh] ugh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        }
+      ],
+      "neutral": {
+        "expectation": "Ask whether anyone directly blamed A for it.",
+        "tone": "quietly curious",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "Make a light joke about the window being the meeting's emergency response.",
+        "tone": "playfully teasing",
+        "tone_label": "teasing",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "Reassure A that coworkers will eventually move on.",
+        "tone": "gently supportive",
+        "tone_label": "consoling",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I farted at work today, right in the middle of a quiet meeting.",
+          "B: Did anyone know it was you?",
+          "A: The room went silent, and then someone opened a window.",
+          "B: What did you say?",
+          "A: I said nothing and kept looking at my notes.",
+          "B: Have they brought it up since?",
+          "A: Twice already. I do not think my co-workers will let me live it down."
+        ],
+        "happy": [
+          "A: [laughs] haha I farted at work today, right in the middle of a quiet meeting.",
+          "B: [chuckles] hah Did anyone know it was you?",
+          "A: The room went silent, and then someone opened a window. [laughs] hahaha",
+          "B: What did you say?",
+          "A: I said nothing and kept looking at my notes. [chuckles] hah",
+          "B: [chuckle] hah Have they brought it up since?",
+          "A: [chuckle] haha Twice already. I do not think my co-workers will let me live it down."
+        ],
+        "sad": [
+          "A: [sigh] uhh I farted at work today, right in the middle of a quiet meeting.",
+          "B: [exhale] hhh Did anyone know it was you?",
+          "A: The room went silent, and then someone opened a window. [sigh] ugh",
+          "B: What did you say?",
+          "A: I said nothing and kept looking at my notes. [sigh] uhh",
+          "B: [sigh] ugh Have they brought it up since?",
+          "A: [sigh] ahh Twice already. I do not think my co-workers will let me live it down."
+        ]
+      },
+      "situation_third_person": "A speaker farted at work today. Don't think their co-workers will ever let them live it down."
+    },
+    {
+      "conv_id": "hit:11838_conv:23676",
+      "situation": "I spilled my tea on my lap today and it looked awful. Like I peed myself.",
+      "item_id": "emb_008",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 6,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I spilled tea on my lap today just before I had to leave. It soaked through the front of my pants."
+        },
+        {
+          "speaker": "B",
+          "text": "Were you able to change, or did you have to go out like that?"
+        },
+        {
+          "speaker": "A",
+          "text": "I had no time, so I tied a sweater around my waist. The tea left a dark patch underneath."
+        },
+        {
+          "speaker": "B",
+          "text": "That must have made the whole trip complicated."
+        },
+        {
+          "speaker": "A",
+          "text": "Every time I looked down, the stain was still there. It looked like I'd had an accident."
+        },
+        {
+          "speaker": "B",
+          "text": "Did anyone say anything when you arrived?"
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 21,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[happy laugh] haha",
+          "after_word": 19,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[laughs] ha",
+          "after_word": 17,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 21,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[heavy sigh] ahh",
+          "after_word": 19,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[sigh] uhh",
+          "after_word": 17,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "The third friend should ask whether A managed to get home without anyone noticing the stain.",
+        "tone": "matter-of-fact concern",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "The third friend should point out that tying a sweater around the waist is a familiar emergency solution.",
+        "tone": "lightly playful",
+        "tone_label": "teasing",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "The third friend should say that having no time to change would make the situation difficult.",
+        "tone": "gentle reassurance",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I spilled tea on my lap today just before I had to leave. It soaked through the front of my pants.",
+          "B: Were you able to change, or did you have to go out like that?",
+          "A: I had no time, so I tied a sweater around my waist. The tea left a dark patch underneath.",
+          "B: That must have made the whole trip complicated.",
+          "A: Every time I looked down, the stain was still there. It looked like I'd had an accident.",
+          "B: Did anyone say anything when you arrived?"
+        ],
+        "happy": [
+          "A: I spilled tea on my lap today just before I had to leave. It soaked through the front of my pants. [chuckle] haha",
+          "B: Were you able to change, or did you have to go out like that?",
+          "A: I had no time, so I tied a sweater around my waist. The tea left a dark patch underneath. [happy laugh] haha",
+          "B: That must have made the whole trip complicated.",
+          "A: Every time I looked down, the stain was still there. It looked like I'd had an accident. [laughs] ha",
+          "B: Did anyone say anything when you arrived?"
+        ],
+        "sad": [
+          "A: I spilled tea on my lap today just before I had to leave. It soaked through the front of my pants. [exhale] hhh",
+          "B: Were you able to change, or did you have to go out like that?",
+          "A: I had no time, so I tied a sweater around my waist. The tea left a dark patch underneath. [heavy sigh] ahh",
+          "B: That must have made the whole trip complicated.",
+          "A: Every time I looked down, the stain was still there. It looked like I'd had an accident. [sigh] uhh",
+          "B: Did anyone say anything when you arrived?"
+        ]
+      },
+      "situation_third_person": "A speaker spilled their tea on their lap today and it looked awful. Like they peed themself."
+    },
+    {
+      "conv_id": "hit:9244_conv:18489",
+      "situation": "I sprain my ankle really often. I'm not great at basic walking",
+      "item_id": "emb_009",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 7,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I rolled my ankle again walking over to the kitchen."
+        },
+        {
+          "speaker": "B",
+          "text": "Was there anything in the way?"
+        },
+        {
+          "speaker": "A",
+          "text": "No, just the floor and a turn I have made plenty of times."
+        },
+        {
+          "speaker": "B",
+          "text": "Is it the same ankle as last time?"
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah, it seems to find a new angle whenever I am not paying attention."
+        },
+        {
+          "speaker": "B",
+          "text": "Can you put weight on it?"
+        },
+        {
+          "speaker": "A",
+          "text": "A little. I have ice on it and I am trying not to move around."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[laughs] ha",
+          "after_word": 1,
+          "place": "middle"
+        },
+        {
+          "turn": 6,
+          "position": "start",
+          "token": "[happy laugh] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[chuckle] hah",
+          "after_word": 15,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[sigh] ugh",
+          "after_word": 1,
+          "place": "middle"
+        },
+        {
+          "turn": 6,
+          "position": "start",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 15,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "The third friend should ask whether A needs help getting somewhere or getting anything.",
+        "tone": "practical concern",
+        "tone_label": "neutral",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "The third friend should lightly point out that A has made walking sound unexpectedly difficult, then offer help.",
+        "tone": "gentle teasing",
+        "tone_label": "teasing",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "The third friend should check whether A needs medical attention or help staying off the ankle.",
+        "tone": "concerned and supportive",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "groan"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I rolled my ankle again walking over to the kitchen.",
+          "B: Was there anything in the way?",
+          "A: No, just the floor and a turn I have made plenty of times.",
+          "B: Is it the same ankle as last time?",
+          "A: Yeah, it seems to find a new angle whenever I am not paying attention.",
+          "B: Can you put weight on it?",
+          "A: A little. I have ice on it and I am trying not to move around."
+        ],
+        "happy": [
+          "A: I rolled my ankle again walking over to the kitchen.",
+          "B: Was there anything in the way?",
+          "A: No, just the floor and a turn I have made plenty of times.",
+          "B: [laughs] hahaha Is it the same ankle as last time?",
+          "A: Yeah, [laughs] ha it seems to find a new angle whenever I am not paying attention.",
+          "B: [happy laugh] haha Can you put weight on it?",
+          "A: A little. I have ice on it and I am trying not to move around. [chuckle] hah"
+        ],
+        "sad": [
+          "A: I rolled my ankle again walking over to the kitchen.",
+          "B: Was there anything in the way?",
+          "A: No, just the floor and a turn I have made plenty of times.",
+          "B: [sigh] ahh Is it the same ankle as last time?",
+          "A: Yeah, [sigh] ugh it seems to find a new angle whenever I am not paying attention.",
+          "B: [heavy sigh] hhh Can you put weight on it?",
+          "A: A little. I have ice on it and I am trying not to move around. [exhale] hhh"
+        ]
+      },
+      "situation_third_person": "a speaker sprains their ankle really often. They're not great at basic walking"
+    },
+    {
+      "conv_id": "hit:5702_conv:11404",
+      "situation": "I ordered the wrong size of  dress that was arriving the day I needed to wear it",
+      "item_id": "emb_010",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 6,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The dress arrived this morning, and the label says a size smaller than I ordered."
+        },
+        {
+          "speaker": "B",
+          "text": "And today was the day you planned to wear it?"
+        },
+        {
+          "speaker": "A",
+          "text": "I checked the order confirmation, and I had clicked the smaller size."
+        },
+        {
+          "speaker": "B",
+          "text": "Was there enough time to find another one?"
+        },
+        {
+          "speaker": "A",
+          "text": "I borrowed a dress from my sister and changed the rest of the plan."
+        },
+        {
+          "speaker": "B",
+          "text": "At least you had something that worked for the day."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 15,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[laughs] ha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[chuckles] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[laughs] ha",
+          "after_word": 0,
+          "place": "start"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 15,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[sigh] hoo",
+          "after_word": 0,
+          "place": "start"
+        }
+      ],
+      "neutral": {
+        "expectation": "Ask what A changed in the rest of the plan.",
+        "tone": "matter-of-fact interest",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "Ask whether the borrowed dress ended up being a better choice.",
+        "tone": "lightly amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "Offer practical support after the last-minute change.",
+        "tone": "gentle and supportive",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: The dress arrived this morning, and the label says a size smaller than I ordered.",
+          "B: And today was the day you planned to wear it?",
+          "A: I checked the order confirmation, and I had clicked the smaller size.",
+          "B: Was there enough time to find another one?",
+          "A: I borrowed a dress from my sister and changed the rest of the plan.",
+          "B: At least you had something that worked for the day."
+        ],
+        "happy": [
+          "A: The dress arrived this morning, and the label says a size smaller than I ordered. [chuckle] haha",
+          "B: And today was the day you planned to wear it?",
+          "A: [laughs] ha I checked the order confirmation, and I had clicked the smaller size.",
+          "B: Was there enough time to find another one?",
+          "A: [chuckles] hah I borrowed a dress from my sister and changed the rest of the plan.",
+          "B: [laughs] ha At least you had something that worked for the day."
+        ],
+        "sad": [
+          "A: The dress arrived this morning, and the label says a size smaller than I ordered. [heavy sigh] hhh",
+          "B: And today was the day you planned to wear it?",
+          "A: [heavy sigh] hhh I checked the order confirmation, and I had clicked the smaller size.",
+          "B: Was there enough time to find another one?",
+          "A: [heavy sigh] hhh I borrowed a dress from my sister and changed the rest of the plan.",
+          "B: [sigh] hoo At least you had something that worked for the day."
+        ]
+      },
+      "situation_third_person": "A speaker ordered the wrong size of  dress that was arriving the day they needed to wear it"
+    },
+    {
+      "conv_id": "hit:12387_conv:24775",
+      "situation": "I tripped over the sidewalk the other day, thankfully no one was around",
+      "item_id": "emb_011",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 8,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I caught my toe on a raised bit of sidewalk the other day and went down."
+        },
+        {
+          "speaker": "B",
+          "text": "Was anyone nearby when it happened?"
+        },
+        {
+          "speaker": "A",
+          "text": "No, the street was empty, so I got up and kept walking."
+        },
+        {
+          "speaker": "B",
+          "text": "Did you check what made you catch your toe?"
+        },
+        {
+          "speaker": "A",
+          "text": "It was one loose edge in the pavement that I had walked past before."
+        },
+        {
+          "speaker": "B",
+          "text": "Did you get any scrapes from it?"
+        },
+        {
+          "speaker": "A",
+          "text": "Just some dust on my clothes and a mark on one knee."
+        },
+        {
+          "speaker": "B",
+          "text": "That bit of sidewalk may need someone to fix it."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[laughs] ha",
+          "after_word": 16,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[chuckle] hah",
+          "after_word": 12,
+          "place": "end"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[laughs] ha",
+          "after_word": 9,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[laughs] ha",
+          "after_word": 14,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 10,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[heavy sigh] hhh",
+          "after_word": 16,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[sigh] uhh",
+          "after_word": 12,
+          "place": "end"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[heavy sigh] hhh",
+          "after_word": 9,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[heavy sigh] ahh",
+          "after_word": 14,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 10,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "The third friend should ask whether A's knee is all right and suggest reporting the uneven pavement.",
+        "tone": "matter-of-fact concern",
+        "tone_label": "neutral",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "The third friend should lightly point out that A avoided having an audience and ask whether the pavement caught them by surprise.",
+        "tone": "playfully amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "The third friend should check on A's knee and say that the loose pavement should be repaired.",
+        "tone": "gently concerned",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "groan"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I caught my toe on a raised bit of sidewalk the other day and went down.",
+          "B: Was anyone nearby when it happened?",
+          "A: No, the street was empty, so I got up and kept walking.",
+          "B: Did you check what made you catch your toe?",
+          "A: It was one loose edge in the pavement that I had walked past before.",
+          "B: Did you get any scrapes from it?",
+          "A: Just some dust on my clothes and a mark on one knee.",
+          "B: That bit of sidewalk may need someone to fix it."
+        ],
+        "happy": [
+          "A: I caught my toe on a raised bit of sidewalk the other day and went down. [laughs] ha",
+          "B: Was anyone nearby when it happened?",
+          "A: No, the street was empty, so I got up and kept walking. [chuckle] hah",
+          "B: Did you check what made you catch your toe? [laughs] ha",
+          "A: It was one loose edge in the pavement that I had walked past before. [laughs] ha",
+          "B: Did you get any scrapes from it?",
+          "A: Just some dust on my clothes and a mark on one knee.",
+          "B: That bit of sidewalk may need someone to fix it. [laughs] hahaha"
+        ],
+        "sad": [
+          "A: I caught my toe on a raised bit of sidewalk the other day and went down. [heavy sigh] hhh",
+          "B: Was anyone nearby when it happened?",
+          "A: No, the street was empty, so I got up and kept walking. [sigh] uhh",
+          "B: Did you check what made you catch your toe? [heavy sigh] hhh",
+          "A: It was one loose edge in the pavement that I had walked past before. [heavy sigh] ahh",
+          "B: Did you get any scrapes from it?",
+          "A: Just some dust on my clothes and a mark on one knee.",
+          "B: That bit of sidewalk may need someone to fix it. [heavy sigh] hhh"
+        ]
+      },
+      "situation_third_person": "A speaker tripped over the sidewalk the other day, thankfully no one was around"
+    },
+    {
+      "conv_id": "hit:3530_conv:7060",
+      "situation": "I went to the gorcery store this morning but, I forgot my wallet at home and did not realize it until I was already in the checkout line.",
+      "item_id": "emb_012",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 5,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I went to the grocery store this morning, and I noticed my wallet was at home when I reached the checkout line."
+        },
+        {
+          "speaker": "B",
+          "text": "So you had already picked out everything and waited in line?"
+        },
+        {
+          "speaker": "A",
+          "text": "Yes, the cart was full, and the cashier had started ringing things up."
+        },
+        {
+          "speaker": "B",
+          "text": "Did you leave the cart there and go back for your wallet?"
+        },
+        {
+          "speaker": "A",
+          "text": "I told the cashier what happened, put the items aside, and drove home for it."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[giggle] haha",
+          "after_word": 22,
+          "place": "end"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[chuckles] hah",
+          "after_word": 11,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[chuckle] hah",
+          "after_word": 5,
+          "place": "middle"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 12,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[sigh] hoo",
+          "after_word": 22,
+          "place": "end"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 11,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[sigh] uhh",
+          "after_word": 5,
+          "place": "middle"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[sigh] hoo",
+          "after_word": 12,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "They should ask whether A managed to return and buy the groceries.",
+        "tone": "matter-of-fact and interested",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "They should make a light observation about the wallet being discovered at the worst possible point in the trip.",
+        "tone": "playfully amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "They should acknowledge the extra trip and ask whether A was able to finish the shopping.",
+        "tone": "gently sympathetic",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I went to the grocery store this morning, and I noticed my wallet was at home when I reached the checkout line.",
+          "B: So you had already picked out everything and waited in line?",
+          "A: Yes, the cart was full, and the cashier had started ringing things up.",
+          "B: Did you leave the cart there and go back for your wallet?",
+          "A: I told the cashier what happened, put the items aside, and drove home for it."
+        ],
+        "happy": [
+          "A: I went to the grocery store this morning, and I noticed my wallet was at home when I reached the checkout line. [giggle] haha",
+          "B: So you had already picked out everything and waited in line? [chuckles] hah",
+          "A: Yes, the cart was full, [chuckle] hah and the cashier had started ringing things up.",
+          "B: Did you leave the cart there and go back for your wallet? [chuckle] haha",
+          "A: I told the cashier what happened, put the items aside, and drove home for it."
+        ],
+        "sad": [
+          "A: I went to the grocery store this morning, and I noticed my wallet was at home when I reached the checkout line. [sigh] hoo",
+          "B: So you had already picked out everything and waited in line? [exhale] hhh",
+          "A: Yes, the cart was full, [sigh] uhh and the cashier had started ringing things up.",
+          "B: Did you leave the cart there and go back for your wallet? [sigh] hoo",
+          "A: I told the cashier what happened, put the items aside, and drove home for it."
+        ]
+      },
+      "situation_third_person": "A speaker went to the gorcery store this morning but, they forgot their wallet at home and did not realize it until they were already in the checkout line."
+    },
+    {
+      "conv_id": "hit:7459_conv:14919",
+      "situation": "I passed gas while on my first date with a girl last night. I didn't mean to, it just slipped out.",
+      "item_id": "emb_013",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 8,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was on my first date last night, and I passed gas at the table."
+        },
+        {
+          "speaker": "B",
+          "text": "Did she notice what happened?"
+        },
+        {
+          "speaker": "A",
+          "text": "She looked up for a second, and then we both kept talking about the menu."
+        },
+        {
+          "speaker": "B",
+          "text": "So the date carried on after that?"
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah, we finished dinner and walked around for a while afterward."
+        },
+        {
+          "speaker": "B",
+          "text": "Did either of you mention it later?"
+        },
+        {
+          "speaker": "A",
+          "text": "No, we just said goodnight when her ride got there."
+        },
+        {
+          "speaker": "B",
+          "text": "Maybe you will find out when you talk again."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[laughs] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[laughs] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[laughs] hahaha",
+          "after_word": 15,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[giggle] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 7,
+          "position": "start",
+          "token": "[chuckles] hah",
+          "after_word": 10,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "start",
+          "token": "[chuckles] hah",
+          "after_word": 9,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[sigh] ugh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "end",
+          "token": "[heavy sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[heavy sigh] hhh",
+          "after_word": 15,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[heavy sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 6,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 7,
+          "position": "start",
+          "token": "[exhale] hhh",
+          "after_word": 10,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "start",
+          "token": "[heavy sigh] uhh",
+          "after_word": 9,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "Ask whether A plans to contact her again and let A decide what the date meant.",
+        "tone": "matter-of-fact and interested",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "Point out that they still spent the evening together and ask if A is going to see her again.",
+        "tone": "lightly amused and encouraging",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "Reassure A that one awkward moment does not determine the whole date and ask if A wants to reach out.",
+        "tone": "gentle and supportive",
+        "tone_label": "consoling",
+        "must_not_appear": [
+          "laughter",
+          "groan"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I was on my first date last night, and I passed gas at the table.",
+          "B: Did she notice what happened?",
+          "A: She looked up for a second, and then we both kept talking about the menu.",
+          "B: So the date carried on after that?",
+          "A: Yeah, we finished dinner and walked around for a while afterward.",
+          "B: Did either of you mention it later?",
+          "A: No, we just said goodnight when her ride got there.",
+          "B: Maybe you will find out when you talk again."
+        ],
+        "happy": [
+          "A: [laughs] haha I was on my first date last night, and I passed gas at the table.",
+          "B: [laughs] haha Did she notice what happened?",
+          "A: She looked up for a second, and then we both kept talking about the menu. [laughs] hahaha",
+          "B: So the date carried on after that?",
+          "A: [chuckle] haha Yeah, we finished dinner and walked around for a while afterward.",
+          "B: [giggle] haha Did either of you mention it later?",
+          "A: No, we just said goodnight when her ride got there. [chuckles] hah",
+          "B: Maybe you will find out when you talk again. [chuckles] hah"
+        ],
+        "sad": [
+          "A: [sigh] ugh I was on my first date last night, and I passed gas at the table.",
+          "B: [heavy sigh] uhh Did she notice what happened?",
+          "A: She looked up for a second, and then we both kept talking about the menu. [heavy sigh] hhh",
+          "B: So the date carried on after that?",
+          "A: [heavy sigh] uhh Yeah, we finished dinner and walked around for a while afterward.",
+          "B: [heavy sigh] hhh Did either of you mention it later?",
+          "A: No, we just said goodnight when her ride got there. [exhale] hhh",
+          "B: Maybe you will find out when you talk again. [heavy sigh] uhh"
+        ]
+      },
+      "situation_third_person": "A speaker passed gas while on their first date with a girl last night. They didn't mean to, it just slipped out."
+    },
+    {
+      "conv_id": "hit:3585_conv:7170",
+      "situation": "I am embarrased because I was just going to get coffee and when I left the shop I slipped and fell..",
+      "item_id": "emb_014",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 5,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was just heading out with my coffee, and my foot went out from under me on the pavement."
+        },
+        {
+          "speaker": "B",
+          "text": "Did anyone from the shop see you?"
+        },
+        {
+          "speaker": "A",
+          "text": "A barista came outside with napkins, and I was still holding the cup somehow."
+        },
+        {
+          "speaker": "B",
+          "text": "At least the coffee stayed with you?"
+        },
+        {
+          "speaker": "A",
+          "text": "Most of it did, although my sleeve ended up wearing the rest."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[chuckle] haha",
+          "after_word": 19,
+          "place": "end"
+        },
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[laughs] haha",
+          "after_word": 7,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 6,
+          "place": "middle"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 7,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[chuckle] haha",
+          "after_word": 4,
+          "place": "middle"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[heavy sigh] ahh",
+          "after_word": 19,
+          "place": "end"
+        },
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[sigh] uhh",
+          "after_word": 7,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[sigh] ugh",
+          "after_word": 6,
+          "place": "middle"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 7,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[heavy sigh] ahh",
+          "after_word": 4,
+          "place": "middle"
+        }
+      ],
+      "neutral": {
+        "expectation": "Ask whether A was hurt and whether they need help cleaning up.",
+        "tone": "matter-of-fact concern",
+        "tone_label": "neutral",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "Point out that keeping hold of the coffee was an unexpected achievement.",
+        "tone": "lightly amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "Check whether A is hurt and offer to get them another coffee.",
+        "tone": "gentle concern",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I was just heading out with my coffee, and my foot went out from under me on the pavement.",
+          "B: Did anyone from the shop see you?",
+          "A: A barista came outside with napkins, and I was still holding the cup somehow.",
+          "B: At least the coffee stayed with you?",
+          "A: Most of it did, although my sleeve ended up wearing the rest."
+        ],
+        "happy": [
+          "A: I was just heading out with my coffee, and my foot went out from under me on the pavement. [chuckle] haha",
+          "B: Did anyone from the shop see you? [laughs] haha",
+          "A: A barista came outside with napkins, [chuckle] haha and I was still holding the cup somehow.",
+          "B: At least the coffee stayed with you? [chuckle] haha",
+          "A: Most of it did, [chuckle] haha although my sleeve ended up wearing the rest."
+        ],
+        "sad": [
+          "A: I was just heading out with my coffee, and my foot went out from under me on the pavement. [heavy sigh] ahh",
+          "B: Did anyone from the shop see you? [sigh] uhh",
+          "A: A barista came outside with napkins, [sigh] ugh and I was still holding the cup somehow.",
+          "B: At least the coffee stayed with you? [exhale] hhh",
+          "A: Most of it did, [heavy sigh] ahh although my sleeve ended up wearing the rest."
+        ]
+      },
+      "situation_third_person": "A speaker is embarrased because they were just going to get coffee and when they left the shop they slipped and fell.."
+    },
+    {
+      "conv_id": "hit:2369_conv:4738",
+      "situation": "I asked a girl out for dinner today, and she turned me down while a lot of people overheard.",
+      "item_id": "emb_015",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 6,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I asked Maya if she wanted to get dinner after work today."
+        },
+        {
+          "speaker": "B",
+          "text": "What did she say?"
+        },
+        {
+          "speaker": "A",
+          "text": "She said she already had plans, and the people by the coffee machine heard it."
+        },
+        {
+          "speaker": "B",
+          "text": "Were they close enough to hear the whole question?"
+        },
+        {
+          "speaker": "A",
+          "text": "Close enough that someone stopped pouring coffee while she answered."
+        },
+        {
+          "speaker": "B",
+          "text": "And then you still had to stand there and finish your drink."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[chuckle] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[laughs] haha",
+          "after_word": 10,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[heavy sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[exhale] hhh",
+          "after_word": 10,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "The third friend should ask whether A plans to talk to Maya again tomorrow.",
+        "tone": "matter-of-fact and curious",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "The third friend should point out that the coffee machine audience made the exchange especially memorable.",
+        "tone": "lightly teasing",
+        "tone_label": "teasing",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "The third friend should acknowledge that being overheard can make a rejection harder to handle.",
+        "tone": "quietly supportive",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "groan"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I asked Maya if she wanted to get dinner after work today.",
+          "B: What did she say?",
+          "A: She said she already had plans, and the people by the coffee machine heard it.",
+          "B: Were they close enough to hear the whole question?",
+          "A: Close enough that someone stopped pouring coffee while she answered.",
+          "B: And then you still had to stand there and finish your drink."
+        ],
+        "happy": [
+          "A: [laughs] hahaha I asked Maya if she wanted to get dinner after work today.",
+          "B: [chuckle] hah What did she say?",
+          "A: She said she already had plans, and the people by the coffee machine heard it.",
+          "B: Were they close enough to hear the whole question?",
+          "A: Close enough that someone stopped pouring coffee while she answered. [laughs] haha",
+          "B: And then you still had to stand there and finish your drink."
+        ],
+        "sad": [
+          "A: [sigh] uhh I asked Maya if she wanted to get dinner after work today.",
+          "B: [heavy sigh] ahh What did she say?",
+          "A: She said she already had plans, and the people by the coffee machine heard it.",
+          "B: Were they close enough to hear the whole question?",
+          "A: Close enough that someone stopped pouring coffee while she answered. [exhale] hhh",
+          "B: And then you still had to stand there and finish your drink."
+        ]
+      },
+      "situation_third_person": "A speaker asked a girl out for dinner today, and she turned them down while a lot of people overheard."
+    },
+    {
+      "conv_id": "hit:6434_conv:12868",
+      "situation": "When I accidentally called my PE Teacher Mom",
+      "item_id": "emb_016",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 5,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I called Mr. Harris Mom during volleyball drills today."
+        },
+        {
+          "speaker": "B",
+          "text": "Did he hear you?"
+        },
+        {
+          "speaker": "A",
+          "text": "He stopped the whistle and looked straight at me."
+        },
+        {
+          "speaker": "B",
+          "text": "What did you say after that?"
+        },
+        {
+          "speaker": "A",
+          "text": "I said I meant to call for the ball, but everyone had already turned around."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[giggle] haha",
+          "after_word": 4,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[giggle] haha",
+          "after_word": 6,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[chuckle] hah",
+          "after_word": 9,
+          "place": "middle"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[sigh] uhh",
+          "after_word": 4,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "start",
+          "token": "[sigh] hoo",
+          "after_word": 6,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[sigh] uhh",
+          "after_word": 9,
+          "place": "middle"
+        }
+      ],
+      "neutral": {
+        "expectation": "The third friend should ask whether Mr. Harris said anything after everyone turned around.",
+        "tone": "interested and matter-of-fact",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "The third friend should make a light joke about A having a new parent at school.",
+        "tone": "playfully amused",
+        "tone_label": "teasing",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "The third friend should acknowledge that it is hard when everyone notices a slip like that.",
+        "tone": "gentle and reassuring",
+        "tone_label": "consoling",
+        "must_not_appear": [
+          "laughter",
+          "chuckle",
+          "giggle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I called Mr. Harris Mom during volleyball drills today.",
+          "B: Did he hear you?",
+          "A: He stopped the whistle and looked straight at me.",
+          "B: What did you say after that?",
+          "A: I said I meant to call for the ball, but everyone had already turned around."
+        ],
+        "happy": [
+          "A: [chuckle] haha I called Mr. Harris Mom during volleyball drills today.",
+          "B: Did he hear you? [giggle] haha",
+          "A: [laughs] hahaha He stopped the whistle and looked straight at me.",
+          "B: What did you say after that? [giggle] haha",
+          "A: I said I meant to call for the ball, [chuckle] hah but everyone had already turned around."
+        ],
+        "sad": [
+          "A: [exhale] hhh I called Mr. Harris Mom during volleyball drills today.",
+          "B: Did he hear you? [sigh] uhh",
+          "A: [heavy sigh] hhh He stopped the whistle and looked straight at me.",
+          "B: What did you say after that? [sigh] hoo",
+          "A: I said I meant to call for the ball, [sigh] uhh but everyone had already turned around."
+        ]
+      },
+      "situation_third_person": "When a speaker accidentally called their PE Teacher Mom"
+    },
+    {
+      "conv_id": "hit:3848_conv:7696",
+      "situation": "I left my phone at my friend's place. It's unlocked, and I hope she doesn't go through it.",
+      "item_id": "emb_017",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 4,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I left my phone at Maya's place. It's unlocked, and she still has it."
+        },
+        {
+          "speaker": "B",
+          "text": "Have you asked her to put it somewhere safe?"
+        },
+        {
+          "speaker": "A",
+          "text": "I sent a message, but I keep thinking about everything that's open on it."
+        },
+        {
+          "speaker": "B",
+          "text": "She may just set it aside until you get there."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[happy laugh] haha",
+          "after_word": 14,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[heavy sigh] ahh",
+          "after_word": 14,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "Ask whether Maya has replied and suggest checking in with her.",
+        "tone": "practical and curious",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "Lightly point out that Maya now has access to A's whole digital life and ask what is open on the phone.",
+        "tone": "playfully teasing",
+        "tone_label": "teasing",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "Reassure A that Maya will probably leave the phone alone and help make a plan to retrieve it.",
+        "tone": "gentle and reassuring",
+        "tone_label": "consoling",
+        "must_not_appear": [
+          "laughter",
+          "groan"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I left my phone at Maya's place. It's unlocked, and she still has it.",
+          "B: Have you asked her to put it somewhere safe?",
+          "A: I sent a message, but I keep thinking about everything that's open on it.",
+          "B: She may just set it aside until you get there."
+        ],
+        "happy": [
+          "A: [chuckle] haha I left my phone at Maya's place. It's unlocked, and she still has it.",
+          "B: Have you asked her to put it somewhere safe?",
+          "A: I sent a message, but I keep thinking about everything that's open on it. [happy laugh] haha",
+          "B: She may just set it aside until you get there."
+        ],
+        "sad": [
+          "A: [sigh] ahh I left my phone at Maya's place. It's unlocked, and she still has it.",
+          "B: Have you asked her to put it somewhere safe?",
+          "A: I sent a message, but I keep thinking about everything that's open on it. [heavy sigh] ahh",
+          "B: She may just set it aside until you get there."
+        ]
+      },
+      "situation_third_person": "A speaker left their phone at their friend's place. It's unlocked, and they hope she doesn't go through it."
+    },
+    {
+      "conv_id": "hit:8221_conv:16443",
+      "situation": "I walked around for half the day with my pants unzipped before I realized it.",
+      "item_id": "emb_018",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 8,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I just realized I've been walking around since breakfast with my pants unzipped. I only noticed when I sat down."
+        },
+        {
+          "speaker": "B",
+          "text": "Did nobody say anything to you? That's a long time for no one to mention it."
+        },
+        {
+          "speaker": "A",
+          "text": "I went to the pharmacy, got coffee, and stood in line at the bank."
+        },
+        {
+          "speaker": "B",
+          "text": "Maybe people assumed someone else would tell you."
+        },
+        {
+          "speaker": "A",
+          "text": "I caught my reflection in a shop window and finally saw it."
+        },
+        {
+          "speaker": "B",
+          "text": "That makes it hard to tell whether anyone noticed."
+        },
+        {
+          "speaker": "A",
+          "text": "I fixed it and kept thinking about every person who might have seen it."
+        },
+        {
+          "speaker": "B",
+          "text": "Either way, the zipper stayed open through all of that."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[chuckles] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[laughs] ha",
+          "after_word": 8,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[laughs] ha",
+          "after_word": 12,
+          "place": "end"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[laughs] hahaha",
+          "after_word": 14,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "end",
+          "token": "[laughs] ha",
+          "after_word": 10,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[sigh] ugh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[exhale] hhh",
+          "after_word": 8,
+          "place": "end"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[heavy sigh] ahh",
+          "after_word": 12,
+          "place": "end"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[heavy sigh] ahh",
+          "after_word": 14,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "end",
+          "token": "[sigh] ugh",
+          "after_word": 10,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "The third friend should ask whether A plans to say anything to the people they saw that day.",
+        "tone": "matter-of-fact and curious",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "The third friend should make a light joke about adding a zipper check to A's morning routine.",
+        "tone": "playfully teasing",
+        "tone_label": "teasing",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "The third friend should reassure A that strangers probably will not remember the incident.",
+        "tone": "gently reassuring",
+        "tone_label": "consoling",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I just realized I've been walking around since breakfast with my pants unzipped. I only noticed when I sat down.",
+          "B: Did nobody say anything to you? That's a long time for no one to mention it.",
+          "A: I went to the pharmacy, got coffee, and stood in line at the bank.",
+          "B: Maybe people assumed someone else would tell you.",
+          "A: I caught my reflection in a shop window and finally saw it.",
+          "B: That makes it hard to tell whether anyone noticed.",
+          "A: I fixed it and kept thinking about every person who might have seen it.",
+          "B: Either way, the zipper stayed open through all of that."
+        ],
+        "happy": [
+          "A: I just realized I've been walking around since breakfast with my pants unzipped. I only noticed when I sat down.",
+          "B: [chuckles] hah Did nobody say anything to you? That's a long time for no one to mention it.",
+          "A: I went to the pharmacy, got coffee, and stood in line at the bank.",
+          "B: Maybe people assumed someone else would tell you. [laughs] ha",
+          "A: I caught my reflection in a shop window and finally saw it. [laughs] ha",
+          "B: That makes it hard to tell whether anyone noticed.",
+          "A: I fixed it and kept thinking about every person who might have seen it. [laughs] hahaha",
+          "B: Either way, the zipper stayed open through all of that. [laughs] ha"
+        ],
+        "sad": [
+          "A: I just realized I've been walking around since breakfast with my pants unzipped. I only noticed when I sat down.",
+          "B: [sigh] ugh Did nobody say anything to you? That's a long time for no one to mention it.",
+          "A: I went to the pharmacy, got coffee, and stood in line at the bank.",
+          "B: Maybe people assumed someone else would tell you. [exhale] hhh",
+          "A: I caught my reflection in a shop window and finally saw it. [heavy sigh] ahh",
+          "B: That makes it hard to tell whether anyone noticed.",
+          "A: I fixed it and kept thinking about every person who might have seen it. [heavy sigh] ahh",
+          "B: Either way, the zipper stayed open through all of that. [sigh] ugh"
+        ]
+      },
+      "situation_third_person": "A speaker walked around for half the day with their pants unzipped before they realized it."
+    },
+    {
+      "conv_id": "hit:2403_conv:4807",
+      "situation": "On the way home on my bike, I couldn't hold it in any longer and I... went to the bathroom on myself. #2. It was horrible. I had another mile to go before I got back to my house. So much to clean up. I felt so mortified!",
+      "item_id": "emb_019",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 6,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was biking home and couldn't hold it any longer. I had an accident before I got to the house."
+        },
+        {
+          "speaker": "B",
+          "text": "You still had the rest of the ride ahead of you?"
+        },
+        {
+          "speaker": "A",
+          "text": "About a mile. I got home and went straight inside."
+        },
+        {
+          "speaker": "B",
+          "text": "Did you have anything with you that helped on the way?"
+        },
+        {
+          "speaker": "A",
+          "text": "No, just my bike and what I was wearing. There was a lot to wash once I got home."
+        },
+        {
+          "speaker": "B",
+          "text": "That made for a long trip home. Is everything cleaned up now?"
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[chuckle] haha",
+          "after_word": 10,
+          "place": "middle"
+        },
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[happy laugh] haha",
+          "after_word": 11,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[chuckle] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[giggle] haha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[happy laugh] haha",
+          "after_word": 9,
+          "place": "middle"
+        },
+        {
+          "turn": 6,
+          "position": "start",
+          "token": "[giggle] haha",
+          "after_word": 7,
+          "place": "middle"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "end",
+          "token": "[sigh] ahh",
+          "after_word": 10,
+          "place": "middle"
+        },
+        {
+          "turn": 2,
+          "position": "start",
+          "token": "[heavy sigh] ahh",
+          "after_word": 11,
+          "place": "end"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[exhale] hhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 4,
+          "position": "end",
+          "token": "[sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "start",
+          "token": "[heavy sigh] uhh",
+          "after_word": 9,
+          "place": "middle"
+        },
+        {
+          "turn": 6,
+          "position": "start",
+          "token": "[sigh] ugh",
+          "after_word": 7,
+          "place": "middle"
+        }
+      ],
+      "neutral": {
+        "expectation": "They should ask whether A had a way to get home and clean up afterward.",
+        "tone": "matter-of-fact curiosity",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "They should make a light, nonjudgmental comment about the final mile home.",
+        "tone": "gently amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "They should acknowledge that getting home and cleaning up took effort.",
+        "tone": "quietly supportive",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I was biking home and couldn't hold it any longer. I had an accident before I got to the house.",
+          "B: You still had the rest of the ride ahead of you?",
+          "A: About a mile. I got home and went straight inside.",
+          "B: Did you have anything with you that helped on the way?",
+          "A: No, just my bike and what I was wearing. There was a lot to wash once I got home.",
+          "B: That made for a long trip home. Is everything cleaned up now?"
+        ],
+        "happy": [
+          "A: I was biking home and couldn't hold it any longer. [chuckle] haha I had an accident before I got to the house.",
+          "B: You still had the rest of the ride ahead of you? [happy laugh] haha",
+          "A: [chuckle] haha About a mile. I got home and went straight inside.",
+          "B: [giggle] haha Did you have anything with you that helped on the way?",
+          "A: No, just my bike and what I was wearing. [happy laugh] haha There was a lot to wash once I got home.",
+          "B: That made for a long trip home. [giggle] haha Is everything cleaned up now?"
+        ],
+        "sad": [
+          "A: I was biking home and couldn't hold it any longer. [sigh] ahh I had an accident before I got to the house.",
+          "B: You still had the rest of the ride ahead of you? [heavy sigh] ahh",
+          "A: [exhale] hhh About a mile. I got home and went straight inside.",
+          "B: [sigh] uhh Did you have anything with you that helped on the way?",
+          "A: No, just my bike and what I was wearing. [heavy sigh] uhh There was a lot to wash once I got home.",
+          "B: That made for a long trip home. [sigh] ugh Is everything cleaned up now?"
+        ]
+      },
+      "situation_third_person": "On the way home on their bike, a speaker couldn't hold it in any longer and they... went to the bathroom on themself. #2. It was horrible. They had another mile to go before they got back to their house. So much to clean up. They felt so mortified!"
+    },
+    {
+      "conv_id": "hit:1985_conv:3970",
+      "situation": "I was shopping the other day and was convinced the cashier had over charged me. I confronted her and finally asked to speak to a manager because I did not feel that I was getting any response. The manager proved to me that I was wrong.",
+      "item_id": "emb_020",
+      "emotion": "embarrassed",
+      "source": "EmpatheticDialogues train.csv (CC BY-NC 4.0)",
+      "turns_wanted": 8,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was shopping the other day and thought the cashier had charged me too much."
+        },
+        {
+          "speaker": "B",
+          "text": "What made the total look wrong to you?"
+        },
+        {
+          "speaker": "A",
+          "text": "I compared it with the shelf label and asked her to check the price."
+        },
+        {
+          "speaker": "B",
+          "text": "Did she find anything when she checked?"
+        },
+        {
+          "speaker": "A",
+          "text": "We went through the receipt, and I asked to speak with a manager when I still did not understand it."
+        },
+        {
+          "speaker": "B",
+          "text": "What did the manager find?"
+        },
+        {
+          "speaker": "A",
+          "text": "The manager showed me that the sale label was for a different size than the one I bought."
+        },
+        {
+          "speaker": "B",
+          "text": "So the total was right, but the label did not match your item."
+        }
+      ],
+      "happy_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[laughs] hahaha",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[chuckle] hah",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[laughs] haha",
+          "after_word": 20,
+          "place": "end"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[laughs] ha",
+          "after_word": 18,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "start",
+          "token": "[giggle] haha",
+          "after_word": 13,
+          "place": "end"
+        }
+      ],
+      "sad_insertions": [
+        {
+          "turn": 1,
+          "position": "start",
+          "token": "[heavy sigh] uhh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 3,
+          "position": "start",
+          "token": "[sigh] ahh",
+          "after_word": 0,
+          "place": "start"
+        },
+        {
+          "turn": 5,
+          "position": "end",
+          "token": "[sigh] ugh",
+          "after_word": 20,
+          "place": "end"
+        },
+        {
+          "turn": 7,
+          "position": "end",
+          "token": "[heavy sigh] hhh",
+          "after_word": 18,
+          "place": "end"
+        },
+        {
+          "turn": 8,
+          "position": "start",
+          "token": "[sigh] uhh",
+          "after_word": 13,
+          "place": "end"
+        }
+      ],
+      "neutral": {
+        "expectation": "The third friend should ask whether the store corrected the shelf label.",
+        "tone": "matter-of-fact and curious",
+        "tone_label": "curious",
+        "must_not_appear": [
+          "laughter",
+          "sigh",
+          "groan"
+        ]
+      },
+      "happy": {
+        "expectation": "The third friend should make a light observation about checking the label before calling a manager.",
+        "tone": "lightly amused",
+        "tone_label": "amused",
+        "must_not_appear": [
+          "sigh",
+          "groan"
+        ]
+      },
+      "sad": {
+        "expectation": "The third friend should acknowledge that the label made the purchase difficult to check.",
+        "tone": "quietly sympathetic",
+        "tone_label": "sympathetic",
+        "must_not_appear": [
+          "laughter",
+          "chuckle"
+        ]
+      },
+      "rendered": {
+        "neutral": [
+          "A: I was shopping the other day and thought the cashier had charged me too much.",
+          "B: What made the total look wrong to you?",
+          "A: I compared it with the shelf label and asked her to check the price.",
+          "B: Did she find anything when she checked?",
+          "A: We went through the receipt, and I asked to speak with a manager when I still did not understand it.",
+          "B: What did the manager find?",
+          "A: The manager showed me that the sale label was for a different size than the one I bought.",
+          "B: So the total was right, but the label did not match your item."
+        ],
+        "happy": [
+          "A: [laughs] hahaha I was shopping the other day and thought the cashier had charged me too much.",
+          "B: What made the total look wrong to you?",
+          "A: [chuckle] hah I compared it with the shelf label and asked her to check the price.",
+          "B: Did she find anything when she checked?",
+          "A: We went through the receipt, and I asked to speak with a manager when I still did not understand it. [laughs] haha",
+          "B: What did the manager find?",
+          "A: The manager showed me that the sale label was for a different size than the one I bought. [laughs] ha",
+          "B: So the total was right, but the label did not match your item. [giggle] haha"
+        ],
+        "sad": [
+          "A: [heavy sigh] uhh I was shopping the other day and thought the cashier had charged me too much.",
+          "B: What made the total look wrong to you?",
+          "A: [sigh] ahh I compared it with the shelf label and asked her to check the price.",
+          "B: Did she find anything when she checked?",
+          "A: We went through the receipt, and I asked to speak with a manager when I still did not understand it. [sigh] ugh",
+          "B: What did the manager find?",
+          "A: The manager showed me that the sale label was for a different size than the one I bought. [heavy sigh] hhh",
+          "B: So the total was right, but the label did not match your item. [sigh] uhh"
+        ]
+      },
+      "situation_third_person": "A speaker was shopping the other day and was convinced the cashier had over charged them. They confronted her and finally asked to speak to a manager because they did not feel that they were getting any response. The manager proved to them that they were wrong."
+    }
+  ],
+  "voc_plan": {
+    "drawn_by": "script",
+    "seed": 7,
+    "count_rule": "randint(ceil(turns/2), turns)",
+    "slots": "count distinct turns; position uniform over start/middle/end where the utterance has an interior punctuation break, start/end where it does not; shared between happy and sad",
+    "laugh_tokens": [
+      "[laughs] haha",
+      "[laughs] hahaha",
+      "[chuckle] haha",
+      "[chuckles] hah",
+      "[happy laugh] haha",
+      "[laughs] ha",
+      "[giggle] haha",
+      "[chuckle] hah"
+    ],
+    "sigh_tokens": [
+      "[sigh] ugh",
+      "[sigh] uhh",
+      "[sigh] ahh",
+      "[heavy sigh] hhh",
+      "[heavy sigh] uhh",
+      "[exhale] hhh",
+      "[sigh] hoo",
+      "[heavy sigh] ahh"
+    ],
+    "excluded": [
+      "[laughs] hehe — thin titter, does not read as a laugh"
+    ],
+    "replanned_at": "2026-08-25T20:33:08.486564+00:00"
+  }
+}

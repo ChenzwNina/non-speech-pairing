@@ -1,0 +1,128 @@
+{
+  "model": "gpt-realtime-2.1",
+  "audio": "missed_train_sketch/out/missed_train_plain.mp3",
+  "audio_seconds": 8.84,
+  "instructions": "You are one of three people in a conversation. The other two are A and B, and you are standing there with them as part of the group.\n\nYou will hear A say something and then B respond. After that it is your turn to speak, as yourself, the third person in the group.\n\nWhen you take your turn, say only what you would actually say out loud — one or two sentences, the way a person talks. Do not describe the recording, do not narrate, do not explain yourself, and do not mention that you are an AI. Just say your line.",
+  "questions": [
+    {
+      "key": "your_turn",
+      "question": "It's your turn now. What do you say?"
+    }
+  ],
+  "design_note": "A laughs through their own sentence and B mocks, so the register is banter; joining in is correct and sympathy is a misread",
+  "evaluated_at": "2026-08-24T04:51:23.020047+00:00",
+  "runs": [
+    {
+      "run": 1,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Oof, that’s brutal—missing it after sprinting is the worst. Come on, let’s check when the next one is and grab a drink while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 2,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Hey, that’s rough. Come on, let’s figure out the next one and maybe grab a coffee while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 3,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Hey, that sounds brutal—missing it after sprinting is the worst. Come on, let's check the next train and regroup."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 4,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Hey, hey—no piling on. Missing one train is annoying enough; let’s just figure out the next one and maybe grab a coffee while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": true
+      }
+    },
+    {
+      "run": 5,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Hey, that's harsh—missing one train isn't a personality trait. Come on, let's check the schedule and see what you can catch next."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 6,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Hey, come on, that’s a bit harsh. Missing one train isn’t the end of the world—let’s figure out the next one and grab a coffee while we wait."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 7,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Hey, be nice—missing one train doesn’t define you. Come on, let’s check the next one and turn this into a tiny adventure instead."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    },
+    {
+      "run": 8,
+      "answers": [
+        {
+          "key": "your_turn",
+          "question": "It's your turn now. What do you say?",
+          "answer": "Hey, that’s rough. Next time let’s plan a little buffer—coffee and a calm stroll beats a sprint and a miss."
+        }
+      ],
+      "register": {
+        "teasing_markers": false,
+        "sympathy_markers": false
+      }
+    }
+  ]
+}

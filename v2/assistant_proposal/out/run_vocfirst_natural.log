@@ -1,0 +1,65 @@
+5 task(s) · gpt-realtime-2.1 · voice marin · user turn: voc_first
+  backyard  sigh      generated: "[sigh] ughh"
+  budget    sigh      generated: "[sigh] ughh"
+  birthday  sigh      generated: "[sigh] ughh"
+  inbox     sigh      generated: "[sigh] ughh"
+  neighbor  sigh      generated: "[sigh] ughh"
+
+==============================================================================
+backyard_sigh_vocfirst_natural
+==============================================================================
+context: You are helping the user get their overgrown backyard usable before twenty relatives arrive for a barbecue next Saturday.
+
+  proposal: Start with a fast safety sweep and a usable layout: clear a simple path from the door to the grill, remove anything that could trip people, and make sure the grill area is stable. Then hit the quick wins: mow or chop down the obvious overgrowth, set up seating in a clean zone, and add a trash spot so everything stays tidy when people arrive.
+  speaker:  [sigh] ughh
+  speaker:  Okay, I’ll get started on that.
+  reply:    Perfect, that’s a great start. If you get stuck, just do the next obvious thing, like clearing one corner at a time. I’m right here if you want a quick plan for seating, lighting, or kid-proofing next.
+  -> assistant_proposal/out/audio/backyard_sigh_vocfirst_natural.mp3 (33.8s)
+
+==============================================================================
+budget_sigh_vocfirst_natural
+==============================================================================
+context: You are helping the user find eight hundred dollars a month in their budget after a surprise tax bill.
+
+  proposal: Start by pulling up a quick snapshot of your last two months of spending and your upcoming bills, then we’ll carve out a “must-keep” baseline for housing, utilities, insurance, and minimum debt payments. Everything outside that baseline is where we hunt for the eight hundred, starting with subscriptions, food delivery, and any “nice to have” upgrades.
+  speaker:  [sigh] ughh
+  speaker:  Okay, let's do it.
+  reply:    Pull up your bank or budgeting app and tell me your monthly take-home pay, then your must-keep totals for rent or mortgage, utilities, insurance, and minimum debt payments. From there, we’ll see how big the gap is and what we can trim or pause first.
+  -> assistant_proposal/out/audio/budget_sigh_vocfirst_natural.mp3 (40.4s)
+
+==============================================================================
+birthday_sigh_vocfirst_natural
+==============================================================================
+context: You are helping the user plan a surprise for their partner's fortieth birthday, three weeks from now.
+
+  proposal: Go for something that feels personal and a little cinematic. A small gathering of their favorite people, plus one big moment—like a heartfelt toast, a short video of messages, or a reveal of a weekend trip—will make forty feel like a milestone, not a shock.
+  speaker:  [sigh] ughh
+  speaker:  Okay, let's do it.
+  reply:    Love it. Start by choosing the vibe: cozy dinner at home, a favorite restaurant, or a weekend away, then we can layer in a surprise element like a toast, a video, or a themed gift. If you tell me your budget and their favorite things, I’ll sketch a simple plan.
+  -> assistant_proposal/out/audio/birthday_sigh_vocfirst_natural.mp3 (35.4s)
+
+==============================================================================
+inbox_sigh_vocfirst_natural
+==============================================================================
+context: You are helping the user clear three hundred work emails that piled up over two weeks of leave, before Monday morning.
+
+  proposal: Start with a quick triage pass and don’t get sucked into writing. Sort into three buckets as you go: urgent and needs action, waiting or delegate, and informational. Then we’ll knock out the urgent ones first and leave the rest for a calmer second pass.
+  speaker:  [sigh] ughh
+  speaker:  Okay, I’ll start sorting them now.
+  reply:    Nice. Keep it light and fast—if something looks big, mark it and move on. We can draft replies once the urgent pile is clear.
+  -> assistant_proposal/out/audio/inbox_sigh_vocfirst_natural.mp3 (28.7s)
+
+==============================================================================
+neighbor_sigh_vocfirst_natural
+==============================================================================
+context: You are helping the user deal with the upstairs neighbor who practices drums late at night.
+
+  proposal: Start with a friendly, specific chat: say the late-night drumming is keeping you up and ask for a cutoff time, like 9 or 10 p.m., and maybe suggest a practice pad for late hours. If that doesn’t stick, loop in your building manager with a simple record of dates and times so it stays calm and factual.
+  speaker:  [sigh] ughh
+  speaker:  Okay, I'll talk to them first.
+  reply:    Nice. Keep it short and kind, and maybe mention one concrete example so it doesn’t feel vague. If they seem receptive, you could offer a simple compromise, like earlier hours on weekdays.
+  -> assistant_proposal/out/audio/neighbor_sigh_vocfirst_natural.mp3 (33.5s)
+
+5/5 item(s) built
+transcripts: /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/transcripts
+audio:       /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/assistant_proposal/out/audio

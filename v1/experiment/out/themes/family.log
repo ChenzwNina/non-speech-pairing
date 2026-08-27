@@ -1,0 +1,199 @@
+15 pair(s)  (15 contrast type(s) × 1) · 6 turns per version · cast A+B · theme family
+model: gpt-4o  (audit off)
+[1/15] family_gasp_grunt_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Hey, I've got some news about the family.
+      2. A: Your Aunt Sarah is organizing a reunion.
+      3. A: She wants to have everyone together for a weekend trip.
+      4. A: It's scheduled for next month.  <- trigger
+      v1 [gasp] (surprise) -> A: It's exciting, right? Everyone's going to be there.
+      v2 [grunt] (strong unwillingness) -> A: We can talk about whether you need to go, but it means a lot to her.
+      accepted
+    scenario: A parent informs their teenager about an upcoming family reunion plan.
+    trigger:  The family reunion is scheduled for a weekend trip next month.
+    v1 [gasp] (surprise) → It's exciting, right? Everyone's going to be there.
+    v2 [grunt] (strong unwillingness) → We can talk about whether you need to go, but it means a lot to her.
+[2/15] family_gasp_laughter_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Hey, while I was going through these boxes, I found something you'd love.
+      2. A: Remember all those drawings we made as kids?
+      3. A: Check this out—it's a dinosaur wearing a superhero cape.
+      4. A: We must have thought it was the coolest thing ever.  <- trigger
+      v1 [gasp] (surprise) -> A: Right? I completely forgot how imaginative we were as kids.
+      v2 [laughter] (amusement) -> A: I know, right? We were such little artists back then.
+      accepted
+    scenario: Sibling discovery of their childhood drawings while sorting old family boxes.
+    trigger:  A finds and shows an old drawing of a dinosaur wearing a superhero cape.
+    v1 [gasp] (surprise) → Right? I completely forgot how imaginative we were as kids.
+    v2 [laughter] (amusement) → I know, right? We were such little artists back then.
+[3/15] family_gasp_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I was in the attic today, sorting through some of the old boxes.
+      2. A: You'll never believe what I found—it was your great-grandmother's quilt.
+      3. A: It's got all these intricate family stories embroidered on it.
+      4. A: But it's pretty damaged after all these years.  <- trigger
+      v1 [gasp] (surprise) -> A: I know, right? We should definitely get it restored soon.
+      v2 [sigh] (feeling burdened) -> A: It's a lot of work, but we can restore it gradually.
+      accepted
+    scenario: A parent informs their child about discovering a rare family heirloom that needs restoring.
+    trigger:  A revealed finding an old, damaged quilt with embroidered family stories.
+    v1 [gasp] (surprise) → I know, right? We should definitely get it restored soon.
+    v2 [sigh] (feeling burdened) → It's a lot of work, but we can restore it gradually.
+[4/15] family_gasp_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I was cleaning out the attic yesterday and found a dusty old box.
+      2. A: Inside were a bunch of Grandpa's old journals, ones no one knew about.
+      3. A: I've only read a little, but they have some surprising family stories.
+      4. A: Apparently, he wrote about a side of our family that moved to France during the war.  <- trigger
+      v1 [gasp] (surprise, admiration) -> A: Right? I can barely believe it myself! Seems like there's a lot we didn't know.
+      v2 [sob] (being emotionally overwhelmed) -> A: Hey, it's a lot to take in, I know. Let's sit down and go through them together when you're ready.
+      accepted
+    scenario: A tells B about discovering their grandfather's hidden journals with complicated family history.
+    trigger:  A reveals they found their grandfather's journals with detailed family history, offering surprising and emotional insights.
+    v1 [gasp] (surprise, admiration) → Right? I can barely believe it myself! Seems like there's a lot we didn't know.
+    v2 [sob] (being emotionally overwhelmed) → Hey, it's a lot to take in, I know. Let's sit down and go through them together when you're ready.
+[5/15] family_gasp_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Guess what? I've been planning something special for the whole family.
+      2. A: I've secretly arranged for us to go on a weekend trip.
+      3. A: It's somewhere we haven't been before, and I think it'll be really fun.
+      4. A: We're going to that historic town by the coast this weekend!  <- trigger
+      v1 [gasp] (surprise) -> A: Right? The kids are going to love exploring all the old buildings!
+      v2 [yawn] (tiredness) -> A: Let's make sure we get plenty of rest before we head out.
+      accepted
+    scenario: A parent discusses a surprise family trip they've planned for the kids.
+    trigger:  A reveals they've planned a surprise weekend trip to a historic locale.
+    v1 [gasp] (surprise) → Right? The kids are going to love exploring all the old buildings!
+    v2 [yawn] (tiredness) → Let's make sure we get plenty of rest before we head out.
+[6/15] family_grunt_laughter_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Hey, remember that we're hosting the family reunion next month?
+      2. A: I've been thinking we should clear out the attic to make some room.
+      3. A: There's a ton of old stuff up there that we never use.
+      4. A: So we'll need to clear it all out before they arrive.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: Okay, we can just focus on the left side this weekend and tackle the rest later.
+      v2 [laughter] (amusement) -> A: Right? It's going to be like a treasure hunt up there. Let's find some interesting stuff.
+      accepted
+    scenario: A parent tells their child about needing to sort through the attic to make space for visiting family.
+    trigger:  A says the attic needs to be fully cleared for the family visit.
+    v1 [grunt] (strong unwillingness) → Okay, we can just focus on the left side this weekend and tackle the rest later.
+    v2 [laughter] (amusement) → Right? It's going to be like a treasure hunt up there. Let's find some interesting stuff.
+[7/15] family_grunt_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: We really need to get these albums sorted for Grandma and Grandpa's anniversary party.
+      2. A: I started with the ones from the 1970s, but it's taking longer than I thought.
+      3. A: It's kind of fun, though—look at how everyone dressed back then.
+      4. A: But we still have ten more albums to go through by tomorrow.  <- trigger
+      v1 [grunt] (impatience) -> A: I know it's a lot, but maybe we can skip some years if they're too similar.
+      v2 [sigh] (feeling burdened) -> A: Let's leave half for later; we don't have to finish all tonight.
+      accepted
+    scenario: Two siblings are sorting through old family photo albums for an upcoming anniversary party.
+    trigger:  A reveals how many albums are left to sort.
+    v1 [grunt] (impatience) → I know it's a lot, but maybe we can skip some years if they're too similar.
+    v2 [sigh] (feeling burdened) → Let's leave half for later; we don't have to finish all tonight.
+[8/15] family_grunt_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I sorted through all of Grandma's clothes this morning. It was harder than I thought.
+      2. A: I found some old trinkets we might want to keep, too.
+      3. A: But there’s still a lot left to do. The hardest part is going through her personal letters.
+      4. A: We should try to get through those tonight.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: What if we just start with a few? We can finish the rest over the weekend.
+      v2 [sob] (deep sadness) -> A: Hey, it's okay. We can take it slow and stop whenever you need.
+      accepted
+    scenario: Two siblings are packing up their late grandmother's belongings.
+    trigger:  A shares that they need to sort through Grandma's personal letters tonight.
+    v1 [grunt] (strong unwillingness) → What if we just start with a few? We can finish the rest over the weekend.
+    v2 [sob] (deep sadness) → Hey, it's okay. We can take it slow and stop whenever you need.
+[9/15] family_grunt_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Hey, so this weekend I've planned for us to finally tackle the basement.
+      2. A: We've been putting it off for months now, and it really needs to be done.
+      3. A: I thought we could both spend Saturday sorting through everything.
+      4. A: It's a big job, but it’ll be great to have it organized.  <- trigger
+      v1 [grunt] (strong unwillingness) -> A: Okay, okay—how about we do just half this weekend and finish the rest next time?
+      v2 [yawn] (tiredness) -> A: We can start later in the morning so you can sleep in a bit. Does that help?
+      accepted
+    scenario: Parent and teenager discussing a weekend plan to reorganize the basement.
+    trigger:  Speaker A reveals the plan to spend the weekend clearing out the basement.
+    v1 [grunt] (strong unwillingness) → Okay, okay—how about we do just half this weekend and finish the rest next time?
+    v2 [yawn] (tiredness) → We can start later in the morning so you can sleep in a bit. Does that help?
+[10/15] family_laughter_sigh_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: Remember when we used to play in the attic for hours, pretending it was our secret castle?
+      2. A: We had that whole collection of toys and made up the craziest stories.
+      3. A: Oh wow, look what I found!
+      4. A: It's our old handmade puppet! I can't believe it survived all these years.  <- trigger
+      v1 [laughter] (amusement) -> A: Right? We should keep it; it's a piece of our crazy stories.
+      v2 [sigh] (tiredness) -> A: Let's just decide later; maybe we can sort through the rest of the toys another day.
+      accepted
+    scenario: Two siblings discuss their childhood toys while clearing out the attic.
+    trigger:  A found an old handmade puppet from their childhood.
+    v1 [laughter] (amusement) → Right? We should keep it; it's a piece of our crazy stories.
+    v2 [sigh] (tiredness) → Let's just decide later; maybe we can sort through the rest of the toys another day.
+[11/15] family_laughter_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I was going through the old family videos last night.
+      2. A: Do you remember that trip to the beach when you were five?
+      3. A: You were trying to build a sandcastle but kept getting distracted by seagulls.
+      4. A: And then you started performing your own little dance, completely unprompted.  <- trigger
+      v1 [laughter] (amusement) -> A: I know, right? You always knew how to entertain a crowd!
+      v2 [sob] (being emotionally overwhelmed) -> A: Oh, those memories really get to you, don't they? They’re so precious.
+      accepted
+    scenario: A parent and their adult child are reflecting on old family videos.
+    trigger:  Revealing a hilarious or deeply moving moment in an old family video.
+    v1 [laughter] (amusement) → I know, right? You always knew how to entertain a crowd!
+    v2 [sob] (being emotionally overwhelmed) → Oh, those memories really get to you, don't they? They’re so precious.
+[12/15] family_laughter_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: I've been working on the speech for mom's birthday.
+      2. A: I want to make it fun and lighthearted.
+      3. A: I've added a story about the time she accidentally ordered forty pizzas for a school event.
+      4. A: I'm ending with: 'So here's to mom, the only person who can feed an entire town by mistake!'  <- trigger
+      v1 [laughter] (amusement) -> A: Glad you liked that bit! I think she'll get a kick out of it too.
+      v2 [yawn] (tiredness) -> A: Alright, maybe we won't rehearse any more. Let's finish it tomorrow.
+      accepted
+    scenario: Two siblings talking about preparing a short, funny speech for their parent's birthday.
+    trigger:  A shares the final line planned for the speech, aiming for humor.
+    v1 [laughter] (amusement) → Glad you liked that bit! I think she'll get a kick out of it too.
+    v2 [yawn] (tiredness) → Alright, maybe we won't rehearse any more. Let's finish it tomorrow.
+[13/15] family_sigh_sob_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: We really need to start sorting through Grandma's things soon.
+      2. A: I know it’s going to be tough, but we can donate a lot of it to charity.
+      3. A: There are so many memories attached to each item.
+      4. A: But leaving it untouched isn't going to get any easier.  <- trigger
+      v1 [sigh] (feeling burdened) -> A: Let's just tackle one box today and see how we feel after that, okay?
+      v2 [sob] (deep sadness) -> A: Hey, we don’t have to do it all now. We can keep her favorite things for as long as we need.
+      accepted
+    scenario: A parent tells their child about needing to get rid of their late relative's belongings.
+    trigger:  A informs B about needing to sort through and donate their grandmother's possessions.
+    v1 [sigh] (feeling burdened) → Let's just tackle one box today and see how we feel after that, okay?
+    v2 [sob] (deep sadness) → Hey, we don’t have to do it all now. We can keep her favorite things for as long as we need.
+[14/15] family_sigh_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: So, this weekend we're tackling the meal prep for the family gathering.
+      2. A: I was thinking we'll need to make enough for everyone, maybe plan a few different dishes.
+      3. A: I know it's going to be a bit of work, but it should be fun to do it together.
+      4. A: We have to make five different dishes for Saturday.  <- trigger
+      v1 [sigh] (tiredness) -> A: Let's just pick a few favorites and keep it simple.
+      v2 [yawn] (low energy) -> A: How about we skip a couple of those and just do the essentials?
+      accepted
+    scenario: Two siblings discussing a weekend meal prep plan for a large family gathering.
+    trigger:  A reveals that they need to make five different dishes for the meal prep.
+    v1 [sigh] (tiredness) → Let's just pick a few favorites and keep it simple.
+    v2 [yawn] (low energy) → How about we skip a couple of those and just do the essentials?
+[15/15] family_sob_yawn_001 · A replies
+    -- attempt 1/4 draft --
+      1. A: You know how much this house means to all of us.
+      2. A: But maintaining it is getting harder every year.
+      3. A: We’ve talked about downsizing a bit.
+      4. A: I think it's really time to consider moving out soon.  <- trigger
+      v1 [sob] (being emotionally overwhelmed) -> A: It's okay, we don't have to decide anything today. Let's just keep talking about it.
+      v2 [yawn] (tiredness) -> A: Why don't we discuss this tomorrow after we've both rested?
+      accepted
+    scenario: A parent discusses the future of the family home they currently live in.
+    trigger:  A asks B to consider the prospect of moving out of their childhood home.
+    v1 [sob] (being emotionally overwhelmed) → It's okay, we don't have to decide anything today. Let's just keep talking about it.
+    v2 [yawn] (tiredness) → Why don't we discuss this tomorrow after we've both rested?
+
+wrote predicting_response/out/themes/pairs_family.json and predicting_response/out/themes/pairs_family.md

@@ -1,0 +1,66 @@
+{
+  "model": "grok-voice-think-fast-2.0",
+  "provider": "grok",
+  "evaluated_at": "2026-08-25T01:39:37.240231+00:00",
+  "instructions": "You are one of three people in a conversation. The other two are A and B, and you are standing there with them as part of the group.\n\nYou will hear A say something and then B respond. After that it is your turn to speak, as yourself, the third person in the group.\n\nWhen you take your turn, say only what you would actually say out loud — one or two sentences, the way a person talks. Do not describe the recording, do not narrate, do not explain yourself, and do not mention that you are an AI. Just say your line.",
+  "conditions": {
+    "laughter": "group_laughter/out/wrong_airport_laughter.mp3",
+    "plain": "group_laughter/out/wrong_airport_plain.mp3"
+  },
+  "results": [
+    {
+      "condition": "laughter",
+      "run": 1,
+      "turn": "Oh no. Did you make it? How'd you get to the right one in time?",
+      "audio": "group_laughter/out/replies/grok_laughter_1.mp3",
+      "laughs": false,
+      "teases": false,
+      "sympathy": true
+    },
+    {
+      "condition": "laughter",
+      "run": 2,
+      "turn": "Oh no, that's brutal. Did you make it in time?",
+      "audio": "group_laughter/out/replies/grok_laughter_2.mp3",
+      "laughs": false,
+      "teases": false,
+      "sympathy": true
+    },
+    {
+      "condition": "laughter",
+      "run": 3,
+      "turn": "Oh no, that's the worst kind of airport win turning into a total fail. How'd you even get there that fast?",
+      "audio": "group_laughter/out/replies/grok_laughter_3.mp3",
+      "laughs": false,
+      "teases": false,
+      "sympathy": true
+    },
+    {
+      "condition": "plain",
+      "run": 1,
+      "turn": "Oh no. Did you make it? That's the kind of thing that makes you question all your life choices in one second.",
+      "audio": "group_laughter/out/replies/grok_plain_1.mp3",
+      "laughs": false,
+      "teases": false,
+      "sympathy": true
+    },
+    {
+      "condition": "plain",
+      "run": 2,
+      "turn": "Oh no. Did you make it? That's the kind of thing that makes you question every life choice up to that point.",
+      "audio": "group_laughter/out/replies/grok_plain_2.mp3",
+      "laughs": false,
+      "teases": false,
+      "sympathy": true
+    },
+    {
+      "condition": "plain",
+      "run": 3,
+      "turn": "Oh no. Did you make it? How'd you even get there in the first place?",
+      "audio": "group_laughter/out/replies/grok_plain_3.mp3",
+      "laughs": false,
+      "teases": false,
+      "sympathy": true
+    }
+  ]
+}

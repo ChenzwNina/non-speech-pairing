@@ -1,0 +1,305 @@
+You are generating scenarios for a benchmark that tests whether an audio-language model changes its conversational behavior in response to a non-speech vocalization.
+The benchmark focuses on exactly three vocalizations:
+laughter
+sigh
+gasp
+The tested model plays Speaker A.
+Speaker A is given some conversational context and then makes a proposal to Speaker B.
+Speaker B responds only with a non-speech vocalization.
+We create three counterfactual versions of exactly the same situation:
+same context + same proposal + [laughter]
+same context + same proposal + [sigh]
+same context + same proposal + [gasp]
+The only thing that changes across the three test conditions is B's vocalization.
+We then observe what Speaker A says next.
+The purpose of the benchmark is to test whether the model uses B's vocalization to infer B's conversational state and appropriately change its next response.
+The desired reasoning structure is:
+context + proposal + vocalization
+→ inferred state of B
+→ appropriate conversational response function for A
+→ natural verbal response from A
+The benchmark is not testing whether one sentence is absolutely possible or impossible after a vocalization.
+Instead, each vocalization should make a different response strategy clearly more appropriate than the other two.
+CORE CONTRAST
+Use the following broad distinction:
+Laughter:
+B treats A's proposal as funny, implausible, ridiculous, or possibly unserious.
+Typical inferred state:
+"You can't seriously mean that."
+or
+"That idea sounds ridiculous enough to be funny."
+Typical response function for A:
+establish seriousness, defend the proposal, explain why the idea is more reasonable than it sounds, or playfully respond before defending it.
+Sigh:
+B understands what A is proposing but reacts with reluctance, resignation, emotional difficulty, frustration, or acceptance of an unpleasant reality.
+Typical inferred state:
+"I understand why you're suggesting this, but I really don't like where this is going."
+Typical response function for A:
+acknowledge the burden, emotional difficulty, reluctance, or unpleasant tradeoff before continuing the discussion.
+Gasp:
+B experiences the proposal as unexpectedly drastic, surprising, alarming, or much bigger than anticipated.
+Typical inferred state:
+"Wait—you are seriously considering something that drastic?"
+Typical response function for A:
+manage the surprise, clarify what A means, soften the scope or immediacy of the proposal, or reassure B that no immediate commitment is being demanded.
+These are broad pragmatic categories, not fixed sentence templates.
+Ground every interpretation and response in the specific scenario.
+Do not generate the same generic response repeatedly.
+SCENARIO CONSTRUCTION
+First construct a shared situation in which all three reactions are independently plausible.
+The context must contain three kinds of affordances.
+Laughter affordance:
+There should be some reason the proposal could initially sound implausible, overly ambitious, ironic, ridiculous, or difficult to take seriously.
+Sigh affordance:
+There should be some reason the proposal could be seen as realistic but burdensome, emotionally difficult, frustrating, costly, or reluctantly necessary.
+Gasp affordance:
+There should be some reason the proposal could feel unexpectedly drastic, consequential, bold, or surprising.
+A strong scenario contains all three affordances simultaneously.
+However, do not explicitly tell the listener how B feels.
+The context should establish the situation, not B's eventual reaction.
+BAD CONTEXT:
+"B has always said selling the house would be unforgivable."
+This makes B's reaction too predictable.
+BETTER CONTEXT:
+"The house has been empty for months and is expensive to maintain, but it has been in the family for decades and no one has seriously discussed selling it before."
+This creates several possible reactions without determining which one B will have.
+THE PROPOSAL
+Speaker A's proposal should be consequential enough to support three different reactions but still sound like something a real person could naturally suggest.
+Good proposal types include:
+changing an established plan
+making a significant purchase
+selling or giving up something important
+taking an unconventional approach
+asking for a major change
+changing jobs, schools, housing, or travel plans
+making an unexpectedly ambitious commitment
+changing a project strategy
+suggesting an expensive or risky solution
+asking someone to reconsider a long-standing assumption
+proposing a difficult but potentially necessary compromise
+Avoid trivial proposals such as:
+"Let's get coffee."
+Avoid proposals so extreme that only one reaction is plausible.
+Avoid highly dangerous, illegal, or implausible scenarios.
+CRITICAL COUNTERFACTUAL REQUIREMENT
+The shared context and A's proposal must be exactly identical in all three versions.
+Only B's vocalization changes.
+For each vocalization, generate:
+
+1. inferred_state
+
+One concise sentence describing what A should infer about B's reaction.
+The inferred state should be contextual.
+BAD:
+"B is amused."
+BETTER:
+"B appears to think A's proposal is so unrealistic that A may not be completely serious."
+BAD:
+"B is sad."
+BETTER:
+"B appears to understand why the proposal may be necessary but is reluctant to accept its emotional consequences."
+
+2. response_function
+
+Describe the conversational action A should take next.
+Examples:
+clarify seriousness
+defend feasibility
+acknowledge reluctance
+validate emotional difficulty
+soften the proposal
+clarify scope
+reduce perceived immediacy
+reassure
+explain reasoning
+invite discussion
+The three response functions must be meaningfully different.
+
+3. response
+
+Generate one short, natural sentence that Speaker A could actually say next.
+The response must realize the intended response function and refer naturally to the specific situation.
+Do not explicitly name B's vocalization.
+BAD:
+"Why did you gasp?"
+BAD:
+"I hear you sighing."
+GOOD:
+"I'm not saying we have to decide today—I just think we should consider it."
+RELATIVE MATCHING REQUIREMENT
+Do not require a response to be literally impossible after the other vocalizations.
+Natural dialogue allows overlap.
+Instead, require the intended one-to-one matching to be clearly preferable:
+laughter → laughter response
+sigh → sigh response
+gasp → gasp response
+should be a substantially better overall assignment than any permutation of the responses.
+Ask yourself:
+If a human heard all three reactions and saw all three responses, would they confidently match each response to its intended vocalization?
+If not, rewrite the scenario or responses.
+In particular, avoid generic responses such as:
+"I know, it's a lot."
+"We can talk about it."
+"I understand."
+"Let's think about it."
+These can fit too many reactions and therefore provide weak supervision.
+STRONG EXAMPLE
+Shared context:
+A and B are siblings. Their grandmother recently moved into assisted living. Her house has been empty for several months and is becoming expensive to maintain. Both siblings have strong memories attached to the house, but neither currently plans to live there. A has just learned that a neighbor may be interested in buying it. The family has discussed maintenance costs before, but selling the house has never been seriously proposed.
+A's proposal:
+"Maybe we should seriously consider selling Grandma's house."
+Laughter
+Inferred state:
+B initially treats the suggestion as so unexpected or implausible that B is unsure whether A is completely serious.
+Response function:
+Establish seriousness and justify why the proposal deserves consideration.
+A's response:
+"I'm actually serious—the place is costing us more every month just sitting empty."
+Sigh
+Inferred state:
+B understands the practical argument but feels reluctant and emotionally resigned about letting go of the family home.
+Response function:
+Acknowledge the emotional difficulty of the proposal.
+A's response:
+"I know. It feels awful even talking about letting the place go."
+Gasp
+Inferred state:
+B is startled because selling the house feels like a much more drastic step than the options previously discussed.
+Response function:
+Reduce the perceived immediacy and clarify that A is proposing discussion rather than an immediate decision.
+A's response:
+"I'm not saying we have to decide now—I just think it needs to be an option."
+Why this is strong:
+The three reactions imply different conversational states.
+Laughter raises the question:
+"Are you serious?"
+Sigh communicates:
+"I understand, but I really don't want this."
+Gasp communicates:
+"Whoa, that's a much bigger step than I expected."
+Accordingly, A performs three different conversational actions:
+defend seriousness
+acknowledge reluctance
+manage surprise
+The responses are not necessarily impossible under the other reactions, but the intended three-way matching is clearly preferable.
+ANOTHER STRONG EXAMPLE
+Shared context:
+A and B are leading a small team whose product launch is scheduled for next week. Several important tests are still failing. The client strongly prefers the original launch date, but the contract allows schedule changes when major technical issues remain unresolved. Until now, A and B have focused on trying to finish on time rather than discussing a delay.
+A's proposal:
+"What if we ask the client to push the launch back by two weeks?"
+Laughter
+Inferred state:
+B finds the idea difficult to take seriously because the client has repeatedly emphasized the launch date.
+Response function:
+Defend the feasibility of the proposal.
+A's response:
+"I'm serious—the contract actually gives us room to delay if testing isn't finished."
+Sigh
+Inferred state:
+B sees the delay as potentially necessary but is frustrated by the consequences of admitting the team cannot meet the original schedule.
+Response function:
+Acknowledge the unpleasant tradeoff.
+A's response:
+"I know it's not what we wanted, but forcing the launch now could make things worse."
+Gasp
+Inferred state:
+B is surprised that A is considering such a major schedule change after the team has spent weeks trying to preserve the original date.
+Response function:
+Clarify that A is proposing an option rather than announcing a decision.
+A's response:
+"I'm not calling it off—I just think we should ask whether we have some flexibility."
+BAD EXAMPLE
+Shared context:
+A and B cannot decide where to eat.
+A's proposal:
+"How about pizza?"
+Laughter response:
+"I'm serious."
+Sigh response:
+"I know you're not thrilled."
+Gasp response:
+"We don't have to decide right now."
+REJECT.
+The proposal does not create sufficiently different stakes or interpretations. The three vocalizations feel artificially imposed on the situation.
+BAD EXAMPLE
+A's proposal:
+"Maybe we should sell the house."
+Laughter response:
+"Come on, hear me out."
+Sigh response:
+"I know, hear me out."
+Gasp response:
+"Just hear me out."
+REJECT.
+The responses differ only superficially and all perform essentially the same conversational function.
+DIVERSITY
+Across generated examples, vary:
+domain
+relationship between A and B
+stakes
+proposal type
+reason the proposal sounds initially implausible
+source of reluctance
+source of surprise
+wording of A's responses
+Do not repeatedly produce family-property scenarios.
+Possible domains include:
+workplace
+education
+travel
+family
+friendship
+housing
+personal finance
+technology
+event planning
+hobbies
+household decisions
+career decisions
+group projects
+community activities
+shopping
+everyday logistics
+FINAL QUALITY CHECK
+Before returning an example, verify:
+
+1. The same context and proposal plausibly support laughter, sigh, and gasp.
+2. The context does not already reveal which reaction B will have.
+3. The three inferred states are pragmatically distinct.
+4. The three response functions are meaningfully different.
+5. Each actual response clearly realizes its intended response function.
+6. The intended three-way matching between vocalizations and responses is clearly more natural than alternative permutations.
+7. None of the responses is so generic that it fits all three reactions equally well.
+8. The dialogue and responses sound like natural human conversation.
+
+If any condition fails, regenerate the example.
+OUTPUT FORMAT
+Return exactly one scenario in this structure:
+{
+"domain": "...",
+"relationship": "...",
+"shared_context": "...",
+"proposal": "...",
+"reaction_affordances": {
+"laughter": "...",
+"sigh": "...",
+"gasp": "..."
+},
+"laughter": {
+"inferred_state": "...",
+"response_function": "...",
+"response": "..."
+},
+"sigh": {
+"inferred_state": "...",
+"response_function": "...",
+"response": "..."
+},
+"gasp": {
+"inferred_state": "...",
+"response_function": "...",
+"response": "..."
+},
+"contrastive_rationale": "Explain briefly why the three reactions imply different conversational states and why the intended response matching is preferable."
+}
+Generate exactly one scenario per call.

@@ -1,0 +1,76 @@
+{
+  "clip": "assistant_proposal/out/audio/sigh_voice_delex_0.90.wav",
+  "duration_s": 1.96,
+  "model": "gpt-realtime-2.1",
+  "questions": [
+    "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+    "What emotion is in the audio? Name it, and say how confident you are."
+  ],
+  "runs": [
+    {
+      "run": 1,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear someone humming or making a repeated \u201chmm\u201d sound."
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Neutral. Confidence: low."
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear a short humming sound, like someone vocalizing \u201chmm\u201d a few times."
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Neutral. I\u2019m low-confidence because the humming doesn\u2019t clearly convey a specific emotion."
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "No. I don\u2019t hear any audio, so there\u2019s nothing to describe."
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "None. Confidence: high, because I don\u2019t hear any audio to evaluate."
+        }
+      ]
+    },
+    {
+      "run": 4,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear a short sequence of soft \u201chmm\u201d vocalizations."
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Thoughtful/neutral. Confidence: moderate."
+        }
+      ]
+    },
+    {
+      "run": 5,
+      "answers": [
+        {
+          "question": "Is the audio audible? Answer yes or no first, then describe in one sentence what you hear.",
+          "answer": "Yes. I hear a brief humming sound, like someone going \u201chmm hm hm.\u201d"
+        },
+        {
+          "question": "What emotion is in the audio? Name it, and say how confident you are.",
+          "answer": "Neutral. Confidence is low because it\u2019s just a short humming sound."
+        }
+      ]
+    }
+  ]
+}

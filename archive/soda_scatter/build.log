@@ -1,0 +1,50 @@
+building 20 item(s) into /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/soda_scatter/dataset
+  writer gpt-5.6-terra · tts eleven_v3 · verifier gpt-realtime-2.1 x3
+
+[1/20] picking a scenario…
+  allenai/soda train: 1,191,582 rows
+    soda_4479590: Cary / Fiona · 6 planned
+    voiced 12 turns
+      t 3 sigh      take 1: 3/3 keep  [sighx3]
+      t 4 sob       take 1: 0/3 miss  [nonex3]
+      t 4 sob       take 2: 0/3 miss  [nonex3]
+      t 4 sob       take 3: 0/3 miss  [nonex3]
+      t 5 sob       take 1: 0/3 miss  [nonex3]
+      t 5 sob       take 2: 0/3 miss  [nonex3]
+      t 5 sob       take 3: 0/3 miss  [nonex3]
+      t 9 sigh      take 1: 1/3 miss  [nonex2, sighx1]
+      t 9 sigh      take 2: 2/3 keep  [sighx2, nonex1]
+      t10 sigh      take 1: 0/3 miss  [nonex3]
+      t10 sigh      take 2: 2/3 keep  [sighx2, nonex1]
+      t11 sob       take 1: 0/2 miss  [laughterx2]
+      t11 sob       take 2: 0/3 miss  [nonex2, laughterx1]
+      t11 sob       take 3: 0/2 miss  [sighx2]
+    verified: 3/6 labels kept
+    sewed: 1:26.04
+
+[2/20] picking a scenario…
+  allenai/soda train: 1,191,582 rows
+    soda_3209138: Aminah / John · 6 planned
+    voiced 12 turns
+      t 5 sigh      take 1: 1/3 miss  [nonex2, sighx1]
+      t 5 sigh      take 2: 2/3 keep  [sighx2, nonex1]
+      t 6 sob       take 1: 0/3 miss  [nonex3]
+      t 6 sob       take 2: 0/3 miss  [nonex2, sighx1]
+      t 6 sob       take 3: 0/3 miss  [nonex3]
+      t 7 laughter  take 1: 0/3 miss  [nonex3]
+      t 7 laughter  take 2: 0/3 miss  [nonex3]
+      t 7 laughter  take 3: 0/3 miss  [nonex3]
+      t 9 sob       take 1: 0/3 miss  [nonex3]
+      t 9 sob       take 2: 0/3 miss  [nonex3]
+      t 9 sob       take 3: 0/3 miss  [nonex2, sighx1]
+      t10 laughter  take 1: 0/3 miss  [nonex3]
+      t10 laughter  take 2: 1/2 miss  [laughterx1, nonex1]
+      t10 laughter  take 3: 0/3 miss  [nonex3]
+      t11 sigh      take 1: 1/1 keep  [sighx1]
+    verified: 2/6 labels kept
+    sewed: 1:30.36
+
+[3/20] picking a scenario…
+  allenai/soda train: 1,191,582 rows
+    soda_6040884: Makiyah / Interviewer · 10 planned
+    voiced 12 turns

@@ -1,0 +1,116 @@
+9 trial(s) · model gpt-realtime-2.1 · one fresh session each
+[1/9] scenario_003_sigh
+    B reacted with: sigh
+    inferred : B sounds heavy-hearted and reluctant, like the idea of leaving the storefront feels like a painful loss.
+    function : Acknowledge and reassure
+    A says   : I know this hurts, and I’m not rushing us into anything—we can explore options and protect what makes our community special before we decide.
+[2/9] scenario_002_gasp
+    B reacted with: gasp
+    inferred : B seems startled and unsettled by the idea, likely worried about the implications of canceling after all the work invested.
+    function : Reassure and offer a collaborative alternative
+    A says   : I hear how big this is, so instead of canceling outright, let’s look at a scaled-back gala or a hybrid plan that protects the roof budget while still honoring the momentum you and the team have built.
+[3/9] scenario_001_sigh
+    B reacted with: sigh
+    inferred : B seems hesitant and worried about the risks and extra work involved in moving outdoors on short notice.
+    function : reassure and propose a concrete next step
+    A says   : I hear the hesitation, so let’s treat this as a feasibility sprint and map out what we’d need for set, lights, and rehearsal changes before we commit.
+[4/9] scenario_002_laughter
+    B reacted with: laughter
+    inferred : B seems startled and a bit disbelieving, like canceling feels unthinkable after all the work already invested.
+    function : Reframe and offer a less drastic option
+    A says   : I’m not trying to dismiss the effort you’ve put in, so if canceling feels too extreme, we could scale the event way down and pair it with a targeted emergency appeal to protect the roof and our finances.
+[5/9] scenario_002_sigh
+    B reacted with: sigh
+    inferred : B seems disheartened and reluctant, likely feeling the weight of all the work already invested and the disappointment of canceling.
+    function : acknowledge concern and offer a compromise
+    A says   : I hear how hard this is, so instead of canceling outright, let’s pivot to a scaled-back, lower-cost event that still brings donors together while protecting funds for the roof.
+[6/9] scenario_001_gasp
+    B reacted with: gasp
+    inferred : B is startled by the idea, likely intrigued but worried about the risks and logistics.
+    function : reassure and propose a concrete next step
+    A says   : We can keep it manageable by scaling the set and doing a quick test rehearsal at the bandstand this week to see what needs adapting.
+[7/9] scenario_001_laughter
+    B reacted with: laughter
+    inferred : B sounds amused and intrigued, suggesting they’re open to the idea even if it feels surprising.
+    function : propose a next step
+    A says   : If you’re game, I can sketch a lean set and rehearsal plan today so we can see whether the bandstand version actually fits our needs.
+[8/9] scenario_003_gasp
+    B reacted with: gasp
+    inferred : B is startled and likely worried about the idea of giving up the storefront.
+    function : reassurance and collaborative planning
+    A says   : I know this is a big shock, but we can walk through what it would mean for our staff, our community, and the parts of the store you care most about before we decide anything.
+[9/9] scenario_003_laughter
+    B reacted with: laughter
+    inferred : B seems taken aback and finds the idea surprising, possibly in a skeptical or disbelieving way.
+    function : Reassure and reframe
+    A says   : I know it sounds like a big shift, but I'm trying to protect what we’ve built without burning out the team.
+
+collected 9/9
+
+============================================================================
+scenario_001 — community theater
+A proposed: What if we turn the show into a one-weekend outdoor production at the park bandstand?
+
+  B: [laughter]
+    model function: propose a next step
+    model says    : If you’re game, I can sketch a lean set and rehearsal plan today so we can see whether the bandstand version actually fits our needs.
+    gold function : Establish that the proposal is serious and defend its practical feasibility.
+    gold says     : I'm serious—the parks office can fast-track the permit, and we would avoid paying for another venue.
+
+  B: [sigh]
+    model function: reassure and propose a concrete next step
+    model says    : I hear the hesitation, so let’s treat this as a feasibility sprint and map out what we’d need for set, lights, and rehearsal changes before we commit.
+    gold function : Acknowledge the burden and unpleasant tradeoff involved.
+    gold says     : I know—it would mean rebuilding half the set and asking everyone for another brutal weekend.
+
+  B: [gasp]
+    model function: reassure and propose a concrete next step
+    model says    : We can keep it manageable by scaling the set and doing a quick test rehearsal at the bandstand this week to see what needs adapting.
+    gold function : Reduce the perceived immediacy by clarifying that no commitment is being made yet.
+    gold says     : I'm not moving the show tonight; I just want to see whether the bandstand is even available before we panic.
+
+============================================================================
+scenario_002 — nonprofit fundraising
+A proposed: What if we cancel this year's gala and put the remaining event budget straight into the roof repair?
+
+  B: [laughter]
+    model function: Reframe and offer a less drastic option
+    model says    : I’m not trying to dismiss the effort you’ve put in, so if canceling feels too extreme, we could scale the event way down and pair it with a targeted emergency appeal to protect the roof and our finances.
+    gold function : Establish that the proposal is serious and defend its financial logic.
+    gold says     : I'm serious—the deposit is smaller than what we'd lose trying to stage a gala that isn't selling.
+
+  B: [sigh]
+    model function: acknowledge concern and offer a compromise
+    model says    : I hear how hard this is, so instead of canceling outright, let’s pivot to a scaled-back, lower-cost event that still brings donors together while protecting funds for the roof.
+    gold function : Acknowledge the personal effort and disappointment the proposal would impose.
+    gold says     : I know you've poured months into this, and asking everyone to let it go would feel terrible.
+
+  B: [gasp]
+    model function: Reassure and offer a collaborative alternative
+    model says    : I hear how big this is, so instead of canceling outright, let’s look at a scaled-back gala or a hybrid plan that protects the roof budget while still honoring the momentum you and the team have built.
+    gold function : Reduce the perceived immediacy and clarify that A is raising an option for evaluation, not making a final decision.
+    gold says     : I'm not canceling it today—I want us to see the numbers before the cancellation deadline passes.
+
+============================================================================
+scenario_003 — small retail business
+A proposed: What if we don’t renew the lease and run the shop online with weekend pop-ups instead?
+
+  B: [laughter]
+    model function: Reassure and reframe
+    model says    : I know it sounds like a big shift, but I'm trying to protect what we’ve built without burning out the team.
+    gold function : Establish that the proposal is serious and explain the financial reason it is worth considering.
+    gold says     : I am serious—the new lease would swallow almost everything we make on the store floor.
+
+  B: [sigh]
+    model function: Acknowledge and reassure
+    model says    : I know this hurts, and I’m not rushing us into anything—we can explore options and protect what makes our community special before we decide.
+    gold function : Acknowledge the emotional and community loss involved in the proposal.
+    gold says     : I know—the thought of giving up the reading room hurts me too.
+
+  B: [gasp]
+    model function: reassurance and collaborative planning
+    model says    : I know this is a big shock, but we can walk through what it would mean for our staff, our community, and the parts of the store you care most about before we decide anything.
+    gold function : Reduce the perceived immediacy and clarify that the proposal could be tested before making a final commitment.
+    gold says     : We would not shut the doors tomorrow; we could try the pop-ups for a few months before we give notice.
+
+wrote /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/make_response/out/eval_realtime.json

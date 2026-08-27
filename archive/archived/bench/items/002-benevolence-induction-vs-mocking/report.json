@@ -1,0 +1,118 @@
+{
+  "accepted": true,
+  "rejected_by": null,
+  "cost_usd": 0.8473,
+  "stages": {
+    "mechanical": {
+      "attempt": 2,
+      "failures": []
+    },
+    "bivalence": {
+      "ok": true,
+      "reason": null,
+      "vote_share": 1.0,
+      "prior_favours": "performance_a",
+      "prior_is_unanimous": true,
+      "mean_confidence": 0.6,
+      "both_plausible_rate": 1.0,
+      "votes": [
+        "performance_a",
+        "performance_a",
+        "performance_a",
+        "performance_a"
+      ],
+      "runs": [
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_a",
+          "confidence": 0.6,
+          "both_plausible": true,
+          "reason": "\"It's a dishwasher\" is a self-evident appeal to shared perspective that deflates the stakes of a minor domestic spat rather than asserting superiority, and the laugh most plausibly invites A to drop it together, though a dismissive reading of the same line is available from words alone."
+        },
+        {
+          "shown_order": "b,a",
+          "voted_for": "performance_a",
+          "confidence": 0.6,
+          "both_plausible": true,
+          "reason": "\"It's a dishwasher\" is a self-deprecating deflation of the whole dispute rather than a jab at A specifically, reading as an invitation to drop a trivial squabble — though the preceding turns are contradictory pushback, so a dismissive reading stays live."
+        },
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.6,
+          "both_plausible": true,
+          "reason": "\"It's a dishwasher\" with a laugh reads as a bid to deflate a trivial squabble and reset the mood rather than a status move, though the same line could easily land as dismissive since it sidesteps A's actual point."
+        },
+        {
+          "shown_order": "a,b",
+          "voted_for": "performance_a",
+          "confidence": 0.6,
+          "both_plausible": true,
+          "reason": "\"It's a dishwasher\" reads as a wry bid to deflate a trivial dispute and get A to laugh it off together, though the same line could easily land as dismissing A's complaint as beneath answering."
+        }
+      ]
+    },
+    "discriminability": {
+      "ok": true,
+      "reason": null,
+      "per_performance": {
+        "performance_a": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_a",
+              "confidence": 0.72,
+              "both_plausible": null,
+              "reason": "The tags mark the laugh as coaxing and the surrounding spans as warm, light and hopeful — an invitation to let a trivial disagreement go rather than the cool superiority a dismissive read would require."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_a",
+              "confidence": 0.72,
+              "both_plausible": null,
+              "reason": "The tags mark the laugh as coaxing and warm with a light chuckle and hopeful close — affiliative de-escalation inviting shared perspective rather than the derisive, superior stance that condescension would require."
+            },
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_a",
+              "confidence": 0.87,
+              "both_plausible": null,
+              "reason": "The tags—coaxing laugh, warm, light chuckle, hopeful—mark the laugh as an affiliative bid to defuse a trivial dispute rather than a condescending dismissal, which would need scornful or superior cues."
+            }
+          ]
+        },
+        "performance_b": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "runs_used": 3,
+          "detail": [
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.95,
+              "both_plausible": null,
+              "reason": "The [snort][condescending] and [derisive laugh] tags, plus the dismissive 'It's a dishwasher,' perform the laugh as mockery aimed down at A's concern rather than a warm bid for shared de-escalation."
+            },
+            {
+              "shown_order": "a,b",
+              "voted_for": "performance_b",
+              "confidence": 0.95,
+              "both_plausible": null,
+              "reason": "The tags [snort], [condescending], and [derisive laugh] mark the laugh as mockery aimed at dismissing A's concern from a position of superiority, not a warm bid for shared de-escalation."
+            },
+            {
+              "shown_order": "b,a",
+              "voted_for": "performance_b",
+              "confidence": 0.97,
+              "both_plausible": null,
+              "reason": "The tags [snort], [condescending], and [derisive laugh] mark the laugh as mocking dismissal that ranks B above A's concern, not a warm bid for shared agreement."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

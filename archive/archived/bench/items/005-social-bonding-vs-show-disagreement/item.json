@@ -1,0 +1,156 @@
+{
+  "title": "Early swims at the outdoor pool",
+  "setting": "A and B swim at the same outdoor pool and are getting changed afterwards.",
+  "transcript": [
+    {
+      "speaker": "A",
+      "text": "I was in the water before six this morning."
+    },
+    {
+      "speaker": "B",
+      "text": "Before six."
+    },
+    {
+      "speaker": "A",
+      "text": "The whole lane to myself."
+    },
+    {
+      "speaker": "B",
+      "text": "Every day, then."
+    },
+    {
+      "speaker": "A",
+      "text": "Every day since April."
+    },
+    {
+      "speaker": "B",
+      "text": "Of course you do."
+    }
+  ],
+  "laugh_turn": 5,
+  "laugher": "B",
+  "performance_a": {
+    "framing": "A tells it plainly and unhurriedly, with no flourish — just someone describing a morning they like. B's echoes are the sound of someone being drawn in, and the closing laugh is B recognising a person they know well and are fond of.",
+    "laughable": "Nothing is being found funny or doubted; the laugh points at A themselves, at the pleasure of knowing someone this well.",
+    "turns": [
+      {
+        "speaker": "A",
+        "text": "[relaxed] I was in the water before six this morning."
+      },
+      {
+        "speaker": "B",
+        "text": "[softly impressed] Before six."
+      },
+      {
+        "speaker": "A",
+        "text": "[content][soft chuckle] The whole lane to myself."
+      },
+      {
+        "speaker": "B",
+        "text": "[warm, drawing it out] Every day, then."
+      },
+      {
+        "speaker": "A",
+        "text": "[easy] Every day since April."
+      },
+      {
+        "speaker": "B",
+        "text": "[warm laugh][tender] Of course you do."
+      }
+    ],
+    "expected_answer": "The laugh is warmth toward A — B is showing closeness and fondness for someone whose habits they know, not doubting anything and not finding anything funny.",
+    "arousal": "low",
+    "function": {
+      "key": "social-bonding",
+      "name": "Social bonding / show closeness",
+      "branch": "pleasantness",
+      "branch_name": "Pleasantness (no incongruity)",
+      "cooperative": true,
+      "gloss": "No incongruity at all; conveys closeness and ingroupness, e.g. laughter alongside a compliment or a thank-you.",
+      "framing": "Nothing is funny and nothing is awkward. The laugh is just warmth between two people who like each other.",
+      "arousal": "low"
+    }
+  },
+  "performance_b": {
+    "framing": "A delivers each line with a bit of a flourish, pleased with the account. B's echoes come back flat and unconvinced, and rather than say they don't buy it, B lets the laugh do it.",
+    "laughable": "A's claim of an unbroken daily streak since April, which B declines to accept.",
+    "turns": [
+      {
+        "speaker": "A",
+        "text": "[pleased] I was in the water before six this morning."
+      },
+      {
+        "speaker": "B",
+        "text": "[flat] Before six?"
+      },
+      {
+        "speaker": "A",
+        "text": "[relishing it] The whole lane to myself."
+      },
+      {
+        "speaker": "B",
+        "text": "[dry, unconvinced] Every day, then?"
+      },
+      {
+        "speaker": "A",
+        "text": "[doubling down] Every day since April."
+      },
+      {
+        "speaker": "B",
+        "text": "[disbelieving laugh][dismissive] Of course you do."
+      }
+    ],
+    "expected_answer": "The laugh rejects what A just said — instead of arguing, B laughs to make clear they don't buy the claim.",
+    "arousal": "mid",
+    "function": {
+      "key": "show-disagreement",
+      "name": "Show disagreement",
+      "branch": "social-incongruity",
+      "branch_name": "Social incongruity",
+      "cooperative": false,
+      "gloss": "Non-cooperative: laughter used to reject what has just been said.",
+      "framing": "The laugher rejects the claim outright and the laugh stands in for the rebuttal.",
+      "arousal": "mid"
+    }
+  },
+  "why_ambiguous": "On the page, of course you do is a stock formula that reads equally as sincere recognition of someone you know well and as a wordless yeah, right, and the two flat echoes before it fit an interested listener and an unconvinced one just as well.",
+  "pair": {
+    "a": "social-bonding",
+    "b": "show-disagreement",
+    "crosses_branch": true,
+    "note": "Pleasantness with no incongruity at all vs. a laugh that stands in for a rebuttal. Tests whether the model hears warmth vs. rejection with zero lexical cue."
+  },
+  "probe": {
+    "open_question": "You just heard a short conversation. Speaker B laughs on the line “Of course you do”. What is that laugh doing — what does it convey about how B is treating what A said? Answer in one or two sentences.",
+    "forced_choice_question": "You just heard a short conversation. Speaker B laughs on the line “Of course you do”. Which better describes what that laugh is doing?\n(a) The laugh is warmth toward A — B is showing closeness and fondness for someone whose habits they know, not doubting anything and not finding anything funny.\n(b) The laugh rejects what A just said — instead of arguing, B laughs to make clear they don't buy the claim.\nAnswer with (a) or (b), then one sentence of justification.",
+    "forced_choice_gold": {
+      "performance_a": "a",
+      "performance_b": "b"
+    },
+    "grading_note": "Score the forced choice for accuracy, and the open answer against each performance's expected_answer. Report PAIR accuracy: the item counts as passed only if the model gets both performances right. Because the two performances are word-for-word identical, any model that answers from the text — or from a fixed preference for one function — scores 0 on pair accuracy, not 50%. Independent guessing scores 25%."
+  },
+  "transcript_text": "A: I was in the water before six this morning.\nB: Before six.\nA: The whole lane to myself.\nB: Every day, then.\nA: Every day since April.\nB: Of course you do.",
+  "curation": {
+    "text_prior": {
+      "note": "What a strong reader guesses from the tag-free transcript alone, with no acoustic evidence. It cannot discriminate the two performances (their words are identical) — it only shows which reading is the default and how firmly it is held. `prosody_must_overturn` is the harder direction of the pair.",
+      "favours": "performance_a",
+      "vote_share": 1.0,
+      "mean_confidence": 0.688,
+      "both_plausible_rate": 1.0,
+      "prosody_must_overturn": "performance_b",
+      "votes": [
+        "performance_a",
+        "performance_a",
+        "performance_a",
+        "performance_a"
+      ]
+    },
+    "script_discriminability": {
+      "note": "Whether a reader given the performance directions recovers the intended function. Text-level proxy for the audio — confirm on the rendered audio before shipping.",
+      "performance_a": 1.0,
+      "performance_b": 1.0
+    },
+    "audio_verified": false
+  },
+  "id": "005-social-bonding-vs-show-disagreement"
+}

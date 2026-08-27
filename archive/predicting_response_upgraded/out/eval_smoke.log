@@ -1,0 +1,14 @@
+2 item(s) · model gpt-realtime-2.1 · seed 0
+[1/2] gasp_laughter_001        Q1a ok Q1b ok Q2 ok Q3 ok
+[2/2] grunt_yawn_001           Q1a ok Q1b X  Q2 ok Q3 ok
+
+==================================================================
+Q1a Dialogue-1 sound ID (6-way, chance 16.7%): 2/2 = 100.0%
+Q1b Dialogue-2 sound ID (6-way, chance 16.7%): 1/2 = 50.0%
+Q2  interpretation matching (2-way, chance 50%): 2/2 = 100.0%
+Q3  response matching (2-way, chance 50%):       2/2 = 100.0%
+all four correct:                                1/2 = 50.0%
+  matching (Q2) when both sounds ID'd: 1/1 = 100.0%
+  matching (Q2) when a sound was missed: 1/1 = 100.0%
+
+wrote /Users/ninachen/Documents/github/eigenlab/non-speech-pairing/predicting_response_upgraded/out/eval_realtime_smoke.json

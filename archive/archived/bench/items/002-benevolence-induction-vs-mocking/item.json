@@ -1,0 +1,156 @@
+{
+  "title": "Bowls on the dishwasher top rack",
+  "setting": "Two flatmates standing at the open dishwasher in the kitchen they share.",
+  "transcript": [
+    {
+      "speaker": "A",
+      "text": "You put the bowls on the top rack again."
+    },
+    {
+      "speaker": "B",
+      "text": "That's where they were when I opened it."
+    },
+    {
+      "speaker": "A",
+      "text": "They come out wet up there."
+    },
+    {
+      "speaker": "B",
+      "text": "They came out dry last time."
+    },
+    {
+      "speaker": "A",
+      "text": "I moved them before I ran it."
+    },
+    {
+      "speaker": "B",
+      "text": "It's a dishwasher."
+    }
+  ],
+  "laugh_turn": 5,
+  "laugher": "B",
+  "performance_a": {
+    "framing": "Both keep an even, unbothered tone through the back-and-forth, trading their bits of evidence without heat. B's last turn arrives with the laugh first, opening the line rather than closing it, so the words land as a bid for A to agree that this is small enough to drop.",
+    "laughable": "The disagreement itself — the fact that the two of them are standing at an open dishwasher comparing notes on rack placement — offered up as something A can agree is not worth it.",
+    "turns": [
+      {
+        "speaker": "A",
+        "text": "[even] You put the bowls on the top rack again."
+      },
+      {
+        "speaker": "B",
+        "text": "[easy] That's where they were when I opened it."
+      },
+      {
+        "speaker": "A",
+        "text": "[matter of fact] They come out wet up there."
+      },
+      {
+        "speaker": "B",
+        "text": "[light] They came out dry last time."
+      },
+      {
+        "speaker": "A",
+        "text": "[plain] I moved them before I ran it."
+      },
+      {
+        "speaker": "B",
+        "text": "[coaxing laugh][warm] It's a dishwasher. [light chuckle][hopeful]"
+      }
+    ],
+    "expected_answer": "B's laugh is a friendly nudge inviting A to come round and agree that this is too small to keep going over, keeping things easy between them.",
+    "arousal": "low",
+    "function": {
+      "key": "benevolence-induction",
+      "name": "Benevolence induction",
+      "branch": "social-incongruity",
+      "branch_name": "Social incongruity",
+      "cooperative": true,
+      "gloss": "Induces agreement or goodwill — positive politeness. Clusters with smoothing; differs in seeking agreement rather than reducing intrusion.",
+      "framing": "The speaker needs the other side to come along with them. The laugh is an invitation, slightly ahead of the agreement it is asking for.",
+      "arousal": "low"
+    }
+  },
+  "performance_b": {
+    "framing": "The exchange tightens as it goes: A gets firmer, B gets flatter and shorter. B's last turn opens on a snort and the words come down clipped and from above, so the line answers A's point by refusing to treat it as a point.",
+    "laughable": "A — specifically A's insistence on where the bowls go, which B holds up as beneath discussion.",
+    "turns": [
+      {
+        "speaker": "A",
+        "text": "[flat] You put the bowls on the top rack again."
+      },
+      {
+        "speaker": "B",
+        "text": "[clipped] That's where they were when I opened it."
+      },
+      {
+        "speaker": "A",
+        "text": "[firm] They come out wet up there."
+      },
+      {
+        "speaker": "B",
+        "text": "[unimpressed] They came out dry last time."
+      },
+      {
+        "speaker": "A",
+        "text": "[insistent] I moved them before I ran it."
+      },
+      {
+        "speaker": "B",
+        "text": "[snort][condescending] It's a dishwasher. [derisive laugh]"
+      }
+    ],
+    "expected_answer": "B's laugh talks down to A, treating A's concern as something to be laughed at rather than answered, and puts B above the whole thing.",
+    "arousal": "mid",
+    "function": {
+      "key": "mocking",
+      "name": "Mocking",
+      "branch": "social-incongruity",
+      "branch_name": "Social incongruity",
+      "cooperative": false,
+      "gloss": "Non-cooperative: laughter at the partner or the partner's laughable. Damages the flow of the interaction.",
+      "framing": "The laugher is above the other person's situation and is letting them know. Derision, not shared amusement.",
+      "arousal": "mid"
+    }
+  },
+  "why_ambiguous": "On the words alone, \"It's a dishwasher\" can either be B asking A to agree that the whole thing is too small to keep going over, or B dismissing A as too small to answer — and since both flatmates have equal standing in the shared kitchen, each has cited evidence, and neither is asking the other for anything, nothing in the text tips which one it is.",
+  "pair": {
+    "a": "benevolence-induction",
+    "b": "mocking",
+    "crosses_branch": false,
+    "note": "Same mild dig, cooperative vs. non-cooperative. Warm coaxing laugh keeps the interaction going; derisive laugh attacks it. The strongest social-consequence flip available."
+  },
+  "probe": {
+    "open_question": "You just heard a short conversation. Speaker B laughs on the line “It's a dishwasher”. What is that laugh doing — what does it convey about how B is treating what A said? Answer in one or two sentences.",
+    "forced_choice_question": "You just heard a short conversation. Speaker B laughs on the line “It's a dishwasher”. Which better describes what that laugh is doing?\n(a) B's laugh is a friendly nudge inviting A to come round and agree that this is too small to keep going over, keeping things easy between them.\n(b) B's laugh talks down to A, treating A's concern as something to be laughed at rather than answered, and puts B above the whole thing.\nAnswer with (a) or (b), then one sentence of justification.",
+    "forced_choice_gold": {
+      "performance_a": "a",
+      "performance_b": "b"
+    },
+    "grading_note": "Score the forced choice for accuracy, and the open answer against each performance's expected_answer. Report PAIR accuracy: the item counts as passed only if the model gets both performances right. Because the two performances are word-for-word identical, any model that answers from the text — or from a fixed preference for one function — scores 0 on pair accuracy, not 50%. Independent guessing scores 25%."
+  },
+  "transcript_text": "A: You put the bowls on the top rack again.\nB: That's where they were when I opened it.\nA: They come out wet up there.\nB: They came out dry last time.\nA: I moved them before I ran it.\nB: It's a dishwasher.",
+  "curation": {
+    "text_prior": {
+      "note": "What a strong reader guesses from the tag-free transcript alone, with no acoustic evidence. It cannot discriminate the two performances (their words are identical) — it only shows which reading is the default and how firmly it is held. `prosody_must_overturn` is the harder direction of the pair.",
+      "favours": "performance_a",
+      "vote_share": 1.0,
+      "mean_confidence": 0.6,
+      "both_plausible_rate": 1.0,
+      "prosody_must_overturn": "performance_b",
+      "votes": [
+        "performance_a",
+        "performance_a",
+        "performance_a",
+        "performance_a"
+      ]
+    },
+    "script_discriminability": {
+      "note": "Whether a reader given the performance directions recovers the intended function. Text-level proxy for the audio — confirm on the rendered audio before shipping.",
+      "performance_a": 1.0,
+      "performance_b": 1.0
+    },
+    "audio_verified": false
+  },
+  "id": "002-benevolence-induction-vs-mocking"
+}

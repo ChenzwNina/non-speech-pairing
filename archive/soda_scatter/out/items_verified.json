@@ -1,0 +1,491 @@
+{
+  "model": "gpt-5.6-terra",
+  "generated_at": "2026-08-24T06:50:16.862264+00:00",
+  "seed_dataset": "allenai/soda",
+  "turns_per_item": 12,
+  "vocalizations_range": [
+    6,
+    12
+  ],
+  "vocalization_types": [
+    "laughter",
+    "yawn",
+    "sob",
+    "sigh"
+  ],
+  "rng_seed": 3,
+  "verified_at": "2026-08-24T08:53:08.172249+00:00",
+  "verifier": "gpt-realtime-2.1",
+  "results": [
+    {
+      "item_id": "soda_2409141",
+      "seed": {
+        "narrative": "Eisley Hiro a reward for her help. She is very happy and excited to receive it.",
+        "speaker_a": "Eisley",
+        "speaker_b": "Hiro",
+        "relation": "xReact",
+        "literal": "Eisley offers Hiro a reward. Now Eisley feels rewarded.",
+        "original_index": 2409141
+      },
+      "plan": [
+        {
+          "turn": 3,
+          "vocalization": "laughter"
+        },
+        {
+          "turn": 4,
+          "vocalization": "yawn"
+        },
+        {
+          "turn": 5,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 6,
+          "vocalization": "yawn"
+        },
+        {
+          "turn": 7,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 8,
+          "vocalization": "laughter"
+        },
+        {
+          "turn": 9,
+          "vocalization": "sob"
+        },
+        {
+          "turn": 10,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 11,
+          "vocalization": "sob"
+        },
+        {
+          "turn": 12,
+          "vocalization": "yawn"
+        }
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Eisley",
+          "text": "Hiro, you asked me to come by—did the museum board decide what to do about the archive?"
+        },
+        {
+          "turn": 2,
+          "speaker": "Hiro",
+          "text": "They did. Your notes led us to the sealed room before the renovation crew touched it, and the board wants to thank you properly."
+        },
+        {
+          "turn": 3,
+          "speaker": "Eisley",
+          "text": "[burst of delighted laughter] Thank me? I just followed the old floor plans and hoped I wasn't sending everyone into a broom closet."
+        },
+        {
+          "turn": 4,
+          "speaker": "Hiro",
+          "text": "[wide yawn] You found a collection everyone thought was gone. This is a cash award, and there is a letter offering you a research fellowship."
+        },
+        {
+          "turn": 5,
+          "speaker": "Eisley",
+          "text": "[sigh of relief] This covers my tuition gap for the semester. I was trying not to panic about that."
+        },
+        {
+          "turn": 6,
+          "speaker": "Hiro",
+          "text": "[long yawn] I am glad it reached you in time. The board also asked whether you would catalog the collection with us this summer."
+        },
+        {
+          "turn": 7,
+          "speaker": "Eisley",
+          "text": "[trembling sigh] My grandfather used to bring me here and tell me every locked door had a story behind it. He would have loved this."
+        },
+        {
+          "turn": 8,
+          "speaker": "Hiro",
+          "text": "[warm laughter] Then you already had the right training. We would be lucky to have you on the project."
+        },
+        {
+          "turn": 9,
+          "speaker": "Eisley",
+          "text": "[shaky sob] I keep thinking I need to wake up before someone takes the letter back. Yes—yes, I want to do it."
+        },
+        {
+          "turn": 10,
+          "speaker": "Hiro",
+          "text": "[weary sigh] No one is taking it back. I argued for you because I watched you do the work when everyone else had given up."
+        },
+        {
+          "turn": 11,
+          "speaker": "Eisley",
+          "text": "[relieved sob] Thank you for seeing me, Hiro. I am going to make this collection worthy of all the people who protected it."
+        },
+        {
+          "turn": 12,
+          "speaker": "Hiro",
+          "text": "[sleepy yawn] Start by celebrating tonight. Tomorrow, after I have slept, we can plan your first day."
+        }
+      ],
+      "vocalizations": [
+        {
+          "turn": 3,
+          "vocalization": "laughter",
+          "audio_tag": "[burst of delighted laughter]",
+          "target": "the unexpected reward",
+          "intention_after": "Express amazed happiness before modestly explaining her role."
+        },
+        {
+          "turn": 4,
+          "vocalization": "yawn",
+          "audio_tag": "[wide yawn]",
+          "target": "the overnight board meeting",
+          "intention_after": "Push through his exhaustion and reveal the full reward."
+        },
+        {
+          "turn": 5,
+          "vocalization": "sigh",
+          "audio_tag": "[sigh of relief]",
+          "target": "her tuition gap",
+          "intention_after": "Explain why the money changes her immediate situation."
+        },
+        {
+          "turn": 7,
+          "vocalization": "sigh",
+          "audio_tag": "[trembling sigh]",
+          "target": "her grandfather's memory",
+          "intention_after": "Share the personal meaning behind her excitement."
+        },
+        {
+          "turn": 8,
+          "vocalization": "laughter",
+          "audio_tag": "[warm laughter]",
+          "target": "her grandfather's lesson",
+          "intention_after": "Affirm her belonging on the project."
+        },
+        {
+          "turn": 9,
+          "vocalization": "sob",
+          "audio_tag": "[shaky sob]",
+          "target": "the fellowship letter",
+          "intention_after": "Accept the offer despite feeling overwhelmed."
+        },
+        {
+          "turn": 10,
+          "vocalization": "sigh",
+          "audio_tag": "[weary sigh]",
+          "target": "his fight for her award",
+          "intention_after": "Reassure her that the recognition is secure."
+        },
+        {
+          "turn": 12,
+          "vocalization": "yawn",
+          "audio_tag": "[sleepy yawn]",
+          "target": "the need for rest",
+          "intention_after": "Postpone planning while encouraging her to celebrate."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "input_tokens": 1291,
+        "output_tokens": 1431
+      },
+      "labels_verified": true,
+      "vocalizations_dropped": [
+        {
+          "turn": 6,
+          "vocalization": "yawn",
+          "audio_tag": "[long yawn]",
+          "target": "fatigue after the crisis",
+          "intention_after": "Move from the award to the summer job offer."
+        },
+        {
+          "turn": 11,
+          "vocalization": "sob",
+          "audio_tag": "[relieved sob]",
+          "target": "Hiro's confidence in her",
+          "intention_after": "Thank him and promise to honor the opportunity."
+        }
+      ],
+      "verification": {
+        "model": "gpt-realtime-2.1",
+        "runs_per_turn": 5,
+        "rule": "a label is kept when a strict majority of parseable votes name it",
+        "verdicts": [
+          {
+            "turn": 3,
+            "target": "laughter",
+            "audio_tag": "[burst of delighted laughter]",
+            "audio": "soda_scatter/out/lines/soda_2409141/03_eisley.mp3",
+            "hits": 5,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "laughter",
+              "laughter",
+              "laughter",
+              "laughter",
+              "laughter"
+            ],
+            "clarity": [
+              "clear",
+              "clear",
+              "clear",
+              "clear",
+              "clear"
+            ],
+            "verified": true
+          },
+          {
+            "turn": 4,
+            "target": "yawn",
+            "audio_tag": "[wide yawn]",
+            "audio": "soda_scatter/out/lines/soda_2409141/04_hiro.mp3",
+            "hits": 5,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "yawn",
+              "yawn",
+              "yawn",
+              "yawn",
+              "yawn"
+            ],
+            "clarity": [
+              "clear",
+              "clear",
+              "clear",
+              "clear",
+              "clear"
+            ],
+            "verified": true
+          },
+          {
+            "turn": 5,
+            "target": "sigh",
+            "audio_tag": "[sigh of relief]",
+            "audio": "soda_scatter/out/lines/soda_2409141/05_eisley.mp3",
+            "hits": 5,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "sigh",
+              "sigh",
+              "sigh",
+              "sigh",
+              "sigh"
+            ],
+            "clarity": [
+              "clear",
+              "clear",
+              "clear",
+              "clear",
+              "clear"
+            ],
+            "verified": true
+          },
+          {
+            "turn": 6,
+            "target": "yawn",
+            "audio_tag": "[long yawn]",
+            "audio": "soda_scatter/out/lines/soda_2409141/06_hiro.mp3",
+            "hits": 2,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "yawn",
+              "none",
+              "none",
+              "yawn",
+              "none"
+            ],
+            "clarity": [
+              "clear",
+              "none",
+              "clear",
+              "clear",
+              "none"
+            ],
+            "verified": false
+          },
+          {
+            "turn": 7,
+            "target": "sigh",
+            "audio_tag": "[trembling sigh]",
+            "audio": "soda_scatter/out/lines/soda_2409141/07_eisley.mp3",
+            "hits": 4,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "sigh",
+              "sigh",
+              "laughter",
+              "sigh",
+              "sigh"
+            ],
+            "clarity": [
+              "clear",
+              "clear",
+              "clear",
+              "clear",
+              "clear"
+            ],
+            "verified": true
+          },
+          {
+            "turn": 8,
+            "target": "laughter",
+            "audio_tag": "[warm laughter]",
+            "audio": "soda_scatter/out/lines/soda_2409141/08_hiro.mp3",
+            "hits": 5,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "laughter",
+              "laughter",
+              "laughter",
+              "laughter",
+              "laughter"
+            ],
+            "clarity": [
+              "clear",
+              "clear",
+              "clear",
+              "clear",
+              "clear"
+            ],
+            "verified": true
+          },
+          {
+            "turn": 9,
+            "target": "sob",
+            "audio_tag": "[shaky sob]",
+            "audio": "soda_scatter/out/lines/soda_2409141/09_eisley.mp3",
+            "hits": 4,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "sob",
+              "laughter",
+              "sob",
+              "sob",
+              "sob"
+            ],
+            "clarity": [
+              "clear",
+              "clear",
+              "clear",
+              "clear",
+              "clear"
+            ],
+            "verified": true
+          },
+          {
+            "turn": 10,
+            "target": "sigh",
+            "audio_tag": "[weary sigh]",
+            "audio": "soda_scatter/out/lines/soda_2409141/10_hiro.mp3",
+            "hits": 4,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "sigh",
+              "none",
+              "sigh",
+              "sigh",
+              "sigh"
+            ],
+            "clarity": [
+              "clear",
+              "none",
+              "clear",
+              "clear",
+              "clear"
+            ],
+            "verified": true
+          },
+          {
+            "turn": 11,
+            "target": "sob",
+            "audio_tag": "[relieved sob]",
+            "audio": "soda_scatter/out/lines/soda_2409141/11_eisley.mp3",
+            "hits": 2,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "laughter",
+              "sob",
+              "none",
+              "sob",
+              "sigh"
+            ],
+            "clarity": [
+              "faint",
+              "clear",
+              "none",
+              "clear",
+              "clear"
+            ],
+            "verified": false
+          },
+          {
+            "turn": 12,
+            "target": "yawn",
+            "audio_tag": "[sleepy yawn]",
+            "audio": "soda_scatter/out/lines/soda_2409141/12_hiro.mp3",
+            "hits": 3,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "none",
+              "yawn",
+              "yawn",
+              "yawn",
+              "sigh"
+            ],
+            "clarity": [
+              null,
+              "clear",
+              "clear",
+              "clear",
+              "clear"
+            ],
+            "verified": true
+          }
+        ],
+        "quiet_turns": [
+          {
+            "turn": 1,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "majority_heard_something": false
+          },
+          {
+            "turn": 2,
+            "runs": 5,
+            "usable_votes": 5,
+            "votes": [
+              "none",
+              "none",
+              "none",
+              "none",
+              "none"
+            ],
+            "majority_heard_something": false
+          }
+        ]
+      }
+    }
+  ]
+}

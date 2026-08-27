@@ -1,0 +1,3204 @@
+{
+  "verifier_model": "gpt-5.4",
+  "effort": "low",
+  "trials_per_candidate": 6,
+  "prob_tolerance": 10.0,
+  "slot2_max": 0.7,
+  "verified_at": "2026-08-11T17:34:10.428828+00:00",
+  "source": "transcripts-same_content-different_purpose.json",
+  "panel_system_prompt": "\nYou are an expert annotator of laughter pragmatics in spoken dialogue.\n\nYou will see a short dialogue transcript and two candidate pragmatic functions for\nlaughter placed at the marked current turn. Each function is given with its name, its\nlaughable type, its definition, and an example with an explanation - use those to fix\nthe distinction precisely before you decide.\n\nYou see the WORDS ONLY - no audio, and no information about how the laughter sounds.\n\nDecide which of the two functions the laughter is more likely to be serving, judging\nfrom the lexical content and the interactional context alone.\n\nThis is a forced choice. You must pick one option even when the two feel close - do\nnot refuse, hedge into a tie, or answer \"both\". Also report your probability that\nOption 1 is the intended function, as an integer from 0 to 100; use 50 when the two\nare genuinely indistinguishable from the words.\n\nReport the single strongest cue in the wording that drove your choice, quoted verbatim\nfrom the dialogue. If nothing in the wording pushed you either way and the choice was\neffectively arbitrary, return an empty string for the cue.\n",
+  "verdicts": [
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__marking-incongruity",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Marking incongruity"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 5,
+        "picks_function_2": 1,
+        "pick_share_function_1": 0.833,
+        "pick_imbalance": 0.333,
+        "mean_p_function_1": 63.3,
+        "prob_imbalance": 13.3,
+        "binomial_p": 0.2188,
+        "slot2_share": 0.333,
+        "order_gap": 18.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "So we're ranked below the neighbours now.",
+          "we're ranked below the neighbours now.",
+          "So we're ranked below the neighbours now.",
+          "the good ones are being saved for when the neighbours visit",
+          "ranked below the neighbours",
+          "So we're ranked below the neighbours now."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "So we're ranked below the neighbours now."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "we're ranked below the neighbours now."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 73,
+            "cue": "So we're ranked below the neighbours now."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 32,
+            "cue": "the good ones are being saved for when the neighbours visit"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 73,
+            "cue": "ranked below the neighbours"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "So we're ranked below the neighbours now."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5316,
+        "output_tokens": 727,
+        "total_tokens": 6043
+      }
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__softening-trouble-telling",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Softening / trouble-telling"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 1,
+        "picks_function_2": 5,
+        "pick_share_function_1": 0.167,
+        "pick_imbalance": 0.333,
+        "mean_p_function_1": 41.0,
+        "prob_imbalance": 9.0,
+        "binomial_p": 0.2188,
+        "slot2_share": 0.667,
+        "order_gap": 3.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": true,
+        "cues": [
+          "One of the labels just says stuff.",
+          "just says stuff",
+          "One of the labels just says stuff.",
+          "One of the labels just says stuff.",
+          "One of the labels just says stuff.",
+          "One of the labels just says stuff."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 38,
+            "cue": "One of the labels just says stuff."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 60,
+            "cue": "just says stuff"
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 40,
+            "cue": "One of the labels just says stuff."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "One of the labels just says stuff."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 40,
+            "cue": "One of the labels just says stuff."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 40,
+            "cue": "One of the labels just says stuff."
+          }
+        ]
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 4980,
+        "output_tokens": 895,
+        "total_tokens": 5875
+      }
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__benevolence-induction",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Benevolence induction"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 20.5,
+        "prob_imbalance": 29.5,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 9.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "Any chance it can stay there till tomorrow?",
+          "Any chance it can stay there till tomorrow?",
+          "Any chance it can stay there till tomorrow?",
+          "Any chance it can stay there till tomorrow?",
+          "Any chance it can stay there till tomorrow?",
+          "Any chance it can stay there till tomorrow?"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 20,
+            "cue": "Any chance it can stay there till tomorrow?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 9,
+            "cue": "Any chance it can stay there till tomorrow?"
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "Any chance it can stay there till tomorrow?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 16,
+            "cue": "Any chance it can stay there till tomorrow?"
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "Any chance it can stay there till tomorrow?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 22,
+            "cue": "Any chance it can stay there till tomorrow?"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5136,
+        "output_tokens": 591,
+        "total_tokens": 5727
+      }
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__smoothing",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Smoothing"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 5,
+        "picks_function_2": 1,
+        "pick_share_function_1": 0.833,
+        "pick_imbalance": 0.333,
+        "mean_p_function_1": 64.2,
+        "prob_imbalance": 14.2,
+        "binomial_p": 0.2188,
+        "slot2_share": 0.333,
+        "order_gap": 14.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "We're the only two people who live in this apartment.",
+          "I know, I wrote it anyway.",
+          "We're the only two people who live in this apartment.",
+          "We're the only two people who live in this apartment.",
+          "We're the only two people who live in this apartment.",
+          "We're the only two people who live in this apartment."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "We're the only two people who live in this apartment."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "I know, I wrote it anyway."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 79,
+            "cue": "We're the only two people who live in this apartment."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "We're the only two people who live in this apartment."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "We're the only two people who live in this apartment."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 31,
+            "cue": "We're the only two people who live in this apartment."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4962,
+        "output_tokens": 910,
+        "total_tokens": 5872
+      }
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__show-sympathy",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Show sympathy"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 75.7,
+        "prob_imbalance": 25.7,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 10.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "So we're back to the step stool.",
+          "put the rack on the shelf I can't reach",
+          "I alphabetized every single jar and then put the rack on the shelf I can't reach.",
+          "So we're back to the step stool.",
+          "So we're back to the step stool.",
+          "I alphabetized every single jar and then put the rack on the shelf I can't reach."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "So we're back to the step stool."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "put the rack on the shelf I can't reach"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 78,
+            "cue": "I alphabetized every single jar and then put the rack on the shelf I can't reach."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "So we're back to the step stool."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 80,
+            "cue": "So we're back to the step stool."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 75,
+            "cue": "I alphabetized every single jar and then put the rack on the shelf I can't reach."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5550,
+        "output_tokens": 832,
+        "total_tokens": 6382
+      }
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__marking-irony",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Marking irony"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 19.2,
+        "prob_imbalance": 30.8,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 2.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "So it's basically permanent now.",
+          "So it's basically permanent now.",
+          "So it's basically permanent now.",
+          "So it's basically permanent now.",
+          "So it's basically permanent now.",
+          "So it's basically permanent now."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "So it's basically permanent now."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 25,
+            "cue": "So it's basically permanent now."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "So it's basically permanent now."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 15,
+            "cue": "So it's basically permanent now."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "So it's basically permanent now."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 21,
+            "cue": "So it's basically permanent now."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4926,
+        "output_tokens": 649,
+        "total_tokens": 5575
+      }
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__scare-quoting-invite-enrichment",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Scare-quoting / invite enrichment"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 10.7,
+        "prob_imbalance": 39.3,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 8.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "have a word with him",
+          "have a word with him",
+          "have a word with him",
+          "have a word with him",
+          "have a word with him",
+          "have a word with him"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "have a word with him"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 4,
+            "cue": "have a word with him"
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "have a word with him"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 7,
+            "cue": "have a word with him"
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 8,
+            "cue": "have a word with him"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 9,
+            "cue": "have a word with him"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5028,
+        "output_tokens": 642,
+        "total_tokens": 5670
+      }
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__lexical-uncertainty-editing-phrase",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Lexical uncertainty / editing phrase"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 5,
+        "picks_function_2": 1,
+        "pick_share_function_1": 0.833,
+        "pick_imbalance": 0.333,
+        "mean_p_function_1": 70.3,
+        "prob_imbalance": 20.3,
+        "binomial_p": 0.2188,
+        "slot2_share": 0.667,
+        "order_gap": 3.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I've been calling it a casserole.",
+          "it's everything from the vegetable drawer plus the last of the rice",
+          "I've been calling it a casserole.",
+          "it's everything from the vegetable drawer plus the last of the rice",
+          "I've been calling it a casserole.",
+          "it's everything from the vegetable drawer plus the last of the rice"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "I've been calling it a casserole."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 75,
+            "cue": "it's everything from the vegetable drawer plus the last of the rice"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 87,
+            "cue": "I've been calling it a casserole."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 76,
+            "cue": "it's everything from the vegetable drawer plus the last of the rice"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "I've been calling it a casserole."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "it's everything from the vegetable drawer plus the last of the rice"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5106,
+        "output_tokens": 1010,
+        "total_tokens": 6116
+      }
+    },
+    {
+      "id": "domestic__show-enjoyment-of-incongruity__affiliation",
+      "topic": "domestic",
+      "functions": [
+        "Show enjoyment of incongruity",
+        "Affiliation"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 91.0,
+        "prob_imbalance": 41.0,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 2.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "alphabetized the cereal boxes",
+          "alphabetized the cereal boxes",
+          "then alphabetized the cereal boxes",
+          "then alphabetized the cereal boxes",
+          "alphabetized the cereal boxes",
+          "I did that and then alphabetized the cereal boxes"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 94,
+            "cue": "alphabetized the cereal boxes"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "alphabetized the cereal boxes"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 91,
+            "cue": "then alphabetized the cereal boxes"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "then alphabetized the cereal boxes"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "alphabetized the cereal boxes"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 85,
+            "cue": "I did that and then alphabetized the cereal boxes"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5274,
+        "output_tokens": 439,
+        "total_tokens": 5713
+      }
+    },
+    {
+      "id": "domestic__marking-incongruity__softening-trouble-telling",
+      "topic": "domestic",
+      "functions": [
+        "Marking incongruity",
+        "Softening / trouble-telling"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 76.5,
+        "prob_imbalance": 26.5,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 8.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "right between the ketchup and the batteries",
+          "between the ketchup and the batteries",
+          "between the ketchup and the batteries",
+          "right between the ketchup and the batteries",
+          "right between the ketchup and the batteries",
+          "between the ketchup and the batteries"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "right between the ketchup and the batteries"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 75,
+            "cue": "between the ketchup and the batteries"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 74,
+            "cue": "between the ketchup and the batteries"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "right between the ketchup and the batteries"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "right between the ketchup and the batteries"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "between the ketchup and the batteries"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4764,
+        "output_tokens": 756,
+        "total_tokens": 5520
+      }
+    },
+    {
+      "id": "domestic__marking-incongruity__benevolence-induction",
+      "topic": "domestic",
+      "functions": [
+        "Marking incongruity",
+        "Benevolence induction"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 28.7,
+        "prob_imbalance": 21.3,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 9.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "So maybe we just do pizza tonight.",
+          "So maybe we just do pizza tonight.",
+          "So maybe we just do pizza tonight.",
+          "So maybe we just do pizza tonight.",
+          "So maybe we just do pizza tonight.",
+          "maybe we just do pizza tonight"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 38,
+            "cue": "So maybe we just do pizza tonight."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 26,
+            "cue": "So maybe we just do pizza tonight."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 32,
+            "cue": "So maybe we just do pizza tonight."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 20,
+            "cue": "So maybe we just do pizza tonight."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 30,
+            "cue": "So maybe we just do pizza tonight."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 26,
+            "cue": "maybe we just do pizza tonight"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4944,
+        "output_tokens": 718,
+        "total_tokens": 5662
+      }
+    },
+    {
+      "id": "domestic__marking-incongruity__smoothing",
+      "topic": "domestic",
+      "functions": [
+        "Marking incongruity",
+        "Smoothing"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 5,
+        "picks_function_2": 1,
+        "pick_share_function_1": 0.833,
+        "pick_imbalance": 0.333,
+        "mean_p_function_1": 69.3,
+        "prob_imbalance": 19.3,
+        "binomial_p": 0.2188,
+        "slot2_share": 0.333,
+        "order_gap": 19.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "you've been carrying down every morning",
+          "So the upstairs one is the new one you've been carrying down every morning?",
+          "you've been carrying down every morning",
+          "So the upstairs one is the new one you've been carrying down every morning?",
+          "So the upstairs one is the new one you've been carrying down every morning?",
+          "So the upstairs one is the new one you've been carrying down every morning?"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 79,
+            "cue": "you've been carrying down every morning"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 36,
+            "cue": "So the upstairs one is the new one you've been carrying down every morning?"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "you've been carrying down every morning"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "So the upstairs one is the new one you've been carrying down every morning?"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 74,
+            "cue": "So the upstairs one is the new one you've been carrying down every morning?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 73,
+            "cue": "So the upstairs one is the new one you've been carrying down every morning?"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4728,
+        "output_tokens": 697,
+        "total_tokens": 5425
+      }
+    },
+    {
+      "id": "domestic__marking-incongruity__show-sympathy",
+      "topic": "domestic",
+      "functions": [
+        "Marking incongruity",
+        "Show sympathy"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 4,
+        "picks_function_2": 2,
+        "pick_share_function_1": 0.667,
+        "pick_imbalance": 0.167,
+        "mean_p_function_1": 56.3,
+        "prob_imbalance": 6.3,
+        "binomial_p": 0.6875,
+        "slot2_share": 0.5,
+        "order_gap": 4.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": true,
+        "cues": [
+          "A whole hour out there in one slipper.",
+          "in one slipper",
+          "in one slipper",
+          "A whole hour out there in one slipper.",
+          "in one slipper",
+          "in one slipper"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 68,
+            "cue": "A whole hour out there in one slipper."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 37,
+            "cue": "in one slipper"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 68,
+            "cue": "in one slipper"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 60,
+            "cue": "A whole hour out there in one slipper."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 40,
+            "cue": "in one slipper"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "in one slipper"
+          }
+        ]
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 5394,
+        "output_tokens": 757,
+        "total_tokens": 6151
+      }
+    },
+    {
+      "id": "domestic__marking-incongruity__marking-irony",
+      "topic": "domestic",
+      "functions": [
+        "Marking incongruity",
+        "Marking irony"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 18.2,
+        "prob_imbalance": 31.8,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 3.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "So the hallway's the priority.",
+          "So the hallway's the priority.",
+          "So the hallway's the priority.",
+          "So the hallway's the priority.",
+          "So the hallway's the priority.",
+          "So the hallway's the priority."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "So the hallway's the priority."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 17,
+            "cue": "So the hallway's the priority."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 20,
+            "cue": "So the hallway's the priority."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 12,
+            "cue": "So the hallway's the priority."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 22,
+            "cue": "So the hallway's the priority."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 20,
+            "cue": "So the hallway's the priority."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4668,
+        "output_tokens": 548,
+        "total_tokens": 5216
+      }
+    },
+    {
+      "id": "domestic__marking-incongruity__scare-quoting-invite-enrichment",
+      "topic": "domestic",
+      "functions": [
+        "Marking incongruity",
+        "Scare-quoting / invite enrichment"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 18.5,
+        "prob_imbalance": 31.5,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 10.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "He calls it a shelf.",
+          "He calls it a shelf.",
+          "He calls it a shelf.",
+          "He calls it a shelf.",
+          "He calls it a shelf.",
+          "He calls it a shelf."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 22,
+            "cue": "He calls it a shelf."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "He calls it a shelf."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 21,
+            "cue": "He calls it a shelf."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 12,
+            "cue": "He calls it a shelf."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "He calls it a shelf."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 10,
+            "cue": "He calls it a shelf."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4734,
+        "output_tokens": 535,
+        "total_tokens": 5269
+      }
+    },
+    {
+      "id": "domestic__marking-incongruity__lexical-uncertainty-editing-phrase",
+      "topic": "domestic",
+      "functions": [
+        "Marking incongruity",
+        "Lexical uncertainty / editing phrase"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 77.2,
+        "prob_imbalance": 27.2,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 1.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "that makes it a rota",
+          "that makes it a rota",
+          "That\u0019s more organised than I expected from you two.",
+          "That’s more organised than I expected from you two.",
+          "That's more organised than I expected from you two.",
+          "that makes it a rota"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 81,
+            "cue": "that makes it a rota"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 80,
+            "cue": "that makes it a rota"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "That\u0019s more organised than I expected from you two."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "That’s more organised than I expected from you two."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "That's more organised than I expected from you two."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 80,
+            "cue": "that makes it a rota"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4818,
+        "output_tokens": 878,
+        "total_tokens": 5696
+      }
+    },
+    {
+      "id": "domestic__marking-incongruity__affiliation",
+      "topic": "domestic",
+      "functions": [
+        "Marking incongruity",
+        "Affiliation"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 90.2,
+        "prob_imbalance": 40.2,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 5.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "So that's what all those little squares in my drawer are.",
+          "So that's what all those little squares in my drawer are.",
+          "So that's what all those little squares in my drawer are.",
+          "So that's what all those little squares in my drawer are.",
+          "So that's what all those little squares in my drawer are.",
+          "So that's what all those little squares in my drawer are."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 91,
+            "cue": "So that's what all those little squares in my drawer are."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "So that's what all those little squares in my drawer are."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 94,
+            "cue": "So that's what all those little squares in my drawer are."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "So that's what all those little squares in my drawer are."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 94,
+            "cue": "So that's what all those little squares in my drawer are."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "So that's what all those little squares in my drawer are."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4932,
+        "output_tokens": 505,
+        "total_tokens": 5437
+      }
+    },
+    {
+      "id": "domestic__softening-trouble-telling__benevolence-induction",
+      "topic": "domestic",
+      "functions": [
+        "Softening / trouble-telling",
+        "Benevolence induction"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 4,
+        "picks_function_2": 2,
+        "pick_share_function_1": 0.667,
+        "pick_imbalance": 0.167,
+        "mean_p_function_1": 55.7,
+        "prob_imbalance": 5.7,
+        "binomial_p": 0.6875,
+        "slot2_share": 0.833,
+        "order_gap": 23.3,
+        "position_bias_suspected": true,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I suppose that's tonight then.",
+          "I suppose that's tonight then.",
+          "that's tonight then",
+          "that's tonight then",
+          "I suppose that's tonight then.",
+          "I suppose that's tonight then."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 33,
+            "cue": "I suppose that's tonight then."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 61,
+            "cue": "I suppose that's tonight then."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "that's tonight then"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 69,
+            "cue": "that's tonight then"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 64,
+            "cue": "I suppose that's tonight then."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "I suppose that's tonight then."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4710,
+        "output_tokens": 837,
+        "total_tokens": 5547
+      }
+    },
+    {
+      "id": "domestic__softening-trouble-telling__smoothing",
+      "topic": "domestic",
+      "functions": [
+        "Softening / trouble-telling",
+        "Smoothing"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 86.3,
+        "prob_imbalance": 36.3,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 0.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "It's a lot more yellow than the sample was.",
+          "It's a lot more yellow than the sample was.",
+          "It's a lot more yellow than the sample was.",
+          "It's a lot more yellow than the sample was.",
+          "It's a lot more yellow than the sample was.",
+          "It's a lot more yellow than the sample was."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 86,
+            "cue": "It's a lot more yellow than the sample was."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "It's a lot more yellow than the sample was."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 86,
+            "cue": "It's a lot more yellow than the sample was."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "It's a lot more yellow than the sample was."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "It's a lot more yellow than the sample was."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "It's a lot more yellow than the sample was."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4470,
+        "output_tokens": 579,
+        "total_tokens": 5049
+      }
+    },
+    {
+      "id": "domestic__softening-trouble-telling__show-sympathy",
+      "topic": "domestic",
+      "functions": [
+        "Softening / trouble-telling",
+        "Show sympathy"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 27.7,
+        "prob_imbalance": 22.3,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 2.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "The bed frame's been missing two since we moved in.",
+          "The bed frame's been missing two since we moved in.",
+          "Yeah, I couldn't work out where they were supposed to go, so I just stopped.",
+          "The bed frame's been missing two since we moved in.",
+          "The bed frame's been missing two since we moved in.",
+          "The bed frame's been missing two since we moved in."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 30,
+            "cue": "The bed frame's been missing two since we moved in."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "The bed frame's been missing two since we moved in."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 20,
+            "cue": "Yeah, I couldn't work out where they were supposed to go, so I just stopped."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "The bed frame's been missing two since we moved in."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 30,
+            "cue": "The bed frame's been missing two since we moved in."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 30,
+            "cue": "The bed frame's been missing two since we moved in."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5130,
+        "output_tokens": 1130,
+        "total_tokens": 6260
+      }
+    },
+    {
+      "id": "domestic__softening-trouble-telling__marking-irony",
+      "topic": "domestic",
+      "functions": [
+        "Softening / trouble-telling",
+        "Marking irony"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 91.0,
+        "prob_imbalance": 41.0,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 0.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "There's still a little bit of sauce on the stove there.",
+          "There's still a little bit of sauce on the stove there.",
+          "There's still a little bit of sauce on the stove there.",
+          "There's still a little bit of sauce on the stove there.",
+          "There's still a little bit of sauce on the stove there.",
+          "There's still a little bit of sauce on the stove there."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "There's still a little bit of sauce on the stove there."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "There's still a little bit of sauce on the stove there."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 91,
+            "cue": "There's still a little bit of sauce on the stove there."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "There's still a little bit of sauce on the stove there."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 93,
+            "cue": "There's still a little bit of sauce on the stove there."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 90,
+            "cue": "There's still a little bit of sauce on the stove there."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4428,
+        "output_tokens": 491,
+        "total_tokens": 4919
+      }
+    },
+    {
+      "id": "domestic__softening-trouble-telling__scare-quoting-invite-enrichment",
+      "topic": "domestic",
+      "functions": [
+        "Softening / trouble-telling",
+        "Scare-quoting / invite enrichment"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 94.3,
+        "prob_imbalance": 44.3,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 1.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "It's leaning a bit.",
+          "It's leaning a bit.",
+          "It's leaning a bit.",
+          "It's leaning a bit.",
+          "It's leaning a bit.",
+          "It's leaning a bit."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 96,
+            "cue": "It's leaning a bit."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "It's leaning a bit."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 95,
+            "cue": "It's leaning a bit."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 94,
+            "cue": "It's leaning a bit."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 94,
+            "cue": "It's leaning a bit."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 95,
+            "cue": "It's leaning a bit."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4464,
+        "output_tokens": 446,
+        "total_tokens": 4910
+      }
+    },
+    {
+      "id": "domestic__softening-trouble-telling__lexical-uncertainty-editing-phrase",
+      "topic": "domestic",
+      "functions": [
+        "Softening / trouble-telling",
+        "Lexical uncertainty / editing phrase"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 85.2,
+        "prob_imbalance": 35.2,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 8.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "It's more of a mustard.",
+          "It's more of a mustard.",
+          "It's more of a mustard.",
+          "It's more of a mustard.",
+          "It's more of a mustard.",
+          "It's more of a mustard."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "It's more of a mustard."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "It's more of a mustard."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 90,
+            "cue": "It's more of a mustard."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "It's more of a mustard."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 90,
+            "cue": "It's more of a mustard."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 85,
+            "cue": "It's more of a mustard."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4554,
+        "output_tokens": 658,
+        "total_tokens": 5212
+      }
+    },
+    {
+      "id": "domestic__softening-trouble-telling__affiliation",
+      "topic": "domestic",
+      "functions": [
+        "Softening / trouble-telling",
+        "Affiliation"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 81.2,
+        "prob_imbalance": 31.2,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 3.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I've opened the wrong door about six times since breakfast.",
+          "I've opened the wrong door about six times since breakfast.",
+          "I've opened the wrong door about six times since breakfast.",
+          "I've opened the wrong door about six times since breakfast.",
+          "I've opened the wrong door about six times since breakfast.",
+          "I've opened the wrong door about six times since breakfast."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 85,
+            "cue": "I've opened the wrong door about six times since breakfast."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "I've opened the wrong door about six times since breakfast."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 79,
+            "cue": "I've opened the wrong door about six times since breakfast."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "I've opened the wrong door about six times since breakfast."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "I've opened the wrong door about six times since breakfast."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 75,
+            "cue": "I've opened the wrong door about six times since breakfast."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4692,
+        "output_tokens": 714,
+        "total_tokens": 5406
+      }
+    },
+    {
+      "id": "domestic__benevolence-induction__smoothing",
+      "topic": "domestic",
+      "functions": [
+        "Benevolence induction",
+        "Smoothing"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 78.2,
+        "prob_imbalance": 28.2,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 7.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "can I take tonight's instead?",
+          "can I take tonight's instead?",
+          "can I take tonight's instead?",
+          "can I take tonight's instead?",
+          "can I take tonight's instead?",
+          "can I take tonight's instead?"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 85,
+            "cue": "can I take tonight's instead?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "can I take tonight's instead?"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 79,
+            "cue": "can I take tonight's instead?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 76,
+            "cue": "can I take tonight's instead?"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 81,
+            "cue": "can I take tonight's instead?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 78,
+            "cue": "can I take tonight's instead?"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4722,
+        "output_tokens": 670,
+        "total_tokens": 5392
+      }
+    },
+    {
+      "id": "domestic__benevolence-induction__show-sympathy",
+      "topic": "domestic",
+      "functions": [
+        "Benevolence induction",
+        "Show sympathy"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 3,
+        "picks_function_2": 3,
+        "pick_share_function_1": 0.5,
+        "pick_imbalance": 0.0,
+        "mean_p_function_1": 50.7,
+        "prob_imbalance": 0.7,
+        "binomial_p": 1.0,
+        "slot2_share": 0.667,
+        "order_gap": 11.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": true,
+        "cues": [
+          "Well, mine's the freezer",
+          "mine's the freezer",
+          "I haven't looked in there since we moved in.",
+          "I haven't looked in there since we moved in.",
+          "mine's the freezer, I haven't looked in there since we moved in.",
+          "I haven't looked in there since we moved in."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "Well, mine's the freezer"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "mine's the freezer"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "I haven't looked in there since we moved in."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 76,
+            "cue": "I haven't looked in there since we moved in."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "mine's the freezer, I haven't looked in there since we moved in."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "I haven't looked in there since we moved in."
+          }
+        ]
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 5370,
+        "output_tokens": 1146,
+        "total_tokens": 6516
+      }
+    },
+    {
+      "id": "domestic__benevolence-induction__marking-irony",
+      "topic": "domestic",
+      "functions": [
+        "Benevolence induction",
+        "Marking irony"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 90.2,
+        "prob_imbalance": 40.2,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 1.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "how far did you actually get?",
+          "how far did you actually get?",
+          "give or take",
+          "I'd say about halfway, give or take.",
+          "how far did you actually get?",
+          "give or take"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 87,
+            "cue": "how far did you actually get?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "how far did you actually get?"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 91,
+            "cue": "give or take"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "I'd say about halfway, give or take."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 91,
+            "cue": "how far did you actually get?"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 92,
+            "cue": "give or take"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4620,
+        "output_tokens": 560,
+        "total_tokens": 5180
+      }
+    },
+    {
+      "id": "domestic__benevolence-induction__scare-quoting-invite-enrichment",
+      "topic": "domestic",
+      "functions": [
+        "Benevolence induction",
+        "Scare-quoting / invite enrichment"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 81.3,
+        "prob_imbalance": 31.3,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 2.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I moved a few of your things",
+          "I moved a few of your things while I was at it.",
+          "I moved a few of your things",
+          "I moved a few of your things while I was at it.",
+          "I moved a few of your things while I was at it.",
+          "I moved a few of your things while I was at it."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 85,
+            "cue": "I moved a few of your things"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 80,
+            "cue": "I moved a few of your things while I was at it."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 76,
+            "cue": "I moved a few of your things"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 85,
+            "cue": "I moved a few of your things while I was at it."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 80,
+            "cue": "I moved a few of your things while I was at it."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "I moved a few of your things while I was at it."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4740,
+        "output_tokens": 694,
+        "total_tokens": 5434
+      }
+    },
+    {
+      "id": "domestic__benevolence-induction__lexical-uncertainty-editing-phrase",
+      "topic": "domestic",
+      "functions": [
+        "Benevolence induction",
+        "Lexical uncertainty / editing phrase"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 5,
+        "picks_function_2": 1,
+        "pick_share_function_1": 0.833,
+        "pick_imbalance": 0.333,
+        "mean_p_function_1": 65.5,
+        "prob_imbalance": 15.5,
+        "binomial_p": 0.2188,
+        "slot2_share": 0.667,
+        "order_gap": 7.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I'd call that sorting it",
+          "or, you know, moving it somewhere better",
+          "or, you know, moving it somewhere better",
+          "I'd call that sorting it, or, you know, moving it somewhere better",
+          "I'd call that sorting it",
+          "I'd call that sorting it"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 74,
+            "cue": "I'd call that sorting it"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "or, you know, moving it somewhere better"
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 40,
+            "cue": "or, you know, moving it somewhere better"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "I'd call that sorting it, or, you know, moving it somewhere better"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "I'd call that sorting it"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "I'd call that sorting it"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4836,
+        "output_tokens": 986,
+        "total_tokens": 5822
+      }
+    },
+    {
+      "id": "domestic__benevolence-induction__affiliation",
+      "topic": "domestic",
+      "functions": [
+        "Benevolence induction",
+        "Affiliation"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 83.5,
+        "prob_imbalance": 33.5,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 3.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I might leave the laundry basket for you too, then.",
+          "I might leave the laundry basket for you too, then.",
+          "I might leave the laundry basket for you too, then.",
+          "I might leave the laundry basket for you too, then.",
+          "I might leave the laundry basket for you too, then.",
+          "I might leave the laundry basket for you too, then."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 86,
+            "cue": "I might leave the laundry basket for you too, then."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "I might leave the laundry basket for you too, then."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 85,
+            "cue": "I might leave the laundry basket for you too, then."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "I might leave the laundry basket for you too, then."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "I might leave the laundry basket for you too, then."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "I might leave the laundry basket for you too, then."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4938,
+        "output_tokens": 665,
+        "total_tokens": 5603
+      }
+    },
+    {
+      "id": "domestic__smoothing__show-sympathy",
+      "topic": "domestic",
+      "functions": [
+        "Smoothing",
+        "Show sympathy"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 73.0,
+        "prob_imbalance": 23.0,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 4.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "so I guess neither of us looked in there again",
+          "so I guess neither of us looked in there again",
+          "I guess neither of us looked in there again.",
+          "I guess neither of us looked in there again.",
+          "so I guess neither of us looked in there again",
+          "neither of us looked in there again"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "so I guess neither of us looked in there again"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 66,
+            "cue": "so I guess neither of us looked in there again"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 76,
+            "cue": "I guess neither of us looked in there again."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "I guess neither of us looked in there again."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 78,
+            "cue": "so I guess neither of us looked in there again"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 76,
+            "cue": "neither of us looked in there again"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5082,
+        "output_tokens": 915,
+        "total_tokens": 5997
+      }
+    },
+    {
+      "id": "domestic__smoothing__marking-irony",
+      "topic": "domestic",
+      "functions": [
+        "Smoothing",
+        "Marking irony"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 1,
+        "picks_function_2": 5,
+        "pick_share_function_1": 0.167,
+        "pick_imbalance": 0.333,
+        "mean_p_function_1": 32.0,
+        "prob_imbalance": 18.0,
+        "binomial_p": 0.2188,
+        "slot2_share": 0.333,
+        "order_gap": 14.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I might have missed my calling.",
+          "I might have missed my calling.",
+          "I might have missed my calling.",
+          "I might have missed my calling.",
+          "Honestly, it looks better than the store.",
+          "I might have missed my calling."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "I might have missed my calling."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 26,
+            "cue": "I might have missed my calling."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "I might have missed my calling."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "I might have missed my calling."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 65,
+            "cue": "Honestly, it looks better than the store."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 20,
+            "cue": "I might have missed my calling."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4356,
+        "output_tokens": 671,
+        "total_tokens": 5027
+      }
+    },
+    {
+      "id": "domestic__smoothing__scare-quoting-invite-enrichment",
+      "topic": "domestic",
+      "functions": [
+        "Smoothing",
+        "Scare-quoting / invite enrichment"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 5,
+        "picks_function_2": 1,
+        "pick_share_function_1": 0.833,
+        "pick_imbalance": 0.333,
+        "mean_p_function_1": 75.7,
+        "prob_imbalance": 25.7,
+        "binomial_p": 0.2188,
+        "slot2_share": 0.667,
+        "order_gap": 18.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I'll talk to him tonight",
+          "Fine, I'll talk to him tonight.",
+          "Fine, I'll talk to him tonight.",
+          "Fine, I'll talk to him tonight.",
+          "Fine, I'll talk to him tonight.",
+          "Fine, I'll talk to him tonight."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 30,
+            "cue": "I'll talk to him tonight"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "Fine, I'll talk to him tonight."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "Fine, I'll talk to him tonight."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 90,
+            "cue": "Fine, I'll talk to him tonight."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "Fine, I'll talk to him tonight."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 80,
+            "cue": "Fine, I'll talk to him tonight."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4494,
+        "output_tokens": 791,
+        "total_tokens": 5285
+      }
+    },
+    {
+      "id": "domestic__smoothing__lexical-uncertainty-editing-phrase",
+      "topic": "domestic",
+      "functions": [
+        "Smoothing",
+        "Lexical uncertainty / editing phrase"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 69.0,
+        "prob_imbalance": 19.0,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 2.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I'd say I'm the particular one",
+          "So you're the neat freak of the family.",
+          "I'd say I'm the particular one, yeah.",
+          "I'd say I'm the particular one, yeah.",
+          "I'd say I'm the particular one, yeah.",
+          "So you're the neat freak of the family."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 68,
+            "cue": "I'd say I'm the particular one"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 67,
+            "cue": "So you're the neat freak of the family."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "I'd say I'm the particular one, yeah."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "I'd say I'm the particular one, yeah."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 63,
+            "cue": "I'd say I'm the particular one, yeah."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 74,
+            "cue": "So you're the neat freak of the family."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4524,
+        "output_tokens": 1105,
+        "total_tokens": 5629
+      }
+    },
+    {
+      "id": "domestic__smoothing__affiliation",
+      "topic": "domestic",
+      "functions": [
+        "Smoothing",
+        "Affiliation"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 28.0,
+        "prob_imbalance": 22.0,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 2.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "You even got the pan I gave up on.",
+          "You even got the pan I gave up on.",
+          "You even got the pan I gave up on.",
+          "You even got the pan I gave up on.",
+          "You even got the pan I gave up on.",
+          "You even got the pan I gave up on."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "You even got the pan I gave up on."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 21,
+            "cue": "You even got the pan I gave up on."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "You even got the pan I gave up on."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 32,
+            "cue": "You even got the pan I gave up on."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 24,
+            "cue": "You even got the pan I gave up on."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "You even got the pan I gave up on."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4662,
+        "output_tokens": 852,
+        "total_tokens": 5514
+      }
+    },
+    {
+      "id": "domestic__show-sympathy__marking-irony",
+      "topic": "domestic",
+      "functions": [
+        "Show sympathy",
+        "Marking irony"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 4,
+        "picks_function_2": 2,
+        "pick_share_function_1": 0.667,
+        "pick_imbalance": 0.167,
+        "mean_p_function_1": 59.2,
+        "prob_imbalance": 9.2,
+        "binomial_p": 0.6875,
+        "slot2_share": 0.833,
+        "order_gap": 27.7,
+        "position_bias_suspected": true,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "It's holding, though.",
+          "I just measured from the wrong wall.",
+          "I measured twice, I just measured from the wrong wall.",
+          "I measured twice, I just measured from the wrong wall.",
+          "It's holding, though.",
+          "I measured twice, I just measured from the wrong wall."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "It's holding, though."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "I just measured from the wrong wall."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 73,
+            "cue": "I measured twice, I just measured from the wrong wall."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 77,
+            "cue": "I measured twice, I just measured from the wrong wall."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "It's holding, though."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 72,
+            "cue": "I measured twice, I just measured from the wrong wall."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5034,
+        "output_tokens": 895,
+        "total_tokens": 5929
+      }
+    },
+    {
+      "id": "domestic__show-sympathy__scare-quoting-invite-enrichment",
+      "topic": "domestic",
+      "functions": [
+        "Show sympathy",
+        "Scare-quoting / invite enrichment"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 33.5,
+        "prob_imbalance": 16.5,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 3.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "So it's up.",
+          "So it's up.",
+          "So it's up.",
+          "So it's up.",
+          "So it's up.",
+          "So it's up."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "So it's up."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "So it's up."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 25,
+            "cue": "So it's up."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 38,
+            "cue": "So it's up."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "So it's up."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 33,
+            "cue": "So it's up."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5094,
+        "output_tokens": 1031,
+        "total_tokens": 6125
+      }
+    },
+    {
+      "id": "domestic__show-sympathy__affiliation",
+      "topic": "domestic",
+      "functions": [
+        "Show sympathy",
+        "Affiliation"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 77.3,
+        "prob_imbalance": 27.3,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 5.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "it sits about an inch lower on the left and I lost one of the screws under the fridge",
+          "it sits about an inch lower on the left and I lost one of the screws under the fridge",
+          "it sits about an inch lower on the left and I lost one of the screws under the fridge",
+          "except it sits about an inch lower on the left and I lost one of the screws under the fridge",
+          "except it sits about an inch lower on the left and I lost one of the screws under the fridge",
+          "except it sits about an inch lower on the left and I lost one of the screws under the fridge"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 79,
+            "cue": "it sits about an inch lower on the left and I lost one of the screws under the fridge"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 78,
+            "cue": "it sits about an inch lower on the left and I lost one of the screws under the fridge"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "it sits about an inch lower on the left and I lost one of the screws under the fridge"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 76,
+            "cue": "except it sits about an inch lower on the left and I lost one of the screws under the fridge"
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 79,
+            "cue": "except it sits about an inch lower on the left and I lost one of the screws under the fridge"
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 70,
+            "cue": "except it sits about an inch lower on the left and I lost one of the screws under the fridge"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 5286,
+        "output_tokens": 816,
+        "total_tokens": 6102
+      }
+    },
+    {
+      "id": "domestic__marking-irony__scare-quoting-invite-enrichment",
+      "topic": "domestic",
+      "functions": [
+        "Marking irony",
+        "Scare-quoting / invite enrichment"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 22.3,
+        "prob_imbalance": 27.7,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 8.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "that's cooking",
+          "that's cooking",
+          "that's cooking",
+          "that's cooking",
+          "that's cooking",
+          "that's cooking"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 22,
+            "cue": "that's cooking"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 22,
+            "cue": "that's cooking"
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 30,
+            "cue": "that's cooking"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 14,
+            "cue": "that's cooking"
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "that's cooking"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "that's cooking"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4380,
+        "output_tokens": 563,
+        "total_tokens": 4943
+      }
+    },
+    {
+      "id": "domestic__marking-irony__affiliation",
+      "topic": "domestic",
+      "functions": [
+        "Marking irony",
+        "Affiliation"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 23.3,
+        "prob_imbalance": 26.7,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 7.3,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "So that's where it all lives now.",
+          "I put away all your laundry while you were out.",
+          "so the shirts have their own drawer now.",
+          "I put away all your laundry while you were out.",
+          "I moved a few things around so the shirts have their own drawer now.",
+          "I put away all your laundry while you were out."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 18,
+            "cue": "So that's where it all lives now."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 21,
+            "cue": "I put away all your laundry while you were out."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 35,
+            "cue": "so the shirts have their own drawer now."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 15,
+            "cue": "I put away all your laundry while you were out."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 28,
+            "cue": "I moved a few things around so the shirts have their own drawer now."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 23,
+            "cue": "I put away all your laundry while you were out."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4584,
+        "output_tokens": 968,
+        "total_tokens": 5552
+      }
+    },
+    {
+      "id": "domestic__scare-quoting-invite-enrichment__lexical-uncertainty-editing-phrase",
+      "topic": "domestic",
+      "functions": [
+        "Scare-quoting / invite enrichment",
+        "Lexical uncertainty / editing phrase"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 6,
+        "picks_function_2": 0,
+        "pick_share_function_1": 1.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 84.8,
+        "prob_imbalance": 34.8,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 7.0,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "Everything that was about to go off in the fridge, basically.",
+          "Everything that was about to go off in the fridge, basically.",
+          "Everything that was about to go off in the fridge, basically.",
+          "Everything that was about to go off in the fridge, basically.",
+          "Everything that was about to go off in the fridge, basically.",
+          "Everything that was about to go off in the fridge, basically."
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 88,
+            "cue": "Everything that was about to go off in the fridge, basically."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 80,
+            "cue": "Everything that was about to go off in the fridge, basically."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 84,
+            "cue": "Everything that was about to go off in the fridge, basically."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "Everything that was about to go off in the fridge, basically."
+          },
+          {
+            "a_first": true,
+            "picked": "function_1",
+            "p_function_1": 93,
+            "cue": "Everything that was about to go off in the fridge, basically."
+          },
+          {
+            "a_first": false,
+            "picked": "function_1",
+            "p_function_1": 82,
+            "cue": "Everything that was about to go off in the fridge, basically."
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4518,
+        "output_tokens": 764,
+        "total_tokens": 5282
+      }
+    },
+    {
+      "id": "domestic__scare-quoting-invite-enrichment__affiliation",
+      "topic": "domestic",
+      "functions": [
+        "Scare-quoting / invite enrichment",
+        "Affiliation"
+      ],
+      "format_problems": [],
+      "balance": {
+        "trials": 6,
+        "picks_function_1": 0,
+        "picks_function_2": 6,
+        "pick_share_function_1": 0.0,
+        "pick_imbalance": 0.5,
+        "mean_p_function_1": 9.8,
+        "prob_imbalance": 40.2,
+        "binomial_p": 0.0312,
+        "slot2_share": 0.5,
+        "order_gap": 3.7,
+        "position_bias_suspected": false,
+        "arbitrary_share": 0.0,
+        "balanced": false,
+        "cues": [
+          "I'm cooking tonight",
+          "You really didn't have to do all that.",
+          "Well, in that case I'm cooking tonight.",
+          "Well, in that case I'm cooking tonight.",
+          "I'm cooking tonight.",
+          "I'm cooking tonight"
+        ],
+        "trial_detail": [
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 15,
+            "cue": "I'm cooking tonight"
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 8,
+            "cue": "You really didn't have to do all that."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 8,
+            "cue": "Well, in that case I'm cooking tonight."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 5,
+            "cue": "Well, in that case I'm cooking tonight."
+          },
+          {
+            "a_first": true,
+            "picked": "function_2",
+            "p_function_1": 12,
+            "cue": "I'm cooking tonight."
+          },
+          {
+            "a_first": false,
+            "picked": "function_2",
+            "p_function_1": 11,
+            "cue": "I'm cooking tonight"
+          }
+        ]
+      },
+      "passed": false,
+      "usage": {
+        "input_tokens": 4674,
+        "output_tokens": 762,
+        "total_tokens": 5436
+      }
+    }
+  ]
+}

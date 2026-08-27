@@ -1,0 +1,1095 @@
+{
+  "built_at": "2026-08-24T20:11:51.449394+00:00",
+  "seed_dataset": "allenai/soda",
+  "writer_model": "gpt-5.6-terra",
+  "tts_model": "eleven_v3",
+  "verifier_model": "gpt-realtime-2.1",
+  "verify_runs": 3,
+  "turns_per_item": 12,
+  "vocalization_types": [
+    "laughter",
+    "yawn",
+    "sob",
+    "sigh"
+  ],
+  "rng_seed": 0,
+  "n_items": 2,
+  "results": [
+    {
+      "item_id": "soda_4479590",
+      "seed": {
+        "narrative": "Cary gets down on his hands and knees to install a new carpet in the living room. He makes sure to measure the space twice before cutting the carpet so there are no mistakes. Once he has the right size, he uses a sharp knife to cut it before laying it down and taping it into place.",
+        "speaker_a": "Cary",
+        "speaker_b": "Fiona",
+        "relation": "xAttr",
+        "literal": "Cary is considerate. Cary installs a carpet.",
+        "original_index": 4479590
+      },
+      "plan": [
+        {
+          "turn": 3,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 4,
+          "vocalization": "sob"
+        },
+        {
+          "turn": 5,
+          "vocalization": "sob"
+        },
+        {
+          "turn": 9,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 10,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 11,
+          "vocalization": "sob"
+        }
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Cary",
+          "text": "Can you hold the end of the tape measure at the fireplace? I want the width from both walls before I touch the roll."
+        },
+        {
+          "turn": 2,
+          "speaker": "Fiona",
+          "text": "Got it. You already checked this side once, you know."
+        },
+        {
+          "turn": 3,
+          "speaker": "Cary",
+          "text": "[weary sigh] Once with the furniture still in here, and once with the room clear. This carpet cost too much to guess at."
+        },
+        {
+          "turn": 4,
+          "speaker": "Fiona",
+          "text": "[overwhelmed sob] It actually fits. After all those weekends of looking at samples, I can finally picture us sitting in here."
+        },
+        {
+          "turn": 5,
+          "speaker": "Cary",
+          "text": "[choked sob] I kept promising we'd finish this room after the leak, and then work kept getting in the way. Hand me the straightedge, and I'll make the cut."
+        },
+        {
+          "turn": 6,
+          "speaker": "Fiona",
+          "text": "Here. The marks line up exactly with your measurements."
+        },
+        {
+          "turn": 7,
+          "speaker": "Cary",
+          "text": "Good. Keep the roll from shifting while I guide the knife along this edge."
+        },
+        {
+          "turn": 8,
+          "speaker": "Fiona",
+          "text": "It's clean all the way across. Let's lay it down before the backing curls up again."
+        },
+        {
+          "turn": 9,
+          "speaker": "Cary",
+          "text": "[exhausted sigh] There, the far corner is tucked under. I just need to press this tape firmly along the seam."
+        },
+        {
+          "turn": 10,
+          "speaker": "Fiona",
+          "text": "[sigh of relief] No gaps, no crooked edge, and it reaches the fireplace perfectly. It looks better than the sample did."
+        },
+        {
+          "turn": 11,
+          "speaker": "Cary",
+          "text": "[relieved sob] We did it. Go ahead and step onto it first; this room finally feels like ours."
+        },
+        {
+          "turn": 12,
+          "speaker": "Fiona",
+          "text": "It feels wonderful. I’ll bring in the sofa cushions, and tonight we can actually use the living room."
+        }
+      ],
+      "vocalizations": [
+        {
+          "turn": 3,
+          "vocalization": "sigh",
+          "audio_tag": "[weary sigh]",
+          "target": "the costly carpet roll",
+          "intention_after": "Explain why he is double-checking the measurements."
+        },
+        {
+          "turn": 9,
+          "vocalization": "sigh",
+          "audio_tag": "[exhausted sigh]",
+          "target": "the final taped seam",
+          "intention_after": "Describe the last bit of installation work."
+        },
+        {
+          "turn": 10,
+          "vocalization": "sigh",
+          "audio_tag": "[sigh of relief]",
+          "target": "the smooth carpet edge",
+          "intention_after": "Confirm that the installation came out correctly."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "input_tokens": 1286,
+        "output_tokens": 1211
+      },
+      "vocalizations_dropped": [
+        {
+          "turn": 4,
+          "vocalization": "sob",
+          "audio_tag": "[overwhelmed sob]",
+          "target": "the room taking shape",
+          "intention_after": "Share her happiness about the renovation becoming real."
+        },
+        {
+          "turn": 5,
+          "vocalization": "sob",
+          "audio_tag": "[choked sob]",
+          "target": "his delayed promise",
+          "intention_after": "Acknowledge the delay before getting back to the cut."
+        },
+        {
+          "turn": 11,
+          "vocalization": "sob",
+          "audio_tag": "[relieved sob]",
+          "target": "the completed living room",
+          "intention_after": "Celebrate finishing and invite Fiona to enjoy it."
+        }
+      ],
+      "labels_verified": true,
+      "verification": {
+        "model": "gpt-realtime-2.1",
+        "runs_per_turn": 3,
+        "retakes_allowed": 2,
+        "rule": "kept when a majority of parseable votes name the sound; a failing turn is re-rendered and retried",
+        "verdicts": [
+          {
+            "turn": 3,
+            "target": "sigh",
+            "audio_tag": "[weary sigh]",
+            "audio": "soda_scatter/dataset/lines/soda_4479590/03_cary.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 3,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "sigh",
+                  "sigh"
+                ]
+              }
+            ],
+            "verified": true
+          },
+          {
+            "turn": 4,
+            "target": "sob",
+            "audio_tag": "[overwhelmed sob]",
+            "audio": "soda_scatter/dataset/lines/soda_4479590/04_fiona.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 5,
+            "target": "sob",
+            "audio_tag": "[choked sob]",
+            "audio": "soda_scatter/dataset/lines/soda_4479590/05_cary.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 9,
+            "target": "sigh",
+            "audio_tag": "[exhausted sigh]",
+            "audio": "soda_scatter/dataset/lines/soda_4479590/09_cary.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 1,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 2,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "sigh",
+                  "none"
+                ]
+              }
+            ],
+            "verified": true
+          },
+          {
+            "turn": 10,
+            "target": "sigh",
+            "audio_tag": "[sigh of relief]",
+            "audio": "soda_scatter/dataset/lines/soda_4479590/10_fiona.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 2,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "sigh",
+                  "sigh"
+                ]
+              }
+            ],
+            "verified": true
+          },
+          {
+            "turn": 11,
+            "target": "sob",
+            "audio_tag": "[relieved sob]",
+            "audio": "soda_scatter/dataset/lines/soda_4479590/11_cary.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 2,
+                "votes": [
+                  "laughter",
+                  null,
+                  "laughter"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "laughter"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 2,
+                "votes": [
+                  "sigh",
+                  null,
+                  "sigh"
+                ]
+              }
+            ],
+            "verified": false
+          }
+        ]
+      },
+      "audio": "soda_scatter/dataset/audio/soda_4479590.mp3",
+      "audio_seconds": 86.04,
+      "segments": [
+        {
+          "kind": "line",
+          "turn": 1,
+          "speaker": "Cary",
+          "text": "Can you hold the end of the tape measure at the fireplace? I want the width from both walls before I touch the roll.",
+          "seconds": 6.88,
+          "path": "soda_scatter/dataset/lines/soda_4479590/01_cary.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 0.0,
+          "starts_at": "0:00.00"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 2,
+          "speaker": "Fiona",
+          "text": "Got it. You already checked this side once, you know.",
+          "seconds": 2.88,
+          "path": "soda_scatter/dataset/lines/soda_4479590/02_fiona.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 7.24,
+          "starts_at": "0:07.24"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 3,
+          "speaker": "Cary",
+          "text": "[weary sigh] Once with the furniture still in here, and once with the room clear. This carpet cost too much to guess at.",
+          "seconds": 7.76,
+          "path": "soda_scatter/dataset/lines/soda_4479590/03_cary.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 10.48,
+          "starts_at": "0:10.48"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 4,
+          "speaker": "Fiona",
+          "text": "[overwhelmed sob] It actually fits. After all those weekends of looking at samples, I can finally picture us sitting in here.",
+          "seconds": 7.12,
+          "path": "soda_scatter/dataset/lines/soda_4479590/04_fiona.mp3",
+          "vocalization": "sob",
+          "starts_at_seconds": 18.6,
+          "starts_at": "0:18.60"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 5,
+          "speaker": "Cary",
+          "text": "[choked sob] I kept promising we'd finish this room after the leak, and then work kept getting in the way. Hand me the straightedge, and I'll make the cut.",
+          "seconds": 9.44,
+          "path": "soda_scatter/dataset/lines/soda_4479590/05_cary.mp3",
+          "vocalization": "sob",
+          "starts_at_seconds": 26.08,
+          "starts_at": "0:26.08"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 6,
+          "speaker": "Fiona",
+          "text": "Here. The marks line up exactly with your measurements.",
+          "seconds": 3.36,
+          "path": "soda_scatter/dataset/lines/soda_4479590/06_fiona.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 35.88,
+          "starts_at": "0:35.88"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 7,
+          "speaker": "Cary",
+          "text": "Good. Keep the roll from shifting while I guide the knife along this edge.",
+          "seconds": 5.2,
+          "path": "soda_scatter/dataset/lines/soda_4479590/07_cary.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 39.6,
+          "starts_at": "0:39.60"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 8,
+          "speaker": "Fiona",
+          "text": "It's clean all the way across. Let's lay it down before the backing curls up again.",
+          "seconds": 8.24,
+          "path": "soda_scatter/dataset/lines/soda_4479590/08_fiona.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 45.16,
+          "starts_at": "0:45.16"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 9,
+          "speaker": "Cary",
+          "text": "[exhausted sigh] There, the far corner is tucked under. I just need to press this tape firmly along the seam.",
+          "seconds": 9.68,
+          "path": "soda_scatter/dataset/lines/soda_4479590/09_cary.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 53.76,
+          "starts_at": "0:53.76"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 10,
+          "speaker": "Fiona",
+          "text": "[sigh of relief] No gaps, no crooked edge, and it reaches the fireplace perfectly. It looks better than the sample did.",
+          "seconds": 8.88,
+          "path": "soda_scatter/dataset/lines/soda_4479590/10_fiona.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 63.8,
+          "starts_at": "1:03.80"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 11,
+          "speaker": "Cary",
+          "text": "[relieved sob] We did it. Go ahead and step onto it first; this room finally feels like ours.",
+          "seconds": 6.96,
+          "path": "soda_scatter/dataset/lines/soda_4479590/11_cary.mp3",
+          "vocalization": "sob",
+          "starts_at_seconds": 73.04,
+          "starts_at": "1:13.04"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 12,
+          "speaker": "Fiona",
+          "text": "It feels wonderful. I’ll bring in the sofa cushions, and tonight we can actually use the living room.",
+          "seconds": 5.68,
+          "path": "soda_scatter/dataset/lines/soda_4479590/12_fiona.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 80.36,
+          "starts_at": "1:20.36"
+        }
+      ]
+    },
+    {
+      "item_id": "soda_3209138",
+      "seed": {
+        "narrative": "Aminah posts to his blog about his day. He talks about what he did, how he felt, and what he thought. He feels content after finishing his post.",
+        "speaker_a": "Aminah",
+        "speaker_b": "John",
+        "relation": "xReact",
+        "literal": "Aminah posts to his blog. Now Aminah feels content.",
+        "original_index": 3209138
+      },
+      "plan": [
+        {
+          "turn": 5,
+          "vocalization": "sigh"
+        },
+        {
+          "turn": 6,
+          "vocalization": "sob"
+        },
+        {
+          "turn": 7,
+          "vocalization": "laughter"
+        },
+        {
+          "turn": 9,
+          "vocalization": "sob"
+        },
+        {
+          "turn": 10,
+          "vocalization": "laughter"
+        },
+        {
+          "turn": 11,
+          "vocalization": "sigh"
+        }
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "speaker": "Aminah",
+          "text": "I finally finished my blog post about today—the library book sale, the rain, and finding Dad's old map in the donation box."
+        },
+        {
+          "turn": 2,
+          "speaker": "John",
+          "text": "You actually opened that box? You've been moving it around the kitchen for months."
+        },
+        {
+          "turn": 3,
+          "speaker": "Aminah",
+          "text": "I did. I wrote about tracing the faded trail lines and deciding the youth hiking club could use it more than my cupboard could."
+        },
+        {
+          "turn": 4,
+          "speaker": "John",
+          "text": "That sounds like a good day to write about: useful, a little messy, and honest."
+        },
+        {
+          "turn": 5,
+          "speaker": "Aminah",
+          "text": "[reflective sigh] I almost made the whole thing into a joke, but I wrote that the kitchen felt occupied again while I held the map."
+        },
+        {
+          "turn": 6,
+          "speaker": "John",
+          "text": "[moved sob] That line got me. It lets him be present without pretending nothing has changed."
+        },
+        {
+          "turn": 7,
+          "speaker": "Aminah",
+          "text": "[warm laughter] You are supposed to be proofreading, not turning my comments section into a puddle. Did the ending work?"
+        },
+        {
+          "turn": 8,
+          "speaker": "John",
+          "text": "Yes. Giving the map away lands well, especially when you mention the club's thank-you note."
+        },
+        {
+          "turn": 9,
+          "speaker": "Aminah",
+          "text": "[relieved sob] I included the part where they promised to mark their first trail with it. That made letting go feel less like losing it."
+        },
+        {
+          "turn": 10,
+          "speaker": "John",
+          "text": "[fond laughter] Look at you calling that a note after you framed it beside the coffee maker. Keep that detail in; it is completely you."
+        },
+        {
+          "turn": 11,
+          "speaker": "Aminah",
+          "text": "[sigh of relief] I hit publish. Somehow I feel peaceful now, like I put the day where it belongs."
+        },
+        {
+          "turn": 12,
+          "speaker": "John",
+          "text": "Then leave it there tonight. Tomorrow, you can tell me whether anyone from the hiking club reads it."
+        }
+      ],
+      "vocalizations": [
+        {
+          "turn": 5,
+          "vocalization": "sigh",
+          "audio_tag": "[reflective sigh]",
+          "target": "his father's old map",
+          "intention_after": "Explain why he chose honesty over humor."
+        },
+        {
+          "turn": 11,
+          "vocalization": "sigh",
+          "audio_tag": "[sigh of relief]",
+          "target": "the published post",
+          "intention_after": "Share his contentment after finishing the post."
+        }
+      ],
+      "attempts": 1,
+      "usage": {
+        "input_tokens": 1261,
+        "output_tokens": 1482
+      },
+      "vocalizations_dropped": [
+        {
+          "turn": 6,
+          "vocalization": "sob",
+          "audio_tag": "[moved sob]",
+          "target": "Aminah's line about his father",
+          "intention_after": "Validate the emotional truth of the post."
+        },
+        {
+          "turn": 7,
+          "vocalization": "laughter",
+          "audio_tag": "[warm laughter]",
+          "target": "John's sentimental proofreading",
+          "intention_after": "Lighten the mood before asking for feedback."
+        },
+        {
+          "turn": 9,
+          "vocalization": "sob",
+          "audio_tag": "[relieved sob]",
+          "target": "the hikers' handwritten note",
+          "intention_after": "Explain why donating the map now feels right."
+        },
+        {
+          "turn": 10,
+          "vocalization": "laughter",
+          "audio_tag": "[fond laughter]",
+          "target": "Aminah framing the note",
+          "intention_after": "Tease Aminah affectionately while endorsing the detail."
+        }
+      ],
+      "labels_verified": true,
+      "verification": {
+        "model": "gpt-realtime-2.1",
+        "runs_per_turn": 3,
+        "retakes_allowed": 2,
+        "rule": "kept when a majority of parseable votes name the sound; a failing turn is re-rendered and retried",
+        "verdicts": [
+          {
+            "turn": 5,
+            "target": "sigh",
+            "audio_tag": "[reflective sigh]",
+            "audio": "soda_scatter/dataset/lines/soda_3209138/05_aminah.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 1,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 2,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "sigh",
+                  "sigh"
+                ]
+              }
+            ],
+            "verified": true
+          },
+          {
+            "turn": 6,
+            "target": "sob",
+            "audio_tag": "[moved sob]",
+            "audio": "soda_scatter/dataset/lines/soda_3209138/06_john.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "sigh",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 7,
+            "target": "laughter",
+            "audio_tag": "[warm laughter]",
+            "audio": "soda_scatter/dataset/lines/soda_3209138/07_aminah.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 9,
+            "target": "sob",
+            "audio_tag": "[relieved sob]",
+            "audio": "soda_scatter/dataset/lines/soda_3209138/09_aminah.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "sigh",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 10,
+            "target": "laughter",
+            "audio_tag": "[fond laughter]",
+            "audio": "soda_scatter/dataset/lines/soda_3209138/10_john.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              },
+              {
+                "take": 2,
+                "hits": 1,
+                "usable_votes": 2,
+                "votes": [
+                  "laughter",
+                  "none",
+                  null
+                ]
+              },
+              {
+                "take": 3,
+                "hits": 0,
+                "usable_votes": 3,
+                "votes": [
+                  "none",
+                  "none",
+                  "none"
+                ]
+              }
+            ],
+            "verified": false
+          },
+          {
+            "turn": 11,
+            "target": "sigh",
+            "audio_tag": "[sigh of relief]",
+            "audio": "soda_scatter/dataset/lines/soda_3209138/11_aminah.mp3",
+            "takes": [
+              {
+                "take": 1,
+                "hits": 1,
+                "usable_votes": 1,
+                "votes": [
+                  "sigh",
+                  null,
+                  null
+                ]
+              }
+            ],
+            "verified": true
+          }
+        ]
+      },
+      "audio": "soda_scatter/dataset/audio/soda_3209138.mp3",
+      "audio_seconds": 90.36,
+      "segments": [
+        {
+          "kind": "line",
+          "turn": 1,
+          "speaker": "Aminah",
+          "text": "I finally finished my blog post about today—the library book sale, the rain, and finding Dad's old map in the donation box.",
+          "seconds": 7.76,
+          "path": "soda_scatter/dataset/lines/soda_3209138/01_aminah.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 0.0,
+          "starts_at": "0:00.00"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 2,
+          "speaker": "John",
+          "text": "You actually opened that box? You've been moving it around the kitchen for months.",
+          "seconds": 5.76,
+          "path": "soda_scatter/dataset/lines/soda_3209138/02_john.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 8.12,
+          "starts_at": "0:08.12"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 3,
+          "speaker": "Aminah",
+          "text": "I did. I wrote about tracing the faded trail lines and deciding the youth hiking club could use it more than my cupboard could.",
+          "seconds": 7.6,
+          "path": "soda_scatter/dataset/lines/soda_3209138/03_aminah.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 14.24,
+          "starts_at": "0:14.24"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 4,
+          "speaker": "John",
+          "text": "That sounds like a good day to write about: useful, a little messy, and honest.",
+          "seconds": 5.36,
+          "path": "soda_scatter/dataset/lines/soda_3209138/04_john.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 22.2,
+          "starts_at": "0:22.20"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 5,
+          "speaker": "Aminah",
+          "text": "[reflective sigh] I almost made the whole thing into a joke, but I wrote that the kitchen felt occupied again while I held the map.",
+          "seconds": 9.28,
+          "path": "soda_scatter/dataset/lines/soda_3209138/05_aminah.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 27.92,
+          "starts_at": "0:27.92"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 6,
+          "speaker": "John",
+          "text": "[moved sob] That line got me. It lets him be present without pretending nothing has changed.",
+          "seconds": 8.32,
+          "path": "soda_scatter/dataset/lines/soda_3209138/06_john.mp3",
+          "vocalization": "sob",
+          "starts_at_seconds": 37.56,
+          "starts_at": "0:37.56"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 7,
+          "speaker": "Aminah",
+          "text": "[warm laughter] You are supposed to be proofreading, not turning my comments section into a puddle. Did the ending work?",
+          "seconds": 7.28,
+          "path": "soda_scatter/dataset/lines/soda_3209138/07_aminah.mp3",
+          "vocalization": "laughter",
+          "starts_at_seconds": 46.24,
+          "starts_at": "0:46.24"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 8,
+          "speaker": "John",
+          "text": "Yes. Giving the map away lands well, especially when you mention the club's thank-you note.",
+          "seconds": 5.92,
+          "path": "soda_scatter/dataset/lines/soda_3209138/08_john.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 53.88,
+          "starts_at": "0:53.88"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 9,
+          "speaker": "Aminah",
+          "text": "[relieved sob] I included the part where they promised to mark their first trail with it. That made letting go feel less like losing it.",
+          "seconds": 7.52,
+          "path": "soda_scatter/dataset/lines/soda_3209138/09_aminah.mp3",
+          "vocalization": "sob",
+          "starts_at_seconds": 60.16,
+          "starts_at": "1:00.16"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 10,
+          "speaker": "John",
+          "text": "[fond laughter] Look at you calling that a note after you framed it beside the coffee maker. Keep that detail in; it is completely you.",
+          "seconds": 10.0,
+          "path": "soda_scatter/dataset/lines/soda_3209138/10_john.mp3",
+          "vocalization": "laughter",
+          "starts_at_seconds": 68.04,
+          "starts_at": "1:08.04"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 11,
+          "speaker": "Aminah",
+          "text": "[sigh of relief] I hit publish. Somehow I feel peaceful now, like I put the day where it belongs.",
+          "seconds": 6.32,
+          "path": "soda_scatter/dataset/lines/soda_3209138/11_aminah.mp3",
+          "vocalization": "sigh",
+          "starts_at_seconds": 78.4,
+          "starts_at": "1:18.40"
+        },
+        {
+          "kind": "gap",
+          "seconds": 0.36
+        },
+        {
+          "kind": "line",
+          "turn": 12,
+          "speaker": "John",
+          "text": "Then leave it there tonight. Tomorrow, you can tell me whether anyone from the hiking club reads it.",
+          "seconds": 5.28,
+          "path": "soda_scatter/dataset/lines/soda_3209138/12_john.mp3",
+          "vocalization": null,
+          "starts_at_seconds": 85.08,
+          "starts_at": "1:25.08"
+        }
+      ]
+    }
+  ]
+}
