@@ -102,6 +102,26 @@ feel these are particular people without being told their hobbies.
 B's persona matters even though B is silent: it should be believable that this particular
 person would react with this particular sound, and A may refer to B in ways that fit.
 
+BOTH SOUNDS REACT TO THE SAME THING
+
+Name it in `shared_referent`. It can be either:
+
+  - the situation as a whole — everything A has just described, taken together; or
+  - one specific object or event in the scene
+
+Either is fine. What is not fine is the two sounds pointing at different things. Both
+vocalizations react to the SAME referent, and the conditions differ in how B appraises it.
+
+This is the difference between a real contrast and a fake one. A scene where the positive sound
+is about the election result while the negative sound is about the stew on the stove tests
+nothing: the two conditions have different subjects, and a listener only has to work out which
+object the sound is pointing at — no reading of emotion required. Written properly, a listener
+who has identified the referent still has to hear the sound to know whether B takes it as good
+or bad.
+
+Both `framing_a` and `framing_b` must therefore describe reactions to the shared referent, and
+each must name it.
+
 THE WORDS MUST NOT SETTLE THE EMOTION
 
 This is what everything rests on. Write A's lines so that BOTH framings stay genuinely
@@ -124,8 +144,8 @@ def schema() -> dict:
     return {
         "type": "object", "additionalProperties": False,
         "required": ["feasible", "persona_a", "persona_b", "setting", "turns",
-                     "voc_after_turn", "emotion_a", "emotion_b", "framing_a", "framing_b",
-                     "why"],
+                     "voc_after_turn", "shared_referent", "emotion_a", "emotion_b",
+                     "framing_a", "framing_b", "why"],
         "properties": {
             "feasible": {"type": "boolean"},
             "persona_a": {"type": "array", "items": {"type": "string"},
@@ -139,6 +159,9 @@ def schema() -> dict:
                                 "properties": {"speaker": {"type": "string", "enum": ["A"]},
                                                "text": {"type": "string"}}}},
             "voc_after_turn": {"type": "integer"},
+            "shared_referent": {"type": "string",
+                                "description": "the one thing both vocalizations react to: "
+                                               "the whole situation, or one object in it"},
             "emotion_a": {"type": "string", "enum": list(LABELS)},
             "emotion_b": {"type": "string", "enum": list(LABELS)},
             "framing_a": {"type": "string"}, "framing_b": {"type": "string"},
@@ -220,6 +243,19 @@ def problems(item: dict, result: dict, pair: tuple[str, str]) -> list[str]:
     if labels:
         found.append(f"the words refer to a speaker by letter ({labels})")
 
+    # Both framings must be about the shared referent. Checking that each names some of it is
+    # crude, but it catches the failure that matters: framings that have drifted onto different
+    # objects, where the contrast stops being about appraisal at all.
+    referent = [w.lower() for w in re.findall(r"[A-Za-z]{4,}", result["shared_referent"])
+                if w.lower() not in STOPWORDS]
+    if referent:
+        for side in ("framing_a", "framing_b"):
+            words = {w.lower() for w in re.findall(r"[A-Za-z]{3,}", result[side])}
+            if not any(any(w.startswith(r[:4]) for w in words) for r in referent):
+                found.append(f"{side} does not mention the shared referent "
+                             f"({result['shared_referent']!r}); both sounds must react to the "
+                             "same thing")
+
     for who, key in (("A", "persona_a"), ("B", "persona_b")):
         recited = surfaced(result[key], spoken)
         if len(recited) > 2:
@@ -235,11 +271,12 @@ def condition(turns: list[dict], after: int, label: str) -> list[dict]:
     return out
 
 
-def write_item(item: dict, pair: tuple[str, str], item_id: str) -> dict:
+def write_item(item: dict, pair: tuple[str, str], item_id: str,
+               writer: str = T.WRITER) -> dict:
     prompt = prompt_for(item, pair)
     last: list[str] = []
     for attempt in range(1, ATTEMPTS + 1):
-        result = T.retry(T.json_call, T.WRITER, SYSTEM, prompt, schema(), "persona_pair")
+        result = T.retry(T.json_call, writer, SYSTEM, prompt, schema(), "persona_pair")
         if not result.get("feasible", True):
             raise Infeasible(f"{pair[0]}/{pair[1]}: {result.get('why','')[:100]}")
         found = problems(item, result, pair)
@@ -250,6 +287,7 @@ def write_item(item: dict, pair: tuple[str, str], item_id: str) -> dict:
                     "persona_a": result["persona_a"], "persona_b": result["persona_b"],
                     "setting": result["setting"],
                     "turns": turns, "voc_after_turn": after, "voc_speaker": "B",
+                    "shared_referent": result["shared_referent"],
                     "emotion_a": result["emotion_a"], "emotion_b": result["emotion_b"],
                     "framing_a": result["framing_a"], "framing_b": result["framing_b"],
                     "why": result["why"],
@@ -265,6 +303,7 @@ def write_item(item: dict, pair: tuple[str, str], item_id: str) -> dict:
 def render(item: dict) -> str:
     lines = [f"## {item['item_id']}", "",
              f"**Setting:** {item['setting']}", "",
+             f"**Both sounds react to:** {item.get('shared_referent','—')}", "",
              "**Speaker A** (talks): " + " ".join(item["persona_a"]), "",
              "**Speaker B** (only makes one sound): " + " ".join(item["persona_b"]), "",
              f"**Contrast:** {item['emotion_a']} (A) vs {item['emotion_b']} (B)", "",
@@ -282,6 +321,7 @@ def render(item: dict) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--per-pair", type=int, default=1)
+    parser.add_argument("--writer", default=T.WRITER, help="model that writes the scenes")
     parser.add_argument("--only", action="append")
     parser.add_argument("--seed", type=int, default=0)
     return parser.parse_args()
@@ -308,7 +348,7 @@ def main() -> None:
         while queue and built is None:
             personas = queue.pop()
             try:
-                built = write_item(personas, pair, item_id)
+                built = write_item(personas, pair, item_id, args.writer)
             except Infeasible as exc:
                 skipped.append(f"{item_id} {exc}")
                 print(f"  {item_id} · {pair[0]}/{pair[1]} · personas infeasible, "
@@ -324,7 +364,7 @@ def main() -> None:
         ordered = sorted(by_id.values(), key=lambda e: order.get(e["item_id"], 999))
         PAIRS.write_text(json.dumps(
             {"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-             "writer": T.WRITER, "labels": list(LABELS),
+             "writer": args.writer, "labels": list(LABELS),
              "design": "two speakers; A talks, B only produces one vocalization",
              "items": ordered}, indent=2, ensure_ascii=False) + "\n")
         READABLE.write_text("# v5 persona pairs\n\n" + "".join(render(e) for e in ordered))

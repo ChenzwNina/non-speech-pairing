@@ -1,0 +1,1555 @@
+{
+  "generated_at": "2026-08-31T06:15:11+00:00",
+  "writer": "gpt-4o",
+  "labels": [
+    "achievement",
+    "amusement",
+    "pleasure",
+    "relief",
+    "anger",
+    "disgust",
+    "fear",
+    "sadness"
+  ],
+  "design": "two speakers; A talks, B only produces one vocalization",
+  "items": [
+    {
+      "item_id": "v5_001",
+      "attempts": 3,
+      "assigned_pair": [
+        "achievement",
+        "anger"
+      ],
+      "persona_a": [
+        "I've very curly hair.",
+        "I'm scared of clowns.",
+        "Like a skeleton."
+      ],
+      "persona_b": [
+        "I draw comics.",
+        "I'm deathly afraid of heights.",
+        "I already have 3 children."
+      ],
+      "setting": "Two friends, at an amusement park, standing near a giant rollercoaster.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Wow, look at that rollercoaster! It's one of the tallest ones here. Want to give it a try?"
+        },
+        {
+          "speaker": "A",
+          "text": "Come on, it’ll be fun! Just imagine the view from the top."
+        },
+        {
+          "speaker": "A",
+          "text": "We can hold onto each other if it gets too wild. I've got curly hair to mess up in the wind, remember?"
+        },
+        {
+          "speaker": "A",
+          "text": "Alright, here we go. I’ll get the tickets."
+        }
+      ],
+      "voc_after_turn": 1,
+      "voc_speaker": "B",
+      "shared_referent": "the giant rollercoaster",
+      "emotion_a": "achievement",
+      "emotion_b": "anger",
+      "framing_a": "B sees going on the rollercoaster as a thrilling challenge accomplished.",
+      "framing_b": "B feels pressured and unfairly pushed into doing something they fear, responding to the rollercoaster with annoyance.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Wow, look at that rollercoaster! It's one of the tallest ones here. Want to give it a try?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "Come on, it’ll be fun! Just imagine the view from the top.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "We can hold onto each other if it gets too wild. I've got curly hair to mess up in the wind, remember?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Alright, here we go. I’ll get the tickets.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Wow, look at that rollercoaster! It's one of the tallest ones here. Want to give it a try?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "Come on, it’ll be fun! Just imagine the view from the top.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "We can hold onto each other if it gets too wild. I've got curly hair to mess up in the wind, remember?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Alright, here we go. I’ll get the tickets.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_002",
+      "attempts": 1,
+      "assigned_pair": [
+        "achievement",
+        "disgust"
+      ],
+      "persona_a": [
+        "Running is my way to relax.",
+        "I wish I could speak another language.",
+        "I've a passion for politics."
+      ],
+      "persona_b": [
+        "I love to go running.",
+        "I'm very polite and courteous.",
+        "I've been in a lot of romantic relationships that have ended up poorly."
+      ],
+      "setting": "Two friends are jogging in the park, discussing the success of their recent political campaign.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "We really pulled it off with that election strategy, didn't we? All those hours campaigning paid off."
+        },
+        {
+          "speaker": "A",
+          "text": "And the turnout was incredible! I wasn't sure how people would react, but we got our message across."
+        },
+        {
+          "speaker": "A",
+          "text": "So, how do you feel about the final results? Ready for the next step?"
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "shared_referent": "the outcome of the recent political campaign",
+      "emotion_a": "achievement",
+      "emotion_b": "disgust",
+      "framing_a": "A believes the campaign result is a success and is thrilled about the achievement.",
+      "framing_b": "B finds the campaign outcome lacking integrity or principles.",
+      "why": "The personas and context support both celebrating a successful campaign and feeling disgust at potentially unethical strategies used in achieving it.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "We really pulled it off with that election strategy, didn't we? All those hours campaigning paid off.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "And the turnout was incredible! I wasn't sure how people would react, but we got our message across.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "So, how do you feel about the final results? Ready for the next step?",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "We really pulled it off with that election strategy, didn't we? All those hours campaigning paid off.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "And the turnout was incredible! I wasn't sure how people would react, but we got our message across.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "So, how do you feel about the final results? Ready for the next step?",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_003",
+      "attempts": 1,
+      "assigned_pair": [
+        "achievement",
+        "fear"
+      ],
+      "persona_a": [
+        "I have to live by a schedule in order to keep my mind right.",
+        "I'm a middle aged mother of two high school boys.",
+        "My favorite music genre is classical."
+      ],
+      "persona_b": [
+        "I like to watch anime.",
+        "I am still a student, but I am gonna be a nurse.",
+        "I am fluent in english spanish and french."
+      ],
+      "setting": "A mother helps her son, who is studying to be a nurse, practice drawing blood in their living room.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Alright, focus like you learned in class. Steady hands are key."
+        },
+        {
+          "speaker": "A",
+          "text": "Don’t worry, the practice kit is all set up. Just another step towards your dream."
+        },
+        {
+          "speaker": "A",
+          "text": "Remember, exhale slowly as you insert the needle."
+        },
+        {
+          "speaker": "A",
+          "text": "There you go, carefully slide it in like that. How does it feel?"
+        },
+        {
+          "speaker": "A",
+          "text": "See? You’re getting the hang of it. It's all about practice and confidence."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "shared_referent": "Son successfully inserting the needle into the practice kit.",
+      "emotion_a": "achievement",
+      "emotion_b": "fear",
+      "framing_a": "A sees the needle insertion as a successful step toward B's nursing career.",
+      "framing_b": "A is concerned about B feeling anxious or doubtful about the needle insertion.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Alright, focus like you learned in class. Steady hands are key.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Don’t worry, the practice kit is all set up. Just another step towards your dream.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Remember, exhale slowly as you insert the needle.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "There you go, carefully slide it in like that. How does it feel?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "See? You’re getting the hang of it. It's all about practice and confidence.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Alright, focus like you learned in class. Steady hands are key.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Don’t worry, the practice kit is all set up. Just another step towards your dream.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Remember, exhale slowly as you insert the needle.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "There you go, carefully slide it in like that. How does it feel?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "See? You’re getting the hang of it. It's all about practice and confidence.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_004",
+      "attempts": 1,
+      "assigned_pair": [
+        "achievement",
+        "sadness"
+      ],
+      "persona_a": [
+        "I'm married with 2 children.",
+        "I'm a museum tour guide.",
+        "I've a condition that prevents me from going to high altitudes."
+      ],
+      "persona_b": [
+        "I am former military.",
+        "I am a foodie.",
+        "I chew my nails."
+      ],
+      "setting": "A museum gallery during the final run-through of a new exhibit.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "This is it. The new exhibit is finally up and ready for opening day."
+        },
+        {
+          "speaker": "A",
+          "text": "Can you believe all those late nights actually paid off?"
+        },
+        {
+          "speaker": "A",
+          "text": "Look at that interactive section over there. It's just like we imagined."
+        },
+        {
+          "speaker": "A",
+          "text": "I hope the visitors will get as much out of it as we put into building it."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "shared_referent": "the completion of the new exhibit",
+      "emotion_a": "achievement",
+      "emotion_b": "sadness",
+      "framing_a": "B feels a sense of accomplishment about the completion of the new exhibit.",
+      "framing_b": "B feels sadness about the completion of the new exhibit, possibly from nostalgia or regret.",
+      "why": "Both personas can connect to a meaningful project like setting up a museum exhibit. B's military background might lend a sense of mission or loss after completion, fitting both achievement and sadness.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "This is it. The new exhibit is finally up and ready for opening day.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Can you believe all those late nights actually paid off?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "Look at that interactive section over there. It's just like we imagined.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I hope the visitors will get as much out of it as we put into building it.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "This is it. The new exhibit is finally up and ready for opening day.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Can you believe all those late nights actually paid off?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "Look at that interactive section over there. It's just like we imagined.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I hope the visitors will get as much out of it as we put into building it.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_005",
+      "attempts": 4,
+      "assigned_pair": [
+        "amusement",
+        "anger"
+      ],
+      "persona_a": [
+        "I am a vegan and I love hummus.",
+        "I'm allergic to nuts.",
+        "I've never been to the beach."
+      ],
+      "persona_b": [
+        "I decided to become vegan a year ago.",
+        "I also meditate a lot.",
+        "I only eat organic food."
+      ],
+      "setting": "Two friends, both vegan, are at a new organic cafe.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "So, this place just opened last week. They have a hummus platter made from chickpeas grown right here in town."
+        },
+        {
+          "speaker": "A",
+          "text": "Oh, I made sure to ask; there are no nuts anywhere near it."
+        },
+        {
+          "speaker": "A",
+          "text": "It's kind of nice to have more vegan options popping up, isn't it?"
+        },
+        {
+          "speaker": "A",
+          "text": "I know how much you love supporting local spots."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "shared_referent": "new organic hummus platter",
+      "emotion_a": "amusement",
+      "emotion_b": "anger",
+      "framing_a": "A finds the hummus platter exciting and possibly humorous in presentation or concept.",
+      "framing_b": "B is upset because the hummus platter, despite being local, seems unappealing or overpriced.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "So, this place just opened last week. They have a hummus platter made from chickpeas grown right here in town.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Oh, I made sure to ask; there are no nuts anywhere near it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "It's kind of nice to have more vegan options popping up, isn't it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I know how much you love supporting local spots.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "So, this place just opened last week. They have a hummus platter made from chickpeas grown right here in town.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Oh, I made sure to ask; there are no nuts anywhere near it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "It's kind of nice to have more vegan options popping up, isn't it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I know how much you love supporting local spots.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_006",
+      "attempts": 1,
+      "assigned_pair": [
+        "amusement",
+        "disgust"
+      ],
+      "persona_a": [
+        "I work as a grill cook.",
+        "I've a family of three daughters.",
+        "My youngest sister is in first grade."
+      ],
+      "persona_b": [
+        "I am a older lady.",
+        "I work at a school as an art teacher.",
+        "I want to go back to school."
+      ],
+      "setting": "An art room with an art teacher and her sibling, a grill cook, discussing lunch options.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Alright, today’s lunch special is my masterpiece grilled cheese—plenty of butter and a secret ingredient!"
+        },
+        {
+          "speaker": "A",
+          "text": "The students will love it. Perfect fuel for creative minds, right?"
+        },
+        {
+          "speaker": "A",
+          "text": "Remember when we tried to blend chocolate syrup in mashed potatoes? I'm experimenting again!"
+        }
+      ],
+      "voc_after_turn": 1,
+      "voc_speaker": "B",
+      "shared_referent": "the grilled cheese sandwich with a secret ingredient",
+      "emotion_a": "amusement",
+      "emotion_b": "disgust",
+      "framing_a": "The grilled cheese sandwich with a secret ingredient is a fun and creative experiment.",
+      "framing_b": "The grilled cheese sandwich with a secret ingredient is unappetizing.",
+      "why": "Both a grill cook and an art teacher find experimentation relevant, allowing for both amusement and disgust with the culinary creation.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Alright, today’s lunch special is my masterpiece grilled cheese—plenty of butter and a secret ingredient!",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "The students will love it. Perfect fuel for creative minds, right?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Remember when we tried to blend chocolate syrup in mashed potatoes? I'm experimenting again!",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Alright, today’s lunch special is my masterpiece grilled cheese—plenty of butter and a secret ingredient!",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "The students will love it. Perfect fuel for creative minds, right?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Remember when we tried to blend chocolate syrup in mashed potatoes? I'm experimenting again!",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_007",
+      "attempts": 1,
+      "assigned_pair": [
+        "amusement",
+        "fear"
+      ],
+      "persona_a": [
+        "My name is william, but people call me bill.",
+        "I am highly educated.",
+        "I love christmas."
+      ],
+      "persona_b": [
+        "I'm a very funny woman.",
+        "I like rock music.",
+        "I do not drink or do drugs or anything."
+      ],
+      "setting": "William (Bill) and his friend are at a Christmas-themed escape room.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Look at all these Christmas lights! They really went all out with the decorations."
+        },
+        {
+          "speaker": "A",
+          "text": "Hey, check out that Santa statue. It's supposed to be some kind of riddle. What do you think?"
+        },
+        {
+          "speaker": "A",
+          "text": "And here I thought my old office holiday parties were elaborate."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "shared_referent": "a Santa statue in the escape room",
+      "emotion_a": "amusement",
+      "emotion_b": "fear",
+      "framing_a": "Bill reacts with interest to the quirky Santa riddle.",
+      "framing_b": "Bill reacts with concern about the unsettling Santa figure.",
+      "why": "The personas support both amusement and fear reactions to the shared referent, the Santa statue.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Look at all these Christmas lights! They really went all out with the decorations.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Hey, check out that Santa statue. It's supposed to be some kind of riddle. What do you think?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "And here I thought my old office holiday parties were elaborate.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Look at all these Christmas lights! They really went all out with the decorations.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Hey, check out that Santa statue. It's supposed to be some kind of riddle. What do you think?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "And here I thought my old office holiday parties were elaborate.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_008",
+      "attempts": 1,
+      "assigned_pair": [
+        "amusement",
+        "sadness"
+      ],
+      "persona_a": [
+        "I ride horses in my spare time.",
+        "I hope to someday compete professionally or atleast qualify for an event.",
+        "I am ten years old."
+      ],
+      "persona_b": [
+        "I have a sweet tooth.",
+        "I am east asian.",
+        "I like to plant flowers in my gardens."
+      ],
+      "setting": "A ten-year-old equestrian rider telling their older cousin about a fall at the stables, over tea in the living room.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "You should have seen it! I was trotting Charlie in the ring when he decided to hop sideways. No warning at all!"
+        },
+        {
+          "speaker": "A",
+          "text": "I went flying in the air and landed with a big poof in the sand. My instructor gasped, but it felt like a pillow!"
+        },
+        {
+          "speaker": "A",
+          "text": "Then, Charlie looked at me with those big eyes, like he was asking, ‘What are you doing down there?’"
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "shared_referent": "A's fall off the horse",
+      "emotion_a": "amusement",
+      "emotion_b": "sadness",
+      "framing_a": "B finds A's fall off the horse amusing, reacting to the humor in the story.",
+      "framing_b": "B finds A's fall off the horse sad, feeling sorry for A's experience.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "You should have seen it! I was trotting Charlie in the ring when he decided to hop sideways. No warning at all!",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I went flying in the air and landed with a big poof in the sand. My instructor gasped, but it felt like a pillow!",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "Then, Charlie looked at me with those big eyes, like he was asking, ‘What are you doing down there?’",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "You should have seen it! I was trotting Charlie in the ring when he decided to hop sideways. No warning at all!",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I went flying in the air and landed with a big poof in the sand. My instructor gasped, but it felt like a pillow!",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "Then, Charlie looked at me with those big eyes, like he was asking, ‘What are you doing down there?’",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_009",
+      "attempts": 1,
+      "assigned_pair": [
+        "pleasure",
+        "anger"
+      ],
+      "persona_a": [
+        "My favorite food is spicy tex mex.",
+        "I love cabins in the woods on the lake.",
+        "I have never been on an airplane."
+      ],
+      "persona_b": [
+        "I think recycling is important.",
+        "I'm allergic to milk.",
+        "My favorite singer is jess greenberg."
+      ],
+      "setting": "Two coworkers are organizing a junk food tasting at a cozy lakeside cabin retreat.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Alright, so I brought out the jalapeño nachos! Our spicy Tex Mex treat for the weekend."
+        },
+        {
+          "speaker": "A",
+          "text": "Take a bite. I promise they have the right balance of heat and cheese."
+        },
+        {
+          "speaker": "A",
+          "text": "Feel that kick? It's supposed to be a mini vacation for your taste buds."
+        },
+        {
+          "speaker": "A",
+          "text": "I knew you'd appreciate something a bit different from the usual."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "shared_referent": "the jalapeño nachos",
+      "emotion_a": "pleasure",
+      "emotion_b": "anger",
+      "framing_a": "The jalapeño nachos are delicious and enjoyable for B.",
+      "framing_b": "The jalapeño nachos are too spicy and upsetting for B.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Alright, so I brought out the jalapeño nachos! Our spicy Tex Mex treat for the weekend.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Take a bite. I promise they have the right balance of heat and cheese.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "Feel that kick? It's supposed to be a mini vacation for your taste buds.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I knew you'd appreciate something a bit different from the usual.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Alright, so I brought out the jalapeño nachos! Our spicy Tex Mex treat for the weekend.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Take a bite. I promise they have the right balance of heat and cheese.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "Feel that kick? It's supposed to be a mini vacation for your taste buds.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I knew you'd appreciate something a bit different from the usual.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_010",
+      "attempts": 1,
+      "assigned_pair": [
+        "pleasure",
+        "disgust"
+      ],
+      "persona_a": [
+        "I can do convincing bird calls.",
+        "I have zero family that I am close to.",
+        "I'm a clean eater."
+      ],
+      "persona_b": [
+        "If I am not cooking in the kitchen then I am definitely on the water.",
+        "I love pasta.",
+        "I drink a lot of tea."
+      ],
+      "setting": "A and B are friends trying out a new pasta dish B has cooked in B's kitchen.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Wow, look at this spread! The sauce smells incredible."
+        },
+        {
+          "speaker": "A",
+          "text": "You even made it look like a restaurant dish. I’m impressed."
+        },
+        {
+          "speaker": "A",
+          "text": "Alright, here goes. First bite."
+        },
+        {
+          "speaker": "A",
+          "text": "So, what do you think? Does it live up to expectations?"
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "shared_referent": "the taste of the pasta dish",
+      "emotion_a": "pleasure",
+      "emotion_b": "disgust",
+      "framing_a": "A believes the pasta dish tastes exquisite and is pleased that B receives it well.",
+      "framing_b": "A is unsure about the taste and waits to gauge B's reaction, which could indicate something is wrong.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Wow, look at this spread! The sauce smells incredible.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "You even made it look like a restaurant dish. I’m impressed.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Alright, here goes. First bite.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "So, what do you think? Does it live up to expectations?",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Wow, look at this spread! The sauce smells incredible.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "You even made it look like a restaurant dish. I’m impressed.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Alright, here goes. First bite.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "So, what do you think? Does it live up to expectations?",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_011",
+      "attempts": 2,
+      "assigned_pair": [
+        "pleasure",
+        "fear"
+      ],
+      "persona_a": [
+        "I wear glasses that are cateye.",
+        "I take pride in my job managing the restaurant."
+      ],
+      "persona_b": [
+        "I'm allergic to peanuts.",
+        "I also like to cook but I am not very good at it."
+      ],
+      "setting": "A and B are in the kitchen of A's restaurant, trying out a new dish that B has cooked.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Alright, moment of truth! Let's see how your new dish turned out."
+        },
+        {
+          "speaker": "A",
+          "text": "The aroma is really something, isn't it? You've got a knack for this."
+        },
+        {
+          "speaker": "A",
+          "text": "Well, what do you think? I see a reaction!"
+        },
+        {
+          "speaker": "A",
+          "text": "It’s interesting how it can take you by surprise, right? I wasn't expecting that either."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "shared_referent": "the new dish B prepared",
+      "emotion_a": "pleasure",
+      "emotion_b": "fear",
+      "framing_a": "A thinks the new dish has a delightful taste that surprises B.",
+      "framing_b": "A realizes the dish unexpectedly startled B, possibly due to a strong flavor.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Alright, moment of truth! Let's see how your new dish turned out.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The aroma is really something, isn't it? You've got a knack for this.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, what do you think? I see a reaction!",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "It’s interesting how it can take you by surprise, right? I wasn't expecting that either.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Alright, moment of truth! Let's see how your new dish turned out.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The aroma is really something, isn't it? You've got a knack for this.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, what do you think? I see a reaction!",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "It’s interesting how it can take you by surprise, right? I wasn't expecting that either.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_012",
+      "attempts": 1,
+      "assigned_pair": [
+        "pleasure",
+        "sadness"
+      ],
+      "persona_a": [
+        "I am obsessed with filming.",
+        "I've 5 children, though 2 have passed away."
+      ],
+      "persona_b": [
+        "I get sad a lot.",
+        "I graduated college for secondary english education."
+      ],
+      "setting": "A is filming B for a documentary at a memorial garden.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Alright, let me get this shot set up just right. The light is perfect today."
+        },
+        {
+          "speaker": "A",
+          "text": "This garden holds so many stories. Every stone reminds me of the ones we’ve lost."
+        },
+        {
+          "speaker": "A",
+          "text": "Here we go... and action. Just walk slowly along the path, maybe touch the leaves lightly. Feel free to take in everything."
+        },
+        {
+          "speaker": "A",
+          "text": "How does it feel to be here today? The atmosphere is quite something, isn't it?"
+        },
+        {
+          "speaker": "A",
+          "text": "And if you could stand by the fountain... yes, right there. Beautiful. The water sounds are just perfect behind you."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "shared_referent": "the memorial garden and its atmosphere",
+      "emotion_a": "pleasure",
+      "emotion_b": "sadness",
+      "framing_a": "A focuses on capturing the tranquility and beauty of the memorial garden.",
+      "framing_b": "A's filming highlights the memorial garden's solemnity and the memories it evokes.",
+      "why": "The setting of a memorial garden allows for both sensory pleasure and reflective sadness, depending on personal interpretation.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Alright, let me get this shot set up just right. The light is perfect today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "This garden holds so many stories. Every stone reminds me of the ones we’ve lost.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "Here we go... and action. Just walk slowly along the path, maybe touch the leaves lightly. Feel free to take in everything.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "How does it feel to be here today? The atmosphere is quite something, isn't it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "And if you could stand by the fountain... yes, right there. Beautiful. The water sounds are just perfect behind you.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Alright, let me get this shot set up just right. The light is perfect today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "This garden holds so many stories. Every stone reminds me of the ones we’ve lost.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "Here we go... and action. Just walk slowly along the path, maybe touch the leaves lightly. Feel free to take in everything.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "How does it feel to be here today? The atmosphere is quite something, isn't it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "And if you could stand by the fountain... yes, right there. Beautiful. The water sounds are just perfect behind you.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_013",
+      "attempts": 1,
+      "assigned_pair": [
+        "relief",
+        "anger"
+      ],
+      "persona_a": [
+        "My father is dead.",
+        "I have a hard time feeling connected with people.",
+        "I prefer summer over winter."
+      ],
+      "persona_b": [
+        "I also like to mountain bike.",
+        "My friends and I go hiking all the time.",
+        "My family is continuously growing."
+      ],
+      "setting": "Two friends are hiking in a remote forest, processing some personal news.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I finally told my mother about our plans. It wasn't easy."
+        },
+        {
+          "speaker": "A",
+          "text": "She didn't take it well at first, but eventually, she understood it's what I need."
+        },
+        {
+          "speaker": "A",
+          "text": "It feels strange, you know? Like I'm leaving something behind, but maybe that's just what growth is."
+        },
+        {
+          "speaker": "A",
+          "text": "It's hard losing those connections, especially after Dad. I always feel like I can't quite hold onto people."
+        }
+      ],
+      "voc_after_turn": 1,
+      "voc_speaker": "B",
+      "shared_referent": "A sharing the news about their planned move",
+      "emotion_a": "relief",
+      "emotion_b": "anger",
+      "framing_a": "A feels relief that telling their mother about the move went better than expected.",
+      "framing_b": "A feels overlooked because their mother didn't support the move right away.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I finally told my mother about our plans. It wasn't easy.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "She didn't take it well at first, but eventually, she understood it's what I need.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "It feels strange, you know? Like I'm leaving something behind, but maybe that's just what growth is.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "It's hard losing those connections, especially after Dad. I always feel like I can't quite hold onto people.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I finally told my mother about our plans. It wasn't easy.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "She didn't take it well at first, but eventually, she understood it's what I need.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "It feels strange, you know? Like I'm leaving something behind, but maybe that's just what growth is.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "It's hard losing those connections, especially after Dad. I always feel like I can't quite hold onto people.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_014",
+      "attempts": 2,
+      "assigned_pair": [
+        "relief",
+        "disgust"
+      ],
+      "persona_a": [
+        "I live with my parents and my little brother.",
+        "I was born outside the us.",
+        "I am studying to be a dentist."
+      ],
+      "persona_b": [
+        "I speak french and english fluently.",
+        "I've a pet husky.",
+        "I have a bicycle."
+      ],
+      "setting": "A is showing B an antique dental kit in a cozy study room.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Hey, check this out! I finally managed to get my hands on this vintage dental kit."
+        },
+        {
+          "speaker": "A",
+          "text": "Look at the detail on the handle, isn’t that craftsmanship something else?"
+        },
+        {
+          "speaker": "A",
+          "text": "I know it’s a bit worn, but that just adds to its charm, right?"
+        }
+      ],
+      "voc_after_turn": 1,
+      "voc_speaker": "B",
+      "shared_referent": "the vintage dental kit",
+      "emotion_a": "relief",
+      "emotion_b": "disgust",
+      "framing_a": "B sees the vintage dental kit and feels relieved that it will never be used on them.",
+      "framing_b": "B sees the vintage dental kit and feels disgust at the thought of its past use.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Hey, check this out! I finally managed to get my hands on this vintage dental kit.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "Look at the detail on the handle, isn’t that craftsmanship something else?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I know it’s a bit worn, but that just adds to its charm, right?",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Hey, check this out! I finally managed to get my hands on this vintage dental kit.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "Look at the detail on the handle, isn’t that craftsmanship something else?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I know it’s a bit worn, but that just adds to its charm, right?",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_015",
+      "attempts": 1,
+      "assigned_pair": [
+        "relief",
+        "fear"
+      ],
+      "persona_a": [
+        "I fell in love this summer.",
+        "I am studying software development.",
+        "I watched the eclipse without using proper eye protection."
+      ],
+      "persona_b": [
+        "I've found the cure for the common cold.",
+        "I like going to rock concerts.",
+        "I used to be a meat eater but I'm now a vegan."
+      ],
+      "setting": "Two friends in a college dorm room discussing a computer project.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I finally finished debugging our project. Want to take a look at it?"
+        },
+        {
+          "speaker": "A",
+          "text": "I wasn't sure if it would work after everything that went wrong last night."
+        },
+        {
+          "speaker": "A",
+          "text": "If this compiles without crashing, I might finally get some decent sleep."
+        }
+      ],
+      "voc_after_turn": 1,
+      "voc_speaker": "B",
+      "shared_referent": "the successful debugging of a project",
+      "emotion_a": "relief",
+      "emotion_b": "fear",
+      "framing_a": "The debugging completion of the project offers a sense of security and eases worries about academic performance.",
+      "framing_b": "The project might still have underlying issues, leading to concerns about what might go wrong later.",
+      "why": "The personas are feasible because the shared referent, a completed software project, aligns naturally with A’s computer studies and collaboratively involves B’s interests.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I finally finished debugging our project. Want to take a look at it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "I wasn't sure if it would work after everything that went wrong last night.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "If this compiles without crashing, I might finally get some decent sleep.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I finally finished debugging our project. Want to take a look at it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "I wasn't sure if it would work after everything that went wrong last night.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "If this compiles without crashing, I might finally get some decent sleep.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_016",
+      "attempts": 2,
+      "assigned_pair": [
+        "relief",
+        "sadness"
+      ],
+      "persona_a": [
+        "I coach the girl s volley ball team.",
+        "I'm active on my city council.",
+        "I love animals."
+      ],
+      "persona_b": [
+        "I've a dog named bob.",
+        "I like to cook breakfast on sundays.",
+        "I tend bar on the weekends."
+      ],
+      "setting": "A's home, discussing a stray dog A found and decided to foster.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "So, I found a stray puppy near the school today."
+        },
+        {
+          "speaker": "A",
+          "text": "He was just shivering there, looking lost. Broke my heart."
+        },
+        {
+          "speaker": "A",
+          "text": "I couldn't just leave him, you know. He needed somebody."
+        },
+        {
+          "speaker": "A",
+          "text": "Guess what? I decided to foster him for a bit."
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah, another dog in the house. It might get crazy, but worth it."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "shared_referent": "A's decision to foster the stray dog",
+      "emotion_a": "relief",
+      "emotion_b": "sadness",
+      "framing_a": "B feels relief that the stray dog will have a home.",
+      "framing_b": "B feels sadness over the challenges of fostering another dog.",
+      "why": "",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "So, I found a stray puppy near the school today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "He was just shivering there, looking lost. Broke my heart.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I couldn't just leave him, you know. He needed somebody.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "Guess what? I decided to foster him for a bit.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah, another dog in the house. It might get crazy, but worth it.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "So, I found a stray puppy near the school today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "He was just shivering there, looking lost. Broke my heart.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I couldn't just leave him, you know. He needed somebody.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "Guess what? I decided to foster him for a bit.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah, another dog in the house. It might get crazy, but worth it.",
+          "kind": "speech"
+        }
+      ]
+    }
+  ]
+}
