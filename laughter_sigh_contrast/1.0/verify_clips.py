@@ -40,7 +40,8 @@ import providers as P
 from make_audio import MIN_CLIP, MAX_CLIP, MIN_DB, duration_of, mean_db, normalize, synthesize
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 MANIFEST = HERE / "out" / "audio_manifest.json"
 ANSWERS = HERE / "out" / "clip_verdicts.jsonl"
 VOTES = HERE / "out" / "clip_verdicts.json"
@@ -94,7 +95,7 @@ def recorded() -> dict[tuple[str, str, int], dict]:
 
 
 def ask_one(clip: dict, provider: str, round_no: int) -> dict:
-    path = REPO / clip["path"]
+    path = FAMILY / clip["path"]
     last = ""
     for attempt in range(1, RETRIES + 1):
         try:
@@ -117,7 +118,7 @@ def remake(clip: dict, speech_db: float) -> bool:
     import os
     from elevenlabs import ElevenLabs
     eleven = ElevenLabs(api_key=os.environ["ELEVENLABS_API_KEY"].strip())
-    dest = REPO / clip["path"]
+    dest = FAMILY / clip["path"]
     for _ in range(3):
         synthesize(eleven, clip["token"], clip["speaker"], dest, 0.30)
         seconds, db = duration_of(dest), mean_db(dest)

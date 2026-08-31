@@ -4,13 +4,14 @@ Can a speech-to-speech model use laughter, sighs and other non-speech sounds as 
 does it only hear the words?
 
 Three versions of that question, each a folder. `v1` and `v2` are the exploratory
-probes that shaped it; **1.0** is the benchmark they led to.
+probes that shaped it; **laughter_sigh_contrast** is the benchmark they led to,
+in two generations — 1.0 and 2.0.
 
 | | question | state |
 | --- | --- | --- |
 | **[v1](v1/)** | Can a model identify a vocalization that occupies an **entire turn**, and predict the reply it calls for? | 28 items, evaluated · **86% / 75%** |
 | **[v2](v2/)** | Given a scenario, the model proposes something and the user answers with **only a sound**. Does its next turn change? | ~40 conditions, read by eye |
-| **[1.0](1.0/)** | The same conversation heard three ways — plain, through laughter, through sighs — with the words held **physically identical**. | 20 items × 3 × 4 models, four evals |
+| **[laughter_sigh_contrast](laughter_sigh_contrast/)** | The same conversation heard three ways — plain, through laughter, through sighs — with the words held **physically identical**. Two generations: [1.0](laughter_sigh_contrast/1.0/) and [2.0](laughter_sigh_contrast/2.0/). | 20 items × 3 × 4 models, four evals |
 
 `audio_non-speech/` holds the real recordings — gasp, grunt, laughter, sigh, sobbing, yawn —
 used as source material throughout. `archive/` holds earlier experiments and probes.
@@ -35,6 +36,6 @@ through laughter.
 
 ## Reading order
 
-Start with [1.0/PIPELINE.md](1.0/PIPELINE.md) — it describes how the current dataset is built,
+Start with [laughter_sigh_contrast/2.0/PIPELINE.md](laughter_sigh_contrast/2.0/PIPELINE.md) — it describes how the current dataset is built,
 stage by stage, for someone who has not seen this project. Each folder's README covers its own
 design, results and caveats.

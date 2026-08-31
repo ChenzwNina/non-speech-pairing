@@ -1,7 +1,7 @@
 # archive
 
 Earlier experiments and one-off probes, kept for reference. Nothing here is current — the
-active work is in `v1/`, `v2/` and `1.0/`.
+active work is in `v1/`, `v2/` and `laughter_sigh_contrast/`.
 
 ## Datasets with a listening eval
 

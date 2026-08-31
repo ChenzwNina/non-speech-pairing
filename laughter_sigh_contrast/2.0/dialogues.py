@@ -21,8 +21,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
-PRIOR = REPO / "1.0" / "out"
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
+PRIOR = FAMILY / "1.0" / "out"
 OUT = HERE / "out"
 
 KEEP = ("conv_id", "item_id", "situation", "situation_third_person")

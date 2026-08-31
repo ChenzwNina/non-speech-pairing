@@ -41,7 +41,8 @@ from openai import OpenAI
 import os
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 load_dotenv(REPO / ".env")
 
 SEEDS = HERE / "out" / "seeds.json"

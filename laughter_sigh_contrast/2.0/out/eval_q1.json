@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T16:22:13+00:00",
+  "generated_at": "2026-08-27T16:53:02+00:00",
   "judges": [
     "opus",
     "terra",
@@ -105,11 +105,35 @@
       "of": 60
     }
   },
-  "paired_contrast": {
-    "gemini": 135.0,
-    "grok": 75.0,
-    "openai": 135.0,
-    "qwen": 123.3
+  "direct_contrast": {
+    "gemini": {
+      "won": 81,
+      "of": 120,
+      "accuracy": 0.675,
+      "happy_side": 0.6833,
+      "sad_side": 0.6667
+    },
+    "grok": {
+      "won": 45,
+      "of": 120,
+      "accuracy": 0.375,
+      "happy_side": 0.4167,
+      "sad_side": 0.3333
+    },
+    "openai": {
+      "won": 81,
+      "of": 120,
+      "accuracy": 0.675,
+      "happy_side": 0.9,
+      "sad_side": 0.45
+    },
+    "qwen": {
+      "won": 74,
+      "of": 120,
+      "accuracy": 0.6167,
+      "happy_side": 0.6333,
+      "sad_side": 0.6
+    }
   },
-  "paired_contrast_note": "the happy-vs-sad and sad-vs-happy cells reuse the same two replies against different transcripts; ~100 means interchangeable, above 100 means the judge's preference flips with the transcript, below means the replies fit the opposite condition better"
+  "direct_contrast_note": "only the two cells that pit the happy reply against the sad reply, each against its own transcript. chance 50%, ceiling 100%: a judge that simply prefers one reply wins one cell and loses the other. read the two sides separately, since equal accuracy can be a symmetric flip or a one-sided preference"
 }

@@ -36,7 +36,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 load_dotenv(REPO / ".env")
 
 # The xAI key lives in a sibling project for historical reasons; look there if this repo's

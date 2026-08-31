@@ -34,7 +34,8 @@ from elevenlabs import ElevenLabs
 from elevenlabs.types import ModelSettingsResponseModel
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 load_dotenv(REPO / ".env")
 
 OUT = HERE / "out"
@@ -43,7 +44,7 @@ MANIFEST = OUT / "clip_manifest.json"
 
 # Stage 6, reused in place. dialogues.py has already checked that every turn's words match the
 # take here, and that every take has a word alignment.
-PRIOR = REPO / "1.0" / "out"
+PRIOR = FAMILY / "1.0" / "out"
 TURN_DIR = PRIOR / "audio_turns"
 ALIGNMENT = PRIOR / "turn_alignment.json"
 

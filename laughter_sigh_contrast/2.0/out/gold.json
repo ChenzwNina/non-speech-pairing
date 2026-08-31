@@ -2,7 +2,7 @@
   "generated_at": "2026-08-27T06:21:08+00:00",
   "writer": "gpt-5.6-terra",
   "verifier": "claude-opus-5",
-  "verified": false,
+  "verified": true,
   "items": [
     {
       "item_id": "emb_001",
@@ -19,6 +19,16 @@
       "transcripts": {
         "happy": "A: At the staff meeting [chuckle] hehe today, I thought I could keep it quiet, [laughs] haha but everyone heard [giggles] hah it.\nB: Did anyone say [laugh] ha anything?\nA: The room [chuckle] hehe went still, and then someone opened a [giggles] hahaha window.\nB: That [chuckle] haha made it hard to [chuckles] heh pretend nothing had happened.\nA: I said [laugh] ha it was my chair, but nobody looked at the [laughs] hahaha chair.\nB: Was [giggle] ha your manager there?\nA: She was sitting [chuckles] hah right across from me, taking [laughs] haha notes.",
         "sad": "A: At the staff meeting [sigh] ugh today, I thought I could keep it quiet, [exhales] hh but everyone heard [sigh] ah it.\nB: Did anyone say [heavy sigh] oof anything?\nA: The room [sigh] uh went still, and then someone opened a [sighs] hoo window.\nB: That [exhales] hh made it hard to [sighs] ah pretend nothing had happened.\nA: I said [sigh] uh it was my chair, but nobody looked at the [sighs] phew chair.\nB: Was [heavy sigh] oof your manager there?\nA: She was sitting [sigh] ah right across from me, taking [sighs] hh notes."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "laughter version function ('turning the speaker's disastrous meeting mishap into a shared absurdity rather than dwelling on the humiliation') is the generic laughter template — it names only 'meeting mishap' and would fit any laughing-about-workplace-embarrassment story, unlike the sigh function which anchors to the chair excuse and the note-taking manager"
+        ]
       }
     },
     {
@@ -36,6 +46,17 @@
       "transcripts": {
         "happy": "A: I was in yoga class [chuckle] hehe once, and during a stretch my pants split open. [laughs] haha\nB: Right in the [giggles] heh middle of the class?\nA: Yeah, we were all facing the mirrors, [chuckles] ha and I noticed a tear at the back. [laughs] ha\nB: Did [chuckle] hah anyone say anything?\nA: The instructor just kept talking, so I tied [giggles] hehe my sweatshirt around my waist. [laughs] haha\nB: That was a practical [chuckles] hehe move. How did you get through the rest of class? [laughs] hoho\nA: I stayed near the [giggles] hehe wall until it was [laugh] haha over, then went straight home. [laughs] ha",
         "sad": "A: I was in yoga class [sigh] ugh once, and during a stretch my pants split open. [heavy sigh] oof\nB: Right in the [sigh] hh middle of the class?\nA: Yeah, we were all facing the mirrors, [sigh] uh and I noticed a tear at the back. [heavy sigh] phew\nB: Did [sigh] ugh anyone say anything?\nA: The instructor just kept talking, so I tied [exhales] ah my sweatshirt around my waist. [heavy sigh] oof\nB: That was a practical [sigh] hh move. How did you get through the rest of class? [heavy sigh] phew\nA: I stayed near the [sigh] uh wall until it was [sighs] hoo over, then went straight home. [heavy sigh] phew"
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "laughter version tone sentence ('warm, playful energy and a lightly teasing, supportive delivery') is generic boilerplate that would fit any laughter-told story — nothing about the split pants, the sweatshirt fix, or the mirrors",
+          "sigh version tone sentence ('gentle, sympathetic calm and low-key reassurance') is the mirror-image generic and would fit any sigh-told story unchanged"
+        ]
       }
     },
     {
@@ -53,6 +74,17 @@
       "transcripts": {
         "happy": "A: I was using the bathroom on the train in Rome, [chuckle] haha and the lock would not catch properly.\nB: Did someone open the door [giggles] hehe before you could fix it?\nA: A woman stepped in, and I was [laugh] haha still trying to get the latch to stay shut.\nB: At least the [chuckles] hah door was closed again after that.",
         "sad": "A: I was using the bathroom on the train in Rome, [sigh] hh and the lock would not catch properly.\nB: Did someone open the door [exhales] uh before you could fix it?\nA: A woman stepped in, and I was [heavy sigh] ugh still trying to get the latch to stay shut.\nB: At least the [sighs] ah door was closed again after that."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "specific: the laughter tone sentence ('lightly amused warmth and an easygoing, nonjudgmental delivery') contains nothing from this conversation — no stuck latch, no walked-in-on moment — and would fit any laughter story unchanged",
+          "specific: the sigh tone sentence ('gentle, sympathetic warmth and low-key reassurance rather than playful energy') is likewise a generic sigh-story delivery note, transplantable to any commiseration transcript"
+        ]
       }
     },
     {
@@ -70,12 +102,22 @@
       "transcripts": {
         "happy": "A: I gave a presentation at work the other day, [chuckle] haha but my slides were still at home. [laugh] hah\nB: So you had [chuckles] hehe to present without any of the material you prepared? [laugh] haha\nA: Yeah, I had to talk through everything from memory [chuckles] hehe and use the whiteboard.\nB: Did anyone have a copy of the slides, [giggles] haha or were you on your own?\nA: No one had [laughs] haha them. I just kept going until the meeting was over.\nB: At least you got through the whole presentation. [laughs] haha",
         "sad": "A: I gave a presentation at work the other day, [sigh] ahh but my slides were still at home. [sigh] ugh\nB: So you had [sighs] uh to present without any of the material you prepared? [sigh] ahh\nA: Yeah, I had to talk through everything from memory [sigh] hh and use the whiteboard.\nB: Did anyone have a copy of the slides, [exhales] oof or were you on your own?\nA: No one had [sigh] phew them. I just kept going until the meeting was over.\nB: At least you got through the whole presentation. [sigh] ahh"
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "specific: the sigh version's tone sentence ('gentle, sympathetic warmth and a low-key, reassuring delivery') is generic sigh-story boilerplate — it names nothing about slides, improvising, or the presentation, and would fit any sighed conversation; the laughter version's tone sentence ('warm, lightly amused encouragement... not a serious failure') is nearly as interchangeable across any laughed mishap story."
+        ]
       }
     },
     {
       "item_id": "emb_005",
       "attempts": 1,
-      "verified": false,
+      "verified": true,
       "happy": {
         "function": "They are turning the child’s small Walmart spill and the onlookers’ attention into a shared, manageable parenting mishap rather than an embarrassment.",
         "tone": "Reply with warm, lightly amused reassurance that keeps the incident in proportion."
@@ -87,6 +129,14 @@
       "transcripts": {
         "happy": "A: I was in Walmart with my son [chuckle] haha when he pulled a few [laugh] haha things off a shelf onto the floor.\nB: Did they all come down at [chuckle] hah once?\nA: A couple of boxes and [giggle] heh some packages landed around the [laughs] haha cart, and people nearby looked over.\nB: Was [chuckle] hehe he still reaching for more while you were [laughs] haha picking them up?\nA: He had [giggles] hehe one more item in his [laugh] haha hand, so I took that and started putting everything back.\nB: Did anyone from [giggle] heh the store come [chuckles] ha by?\nA: An employee walked past, and I had the [giggles] hehe shelf mostly cleared by [laugh] hah then.\nB: At least it [chuckles] haha was only a [giggles] heh few items instead of the whole [laughs] haha display.",
         "sad": "A: I was in Walmart with my son [sigh] ugh when he pulled a few [sigh] oof things off a shelf onto the floor.\nB: Did they all come down at [exhales] hh once?\nA: A couple of boxes and [sigh] ah some packages landed around the [heavy sigh] phew cart, and people nearby looked over.\nB: Was [sighs] hoo he still reaching for more while you were [heavy sigh] oof picking them up?\nA: He had [exhales] uh one more item in his [sigh] ah hand, so I took that and started putting everything back.\nB: Did anyone from [sighs] hh the store come [sigh] phew by?\nA: An employee walked past, and I had the [exhales] uh shelf mostly cleared by [sigh] hh then.\nB: At least it [heavy sigh] ah was only a [sighs] hoo few items instead of the whole [exhales] ugh display."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": true,
+        "verdict": "pass",
+        "reasons": []
       }
     },
     {
@@ -104,6 +154,17 @@
       "transcripts": {
         "happy": "A: I forgot [chuckle] hah I had makeup on today and rubbed my face [chuckles] haha while I was walking to the [laugh] haha store.\nB: Did you [giggles] hehe notice anything was off before you got [laughs] haha there?\nA: Not until I [chuckles] hah caught my reflection in a [laugh] haha window. The eyeliner was smeared across both sides of my [giggles] heh face.\nB: And you had [laugh] haha already been walking around like [chuckles] hehe that?\nA: I had stopped for [laugh] hah coffee and talked to the [giggles] hehe cashier.\nB: Did anyone say [chuckle] heh anything?\nA: No, so [laughs] haha I only found out when I saw myself.",
         "sad": "A: I forgot [sigh] ugh I had makeup on today and rubbed my face [sighs] ah while I was walking to the [exhales] phew store.\nB: Did you [sigh] uh notice anything was off before you got [sighs] ah there?\nA: Not until I [sigh] ugh caught my reflection in a [heavy sigh] oof window. The eyeliner was smeared across both sides of my [exhales] hh face.\nB: And you had [sighs] ah already been walking around like [sigh] hh that?\nA: I had stopped for [heavy sigh] oof coffee and talked to the [sighs] ah cashier.\nB: Did anyone say [sigh] uh anything?\nA: No, so [exhales] hh I only found out when I saw myself."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "specific: the laughter version's tone sentence ('warm, lightly teasing amusement... enough energy to join the buildup without making the speaker feel mocked') names nothing from this conversation — no makeup, eyeliner, errand, or cashier — and would fit any self-deprecating laughing anecdote unchanged.",
+          "specific: the sigh version's tone sentence ('gentle, sympathetic warmth and low-key reassurance, without piling on the embarrassment') is likewise generic boilerplate that would fit any sighed embarrassment story; only the two function sentences are anchored to this conversation."
+        ]
       }
     },
     {
@@ -121,6 +182,18 @@
       "transcripts": {
         "happy": "A: I farted at [giggles] hehe work today, right in [chuckles] heh the middle of a quiet meeting.\nB: Did anyone [giggles] ha know it was you?\nA: The room [chuckles] hehe went silent, and [laughs] haha then someone opened a [laugh] haha window.\nB: What did [giggles] hehe you say?\nA: I said [chuckles] heh nothing and kept [giggles] haha looking at my notes.\nB: [laughs] haha Have they brought it up [giggles] hehe since?\nA: Twice [chuckles] heh already. I do not think my co-workers will let me [laughs] ha live it down.",
         "sad": "A: I farted at [sigh] oof work today, right in [sighs] hh the middle of a quiet meeting.\nB: Did anyone [sigh] ah know it was you?\nA: The room [sighs] uh went silent, and [exhales] hoo then someone opened a [heavy sigh] ugh window.\nB: What did [sigh] ah you say?\nA: I said [sigh] hh nothing and kept [sighs] uh looking at my notes.\nB: [sigh] phew Have they brought it up [exhales] hoo since?\nA: Twice [heavy sigh] oof already. I do not think my co-workers will let me [sighs] ah live it down."
+      },
+      "checks": {
+        "supported": false,
+        "tone_follows": true,
+        "swap": false,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "sigh version function ('commiserating over an awkward workplace humiliation that the speaker expects to keep replaying socially') is derivable from the plain transcript alone — 'I do not think my co-workers will let me live it down' already states the ongoing social replay, and 'awkward humiliation' is the default reading of a fart in a quiet meeting; the sighs add nothing the words don't say",
+          "swap: the sigh answers still read as plausible on the laughter version — its function is the transcript's default reading, and the sigh tone ('gentle, sympathetic warmth... rather than piling onto the embarrassment') is an acceptable reply to the laughing telling too; only the reverse exchange clearly fails",
+          "specific: sigh version tone ('gentle, sympathetic warmth and a lightly weary delivery rather than piling onto the embarrassment') would fit any sigh-told mishap story, and both tone sentences repeat the same 'not piling onto the embarrassment' clause, so they don't separate the versions"
+        ]
       }
     },
     {
@@ -138,12 +211,24 @@
       "transcripts": {
         "happy": "A: I spilled tea on my lap today [chuckles] heh just before I had to leave. It soaked through the front of my [laughs] haha pants.\nB: Were you able to [laughs] hehe change, or did you have to go out like that? [chuckle] hah\nA: I had no time, so [giggles] hehe I tied a sweater around my waist. The tea left a dark patch [chuckles] hah underneath.\nB: That must have [laughs] haha made the whole trip complicated. [chuckle] hehe\nA: Every time I looked down, the [giggle] heh stain was still there. It looked like I'd had an [laughs] ha accident.\nB: Did anyone say anything [laugh] hoo when you arrived? [laughs] haha",
         "sad": "A: I spilled tea on my lap today [sigh] ahh just before I had to leave. It soaked through the front of my [sighs] ugh pants.\nB: Were you able to [exhales] hh change, or did you have to go out like that? [sigh] uh\nA: I had no time, so [sighs] ah I tied a sweater around my waist. The tea left a dark patch [sigh] hh underneath.\nB: That must have [sighs] ugh made the whole trip complicated. [sigh] ahh\nA: Every time I looked down, the [sigh] hh stain was still there. It looked like I'd had an [heavy sigh] oof accident.\nB: Did anyone say anything [exhales] hh when you arrived? [sighs] phew"
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": false,
+        "specific": false,
+        "reasons": [
+          "swap: the sigh version's tone sentence ('gentle, sympathetic warmth and a low-key, reassuring delivery') still reads as a plausible response to the laughter version, so the tone sentences do not distinguish the two versions on their own — only the function sentences carry the swap",
+          "specific: the laughter tone sentence ('warm, playful sympathy and lightly teasing energy') is a generic any-laughter-story reply with nothing tied to the stain, the sweater, or the misread-as-accident detail",
+          "specific: the sigh tone sentence ('gentle, sympathetic warmth and a low-key, reassuring delivery') would fit any sigh-told mishap; neither tone references the ongoing visibility of the stain or the tied sweater that make this conversation what it is"
+        ],
+        "verdict": "fail"
       }
     },
     {
       "item_id": "emb_009",
       "attempts": 1,
-      "verified": false,
+      "verified": true,
       "happy": {
         "function": "They are turning yet another mundane ankle sprain into a running joke about the speaker’s comically unreliable coordination, while still checking that it is manageable.",
         "tone": "Reply with warm, lightly teasing concern and an easy conversational energy."
@@ -155,12 +240,20 @@
       "transcripts": {
         "happy": "A: I rolled my ankle [chuckle] hehe again walking over to the kitchen. [laugh] haha\nB: Was there anything [chuckles] hehe in the way?\nA: No, [giggle] heh just the floor and a turn I have made plenty [laugh] hehe of times.\nB: Is it the same [giggles] hah ankle as last time? [chuckles] heh\nA: Yeah, it seems to [laugh] ha find a new angle whenever I am not paying attention. [chuckle] hah\nB: Can you put weight on it?\nA: A little. [giggles] hah I have ice on it and I am trying not to move around. [chuckle] haha",
         "sad": "A: I rolled my ankle [sigh] ahh again walking over to the kitchen. [sigh] oof\nB: Was there anything [sighs] hh in the way?\nA: No, [exhales] uh just the floor and a turn I have made plenty [sigh] ahh of times.\nB: Is it the same [heavy sigh] hh ankle as last time? [sighs] uh\nA: Yeah, it seems to [sigh] phew find a new angle whenever I am not paying attention. [sigh] oof\nB: Can you put weight on it?\nA: A little. [sigh] ahh I have ice on it and I am trying not to move around. [sigh] phew"
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": true,
+        "verdict": "pass",
+        "reasons": []
       }
     },
     {
       "item_id": "emb_010",
       "attempts": 1,
-      "verified": false,
+      "verified": true,
       "happy": {
         "function": "They are turning a last-minute wardrobe mistake into an absurd, manageable mishap rather than dwelling on the panic it could have caused.",
         "tone": "Reply with light, warm amusement and an easygoing sense that the improvised rescue was a win."
@@ -172,12 +265,20 @@
       "transcripts": {
         "happy": "A: The dress arrived this morning, and [chuckles] hehe the label says a size smaller than [chuckle] hah I ordered.\nB: And today was the [chuckle] haha day you planned to wear it?\nA: I [laughs] haha checked the order confirmation, and I had [chuckles] heh clicked the smaller size.\nB: Was there enough time to find another [giggle] haha one?\nA: I borrowed a dress from [chuckle] heh my sister and changed the rest of the plan.\nB: [laugh] haha At least you had something that worked for the [giggles] hehe day.",
         "sad": "A: The dress arrived this morning, and [sigh] ugh the label says a size smaller than [sigh] hh I ordered.\nB: And today was the [exhales] ah day you planned to wear it?\nA: I [sigh] ugh checked the order confirmation, and I had [heavy sigh] oof clicked the smaller size.\nB: Was there enough time to find another [sigh] ah one?\nA: I borrowed a dress from [sigh] uh my sister and changed the rest of the plan.\nB: [exhales] hh At least you had something that worked for the [sighs] phew day."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": true,
+        "verdict": "pass",
+        "reasons": []
       }
     },
     {
       "item_id": "emb_011",
       "attempts": 1,
-      "verified": false,
+      "verified": true,
       "happy": {
         "function": "They are turning the private stumble and its minor aftermath into an amusing near-miss rather than dwelling on the embarrassment or injury.",
         "tone": "Reply with warm, lightly playful energy, treating it as a harmless anecdote without piling on the humiliation."
@@ -189,6 +290,14 @@
       "transcripts": {
         "happy": "A: I caught my toe on [chuckle] haha a raised bit of sidewalk the other [giggle] hehe day and went down.\nB: [laughs] ha Was anyone nearby when it happened?\nA: No, the street was empty, [giggles] hehe so I got up [chuckle] hah and kept walking.\nB: Did you [laughs] haha check what made you catch your toe?\nA: It was one [chuckles] heh loose edge in the pavement that I [giggle] hehe had walked past before.\nB: Did you get any [laughs] haha scrapes from it?\nA: [chuckles] hah Just some dust on my clothes and a [giggle] hehe mark on one knee.\nB: That bit of [chuckles] heh sidewalk may need someone to [laugh] haha fix it.",
         "sad": "A: I caught my toe on [sigh] ahh a raised bit of sidewalk the other [heavy sigh] ugh day and went down.\nB: [sigh] hh Was anyone nearby when it happened?\nA: No, the street was empty, [sigh] ah so I got up [sighs] ugh and kept walking.\nB: Did you [sigh] oof check what made you catch your toe?\nA: It was one [exhales] ahh loose edge in the pavement that I [sighs] ugh had walked past before.\nB: Did you get any [sigh] hoo scrapes from it?\nA: [sigh] ugh Just some dust on my clothes and a [sighs] hh mark on one knee.\nB: That bit of [sigh] oof sidewalk may need someone to [heavy sigh] ahh fix it."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": true,
+        "verdict": "pass",
+        "reasons": []
       }
     },
     {
@@ -206,6 +315,17 @@
       "transcripts": {
         "happy": "A: I went to the grocery store [chuckle] heh this morning, and I noticed my wallet was at home when I reached the checkout line. [laughs] haha\nB: So you had [giggles] heh already picked out everything and waited in line? [laugh] ha\nA: Yes, the cart was full, and [laughs] haha the cashier had started ringing [giggle] hehe things up.\nB: Did you [chuckle] heh leave the cart there and go [giggles] heh back for your wallet?\nA: I told the cashier what happened, put the items aside, and drove home for it. [laugh] ha",
         "sad": "A: I went to the grocery store [sigh] ugh this morning, and I noticed my wallet was at home when I reached the checkout line. [sighs] ah\nB: So you had [exhales] hh already picked out everything and waited in line? [sighs] hoo\nA: Yes, the cart was full, and [sighs] ah the cashier had started ringing [heavy sigh] ugh things up.\nB: Did you [sigh] uh leave the cart there and go [exhales] hh back for your wallet?\nA: I told the cashier what happened, put the items aside, and drove home for it. [sigh] oof"
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "laughter version tone sentence ('light, friendly amusement and an easygoing, conversational energy') is boilerplate that would fit any laughter story — nothing ties it to the wallet/full-cart situation",
+          "sigh version tone sentence ('gentle, sympathetic patience... rather than making it into a joke') is likewise a generic sigh-story template; 'weary sense of inconvenience' names no detail of this conversation"
+        ]
       }
     },
     {
@@ -223,6 +343,17 @@
       "transcripts": {
         "happy": "A: I was on my first date last [chuckle] hah night, and [laugh] haha I passed gas at the table.\nB: Did she notice what [giggle] hehe happened?\nA: She looked up for a [chuckles] hah second, and then we both kept [laughs] hehe talking about the menu.\nB: So the date carried [giggle] heh on after that?\nA: Yeah, [chuckle] hah we finished dinner and walked around for a while afterward.\nB: Did either of [chuckles] haha you mention it later?\nA: No, [laugh] heh we just said goodnight when her ride got [giggles] haha there.\nB: Maybe you will [laughs] hoho find out when you talk again.",
         "sad": "A: I was on my first date last [sigh] ugh night, and [heavy sigh] oof I passed gas at the table.\nB: Did she notice what [exhales] hh happened?\nA: She looked up for a [sighs] uh second, and then we both kept [sigh] ah talking about the menu.\nB: So the date carried [sighs] phew on after that?\nA: Yeah, [sigh] ugh we finished dinner and walked around for a while afterward.\nB: Did either of [exhales] hh you mention it later?\nA: No, [sighs] uh we just said goodnight when her ride got [heavy sigh] oof there.\nB: Maybe you will [exhales] hh find out when you talk again."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": false,
+        "specific": false,
+        "reasons": [
+          "swap: the two tone sentences are near-interchangeable — giving the laughter version the sigh tone ('gentle, low-key reassurance and avoid making the embarrassment bigger') still reads as plausible advice for a story told through chuckles, so only the function halves are actually distinguishing the versions",
+          "specific: the sigh tone sentence ('gentle, low-key reassurance and avoid making the embarrassment bigger') would fit any sigh-told embarrassment story — nothing ties it to the unacknowledged mishap or the still-open next conversation; the laughter tone is only marginally better"
+        ],
+        "verdict": "fail"
       }
     },
     {
@@ -240,6 +371,16 @@
       "transcripts": {
         "happy": "A: I was just heading out with my coffee, [chuckle] haha and my foot went out [laughs] ha from under me on the [giggle] hehe pavement.\nB: Did anyone from the [laughs] haha shop see you?\nA: A barista came [giggles] hehe outside with napkins, and I was [chuckles] hah still holding the cup somehow.\nB: At least the [laughs] haha coffee stayed with you?\nA: Most of it [chuckle] haha did, although my sleeve ended up wearing [laughs] ha the rest.",
         "sad": "A: I was just heading out with my coffee, [sigh] ugh and my foot went out [sighs] ah from under me on the [exhales] hh pavement.\nB: Did anyone from the [sighs] oof shop see you?\nA: A barista came [sigh] uh outside with napkins, and I was [exhales] phew still holding the cup somehow.\nB: At least the [sighs] uh coffee stayed with you?\nA: Most of it [sigh] hh did, although my sleeve ended up wearing [heavy sigh] oof the rest."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "reasons": [
+          "sigh version tone sentence ('gentle, low-key sympathy and an unhurried warmth') contains no detail from this conversation — no coffee, spill, barista, or sleeve — and would fit any sigh-told story unchanged"
+        ],
+        "verdict": "fail"
       }
     },
     {
@@ -257,6 +398,16 @@
       "transcripts": {
         "happy": "A: I asked Maya if she wanted to get dinner after work today. [chuckles] haha\nB: What did [laughs] haha she say?\nA: She said she already had plans, [chuckle] heh and the people by the coffee machine heard it. [laughs] haha\nB: Were they close enough to [giggle] hehe hear the whole question?\nA: Close enough that someone stopped pouring coffee while [chuckle] hah she answered.\nB: And then you still had to stand there and [laughs] haha finish your drink.",
         "sad": "A: I asked Maya if she wanted to get dinner after work today. [sighs] ugh\nB: What did [sigh] ah she say?\nA: She said she already had plans, [exhales] hh and the people by the coffee machine heard it. [sighs] oof\nB: Were they close enough to [sigh] ugh hear the whole question?\nA: Close enough that someone stopped pouring coffee while [heavy sigh] phew she answered.\nB: And then you still had to stand there and [sigh] ah finish your drink."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "sigh version tone ('gentle, low-key sympathy and no forced cheerfulness') contains nothing tied to this conversation — the overheard question, the coworkers, the stalled coffee pour — and would fit any sigh story unchanged"
+        ]
       }
     },
     {
@@ -274,6 +425,16 @@
       "transcripts": {
         "happy": "A: I called Mr. Harris [giggle] hehe Mom during volleyball drills today. [chuckles] haha\nB: Did he [laughs] haha hear you?\nA: He stopped the whistle and [chuckle] hah looked straight at me. [laughs] hehe\nB: What did you say [laugh] haha after that?\nA: I said I meant to call for the [giggles] hehe ball, but everyone had already turned around.",
         "sad": "A: I called Mr. Harris [sigh] ugh Mom during volleyball drills today. [exhales] hh\nB: Did he [sighs] ah hear you?\nA: He stopped the whistle and [sigh] ugh looked straight at me. [exhales] hh\nB: What did you say [heavy sigh] oof after that?\nA: I said I meant to call for the [sighs] uh ball, but everyone had already turned around."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "specific: both tone sentences are generic templates — laughter version's 'Reply with playful warmth and a lightly teasing, animated delivery' would fit any laughter story, and the sigh version's 'gentle, sympathetic restraint, letting the cringe land without piling on' would fit any sigh story; neither touches Mr. Harris, the whistle, the volleyball drill, or the class turning around, unlike the two function sentences which are properly grounded"
+        ]
       }
     },
     {
@@ -291,6 +452,17 @@
       "transcripts": {
         "happy": "A: I left my phone at Maya's place. It's unlocked, and she still [chuckles] hehe has it.\nB: [laughs] haha Have you asked her to put it somewhere safe?\nA: I sent a message, but I [giggles] heh keep thinking about everything that's open [chuckle] hah on it.\nB: She may just set it [laugh] haha aside until you get there.",
         "sad": "A: I left my phone at Maya's place. It's unlocked, and she still [sighs] ahh has it.\nB: [exhales] phew Have you asked her to put it somewhere safe?\nA: I sent a message, but I [sigh] ugh keep thinking about everything that's open [heavy sigh] hh on it.\nB: She may just set it [sigh] ugh aside until you get there."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": false,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "swap: the sigh version's tone (\"calm, reassuring gentleness and low-key practical steadiness\") still reads as a plausible delivery for the laughter version, whose laughs are themselves light reassurance — only the function halves survive the exchange, so the tone sentences do not distinguish the versions",
+          "specific: the sigh version's tone sentence names nothing about an unlocked phone or exposed private contents and would fit any sigh-told story unchanged"
+        ]
       }
     },
     {
@@ -308,6 +480,16 @@
       "transcripts": {
         "happy": "A: I just realized I've [chuckle] heh been walking around since breakfast with my pants unzipped. I only noticed when I [laughs] haha sat down.\nB: Did nobody say anything to you? That's [giggles] hee a long time for no one to mention it. [laugh] haha\nA: I went to the pharmacy, got coffee, and stood in line at the [laugh] hah bank.\nB: Maybe people assumed someone else would tell you.\nA: I caught my reflection in a [chuckles] hehe shop window and finally saw it.\nB: That makes it [laughs] haha hard to tell whether anyone noticed.\nA: I fixed it and kept thinking about [laugh] haha every person who might have seen it.\nB: Either way, the zipper stayed [chuckles] heh open through all of that.",
         "sad": "A: I just realized I've [sigh] hh been walking around since breakfast with my pants unzipped. I only noticed when I [exhales] oof sat down.\nB: Did nobody say anything to you? That's [sighs] uh a long time for no one to mention it. [heavy sigh] ah\nA: I went to the pharmacy, got coffee, and stood in line at the [sigh] ugh bank.\nB: Maybe people assumed someone else would tell you.\nA: I caught my reflection in a [sighs] phew shop window and finally saw it.\nB: That makes it [exhales] hoo hard to tell whether anyone noticed.\nA: I fixed it and kept thinking about [sigh] ugh every person who might have seen it.\nB: Either way, the zipper stayed [sighs] oof open through all of that."
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "sigh version, tone sentence: 'gentle, low-key sympathy and a lightly weary delivery rather than high-energy teasing' contains no anchor to the zipper, the half-day stretch, or the unresolved question of who saw — it is a template that would fit any sigh-told story, unlike the laughter tone which names the escalating public exposure"
+        ]
       }
     },
     {
@@ -325,6 +507,16 @@
       "transcripts": {
         "happy": "A: I was biking home and couldn't hold it any longer. I [chuckle] heh had an accident before I got to [laughs] haha the house.\nB: You still had the [giggles] hehe rest of the ride ahead of you?\nA: About a [chuckle] hah mile. I got home and went straight [chuckles] ha inside.\nB: Did you have anything with you that helped on [giggle] heh the way?\nA: No, just my bike and [laugh] haha what I was wearing. There was a lot to wash once [laughs] haha I got home.\nB: That made for a long trip home. [chuckles] haha Is everything cleaned up [laugh] ha now?",
         "sad": "A: I was biking home and couldn't hold it any longer. I [sigh] ugh had an accident before I got to [exhales] hh the house.\nB: You still had the [sighs] ah rest of the ride ahead of you?\nA: About a [sigh] uh mile. I got home and went straight [exhales] phew inside.\nB: Did you have anything with you that helped on [sighs] oof the way?\nA: No, just my bike and [heavy sigh] ugh what I was wearing. There was a lot to wash once [sigh] ah I got home.\nB: That made for a long trip home. [sighs] hh Is everything cleaned up [sigh] oof now?"
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "Both tone sentences are interchangeable boilerplate: the laughter version's 'light, friendly warmth and a gently amused delivery that does not make the speaker feel mocked' would fit any laughing-about-misfortune story, and the sigh version's 'quiet gentleness and discreet, reassuring warmth' would fit any sigh story — only 'discreet' hints at this conversation's content, so the tone axis carries no conversation-specific information (the function sentences, by contrast, are well anchored to the bike ride, the remaining mile, and the cleanup)."
+        ]
       }
     },
     {
@@ -342,7 +534,22 @@
       "transcripts": {
         "happy": "A: I was shopping the other day and thought the cashier [chuckle] hah had charged me too much. [laughs] haha\nB: What made the total look wrong to you? [chuckles] hehe\nA: I compared it with the shelf label [giggle] hehe and asked her to check the price. [laughs] haha\nB: Did she find anything when she checked? [laugh] ha\nA: We went through the [giggles] hehe receipt, and I asked to speak [laugh] ha with a manager when I still did not understand it. [chuckle] ha\nB: What did the manager find? [chuckles] haha\nA: The manager showed me [chuckle] heh that the sale label was for a different size than the one I bought.\nB: So the total was right, but the label did not match your item. [giggles] haha",
         "sad": "A: I was shopping the other day and thought the cashier [sigh] uh had charged me too much. [sighs] hh\nB: What made the total look wrong to you? [exhales] phew\nA: I compared it with the shelf label [sigh] oof and asked her to check the price. [sighs] ah\nB: Did she find anything when she checked? [sigh] uh\nA: We went through the [heavy sigh] hh receipt, and I asked to speak [sigh] oof with a manager when I still did not understand it. [sigh] ugh\nB: What did the manager find? [exhales] hoo\nA: The manager showed me [sigh] ugh that the sale label was for a different size than the one I bought.\nB: So the total was right, but the label did not match your item. [heavy sigh] hh"
+      },
+      "checks": {
+        "supported": true,
+        "tone_follows": true,
+        "swap": true,
+        "specific": false,
+        "verdict": "fail",
+        "reasons": [
+          "sigh version tone sentence ('gentle, low-key sympathy and a lightly rueful delivery rather than high energy or ridicule') contains no anchor to this conversation — it would fit any sigh-told story; the laughter tone at least names the shopping dispute"
+        ]
       }
     }
-  ]
+  ],
+  "verification": {
+    "passed": 4,
+    "failed": 16,
+    "note": "verified in place; failing items were NOT rewritten, because results have already been scored against this gold"
+  }
 }

@@ -19,6 +19,7 @@ test v1 used on its gold response pairs.
     python 2.0/write_gold.py                  # every item
     python 2.0/write_gold.py --only emb_003
     python 2.0/write_gold.py --no-verify      # write only, leave verification for later
+    python 2.0/write_gold.py --verify-only    # check gold already on disk, never rewrite it
 """
 
 from __future__ import annotations
@@ -159,12 +160,62 @@ def write_item(item: dict, slots: list[dict], verify: bool) -> dict:
             "note": "failed verification; not usable as gold"}
 
 
+def verify_only(items: list[dict], gold: dict) -> None:
+    """Run the verifier over gold already on disk, without touching it.
+
+    Once results have been scored against a gold, regenerating it silently invalidates them.
+    So verification and rewriting are separated: this reports what the verifier thinks and
+    records the verdict, and whether to rewrite anything is then a decision with the cost in
+    view rather than a side effect of asking.
+    """
+    passed, failed = 0, []
+    for item in items:
+        entry = gold.get(item["item_id"])
+        if entry is None:
+            continue
+        check = T.retry(T.ask_json, "opus", VERIFIER_SYSTEM,
+                        verifier_prompt(item, entry["transcripts"]["happy"],
+                                        entry["transcripts"]["sad"], entry),
+                        ("supported", "tone_follows", "swap", "specific", "verdict"))
+        entry["verified"] = check.get("verdict") == "pass"
+        entry["checks"] = check
+        if entry["verified"]:
+            passed += 1
+            print(f"  {item['item_id']} pass", flush=True)
+        else:
+            failed.append((item["item_id"], check))
+            broke = [k for k in ("supported", "tone_follows", "swap", "specific")
+                     if not check.get(k)]
+            print(f"  {item['item_id']} FAIL on {broke}: "
+                  f"{'; '.join(check.get('reasons') or [])[:130]}", flush=True)
+
+    data = json.loads(GOLD.read_text())
+    data["verified"] = True
+    data["verifier"] = T.VERIFIER
+    data["verification"] = {"passed": passed, "failed": len(failed),
+                            "note": ("verified in place; failing items were NOT rewritten, "
+                                     "because results have already been scored against this "
+                                     "gold")}
+    data["items"] = [gold[i["item_id"]] for i in items if i["item_id"] in gold]
+    GOLD.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+
+    print(f"\n{passed}/{passed + len(failed)} items pass verification")
+    if failed:
+        swaps = sum(1 for _, c in failed if not c.get("swap"))
+        print(f"  {swaps} failed the swap test — for those, the happy and sad gold do not "
+              f"tell the conditions apart")
+        print("  Nothing was rewritten. Rewriting any of these means re-running Q2 and Q3.")
+    print(f"CLI spend ${T.cli_spend():.2f}")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--only", action="append")
     parser.add_argument("--limit", type=int)
     parser.add_argument("--no-verify", action="store_true",
                         help="write without the Opus 5 pass; leaves verified=false")
+    parser.add_argument("--verify-only", action="store_true",
+                        help="verify the gold on disk in place; never rewrites it")
     return parser.parse_args()
 
 
@@ -178,6 +229,10 @@ def main() -> None:
 
     existing = json.loads(GOLD.read_text())["items"] if GOLD.exists() else []
     by_id = {e["item_id"]: e for e in existing}
+
+    if args.verify_only:
+        verify_only(wanted, by_id)
+        return
 
     for item in wanted:
         print(f"  {item['item_id']}", flush=True)

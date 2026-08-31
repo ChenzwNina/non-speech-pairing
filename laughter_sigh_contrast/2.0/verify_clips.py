@@ -40,7 +40,8 @@ import providers as P
 from make_audio import MIN_CLIP, MAX_CLIP, MIN_DB, duration_of, mean_db, normalize, synthesize
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 OUT = HERE / "out"
 MANIFEST = OUT / "clip_manifest.json"
 ANSWERS = OUT / "clip_verdicts.jsonl"
@@ -191,7 +192,7 @@ def main() -> None:
     args = parse_args()
     manifest = json.loads(MANIFEST.read_text())
     items = json.loads((OUT / "items.json").read_text())["items"]
-    turn_dir = REPO / "1.0" / "out" / "audio_turns"
+    turn_dir = FAMILY / "1.0" / "out" / "audio_turns"
     by_item = {i["item_id"]: i for i in items}
 
     entries = [e for e in manifest["items"]

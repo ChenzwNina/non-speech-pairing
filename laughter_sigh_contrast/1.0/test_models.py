@@ -36,7 +36,8 @@ from pathlib import Path
 import providers as P
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 MANIFEST = HERE / "out" / "audio_manifest.json"
 TRIALS = HERE / "out" / "trials.jsonl"
 RESPONSE_DIR = HERE / "out" / "responses"
@@ -114,7 +115,7 @@ def record(row: dict) -> None:
 
 def run_trial(provider: str, item: dict, condition: str) -> dict:
     """One session: hear the conversation, take a turn, then report what was heard."""
-    audio = REPO / item["conditions"][condition]["path"]
+    audio = FAMILY / item["conditions"][condition]["path"]
     last = ""
     for attempt in range(1, RETRIES + 1):
         try:
@@ -134,7 +135,7 @@ def run_trial(provider: str, item: dict, condition: str) -> dict:
                    "response": out["response"],
                    **{key: answer for (key, _), answer
                       in zip(FOLLOWUPS, out["answers"])},
-                   "response_audio": (str(reply_mp3.relative_to(REPO))
+                   "response_audio": (str(reply_mp3.relative_to(FAMILY))
                                       if out.get("response_pcm") else None),
                    "attempts": attempt}
             record(row)

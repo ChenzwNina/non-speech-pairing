@@ -21,7 +21,8 @@ import providers as P
 from verify_clips import ANSWERS, QUESTION, recorded, verdict_of
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 
 
 def main() -> None:
@@ -39,7 +40,7 @@ def main() -> None:
         for attempt in range(1, 7):
             try:
                 with contextlib.redirect_stdout(io.StringIO()):
-                    answer = P.ask("grok", REPO / clip["path"], QUESTION[clip["condition"]])
+                    answer = P.ask("grok", FAMILY / clip["path"], QUESTION[clip["condition"]])
                 row = {"path": clip["path"], "provider": "grok", "round": 1,
                        "answer": answer.strip()[:200], "verdict": verdict_of(answer),
                        "attempts": attempt}

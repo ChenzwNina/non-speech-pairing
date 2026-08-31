@@ -44,7 +44,8 @@ from elevenlabs import ElevenLabs
 from elevenlabs.types.model_settings_response_model import ModelSettingsResponseModel
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 load_dotenv(REPO / ".env")
 
 from sew import build
@@ -289,7 +290,7 @@ def assemble(item: dict, condition: str, insertions: list[dict], turn_paths: lis
                      {"speaker": turn["speaker"], "text": " ".join(said[after:])})
 
     build(pieces, dest)
-    return {"path": str(dest.relative_to(REPO)), "seconds": round(duration_of(dest), 3),
+    return {"path": str(dest.relative_to(FAMILY)), "seconds": round(duration_of(dest), 3),
             "timeline": timeline}
 
 
@@ -363,7 +364,7 @@ def main() -> None:
                 voc_records.append({"condition": condition, "order": order,
                                     "turn": ins["turn"], "position": ins["position"],
                                     "token": ins["token"], "speaker": speaker,
-                                    "path": str(path.relative_to(REPO)), **info})
+                                    "path": str(path.relative_to(FAMILY)), **info})
                 flag = "" if info["ok"] else "  <- FAILED QC"
                 after = info.get("db_after")
                 print(f"  {condition:5} t{ins['turn']} {ins['position']:5} "

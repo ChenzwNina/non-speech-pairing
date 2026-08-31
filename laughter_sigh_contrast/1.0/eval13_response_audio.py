@@ -40,7 +40,8 @@ from pathlib import Path
 import providers as P
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 TRIALS = HERE / "out" / "trials.jsonl"
 TRANSCRIPTS = HERE / "out" / "transcripts.json"
 JUDGMENTS = HERE / "out" / "eval13_judgments.jsonl"
@@ -104,7 +105,7 @@ def record(row: dict) -> None:
 
 
 def judge(trial: dict, judge_name: str) -> dict:
-    audio = REPO / trial["response_audio"]
+    audio = FAMILY / trial["response_audio"]
     base = {"judge": judge_name, "provider": trial["provider"],
             "item_id": trial["item_id"], "condition": trial["condition"]}
     last = ""

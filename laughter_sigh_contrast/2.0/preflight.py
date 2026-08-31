@@ -21,7 +21,8 @@ from pathlib import Path
 import providers as P
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 
 QUESTION = ("You will hear one short clip of a person speaking. Write down the words you "
             "heard, exactly, and nothing else. If you heard no audio at all, reply "
@@ -37,7 +38,7 @@ def main() -> None:
     items = json.loads((HERE / "out" / "items.json").read_text())["items"]
     item = items[0]
     turn = item["turns"][0]
-    clip = REPO / "1.0" / "out" / "audio_turns" / turn["take"].split("/")[-1]
+    clip = FAMILY / "1.0" / "out" / "audio_turns" / turn["take"].split("/")[-1]
     expected = words(turn["text"])
     print(f"clip: {clip.name}\nsaid: {turn['text']}\n")
 

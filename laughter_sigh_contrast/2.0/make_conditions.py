@@ -38,7 +38,8 @@ from make_audio import ALIGNMENT, TURN_DIR, duration_of
 from sew import build
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
+FAMILY = HERE.parent          # laughter_sigh_contrast/, holding both versions
+REPO = FAMILY.parent         # the repository root, where .env and archive/ live
 OUT = HERE / "out"
 CONV_DIR = OUT / "audio"
 CUT_DIR = OUT / "audio_cuts"
