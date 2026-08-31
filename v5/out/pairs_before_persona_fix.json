@@ -1,0 +1,1532 @@
+{
+  "generated_at": "2026-08-31T05:37:08+00:00",
+  "writer": "gpt-5.6-terra",
+  "labels": [
+    "achievement",
+    "amusement",
+    "pleasure",
+    "relief",
+    "anger",
+    "disgust",
+    "fear",
+    "sadness"
+  ],
+  "design": "two speakers; A talks, B only produces one vocalization",
+  "items": [
+    {
+      "item_id": "v5_001",
+      "attempts": 1,
+      "assigned_pair": [
+        "achievement",
+        "anger"
+      ],
+      "persona_a": [
+        "I like to water ski.",
+        "I've very curly hair.",
+        "I love to drink wine and dance in the moonlight.",
+        "I'm scared of clowns."
+      ],
+      "persona_b": [
+        "I have traveled to both ireland and australia.",
+        "I draw comics.",
+        "I'm deathly afraid of heights.",
+        "My favorite book is the tale of genii."
+      ],
+      "setting": "A is B's friend at an outdoor comics festival, where they have stopped at the jury display beside B's submitted strip.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I came straight from water-skiing, then had to dodge that balloon clown at the gate, so my curls have given up entirely."
+        },
+        {
+          "speaker": "A",
+          "text": "The comics jury posted something beside your strip."
+        },
+        {
+          "speaker": "A",
+          "text": "I only caught the first line before you got here."
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what they decided to print under your name."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "achievement",
+      "emotion_b": "anger",
+      "framing_a": "B's vocalization can be a burst of triumph on discovering that the jury has awarded or praised the strip.",
+      "framing_b": "The same vocalization can be an angry reaction to seeing an inaccurate, unwanted, or insulting line printed under B's name.",
+      "why": "B's comics practice makes the display consequential, and the jury text is left unspecified so it can credibly prompt either accomplishment or indignation.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I came straight from water-skiing, then had to dodge that balloon clown at the gate, so my curls have given up entirely.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The comics jury posted something beside your strip.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "I only caught the first line before you got here.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what they decided to print under your name.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I came straight from water-skiing, then had to dodge that balloon clown at the gate, so my curls have given up entirely.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The comics jury posted something beside your strip.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "I only caught the first line before you got here.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what they decided to print under your name.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_002",
+      "attempts": 1,
+      "assigned_pair": [
+        "achievement",
+        "disgust"
+      ],
+      "persona_a": [
+        "Running is my way to relax.",
+        "I wish I could speak another language.",
+        "I've a passion for politics.",
+        "I like to cook stews."
+      ],
+      "persona_b": [
+        "My dreams are often bizarre.",
+        "I love to go running.",
+        "I'm very polite and courteous.",
+        "I've been in a lot of romantic relationships that have ended up poorly."
+      ],
+      "setting": "A and B are friends at a neighborhood election-night fundraiser, where A has entered a stew in the cook-off and B has come over after a run.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "You picked a good night to skip your usual route; the whole ward has turned up for this fundraiser."
+        },
+        {
+          "speaker": "A",
+          "text": "I put the stew in before the speeches, so it has been sitting under that warmer while everyone argues about the council vote."
+        },
+        {
+          "speaker": "A",
+          "text": "There—the judges have finally carried my pot to the tasting table."
+        },
+        {
+          "speaker": "A",
+          "text": "It is right beside the ribbon and all the other entries."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "emotion_a": "achievement",
+      "emotion_b": "disgust",
+      "framing_a": "B's vocalization can celebrate A's stew reaching the judges' ribbon-side tasting table at the cook-off.",
+      "framing_b": "B's vocalization can react to the stew itself after it has been warmed and placed out for tasting.",
+      "why": "The placement at the tasting table supports either a celebratory response to A's apparent contest success or a revulsed response to the stew, without A's words resolving which.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "You picked a good night to skip your usual route; the whole ward has turned up for this fundraiser.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I put the stew in before the speeches, so it has been sitting under that warmer while everyone argues about the council vote.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "There—the judges have finally carried my pot to the tasting table.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "It is right beside the ribbon and all the other entries.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "You picked a good night to skip your usual route; the whole ward has turned up for this fundraiser.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I put the stew in before the speeches, so it has been sitting under that warmer while everyone argues about the council vote.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "There—the judges have finally carried my pot to the tasting table.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "It is right beside the ribbon and all the other entries.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_003",
+      "attempts": 2,
+      "assigned_pair": [
+        "achievement",
+        "fear"
+      ],
+      "persona_a": [
+        "I have to live by a schedule in order to keep my mind right.",
+        "I'm a middle aged mother of two high school boys.",
+        "My favorite music genre is classical.",
+        "I've a collection of video games."
+      ],
+      "persona_b": [
+        "I like to watch anime.",
+        "I am still a student, but I am gonna be a nurse.",
+        "I am fluent in english spanish and french.",
+        "My favorite author is jane austen."
+      ],
+      "setting": "A middle-aged coordinator at a nursing-skills lab is coaching a multilingual nursing student through a supervised IV practice station.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Eight minutes, then this arm goes to the next station; the timer is how I keep my head straight."
+        },
+        {
+          "speaker": "A",
+          "text": "Your labels are in three languages again—fine, but turn the English one toward me."
+        },
+        {
+          "speaker": "A",
+          "text": "My boys would call this a boss fight. Once the bevel is through, hold your hand exactly there."
+        },
+        {
+          "speaker": "A",
+          "text": "That flash is only a clue; don't decide what it means until you check the tubing."
+        },
+        {
+          "speaker": "A",
+          "text": "Keep the angle steady while you look."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "emotion_a": "achievement",
+      "emotion_b": "fear",
+      "framing_a": "The sound can mark the student's reaction to seeing the flash after a successful placement attempt.",
+      "framing_b": "The same sound can mark the student's reaction to the needle and sudden flash before knowing what it signifies.",
+      "why": "A skills-lab procedure naturally gives the student a concrete, immediate event that can be heard as either a hard-won success or an alarming moment, while the coordinator's words deliberately defer interpretation.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Eight minutes, then this arm goes to the next station; the timer is how I keep my head straight.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Your labels are in three languages again—fine, but turn the English one toward me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "My boys would call this a boss fight. Once the bevel is through, hold your hand exactly there.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "That flash is only a clue; don't decide what it means until you check the tubing.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Keep the angle steady while you look.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Eight minutes, then this arm goes to the next station; the timer is how I keep my head straight.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Your labels are in three languages again—fine, but turn the English one toward me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "My boys would call this a boss fight. Once the bevel is through, hold your hand exactly there.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "That flash is only a clue; don't decide what it means until you check the tubing.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Keep the angle steady while you look.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_004",
+      "attempts": 1,
+      "assigned_pair": [
+        "achievement",
+        "sadness"
+      ],
+      "persona_a": [
+        "I'm married with 2 children.",
+        "I'm a museum tour guide.",
+        "I've a condition that prevents me from going to high altitudes.",
+        "My father was a cook."
+      ],
+      "persona_b": [
+        "I am former military.",
+        "I am a foodie.",
+        "I chew my nails.",
+        "I've no parents or siblings."
+      ],
+      "setting": "A museum tour guide and a former-military foodie volunteer are alone at a museum conservation bench, examining a restored field mess tin.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I brought the field mess tin down from the case. The hinge still has the pin you seated yesterday."
+        },
+        {
+          "speaker": "A",
+          "text": "My father judged a pan lid by that small click. Yours makes it."
+        },
+        {
+          "speaker": "A",
+          "text": "Shall I close it now, or leave it open on the pad a little longer?"
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "achievement",
+      "emotion_b": "sadness",
+      "framing_a": "The vocalization can mark B's response to having successfully restored the tin's hinge and hearing it work properly.",
+      "framing_b": "The same vocalization can mark B's response to the old military object and the prospect of closing it away again.",
+      "why": "The repair gives B a concrete accomplishment, while the field mess tin can carry personal weight for a former military person with no family. A's final question remains compatible with either reading.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I brought the field mess tin down from the case. The hinge still has the pin you seated yesterday.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "My father judged a pan lid by that small click. Yours makes it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "Shall I close it now, or leave it open on the pad a little longer?",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I brought the field mess tin down from the case. The hinge still has the pin you seated yesterday.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "My father judged a pan lid by that small click. Yours makes it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "Shall I close it now, or leave it open on the pad a little longer?",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_005",
+      "attempts": 1,
+      "assigned_pair": [
+        "amusement",
+        "anger"
+      ],
+      "persona_a": [
+        "I am a vegan and I love hummus.",
+        "I got engaged to be married in paris, france.",
+        "I'm allergic to nuts.",
+        "I've never been to the beach."
+      ],
+      "persona_b": [
+        "I am in the band.",
+        "I decided to become vegan a year ago.",
+        "I also meditate a lot.",
+        "I only eat organic food."
+      ],
+      "setting": "A and B are vegan friends staffing an organic snack stall at a community market before B's band plays nearby.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I made the hummus myself: chickpeas, lemon, garlic, tahini—everything organic."
+        },
+        {
+          "speaker": "A",
+          "text": "Then somebody put this little almond on top of the display card, like a garnish."
+        },
+        {
+          "speaker": "A",
+          "text": "I can't tell whether that was meant for the bowl or for me."
+        },
+        {
+          "speaker": "A",
+          "text": "Either way, the card needs to come down before we open."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "amusement",
+      "emotion_b": "anger",
+      "framing_a": "B finds the misplaced almond and its apparent joke at A's expense absurdly funny.",
+      "framing_b": "B objects to someone treating A's nut allergy and the food labeling so carelessly.",
+      "why": "The same wordless reaction can be read as laughter at an ill-judged joke or as an angry outburst at the unsafe display; A's following line preserves both readings.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I made the hummus myself: chickpeas, lemon, garlic, tahini—everything organic.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Then somebody put this little almond on top of the display card, like a garnish.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "I can't tell whether that was meant for the bowl or for me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Either way, the card needs to come down before we open.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I made the hummus myself: chickpeas, lemon, garlic, tahini—everything organic.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Then somebody put this little almond on top of the display card, like a garnish.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "I can't tell whether that was meant for the bowl or for me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Either way, the card needs to come down before we open.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_006",
+      "attempts": 1,
+      "assigned_pair": [
+        "amusement",
+        "disgust"
+      ],
+      "persona_a": [
+        "I work as a grill cook.",
+        "I've a family of three daughters.",
+        "1984 is my favorite book."
+      ],
+      "persona_b": [
+        "I am a older lady.",
+        "I work at a school as an art teacher.",
+        "I like to work on cars.",
+        "I want to go back to school."
+      ],
+      "setting": "A, a grill cook and father, is showing B, an older art teacher who visits his diner after school, a sandwich his daughters helped invent.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "My girls named this one the Ministry of Lunch."
+        },
+        {
+          "speaker": "A",
+          "text": "The youngest said it needed a face, and the other two voted for the pickle teeth."
+        },
+        {
+          "speaker": "A",
+          "text": "I told them you teach art, so you might have professional notes."
+        },
+        {
+          "speaker": "A",
+          "text": "The eyes are olives, not bolts."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "emotion_a": "amusement",
+      "emotion_b": "disgust",
+      "framing_a": "B's vocalization can be a laugh at the deliberately absurd sandwich face and its grandiose name.",
+      "framing_b": "B's vocalization can be a reaction to the olive eyes and pickle teeth assembled on a grilled sandwich.",
+      "why": "The same sandwich reveal plausibly prompts either amusement or revulsion, while A's lines do not determine which response B has made.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "My girls named this one the Ministry of Lunch.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The youngest said it needed a face, and the other two voted for the pickle teeth.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I told them you teach art, so you might have professional notes.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "The eyes are olives, not bolts.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "My girls named this one the Ministry of Lunch.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The youngest said it needed a face, and the other two voted for the pickle teeth.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I told them you teach art, so you might have professional notes.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "The eyes are olives, not bolts.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_007",
+      "attempts": 1,
+      "assigned_pair": [
+        "amusement",
+        "fear"
+      ],
+      "persona_a": [
+        "I ve been to canada two times my entire life.",
+        "My name is william, but people call me bill.",
+        "I am highly educated.",
+        "I love christmas."
+      ],
+      "persona_b": [
+        "I am a seventh day adventist.",
+        "I'm a very funny woman.",
+        "I like rock music.",
+        "I have never been to the city."
+      ],
+      "setting": "Bill has brought his friend, who has never visited a city, to see the Christmas department-store windows downtown for the first time.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "For someone who likes rock music, you picked the right window—the reindeer has a little electric guitar."
+        },
+        {
+          "speaker": "A",
+          "text": "They time it so he turns around when people stop in front of the glass."
+        },
+        {
+          "speaker": "A",
+          "text": "I did not expect him to start that close."
+        },
+        {
+          "speaker": "A",
+          "text": "Come on; there are three more windows before the corner."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "amusement",
+      "emotion_b": "fear",
+      "framing_a": "B's vocalization can be a laugh at the sudden, absurd sight of an animatronic reindeer playing guitar.",
+      "framing_b": "B's vocalization can be a startled cry at the reindeer abruptly turning near the glass.",
+      "why": "The sudden motion in a first city visit plausibly invites either a funny reaction or a frightened one, while Bill's words only describe the event.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "For someone who likes rock music, you picked the right window—the reindeer has a little electric guitar.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They time it so he turns around when people stop in front of the glass.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "I did not expect him to start that close.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Come on; there are three more windows before the corner.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "For someone who likes rock music, you picked the right window—the reindeer has a little electric guitar.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They time it so he turns around when people stop in front of the glass.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "I did not expect him to start that close.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Come on; there are three more windows before the corner.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_008",
+      "attempts": 1,
+      "assigned_pair": [
+        "amusement",
+        "sadness"
+      ],
+      "persona_a": [
+        "I'm a very bad liar.",
+        "I ride horses in my spare time.",
+        "I've been divorced for 2 years.",
+        "I hope to someday compete professionally or atleast qualify for an event."
+      ],
+      "persona_b": [
+        "I am currently unemployed so I have time to write.",
+        "I have a sweet tooth.",
+        "I've two full sleeves of tattoos.",
+        "I like to plant flowers in my gardens."
+      ],
+      "setting": "A is visiting B, a tattooed writer and gardener, beside the flower border in B's garden after A has been thinking about riding practice.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I need to tell you what happened before you walk around the shed."
+        },
+        {
+          "speaker": "A",
+          "text": "I was picturing a qualifying course and stepped backward like there was a horse under me."
+        },
+        {
+          "speaker": "A",
+          "text": "Two years after the divorce, I should be better at saying things plainly: I went into your flower border."
+        },
+        {
+          "speaker": "A",
+          "text": "The yellow ones are still standing; from here, the rest might almost look deliberate."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "emotion_a": "amusement",
+      "emotion_b": "sadness",
+      "framing_a": "The vocalization can be a laugh at A's overly formal confession and the absurd image of imaginary riding ending in a flower bed.",
+      "framing_b": "The same vocalization can be a grief-struck sound on seeing B's tended flowers crushed, with A's final attempt to describe the damage landing differently.",
+      "why": "B's established care for the garden makes either reaction believable, while A's bad honesty and riding ambitions motivate the confession without fixing how B feels.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I need to tell you what happened before you walk around the shed.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I was picturing a qualifying course and stepped backward like there was a horse under me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Two years after the divorce, I should be better at saying things plainly: I went into your flower border.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "The yellow ones are still standing; from here, the rest might almost look deliberate.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I need to tell you what happened before you walk around the shed.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I was picturing a qualifying course and stepped backward like there was a horse under me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Two years after the divorce, I should be better at saying things plainly: I went into your flower border.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "The yellow ones are still standing; from here, the rest might almost look deliberate.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_009",
+      "attempts": 1,
+      "assigned_pair": [
+        "pleasure",
+        "anger"
+      ],
+      "persona_a": [
+        "My favorite season is winter.",
+        "I am a social butterfly.",
+        "I enjoy building computers.",
+        "I tend to work myself up."
+      ],
+      "persona_b": [
+        "I hope to keep improving and go big with this sport.",
+        "I drive a honda that is seen better days.",
+        "I think I have talent for it.",
+        "I'm a grown woman."
+      ],
+      "setting": "A, a chatty computer hobbyist, meets B outside the ice rink after B's training session and notices something left in B's aging Honda.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I ran into three people from your training group before I even reached the parking lot. They all knew exactly which Honda was yours."
+        },
+        {
+          "speaker": "A",
+          "text": "Your passenger door was unlocked, and this chocolate ice cream was sitting on the seat, so I carried it over before it turned into soup."
+        },
+        {
+          "speaker": "A",
+          "text": "There is something tucked under the lid. I left it exactly where I found it."
+        },
+        {
+          "speaker": "A",
+          "text": "I did not look at it; I was already imagining six different reasons it might be there."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "emotion_a": "pleasure",
+      "emotion_b": "anger",
+      "framing_a": "B's vocalization follows the first taste or sensation of the cold chocolate ice cream after training.",
+      "framing_b": "B's vocalization follows noticing the item tucked beneath the lid, possibly connected to someone entering the unlocked car.",
+      "why": "The ice cream provides a natural sensory source for pleasure, while the unlocked car and concealed item provide a plausible source for anger; A's final line leaves both readings open.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I ran into three people from your training group before I even reached the parking lot. They all knew exactly which Honda was yours.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Your passenger door was unlocked, and this chocolate ice cream was sitting on the seat, so I carried it over before it turned into soup.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "There is something tucked under the lid. I left it exactly where I found it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "I did not look at it; I was already imagining six different reasons it might be there.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I ran into three people from your training group before I even reached the parking lot. They all knew exactly which Honda was yours.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Your passenger door was unlocked, and this chocolate ice cream was sitting on the seat, so I carried it over before it turned into soup.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "There is something tucked under the lid. I left it exactly where I found it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "I did not look at it; I was already imagining six different reasons it might be there.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_010",
+      "attempts": 1,
+      "assigned_pair": [
+        "pleasure",
+        "disgust"
+      ],
+      "persona_a": [
+        "I don't care about fashion.",
+        "I am a nurse at a hospital.",
+        "My favorite food to harvest is carrots.",
+        "I'm a scientist."
+      ],
+      "persona_b": [
+        "My favorite artist is bob ross.",
+        "I'm very shy.",
+        "I'm a fitness guru.",
+        "I like hiking up volcanoes."
+      ],
+      "setting": "A is a nurse-scientist checking on B, a shy fitness instructor who came in after a volcano hike, in a hospital observation room while B samples A's warm carrot broth.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Before you say anything: yes, it is carrots. I grew them myself, and I kept the batch plain."
+        },
+        {
+          "speaker": "A",
+          "text": "No powder, no performance additives—just something warm after that volcano route of yours."
+        },
+        {
+          "speaker": "A",
+          "text": "That first mouthful tells me more than the thermometer does."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "pleasure",
+      "emotion_b": "disgust",
+      "framing_a": "B's vocalization can be a response to the warmth and taste of the carrot broth after a taxing hike.",
+      "framing_b": "B's vocalization can be a reaction to the broth's flavor or texture, with A neutrally treating it as clinically useful information.",
+      "why": "The warm carrot broth provides a natural sensory object for either vocal reaction, while A's final line records the reaction without deciding whether it was favorable or unfavorable.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Before you say anything: yes, it is carrots. I grew them myself, and I kept the batch plain.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "No powder, no performance additives—just something warm after that volcano route of yours.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "That first mouthful tells me more than the thermometer does.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Before you say anything: yes, it is carrots. I grew them myself, and I kept the batch plain.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "No powder, no performance additives—just something warm after that volcano route of yours.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "That first mouthful tells me more than the thermometer does.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_011",
+      "attempts": 1,
+      "assigned_pair": [
+        "pleasure",
+        "fear"
+      ],
+      "persona_a": [
+        "I had two cats growing up.",
+        "My girl friend lives in the condo next door.",
+        "I care about the way I look when I'm in public.",
+        "I went to school for fashion design and did nothing with it."
+      ],
+      "persona_b": [
+        "I have a dog named socks.",
+        "My idol is theirry henry.",
+        "My father recently had a heart attack.",
+        "I am a college student who is a full time working mom."
+      ],
+      "setting": "A is visiting his girlfriend in the condo next door to B's and has found B's dog Socks after the dog slipped inside.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was next door steaming my shirt for tonight when Socks nosed the door open."
+        },
+        {
+          "speaker": "A",
+          "text": "He got into the guest room and crawled under the heavy knit throw. I grew up with cats; I know not to yank an animal out from under a blanket."
+        },
+        {
+          "speaker": "A",
+          "text": "Just touch his side. He's warm, and he's been curled in the same place since I found him."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "pleasure",
+      "emotion_b": "fear",
+      "framing_a": "B's vocalization responds to the immediate physical comfort of touching Socks' warm side beneath the soft throw.",
+      "framing_b": "B's vocalization responds to alarm at finding Socks unusually still beneath the throw.",
+      "why": "The same words leave Socks' warmth and stillness open: he may simply be cozy and asleep, or B may worry that something is wrong. The sensory detail is naturally part of finding and touching the dog.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I was next door steaming my shirt for tonight when Socks nosed the door open.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "He got into the guest room and crawled under the heavy knit throw. I grew up with cats; I know not to yank an animal out from under a blanket.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "Just touch his side. He's warm, and he's been curled in the same place since I found him.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I was next door steaming my shirt for tonight when Socks nosed the door open.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "He got into the guest room and crawled under the heavy knit throw. I grew up with cats; I know not to yank an animal out from under a blanket.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "Just touch his side. He's warm, and he's been curled in the same place since I found him.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_012",
+      "attempts": 1,
+      "assigned_pair": [
+        "pleasure",
+        "sadness"
+      ],
+      "persona_a": [
+        "I grew up in the projects of chicago.",
+        "My favorite food is spicy tex mex.",
+        "I love cabins in the woods on the lake.",
+        "I have never been on an airplane."
+      ],
+      "persona_b": [
+        "I have a wife and two kids.",
+        "I've one older sister named mary.",
+        "I think recycling is important.",
+        "I'm allergic to milk."
+      ],
+      "setting": "Two longtime friends are spending an evening at A's cabin on the lake, where A has made B a dairy-free Tex-Mex dinner.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I used the blue-corn tortillas Mary told me about, and I kept the cheese off your half."
+        },
+        {
+          "speaker": "A",
+          "text": "Careful with the skillet; it came straight off the stove."
+        },
+        {
+          "speaker": "A",
+          "text": "You can sit with it a minute. The beans will stay warm."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "pleasure",
+      "emotion_b": "sadness",
+      "framing_a": "B's vocalization can be a response to the hot, spicy, dairy-free meal and its immediate warmth and taste.",
+      "framing_b": "The same vocalization can be sadness prompted by the mention of Mary and the familiar meal, with no explanation supplied by A's words.",
+      "why": "The cabin dinner naturally provides a concrete sensory source for pleasure, while Mary's connection to the recipe leaves room for sadness without establishing its cause.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I used the blue-corn tortillas Mary told me about, and I kept the cheese off your half.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Careful with the skillet; it came straight off the stove.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "You can sit with it a minute. The beans will stay warm.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I used the blue-corn tortillas Mary told me about, and I kept the cheese off your half.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Careful with the skillet; it came straight off the stove.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "You can sit with it a minute. The beans will stay warm.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_013",
+      "attempts": 1,
+      "assigned_pair": [
+        "relief",
+        "anger"
+      ],
+      "persona_a": [
+        "I live in rural wisconsin.",
+        "My favorite movie is gone with the wind.",
+        "I am an old woman.",
+        "I'm high maintenance."
+      ],
+      "persona_b": [
+        "I have a twin brother.",
+        "I have more then 10 tattoos.",
+        "I'm a stunt double as my second job.",
+        "I think I've talent for it."
+      ],
+      "setting": "An older, exacting rural Wisconsin homeowner finds her temporary guest, a tattooed stunt double, beside the north-pasture fence after he has been practicing a landing.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Those tattoos make it hard to see whether you've scraped your arm, but I can see my fence plain enough."
+        },
+        {
+          "speaker": "A",
+          "text": "I leave you alone one afternoon, and you turn the north pasture into a picture show. Scarlett O'Hara would have had the decency to use the drive."
+        },
+        {
+          "speaker": "A",
+          "text": "Well, the fence is standing, and so are you."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "relief",
+      "emotion_b": "anger",
+      "framing_a": "B's vocalization can release the tension of checking the aftermath: both B and the fence are still standing.",
+      "framing_b": "B's vocalization can object to A's assumption that he damaged the fence or needs to be lectured about his work.",
+      "why": "The same final observation supports either a release after a risky landing or a resentful response to being blamed; A's fussy, old-fashioned film reference fits her persona, while B's stunt work makes the incident natural.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Those tattoos make it hard to see whether you've scraped your arm, but I can see my fence plain enough.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I leave you alone one afternoon, and you turn the north pasture into a picture show. Scarlett O'Hara would have had the decency to use the drive.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, the fence is standing, and so are you.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Those tattoos make it hard to see whether you've scraped your arm, but I can see my fence plain enough.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I leave you alone one afternoon, and you turn the north pasture into a picture show. Scarlett O'Hara would have had the decency to use the drive.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, the fence is standing, and so are you.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_014",
+      "attempts": 1,
+      "assigned_pair": [
+        "relief",
+        "disgust"
+      ],
+      "persona_a": [
+        "I can do convincing bird calls.",
+        "I diet a lot.",
+        "In my spare time I like to play video games.",
+        "I'm a clean eater."
+      ],
+      "persona_b": [
+        "If I am not cooking in the kitchen then I am definitely on the water.",
+        "I love pasta.",
+        "I ca swim very fast.",
+        "I drink a lot of tea."
+      ],
+      "setting": "A and B are roommates in their apartment kitchen while B's pasta cooks.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "That scratching wasn't one of my bird calls; it came from under the cabinet."
+        },
+        {
+          "speaker": "A",
+          "text": "Your pasta pot has stayed covered, and I haven't seen anything near the colander."
+        },
+        {
+          "speaker": "A",
+          "text": "Leave it exactly where it is. I'll take care of this before we serve anything."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "relief",
+      "emotion_b": "disgust",
+      "framing_a": "B's vocalization can be a release at hearing that the food and utensils have remained protected.",
+      "framing_b": "B's vocalization can be a reaction to the implied thing scratching beneath the kitchen cabinet.",
+      "why": "B's attachment to cooking and pasta makes the status of the covered pot matter, while A's clean-eating habits and bird-call skill naturally shape the observation. The final instruction fits either cautious containment after a close call or revulsion at whatever is under the cabinet.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "That scratching wasn't one of my bird calls; it came from under the cabinet.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Your pasta pot has stayed covered, and I haven't seen anything near the colander.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "Leave it exactly where it is. I'll take care of this before we serve anything.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "That scratching wasn't one of my bird calls; it came from under the cabinet.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Your pasta pot has stayed covered, and I haven't seen anything near the colander.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "Leave it exactly where it is. I'll take care of this before we serve anything.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_015",
+      "attempts": 1,
+      "assigned_pair": [
+        "relief",
+        "fear"
+      ],
+      "persona_a": [
+        "I'm an avid runner.",
+        "I wear glasses that are cateye.",
+        "I take pride in my job managing the restaurant.",
+        "I joined a new team last month."
+      ],
+      "persona_b": [
+        "I am an insurance salesman.",
+        "I'm allergic to peanuts.",
+        "I also like to cook but I am not very good at it.",
+        "My grandma is from denmark."
+      ],
+      "setting": "A restaurant manager is checking on a silent insurance salesman after his lunch at the restaurant, where they have been discussing the Danish-style rye bread he remembers from his grandmother.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I've only been with this team a month, but I make them keep every supplier sheet."
+        },
+        {
+          "speaker": "A",
+          "text": "The bakery just sent one for the rye roll you finished."
+        },
+        {
+          "speaker": "A",
+          "text": "It lists no peanut in the dough; the batch record can tell us the rest."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "B",
+      "emotion_a": "relief",
+      "emotion_b": "fear",
+      "framing_a": "B's vocalization can be a released exhale on hearing that the dough contains no peanut, while the remaining batch record is a final check.",
+      "framing_b": "B's vocalization can be an alarmed gasp at the uncertainty created by needing the batch record after already eating the roll.",
+      "why": "The same information leaves open whether B is responding to the apparent absence of peanut or to the unresolved possibility of exposure.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I've only been with this team a month, but I make them keep every supplier sheet.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The bakery just sent one for the rye roll you finished.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "It lists no peanut in the dough; the batch record can tell us the rest.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I've only been with this team a month, but I make them keep every supplier sheet.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The bakery just sent one for the rye roll you finished.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "It lists no peanut in the dough; the batch record can tell us the rest.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v5_016",
+      "attempts": 1,
+      "assigned_pair": [
+        "relief",
+        "sadness"
+      ],
+      "persona_a": [
+        "I am obsessed with filming.",
+        "I'm in the military.",
+        "I listen to pink when I am painting.",
+        "I'm not a big fan of waiting in line."
+      ],
+      "persona_b": [
+        "I like to drive for hours.",
+        "I get sad a lot.",
+        "I graduated college for secondary english education.",
+        "I go to the pool every thursday for three hours."
+      ],
+      "setting": "Two friends are outside a high school office, where A has brought a camera while B considers delivering an application for a teaching position.",
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I checked the route twice; we still made it before the office closed."
+        },
+        {
+          "speaker": "A",
+          "text": "I'll keep the camera down until you say otherwise."
+        },
+        {
+          "speaker": "A",
+          "text": "Your application is in the envelope, and the principal is still here."
+        },
+        {
+          "speaker": "A",
+          "text": "We can leave it at the desk, or bring it back to the car."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "B",
+      "emotion_a": "relief",
+      "emotion_b": "sadness",
+      "framing_a": "B's vocalization can be a release after reaching the office before it closed, with the application finally ready to be handed over.",
+      "framing_b": "B's vocalization can be grief or heaviness at confronting the school and the possibility represented by the envelope.",
+      "why": "The final line leaves B's next step open, so the same vocalization point can plausibly be heard as either release or sorrow.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I checked the route twice; we still made it before the office closed.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I'll keep the camera down until you say otherwise.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Your application is in the envelope, and the principal is still here.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "We can leave it at the desk, or bring it back to the car.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I checked the route twice; we still made it before the office closed.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I'll keep the camera down until you say otherwise.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Your application is in the envelope, and the principal is still here.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "We can leave it at the desk, or bring it back to the car.",
+          "kind": "speech"
+        }
+      ]
+    }
+  ]
+}

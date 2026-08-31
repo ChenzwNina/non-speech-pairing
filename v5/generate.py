@@ -89,8 +89,15 @@ THE PERSONAS
 
 Five candidate sentences are offered for each speaker. They come from a pool whose groupings
 were lost, so some will contradict each other. Keep only the ones that could describe the same
-person — three or four each — and report exactly which you kept, copied verbatim. The scene
-should grow out of who these two people are, and A's lines should be recognisably A's.
+person — three or four each — and report exactly which you kept, copied verbatim.
+
+**The persona decides who these people are, where they are, and what they are to each other.
+It is not a checklist to read out.** Most of it should never be said aloud. Its job is to make
+the situation specific: a nurse and a student give you a skills lab, a grill cook and an art
+teacher give you a diner. Pick the one or two facts the scene actually needs — the ones that,
+if removed, would make the scene stop working — and let the rest show in the choice of setting
+and in how A talks. Naming three persona facts in one line is the failure mode; a reader should
+feel these are particular people without being told their hobbies.
 
 B's persona matters even though B is silent: it should be believable that this particular
 person would react with this particular sound, and A may refer to B in ways that fit.
@@ -152,6 +159,35 @@ class Infeasible(RuntimeError):
     """These personas cannot carry the assigned pair. Try other personas, not a retry."""
 
 
+STOPWORDS = {"like", "love", "have", "really", "very", "also", "want", "would", "with",
+             "that", "this", "they", "them", "from", "into", "been", "some", "when",
+             "time", "back", "good", "much", "more", "than", "then", "know", "just"}
+
+
+def surfaced(persona: list[str], spoken: str) -> list[str]:
+    """Which persona sentences show up in the words themselves.
+
+    A sentence counts as surfaced when half its distinctive words appear, at least one. The
+    ratio matters because persona sentences are short and uneven: "I like to water ski" carries
+    a single distinctive word, so a fixed two-word threshold could never catch it however
+    plainly it was recited. Matching is by prefix, since the writer paraphrases — "water-skiing"
+    for "water ski".
+
+    This is a proxy for recitation, not a judgement about whether a fact belonged in the scene.
+    One or two surfacing is a scene using its personas; four is a scene reading them out.
+    """
+    words = {w.lower() for w in re.findall(r"[A-Za-z]{3,}", spoken)}
+    out = []
+    for sentence in persona:
+        distinctive = [w.lower() for w in re.findall(r"[A-Za-z]{4,}", sentence)
+                       if w.lower() not in STOPWORDS]
+        hits = sum(1 for d in distinctive
+                   if any(w.startswith(d[:4]) or d.startswith(w[:4]) for w in words))
+        if distinctive and hits >= max(1, len(distinctive) // 2):
+            out.append(sentence)
+    return out
+
+
 def problems(item: dict, result: dict, pair: tuple[str, str]) -> list[str]:
     found = []
     turns = result["turns"]
@@ -183,6 +219,13 @@ def problems(item: dict, result: dict, pair: tuple[str, str]) -> list[str]:
     labels = sorted({m.group(0) for m in SPEAKER_LEAK.finditer(spoken)})
     if labels:
         found.append(f"the words refer to a speaker by letter ({labels})")
+
+    for who, key in (("A", "persona_a"), ("B", "persona_b")):
+        recited = surfaced(result[key], spoken)
+        if len(recited) > 2:
+            found.append(f"persona {who} is being recited: {len(recited)} of its facts are "
+                         f"said aloud ({recited}). Let the persona choose the situation and "
+                         "the manner of speaking; say only what the scene needs.")
     return found
 
 
