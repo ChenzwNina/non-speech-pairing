@@ -1,0 +1,3528 @@
+{
+  "generated_at": "2026-08-31T04:35:49+00:00",
+  "writer": "gpt-5.6-terra",
+  "labels": [
+    "achievement",
+    "amusement",
+    "pleasure",
+    "relief",
+    "anger",
+    "disgust",
+    "fear",
+    "sadness"
+  ],
+  "items": [
+    {
+      "item_id": "v4_001",
+      "seed_emotion": "anticipating",
+      "situation": "Going camping next weekend. I haven't hung out with my friends in so long.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Maya sent the final list for next weekend."
+        },
+        {
+          "speaker": "B",
+          "text": "I didn't realize it had been that long since all of us went anywhere together."
+        },
+        {
+          "speaker": "A",
+          "text": "So the plan is still to meet at the trailhead before noon."
+        },
+        {
+          "speaker": "B",
+          "text": "We'll know once we're out there."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "fear",
+      "framing_a": "The sound makes the upcoming camping trip and reunion feel warmly welcomed.",
+      "framing_b": "The sound makes the same upcoming trip feel uncertain and potentially intimidating.",
+      "why": "The dialogue establishes a long-delayed group camping plan without stating whether the prospect is welcome or worrying. The final line can refer either to enjoyable discovery or to concern about what awaits outdoors.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Maya sent the final list for next weekend.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I didn't realize it had been that long since all of us went anywhere together.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "So the plan is still to meet at the trailhead before noon.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "We'll know once we're out there.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Maya sent the final list for next weekend.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I didn't realize it had been that long since all of us went anywhere together.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "So the plan is still to meet at the trailhead before noon.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "We'll know once we're out there.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_002",
+      "seed_emotion": "joyful",
+      "situation": "On christmas morning last year, i got everything i wanted.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "They saved one package until everyone was downstairs."
+        },
+        {
+          "speaker": "B",
+          "text": "Then they put it in front of you."
+        },
+        {
+          "speaker": "A",
+          "text": "So that was the whole point of keeping it back."
+        },
+        {
+          "speaker": "B",
+          "text": "I guess so."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "disgust",
+      "framing_a": "C reacts warmly to the delayed Christmas gift, making the reveal feel like a successful surprise.",
+      "framing_b": "C reacts negatively to what was revealed, making the delayed package seem like an unwanted or inappropriate choice.",
+      "why": "The words establish a withheld gift and a reveal without evaluating its contents. C's vocalization supplies the appraisal, while the next line can mean either that the surprise was thoughtfully staged or that its purpose has become uncomfortably clear.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "They saved one package until everyone was downstairs.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Then they put it in front of you.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "So that was the whole point of keeping it back.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I guess so.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "They saved one package until everyone was downstairs.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Then they put it in front of you.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "So that was the whole point of keeping it back.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I guess so.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_003",
+      "seed_emotion": "ashamed",
+      "situation": "I've been stealing internet from my neighbors since I moved in. Kinda feel bad about it.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The network I've been using isn't ours."
+        },
+        {
+          "speaker": "B",
+          "text": "How did you find out?"
+        },
+        {
+          "speaker": "A",
+          "text": "Someone next door mentioned it this morning."
+        },
+        {
+          "speaker": "B",
+          "text": "So that's what they've been seeing."
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "amusement",
+      "emotion_b": "disgust",
+      "framing_a": "C hears the discovery as an awkward, almost absurd neighborhood mix-up.",
+      "framing_b": "C hears it as an unacceptable use of a neighbor's connection.",
+      "why": "The spoken exchange establishes what happened without stating whether it is funny, harmless, or objectionable. C's vocalization supplies that appraisal, and B's following line remains compatible with either interpretation.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The network I've been using isn't ours.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "How did you find out?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Someone next door mentioned it this morning.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "B",
+          "text": "So that's what they've been seeing.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The network I've been using isn't ours.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "How did you find out?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Someone next door mentioned it this morning.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "B",
+          "text": "So that's what they've been seeing.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_004",
+      "seed_emotion": "nostalgic",
+      "situation": "I miss my college days so much.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The alumni office sent a note about campus."
+        },
+        {
+          "speaker": "B",
+          "text": "About the old courtyard?"
+        },
+        {
+          "speaker": "A",
+          "text": "They’re opening it for an afternoon next month."
+        },
+        {
+          "speaker": "B",
+          "text": "You could still put your name down."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "sadness",
+      "framing_a": "C’s sound makes the courtyard opening feel like a welcome chance to revisit a meaningful place.",
+      "framing_b": "C’s sound makes the same announcement feel like a painful reminder of something that is gone.",
+      "why": "The spoken exchange only states that an old campus location will be accessible and that registration remains possible. C’s vocalization supplies the appraisal, while B’s final practical suggestion can fit either response.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The alumni office sent a note about campus.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "About the old courtyard?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They’re opening it for an afternoon next month.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "You could still put your name down.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The alumni office sent a note about campus.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "About the old courtyard?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They’re opening it for an afternoon next month.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "B",
+          "text": "You could still put your name down.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_005",
+      "seed_emotion": "proud",
+      "situation": "I graudated with a mechanical engineering degree in may.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Did the department get back to you?"
+        },
+        {
+          "speaker": "B",
+          "text": "They called this morning."
+        },
+        {
+          "speaker": "A",
+          "text": "What did they say?"
+        },
+        {
+          "speaker": "B",
+          "text": "My degree requirements are all signed off."
+        },
+        {
+          "speaker": "A",
+          "text": "So that's where things stand."
+        }
+      ],
+      "voc_after_turn": 4,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "sadness",
+      "framing_a": "C's vocalization makes the completed degree feel like a milestone being recognized.",
+      "framing_b": "C's vocalization makes the completed degree feel like the closing of a chapter or a difficult change.",
+      "why": "The words establish that an academic process has ended but do not specify whether anyone treats that ending as a success to celebrate or as a transition with a sense of loss. The vocalization immediately before the final, especially neutral line supplies that appraisal.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Did the department get back to you?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "They called this morning.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "What did they say?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "My degree requirements are all signed off.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "So that's where things stand.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Did the department get back to you?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "They called this morning.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "What did they say?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "My degree requirements are all signed off.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "So that's where things stand.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_006",
+      "seed_emotion": "prepared",
+      "situation": "i went into that interview last week ready for anything they threw at me",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I had everything laid out before they called me in."
+        },
+        {
+          "speaker": "B",
+          "text": "Did it go the way you expected?"
+        },
+        {
+          "speaker": "A",
+          "text": "They began with something completely different."
+        },
+        {
+          "speaker": "B",
+          "text": "So you had to see what came next."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "fear",
+      "framing_a": "C's vocalization makes the unexpected question sound like a challenge A was able to meet.",
+      "framing_b": "C's vocalization makes the unexpected question sound like a moment of uncertainty about what the interview might bring.",
+      "why": "The spoken exchange establishes preparation and an unexpected shift without revealing how it was received or resolved. The final line can acknowledge either capable adaptation or apprehensive waiting.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I had everything laid out before they called me in.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did it go the way you expected?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They began with something completely different.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "B",
+          "text": "So you had to see what came next.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I had everything laid out before they called me in.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did it go the way you expected?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They began with something completely different.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "So you had to see what came next.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_007",
+      "seed_emotion": "lonely",
+      "situation": "I was at the store and it was like I was the only one in there. I felt weird.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The store was almost completely empty tonight."
+        },
+        {
+          "speaker": "B",
+          "text": "Even the parking lot?"
+        },
+        {
+          "speaker": "A",
+          "text": "I didn't see anyone when I walked in."
+        },
+        {
+          "speaker": "B",
+          "text": "So you just went in anyway."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "fear",
+      "framing_a": "The empty store feels like an unexpectedly private, welcome break from crowds.",
+      "framing_b": "The empty store feels unsettling, as though something may be wrong or unsafe.",
+      "why": "The words only establish that the store was empty and that A entered. A pleased vocalization makes the quiet seem appealing, while a fearful one makes the same quiet seem ominous.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The store was almost completely empty tonight.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Even the parking lot?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I didn't see anyone when I walked in.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "So you just went in anyway.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The store was almost completely empty tonight.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Even the parking lot?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I didn't see anyone when I walked in.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "So you just went in anyway.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_008",
+      "seed_emotion": "anxious",
+      "situation": "I start my new ob tomorrow. I am so nervous.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Tomorrow is my first day at the new place."
+        },
+        {
+          "speaker": "B",
+          "text": "Did they send you everything you need?"
+        },
+        {
+          "speaker": "A",
+          "text": "I have the address, a start time, and a name to ask for at the desk."
+        },
+        {
+          "speaker": "B",
+          "text": "Then tomorrow will tell you the rest."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "fear",
+      "framing_a": "C's sound makes the new beginning feel welcome and promising.",
+      "framing_b": "C's sound makes the same practical details feel like the edge of an uncertain situation.",
+      "why": "The conversation only establishes an upcoming first day and a few logistics. C's vocalization supplies the appraisal, while the final line remains equally compatible with anticipation or apprehension.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Tomorrow is my first day at the new place.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did they send you everything you need?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "I have the address, a start time, and a name to ask for at the desk.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Then tomorrow will tell you the rest.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Tomorrow is my first day at the new place.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did they send you everything you need?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "I have the address, a start time, and a name to ask for at the desk.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Then tomorrow will tell you the rest.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_009",
+      "seed_emotion": "guilty",
+      "situation": "I forgot to put up the leftovers last night and ruined dinner for today.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I found the pot from last night still on the stove."
+        },
+        {
+          "speaker": "B",
+          "text": "Was it covered?"
+        },
+        {
+          "speaker": "A",
+          "text": "No. I didn't move it after we ate."
+        },
+        {
+          "speaker": "B",
+          "text": "Then I guess we're doing something else."
+        },
+        {
+          "speaker": "A",
+          "text": "I can handle it."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "disgust",
+      "framing_a": "C's sound makes the change of dinner plans seem welcome, perhaps because doing something else has an upside.",
+      "framing_b": "C's sound makes the unattended food itself the focus, suggesting an adverse reaction to what was found.",
+      "why": "The words establish that food was left out and that plans will change, but they do not specify whether the change is welcome or whether the food is the salient issue. The vocalization shifts that appraisal before B's deliberately neutral response.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I found the pot from last night still on the stove.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Was it covered?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "No. I didn't move it after we ate.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "Then I guess we're doing something else.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I can handle it.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I found the pot from last night still on the stove.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Was it covered?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "No. I didn't move it after we ate.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "B",
+          "text": "Then I guess we're doing something else.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I can handle it.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_010",
+      "seed_emotion": "faithful",
+      "situation": "I rejected an offer from a competitor company and wanted to stay in my current organisation out of loyalty",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I called them back this morning and gave them my answer."
+        },
+        {
+          "speaker": "B",
+          "text": "So you're not taking the other position."
+        },
+        {
+          "speaker": "A",
+          "text": "No. I told them I was staying here."
+        },
+        {
+          "speaker": "B",
+          "text": "Then that's where things stand."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "sadness",
+      "framing_a": "C's sound can make the decision feel like a meaningful choice that has been successfully completed.",
+      "framing_b": "C's sound can make the same decision feel like the closing of an opportunity or a difficult finality.",
+      "why": "The words establish only that A declined another job and remains at the current organization; they do not state whether anyone appraises that outcome positively or negatively. The vocalization falls before B's deliberately neutral final line, allowing it to color that line as either settled satisfaction or subdued loss.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I called them back this morning and gave them my answer.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So you're not taking the other position.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "No. I told them I was staying here.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Then that's where things stand.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I called them back this morning and gave them my answer.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So you're not taking the other position.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "No. I told them I was staying here.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Then that's where things stand.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_011",
+      "seed_emotion": "embarrassed",
+      "situation": "When I was in middle school, I remember seeing a question on the board and feeling positive that I knew the answer. When all was quiet and the teacher asked if anyone knew the answer, I confidently spoke up, only to be incorrect.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I found an old class photo today."
+        },
+        {
+          "speaker": "B",
+          "text": "Did it remind you of something?"
+        },
+        {
+          "speaker": "A",
+          "text": "There was a day I answered a question before anyone else."
+        },
+        {
+          "speaker": "B",
+          "text": "What happened?"
+        },
+        {
+          "speaker": "A",
+          "text": "The teacher checked the page and called on someone else."
+        },
+        {
+          "speaker": "B",
+          "text": "That's the part you remember?"
+        }
+      ],
+      "voc_after_turn": 4,
+      "voc_speaker": "C",
+      "emotion_a": "amusement",
+      "emotion_b": "sadness",
+      "framing_a": "C's vocalization makes the memory sound like a small, retellable classroom mishap.",
+      "framing_b": "C's vocalization makes the same pause and redirection sound like a memory that still carries weight.",
+      "why": "The spoken account gives the event but does not state how anyone appraises it. The vocalization before A's understated description of the teacher's response supplies the contrasting interpretation.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I found an old class photo today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did it remind you of something?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "There was a day I answered a question before anyone else.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "What happened?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "The teacher checked the page and called on someone else.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "That's the part you remember?",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I found an old class photo today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did it remind you of something?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "There was a day I answered a question before anyone else.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "What happened?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "The teacher checked the page and called on someone else.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "That's the part you remember?",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_012",
+      "seed_emotion": "sentimental",
+      "situation": "My brother got hurt badly and i felt so heartfelt for him.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "They said my brother can come home tomorrow."
+        },
+        {
+          "speaker": "B",
+          "text": "They gave us a list for the first week."
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what we're doing."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "relief",
+      "emotion_b": "sadness",
+      "framing_a": "C's vocalization makes the homecoming sound like a welcome turning point after a difficult hospital stay.",
+      "framing_b": "C's vocalization makes the same update sound like the weight of what the family is now carrying home.",
+      "why": "The spoken update establishes a serious situation but does not specify how anyone appraises it. A relieved sound highlights that he is leaving the hospital; a sad sound highlights the injury and uncertain adjustment ahead.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "They said my brother can come home tomorrow.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "They gave us a list for the first week.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what we're doing.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "They said my brother can come home tomorrow.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "They gave us a list for the first week.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what we're doing.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_013",
+      "seed_emotion": "surprised",
+      "situation": "I got a letter in the mail today from my cousin. He was overseas and thinking of me, it was a nice shock",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "A letter showed up for me today."
+        },
+        {
+          "speaker": "B",
+          "text": "From who?"
+        },
+        {
+          "speaker": "A",
+          "text": "My cousin. He’s still overseas."
+        },
+        {
+          "speaker": "B",
+          "text": "What did he say?"
+        },
+        {
+          "speaker": "A",
+          "text": "Mostly that he’d been thinking about me."
+        },
+        {
+          "speaker": "B",
+          "text": "So it reached you after all."
+        }
+      ],
+      "voc_after_turn": 5,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "sadness",
+      "framing_a": "C’s sound makes the letter feel like a welcome, meaningful connection that arrived unexpectedly.",
+      "framing_b": "C’s sound makes the letter feel like a reminder of distance, absence, or a complicated connection.",
+      "why": "The words establish an unexpected letter from a distant cousin without specifying whether the contact is comforting or painful. The final line can acknowledge either a welcome arrival or the weight of finally receiving it.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "A letter showed up for me today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "From who?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "My cousin. He’s still overseas.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "What did he say?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Mostly that he’d been thinking about me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "So it reached you after all.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "A letter showed up for me today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "From who?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "My cousin. He’s still overseas.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "What did he say?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Mostly that he’d been thinking about me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "B",
+          "text": "So it reached you after all.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_014",
+      "seed_emotion": "caring",
+      "situation": "I always donate my old things to the less fortunate rather than selling them.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The community center sent a van for the things."
+        },
+        {
+          "speaker": "B",
+          "text": "They took all of it?"
+        },
+        {
+          "speaker": "A",
+          "text": "Every box."
+        },
+        {
+          "speaker": "B",
+          "text": "Well, it won't be sitting here anymore."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "sadness",
+      "framing_a": "C's sound makes the completed handoff feel warmly satisfying, with the final line acknowledging that the items have found a purpose.",
+      "framing_b": "C's sound makes the empty space and the departure of the belongings feel poignant, with the final line focusing on their absence.",
+      "why": "The words establish that possessions were collected but do not specify whether the salient meaning is their usefulness elsewhere or their leaving home. A pleased vocalization favors the former; a sad vocalization favors the latter.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The community center sent a van for the things.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "They took all of it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Every box.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "Well, it won't be sitting here anymore.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The community center sent a van for the things.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "They took all of it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Every box.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "B",
+          "text": "Well, it won't be sitting here anymore.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_015",
+      "seed_emotion": "excited",
+      "situation": "I was anticipating the first day of school for a few days. It was going to be the first day in High school",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Tomorrow is the first day at the new school."
+        },
+        {
+          "speaker": "B",
+          "text": "I know. I put everything by the door already."
+        },
+        {
+          "speaker": "A",
+          "text": "The bus comes earlier than it used to."
+        },
+        {
+          "speaker": "B",
+          "text": "I guess tomorrow starts either way."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "fear",
+      "framing_a": "C's vocalization makes the upcoming first day sound like a welcome new beginning.",
+      "framing_b": "C's vocalization makes the same upcoming first day sound daunting and uncertain.",
+      "why": "The spoken lines establish preparation and an unavoidable transition without specifying whether anyone welcomes or dreads it. The vocalization immediately before B's final, deliberately neutral line determines whether \"starts either way\" lands as eager acceptance or apprehensive resignation.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Tomorrow is the first day at the new school.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I know. I put everything by the door already.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The bus comes earlier than it used to.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "I guess tomorrow starts either way.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Tomorrow is the first day at the new school.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I know. I put everything by the door already.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The bus comes earlier than it used to.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "I guess tomorrow starts either way.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_016",
+      "seed_emotion": "jealous",
+      "situation": "My best friend beat my time in a race we ran. I tried for months and she decided to join on the spur of the moment.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "She registered that morning."
+        },
+        {
+          "speaker": "B",
+          "text": "And her time is listed first."
+        },
+        {
+          "speaker": "A",
+          "text": "Then that's the number we use."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "sadness",
+      "framing_a": "The sound makes the result feel like a shared milestone and a new benchmark to build from.",
+      "framing_b": "The sound makes the result feel like a difficult comparison, with the new number carrying a sense of loss.",
+      "why": "The spoken lines only establish a race result and a change in the relevant target. The vocalization determines whether that change is heard as an accomplishment or as a painful displacement.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "She registered that morning.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "And her time is listed first.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "Then that's the number we use.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "She registered that morning.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "And her time is listed first.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "Then that's the number we use.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_017",
+      "seed_emotion": "grateful",
+      "situation": "I needed gas and didn't have cash. Some stranger paid for it without me even asking.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I was at the station with the gauge nearly empty and nothing to use at the pump."
+        },
+        {
+          "speaker": "B",
+          "text": "What happened?"
+        },
+        {
+          "speaker": "A",
+          "text": "Someone at the next pump tapped their card on mine, and it started running."
+        },
+        {
+          "speaker": "B",
+          "text": "And then?"
+        },
+        {
+          "speaker": "A",
+          "text": "I just looked at them; they waved and drove away."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "relief",
+      "emotion_b": "fear",
+      "framing_a": "The sound frames the stranger's intervention as a timely rescue that resolves an immediate practical problem.",
+      "framing_b": "The sound frames the stranger's uninvited action at the pump as alarming and unsettling.",
+      "why": "The words establish the same unexpected event without saying how anyone evaluated it. The vocalization occurs immediately after the intervention, and the following response is deliberately noncommittal.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I was at the station with the gauge nearly empty and nothing to use at the pump.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "What happened?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Someone at the next pump tapped their card on mine, and it started running.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "B",
+          "text": "And then?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I just looked at them; they waved and drove away.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I was at the station with the gauge nearly empty and nothing to use at the pump.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "What happened?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Someone at the next pump tapped their card on mine, and it started running.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "And then?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I just looked at them; they waved and drove away.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_018",
+      "seed_emotion": "hopeful",
+      "situation": "I'm really feeling good about my work evaluations and wishing for the best.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "My evaluation meeting is Friday."
+        },
+        {
+          "speaker": "B",
+          "text": "Did your supervisor say anything beforehand?"
+        },
+        {
+          "speaker": "A",
+          "text": "She asked me to send over the project numbers again."
+        },
+        {
+          "speaker": "B",
+          "text": "I suppose we'll know what that means soon."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "fear",
+      "framing_a": "C's sound makes the request for project numbers seem like confirmation that A's work has been recognized.",
+      "framing_b": "C's sound makes the same request seem like a sign that the meeting may bring an unwelcome surprise.",
+      "why": "The evaluation and the repeated request can plausibly signal either favorable attention or scrutiny; the final line does not resolve which.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "My evaluation meeting is Friday.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did your supervisor say anything beforehand?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "She asked me to send over the project numbers again.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "B",
+          "text": "I suppose we'll know what that means soon.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "My evaluation meeting is Friday.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did your supervisor say anything beforehand?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "She asked me to send over the project numbers again.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "I suppose we'll know what that means soon.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_019",
+      "seed_emotion": "apprehensive",
+      "situation": "I just went for my yearly physical and thought everything was good, but I got a call that the doctor wanted to talk to me about some blood work. Its awful because they aren't open until tomorrow so they haven't gotten back to me yet.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The clinic called after my appointment and asked me to speak with the doctor about the blood work."
+        },
+        {
+          "speaker": "B",
+          "text": "Did they give you a time?"
+        },
+        {
+          "speaker": "A",
+          "text": "They said to call back tomorrow morning."
+        },
+        {
+          "speaker": "B",
+          "text": "Then that's the next step."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "relief",
+      "emotion_b": "fear",
+      "framing_a": "C's vocalization suggests that the pending call may finally bring clarity or that the timing is manageable.",
+      "framing_b": "C's vocalization suggests that the request to speak with the doctor signals an alarming unknown.",
+      "why": "The spoken exchange states only that follow-up is needed and delayed until morning. The same final line can sound like calm acceptance after a relieved vocalization or uneasy resignation after a fearful one.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The clinic called after my appointment and asked me to speak with the doctor about the blood work.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did they give you a time?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They said to call back tomorrow morning.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "B",
+          "text": "Then that's the next step.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The clinic called after my appointment and asked me to speak with the doctor about the blood work.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did they give you a time?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They said to call back tomorrow morning.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "Then that's the next step.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_020",
+      "seed_emotion": "furious",
+      "situation": "I went to Wendy's and the cashier overcharged me! I was so upset about it.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "My receipt was higher than the price on the board."
+        },
+        {
+          "speaker": "B",
+          "text": "Did you point it out before you left?"
+        },
+        {
+          "speaker": "A",
+          "text": "The manager looked at it and said they would take care of it."
+        },
+        {
+          "speaker": "B",
+          "text": "Then I guess that's what goes through."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "relief",
+      "emotion_b": "anger",
+      "framing_a": "C's sound suggests that the manager's response closes the matter and the final line accepts the outcome.",
+      "framing_b": "C's sound suggests that the manager's response is inadequate, making the final line sound like a pointed reaction.",
+      "why": "The words report a pricing discrepancy and a vague response without saying whether it was corrected. The same final line can register acceptance after a favorable resolution or restrained pushback after an unsatisfactory one.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "My receipt was higher than the price on the board.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did you point it out before you left?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The manager looked at it and said they would take care of it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "B",
+          "text": "Then I guess that's what goes through.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "My receipt was higher than the price on the board.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did you point it out before you left?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "The manager looked at it and said they would take care of it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "B",
+          "text": "Then I guess that's what goes through.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_021",
+      "seed_emotion": "confident",
+      "situation": "I knew i would win the lotory.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I kept saying this ticket would matter."
+        },
+        {
+          "speaker": "B",
+          "text": "The drawing is online now."
+        },
+        {
+          "speaker": "A",
+          "text": "Every number on mine lines up."
+        },
+        {
+          "speaker": "B",
+          "text": "So that's what happens next."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "fear",
+      "framing_a": "C hears the result as a welcome, exciting windfall.",
+      "framing_b": "C hears the result as the start of something daunting and uncertain.",
+      "why": "The words establish that the ticket matches without specifying whether the change is welcomed or overwhelming. A pleased vocalization frames the news as a windfall, while a fearful one makes the final question sound like concern about the consequences.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I kept saying this ticket would matter.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "The drawing is online now.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Every number on mine lines up.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "So that's what happens next.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I kept saying this ticket would matter.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "The drawing is online now.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Every number on mine lines up.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "So that's what happens next.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_022",
+      "seed_emotion": "content",
+      "situation": "It's raining right now after high humidity and heat in the UK which, while it isn't much compared to other countries, is short-lived so we don't have much time to acclimatise. I'm so happy it's cooling down.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "It has been close all day."
+        },
+        {
+          "speaker": "B",
+          "text": "The rain has started now."
+        },
+        {
+          "speaker": "A",
+          "text": "Then we can do things differently for a while."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "relief",
+      "emotion_b": "disgust",
+      "framing_a": "C reacts to the break in the heavy, confined weather, making the change feel welcome.",
+      "framing_b": "C reacts to the damp, clammy turn in the weather, making the change feel unappealing.",
+      "why": "The spoken exchange only notes a shift in conditions and an unspecified adjustment. The vocalization determines whether that shift is heard as a release or as something unpleasant.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "It has been close all day.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "The rain has started now.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "Then we can do things differently for a while.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "It has been close all day.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "The rain has started now.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "Then we can do things differently for a while.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_023",
+      "seed_emotion": "sad",
+      "situation": "My grandfather passed from medical malpractice a year ago.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The letter about Grandpa's case came today."
+        },
+        {
+          "speaker": "B",
+          "text": "They finally made a decision."
+        },
+        {
+          "speaker": "A",
+          "text": "So we can put the papers away now."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "relief",
+      "emotion_b": "sadness",
+      "framing_a": "C's sound makes the decision feel like the end of a long, draining process.",
+      "framing_b": "C's sound makes the decision feel like a painful final marker of what happened to Grandpa.",
+      "why": "The spoken lines establish that a delayed case has concluded but do not say whether its ending is welcome or devastating. The same final line can mean release from the process or closure that brings the loss back into focus.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The letter about Grandpa's case came today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "They finally made a decision.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "So we can put the papers away now.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The letter about Grandpa's case came today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "They finally made a decision.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "So we can put the papers away now.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_024",
+      "seed_emotion": "afraid",
+      "situation": "My crush keeps hanging out with a new guy classmate a lot lately.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Maya's been spending a lot of time with Owen after class."
+        },
+        {
+          "speaker": "B",
+          "text": "Yeah. They were still talking when I left."
+        },
+        {
+          "speaker": "A",
+          "text": "So that could be a thing."
+        },
+        {
+          "speaker": "B",
+          "text": "We'll know more by next week."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "amusement",
+      "emotion_b": "fear",
+      "framing_a": "C's vocalization makes the same observation sound like lightly entertaining speculation about a possible new pairing.",
+      "framing_b": "C's vocalization makes the classmates' closeness sound like an unsettling development with uncertain consequences.",
+      "why": "The dialogue only reports repeated contact and leaves its meaning open. A fearful sound casts “that could be a thing” as apprehension, while an amused sound casts it as playful gossip.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Maya's been spending a lot of time with Owen after class.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Yeah. They were still talking when I left.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "So that could be a thing.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "We'll know more by next week.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Maya's been spending a lot of time with Owen after class.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Yeah. They were still talking when I left.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "So that could be a thing.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "We'll know more by next week.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_025",
+      "seed_emotion": "annoyed",
+      "situation": "My neighbor got this fancy audi that i saw at the dealership, it must have cost 70k. Very nice car",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Did you see what showed up next door?"
+        },
+        {
+          "speaker": "B",
+          "text": "The silver one in their driveway?"
+        },
+        {
+          "speaker": "A",
+          "text": "It's the same model from that showroom downtown."
+        },
+        {
+          "speaker": "B",
+          "text": "So they brought it home after all."
+        },
+        {
+          "speaker": "A",
+          "text": "Well, it certainly makes an entrance."
+        }
+      ],
+      "voc_after_turn": 4,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "anger",
+      "framing_a": "C's sound frames the car as an impressive, enjoyable sight.",
+      "framing_b": "C's sound frames the car's arrival as an unwelcome or provoking display.",
+      "why": "The spoken exchange only identifies the new car and its conspicuous presence. C's vocalization determines whether “makes an entrance” lands as appreciative admiration or irritated resentment.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Did you see what showed up next door?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "The silver one in their driveway?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "It's the same model from that showroom downtown.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So they brought it home after all.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, it certainly makes an entrance.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Did you see what showed up next door?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "The silver one in their driveway?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "It's the same model from that showroom downtown.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So they brought it home after all.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, it certainly makes an entrance.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_026",
+      "seed_emotion": "trusting",
+      "situation": "I completely confide in my wife and children.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I gave my wife and the kids the details they asked for."
+        },
+        {
+          "speaker": "B",
+          "text": "Did they say what happens next?"
+        },
+        {
+          "speaker": "A",
+          "text": "They said I can leave it with them now."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "relief",
+      "emotion_b": "fear",
+      "framing_a": "C's vocalization suggests that the family taking over removes a burden and that the arrangement is secure.",
+      "framing_b": "C's vocalization suggests that handing over the details may have created an uncertain or threatening situation.",
+      "why": "The spoken exchange only establishes that sensitive details were shared and that the family will handle something next; it does not reveal whether that outcome is welcome or alarming. The vocalization makes either interpretation salient, and A's final line remains compatible with both.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I gave my wife and the kids the details they asked for.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did they say what happens next?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "A",
+          "text": "They said I can leave it with them now.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I gave my wife and the kids the details they asked for.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did they say what happens next?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "They said I can leave it with them now.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_027",
+      "seed_emotion": "disappointed",
+      "situation": "I worked all day and came home to the whole house a wreck. My husband had the whole month off and he didn't clean one bit of the house or make dinner.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "You were expecting things to be different when you got back?"
+        },
+        {
+          "speaker": "B",
+          "text": "I thought there would be some sign that the day had happened."
+        },
+        {
+          "speaker": "A",
+          "text": "And there wasn't?"
+        },
+        {
+          "speaker": "B",
+          "text": "Not that I can find."
+        },
+        {
+          "speaker": "A",
+          "text": "Well, now we know."
+        }
+      ],
+      "voc_after_turn": 4,
+      "voc_speaker": "C",
+      "emotion_a": "amusement",
+      "emotion_b": "anger",
+      "framing_a": "C's sound makes the situation land as an absurd domestic surprise.",
+      "framing_b": "C's sound makes the same situation land as an unacceptable lack of effort.",
+      "why": "The spoken lines only establish that an expectation was unmet. A laugh-like amusement vocalization can frame the understatement as comic, while an anger vocalization frames it as a grievance; the final line remains compatible with either interpretation.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "You were expecting things to be different when you got back?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I thought there would be some sign that the day had happened.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "And there wasn't?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Not that I can find.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, now we know.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "You were expecting things to be different when you got back?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I thought there would be some sign that the day had happened.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "And there wasn't?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Not that I can find.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "A",
+          "text": "Well, now we know.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_028",
+      "seed_emotion": "angry",
+      "situation": "My ex girlfriend cheated on me with one of my closest friends. It made me very angry at the both of them.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I saw Nora leave the hotel with Ben."
+        },
+        {
+          "speaker": "B",
+          "text": "Were they expecting you to be there?"
+        },
+        {
+          "speaker": "A",
+          "text": "They both stopped when they noticed me."
+        },
+        {
+          "speaker": "B",
+          "text": "So that's how it is."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "amusement",
+      "emotion_b": "anger",
+      "framing_a": "C's sound frames the encounter as an absurd, almost unbelievable revelation with a darkly comic edge.",
+      "framing_b": "C's sound frames the encounter as a provocation or betrayal that demands a hostile reaction.",
+      "why": "The spoken facts establish an unexpected encounter but do not state how anyone evaluates it. An angry vocalization makes the final line sound like a confrontation; an amused vocalization makes the same line sound like dry disbelief.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I saw Nora leave the hotel with Ben.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Were they expecting you to be there?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They both stopped when they noticed me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "B",
+          "text": "So that's how it is.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I saw Nora leave the hotel with Ben.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Were they expecting you to be there?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They both stopped when they noticed me.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "anger"
+        },
+        {
+          "speaker": "B",
+          "text": "So that's how it is.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_029",
+      "seed_emotion": "disgusted",
+      "situation": "I went out to eat one time, and had a huge hair in my food. It was baked into a ravioli.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I cut into one of the ravioli and found something running through it."
+        },
+        {
+          "speaker": "B",
+          "text": "Was it part of the filling?"
+        },
+        {
+          "speaker": "A",
+          "text": "No. It was a long hair baked right into the pasta."
+        },
+        {
+          "speaker": "B",
+          "text": "Well, that certainly changes the meal."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "amusement",
+      "emotion_b": "disgust",
+      "framing_a": "The sound makes the oddly specific restaurant mishap land as an absurd story.",
+      "framing_b": "The sound makes the discovery land as a contaminating, off-putting surprise.",
+      "why": "The words establish an unexpected detail without stating an appraisal; the final response can follow either a laugh-like reaction or a recoiling reaction.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I cut into one of the ravioli and found something running through it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Was it part of the filling?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "No. It was a long hair baked right into the pasta.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "amusement"
+        },
+        {
+          "speaker": "B",
+          "text": "Well, that certainly changes the meal.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I cut into one of the ravioli and found something running through it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Was it part of the filling?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "No. It was a long hair baked right into the pasta.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "B",
+          "text": "Well, that certainly changes the meal.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_030",
+      "seed_emotion": "impressed",
+      "situation": "I felt pretty interested after hearing someone speak at church yesterday. They knew what they were talking about",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The person who spoke yesterday had a way of making the whole room go quiet."
+        },
+        {
+          "speaker": "B",
+          "text": "What part stayed with you?"
+        },
+        {
+          "speaker": "A",
+          "text": "I keep going over the same part."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "disgust",
+      "framing_a": "The sound makes the speaker's remarks seem engaging and satisfying.",
+      "framing_b": "The sound makes the remarks seem troubling or off-putting.",
+      "why": "The words establish that the talk was memorable without revealing whether its impact was welcome or objectionable; the vocalization supplies that appraisal.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The person who spoke yesterday had a way of making the whole room go quiet.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "What part stayed with you?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "I keep going over the same part.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The person who spoke yesterday had a way of making the whole room go quiet.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "What part stayed with you?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "disgust"
+        },
+        {
+          "speaker": "A",
+          "text": "I keep going over the same part.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_031",
+      "seed_emotion": "sentimental",
+      "situation": "I am finding it hard to let go of my old car.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The dealer said they can take it this afternoon."
+        },
+        {
+          "speaker": "B",
+          "text": "Did you clear out the glove compartment?"
+        },
+        {
+          "speaker": "A",
+          "text": "Mostly. I found the old parking pass under the seat."
+        },
+        {
+          "speaker": "B",
+          "text": "Then maybe it belongs in the box with the rest."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "sadness",
+      "framing_a": "C's sound makes the parking pass feel like a welcome little reminder worth keeping.",
+      "framing_b": "C's sound makes the parking pass feel like a difficult reminder of something ending.",
+      "why": "The spoken exchange only establishes that an old car is being handed over and that a small memento was found. Either warm appreciation or a sense of loss can plausibly shape the final suggestion.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The dealer said they can take it this afternoon.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did you clear out the glove compartment?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Mostly. I found the old parking pass under the seat.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "Then maybe it belongs in the box with the rest.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The dealer said they can take it this afternoon.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did you clear out the glove compartment?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Mostly. I found the old parking pass under the seat.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "B",
+          "text": "Then maybe it belongs in the box with the rest.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_032",
+      "seed_emotion": "jealous",
+      "situation": "I am upset because my friend just got a new house and I am still living in a 1 bedroom apartment.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Maya sent pictures of the place they closed on."
+        },
+        {
+          "speaker": "B",
+          "text": "So it finally went through."
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah. It has enough room for everyone to come over."
+        },
+        {
+          "speaker": "B",
+          "text": "I guess that changes where we all end up spending time."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "sadness",
+      "framing_a": "C's sound frames the new house as a milestone worth sharing or celebrating.",
+      "framing_b": "C's sound frames the news as highlighting an uncomfortable difference in circumstances.",
+      "why": "The spoken exchange reports the purchase and its practical social consequence without stating whether anyone welcomes or resents it. The vocalization after the house is described shifts how the final observation is heard.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Maya sent pictures of the place they closed on.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So it finally went through.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah. It has enough room for everyone to come over.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "B",
+          "text": "I guess that changes where we all end up spending time.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Maya sent pictures of the place they closed on.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So it finally went through.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Yeah. It has enough room for everyone to come over.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "B",
+          "text": "I guess that changes where we all end up spending time.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_033",
+      "seed_emotion": "proud",
+      "situation": "my friend got promoted at reasors",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "My manager called after my shift."
+        },
+        {
+          "speaker": "B",
+          "text": "Was it about the opening?"
+        },
+        {
+          "speaker": "A",
+          "text": "They said I start in the new position on Monday."
+        },
+        {
+          "speaker": "B",
+          "text": "I guess Monday will tell you what that means."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "fear",
+      "framing_a": "C's sound frames the new position as a milestone that has been earned.",
+      "framing_b": "C's sound frames the new position as an uncertain change with potentially daunting consequences.",
+      "why": "The promotion is stated as an event, but neither speaker evaluates it. The final line can sound like anticipation of opportunity or apprehension about unfamiliar responsibilities, depending on C's vocalization.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "My manager called after my shift.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Was it about the opening?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They said I start in the new position on Monday.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "B",
+          "text": "I guess Monday will tell you what that means.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "My manager called after my shift.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Was it about the opening?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They said I start in the new position on Monday.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "I guess Monday will tell you what that means.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_034",
+      "seed_emotion": "content",
+      "situation": "I used to want more kids, but I think I'm happy with my family size for now.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I kept thinking we needed to decide what comes next."
+        },
+        {
+          "speaker": "B",
+          "text": "And now?"
+        },
+        {
+          "speaker": "A",
+          "text": "I think what we have may be enough for now."
+        },
+        {
+          "speaker": "B",
+          "text": "Then we can leave the door where it is."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "sadness",
+      "framing_a": "C's sound frames the decision as warmly appreciating the family as it is.",
+      "framing_b": "C's sound frames the same decision as a difficult acknowledgment of something being set aside.",
+      "why": "The words state a pause or boundary without specifying whether it feels welcome or painful; C's vocalization supplies that appraisal before B's deliberately ambiguous final line.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I kept thinking we needed to decide what comes next.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "And now?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I think what we have may be enough for now.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "Then we can leave the door where it is.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I kept thinking we needed to decide what comes next.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "And now?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "I think what we have may be enough for now.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "B",
+          "text": "Then we can leave the door where it is.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_035",
+      "seed_emotion": "confident",
+      "situation": "I will be in a competition tomorrow and judging from the way other competitors look, i will certainly be the winner",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The list for tomorrow is up."
+        },
+        {
+          "speaker": "B",
+          "text": "I looked through it."
+        },
+        {
+          "speaker": "A",
+          "text": "What did you find?"
+        },
+        {
+          "speaker": "B",
+          "text": "Everyone I expected is on it."
+        },
+        {
+          "speaker": "A",
+          "text": "All right. I know what I need to do."
+        }
+      ],
+      "voc_after_turn": 4,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "fear",
+      "framing_a": "C's sound suggests that the field confirms a favorable expectation, making A's final line sound like composed readiness to follow through.",
+      "framing_b": "C's sound suggests that seeing the full field raises the stakes, making A's final line sound like a response to an intimidating situation.",
+      "why": "The words establish an upcoming competition and a revealed roster but do not say whether that roster is encouraging or threatening. The same final commitment can be heard as either assured preparation or determined action under pressure.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The list for tomorrow is up.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I looked through it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "What did you find?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Everyone I expected is on it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "All right. I know what I need to do.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The list for tomorrow is up.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I looked through it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "What did you find?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Everyone I expected is on it.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "All right. I know what I need to do.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_036",
+      "seed_emotion": "excited",
+      "situation": "My grand mum bought me a gold watch as a birthday gift, that really made me happy",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Grandma's things arrived today."
+        },
+        {
+          "speaker": "B",
+          "text": "Was there anything with your name on it?"
+        },
+        {
+          "speaker": "A",
+          "text": "A small box. Inside was a gold watch with a birthday tag."
+        },
+        {
+          "speaker": "B",
+          "text": "So she had picked that out ahead of time."
+        },
+        {
+          "speaker": "A",
+          "text": "I think I'll keep it exactly as it is."
+        }
+      ],
+      "voc_after_turn": 4,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "sadness",
+      "framing_a": "C's sound makes the watch feel like a warmly received birthday surprise.",
+      "framing_b": "C's sound makes the watch feel like a poignant item connected to Grandma's absence.",
+      "why": "The spoken details establish the watch and birthday connection but never explain the surrounding circumstances. A pleased vocalization frames it as a welcome gift, while a sad vocalization suggests it arrived among Grandma's belongings after a loss. C has no spoken turn.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Grandma's things arrived today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Was there anything with your name on it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "A small box. Inside was a gold watch with a birthday tag.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So she had picked that out ahead of time.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "A",
+          "text": "I think I'll keep it exactly as it is.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Grandma's things arrived today.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Was there anything with your name on it?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "A small box. Inside was a gold watch with a birthday tag.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So she had picked that out ahead of time.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "sadness"
+        },
+        {
+          "speaker": "A",
+          "text": "I think I'll keep it exactly as it is.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_037",
+      "seed_emotion": "anticipating",
+      "situation": "I could not wait to start school this past semester. I just wanted to learn",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "The semester starts on Monday."
+        },
+        {
+          "speaker": "B",
+          "text": "Did they send you the room numbers?"
+        },
+        {
+          "speaker": "A",
+          "text": "They did. I put everything by the door already."
+        },
+        {
+          "speaker": "B",
+          "text": "I suppose once you walk in, you'll know what it's going to be like."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "pleasure",
+      "emotion_b": "fear",
+      "framing_a": "C's vocalization makes the upcoming first day sound like something warmly welcomed.",
+      "framing_b": "C's vocalization makes the upcoming first day sound like an uncertain threshold with possible danger or overwhelm.",
+      "why": "The words establish preparation for a new semester without saying whether the prospect is appealing or threatening. The final line can be heard as either eager discovery or wary uncertainty, depending on C's sound.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "The semester starts on Monday.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did they send you the room numbers?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They did. I put everything by the door already.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "pleasure"
+        },
+        {
+          "speaker": "B",
+          "text": "I suppose once you walk in, you'll know what it's going to be like.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "The semester starts on Monday.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did they send you the room numbers?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They did. I put everything by the door already.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "I suppose once you walk in, you'll know what it's going to be like.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_038",
+      "seed_emotion": "hopeful",
+      "situation": "I took my finals exam last week. I am optimistic about the results but we shall see.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Did it come up?"
+        },
+        {
+          "speaker": "B",
+          "text": "Yeah, the results page finally loaded."
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what it says."
+        },
+        {
+          "speaker": "B",
+          "text": "I think so."
+        }
+      ],
+      "voc_after_turn": 2,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "fear",
+      "framing_a": "C's sound suggests the newly visible result is a successful outcome.",
+      "framing_b": "C's sound suggests the newly visible result carries an alarming outcome.",
+      "why": "The words establish that an exam-results page has appeared but never reveal what is on it. C's reaction supplies the appraisal, while A's following line can refer equally naturally to either kind of result.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Did it come up?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Yeah, the results page finally loaded.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what it says.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I think so.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Did it come up?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Yeah, the results page finally loaded.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "A",
+          "text": "So that's what it says.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "I think so.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_039",
+      "seed_emotion": "trusting",
+      "situation": "I trust President Trump all the way.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Did you catch the update from Washington?"
+        },
+        {
+          "speaker": "B",
+          "text": "Only the part about the president speaking this evening."
+        },
+        {
+          "speaker": "A",
+          "text": "They said he would lay out what comes next."
+        },
+        {
+          "speaker": "B",
+          "text": "Then I suppose we have our answer."
+        }
+      ],
+      "voc_after_turn": 3,
+      "voc_speaker": "C",
+      "emotion_a": "achievement",
+      "emotion_b": "fear",
+      "framing_a": "C's vocalization suggests the announcement confirms a hoped-for outcome or a decisive win.",
+      "framing_b": "C's vocalization suggests the announcement signals an alarming outcome or an uncertain threat.",
+      "why": "The update and the coming speech are neutral in the spoken transcript. C's sound determines whether “our answer” is heard as favorable resolution or as a cause for alarm.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "Did you catch the update from Washington?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Only the part about the president speaking this evening.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They said he would lay out what comes next.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "achievement"
+        },
+        {
+          "speaker": "B",
+          "text": "Then I suppose we have our answer.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "Did you catch the update from Washington?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Only the part about the president speaking this evening.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "They said he would lay out what comes next.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "Then I suppose we have our answer.",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "item_id": "v4_040",
+      "seed_emotion": "afraid",
+      "situation": "I think a mouse is in my kitchen again.",
+      "attempts": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "I heard something moving behind the cabinet again."
+        },
+        {
+          "speaker": "B",
+          "text": "Did you see where it went?"
+        },
+        {
+          "speaker": "A",
+          "text": "No. I just found the bag on the floor."
+        },
+        {
+          "speaker": "B",
+          "text": "So it got in somehow."
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently."
+        },
+        {
+          "speaker": "B",
+          "text": "We can deal with it before dinner."
+        }
+      ],
+      "voc_after_turn": 5,
+      "voc_speaker": "C",
+      "emotion_a": "relief",
+      "emotion_b": "fear",
+      "framing_a": "C's sound suggests the discovery makes the situation feel manageable or that the source may be gone.",
+      "framing_b": "C's sound suggests the unseen movement signals an immediate threat still somewhere nearby.",
+      "why": "The words establish an unexplained disturbance without revealing whether it is contained, harmless, or imminent. The vocalization comes after the uncertainty is stated, and B's final practical line can sound either reassuring or urgently cautious.",
+      "condition_a": [
+        {
+          "speaker": "A",
+          "text": "I heard something moving behind the cabinet again.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did you see where it went?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "No. I just found the bag on the floor.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So it got in somehow.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "relief"
+        },
+        {
+          "speaker": "B",
+          "text": "We can deal with it before dinner.",
+          "kind": "speech"
+        }
+      ],
+      "condition_b": [
+        {
+          "speaker": "A",
+          "text": "I heard something moving behind the cabinet again.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "Did you see where it went?",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "No. I just found the bag on the floor.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "B",
+          "text": "So it got in somehow.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "A",
+          "text": "Apparently.",
+          "kind": "speech"
+        },
+        {
+          "speaker": "C",
+          "kind": "vocalization",
+          "label": "fear"
+        },
+        {
+          "speaker": "B",
+          "text": "We can deal with it before dinner.",
+          "kind": "speech"
+        }
+      ]
+    }
+  ]
+}

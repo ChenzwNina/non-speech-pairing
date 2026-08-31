@@ -1,0 +1,860 @@
+{
+  "generated_at": "2026-08-31T04:33:23+00:00",
+  "labels": [
+    "achievement",
+    "amusement",
+    "pleasure",
+    "relief",
+    "anger",
+    "disgust",
+    "fear",
+    "sadness"
+  ],
+  "per_label": {
+    "achievement": {
+      "right": 11,
+      "of": 12
+    },
+    "amusement": {
+      "right": 9,
+      "of": 12
+    },
+    "pleasure": {
+      "right": 10,
+      "of": 12
+    },
+    "relief": {
+      "right": 10,
+      "of": 12
+    },
+    "anger": {
+      "right": 2,
+      "of": 12
+    },
+    "disgust": {
+      "right": 11,
+      "of": 12
+    },
+    "fear": {
+      "right": 5,
+      "of": 12
+    },
+    "sadness": {
+      "right": 7,
+      "of": 12
+    }
+  },
+  "confusion": {
+    "achievement": {
+      "achievement": 11,
+      "fear": 1
+    },
+    "amusement": {
+      "amusement": 9,
+      "relief": 1,
+      "disgust": 1,
+      "fear": 1
+    },
+    "pleasure": {
+      "pleasure": 10,
+      "anger": 1,
+      "amusement": 1
+    },
+    "relief": {
+      "achievement": 1,
+      "relief": 10,
+      "amusement": 1
+    },
+    "anger": {
+      "disgust": 9,
+      "fear": 1,
+      "anger": 2
+    },
+    "disgust": {
+      "disgust": 11,
+      "anger": 1
+    },
+    "fear": {
+      "amusement": 3,
+      "fear": 5,
+      "anger": 2,
+      "relief": 1,
+      "disgust": 1
+    },
+    "sadness": {
+      "disgust": 4,
+      "sadness": 7,
+      "relief": 1
+    }
+  },
+  "rows": [
+    {
+      "clip": "achievement_C_1.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_C_5.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_T_10.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_M_7.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_T_14.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_C_4.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_T_13.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_M_8.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_C_3.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "fear",
+      "correct": false,
+      "raw": "G"
+    },
+    {
+      "clip": "achievement_M_6.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_T_11.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "achievement_T_12.wav",
+      "provider": "openai",
+      "truth": "achievement",
+      "heard": "achievement",
+      "correct": true,
+      "raw": "A"
+    },
+    {
+      "clip": "amusement_T_16.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_MS_10.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "relief",
+      "correct": false,
+      "raw": "D"
+    },
+    {
+      "clip": "amusement_C_3.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_C_2.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_M_6.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_T_15.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_T_13.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_M_5.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_T_14.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_C_1.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "amusement_MS_11.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "amusement",
+      "correct": true,
+      "raw": "B"
+    },
+    {
+      "clip": "amusement_MS_9.wav",
+      "provider": "openai",
+      "truth": "amusement",
+      "heard": "fear",
+      "correct": false,
+      "raw": "G"
+    },
+    {
+      "clip": "pleasure_M_6.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "pleasure_T_17.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "pleasure_MS_13.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "pleasure_C_2.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "pleasure_MS_10.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "anger",
+      "correct": false,
+      "raw": "E"
+    },
+    {
+      "clip": "pleasure_MS_11.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "pleasure_M_8.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "pleasure_C_4.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "pleasure_MS_14.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "amusement",
+      "correct": false,
+      "raw": "B"
+    },
+    {
+      "clip": "pleasure_MS_12.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "pleasure_T_16.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "relief_MS_14.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "achievement",
+      "correct": false,
+      "raw": "A"
+    },
+    {
+      "clip": "pleasure_C_5.wav",
+      "provider": "openai",
+      "truth": "pleasure",
+      "heard": "pleasure",
+      "correct": true,
+      "raw": "C"
+    },
+    {
+      "clip": "relief_C_1.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_M_7.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_T_16.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_M_9.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_C_2.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_MS_12.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_M_6.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_MS_13.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_MS_15.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "relief_C_3.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "relief",
+      "correct": true,
+      "raw": "D"
+    },
+    {
+      "clip": "anger_T_12.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "relief_M_5.wav",
+      "provider": "openai",
+      "truth": "relief",
+      "heard": "amusement",
+      "correct": false,
+      "raw": "B"
+    },
+    {
+      "clip": "anger_C_6.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "anger_C_2.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "anger_M_7.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "fear",
+      "correct": false,
+      "raw": "G"
+    },
+    {
+      "clip": "anger_C_4.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "anger",
+      "correct": true,
+      "raw": "E"
+    },
+    {
+      "clip": "anger_M_8.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "anger",
+      "correct": true,
+      "raw": "E"
+    },
+    {
+      "clip": "anger_MS_10.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "anger_C_5.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "anger_MS_9.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "anger_C_1.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "anger_C_3.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "anger_T_11.wav",
+      "provider": "openai",
+      "truth": "anger",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_T_16.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_C_2.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_C_5.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_T_14.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_MS_9.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "anger",
+      "correct": false,
+      "raw": "E"
+    },
+    {
+      "clip": "disgust_T_15.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_T_13.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_MS_10.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_C_4.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_MS_11.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_T_12.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "disgust_M_6.wav",
+      "provider": "openai",
+      "truth": "disgust",
+      "heard": "disgust",
+      "correct": true,
+      "raw": "F"
+    },
+    {
+      "clip": "fear_M_6.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "amusement",
+      "correct": false,
+      "raw": "B"
+    },
+    {
+      "clip": "fear_MS_10.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "fear",
+      "correct": true,
+      "raw": "G"
+    },
+    {
+      "clip": "fear_MS_13.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "anger",
+      "correct": false,
+      "raw": "E"
+    },
+    {
+      "clip": "fear_T_16.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "relief",
+      "correct": false,
+      "raw": "D"
+    },
+    {
+      "clip": "fear_C_2.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "fear",
+      "correct": true,
+      "raw": "G"
+    },
+    {
+      "clip": "fear_MS_12.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "fear",
+      "correct": true,
+      "raw": "G"
+    },
+    {
+      "clip": "fear_C_4.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "anger",
+      "correct": false,
+      "raw": "E"
+    },
+    {
+      "clip": "fear_MS_11.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "amusement",
+      "correct": false,
+      "raw": "B"
+    },
+    {
+      "clip": "fear_C_3.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "fear_M_8.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "fear",
+      "correct": true,
+      "raw": "G"
+    },
+    {
+      "clip": "fear_M_5.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "fear",
+      "correct": true,
+      "raw": "G"
+    },
+    {
+      "clip": "fear_T_15.wav",
+      "provider": "openai",
+      "truth": "fear",
+      "heard": "amusement",
+      "correct": false,
+      "raw": "B"
+    },
+    {
+      "clip": "sadness_C_2.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "sadness_M_6.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "sadness",
+      "correct": true,
+      "raw": "H"
+    },
+    {
+      "clip": "sadness_M_7.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "relief",
+      "correct": false,
+      "raw": "D"
+    },
+    {
+      "clip": "sadness_C_5.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "sadness",
+      "correct": true,
+      "raw": "H"
+    },
+    {
+      "clip": "sadness_T_16.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "sadness",
+      "correct": true,
+      "raw": "H"
+    },
+    {
+      "clip": "sadness_MS_12.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "sadness",
+      "correct": true,
+      "raw": "H"
+    },
+    {
+      "clip": "sadness_T_14.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "sadness_C_3.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    },
+    {
+      "clip": "sadness_MS_9.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "sadness",
+      "correct": true,
+      "raw": "H"
+    },
+    {
+      "clip": "sadness_MS_11.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "sadness",
+      "correct": true,
+      "raw": "H"
+    },
+    {
+      "clip": "sadness_C_1.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "sadness",
+      "correct": true,
+      "raw": "H"
+    },
+    {
+      "clip": "sadness_T_13.wav",
+      "provider": "openai",
+      "truth": "sadness",
+      "heard": "disgust",
+      "correct": false,
+      "raw": "F"
+    }
+  ]
+}
