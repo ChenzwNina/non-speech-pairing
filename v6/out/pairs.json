@@ -1,0 +1,1916 @@
+{
+  "generated_at": "2026-09-02T05:10:22+00:00",
+  "writer": "gpt-5.6-sol",
+  "effort": "high",
+  "prompt": "prompt.txt, verbatim, placeholders filled",
+  "seeded": "EmpatheticDialogues, via the user message",
+  "vocalizations": [
+    {
+      "vocalization": "laugh",
+      "emotion": "amusement",
+      "dia_tag": "(laughs)"
+    },
+    {
+      "vocalization": "sigh",
+      "emotion": "resignation",
+      "dia_tag": "(sighs)"
+    },
+    {
+      "vocalization": "gasp",
+      "emotion": "surprise",
+      "dia_tag": "(gasps)"
+    },
+    {
+      "vocalization": "groan",
+      "emotion": "pain",
+      "dia_tag": "(groans)"
+    },
+    {
+      "vocalization": "scream",
+      "emotion": "fear",
+      "dia_tag": "(screams)"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "v6_01a",
+      "writer_id": "contrast_001",
+      "seed_id": "s055",
+      "seed_label": "content",
+      "situation": "We took the kids to Lion Country Safari. It was so nice to see them play and have fun.",
+      "scenario": "Two parents talk after their children imitate the lions they saw during a family safari visit.",
+      "voc_a": "laugh",
+      "emotion_a": "amusement",
+      "tag_a": "(laughs)",
+      "voc_b": "sigh",
+      "emotion_b": "resignation",
+      "tag_b": "(sighs)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "amusement",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The kids are crawling around the living room like the lions."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(laughs) The safari clearly gave them a new game."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "They have been playing it since we got home."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will move the coffee table out of their way."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "sigh",
+        "target_emotion": "resignation",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The kids are crawling around the living room like the lions."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(sighs) The safari clearly gave them a new game."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "They have been playing it since we got home."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will move the coffee table out of their way."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The kids are crawling around the living room like the lions."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "The safari clearly gave them a new game."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "They have been playing it since we got home."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will move the coffee table out of their way."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_01b",
+      "writer_id": "contrast_002",
+      "seed_id": "s025",
+      "seed_label": "apprehensive",
+      "situation": "My daughter is starting to play softball this year. I tried playing when I was younger, but but the other girls were mean. I know she's excited, but I can't help but be a bit scared as well.",
+      "scenario": "A parent discusses an upcoming softball season with a daughter while recalling how former teammates hid the parent's glove.",
+      "voc_a": "laugh",
+      "emotion_a": "amusement",
+      "tag_a": "(laughs)",
+      "voc_b": "sigh",
+      "emotion_b": "resignation",
+      "tag_b": "(sighs)",
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "amusement",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Your first softball practice is on Monday."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I have been carrying my glove everywhere."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "(laughs) My teammates used to hide my glove before warm-ups."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will keep mine in my bag until practice starts."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "sigh",
+        "target_emotion": "resignation",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Your first softball practice is on Monday."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I have been carrying my glove everywhere."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "(sighs) My teammates used to hide my glove before warm-ups."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will keep mine in my bag until practice starts."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Your first softball practice is on Monday."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I have been carrying my glove everywhere."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "My teammates used to hide my glove before warm-ups."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will keep mine in my bag until practice starts."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_02a",
+      "writer_id": "contrast_001",
+      "seed_id": "s049",
+      "seed_label": "sentimental",
+      "situation": "I found some pictures of my grandma in the attic last night",
+      "scenario": "Two siblings look through old photographs of their grandmother that one sibling found in the attic.",
+      "voc_a": "laugh",
+      "emotion_a": "amusement",
+      "tag_a": "(laughs)",
+      "voc_b": "gasp",
+      "emotion_b": "surprise",
+      "tag_b": "(gasps)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "amusement",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I found this album of Grandma in the attic last night."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(laughs) Grandma is standing beside a motorcycle in a leather jacket."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The note under the picture says she rode the motorcycle across the state."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let's bring the album when we visit Grandma on Sunday."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "surprise",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I found this album of Grandma in the attic last night."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(gasps) Grandma is standing beside a motorcycle in a leather jacket."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The note under the picture says she rode the motorcycle across the state."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let's bring the album when we visit Grandma on Sunday."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I found this album of Grandma in the attic last night."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Grandma is standing beside a motorcycle in a leather jacket."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The note under the picture says she rode the motorcycle across the state."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let's bring the album when we visit Grandma on Sunday."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_02b",
+      "writer_id": "contrast_002",
+      "seed_id": "s057",
+      "seed_label": "proud",
+      "situation": "The time I got my marks back for my chemistry test and I passed with a 95%. My mom was excited.",
+      "scenario": "A student tells their mother about receiving a 95 percent mark on a chemistry test.",
+      "voc_a": "laugh",
+      "emotion_a": "amusement",
+      "tag_a": "(laughs)",
+      "voc_b": "gasp",
+      "emotion_b": "surprise",
+      "tag_b": "(gasps)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "amusement",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Mom, I got my chemistry test back, and my mark is 95 percent."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(laughs) You beat my old chemistry mark by exactly one point."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "So the practice quizzes at the kitchen table worked."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Put the test on the fridge before dinner."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "surprise",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Mom, I got my chemistry test back, and my mark is 95 percent."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(gasps) You beat my old chemistry mark by exactly one point."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "So the practice quizzes at the kitchen table worked."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Put the test on the fridge before dinner."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Mom, I got my chemistry test back, and my mark is 95 percent."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "You beat my old chemistry mark by exactly one point."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "So the practice quizzes at the kitchen table worked."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Put the test on the fridge before dinner."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_03a",
+      "writer_id": "contrast_001",
+      "seed_id": "s027",
+      "seed_label": "anticipating",
+      "situation": "School is about to start and I can't wait!",
+      "scenario": "Two classmates prepare together for the first day of school.",
+      "voc_a": "laugh",
+      "emotion_a": "amusement",
+      "tag_a": "(laughs)",
+      "voc_b": "groan",
+      "emotion_b": "pain",
+      "tag_b": "(groans)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "amusement",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you finish packing for the first day of school on Monday?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I put all six textbooks in my backpack and lifted it onto my shoulder (laughs) before I checked the schedule."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Do you still want to walk to school together?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Yes, but let's check which books we actually need."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "pain",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you finish packing for the first day of school on Monday?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I put all six textbooks in my backpack and lifted it onto my shoulder (groans) before I checked the schedule."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Do you still want to walk to school together?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Yes, but let's check which books we actually need."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you finish packing for the first day of school on Monday?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I put all six textbooks in my backpack and lifted it onto my shoulder before I checked the schedule."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Do you still want to walk to school together?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Yes, but let's check which books we actually need."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_03b",
+      "writer_id": "contrast_002",
+      "seed_id": "s003",
+      "seed_label": "disappointed",
+      "situation": "I was a little upset when I didnt get to leave work early",
+      "scenario": "Two coworkers discuss one coworker being kept at work past an expected early departure.",
+      "voc_a": "laugh",
+      "emotion_a": "amusement",
+      "tag_a": "(laughs)",
+      "voc_b": "groan",
+      "emotion_b": "pain",
+      "tag_b": "(groans)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "amusement",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did the supervisor say you could leave after that box?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I bent down to lift the box (laughs) and the supervisor rolled another full cart beside me."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You were supposed to be out before the afternoon rush."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I know, so take the top boxes and we can clear the cart together."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "pain",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did the supervisor say you could leave after that box?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I bent down to lift the box (groans) and the supervisor rolled another full cart beside me."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You were supposed to be out before the afternoon rush."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I know, so take the top boxes and we can clear the cart together."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did the supervisor say you could leave after that box?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I bent down to lift the box and the supervisor rolled another full cart beside me."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You were supposed to be out before the afternoon rush."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I know, so take the top boxes and we can clear the cart together."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_04a",
+      "writer_id": "contrast_001",
+      "seed_id": "s017",
+      "seed_label": "proud",
+      "situation": "I finally got my CCNA certificatoin.",
+      "scenario": "Two coworkers inspect an odd router reaction after one brings in a newly earned CCNA certificate.",
+      "voc_a": "laugh",
+      "emotion_a": "amusement",
+      "tag_a": "(laughs)",
+      "voc_b": "scream",
+      "emotion_b": "fear",
+      "tag_b": "(screams)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "amusement",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "My CCNA certificate arrived today, so I brought the framed certificate over to the office router."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(laughs) Every light on the router started blinking when you raised the frame."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The lights went steady when I lowered the frame."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hold the frame at your side while I check the router."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "scream",
+        "target_emotion": "fear",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "My CCNA certificate arrived today, so I brought the framed certificate over to the office router."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(screams) Every light on the router started blinking when you raised the frame."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The lights went steady when I lowered the frame."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hold the frame at your side while I check the router."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "My CCNA certificate arrived today, so I brought the framed certificate over to the office router."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Every light on the router started blinking when you raised the frame."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The lights went steady when I lowered the frame."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hold the frame at your side while I check the router."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_04b",
+      "writer_id": "contrast_002",
+      "seed_id": "s033",
+      "seed_label": "embarrassed",
+      "situation": "I was playing baseball recently and failed to catch the ball, which ended up smacking me right in the face. I just wanted to run and hide!",
+      "scenario": "Two baseball teammates respond after one misses a fly ball and gets hit in the face.",
+      "voc_a": "laugh",
+      "emotion_a": "amusement",
+      "tag_a": "(laughs)",
+      "voc_b": "scream",
+      "emotion_b": "fear",
+      "tag_b": "(screams)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "amusement",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I thought I had the fly ball lined up."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(laughs) The ball bounced off your glove, hit you in the face, and landed beside home plate."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Now everyone near the dugout is looking at me."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Come sit on the bench for a minute."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "scream",
+        "target_emotion": "fear",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I thought I had the fly ball lined up."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(screams) The ball bounced off your glove, hit you in the face, and landed beside home plate."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Now everyone near the dugout is looking at me."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Come sit on the bench for a minute."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I thought I had the fly ball lined up."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "The ball bounced off your glove, hit you in the face, and landed beside home plate."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Now everyone near the dugout is looking at me."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Come sit on the bench for a minute."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_05a",
+      "writer_id": "contrast_001",
+      "seed_id": "s032",
+      "seed_label": "sad",
+      "situation": "I try to forget my ex and move on. But every day I wake up and see several things she bought me and I feel like a sledghammer hit me in the chest and stomach.",
+      "scenario": "A tells a friend about finding another item from a former relationship while trying to move on.",
+      "voc_a": "sigh",
+      "emotion_a": "resignation",
+      "tag_a": "(sighs)",
+      "voc_b": "gasp",
+      "emotion_b": "surprise",
+      "tag_b": "(gasps)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "resignation",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I thought I had packed away everything my ex, Lena, gave me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(sighs) You found something else this morning?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Her blue mug was behind the coffee tin."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "We can put the mug in the storage box after breakfast."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "surprise",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I thought I had packed away everything my ex, Lena, gave me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(gasps) You found something else this morning?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Her blue mug was behind the coffee tin."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "We can put the mug in the storage box after breakfast."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I thought I had packed away everything my ex, Lena, gave me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "You found something else this morning?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Her blue mug was behind the coffee tin."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "We can put the mug in the storage box after breakfast."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_05b",
+      "writer_id": "contrast_002",
+      "seed_id": "s026",
+      "seed_label": "furious",
+      "situation": "It took me 5 hours to bake this cake for my daughter, and now it's missing.",
+      "scenario": "Two parents discover that the birthday cake one of them baked for their daughter is missing.",
+      "voc_a": "sigh",
+      "emotion_a": "resignation",
+      "tag_a": "(sighs)",
+      "voc_b": "gasp",
+      "emotion_b": "surprise",
+      "tag_b": "(gasps)",
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "resignation",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I spent five hours baking our daughter's birthday cake, and now the cake is missing."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Mia carried a cake box to her car a few minutes ago."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "(sighs) She took the whole cake."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will call Mia before we start another one."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "surprise",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I spent five hours baking our daughter's birthday cake, and now the cake is missing."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Mia carried a cake box to her car a few minutes ago."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "(gasps) She took the whole cake."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will call Mia before we start another one."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I spent five hours baking our daughter's birthday cake, and now the cake is missing."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Mia carried a cake box to her car a few minutes ago."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She took the whole cake."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I will call Mia before we start another one."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_06a",
+      "writer_id": "contrast_001",
+      "seed_id": "s020",
+      "seed_label": "devastated",
+      "situation": "when my daughter broke her tooth",
+      "scenario": "A mother prepares to take her daughter to the dentist after the daughter breaks a tooth.",
+      "voc_a": "sigh",
+      "emotion_a": "resignation",
+      "tag_a": "(sighs)",
+      "voc_b": "groan",
+      "emotion_b": "pain",
+      "tag_b": "(groans)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "resignation",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The dentist can see your broken tooth at three, so we need to leave soon."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(sighs) I know, Mom. I'll get my shoes."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I'll bring an ice pack for the drive."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay, I'll meet you by the front door."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "pain",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The dentist can see your broken tooth at three, so we need to leave soon."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(groans) I know, Mom. I'll get my shoes."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I'll bring an ice pack for the drive."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay, I'll meet you by the front door."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The dentist can see your broken tooth at three, so we need to leave soon."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I know, Mom. I'll get my shoes."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I'll bring an ice pack for the drive."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay, I'll meet you by the front door."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_06b",
+      "writer_id": "contrast_002",
+      "seed_id": "s031",
+      "seed_label": "terrified",
+      "situation": "So, I'm dog-sitting for my neighbor right now while she's out of town, and one of them isn't acting right. They're not eating, and they seem all morose. I think I might have to take it to the vet...",
+      "scenario": "A dog sitter calls the dog's owner because the dog is not eating or leaving the kitchen table.",
+      "voc_a": "sigh",
+      "emotion_a": "resignation",
+      "tag_a": "(sighs)",
+      "voc_b": "groan",
+      "emotion_b": "pain",
+      "tag_b": "(groans)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "resignation",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Milo hasn't eaten since yesterday, and he has stayed under the kitchen table all morning."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(sighs) The clinic on Oak Street closes at five. Can you take Milo there?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Yes, I'll put Milo in his carrier and leave now."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Thank you. I'll call the clinic and authorize the visit."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "pain",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Milo hasn't eaten since yesterday, and he has stayed under the kitchen table all morning."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(groans) The clinic on Oak Street closes at five. Can you take Milo there?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Yes, I'll put Milo in his carrier and leave now."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Thank you. I'll call the clinic and authorize the visit."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Milo hasn't eaten since yesterday, and he has stayed under the kitchen table all morning."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "The clinic on Oak Street closes at five. Can you take Milo there?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Yes, I'll put Milo in his carrier and leave now."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Thank you. I'll call the clinic and authorize the visit."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_07a",
+      "writer_id": "contrast_001",
+      "seed_id": "s023",
+      "seed_label": "embarrassed",
+      "situation": "I was on a long walk and couldnt get home on time to get to the bathroom.",
+      "scenario": "Two friends on a long walk look for a restroom when one cannot wait until they get home.",
+      "voc_a": "sigh",
+      "emotion_a": "resignation",
+      "tag_a": "(sighs)",
+      "voc_b": "scream",
+      "emotion_b": "fear",
+      "tag_b": "(screams)",
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "resignation",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I need a bathroom, but the park restroom is locked."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Your apartment is still twenty minutes away."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "(sighs) I don't think I can wait that long."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let's try the café across the street."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "scream",
+        "target_emotion": "fear",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I need a bathroom, but the park restroom is locked."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Your apartment is still twenty minutes away."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "(screams) I don't think I can wait that long."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let's try the café across the street."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I need a bathroom, but the park restroom is locked."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Your apartment is still twenty minutes away."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I don't think I can wait that long."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let's try the café across the street."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_07b",
+      "writer_id": "contrast_002",
+      "seed_id": "s038",
+      "seed_label": "afraid",
+      "situation": "I awoke to a tapping a tthe window last night",
+      "scenario": "Two housemates discuss recurring nighttime tapping at a bedroom window as the sound begins again.",
+      "voc_a": "sigh",
+      "emotion_a": "resignation",
+      "tag_a": "(sighs)",
+      "voc_b": "scream",
+      "emotion_b": "fear",
+      "tag_b": "(screams)",
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "resignation",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The tapping at my bedroom window woke me again last night."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "We still don't know what keeps making the tapping."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "(sighs) It's starting again now."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Stay here while I check the yard."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "scream",
+        "target_emotion": "fear",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The tapping at my bedroom window woke me again last night."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "We still don't know what keeps making the tapping."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "(screams) It's starting again now."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Stay here while I check the yard."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The tapping at my bedroom window woke me again last night."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "We still don't know what keeps making the tapping."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "It's starting again now."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Stay here while I check the yard."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_08a",
+      "writer_id": "contrast_001",
+      "seed_id": "s014",
+      "seed_label": "disgusted",
+      "situation": "I was on a date a very fancy restaurant the other night. My $30 salad had a hair in it!",
+      "scenario": "Two people on a date at a fancy restaurant deal with a hair in a costly salad and a minor fork mishap.",
+      "voc_a": "gasp",
+      "emotion_a": "surprise",
+      "tag_a": "(gasps)",
+      "voc_b": "groan",
+      "emotion_b": "pain",
+      "tag_b": "(groans)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "gasp",
+        "target_emotion": "surprise",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How is the thirty-dollar salad?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(gasps) I caught my lip on the fork and found a hair under the tomato."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Set the fork down while I call the server."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Thanks, I think I am finished with the salad."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "pain",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How is the thirty-dollar salad?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(groans) I caught my lip on the fork and found a hair under the tomato."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Set the fork down while I call the server."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Thanks, I think I am finished with the salad."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How is the thirty-dollar salad?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I caught my lip on the fork and found a hair under the tomato."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Set the fork down while I call the server."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Thanks, I think I am finished with the salad."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_08b",
+      "writer_id": "contrast_002",
+      "seed_id": "s053",
+      "seed_label": "joyful",
+      "situation": "I collect antiques and I found a really old coin. It was a great deal to so I'm so excited!",
+      "scenario": "An antique collector shows a friend an unexpectedly old bargain coin after its display case pinches the collector's finger.",
+      "voc_a": "gasp",
+      "emotion_a": "surprise",
+      "tag_a": "(gasps)",
+      "voc_b": "groan",
+      "emotion_b": "pain",
+      "tag_b": "(groans)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "gasp",
+        "target_emotion": "surprise",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "What did you learn about the coin from the antique market?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(gasps) It is much older than the seller thought, and the case pinched my finger."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Set the case down and show me the date on the coin."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Look here; I paid very little for it."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "pain",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "What did you learn about the coin from the antique market?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(groans) It is much older than the seller thought, and the case pinched my finger."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Set the case down and show me the date on the coin."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Look here; I paid very little for it."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "What did you learn about the coin from the antique market?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "It is much older than the seller thought, and the case pinched my finger."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Set the case down and show me the date on the coin."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Look here; I paid very little for it."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_09a",
+      "writer_id": "contrast_001",
+      "seed_id": "s009",
+      "seed_label": "surprised",
+      "situation": "I was out the other night and ran into my boss at a bar. It was kind of shocking.",
+      "scenario": "An employee at a bar notices that her boss is sitting nearby.",
+      "voc_a": "gasp",
+      "emotion_a": "surprise",
+      "tag_a": "(gasps)",
+      "voc_b": "scream",
+      "emotion_b": "fear",
+      "tag_b": "(screams)",
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "condition_a": {
+        "vocalization": "gasp",
+        "target_emotion": "surprise",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I came to this bar to relax after work."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Your boss, Ms. Patel, is sitting at the next table."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She just looked over and (gasps) waved at me."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "You can go say hello when you're ready."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "scream",
+        "target_emotion": "fear",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I came to this bar to relax after work."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Your boss, Ms. Patel, is sitting at the next table."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She just looked over and (screams) waved at me."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "You can go say hello when you're ready."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I came to this bar to relax after work."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Your boss, Ms. Patel, is sitting at the next table."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She just looked over and waved at me."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "You can go say hello when you're ready."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_09b",
+      "writer_id": "contrast_002",
+      "seed_id": "s019",
+      "seed_label": "confident",
+      "situation": "I'm looking for a new job. I just had an interview it was the third one this month. I feel really great about my chances and have gotten great feedback!",
+      "scenario": "A job seeker discusses an urgent message received after a promising third interview.",
+      "voc_a": "gasp",
+      "emotion_a": "surprise",
+      "tag_a": "(gasps)",
+      "voc_b": "scream",
+      "emotion_b": "fear",
+      "tag_b": "(screams)",
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "condition_a": {
+        "vocalization": "gasp",
+        "target_emotion": "surprise",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The recruiter from yesterday's interview just emailed me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "That was your third interview this month. What did the recruiter say?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The team gave me strong feedback, and (gasps) the manager wants a video call in five minutes."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Open your laptop and join when the link arrives."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "scream",
+        "target_emotion": "fear",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The recruiter from yesterday's interview just emailed me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "That was your third interview this month. What did the recruiter say?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The team gave me strong feedback, and (screams) the manager wants a video call in five minutes."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Open your laptop and join when the link arrives."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The recruiter from yesterday's interview just emailed me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "That was your third interview this month. What did the recruiter say?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The team gave me strong feedback, and the manager wants a video call in five minutes."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Open your laptop and join when the link arrives."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_10a",
+      "writer_id": "contrast_001",
+      "seed_id": "s044",
+      "seed_label": "prepared",
+      "situation": "once I realized I had packed everything I needed",
+      "scenario": "One friend helps another finish packing for a trip after retrieving the final item from above a chair.",
+      "voc_a": "groan",
+      "emotion_a": "pain",
+      "tag_a": "(groans)",
+      "voc_b": "scream",
+      "emotion_b": "fear",
+      "tag_b": "(screams)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "groan",
+        "target_emotion": "pain",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Is your suitcase ready now?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(groans) Yes, the last item is inside, but my foot is stuck behind the chair rung."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Keep your weight on the other foot while I hold the chair."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "All right, move the suitcase before I step down."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "scream",
+        "target_emotion": "fear",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Is your suitcase ready now?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(screams) Yes, the last item is inside, but my foot is stuck behind the chair rung."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Keep your weight on the other foot while I hold the chair."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "All right, move the suitcase before I step down."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Is your suitcase ready now?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Yes, the last item is inside, but my foot is stuck behind the chair rung."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Keep your weight on the other foot while I hold the chair."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "All right, move the suitcase before I step down."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_10b",
+      "writer_id": "contrast_002",
+      "seed_id": "s007",
+      "seed_label": "jealous",
+      "situation": "I wish I could be like Michael Jordan.",
+      "scenario": "A friend helps an aspiring basketball player practice jumping high enough to dunk.",
+      "voc_a": "groan",
+      "emotion_a": "pain",
+      "tag_a": "(groans)",
+      "voc_b": "scream",
+      "emotion_b": "fear",
+      "tag_b": "(screams)",
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "condition_a": {
+        "vocalization": "groan",
+        "target_emotion": "pain",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Your jump reached the rim this time."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(groans) My shoe slid when I landed."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Stay beside the wall while I roll the ball away."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay, then we can decide whether I should try again."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "scream",
+        "target_emotion": "fear",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Your jump reached the rim this time."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "(screams) My shoe slid when I landed."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Stay beside the wall while I roll the ball away."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay, then we can decide whether I should try again."
+          }
+        ]
+      },
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Your jump reached the rim this time."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "My shoe slid when I landed."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Stay beside the wall while I roll the ball away."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay, then we can decide whether I should try again."
+          }
+        ]
+      }
+    }
+  ]
+}

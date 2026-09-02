@@ -1,0 +1,145 @@
+You are generating controlled minimal-pair conversational stimuli for evaluating how non-speech vocalizations frame the emotional interpretation of spoken dialogue.
+Input
+You will receive exactly two vocalization conditions:
+CONDITION_A:
+
+* vocalization: {{VOCALIZATION_A}}
+* target_emotion: {{EMOTION_A}}
+* Dia tag: {{TAG_A}}
+
+CONDITION_B:
+
+* vocalization: {{VOCALIZATION_B}}
+* target_emotion: {{EMOTION_B}}
+* Dia tag: {{TAG_B}}
+
+For example:
+CONDITION_A:
+
+* vocalization: laugh
+* target_emotion: amusement
+* Dia tag: (laughs)
+
+CONDITION_B:
+
+* vocalization: sigh
+* target_emotion: resignation
+* Dia tag: (sighs)
+
+Generate {{N_ITEMS}} independent contrast sets.
+Task
+For each contrast set, write one underlying two-speaker conversation and produce exactly three versions:
+
+1. `condition_a`: contains the CONDITION_A vocalization.
+2. `condition_b`: contains the CONDITION_B vocalization.
+3. `baseline`: contains no non-speech vocalization.
+
+The vocalization must change how a listener interprets the emotional meaning of the entire conversation:
+
+* In `condition_a`, the conversation should naturally be interpreted as expressing `{{EMOTION_A}}`.
+* In `condition_b`, the same spoken words should naturally be interpreted as expressing `{{EMOTION_B}}`.
+* In `baseline`, the emotional interpretation should remain reasonably ambiguous between the two readings.
+
+Conversation structure
+Each version must:
+
+* Contain exactly four turns.
+* Use exactly two speakers: `A` and `B`.
+* Follow the order `A → B → A → B`.
+* Describe a coherent, everyday situation.
+* Be understandable without external background information.
+* Use clear referents; avoid unclear pronouns such as “they,” “that,” or “the part” unless their referents are explicit.
+* Sound like natural spoken English rather than literary narration.
+* Use the vocalization inside a spoken turn, preferably Turn 2 or Turn 3.
+* Never make a vocalization its own standalone turn.
+
+Minimal-pair constraints
+The three versions must have exactly the same:
+
+* Speaker order.
+* Number of turns.
+* Lexical words.
+* Punctuation, except for spacing required around the vocalization tag.
+* Vocalization position.
+
+The only permitted difference is:
+
+* `condition_a` contains `{{TAG_A}}`.
+* `condition_b` contains `{{TAG_B}}` at exactly the same location.
+* `baseline` contains nothing at that location.
+
+Both vocalized versions must contain exactly one vocalization. Do not insert any other laughter, sighing, gasping, groaning, screaming, crying, breathing, or paralinguistic markers.
+After removing `{{TAG_A}}` and `{{TAG_B}}`, all three transcripts must be textually identical.
+Emotional-framing constraints
+Construct a situation that genuinely supports both emotional interpretations.
+The spoken words must not explicitly name either emotion. Do not use lexical leakage such as:
+
+* “That is funny.”
+* “I am terrified.”
+* “This hurts.”
+* “What a surprise.”
+* “I give up.”
+* “Why are you laughing?”
+* “You sound scared.”
+
+Do not use emotion-specific stage directions, narration, capitalization, repeated punctuation, or sound descriptions.
+The dialogue must not make one vocalization condition obviously incompatible with the situation. Swapping CONDITION_A and CONDITION_B should change the interpretation, not make the conversation nonsensical.
+Turn 4 must remain a plausible response under both emotional interpretations. It should respond primarily to the shared situation or spoken content, rather than explicitly identifying the vocalization.
+Use the vocalization as an emotional framing cue, not merely as an unrelated sound effect.
+Quality checks
+Before returning each item, verify internally that:
+
+1. Each version has exactly four turns.
+2. The order is A–B–A–B.
+3. Each vocalized version contains exactly one target vocalization.
+4. The vocalizations occur in the same speaker turn and at the same lexical boundary.
+5. The baseline contains no vocalization.
+6. Removing the vocalization tags makes all versions identical.
+7. CONDITION_A makes the target emotion A plausible.
+8. CONDITION_B makes the target emotion B plausible.
+9. The baseline does not strongly imply only one emotion.
+10. The dialogue is coherent and understandable without hidden context.
+
+If a candidate fails any check, discard it and generate a new one.
+Output format
+Return valid JSON only. Do not include Markdown or explanatory text.
+{
+"items": [
+{
+"id": "contrast_001",
+"scenario": "One concise sentence describing the shared situation.",
+"condition_a": {
+"vocalization": "{{VOCALIZATION_A}}",
+"target_emotion": "{{EMOTION_A}}",
+"turns": [
+{"turn": 1, "speaker": "A", "text": "..."},
+{"turn": 2, "speaker": "B", "text": "..."},
+{"turn": 3, "speaker": "A", "text": "..."},
+{"turn": 4, "speaker": "B", "text": "..."}
+]
+},
+"condition_b": {
+"vocalization": "{{VOCALIZATION_B}}",
+"target_emotion": "{{EMOTION_B}}",
+"turns": [
+{"turn": 1, "speaker": "A", "text": "..."},
+{"turn": 2, "speaker": "B", "text": "..."},
+{"turn": 3, "speaker": "A", "text": "..."},
+{"turn": 4, "speaker": "B", "text": "..."}
+]
+},
+"baseline": {
+"vocalization": "none",
+"target_emotion": "ambiguous",
+"turns": [
+{"turn": 1, "speaker": "A", "text": "..."},
+{"turn": 2, "speaker": "B", "text": "..."},
+{"turn": 3, "speaker": "A", "text": "..."},
+{"turn": 4, "speaker": "B", "text": "..."}
+]
+},
+"vocalization_turn": 2,
+"vocalization_speaker": "B"
+}
+]
+}
