@@ -1,0 +1,2268 @@
+{
+  "rendered_at": "2026-09-03T22:12:04+00:00",
+  "renderer": "elevenlabs",
+  "model": "eleven_v3",
+  "transcripts": "out/pairs_spoken.json",
+  "items": [
+    {
+      "item_id": "v6_01a",
+      "rendered_at": "2026-09-03T22:11:58+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "The kids are crawling around the living room like lions.",
+          "path": "out/audio_turns/elevenlabs/v6_01a__t1.mp3",
+          "seconds": 3.04
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "Looks like the safari gave them a new game.",
+          "path": "out/audio_turns/elevenlabs/v6_01a__t2.mp3",
+          "seconds": 2.64
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "They've been playing it since we got home.",
+          "path": "out/audio_turns/elevenlabs/v6_01a__t3.mp3",
+          "seconds": 1.68
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "I'll move the coffee table out of their way.",
+          "path": "out/audio_turns/elevenlabs/v6_01a__t4.mp3",
+          "seconds": 2.4
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[laughs] Looks like the safari gave them a new game.",
+          "dia_tag": "(laughs)",
+          "elevenlabs_tag": "[laughs]",
+          "path": "out/audio_turns/elevenlabs/v6_01a__t2__a.mp3",
+          "seconds": 3.36
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[sighs] Looks like the safari gave them a new game.",
+          "dia_tag": "(sighs)",
+          "elevenlabs_tag": "[sighs]",
+          "path": "out/audio_turns/elevenlabs/v6_01a__t2__b.mp3",
+          "seconds": 3.28
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_01a__t1.mp3",
+          "v6_01a__t2.mp3",
+          "v6_01a__t3.mp3",
+          "v6_01a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_01a__t1.mp3",
+          "v6_01a__t2__a.mp3",
+          "v6_01a__t3.mp3",
+          "v6_01a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_01a__t1.mp3",
+          "v6_01a__t2__b.mp3",
+          "v6_01a__t3.mp3",
+          "v6_01a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_01a__baseline.mp3",
+          "seconds": 10.81
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_01a__condition_a.mp3",
+          "seconds": 11.53
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_01a__condition_b.mp3",
+          "seconds": 11.45
+        }
+      ]
+    },
+    {
+      "item_id": "v6_01b",
+      "rendered_at": "2026-09-03T22:11:58+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "Your first softball practice is on Monday.",
+          "path": "out/audio_turns/elevenlabs/v6_01b__t1.mp3",
+          "seconds": 2.4
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "I've been taking my glove everywhere.",
+          "path": "out/audio_turns/elevenlabs/v6_01b__t2.mp3",
+          "seconds": 2.32
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "My teammates used to hide my glove before warm-ups.",
+          "path": "out/audio_turns/elevenlabs/v6_01b__t3.mp3",
+          "seconds": 2.72
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "I'll keep mine in my bag till practice starts.",
+          "path": "out/audio_turns/elevenlabs/v6_01b__t4.mp3",
+          "seconds": 2.8
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "a",
+          "text": "[laughs] My teammates used to hide my glove before warm-ups.",
+          "dia_tag": "(laughs)",
+          "elevenlabs_tag": "[laughs]",
+          "path": "out/audio_turns/elevenlabs/v6_01b__t3__a.mp3",
+          "seconds": 3.84
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "b",
+          "text": "[sighs] My teammates used to hide my glove before warm-ups.",
+          "dia_tag": "(sighs)",
+          "elevenlabs_tag": "[sighs]",
+          "path": "out/audio_turns/elevenlabs/v6_01b__t3__b.mp3",
+          "seconds": 2.88
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_01b__t1.mp3",
+          "v6_01b__t2.mp3",
+          "v6_01b__t3.mp3",
+          "v6_01b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_01b__t1.mp3",
+          "v6_01b__t2.mp3",
+          "v6_01b__t3__a.mp3",
+          "v6_01b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_01b__t1.mp3",
+          "v6_01b__t2.mp3",
+          "v6_01b__t3__b.mp3",
+          "v6_01b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_01b__baseline.mp3",
+          "seconds": 11.29
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_01b__condition_a.mp3",
+          "seconds": 12.41
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_01b__condition_b.mp3",
+          "seconds": 11.45
+        }
+      ]
+    },
+    {
+      "item_id": "v6_02a",
+      "rendered_at": "2026-09-03T22:11:58+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "Hey, I found this album of Grandma in the attic last night.",
+          "path": "out/audio_turns/elevenlabs/v6_02a__t1.mp3",
+          "seconds": 3.04
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "Grandma's standing next to a motorcycle in a leather jacket.",
+          "path": "out/audio_turns/elevenlabs/v6_02a__t2.mp3",
+          "seconds": 3.36
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "The note under the picture says she rode that motorcycle across the state.",
+          "path": "out/audio_turns/elevenlabs/v6_02a__t3.mp3",
+          "seconds": 3.92
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "We should bring the album when we visit Grandma on Sunday.",
+          "path": "out/audio_turns/elevenlabs/v6_02a__t4.mp3",
+          "seconds": 3.2
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[laughs] Grandma's standing next to a motorcycle in a leather jacket.",
+          "dia_tag": "(laughs)",
+          "elevenlabs_tag": "[laughs]",
+          "path": "out/audio_turns/elevenlabs/v6_02a__t2__a.mp3",
+          "seconds": 4.16
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[gasps] Grandma's standing next to a motorcycle in a leather jacket.",
+          "dia_tag": "(gasps)",
+          "elevenlabs_tag": "[gasps]",
+          "path": "out/audio_turns/elevenlabs/v6_02a__t2__b.mp3",
+          "seconds": 4.32
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_02a__t1.mp3",
+          "v6_02a__t2.mp3",
+          "v6_02a__t3.mp3",
+          "v6_02a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_02a__t1.mp3",
+          "v6_02a__t2__a.mp3",
+          "v6_02a__t3.mp3",
+          "v6_02a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_02a__t1.mp3",
+          "v6_02a__t2__b.mp3",
+          "v6_02a__t3.mp3",
+          "v6_02a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_02a__baseline.mp3",
+          "seconds": 14.57
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_02a__condition_a.mp3",
+          "seconds": 15.37
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_02a__condition_b.mp3",
+          "seconds": 15.53
+        }
+      ]
+    },
+    {
+      "item_id": "v6_02b",
+      "rendered_at": "2026-09-03T22:11:59+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "Mom, I got my chemistry test back. I got 95 percent.",
+          "path": "out/audio_turns/elevenlabs/v6_02b__t1.mp3",
+          "seconds": 4.56
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "You beat my old chemistry mark by one point.",
+          "path": "out/audio_turns/elevenlabs/v6_02b__t2.mp3",
+          "seconds": 3.76
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Guess those practice quizzes at the kitchen table paid off.",
+          "path": "out/audio_turns/elevenlabs/v6_02b__t3.mp3",
+          "seconds": 2.88
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Stick the test on the fridge before dinner.",
+          "path": "out/audio_turns/elevenlabs/v6_02b__t4.mp3",
+          "seconds": 2.72
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[laughs] You beat my old chemistry mark by one point.",
+          "dia_tag": "(laughs)",
+          "elevenlabs_tag": "[laughs]",
+          "path": "out/audio_turns/elevenlabs/v6_02b__t2__a.mp3",
+          "seconds": 4.48
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[gasps] You beat my old chemistry mark by one point.",
+          "dia_tag": "(gasps)",
+          "elevenlabs_tag": "[gasps]",
+          "path": "out/audio_turns/elevenlabs/v6_02b__t2__b.mp3",
+          "seconds": 4.0
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_02b__t1.mp3",
+          "v6_02b__t2.mp3",
+          "v6_02b__t3.mp3",
+          "v6_02b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_02b__t1.mp3",
+          "v6_02b__t2__a.mp3",
+          "v6_02b__t3.mp3",
+          "v6_02b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_02b__t1.mp3",
+          "v6_02b__t2__b.mp3",
+          "v6_02b__t3.mp3",
+          "v6_02b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_02b__baseline.mp3",
+          "seconds": 14.97
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_02b__condition_a.mp3",
+          "seconds": 15.69
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_02b__condition_b.mp3",
+          "seconds": 15.21
+        }
+      ]
+    },
+    {
+      "item_id": "v6_03a",
+      "rendered_at": "2026-09-03T22:11:59+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "Did you get everything packed for the first day of school on Monday?",
+          "path": "out/audio_turns/elevenlabs/v6_03a__t1.mp3",
+          "seconds": 2.96
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "I put all six textbooks in my backpack and lifted it onto my shoulder before checking the schedule.",
+          "path": "out/audio_turns/elevenlabs/v6_03a__t2.mp3",
+          "seconds": 6.16
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Still want to walk to school together?",
+          "path": "out/audio_turns/elevenlabs/v6_03a__t3.mp3",
+          "seconds": 1.52
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Yeah, but let's look at which books we really need.",
+          "path": "out/audio_turns/elevenlabs/v6_03a__t4.mp3",
+          "seconds": 2.88
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "I put all six textbooks in my backpack and lifted it onto my shoulder [laughs] before checking the schedule.",
+          "dia_tag": "(laughs)",
+          "elevenlabs_tag": "[laughs]",
+          "path": "out/audio_turns/elevenlabs/v6_03a__t2__a.mp3",
+          "seconds": 6.32
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "I put all six textbooks in my backpack and lifted it onto my shoulder [groans] before checking the schedule.",
+          "dia_tag": "(groans)",
+          "elevenlabs_tag": "[groans]",
+          "path": "out/audio_turns/elevenlabs/v6_03a__t2__b.mp3",
+          "seconds": 7.92
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_03a__t1.mp3",
+          "v6_03a__t2.mp3",
+          "v6_03a__t3.mp3",
+          "v6_03a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_03a__t1.mp3",
+          "v6_03a__t2__a.mp3",
+          "v6_03a__t3.mp3",
+          "v6_03a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_03a__t1.mp3",
+          "v6_03a__t2__b.mp3",
+          "v6_03a__t3.mp3",
+          "v6_03a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_03a__baseline.mp3",
+          "seconds": 14.57
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_03a__condition_a.mp3",
+          "seconds": 14.73
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_03a__condition_b.mp3",
+          "seconds": 16.33
+        }
+      ]
+    },
+    {
+      "item_id": "v6_03b",
+      "rendered_at": "2026-09-03T22:11:59+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "Did the supervisor say you could leave after that box?",
+          "path": "out/audio_turns/elevenlabs/v6_03b__t1.mp3",
+          "seconds": 2.64
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "I bent down to lift the box and then the supervisor rolled another full cart right next to me.",
+          "path": "out/audio_turns/elevenlabs/v6_03b__t2.mp3",
+          "seconds": 5.44
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "You were supposed to be out before the afternoon rush.",
+          "path": "out/audio_turns/elevenlabs/v6_03b__t3.mp3",
+          "seconds": 2.32
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "I know, so grab the top boxes and we can clear the cart together.",
+          "path": "out/audio_turns/elevenlabs/v6_03b__t4.mp3",
+          "seconds": 3.92
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "I bent down to lift the box [laughs] and then the supervisor rolled another full cart right next to me.",
+          "dia_tag": "(laughs)",
+          "elevenlabs_tag": "[laughs]",
+          "path": "out/audio_turns/elevenlabs/v6_03b__t2__a.mp3",
+          "seconds": 6.24
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "I bent down to lift the box [groans] and then the supervisor rolled another full cart right next to me.",
+          "dia_tag": "(groans)",
+          "elevenlabs_tag": "[groans]",
+          "path": "out/audio_turns/elevenlabs/v6_03b__t2__b.mp3",
+          "seconds": 8.16
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_03b__t1.mp3",
+          "v6_03b__t2.mp3",
+          "v6_03b__t3.mp3",
+          "v6_03b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_03b__t1.mp3",
+          "v6_03b__t2__a.mp3",
+          "v6_03b__t3.mp3",
+          "v6_03b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_03b__t1.mp3",
+          "v6_03b__t2__b.mp3",
+          "v6_03b__t3.mp3",
+          "v6_03b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_03b__baseline.mp3",
+          "seconds": 15.37
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_03b__condition_a.mp3",
+          "seconds": 16.17
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_03b__condition_b.mp3",
+          "seconds": 18.09
+        }
+      ]
+    },
+    {
+      "item_id": "v6_04a",
+      "rendered_at": "2026-09-03T22:12:00+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "My CCNA certificate came today, so I took the framed certificate to the office router.",
+          "path": "out/audio_turns/elevenlabs/v6_04a__t1.mp3",
+          "seconds": 5.2
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "Every light on the router started blinking when you lifted the frame.",
+          "path": "out/audio_turns/elevenlabs/v6_04a__t2.mp3",
+          "seconds": 3.92
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "The lights stopped blinking when I put the frame down.",
+          "path": "out/audio_turns/elevenlabs/v6_04a__t3.mp3",
+          "seconds": 2.56
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Keep the frame at your side while I look at the router.",
+          "path": "out/audio_turns/elevenlabs/v6_04a__t4.mp3",
+          "seconds": 2.88
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[laughs] Every light on the router started blinking when you lifted the frame.",
+          "dia_tag": "(laughs)",
+          "elevenlabs_tag": "[laughs]",
+          "path": "out/audio_turns/elevenlabs/v6_04a__t2__a.mp3",
+          "seconds": 4.16
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[screams] Every light on the router started blinking when you lifted the frame.",
+          "dia_tag": "(screams)",
+          "elevenlabs_tag": "[screams]",
+          "path": "out/audio_turns/elevenlabs/v6_04a__t2__b.mp3",
+          "seconds": 4.48
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_04a__t1.mp3",
+          "v6_04a__t2.mp3",
+          "v6_04a__t3.mp3",
+          "v6_04a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_04a__t1.mp3",
+          "v6_04a__t2__a.mp3",
+          "v6_04a__t3.mp3",
+          "v6_04a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_04a__t1.mp3",
+          "v6_04a__t2__b.mp3",
+          "v6_04a__t3.mp3",
+          "v6_04a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_04a__baseline.mp3",
+          "seconds": 15.61
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_04a__condition_a.mp3",
+          "seconds": 15.85
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_04a__condition_b.mp3",
+          "seconds": 16.17
+        }
+      ]
+    },
+    {
+      "item_id": "v6_04b",
+      "rendered_at": "2026-09-03T22:12:00+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "I thought I had that fly ball all lined up.",
+          "path": "out/audio_turns/elevenlabs/v6_04b__t1.mp3",
+          "seconds": 2.16
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "The ball bounced off your glove, hit your face, and then landed right by home plate.",
+          "path": "out/audio_turns/elevenlabs/v6_04b__t2.mp3",
+          "seconds": 5.68
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Now everyone by the dugout's staring at me.",
+          "path": "out/audio_turns/elevenlabs/v6_04b__t3.mp3",
+          "seconds": 2.16
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Come sit on the bench for a minute.",
+          "path": "out/audio_turns/elevenlabs/v6_04b__t4.mp3",
+          "seconds": 1.68
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[laughs] The ball bounced off your glove, hit your face, and then landed right by home plate.",
+          "dia_tag": "(laughs)",
+          "elevenlabs_tag": "[laughs]",
+          "path": "out/audio_turns/elevenlabs/v6_04b__t2__a.mp3",
+          "seconds": 6.4
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[screams] The ball bounced off your glove, hit your face, and then landed right by home plate.",
+          "dia_tag": "(screams)",
+          "elevenlabs_tag": "[screams]",
+          "path": "out/audio_turns/elevenlabs/v6_04b__t2__b.mp3",
+          "seconds": 6.48
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_04b__t1.mp3",
+          "v6_04b__t2.mp3",
+          "v6_04b__t3.mp3",
+          "v6_04b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_04b__t1.mp3",
+          "v6_04b__t2__a.mp3",
+          "v6_04b__t3.mp3",
+          "v6_04b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_04b__t1.mp3",
+          "v6_04b__t2__b.mp3",
+          "v6_04b__t3.mp3",
+          "v6_04b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_04b__baseline.mp3",
+          "seconds": 12.73
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_04b__condition_a.mp3",
+          "seconds": 13.45
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_04b__condition_b.mp3",
+          "seconds": 13.53
+        }
+      ]
+    },
+    {
+      "item_id": "v6_05a",
+      "rendered_at": "2026-09-03T22:12:01+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "I thought I’d packed up everything my ex, Lena, gave me.",
+          "path": "out/audio_turns/elevenlabs/v6_05a__t1.mp3",
+          "seconds": 2.88
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "You found something else this morning?",
+          "path": "out/audio_turns/elevenlabs/v6_05a__t2.mp3",
+          "seconds": 1.84
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Yeah, her blue mug was behind the coffee tin.",
+          "path": "out/audio_turns/elevenlabs/v6_05a__t3.mp3",
+          "seconds": 2.64
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "We can put the mug in the storage box after breakfast.",
+          "path": "out/audio_turns/elevenlabs/v6_05a__t4.mp3",
+          "seconds": 3.68
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[sighs] You found something else this morning?",
+          "dia_tag": "(sighs)",
+          "elevenlabs_tag": "[sighs]",
+          "path": "out/audio_turns/elevenlabs/v6_05a__t2__a.mp3",
+          "seconds": 2.64
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[gasps] You found something else this morning?",
+          "dia_tag": "(gasps)",
+          "elevenlabs_tag": "[gasps]",
+          "path": "out/audio_turns/elevenlabs/v6_05a__t2__b.mp3",
+          "seconds": 2.32
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_05a__t1.mp3",
+          "v6_05a__t2.mp3",
+          "v6_05a__t3.mp3",
+          "v6_05a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_05a__t1.mp3",
+          "v6_05a__t2__a.mp3",
+          "v6_05a__t3.mp3",
+          "v6_05a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_05a__t1.mp3",
+          "v6_05a__t2__b.mp3",
+          "v6_05a__t3.mp3",
+          "v6_05a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_05a__baseline.mp3",
+          "seconds": 12.09
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_05a__condition_a.mp3",
+          "seconds": 12.89
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_05a__condition_b.mp3",
+          "seconds": 12.57
+        }
+      ]
+    },
+    {
+      "item_id": "v6_05b",
+      "rendered_at": "2026-09-03T22:12:01+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "I spent five hours baking our daughter's birthday cake, and now it’s gone.",
+          "path": "out/audio_turns/elevenlabs/v6_05b__t1.mp3",
+          "seconds": 4.24
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "Mia just took a cake box to her car a few minutes ago.",
+          "path": "out/audio_turns/elevenlabs/v6_05b__t2.mp3",
+          "seconds": 3.52
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "She took the whole cake.",
+          "path": "out/audio_turns/elevenlabs/v6_05b__t3.mp3",
+          "seconds": 1.44
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "I'll call Mia before we make another one.",
+          "path": "out/audio_turns/elevenlabs/v6_05b__t4.mp3",
+          "seconds": 2.24
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "a",
+          "text": "[sighs] She took the whole cake.",
+          "dia_tag": "(sighs)",
+          "elevenlabs_tag": "[sighs]",
+          "path": "out/audio_turns/elevenlabs/v6_05b__t3__a.mp3",
+          "seconds": 2.0
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "b",
+          "text": "[gasps] She took the whole cake.",
+          "dia_tag": "(gasps)",
+          "elevenlabs_tag": "[gasps]",
+          "path": "out/audio_turns/elevenlabs/v6_05b__t3__b.mp3",
+          "seconds": 2.0
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_05b__t1.mp3",
+          "v6_05b__t2.mp3",
+          "v6_05b__t3.mp3",
+          "v6_05b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_05b__t1.mp3",
+          "v6_05b__t2.mp3",
+          "v6_05b__t3__a.mp3",
+          "v6_05b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_05b__t1.mp3",
+          "v6_05b__t2.mp3",
+          "v6_05b__t3__b.mp3",
+          "v6_05b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_05b__baseline.mp3",
+          "seconds": 12.49
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_05b__condition_a.mp3",
+          "seconds": 13.05
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_05b__condition_b.mp3",
+          "seconds": 13.05
+        }
+      ]
+    },
+    {
+      "item_id": "v6_06a",
+      "rendered_at": "2026-09-03T22:12:01+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "The dentist can see your broken tooth at three, so we gotta leave soon.",
+          "path": "out/audio_turns/elevenlabs/v6_06a__t1.mp3",
+          "seconds": 3.6
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "I know, Mom. I'll grab my shoes.",
+          "path": "out/audio_turns/elevenlabs/v6_06a__t2.mp3",
+          "seconds": 2.48
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "I'll bring an ice pack for the drive.",
+          "path": "out/audio_turns/elevenlabs/v6_06a__t3.mp3",
+          "seconds": 1.6
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Okay, I'll meet you at the front door.",
+          "path": "out/audio_turns/elevenlabs/v6_06a__t4.mp3",
+          "seconds": 2.16
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[sighs] I know, Mom. I'll grab my shoes.",
+          "dia_tag": "(sighs)",
+          "elevenlabs_tag": "[sighs]",
+          "path": "out/audio_turns/elevenlabs/v6_06a__t2__a.mp3",
+          "seconds": 3.2
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[groans] I know, Mom. I'll grab my shoes.",
+          "dia_tag": "(groans)",
+          "elevenlabs_tag": "[groans]",
+          "path": "out/audio_turns/elevenlabs/v6_06a__t2__b.mp3",
+          "seconds": 3.6
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_06a__t1.mp3",
+          "v6_06a__t2.mp3",
+          "v6_06a__t3.mp3",
+          "v6_06a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_06a__t1.mp3",
+          "v6_06a__t2__a.mp3",
+          "v6_06a__t3.mp3",
+          "v6_06a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_06a__t1.mp3",
+          "v6_06a__t2__b.mp3",
+          "v6_06a__t3.mp3",
+          "v6_06a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_06a__baseline.mp3",
+          "seconds": 10.89
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_06a__condition_a.mp3",
+          "seconds": 11.61
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_06a__condition_b.mp3",
+          "seconds": 12.01
+        }
+      ]
+    },
+    {
+      "item_id": "v6_06b",
+      "rendered_at": "2026-09-03T22:12:02+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "Milo hasn't eaten since yesterday, and he's been under the kitchen table all morning.",
+          "path": "out/audio_turns/elevenlabs/v6_06b__t1.mp3",
+          "seconds": 4.0
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "The clinic on Oak Street closes at five. Can you take Milo there?",
+          "path": "out/audio_turns/elevenlabs/v6_06b__t2.mp3",
+          "seconds": 6.32
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Yeah, I'll get Milo in his carrier and head over now.",
+          "path": "out/audio_turns/elevenlabs/v6_06b__t3.mp3",
+          "seconds": 2.8
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Thanks. I'll call the clinic and let them know you're coming.",
+          "path": "out/audio_turns/elevenlabs/v6_06b__t4.mp3",
+          "seconds": 6.72
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[sighs] The clinic on Oak Street closes at five. Can you take Milo there?",
+          "dia_tag": "(sighs)",
+          "elevenlabs_tag": "[sighs]",
+          "path": "out/audio_turns/elevenlabs/v6_06b__t2__a.mp3",
+          "seconds": 6.0
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[groans] The clinic on Oak Street closes at five. Can you take Milo there?",
+          "dia_tag": "(groans)",
+          "elevenlabs_tag": "[groans]",
+          "path": "out/audio_turns/elevenlabs/v6_06b__t2__b.mp3",
+          "seconds": 6.48
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_06b__t1.mp3",
+          "v6_06b__t2.mp3",
+          "v6_06b__t3.mp3",
+          "v6_06b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_06b__t1.mp3",
+          "v6_06b__t2__a.mp3",
+          "v6_06b__t3.mp3",
+          "v6_06b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_06b__t1.mp3",
+          "v6_06b__t2__b.mp3",
+          "v6_06b__t3.mp3",
+          "v6_06b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_06b__baseline.mp3",
+          "seconds": 20.89
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_06b__condition_a.mp3",
+          "seconds": 20.57
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_06b__condition_b.mp3",
+          "seconds": 21.05
+        }
+      ]
+    },
+    {
+      "item_id": "v6_07a",
+      "rendered_at": "2026-09-03T22:12:02+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "I really need a bathroom, but the park restroom's locked.",
+          "path": "out/audio_turns/elevenlabs/v6_07a__t1.mp3",
+          "seconds": 3.2
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "Your place is still like twenty minutes away.",
+          "path": "out/audio_turns/elevenlabs/v6_07a__t2.mp3",
+          "seconds": 2.8
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "I don't think I can wait that long.",
+          "path": "out/audio_turns/elevenlabs/v6_07a__t3.mp3",
+          "seconds": 1.52
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Let's check out the café across the street.",
+          "path": "out/audio_turns/elevenlabs/v6_07a__t4.mp3",
+          "seconds": 2.4
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "a",
+          "text": "[sighs] I don't think I can wait that long.",
+          "dia_tag": "(sighs)",
+          "elevenlabs_tag": "[sighs]",
+          "path": "out/audio_turns/elevenlabs/v6_07a__t3__a.mp3",
+          "seconds": 2.64
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "b",
+          "text": "[screams] I don't think I can wait that long.",
+          "dia_tag": "(screams)",
+          "elevenlabs_tag": "[screams]",
+          "path": "out/audio_turns/elevenlabs/v6_07a__t3__b.mp3",
+          "seconds": 2.96
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_07a__t1.mp3",
+          "v6_07a__t2.mp3",
+          "v6_07a__t3.mp3",
+          "v6_07a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_07a__t1.mp3",
+          "v6_07a__t2.mp3",
+          "v6_07a__t3__a.mp3",
+          "v6_07a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_07a__t1.mp3",
+          "v6_07a__t2.mp3",
+          "v6_07a__t3__b.mp3",
+          "v6_07a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_07a__baseline.mp3",
+          "seconds": 10.97
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_07a__condition_a.mp3",
+          "seconds": 12.09
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_07a__condition_b.mp3",
+          "seconds": 12.41
+        }
+      ]
+    },
+    {
+      "item_id": "v6_07b",
+      "rendered_at": "2026-09-03T22:12:02+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "The tapping at my bedroom window woke me up again last night.",
+          "path": "out/audio_turns/elevenlabs/v6_07b__t1.mp3",
+          "seconds": 2.96
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "We still don't know what's making that tapping, do we?",
+          "path": "out/audio_turns/elevenlabs/v6_07b__t2.mp3",
+          "seconds": 3.28
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "It's starting up again now.",
+          "path": "out/audio_turns/elevenlabs/v6_07b__t3.mp3",
+          "seconds": 1.2
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Stay here while I go check the yard.",
+          "path": "out/audio_turns/elevenlabs/v6_07b__t4.mp3",
+          "seconds": 2.16
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "a",
+          "text": "[sighs] It's starting up again now.",
+          "dia_tag": "(sighs)",
+          "elevenlabs_tag": "[sighs]",
+          "path": "out/audio_turns/elevenlabs/v6_07b__t3__a.mp3",
+          "seconds": 1.76
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "b",
+          "text": "[screams] It's starting up again now.",
+          "dia_tag": "(screams)",
+          "elevenlabs_tag": "[screams]",
+          "path": "out/audio_turns/elevenlabs/v6_07b__t3__b.mp3",
+          "seconds": 2.08
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_07b__t1.mp3",
+          "v6_07b__t2.mp3",
+          "v6_07b__t3.mp3",
+          "v6_07b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_07b__t1.mp3",
+          "v6_07b__t2.mp3",
+          "v6_07b__t3__a.mp3",
+          "v6_07b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_07b__t1.mp3",
+          "v6_07b__t2.mp3",
+          "v6_07b__t3__b.mp3",
+          "v6_07b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_07b__baseline.mp3",
+          "seconds": 10.65
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_07b__condition_a.mp3",
+          "seconds": 11.21
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_07b__condition_b.mp3",
+          "seconds": 11.53
+        }
+      ]
+    },
+    {
+      "item_id": "v6_08a",
+      "rendered_at": "2026-09-03T22:12:03+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "How’s the thirty-dollar salad?",
+          "path": "out/audio_turns/elevenlabs/v6_08a__t1.mp3",
+          "seconds": 1.36
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "I caught my lip on the fork and found a hair under the tomato.",
+          "path": "out/audio_turns/elevenlabs/v6_08a__t2.mp3",
+          "seconds": 3.92
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Put the fork down while I call the server.",
+          "path": "out/audio_turns/elevenlabs/v6_08a__t3.mp3",
+          "seconds": 1.92
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Thanks, I think I’m done with the salad.",
+          "path": "out/audio_turns/elevenlabs/v6_08a__t4.mp3",
+          "seconds": 2.48
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[gasps] I caught my lip on the fork and found a hair under the tomato.",
+          "dia_tag": "(gasps)",
+          "elevenlabs_tag": "[gasps]",
+          "path": "out/audio_turns/elevenlabs/v6_08a__t2__a.mp3",
+          "seconds": 5.04
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[groans] I caught my lip on the fork and found a hair under the tomato.",
+          "dia_tag": "(groans)",
+          "elevenlabs_tag": "[groans]",
+          "path": "out/audio_turns/elevenlabs/v6_08a__t2__b.mp3",
+          "seconds": 5.04
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_08a__t1.mp3",
+          "v6_08a__t2.mp3",
+          "v6_08a__t3.mp3",
+          "v6_08a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_08a__t1.mp3",
+          "v6_08a__t2__a.mp3",
+          "v6_08a__t3.mp3",
+          "v6_08a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_08a__t1.mp3",
+          "v6_08a__t2__b.mp3",
+          "v6_08a__t3.mp3",
+          "v6_08a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_08a__baseline.mp3",
+          "seconds": 10.73
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_08a__condition_a.mp3",
+          "seconds": 11.85
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_08a__condition_b.mp3",
+          "seconds": 11.85
+        }
+      ]
+    },
+    {
+      "item_id": "v6_08b",
+      "rendered_at": "2026-09-03T22:12:03+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "So, what'd you find out about the coin from the antique market?",
+          "path": "out/audio_turns/elevenlabs/v6_08b__t1.mp3",
+          "seconds": 2.72
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "It's way older than the seller thought, and the case pinched my finger.",
+          "path": "out/audio_turns/elevenlabs/v6_08b__t2.mp3",
+          "seconds": 4.72
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Put the case down and show me the date on the coin.",
+          "path": "out/audio_turns/elevenlabs/v6_08b__t3.mp3",
+          "seconds": 2.4
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Check it out; I didn't pay much for it.",
+          "path": "out/audio_turns/elevenlabs/v6_08b__t4.mp3",
+          "seconds": 2.32
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[gasps] It's way older than the seller thought, and the case pinched my finger.",
+          "dia_tag": "(gasps)",
+          "elevenlabs_tag": "[gasps]",
+          "path": "out/audio_turns/elevenlabs/v6_08b__t2__a.mp3",
+          "seconds": 5.28
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[groans] It's way older than the seller thought, and the case pinched my finger.",
+          "dia_tag": "(groans)",
+          "elevenlabs_tag": "[groans]",
+          "path": "out/audio_turns/elevenlabs/v6_08b__t2__b.mp3",
+          "seconds": 6.4
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_08b__t1.mp3",
+          "v6_08b__t2.mp3",
+          "v6_08b__t3.mp3",
+          "v6_08b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_08b__t1.mp3",
+          "v6_08b__t2__a.mp3",
+          "v6_08b__t3.mp3",
+          "v6_08b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_08b__t1.mp3",
+          "v6_08b__t2__b.mp3",
+          "v6_08b__t3.mp3",
+          "v6_08b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_08b__baseline.mp3",
+          "seconds": 13.21
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_08b__condition_a.mp3",
+          "seconds": 13.77
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_08b__condition_b.mp3",
+          "seconds": 14.89
+        }
+      ]
+    },
+    {
+      "item_id": "v6_09a",
+      "rendered_at": "2026-09-03T22:12:03+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "I came to this bar to relax after work.",
+          "path": "out/audio_turns/elevenlabs/v6_09a__t1.mp3",
+          "seconds": 2.32
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "Your boss, Ms. Patel, is sitting right at the next table.",
+          "path": "out/audio_turns/elevenlabs/v6_09a__t2.mp3",
+          "seconds": 3.76
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "She just looked over and waved at me.",
+          "path": "out/audio_turns/elevenlabs/v6_09a__t3.mp3",
+          "seconds": 1.84
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "You can go say hi when you're ready.",
+          "path": "out/audio_turns/elevenlabs/v6_09a__t4.mp3",
+          "seconds": 1.76
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "a",
+          "text": "She just looked over and [gasps] waved at me.",
+          "dia_tag": "(gasps)",
+          "elevenlabs_tag": "[gasps]",
+          "path": "out/audio_turns/elevenlabs/v6_09a__t3__a.mp3",
+          "seconds": 2.88
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "b",
+          "text": "She just looked over and [screams] waved at me.",
+          "dia_tag": "(screams)",
+          "elevenlabs_tag": "[screams]",
+          "path": "out/audio_turns/elevenlabs/v6_09a__t3__b.mp3",
+          "seconds": 3.12
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_09a__t1.mp3",
+          "v6_09a__t2.mp3",
+          "v6_09a__t3.mp3",
+          "v6_09a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_09a__t1.mp3",
+          "v6_09a__t2.mp3",
+          "v6_09a__t3__a.mp3",
+          "v6_09a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_09a__t1.mp3",
+          "v6_09a__t2.mp3",
+          "v6_09a__t3__b.mp3",
+          "v6_09a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_09a__baseline.mp3",
+          "seconds": 10.73
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_09a__condition_a.mp3",
+          "seconds": 11.77
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_09a__condition_b.mp3",
+          "seconds": 12.01
+        }
+      ]
+    },
+    {
+      "item_id": "v6_09b",
+      "rendered_at": "2026-09-03T22:12:04+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 3,
+      "vocalization_speaker": "A",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "The recruiter from yesterday’s interview just emailed me.",
+          "path": "out/audio_turns/elevenlabs/v6_09b__t1.mp3",
+          "seconds": 2.64
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "That was your third interview this month, right? What'd they say?",
+          "path": "out/audio_turns/elevenlabs/v6_09b__t2.mp3",
+          "seconds": 3.28
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "The team gave me strong feedback, and the manager wants a video call in five minutes.",
+          "path": "out/audio_turns/elevenlabs/v6_09b__t3.mp3",
+          "seconds": 4.56
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Just open your laptop and join when the link comes in.",
+          "path": "out/audio_turns/elevenlabs/v6_09b__t4.mp3",
+          "seconds": 3.2
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "a",
+          "text": "The team gave me strong feedback, and [gasps] the manager wants a video call in five minutes.",
+          "dia_tag": "(gasps)",
+          "elevenlabs_tag": "[gasps]",
+          "path": "out/audio_turns/elevenlabs/v6_09b__t3__a.mp3",
+          "seconds": 5.36
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "b",
+          "text": "The team gave me strong feedback, and [screams] the manager wants a video call in five minutes.",
+          "dia_tag": "(screams)",
+          "elevenlabs_tag": "[screams]",
+          "path": "out/audio_turns/elevenlabs/v6_09b__t3__b.mp3",
+          "seconds": 6.0
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_09b__t1.mp3",
+          "v6_09b__t2.mp3",
+          "v6_09b__t3.mp3",
+          "v6_09b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_09b__t1.mp3",
+          "v6_09b__t2.mp3",
+          "v6_09b__t3__a.mp3",
+          "v6_09b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_09b__t1.mp3",
+          "v6_09b__t2.mp3",
+          "v6_09b__t3__b.mp3",
+          "v6_09b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_09b__baseline.mp3",
+          "seconds": 14.73
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_09b__condition_a.mp3",
+          "seconds": 15.53
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_09b__condition_b.mp3",
+          "seconds": 16.17
+        }
+      ]
+    },
+    {
+      "item_id": "v6_10a",
+      "rendered_at": "2026-09-03T22:12:04+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "Got your suitcase ready now?",
+          "path": "out/audio_turns/elevenlabs/v6_10a__t1.mp3",
+          "seconds": 1.28
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "Yeah, the last thing's in, but my foot's stuck behind the chair rung.",
+          "path": "out/audio_turns/elevenlabs/v6_10a__t2.mp3",
+          "seconds": 3.6
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Keep your weight on the other foot, I'll hold the chair.",
+          "path": "out/audio_turns/elevenlabs/v6_10a__t3.mp3",
+          "seconds": 2.64
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Okay, move the suitcase before I step down.",
+          "path": "out/audio_turns/elevenlabs/v6_10a__t4.mp3",
+          "seconds": 2.56
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[groans] Yeah, the last thing's in, but my foot's stuck behind the chair rung.",
+          "dia_tag": "(groans)",
+          "elevenlabs_tag": "[groans]",
+          "path": "out/audio_turns/elevenlabs/v6_10a__t2__a.mp3",
+          "seconds": 5.92
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[screams] Yeah, the last thing's in, but my foot's stuck behind the chair rung.",
+          "dia_tag": "(screams)",
+          "elevenlabs_tag": "[screams]",
+          "path": "out/audio_turns/elevenlabs/v6_10a__t2__b.mp3",
+          "seconds": 5.68
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_10a__t1.mp3",
+          "v6_10a__t2.mp3",
+          "v6_10a__t3.mp3",
+          "v6_10a__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_10a__t1.mp3",
+          "v6_10a__t2__a.mp3",
+          "v6_10a__t3.mp3",
+          "v6_10a__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_10a__t1.mp3",
+          "v6_10a__t2__b.mp3",
+          "v6_10a__t3.mp3",
+          "v6_10a__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_10a__baseline.mp3",
+          "seconds": 11.13
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_10a__condition_a.mp3",
+          "seconds": 13.45
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_10a__condition_b.mp3",
+          "seconds": 13.21
+        }
+      ]
+    },
+    {
+      "item_id": "v6_10b",
+      "rendered_at": "2026-09-03T22:12:04+00:00",
+      "model": "eleven_v3",
+      "output_format": "mp3_44100_128",
+      "voices": {
+        "A": "s3TPKV1kjDlVtZbl4Ksh",
+        "B": "aKw9UnnjRq5scbeeGI7Z"
+      },
+      "stability": 0.3,
+      "gap_seconds": 0.35,
+      "vocalization_turn": 2,
+      "vocalization_speaker": "B",
+      "renderer": "elevenlabs",
+      "takes": [
+        {
+          "turn": 1,
+          "speaker": "A",
+          "variant": "",
+          "text": "Hey, you reached the rim this time.",
+          "path": "out/audio_turns/elevenlabs/v6_10b__t1.mp3",
+          "seconds": 2.08
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "",
+          "text": "My shoe slipped when I landed.",
+          "path": "out/audio_turns/elevenlabs/v6_10b__t2.mp3",
+          "seconds": 2.16
+        },
+        {
+          "turn": 3,
+          "speaker": "A",
+          "variant": "",
+          "text": "Just stay by the wall while I roll the ball away.",
+          "path": "out/audio_turns/elevenlabs/v6_10b__t3.mp3",
+          "seconds": 2.32
+        },
+        {
+          "turn": 4,
+          "speaker": "B",
+          "variant": "",
+          "text": "Alright, then we can decide if I should try again.",
+          "path": "out/audio_turns/elevenlabs/v6_10b__t4.mp3",
+          "seconds": 2.96
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "a",
+          "text": "[groans] My shoe slipped when I landed.",
+          "dia_tag": "(groans)",
+          "elevenlabs_tag": "[groans]",
+          "path": "out/audio_turns/elevenlabs/v6_10b__t2__a.mp3",
+          "seconds": 2.96
+        },
+        {
+          "turn": 2,
+          "speaker": "B",
+          "variant": "b",
+          "text": "[screams] My shoe slipped when I landed.",
+          "dia_tag": "(screams)",
+          "elevenlabs_tag": "[screams]",
+          "path": "out/audio_turns/elevenlabs/v6_10b__t2__b.mp3",
+          "seconds": 2.64
+        }
+      ],
+      "assembly": {
+        "gap_seconds": 0.35,
+        "turn_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "baseline": [
+          "v6_10b__t1.mp3",
+          "v6_10b__t2.mp3",
+          "v6_10b__t3.mp3",
+          "v6_10b__t4.mp3"
+        ],
+        "condition_a": [
+          "v6_10b__t1.mp3",
+          "v6_10b__t2__a.mp3",
+          "v6_10b__t3.mp3",
+          "v6_10b__t4.mp3"
+        ],
+        "condition_b": [
+          "v6_10b__t1.mp3",
+          "v6_10b__t2__b.mp3",
+          "v6_10b__t3.mp3",
+          "v6_10b__t4.mp3"
+        ]
+      },
+      "conditions_local": [
+        {
+          "condition": "baseline",
+          "path": "out/audio/elevenlabs/v6_10b__baseline.mp3",
+          "seconds": 10.57
+        },
+        {
+          "condition": "condition_a",
+          "path": "out/audio/elevenlabs/v6_10b__condition_a.mp3",
+          "seconds": 11.37
+        },
+        {
+          "condition": "condition_b",
+          "path": "out/audio/elevenlabs/v6_10b__condition_b.mp3",
+          "seconds": 11.05
+        }
+      ]
+    }
+  ]
+}

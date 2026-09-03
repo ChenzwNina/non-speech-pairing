@@ -4,13 +4,13 @@ Five non-speech vocalizations, each mapped to the **one** emotion it is most str
 associated with — the reading a listener reaches for by default when they hear the
 sound with nothing else to go on.
 
-| # | Vocalization | Emotion | Dia tag | How it is produced |
-| --- | --- | --- | --- | --- |
-| 1 | **laugh** | amusement | `(laughs)` | voiced rhythmic bursts, long decay, released freely |
-| 2 | **sigh** | resignation | `(sighs)` | low flat creaky exhale, no tension peak before it — the thing happened and is being accepted |
-| 3 | **gasp** | surprise | `(gasps)` | abrupt sharp inhale, hard glottal onset |
-| 4 | **groan** | pain | `(groans)` | low sustained voiced, involuntary, tracks a hurt or an effort |
-| 5 | **scream** | fear | `(screams)` | high f0 with roughness and harshness, abrupt onset, sustained |
+| # | Vocalization | Emotion | Dia tag | ElevenLabs tag | How it is produced |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **laugh** | amusement | `(laughs)` | `[laughs]` | voiced rhythmic bursts, long decay, released freely |
+| 2 | **sigh** | resignation | `(sighs)` | `[sighs]` | low flat creaky exhale, no tension peak before it — the thing happened and is being accepted |
+| 3 | **gasp** | surprise | `(gasps)` | `[gasps]` | abrupt sharp inhale, hard glottal onset |
+| 4 | **groan** | pain | `(groans)` | `[groans]` | low sustained voiced, involuntary, tracks a hurt or an effort |
+| 5 | **scream** | fear | `(screams)` | `[screams]` | high f0 with roughness and harshness, abrupt onset, sustained |
 
 Five distinct emotions: amusement, resignation, surprise, pain, fear.
 
@@ -27,5 +27,11 @@ one.
 
 ## Recordings
 
-Not sourced from `../audio_non-speech/`. The tags are Dia's non-verbal markers, so the
-audio is generated from the transcript with the tag in place rather than spliced in.
+Not sourced from `../audio_non-speech/`. The audio is generated from the transcript with
+the tag in place rather than spliced in, so the vocalization colours the delivery of the
+words around it instead of being a discrete sound dropped into a gap.
+
+Two tag vocabularies, because two services are in play. The transcripts carry Dia's
+parenthesised tags, since that is what generation wrote; `make_audio.py` maps them to
+ElevenLabs' bracketed audio tags when it renders. Neither is spoken aloud — each is an
+instruction to its own model.

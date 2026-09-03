@@ -3,6 +3,11 @@ __pycache__/
 .DS_Store
 .env
 
+# v6 inverts the rule below: the per-turn takes in v6/out/audio_turns/ are the durable artifact
+# and are kept, while the sewn conversations are derived from them — by whatever assembles them
+# downstream — and are not. Each item's manifest carries the assembly recipe.
+v6/out/audio/
+
 # Intermediate TTS. Keep sewn eval clips in git; leave per-turn / voc / versioned renders local.
 **/audio_neutral/
 **/audio_voc/
