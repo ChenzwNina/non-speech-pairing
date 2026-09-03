@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_04a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Engaged, mildly curious troubleshooting interest; even and unmarked, neither joking nor alarmed.",
+      "valence": "neutral",
+      "arousal": "medium_low",
+      "interpersonal_stance": ["attentive", "curious", "matter-of-fact"],
+      "prosody": {
+        "pitch": "mid level with modest, conversational range",
+        "energy": "moderate and even, no surges",
+        "rate": "unhurried, close to ordinary conversational speed",
+        "pausing": "regular phrasing with natural clause-level breaks",
+        "voice_quality": "relaxed and steady"
+      },
+      "acceptable_range": [
+        "Slightly brighter, lightly puzzled interest with a small upward final contour",
+        "Flatter, more analytical delivery with slightly narrower pitch movement"
+      ],
+      "must_avoid": [
+        "Smile-voice or audible laughter suggesting a shared joke",
+        "Breathy, clipped, or urgent delivery implying alarm"
+      ],
+      "contrastive_cue": "Absence of both amusement and urgency markers: level pitch, steady energy, no smile-voice and no tightened or rushed delivery.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "laugh",
+      "tone_summary": "Light, playful amusement that enjoys the coincidence while staying interested in the router.",
+      "valence": "slightly_positive",
+      "arousal": "medium",
+      "interpersonal_stance": ["playful", "warm", "teasing"],
+      "prosody": {
+        "pitch": "slightly raised with wider, livelier excursions",
+        "energy": "buoyant with animated emphasis on key words",
+        "rate": "a little quicker, with easy forward momentum",
+        "pausing": "loose, slightly irregular timing, room for a beat of delight",
+        "voice_quality": "bright with audible smile-voice"
+      },
+      "acceptable_range": [
+        "Dry, understated wit delivered with a faint smile and low-key lilt",
+        "More openly delighted, bouncier delivery with a brief chuckle-colored onset"
+      ],
+      "must_avoid": [
+        "Tense, hushed, or urgent delivery treating the blinking as frightening",
+        "Flat, uninflected report with no warmth or lightness"
+      ],
+      "contrastive_cue": "Audible smile-voice and livelier pitch movement mark shared amusement, absent in baseline and incompatible with condition_b.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "tone_summary": "Calm, grounded steadiness with mild practical urgency that settles the startled coworker.",
+      "valence": "slightly_negative",
+      "arousal": "medium",
+      "interpersonal_stance": ["reassuring", "calmly urgent", "attentive"],
+      "prosody": {
+        "pitch": "slightly lowered, narrowed range with mostly falling contours",
+        "energy": "controlled and firm rather than loud",
+        "rate": "measured and deliberate, marginally slowed",
+        "pausing": "clear, slightly longer breaks that give the words weight",
+        "voice_quality": "steady and gently restrained, minimal tremor"
+      },
+      "acceptable_range": [
+        "Softer, more soothing delivery with warmer low pitch and gentle pacing",
+        "Brisker, more directive calm with crisper phrasing but still level pitch"
+      ],
+      "must_avoid": [
+        "Matching panic: high, loud, shaky, or breathless delivery",
+        "Amused or teasing smile-voice that dismisses the coworker's fright"
+      ],
+      "contrastive_cue": "Deliberately steadied low pitch and measured pacing that downregulate alarm, contrasting baseline's neutrality and condition_a's brightness.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

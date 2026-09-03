@@ -1,0 +1,3315 @@
+{
+  "built_at": "2026-09-03T21:05:09+00:00",
+  "run_id": "r20260903T210509Z",
+  "seed": 20260902,
+  "transcripts": "out/pairs_spoken.json",
+  "renderers": [
+    "dia",
+    "elevenlabs"
+  ],
+  "items_fingerprint": "sha256:cf33255933f0ce97",
+  "items": 20,
+  "task_type": "perception",
+  "tasks": [
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_01a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. no non-speech vocalization\nB. a gasp\nC. a sigh\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "none",
+      "distractor_labels": [
+        "gasp",
+        "groan",
+        "sigh"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_01a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a groan\nC. no non-speech vocalization\nD. a scream\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "scream",
+          "text": "a scream"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "laugh",
+      "distractor_labels": [
+        "scream",
+        "none",
+        "groan"
+      ],
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_01a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. no non-speech vocalization\nC. a sigh\nD. a laugh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "laugh",
+          "text": "a laugh"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "sigh",
+      "distractor_labels": [
+        "laugh",
+        "scream",
+        "none"
+      ],
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_01b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. no non-speech vocalization\nB. a sigh\nC. a laugh\nD. a gasp\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "D",
+          "label": "gasp",
+          "text": "a gasp"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "none",
+      "distractor_labels": [
+        "gasp",
+        "sigh",
+        "laugh"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_01b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a sigh\nB. a laugh\nC. a scream\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "laugh",
+      "distractor_labels": [
+        "none",
+        "sigh",
+        "scream"
+      ],
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_01b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a sigh\nC. a groan\nD. a gasp\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "D",
+          "label": "gasp",
+          "text": "a gasp"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "sigh",
+      "distractor_labels": [
+        "laugh",
+        "groan",
+        "gasp"
+      ],
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_02a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a gasp\nB. a sigh\nC. no non-speech vocalization\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "none",
+      "distractor_labels": [
+        "gasp",
+        "groan",
+        "sigh"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_02a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a scream\nC. a gasp\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "laugh",
+      "distractor_labels": [
+        "scream",
+        "none",
+        "gasp"
+      ],
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_02a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a gasp\nB. a laugh\nC. a sigh\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "gasp",
+      "distractor_labels": [
+        "laugh",
+        "sigh",
+        "none"
+      ],
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_02b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. no non-speech vocalization\nB. a scream\nC. a laugh\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "B",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "C",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "none",
+      "distractor_labels": [
+        "scream",
+        "groan",
+        "laugh"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_02b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a laugh\nC. a gasp\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "laugh",
+      "distractor_labels": [
+        "gasp",
+        "groan",
+        "sigh"
+      ],
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_02b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. no non-speech vocalization\nB. a gasp\nC. a scream\nD. a laugh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "laugh",
+          "text": "a laugh"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "gasp",
+      "distractor_labels": [
+        "scream",
+        "laugh",
+        "none"
+      ],
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_03a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a gasp\nC. no non-speech vocalization\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "none",
+      "distractor_labels": [
+        "scream",
+        "groan",
+        "gasp"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_03a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a sigh\nC. a laugh\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "laugh",
+      "distractor_labels": [
+        "sigh",
+        "none",
+        "scream"
+      ],
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_03a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a gasp\nB. a laugh\nC. a sigh\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "groan",
+      "distractor_labels": [
+        "laugh",
+        "sigh",
+        "gasp"
+      ],
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_03b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a laugh\nC. a scream\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "none",
+      "distractor_labels": [
+        "laugh",
+        "groan",
+        "scream"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_03b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a sigh\nC. no non-speech vocalization\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "laugh",
+      "distractor_labels": [
+        "none",
+        "groan",
+        "sigh"
+      ],
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_03b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a gasp\nC. no non-speech vocalization\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "groan",
+      "distractor_labels": [
+        "none",
+        "gasp",
+        "laugh"
+      ],
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_04a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a gasp\nC. a groan\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "none",
+      "distractor_labels": [
+        "gasp",
+        "laugh",
+        "groan"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_04a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a laugh\nC. a sigh\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "laugh",
+      "distractor_labels": [
+        "scream",
+        "none",
+        "sigh"
+      ],
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_04a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a laugh\nC. a groan\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "scream",
+      "distractor_labels": [
+        "groan",
+        "laugh",
+        "none"
+      ],
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_04b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a gasp\nC. no non-speech vocalization\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "none",
+      "distractor_labels": [
+        "scream",
+        "gasp",
+        "sigh"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_04b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a laugh\nC. a gasp\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "laugh",
+      "distractor_labels": [
+        "groan",
+        "gasp",
+        "sigh"
+      ],
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_04b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. no non-speech vocalization\nB. a laugh\nC. a scream\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "scream",
+      "distractor_labels": [
+        "laugh",
+        "none",
+        "groan"
+      ],
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_05a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a gasp\nB. a scream\nC. no non-speech vocalization\nD. a laugh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "B",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "laugh",
+          "text": "a laugh"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "none",
+      "distractor_labels": [
+        "scream",
+        "laugh",
+        "gasp"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_05a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a sigh\nC. no non-speech vocalization\nD. a gasp\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "gasp",
+          "text": "a gasp"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "sigh",
+      "distractor_labels": [
+        "none",
+        "scream",
+        "gasp"
+      ],
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_05a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a gasp\nC. a sigh\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "gasp",
+      "distractor_labels": [
+        "sigh",
+        "laugh",
+        "groan"
+      ],
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_05b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a scream\nC. no non-speech vocalization\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "none",
+      "distractor_labels": [
+        "sigh",
+        "scream",
+        "groan"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_05b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. no non-speech vocalization\nC. a laugh\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "sigh",
+      "distractor_labels": [
+        "none",
+        "scream",
+        "laugh"
+      ],
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_05b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a gasp\nC. a sigh\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "gasp",
+      "distractor_labels": [
+        "none",
+        "sigh",
+        "scream"
+      ],
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_06a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. no non-speech vocalization\nC. a gasp\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "none",
+      "distractor_labels": [
+        "gasp",
+        "sigh",
+        "laugh"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_06a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a sigh\nC. a gasp\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "sigh",
+      "distractor_labels": [
+        "gasp",
+        "groan",
+        "none"
+      ],
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_06a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a gasp\nC. a groan\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "groan",
+      "distractor_labels": [
+        "none",
+        "gasp",
+        "scream"
+      ],
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_06b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a groan\nC. a sigh\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "none",
+      "distractor_labels": [
+        "laugh",
+        "groan",
+        "sigh"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_06b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a gasp\nC. a sigh\nD. a laugh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "laugh",
+          "text": "a laugh"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "sigh",
+      "distractor_labels": [
+        "gasp",
+        "laugh",
+        "groan"
+      ],
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_06b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a sigh\nB. no non-speech vocalization\nC. a scream\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "groan",
+      "distractor_labels": [
+        "scream",
+        "sigh",
+        "none"
+      ],
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_07a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a sigh\nB. a scream\nC. a groan\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "B",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "C",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "none",
+      "distractor_labels": [
+        "groan",
+        "sigh",
+        "scream"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_07a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a sigh\nB. no non-speech vocalization\nC. a laugh\nD. a gasp\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "D",
+          "label": "gasp",
+          "text": "a gasp"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "sigh",
+      "distractor_labels": [
+        "laugh",
+        "none",
+        "gasp"
+      ],
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_07a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a sigh\nB. a laugh\nC. a gasp\nD. a scream\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "scream",
+          "text": "a scream"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "scream",
+      "distractor_labels": [
+        "laugh",
+        "gasp",
+        "sigh"
+      ],
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_07b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a groan\nC. a laugh\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "C",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "none",
+      "distractor_labels": [
+        "groan",
+        "scream",
+        "laugh"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_07b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a scream\nC. a sigh\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "sigh",
+      "distractor_labels": [
+        "none",
+        "groan",
+        "scream"
+      ],
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_07b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a gasp\nC. no non-speech vocalization\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "scream",
+      "distractor_labels": [
+        "none",
+        "gasp",
+        "sigh"
+      ],
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_08a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. no non-speech vocalization\nC. a gasp\nD. a scream\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "scream",
+          "text": "a scream"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "none",
+      "distractor_labels": [
+        "laugh",
+        "gasp",
+        "scream"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_08a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a sigh\nC. no non-speech vocalization\nD. a gasp\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "gasp",
+          "text": "a gasp"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "gasp",
+      "distractor_labels": [
+        "groan",
+        "none",
+        "sigh"
+      ],
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_08a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. no non-speech vocalization\nB. a gasp\nC. a laugh\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "groan",
+      "distractor_labels": [
+        "gasp",
+        "none",
+        "laugh"
+      ],
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_08b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a sigh\nC. a scream\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "none",
+      "distractor_labels": [
+        "sigh",
+        "scream",
+        "groan"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_08b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a laugh\nC. a gasp\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "gasp",
+      "distractor_labels": [
+        "none",
+        "laugh",
+        "groan"
+      ],
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_08b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a sigh\nB. a gasp\nC. a scream\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "groan",
+      "distractor_labels": [
+        "sigh",
+        "scream",
+        "gasp"
+      ],
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_09a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. no non-speech vocalization\nB. a gasp\nC. a groan\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "none",
+      "distractor_labels": [
+        "groan",
+        "sigh",
+        "gasp"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_09a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a gasp\nC. no non-speech vocalization\nD. a scream\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "D",
+          "label": "scream",
+          "text": "a scream"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "gasp",
+      "distractor_labels": [
+        "scream",
+        "laugh",
+        "none"
+      ],
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_09a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. no non-speech vocalization\nC. a sigh\nD. a laugh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "laugh",
+          "text": "a laugh"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "scream",
+      "distractor_labels": [
+        "sigh",
+        "none",
+        "laugh"
+      ],
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_09b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. no non-speech vocalization\nC. a gasp\nD. a scream\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "scream",
+          "text": "a scream"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "none",
+      "distractor_labels": [
+        "gasp",
+        "scream",
+        "groan"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_09b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. a sigh\nC. a gasp\nD. a laugh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "C",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "D",
+          "label": "laugh",
+          "text": "a laugh"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "gasp",
+      "distractor_labels": [
+        "sigh",
+        "laugh",
+        "groan"
+      ],
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_09b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a laugh\nB. a gasp\nC. a scream\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "B",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "scream",
+      "distractor_labels": [
+        "none",
+        "gasp",
+        "laugh"
+      ],
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10a",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_10a__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10a__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. no non-speech vocalization\nC. a sigh\nD. a groan\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "groan",
+          "text": "a groan"
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "none",
+      "distractor_labels": [
+        "scream",
+        "sigh",
+        "groan"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10a",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_10a__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10a__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a groan\nB. no non-speech vocalization\nC. a scream\nD. a gasp\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "D",
+          "label": "gasp",
+          "text": "a gasp"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "groan",
+      "distractor_labels": [
+        "gasp",
+        "scream",
+        "none"
+      ],
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10a",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_10a__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10a__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a gasp\nB. no non-speech vocalization\nC. a sigh\nD. a scream\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "B",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "C",
+          "label": "sigh",
+          "text": "a sigh"
+        },
+        {
+          "id": "D",
+          "label": "scream",
+          "text": "a scream"
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "scream",
+      "distractor_labels": [
+        "none",
+        "gasp",
+        "sigh"
+      ],
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10b",
+      "condition": "baseline",
+      "task_type": "perception",
+      "task_id": "v6_10b__baseline__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10b__baseline.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. no non-speech vocalization\nB. a groan\nC. a laugh\nD. a scream\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        },
+        {
+          "id": "B",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "C",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "D",
+          "label": "scream",
+          "text": "a scream"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "none",
+      "distractor_labels": [
+        "laugh",
+        "scream",
+        "groan"
+      ],
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10b",
+      "condition": "condition_a",
+      "task_type": "perception",
+      "task_id": "v6_10b__condition_a__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10b__condition_a.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a gasp\nB. a scream\nC. a groan\nD. a sigh\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "gasp",
+          "text": "a gasp"
+        },
+        {
+          "id": "B",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "C",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "D",
+          "label": "sigh",
+          "text": "a sigh"
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "groan",
+      "distractor_labels": [
+        "scream",
+        "sigh",
+        "gasp"
+      ],
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10b",
+      "condition": "condition_b",
+      "task_type": "perception",
+      "task_id": "v6_10b__condition_b__perception",
+      "stimulus_audio_path": "",
+      "prompt_version": "perception_question@fea3254371bd",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10b__condition_b.mp3"
+      },
+      "question": "Which non-speech vocalization did you hear in the conversation? Select exactly one option.\n\nA. a scream\nB. a laugh\nC. a groan\nD. no non-speech vocalization\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scream",
+          "text": "a scream"
+        },
+        {
+          "id": "B",
+          "label": "laugh",
+          "text": "a laugh"
+        },
+        {
+          "id": "C",
+          "label": "groan",
+          "text": "a groan"
+        },
+        {
+          "id": "D",
+          "label": "none",
+          "text": "no non-speech vocalization"
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "scream",
+      "distractor_labels": [
+        "groan",
+        "none",
+        "laugh"
+      ],
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    }
+  ]
+}

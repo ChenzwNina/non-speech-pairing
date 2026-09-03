@@ -1,0 +1,83 @@
+# v6 evaluation configuration.
+#
+# Model and judge names live here rather than in code, per the spec. Credentials never do:
+# every provider reads its key from the environment (.env is loaded into it at import).
+#
+# Anything that affects what a model is asked — prompt files, seeds, option sets — is recorded
+# in each output record, so a score can be traced back to the exact request that produced it.
+
+dataset:
+  # The transcripts the VM rendered the audio from. The eval is keyed to this file; pointing it
+  # at pairs.json would score audio against text that was never spoken.
+  transcripts: out/pairs_spoken.json
+
+  # Two renderers speak the same 20 transcripts, and they are being compared, so the renderer
+  # is an experimental factor rather than a detail: each owns a subtree, every record stamps
+  # which one produced the stimulus it was asked about, and every metric breaks down by it.
+  # Adding a third is a block here plus a render; nothing downstream needs to change.
+  renderers:
+    elevenlabs:
+      audio_root: out/audio/elevenlabs
+      audio_path_template: "{item_id}__{condition}.mp3"
+      notes: >
+        eleven_v3, two stock voices, stability 0.30. The vocalization is a bracketed audio tag
+        rendered inline, so it colours the delivery of the words around it.
+    dia:
+      audio_root: out/audio/dia
+      audio_path_template: "{item_id}__{condition}.wav"
+      notes: >
+        Voice-cloned from reference_audio.wav, parenthesised non-verbal tags. Rendered on the
+        VM; set the template to whatever that job actually wrote.
+  # Used when a command is not told which renderer to work on.
+  default_renderer: elevenlabs
+
+# One seed governs every deterministic draw: option order, correct-answer position, paired-trial
+# candidate order. Changing it reshuffles the frozen task set, so it changes the benchmark.
+seed: 20260902
+
+# The six answerable perception labels. `none` is a normal option, not a special case.
+inventory: [laugh, sigh, gasp, groan, scream, none]
+
+writers:
+  # Rubrics are written by Claude per the spec. `transport: cli` bills the subscription through
+  # the claude CLI; `transport: api` uses ANTHROPIC_API_KEY instead.
+  rubric: {model: claude-opus-5, transport: cli}
+  # The pragmatic multiple-choice options are written by a different family from the rubrics, so
+  # a distractor differs from the correct answer in substance rather than in one model's style.
+  pragmatic: {model: gpt-5.6-sol, effort: high}
+
+# The systems under test. Each is a speech-to-speech model reached over realtime websockets by
+# providers.py, at its own default effort — 2.0's convention, kept.
+evaluated_models:
+  - {id: openai, provider: openai, model: gpt-realtime-2.1}
+  - {id: grok,   provider: grok,   model: grok-voice-think-fast-2.0}
+  - {id: gemini, provider: gemini, model: gemini-3.1-flash-live-preview}
+  - {id: qwen,   provider: qwen,   model: qwen-audio-3.0-realtime-plus}
+
+judges:
+  # Text judges score response content. Four families, one judgement each.
+  text:
+    - {id: gpt,    provider: openai, model: gpt-5.6-sol}
+    - {id: gemini, provider: gemini, model: gemini-3.1-pro}
+    - {id: grok,   provider: grok,   model: grok-4.6}
+    - {id: qwen,   provider: qwen,   model: qwen3-max}
+  # Audio judges score response tone. They must listen, so the panel is smaller.
+  audio:
+    - {id: gpt-audio,    provider: openai, model: gpt-realtime-2.1}
+    - {id: gemini-audio, provider: gemini, model: gemini-3.1-flash-live-preview}
+  # 2.0 found that a model rating its own reply is a conflict the blinding does not remove, and
+  # scored the tone panel leave-one-out instead. Kept as the default; the spec is silent on it.
+  audio_leave_one_out: true
+
+paired:
+  # A swapped-position duplicate measures position bias and doubles the paired stage, which is
+  # already over half the judging budget. Off by default; turn it on for a bias audit.
+  swap_duplicate: false
+  # What to do when four judges split 2-2. `individual` keeps every binary judgement in the
+  # primary analysis and reports the 2-2 rate separately, which is the spec's recommendation.
+  # `half` scores the aggregated item 0.5. `unresolved` drops it from the denominator.
+  tie_policy: individual
+
+scoring:
+  bootstrap_resamples: 2000
+  confidence: 0.95

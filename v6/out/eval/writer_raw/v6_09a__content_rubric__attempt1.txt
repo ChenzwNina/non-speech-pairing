@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_09a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "A reports being noticed and waved at by her boss off-duty, with no clear stance toward it.",
+      "primary_response_function": "Acknowledging and lightly clarifying A's stance",
+      "required_content": [
+        "Registers that the boss has noticed and greeted A",
+        "Leaves A's feelings about the encounter open or lightly asks about them"
+      ],
+      "acceptable_variations": [
+        "Ask whether A wants to go over or stay put",
+        "Note the wave as friendly and let A decide next steps"
+      ],
+      "must_avoid": [
+        "Attributing strong fear, dread, or panic to A",
+        "Treating the moment as thrilling or shocking news"
+      ],
+      "contrastive_requirement": "Should stay emotionally neutral, neither reacting to a startle nor soothing alarm, since no vocal reaction is present.",
+      "reference_response": "She waved back, that's a good sign. Do you feel like going over, or would you rather just enjoy your drink?",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "gasp",
+      "contextual_interpretation": "A is caught off guard at being spotted; the gasp marks the moment as startling news and invites a shared reaction.",
+      "primary_response_function": "Acknowledging the surprise and sharing the moment",
+      "required_content": [
+        "Treats being spotted as an unexpected, noteworthy turn",
+        "Responds to the encounter as manageable rather than dangerous"
+      ],
+      "acceptable_variations": [
+        "React with mild amused disbelief at the coincidence",
+        "Match the startle briefly, then nudge A toward saying hi"
+      ],
+      "must_avoid": [
+        "Treating A as frightened or in need of calming",
+        "Ignoring that something surprising just happened"
+      ],
+      "contrastive_requirement": "Unlike baseline it must register a startle, and unlike condition_b it should not treat A as alarmed or needing reassurance.",
+      "reference_response": "Wait, she actually waved? Okay, that's not bad. Wave back and go over in a minute, no big deal.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "contextual_interpretation": "A reacts with sharp alarm at being seen off-duty; the scream escalates the moment and signals dread needing settling.",
+      "primary_response_function": "De-escalating and reassuring, offering help",
+      "required_content": [
+        "Settles A's alarm by lowering the stakes of the encounter",
+        "Offers support or a concrete way through it, such as going over together or waiting"
+      ],
+      "acceptable_variations": [
+        "Reassure that being at a bar off-duty is fine and no problem",
+        "Offer to accompany A or to handle the greeting with her"
+      ],
+      "must_avoid": [
+        "Amplifying the panic or agreeing the situation is disastrous",
+        "Brushing past the outburst with only neutral logistics"
+      ],
+      "contrastive_requirement": "Must actively calm and support A rather than merely noting a surprise, addressing distress the other two conditions do not carry.",
+      "reference_response": "Hey, breathe — you're off the clock, this is allowed. Wave back, and I'll walk over with you whenever you want.",
+      "ambiguity_flag": true,
+      "ambiguity_note": "The scream may be genuine dread about workplace exposure or playful mock-horror; both readings converge on lowering the stakes, but joining the joke versus sincere reassurance are different actions."
+    }
+  ],
+  "item_level_review_note": "Contrast is usable, but a full scream in a quiet bar is socially conspicuous and the mid-clause placement ('looked over and (screams) waved') is awkward; consider moving the tag to turn onset so the reaction clearly attaches to being spotted."
+}

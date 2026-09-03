@@ -1,0 +1,69 @@
+{
+  "item_id": "v6_07b",
+  "item_level_review_note": "",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "correct": "The speaker sounds matter-of-fact and reports that the recurring tapping has resumed.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and reassures the housemate that the recurring tapping is harmless."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds suspicious and suggests that someone outside is causing the tapping."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "correct": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds terrified and urgently alerts the housemate that the unexplained tapping has resumed."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds resigned and reassures the housemate that the recurring tapping is harmless."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds frustrated and urges the housemate to solve the recurring disturbance."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "correct": "The speaker sounds terrified and urgently alerts the housemate that the unexplained tapping has resumed.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds terrified and orders the housemate to stay away from the yard."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds anxious and asks the housemate to explain what is causing the tapping."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ]
+}

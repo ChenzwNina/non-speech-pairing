@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_07b",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Engaged, attentive interest in the ongoing mystery, mildly alert but not alarmed.",
+      "valence": "neutral",
+      "arousal": "medium",
+      "interpersonal_stance": ["attentive", "curious", "practical"],
+      "prosody": {
+        "pitch": "Mid-level with moderate, conversational variation",
+        "energy": "Ordinary conversational intensity, evenly sustained",
+        "rate": "Normal, unhurried speaking rate",
+        "pausing": "Regular phrasing with natural clause breaks",
+        "voice_quality": "Relaxed and steady"
+      },
+      "acceptable_range": [
+        "Slightly brisk and matter-of-fact, as if ready to help investigate",
+        "Mildly intrigued with a touch of light wariness"
+      ],
+      "must_avoid": [
+        "Panicked, breathy, or urgent delivery",
+        "Flat, bored monotone with no engagement"
+      ],
+      "contrastive_cue": "Unmarked baseline engagement: neither the weary drag of resignation nor the compressed urgency of a fear response.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "tone_summary": "Warm, wry sympathy for a tired housemate worn down by a recurring nuisance.",
+      "valence": "slightly_negative",
+      "arousal": "medium_low",
+      "interpersonal_stance": ["sympathetic", "warm", "lightly wry"],
+      "prosody": {
+        "pitch": "Lower and narrower range, with gently falling contours",
+        "energy": "Softer than baseline, unforced",
+        "rate": "Slightly slower, easy pacing",
+        "pausing": "Relaxed, with a settled pause or two rather than clipped bursts",
+        "voice_quality": "Gentle and slightly weary but supportive"
+      },
+      "acceptable_range": [
+        "Dry, faintly amused commiseration that lightens the mood",
+        "Quiet, patient warmth that acknowledges the fatigue without dramatizing it"
+      ],
+      "must_avoid": [
+        "Bright, chipper enthusiasm mismatched to the fatigue",
+        "Sharp, alarmed urgency treating this as an emergency"
+      ],
+      "contrastive_cue": "Lowered, slowed, softened delivery with falling contours signalling shared weariness rather than alertness.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "tone_summary": "Calm urgency: steady, grounding reassurance that takes the fright seriously without amplifying it.",
+      "valence": "slightly_negative",
+      "arousal": "medium_high",
+      "interpersonal_stance": ["calmly urgent", "reassuring", "protective"],
+      "prosody": {
+        "pitch": "Controlled mid-to-low pitch, deliberately steadier than the alarm it answers",
+        "energy": "Firm and clearly projected without shouting",
+        "rate": "Slightly quicker than baseline but articulate, not rushed",
+        "pausing": "Short decisive phrases with brief settling pauses",
+        "voice_quality": "Steady and grounded with audible alertness"
+      },
+      "acceptable_range": [
+        "Softer, hushed steadiness that calms while staying visibly alert",
+        "Brisk, take-charge firmness that stays warm rather than harsh"
+      ],
+      "must_avoid": [
+        "Matching the scream with equally panicked, shrill delivery",
+        "Casual, slow, unbothered tone that dismisses the fright"
+      ],
+      "contrastive_cue": "Heightened alertness and firm projection held under deliberate control, distinctly more activated than baseline or the sigh.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

@@ -1,0 +1,1789 @@
+{
+  "written_at": "2026-09-02T07:50:11+00:00",
+  "run_id": "r20260902T073943Z",
+  "writer": "gpt-5.6-sol",
+  "effort": "high",
+  "prompt_version": "pragmatic_writer@ef5774f855ee",
+  "items": [
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_01a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_01a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:40:23+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_01a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and frames the children's safari-inspired behavior as a new game.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and warns that the children's safari-inspired game should be stopped."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and proposes stricter supervision for the children's safari-inspired game."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "correct": "The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and frames the children's safari-inspired game as something the family must accommodate."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds delighted and encourages the children to expand their safari-inspired game."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds nostalgic and uses the children's game to reminisce about the safari."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "sigh",
+            "correct": "The speaker sounds resigned and frames the children's safari-inspired game as something the family must accommodate.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds weary and insists that the children's safari-inspired game should end."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds worried and asks the other parent to supervise the children's safari-inspired game."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_01b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_01b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:40:51+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_01b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and offers the past incident as practical caution.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and changes the subject to boast about past softball experience."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and urges the daughter to keep her glove in her bag."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "correct": "The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and presents the cautionary anecdote as a frustration they endured."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds amused and ridicules the daughter for carrying her glove everywhere."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and urges the daughter to keep her glove in her bag."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "sigh",
+            "correct": "The speaker sounds resigned and presents the cautionary anecdote as a frustration they endured.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds resigned and signals reluctance to attend the daughter's upcoming practice."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and urges the daughter to keep her glove in her bag."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_02a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_02a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:41:11+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_02a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and identifies a notable detail in the photograph.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and frames Grandma's unexpected appearance as humorous."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and criticizes Grandma for wearing the leather jacket."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds nostalgic and encourages sharing memories about Grandma."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "correct": "The speaker sounds amused and frames Grandma's unexpected appearance as humorous.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds surprised and marks Grandma's unexpected appearance as a striking discovery."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds amused and reassures the sibling that Grandma was never reckless."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds affectionate and expresses pride in Grandma's adventurous past."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "correct": "The speaker sounds surprised and marks Grandma's unexpected appearance as a striking discovery.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and frames Grandma's unexpected appearance as humorous."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds startled and warns the sibling that the motorcycle poses immediate danger."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds worried and questions whether Grandma was safe riding the motorcycle."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_02b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_02b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:41:33+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_02b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds approving and recognizes the score as a family-worthy achievement.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and playfully celebrates the student for edging past her old mark."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds pleased and gently reassures the student that the score is good enough."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds grateful and credits herself for helping the student prepare successfully."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "correct": "The speaker sounds amused and playfully celebrates the student for edging past her old mark.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds astonished and emphasizes how impressive the student's narrow victory is."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds amused and dismisses the one-point difference as too small to matter."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds proud and claims shared credit for the student's strong result."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "correct": "The speaker sounds astonished and emphasizes how impressive the student's narrow victory is.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and playfully celebrates the student for edging past her old mark."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds startled and warns that beating her mark could create family rivalry."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds relieved and treats the score as proof that their studying worked."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_03a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_03a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:41:56+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_03a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and explains why they should reduce the number of books packed.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and confirms that carrying all six textbooks is the best plan."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds nervous and seeks reassurance about being ready for the first day."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "correct": "The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds physically pained and signals that the backpack is too heavy to carry as packed."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds amused and celebrates being fully prepared with every textbook packed."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds nervous and seeks reassurance about managing the first day of school."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "correct": "The speaker sounds physically pained and signals that the backpack is too heavy to carry as packed.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds exhausted and signals that they no longer want to walk to school."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds anxious and seeks reassurance about having the correct books for Monday."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_03b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_03b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:42:40+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_03b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and explains why the expected early departure did not happen.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and highlights the absurd timing of being assigned still more work."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and confirms the supervisor explicitly canceled the expected early departure."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds resentful and accuses the supervisor of intentionally preventing the expected early departure."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "correct": "The speaker sounds amused and highlights the absurd timing of being assigned still more work.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds physically strained and signals that lifting the box is causing pain."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds amused and celebrates getting help with the remaining boxes."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds irritated and blames the coworker for delaying the expected early departure."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "correct": "The speaker sounds physically strained and signals that lifting the box is causing pain.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and highlights the absurd timing of being assigned still more work."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds physically strained and asks the coworker to handle all the lifting."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds resentful and accuses the supervisor of intentionally preventing the expected early departure."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_04a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_04a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:43:08+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_04a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and reports a link between lifting the frame and the router blinking.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds composed and explains how A should repair the router's blinking lights."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds impressed and praises A for earning a professional networking certificate."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "correct": "The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds frightened and raises alarm that the frame may be triggering the router's blinking."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds delighted and congratulates A on earning the networking certificate."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds playful and suggests displaying the certificate beside the router."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "correct": "The speaker sounds frightened and raises alarm that the frame may be triggering the router's blinking.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds agitated and accuses A of deliberately disrupting the office network."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and asks A to unplug the router before inspecting it."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_04b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_04b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:43:51+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_04b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and uses the recap to establish what happened during the play.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds detached and uses the recap to assign blame for the teammate's mistake."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and uses the recap to assess whether the teammate needs medical attention."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "correct": "The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds frightened and uses the recap to signal alarm about the teammate's possible injury."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds playful and uses the recap to praise the teammate's effort."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and uses the recap to assess whether the teammate needs medical attention."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "correct": "The speaker sounds frightened and uses the recap to signal alarm about the teammate's possible injury.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds alarmed and uses the recap to warn others about an approaching ball."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds frustrated and uses the recap to criticize the teammate's poor fielding."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_05a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_05a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:44:27+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_05a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds neutral and asks for confirmation that another item was found.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and frames the discovery as another weary setback."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds neutral and requests details about the item's sentimental importance."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds supportive and urges the friend to discard every reminder of Lena."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "correct": "The speaker sounds resigned and frames the discovery as another weary setback.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds surprised and marks the discovery as unexpected news."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds weary and discourages the friend from discussing the discovery further."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds saddened and mourns the failed relationship alongside the friend."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "correct": "The speaker sounds surprised and marks the discovery as unexpected news.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and frames the discovery as another weary setback."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds alarmed and treats the mug as an urgent problem requiring action."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and checks whether the discovery has emotionally unsettled the friend."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_05b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_05b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:45:04+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_05b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds certain and states the inference that Mia took the entire cake.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds thoughtful and asks the other parent whether Mia took the entire cake."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds concerned and proposes calling Mia before anyone starts baking a replacement cake."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "correct": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds startled and marks Mia's taking the entire cake as a sudden realization."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds weary and asks the other parent to recover the cake immediately."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds disappointed and proposes baking another cake for the birthday right away."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "correct": "The speaker sounds startled and marks Mia's taking the entire cake as a sudden realization.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds alarmed and warns the other parent that Mia may be in immediate danger."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds indignant and accuses Mia of intentionally stealing the birthday cake."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_06a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_06a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:45:22+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_06a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and confirms she will get ready to leave.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and signals reluctant compliance with leaving for the appointment."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and asks her mother to postpone the appointment."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds anxious and seeks reassurance about the upcoming dental visit."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "correct": "The speaker sounds resigned and signals reluctant compliance with leaving for the appointment.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds physically pained and conveys discomfort while agreeing to get ready."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds weary and asks her mother to handle getting her shoes."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds anxious and seeks reassurance about what the dentist will do."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "correct": "The speaker sounds physically pained and conveys discomfort while agreeing to get ready.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and signals reluctant compliance with leaving for the appointment."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds distressed and protests that she cannot go to the appointment."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds anxious and seeks reassurance about what the dentist will do."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_06b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_06b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:45:49+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_06b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds concerned and directs the sitter to seek prompt veterinary care.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds concerned and recommends monitoring Milo at home instead of seeking immediate care."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds frustrated and blames the sitter for not recognizing Milo's illness sooner."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "correct": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds pained and signals acute distress before directing Milo to veterinary care."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds resigned and suggests waiting at home rather than pursuing veterinary care."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds frustrated and blames the sitter for allowing Milo's condition to worsen."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "correct": "The speaker sounds pained and signals acute distress before directing Milo to veterinary care.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds pained and asks the sitter to comfort Milo without contacting the clinic."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds worried and seeks reassurance that Milo's behavior will pass without treatment."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_07a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_07a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:46:09+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_07a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_07a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds concerned and explains that waiting until home is not feasible.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and acknowledges that waiting until home is not feasible."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds concerned and asks whether their friend can shorten the walk home."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds frustrated and proposes trying the café across the street instead."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "correct": "The speaker sounds resigned and acknowledges that waiting until home is not feasible.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds frightened and urgently warns that waiting until home is not feasible."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds resigned and requests reassurance that they can wait until home."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds frustrated and blames their friend for not finding an available restroom."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "correct": "The speaker sounds frightened and urgently warns that waiting until home is not feasible.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and acknowledges that waiting until home is not feasible."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds alarmed and asks whether waiting until home might still be feasible."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds anxious and asks whether the café will have an available restroom."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_07b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_07b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:46:54+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_07b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_07b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and reports that the recurring tapping has resumed.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and reassures the housemate that the recurring tapping is harmless."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds suspicious and suggests that someone outside is causing the tapping."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "correct": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds terrified and urgently alerts the housemate that the unexplained tapping has resumed."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds resigned and reassures the housemate that the recurring tapping is harmless."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds frustrated and urges the housemate to solve the recurring disturbance."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "correct": "The speaker sounds terrified and urgently alerts the housemate that the unexplained tapping has resumed.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds terrified and orders the housemate to stay away from the yard."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds anxious and asks the housemate to explain what is causing the tapping."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_08a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_08a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:47:14+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_08a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_08a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and explains why the salad is no longer acceptable.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds startled and highlights the unexpected discovery in the salad."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds dissatisfied and urges their date to complain about the expensive salad."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds disgusted and demands that the restaurant remove the salad charge."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "correct": "The speaker sounds startled and highlights the unexpected discovery in the salad.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds pained and emphasizes the discomfort caused by the fork mishap."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds alarmed and warns their date not to eat the contaminated salad."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds indignant and demands that the restaurant remove the salad charge."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "correct": "The speaker sounds pained and emphasizes the discomfort caused by the fork mishap.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds startled and highlights the unexpected discovery in the salad."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds distressed and asks their date to inspect the injury."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds embarrassed and apologizes for causing a scene in the restaurant."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_08b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_08b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:47:51+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_08b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_08b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and reports the coin’s age alongside the minor mishap.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds composed and reassures the friend that the finger is unharmed."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds cautious and warns the friend to handle the display case carefully."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "correct": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds pained and draws attention to the case pinching the finger."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds startled and warns the friend that the display case could hurt them."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds worried and asks the friend to inspect the injured finger."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "correct": "The speaker sounds pained and draws attention to the case pinching the finger.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds distressed and warns the friend not to touch the display case."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds suspicious and questions whether the seller concealed the coin’s true age."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_09a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_09a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:48:11+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_09a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_09a",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and reports that her boss has acknowledged her.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds startled and marks her boss's attention as unexpected."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds composed and reassures her friend that greeting her boss poses no problem."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds uneasy and signals reluctance to approach her boss."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "correct": "The speaker sounds startled and marks her boss's attention as unexpected.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds frightened and treats her boss's attention as threatening."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds excited and celebrates receiving friendly attention from her boss."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds uneasy and signals reluctance to approach her boss."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "correct": "The speaker sounds frightened and treats her boss's attention as threatening.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds startled and marks her boss's attention as unexpected."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds alarmed and scolds her friend for not warning her sooner."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds embarrassed and signals reluctance to greet her boss."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_09b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_09b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:48:35+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_09b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_09b",
+        "item_level_review_note": "",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and reports a promising development that requires immediate action.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds startled and highlights the unexpected urgency of the manager's request."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds composed and reassures the listener that the last-minute call will be easy."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds optimistic and treats the call as confirmation that an offer is imminent."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "correct": "The speaker sounds startled and highlights the unexpected urgency of the manager's request.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds frightened and signals alarm about facing the imminent video call."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds startled and asks the listener to explain why the manager is calling."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds excited and celebrates the request as proof that the position is secured."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "correct": "The speaker sounds frightened and signals alarm about facing the imminent video call.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds startled and highlights the unexpected urgency of the manager's request."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds panicked and urges the listener to cancel the manager's video call."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds hopeful and treats the call as a routine step toward an offer."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_10a",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_10a__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:49:06+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_10a__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_10a",
+        "item_level_review_note": "Condition B is difficult to distinguish because a scream after a foot becomes trapped can signal sudden pain as readily as fear.",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and explains the predicament so the friend can help safely.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds pained and signals that freeing the trapped foot requires careful assistance."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and confirms that the packing task no longer requires any help."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds mildly impatient and asks the friend to finish packing the suitcase."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "groan",
+            "correct": "The speaker sounds pained and signals that freeing the trapped foot requires careful assistance.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds frightened and urgently signals that the trapped foot puts them in danger."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds pained and blames the friend for trapping their foot behind the chair."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds mildly frustrated and asks the friend to retrieve another item for packing."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "correct": "The speaker sounds frightened and urgently signals that the trapped foot puts them in danger.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds pained and signals that freeing the trapped foot requires careful assistance."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds frightened and warns the friend not to touch or steady the chair."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds anxious and asks the friend to check that the suitcase is fully packed."
+              }
+            ],
+            "ambiguity_flag": true,
+            "ambiguity_note": "In this context, the scream could indicate sudden pain from the trapped foot rather than fear, making the paired reading defensible."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    },
+    {
+      "run_id": "r20260902T073943Z",
+      "item_id": "v6_10b",
+      "condition": "all",
+      "task_type": "pragmatic_options",
+      "task_id": "v6_10b__all__pragmatic_options",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_writer@ef5774f855ee",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "model_version": "",
+      "settings": {
+        "effort": "high"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:50:11+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_10b__pragmatic_options.txt",
+      "parsed": {
+        "item_id": "v6_10b",
+        "item_level_review_note": "Condition B is ambiguous because a scream immediately after a slipped landing can communicate physical pain as plausibly as fear.",
+        "conditions": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "correct": "The speaker sounds matter-of-fact and reports a landing mishap that could affect the next attempt.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds matter-of-fact and uses the slip to request an immediate change of shoes."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds disappointed and blames the slip for failing to complete the dunk."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "groan",
+            "correct": "The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds frightened and urgently alerts the friend to immediate danger from the slipped landing."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds sore and uses the mishap to argue against any further practice."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds frustrated and complains that the ball placement is making the drill harder."
+              }
+            ],
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "correct": "The speaker sounds frightened and urgently alerts the friend to immediate danger from the slipped landing.",
+            "distractors": [
+              {
+                "kind": "paired_condition",
+                "text": "The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury."
+              },
+              {
+                "kind": "wrong_function",
+                "text": "The speaker sounds excited and celebrates reaching the rim as proof the training is finally working."
+              },
+              {
+                "kind": "scenario_plausible",
+                "text": "The speaker sounds nervous and signals doubt that more practice will ever lead to a dunk."
+              }
+            ],
+            "ambiguity_flag": true,
+            "ambiguity_note": "The pain interpretation is equally defensible because screaming after a slipped landing can signal an injury rather than fear."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": []
+    }
+  ]
+}

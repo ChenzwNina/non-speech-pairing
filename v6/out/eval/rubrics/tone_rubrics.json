@@ -1,0 +1,2349 @@
+{
+  "written_at": "2026-09-02T07:58:32+00:00",
+  "run_id": "r20260902T073936Z",
+  "writer": "claude-opus-5",
+  "transport": "cli",
+  "prompt_version": "tone_rubric_writer@e6c1185215ce",
+  "items": [
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_01a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_01a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:40:33+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, easygoing conversational tone; mildly interested in the kids' game without strong affect either way.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "friendly",
+              "casual"
+            ],
+            "prosody": {
+              "pitch": "Mid level with ordinary conversational range and gentle falling endings",
+              "energy": "Moderate, evenly distributed",
+              "rate": "Comfortable everyday pace",
+              "pausing": "Natural clause-level breaks, no marked hesitation",
+              "voice_quality": "Relaxed and steady"
+            },
+            "acceptable_range": [
+              "Mildly curious and light, with a small upward lift on the final phrase",
+              "Flatter and matter-of-fact, plainly acknowledging the situation"
+            ],
+            "must_avoid": [
+              "Big laughing exuberance or exclamatory delight unsupported by the words",
+              "Heavy, weary, or commiserating delivery that implies burden"
+            ],
+            "contrastive_cue": "Affectively unmarked middle ground: neither shared laughter-warmth nor audible weariness; steady, ordinary conversational energy.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "tone_summary": "Warm, amused delivery that shares the joke about the kids without tipping into loud performance.",
+            "valence": "positive",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "affectionate"
+            ],
+            "prosody": {
+              "pitch": "Slightly raised with wider, livelier movement and buoyant contours",
+              "energy": "Noticeably brighter and more forward than baseline",
+              "rate": "A touch quicker, with light bounce",
+              "pausing": "Loose and easy; small breathy or smiling breaks are welcome",
+              "voice_quality": "Bright, smiling, lightly breathy"
+            },
+            "acceptable_range": [
+              "Soft chuckle-tinged warmth, quieter but clearly smiling",
+              "More animated teasing brightness with livelier pitch movement"
+            ],
+            "must_avoid": [
+              "Flat, weary, or resigned delivery that ignores the shared humor",
+              "Mocking or derisive sharpness aimed at the children or parents"
+            ],
+            "contrastive_cue": "Audible smile in the voice: brighter, more buoyant pitch and lighter energy than either other version.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "sigh",
+            "tone_summary": "Gently sympathetic, low-key delivery acknowledging tiredness with light supportive warmth rather than matching the weariness.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "sympathetic",
+              "warm",
+              "understated"
+            ],
+            "prosody": {
+              "pitch": "Lower and narrower, with settling downward endings",
+              "energy": "Softer and more contained than baseline",
+              "rate": "Slightly slower and unhurried",
+              "pausing": "A short settling pause before or within the response; relaxed rhythm",
+              "voice_quality": "Gentle, slightly breathy, steady"
+            },
+            "acceptable_range": [
+              "Quietly commiserating with a faint wry lift, acknowledging the humor of the exhaustion",
+              "Calm and grounded, offering steadiness without noticeable heaviness"
+            ],
+            "must_avoid": [
+              "Bright, giggly enthusiasm that overrides the weariness signal",
+              "Exaggerated gloom, pity, or dramatic heaviness out of proportion to the situation"
+            ],
+            "contrastive_cue": "Lowered, softened, slower delivery with settling downward contours, contrasting the brighter baseline and buoyant laugh version.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_01b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_01b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:41:21+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, easygoing conversational interest in the upcoming season and the glove-hiding anecdote.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "warm",
+              "attentive",
+              "friendly"
+            ],
+            "prosody": {
+              "pitch": "mid level with ordinary conversational range",
+              "energy": "moderate, evenly sustained",
+              "rate": "comfortable everyday pace",
+              "pausing": "natural phrase breaks, no marked hesitation",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly brighter, casually curious delivery with mild upward inflection",
+              "Slightly more level and matter-of-fact, still audibly engaged"
+            ],
+            "must_avoid": [
+              "Flat, disengaged recitation with no conversational involvement",
+              "Strongly marked affect such as loud hilarity or heavy sympathy"
+            ],
+            "contrastive_cue": "Unmarked engaged baseline: neither the buoyant lift of amusement nor the softened, weighted quality of resignation.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "tone_summary": "Light, amused warmth that joins the shared joke about old teammates hiding the glove.",
+            "valence": "positive",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "amused"
+            ],
+            "prosody": {
+              "pitch": "raised overall with wider, livelier excursions",
+              "energy": "buoyant, slightly forward",
+              "rate": "a touch quicker with animated bursts",
+              "pausing": "loose and breezy, may carry a smile-break or breathy onset",
+              "voice_quality": "bright, smiling, lightly breathy"
+            },
+            "acceptable_range": [
+              "Gently chuckling teasing directed at the old teammates",
+              "Warm, grinning delivery without audible laughter, carried by brightness alone"
+            ],
+            "must_avoid": [
+              "Somber, weighted, or sympathetic delivery treating the memory as a grievance",
+              "Forced, over-loud laughter that overwhelms the speech"
+            ],
+            "contrastive_cue": "Audible smile in the voice — raised, wider pitch and buoyant energy shared with the joke.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "sigh",
+            "tone_summary": "Softer, wry warmth acknowledging an old irritation without dwelling on it.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "sympathetic",
+              "gently wry",
+              "steadying"
+            ],
+            "prosody": {
+              "pitch": "slightly lowered with narrower range and falling contours",
+              "energy": "softer, more settled",
+              "rate": "unhurried, slightly slower",
+              "pausing": "a little more space before and between phrases",
+              "voice_quality": "gentle and restrained, lightly breathy"
+            },
+            "acceptable_range": [
+              "Quiet sympathetic acknowledgment that lets the memory land before moving on",
+              "Dry, low-key wry delivery that lightens toward the daughter's practical plan"
+            ],
+            "must_avoid": [
+              "Bright, laughing, high-energy delivery that ignores the weariness",
+              "Heavy, distressed or mournful tone out of scale with a minor old annoyance"
+            ],
+            "contrastive_cue": "Lowered, softened delivery with slower pacing and falling contours in place of buoyant brightness.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_02a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_02a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:42:07+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, warm interest in a shared family memory, without strong amusement or astonishment.",
+            "valence": "slightly_positive",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "warm",
+              "attentive",
+              "conversational"
+            ],
+            "prosody": {
+              "pitch": "mid level with moderate, gently varied range",
+              "energy": "moderate and even, no strong peaks",
+              "rate": "unhurried conversational pace",
+              "pausing": "regular phrase-level pauses, smooth rhythm",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Mildly curious and reflective, slightly softer and slower",
+              "Lightly friendly and upbeat, a touch more animated but still unmarked"
+            ],
+            "must_avoid": [
+              "Loud, laughter-tinged excitement or teasing sing-song",
+              "Flat, disengaged monotone that sounds uninterested in the photos"
+            ],
+            "contrastive_cue": "Absence of any single affective peak: steady mid-level animation rather than an amused lift or a sharp wonder-marked onset.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "tone_summary": "Playful, affectionately amused delight at the unexpected image of their grandmother.",
+            "valence": "positive",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "affectionate"
+            ],
+            "prosody": {
+              "pitch": "higher overall with wide, buoyant upward contours",
+              "energy": "lively, with light emphatic bursts",
+              "rate": "somewhat quicker, easily flowing",
+              "pausing": "loose and irregular, small breathy breaks that carry lightness",
+              "voice_quality": "bright with a smiling, laughter-adjacent quality"
+            },
+            "acceptable_range": [
+              "Softly chuckling warmth, lower energy but clearly smiling",
+              "Brightly teasing and animated, delighted admiration without mockery"
+            ],
+            "must_avoid": [
+              "Hushed, awe-struck or startled delivery with a sharp intake",
+              "Cold, deadpan or sarcastic dryness that reads as dismissive of the grandmother"
+            ],
+            "contrastive_cue": "Audible smile and buoyant, laughter-adjacent lightness sustained across the utterance rather than a single surprise peak.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "tone_summary": "Impressed wonder and admiring disbelief at a newly discovered side of their grandmother.",
+            "valence": "slightly_positive",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "astonished",
+              "admiring",
+              "attentive"
+            ],
+            "prosody": {
+              "pitch": "raised onset with a marked early peak, then settling",
+              "energy": "strong initial emphasis that eases into softer follow-through",
+              "rate": "variable, brief initial slowing then normal pace",
+              "pausing": "a noticeable pause or held breath near the start, then smoother",
+              "voice_quality": "slightly breathy and bright, marveling rather than tense"
+            },
+            "acceptable_range": [
+              "Quiet, hushed awe with reduced volume and slower delivery",
+              "More exclamatory impressed reaction with a clear pitch spike, still admiring"
+            ],
+            "must_avoid": [
+              "Sustained giggling or teasing sing-song throughout",
+              "Alarmed, fearful or distressed urgency treating the discovery as bad news"
+            ],
+            "contrastive_cue": "Front-loaded surprise peak with breathy onset and an early pause, unlike the sustained smiling lightness or even baseline flow.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_02b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_02b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:43:01+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Warm, engaged congratulation with even, conversational delivery and mild positive lift.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "warm",
+              "attentive",
+              "friendly"
+            ],
+            "prosody": {
+              "pitch": "Mid level with moderate, gently rising phrase contours",
+              "energy": "Comfortable conversational intensity, no strong peaks",
+              "rate": "Even, unhurried everyday pace",
+              "pausing": "Regular phrasing with ordinary clause-level breaks",
+              "voice_quality": "Relaxed and steady, lightly bright"
+            },
+            "acceptable_range": [
+              "Understated approving remark with slightly flatter contour and calm warmth",
+              "Mildly upbeat, chatty delivery with a small rise in brightness at the end"
+            ],
+            "must_avoid": [
+              "Flat, disengaged or bored monotone that ignores good news",
+              "Highly excited, exclamatory delivery with large pitch jumps"
+            ],
+            "contrastive_cue": "Unmarked engaged warmth: neither the smiling, chuckle-adjacent looseness of A nor the heightened animated peak of B.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "tone_summary": "Playful, smiling warmth that joins the family teasing about beating mom's old mark.",
+            "valence": "positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "teasing"
+            ],
+            "prosody": {
+              "pitch": "Mid to slightly high with loose, bouncy undulating contours",
+              "energy": "Easy, moderately light intensity without forceful stress",
+              "rate": "Relaxed, slightly loose with unrushed timing",
+              "pausing": "Casual, uneven rhythm; small comedic beats permitted",
+              "voice_quality": "Smiling and breathy-relaxed, audibly amused"
+            },
+            "acceptable_range": [
+              "Dry, wry delivery with restrained energy but clearly smiling voice",
+              "Openly buoyant, chuckle-tinged delivery with light bouncing pitch"
+            ],
+            "must_avoid": [
+              "Stiff, serious, or formally congratulatory delivery with no warmth or humor",
+              "Mocking, sharp-edged laughter that sounds derisive toward either speaker"
+            ],
+            "contrastive_cue": "Audible smile and relaxed, amused looseness in timing and voice quality, without the startled pitch peak of condition B.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "tone_summary": "Brightly impressed congratulation, briefly astonished then settling into admiring warmth.",
+            "valence": "positive",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "impressed",
+              "enthusiastic",
+              "warm"
+            ],
+            "prosody": {
+              "pitch": "Higher onset with a noticeable early peak, then settling",
+              "energy": "Stronger initial intensity with a clear stressed opening",
+              "rate": "Slightly quicker at onset, easing toward the end",
+              "pausing": "Short beat of held breath or micro-pause before continuing",
+              "voice_quality": "Bright and animated, clear rather than breathy"
+            },
+            "acceptable_range": [
+              "Softer wondering admiration with a held breath and quieter but clearly heightened delivery",
+              "Openly exclamatory praise with a bright high onset and quick recovery to warmth"
+            ],
+            "must_avoid": [
+              "Flat, low-energy acknowledgement with no perceptible heightening",
+              "Alarmed or worried urgency treating the news as bad or concerning"
+            ],
+            "contrastive_cue": "A distinct heightened onset — higher pitch peak and sharper energy at the start — rather than baseline evenness or A's smiling looseness.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_03a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_03a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:43:44+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, easygoing friendly interest in the practical packing plan, unmarked affect.",
+            "valence": "neutral",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "attentive",
+              "warm",
+              "matter-of-fact"
+            ],
+            "prosody": {
+              "pitch": "Mid, moderate range with ordinary conversational contours",
+              "energy": "Moderate, even loudness",
+              "rate": "Comfortable conversational pace",
+              "pausing": "Natural phrase breaks, no dramatic holds",
+              "voice_quality": "Relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly brighter, mildly curious delivery with a small pitch lift",
+              "Slightly flatter, practical delivery focused on logistics"
+            ],
+            "must_avoid": [
+              "Laughing or teasing delivery that implies a joke was made",
+              "Pained, wincing, or sympathetic-hushed delivery implying someone is hurt"
+            ],
+            "contrastive_cue": "Absence of both shared laughter and audible concern; plain engaged conversational tone with no affective spike.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "tone_summary": "Light, amused warmth that joins the joke about the absurdly overloaded backpack.",
+            "valence": "positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "teasing-but-kind"
+            ],
+            "prosody": {
+              "pitch": "Slightly raised with wider, buoyant contours",
+              "energy": "Moderately increased, animated but not loud",
+              "rate": "Slightly quicker with lively phrasing",
+              "pausing": "Light, springy rhythm; brief beats that leave room for humor",
+              "voice_quality": "Bright, smiling, breathy-relaxed"
+            },
+            "acceptable_range": [
+              "Soft chuckle-tinged delivery that stays low-key and affectionate",
+              "Brighter, more animated joshing with a clear upward, playful contour"
+            ],
+            "must_avoid": [
+              "Concerned or hushed sympathetic delivery treating the moment as distress",
+              "Flat, unamused deadpan that ignores the shared humor"
+            ],
+            "contrastive_cue": "Audible smile and buoyant, light energy signaling shared amusement rather than concern or neutrality.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "tone_summary": "Warm concern with gentle, practical steadiness about the strained shoulder and heavy load.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "concerned",
+              "sympathetic",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "Slightly lowered with narrower, softly falling contours",
+              "energy": "Softened, gentle intensity",
+              "rate": "Slightly slower, unhurried",
+              "pausing": "A brief settling pause before continuing; measured rhythm",
+              "voice_quality": "Gentle, warm, slightly restrained"
+            },
+            "acceptable_range": [
+              "Softly sympathetic, quiet checking-in delivery",
+              "Steadier, lightly practical concern that stays calm and grounded"
+            ],
+            "must_avoid": [
+              "Amused or teasing delivery that laughs at the discomfort",
+              "Alarmed, high-intensity panic that escalates a minor strain"
+            ],
+            "contrastive_cue": "Softened, lowered, slower delivery conveying sympathy for physical discomfort instead of amusement or neutral engagement.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_03b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_03b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:44:37+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, easygoing coworker interest; mildly commiserating without strong emotional commitment either direction.",
+            "valence": "neutral",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "warm",
+              "matter-of-fact"
+            ],
+            "prosody": {
+              "pitch": "mid level with moderate, conversational range",
+              "energy": "moderate, even projection",
+              "rate": "normal conversational pace",
+              "pausing": "regular phrasing with natural clause breaks",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Lightly wry, dryly sympathetic delivery with slight downward contours",
+              "Brisk, practical delivery that leans toward getting on with the task"
+            ],
+            "must_avoid": [
+              "Loud laughing or giddy, high-pitched excitement unsupported by the words",
+              "Pained, strained, or grave delivery implying injury or crisis"
+            ],
+            "contrastive_cue": "Absence of either amusement or discomfort coloring; unmarked steady voice with no laughter and no tension or breath catch.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "tone_summary": "Amused, warm commiseration; sharing the absurdity while staying ready to help.",
+            "valence": "slightly_positive",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "commiserating"
+            ],
+            "prosody": {
+              "pitch": "slightly raised with wider, more animated contours",
+              "energy": "a bit fuller and livelier than baseline",
+              "rate": "slightly quicker, buoyant",
+              "pausing": "lighter, springier rhythm; possible brief breathy beat before a punchline-like phrase",
+              "voice_quality": "bright with audible smile in the voice"
+            },
+            "acceptable_range": [
+              "Dry, deadpan amusement with a smiling undertone rather than overt brightness",
+              "Openly chuckling delivery that still resolves into willing, helpful energy"
+            ],
+            "must_avoid": [
+              "Concerned or hushed caretaking tone treating the moment as distressing",
+              "Mocking, sharp laughter aimed at the coworker rather than the situation"
+            ],
+            "contrastive_cue": "Smile-shaped, buoyant voice sharing the joke — brighter and springier than baseline, with no trace of physical discomfort.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "tone_summary": "Concerned but steady sympathy; gentle attention to discomfort with quiet readiness to take the load.",
+            "valence": "slightly_negative",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "sympathetic",
+              "concerned",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "slightly lowered with narrower, gently falling contours",
+              "energy": "softer, controlled; unhurried rather than flat",
+              "rate": "slightly slower and deliberate",
+              "pausing": "a short settling pause before speaking; slightly longer phrase boundaries",
+              "voice_quality": "gentle and warm, steady rather than strained"
+            },
+            "acceptable_range": [
+              "Low-key, quietly practical tone that downplays alarm while clearly taking over the lifting",
+              "Warmer, more openly caring tone with soft checking-in inflection"
+            ],
+            "must_avoid": [
+              "Bright, laughing or teasing delivery that treats the pain as a joke",
+              "Alarmed, panicked loudness that escalates the discomfort into emergency"
+            ],
+            "contrastive_cue": "Softened, lowered, slower voice with a settling pause — audible care for physical discomfort, no smile or laughter coloring.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_04a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_04a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:45:45+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, mildly curious troubleshooting interest; even and unmarked, neither joking nor alarmed.",
+            "valence": "neutral",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "attentive",
+              "curious",
+              "matter-of-fact"
+            ],
+            "prosody": {
+              "pitch": "mid level with modest, conversational range",
+              "energy": "moderate and even, no surges",
+              "rate": "unhurried, close to ordinary conversational speed",
+              "pausing": "regular phrasing with natural clause-level breaks",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly brighter, lightly puzzled interest with a small upward final contour",
+              "Flatter, more analytical delivery with slightly narrower pitch movement"
+            ],
+            "must_avoid": [
+              "Smile-voice or audible laughter suggesting a shared joke",
+              "Breathy, clipped, or urgent delivery implying alarm"
+            ],
+            "contrastive_cue": "Absence of both amusement and urgency markers: level pitch, steady energy, no smile-voice and no tightened or rushed delivery.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "tone_summary": "Light, playful amusement that enjoys the coincidence while staying interested in the router.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "teasing"
+            ],
+            "prosody": {
+              "pitch": "slightly raised with wider, livelier excursions",
+              "energy": "buoyant with animated emphasis on key words",
+              "rate": "a little quicker, with easy forward momentum",
+              "pausing": "loose, slightly irregular timing, room for a beat of delight",
+              "voice_quality": "bright with audible smile-voice"
+            },
+            "acceptable_range": [
+              "Dry, understated wit delivered with a faint smile and low-key lilt",
+              "More openly delighted, bouncier delivery with a brief chuckle-colored onset"
+            ],
+            "must_avoid": [
+              "Tense, hushed, or urgent delivery treating the blinking as frightening",
+              "Flat, uninflected report with no warmth or lightness"
+            ],
+            "contrastive_cue": "Audible smile-voice and livelier pitch movement mark shared amusement, absent in baseline and incompatible with condition_b.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "tone_summary": "Calm, grounded steadiness with mild practical urgency that settles the startled coworker.",
+            "valence": "slightly_negative",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "reassuring",
+              "calmly urgent",
+              "attentive"
+            ],
+            "prosody": {
+              "pitch": "slightly lowered, narrowed range with mostly falling contours",
+              "energy": "controlled and firm rather than loud",
+              "rate": "measured and deliberate, marginally slowed",
+              "pausing": "clear, slightly longer breaks that give the words weight",
+              "voice_quality": "steady and gently restrained, minimal tremor"
+            },
+            "acceptable_range": [
+              "Softer, more soothing delivery with warmer low pitch and gentle pacing",
+              "Brisker, more directive calm with crisper phrasing but still level pitch"
+            ],
+            "must_avoid": [
+              "Matching panic: high, loud, shaky, or breathless delivery",
+              "Amused or teasing smile-voice that dismisses the coworker's fright"
+            ],
+            "contrastive_cue": "Deliberately steadied low pitch and measured pacing that downregulate alarm, contrasting baseline's neutrality and condition_a's brightness.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_04b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_04b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:46:51+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, matter-of-fact teammate check-in; mildly sympathetic without strong amusement or alarm.",
+            "valence": "neutral",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "attentive",
+              "warm",
+              "matter-of-fact"
+            ],
+            "prosody": {
+              "pitch": "mid level with moderate, unexaggerated range",
+              "energy": "conversational, evenly sustained",
+              "rate": "moderate and steady",
+              "pausing": "regular phrasing with ordinary breath pauses",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly softer and lower, reading as low-key sympathy for the embarrassment",
+              "Slightly brighter and more casual, reading as ordinary dugout small talk"
+            ],
+            "must_avoid": [
+              "Loud alarmed urgency as if handling an emergency",
+              "Broad laughing or giddy teasing delivery"
+            ],
+            "contrastive_cue": "Absence of both audible amusement and audible alarm; unmarked steady baseline energy against which the other two conditions shift.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "tone_summary": "Light, affectionate amusement softening into friendly reassurance; teasing but clearly on his side.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "somewhat higher and livelier, with buoyant rising-falling contours",
+              "energy": "moderately raised, animated but not booming",
+              "rate": "slightly quicker, easy and loose",
+              "pausing": "casual, with a smile-timed beat or breathy catch before landing",
+              "voice_quality": "bright, smiling, relaxed"
+            },
+            "acceptable_range": [
+              "Mostly dry and understated, with amusement carried by lilt rather than volume",
+              "More openly buoyant and chuckly, so long as it stays affectionate rather than mocking"
+            ],
+            "must_avoid": [
+              "Harsh, sharp-edged mockery that sounds like piling on at his expense",
+              "Grave, hushed concern that treats the moment as serious injury"
+            ],
+            "contrastive_cue": "Audible smile and buoyant lift in pitch and rhythm, lighter than baseline and clearly unalarmed.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "tone_summary": "Calmly urgent concern; steadying and gentle, checking he is hurt without escalating panic.",
+            "valence": "slightly_negative",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "concerned",
+              "calmly urgent",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "lower and narrower than baseline, with settled falling contours",
+              "energy": "focused and controlled, slightly firmer without shouting",
+              "rate": "brisk at first, then deliberately slowed",
+              "pausing": "short purposeful pauses that leave room for an answer",
+              "voice_quality": "steady, gentle, faintly tense"
+            },
+            "acceptable_range": [
+              "Quieter and softer throughout, prioritizing soothing over urgency",
+              "Slightly more clipped and directive, still level and unpanicked"
+            ],
+            "must_avoid": [
+              "Shrill high-pitched panic that amplifies the other speaker's fear",
+              "Amused or teasing lilt that dismisses a possible injury"
+            ],
+            "contrastive_cue": "Controlled low-pitched urgency and steadying restraint — no smile, no panic — distinct from baseline's neutrality and A's lightness.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_05a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_05a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:48:06+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, mildly supportive delivery: attentive and practical, warm without heightened emotion.",
+            "valence": "neutral",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "warm",
+              "matter-of-fact"
+            ],
+            "prosody": {
+              "pitch": "mid level with moderate, conversational range",
+              "energy": "moderate and even",
+              "rate": "unhurried conversational pace",
+              "pausing": "regular phrasing with brief natural breaks",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly lighter, easygoing delivery that keeps the moment low-stakes",
+              "Slightly softer, more caring delivery with gentle downward endings"
+            ],
+            "must_avoid": [
+              "Dramatic, high-pitched shock or urgency",
+              "Flat, disengaged monotone that reads as indifference"
+            ],
+            "contrastive_cue": "Unmarked mid-level engagement: neither the weighted slowness of the sigh version nor the heightened onset of the gasp version.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "tone_summary": "Quietly sympathetic, low-key solidarity; unhurried and settled rather than emotionally amplified.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "sympathetic",
+              "warm",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "slightly lowered with narrowed range and falling endings",
+              "energy": "softened, gently supported",
+              "rate": "slower than baseline",
+              "pausing": "longer, more deliberate pauses; unrushed onset",
+              "voice_quality": "gentle and relaxed, lightly breathy"
+            },
+            "acceptable_range": [
+              "Warm, quietly wry delivery that lightens the weariness without dismissing it",
+              "Very calm, steady, almost understated delivery with minimal pitch movement"
+            ],
+            "must_avoid": [
+              "Bright, upbeat cheerfulness that overrides the weary mood",
+              "Sharp, urgent, or startled delivery"
+            ],
+            "contrastive_cue": "Slower rate and lowered, narrowed pitch with softened energy, conveying shared weariness rather than surprise.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "tone_summary": "Alert, quickly engaged reaction that then settles into steady, grounding warmth.",
+            "valence": "neutral",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "attentive",
+              "animated",
+              "steadying"
+            ],
+            "prosody": {
+              "pitch": "raised onset with wider excursions, settling toward mid range",
+              "energy": "stronger initial intensity, easing after the opening",
+              "rate": "brisker start, moderating toward the end",
+              "pausing": "prompt onset with short, closely spaced phrases",
+              "voice_quality": "bright and slightly keyed-up, not tense"
+            },
+            "acceptable_range": [
+              "Lightly playful, intrigued delivery that treats the discovery as a small twist",
+              "Briefly startled then noticeably calming delivery that de-escalates the surprise"
+            ],
+            "must_avoid": [
+              "Slow, heavy, sighing delivery that ignores the heightened moment",
+              "Alarmed, panicked intensity out of proportion to a found mug"
+            ],
+            "contrastive_cue": "Raised, wider-ranging onset with quicker, brighter attack, distinguishing it from baseline evenness and the sigh version's slowness.",
+            "ambiguity_flag": true,
+            "ambiguity_note": "A gasp here supports either intrigued, lightly playful surprise or sympathetic, mildly alarmed concern; both are plausible given the mundane object and sensitive topic."
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_05b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_05b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:49:09+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, matter-of-fact concern with mild practical helpfulness; interested but not emotionally marked.",
+            "valence": "neutral",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "helpful",
+              "mildly concerned"
+            ],
+            "prosody": {
+              "pitch": "mid level with moderate, unexaggerated range",
+              "energy": "moderate and even, conversational",
+              "rate": "normal conversational pace",
+              "pausing": "regular phrasing with ordinary clause breaks",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly brisker and more practical, as if moving toward problem-solving",
+              "Slightly softer and more sympathetic while staying unmarked overall"
+            ],
+            "must_avoid": [
+              "Flat, disengaged monotone that sounds uninterested in the situation",
+              "Dramatic, high-arousal alarm or exaggerated emotional coloring"
+            ],
+            "contrastive_cue": "Unmarked mid-level arousal and neutral contours: neither the settled heaviness of the sigh version nor the animated lift of the gasp version.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "tone_summary": "Warm, low-key sympathy with quiet steadiness; acknowledges deflation without amplifying it.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "sympathetic",
+              "warm",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "lower overall with narrow range and mostly falling contours",
+              "energy": "softened, gently supported rather than pushed",
+              "rate": "somewhat slower and unhurried",
+              "pausing": "slightly longer, settling pauses; relaxed rhythm",
+              "voice_quality": "gentle and slightly breathy, steady"
+            },
+            "acceptable_range": [
+              "Quietly wry warmth, lightly lifting the mood without brightness or jokiness",
+              "Calm, grounded practicality delivered softly, oriented toward fixing it"
+            ],
+            "must_avoid": [
+              "Bright, upbeat cheerfulness that dismisses the deflation",
+              "Sharp, high-arousal outrage or urgency that escalates the moment"
+            ],
+            "contrastive_cue": "Lowered pitch, softened energy and slower settling rhythm marking shared deflation, unlike the neutral baseline or the animated gasp version.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "tone_summary": "Alert, animated surprise with warm engagement; quick uptake that steadies toward action.",
+            "valence": "neutral",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "attentive",
+              "surprised",
+              "warmly engaged"
+            ],
+            "prosody": {
+              "pitch": "higher onset with wider range and noticeable rising or rise-fall movement",
+              "energy": "brighter and more forward, clearly stronger than the sigh version",
+              "rate": "quicker start, easing as the turn continues",
+              "pausing": "shorter gaps, prompt onset, slightly clipped phrasing",
+              "voice_quality": "bright and alert, not tense or panicked"
+            },
+            "acceptable_range": [
+              "Incredulous, lightly amused surprise that stays affectionate toward Mia",
+              "Crisp, alert surprise that settles quickly into calm, practical urgency"
+            ],
+            "must_avoid": [
+              "Slow, heavy, resigned delivery indistinguishable from the sigh version",
+              "Shrill panic or accusatory sharpness that dramatizes a minor mishap"
+            ],
+            "contrastive_cue": "Higher, wider pitch movement with prompt bright onset, audibly more activated than both the baseline and the sigh version.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_06a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_06a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:50:00+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, matter-of-fact support; lightly warm acknowledgment of a routine errand about to happen.",
+            "valence": "neutral",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "attentive",
+              "warm",
+              "easygoing"
+            ],
+            "prosody": {
+              "pitch": "Mid-level with modest, conversational range; unmarked contours",
+              "energy": "Moderate, even loudness without emphasis peaks",
+              "rate": "Ordinary conversational pace",
+              "pausing": "Regular phrasing, no drawn-out or clipped breaks",
+              "voice_quality": "Relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly brisk and practical, as if helping keep things moving",
+              "Slightly warmer and lighter, mildly encouraging without dramatizing"
+            ],
+            "must_avoid": [
+              "Heavy, hushed sympathy as though something serious has happened",
+              "Flat, disengaged monotone with no interpersonal warmth"
+            ],
+            "contrastive_cue": "Absence of affective marking: no sympathetic softening and no wince-like tightening; unremarkable mid-level delivery.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "tone_summary": "Warm, lightly commiserating nudge; acknowledges the drag of going without amplifying dread.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "sympathetic",
+              "wry",
+              "encouraging"
+            ],
+            "prosody": {
+              "pitch": "Mid to slightly lowered, gently falling contours",
+              "energy": "Soft to moderate, relaxed rather than pressed",
+              "rate": "Unhurried, a touch slower than baseline",
+              "pausing": "Easy, slightly loose phrasing with a small settling pause",
+              "voice_quality": "Gentle and relaxed, faintly breathy"
+            },
+            "acceptable_range": [
+              "Light teasing warmth that gently makes the errand feel smaller",
+              "Quietly companionable and low-key, simply sitting with the reluctance"
+            ],
+            "must_avoid": [
+              "Urgent, tense delivery treating the moment as an emergency",
+              "Bright, high-energy cheerleading that overrides the reluctance"
+            ],
+            "contrastive_cue": "Downward-drifting, relaxed and unhurried delivery signaling shared mild reluctance rather than concern for physical hurt.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "tone_summary": "Soft, concerned care with calm steadiness; attentive to discomfort without escalating alarm.",
+            "valence": "negative",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "concerned",
+              "reassuring",
+              "calmly urgent"
+            ],
+            "prosody": {
+              "pitch": "Lowered overall with narrowed range; brief gentle rises on attentive checks",
+              "energy": "Reduced, careful loudness with focused emphasis",
+              "rate": "Measured, slightly deliberate",
+              "pausing": "Short attentive pauses that leave room, no rushing",
+              "voice_quality": "Gentle but firm, slightly tightened and steady"
+            },
+            "acceptable_range": [
+              "Quiet, tender solicitude that stays composed and grounding",
+              "Efficient, practical calm-urgency oriented toward getting help quickly"
+            ],
+            "must_avoid": [
+              "Amused or teasing lightness that dismisses the pain",
+              "Panicked, loud escalation that heightens distress"
+            ],
+            "contrastive_cue": "Audible softening plus tightened, focused care responsive to bodily pain—more concerned and attentive than the sigh's relaxed commiseration.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_06b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_06b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:51:09+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, practical concern; steady and helpful without dramatizing the situation.",
+            "valence": "neutral",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "helpful",
+              "mildly concerned"
+            ],
+            "prosody": {
+              "pitch": "Mid-level with moderate, conversational range",
+              "energy": "Ordinary conversational intensity, evenly distributed",
+              "rate": "Normal, businesslike pace",
+              "pausing": "Regular phrasing with unremarkable clause boundaries",
+              "voice_quality": "Steady and relaxed"
+            },
+            "acceptable_range": [
+              "Slightly brisker and more logistical, as if helping coordinate the vet trip",
+              "Slightly warmer and softer, with mild worry audible but not foregrounded"
+            ],
+            "must_avoid": [
+              "Flat, detached recitation with no interpersonal engagement",
+              "Alarmed or urgent delivery unsupported by anything in the words"
+            ],
+            "contrastive_cue": "Unmarked steadiness: neither the softened, weighted warmth of the sigh version nor the alerted concern of the groan version.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "tone_summary": "Warm, steadying support that acknowledges the owner's weariness while keeping the plan moving.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "warm",
+              "sympathetic",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "Slightly lowered overall with gentle falling contours",
+              "energy": "Softened, a little lighter than baseline",
+              "rate": "Unhurried, marginally slower than baseline",
+              "pausing": "Slightly longer pauses at phrase edges, giving room",
+              "voice_quality": "Gentle and relaxed, lightly breathy"
+            },
+            "acceptable_range": [
+              "Quietly encouraging, with mild lift toward the end to steady the mood",
+              "Low-key and companionable, close to a settled murmur of support"
+            ],
+            "must_avoid": [
+              "Bright, upbeat cheerfulness that brushes past the owner's weariness",
+              "Heavy, defeated delivery that mirrors and deepens the resignation"
+            ],
+            "contrastive_cue": "Softened, slowed, downward-contoured warmth that meets fatigue rather than urgency.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "tone_summary": "Alert, caring concern with contained urgency; attentive to distress while keeping things grounded.",
+            "valence": "negative",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "concerned",
+              "calmly urgent",
+              "attentive"
+            ],
+            "prosody": {
+              "pitch": "Mid to slightly raised with narrowed, controlled range",
+              "energy": "Firmer and more forward than baseline, not loud",
+              "rate": "Somewhat quicker, with clear articulation",
+              "pausing": "Tighter phrasing, short checking pauses inviting a reply",
+              "voice_quality": "Steady with audible tension held in check"
+            },
+            "acceptable_range": [
+              "Hushed and closely attentive, low volume but clearly heightened focus",
+              "Briskly practical concern that leans toward immediate next steps"
+            ],
+            "must_avoid": [
+              "Panicked, escalating delivery that amplifies distress",
+              "Casual, unhurried ease that ignores the audible discomfort"
+            ],
+            "contrastive_cue": "Heightened alertness: tighter, quicker, firmer delivery with contained tension absent from both other versions.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_07a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_07a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:52:06+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_07a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_07a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, practical helpfulness with mild everyday concern; matter-of-fact and lightly supportive.",
+            "valence": "neutral",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "helpful",
+              "easygoing"
+            ],
+            "prosody": {
+              "pitch": "Mid-level with ordinary conversational range; unremarkable falling endings",
+              "energy": "Moderate, even loudness typical of casual talk",
+              "rate": "Normal conversational pace, neither hurried nor drawn out",
+              "pausing": "Regular phrasing with brief, natural breaks",
+              "voice_quality": "Relaxed and clear"
+            },
+            "acceptable_range": [
+              "Slightly brisk and problem-solving, as if already scanning for options",
+              "Slightly warmer and lighter, with a small amount of friendly amusement"
+            ],
+            "must_avoid": [
+              "Alarmed, loud, or breathless delivery unwarranted by the plain transcript",
+              "Flat, disengaged monotone that sounds indifferent to the friend's situation"
+            ],
+            "contrastive_cue": "Unmarked baseline: neither the softened, deflating warmth of the sigh version nor the clipped forward drive of the scream version.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "tone_summary": "Warm, sympathetic, unhurried reassurance that gently lifts a deflated friend.",
+            "valence": "slightly_positive",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "warm",
+              "sympathetic",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "Slightly lower and smoother than baseline, with gentle rather than sharp contours",
+              "energy": "Softer, settled intensity without pushing",
+              "rate": "A touch slower and more even than baseline",
+              "pausing": "Slightly longer, unhurried breaks; comfortable rhythm",
+              "voice_quality": "Gentle and relaxed, mildly breathy warmth acceptable"
+            },
+            "acceptable_range": [
+              "Lightly playful commiseration, with a small smile audible in the voice",
+              "Quietly steady and pragmatic, low-key encouragement without much affect"
+            ],
+            "must_avoid": [
+              "Loud, high-energy cheerleading that overrides the low-key mood",
+              "Sighing, weary heaviness that adds to the deflation instead of easing it"
+            ],
+            "contrastive_cue": "Softer, slower, lower-energy delivery with unhurried pausing—warmth that settles rather than the urgency of the scream condition.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "tone_summary": "Calmly urgent, decisive steering: quick and energized but grounded, not panicked.",
+            "valence": "neutral",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "calmly urgent",
+              "decisive",
+              "supportive"
+            ],
+            "prosody": {
+              "pitch": "Mid to slightly raised, with firm, downward-resolving phrase endings",
+              "energy": "Noticeably stronger and more forward than baseline, but controlled",
+              "rate": "Faster, clipped and efficient",
+              "pausing": "Short, tight breaks; little hesitation, momentum carried forward",
+              "voice_quality": "Steady and firm, slightly tense but not strained"
+            },
+            "acceptable_range": [
+              "Brisk and lightly amused, treating the outburst as comic emergency while still moving fast",
+              "Very steady and level, deliberately calming with only mild acceleration"
+            ],
+            "must_avoid": [
+              "Matching the scream with equal panic, shrillness, or shouted alarm",
+              "Slow, languid, or unbothered delivery that ignores the spike in urgency"
+            ],
+            "contrastive_cue": "Faster, more forward-driving delivery with clipped phrasing and firm endings, while remaining audibly controlled rather than alarmed.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_07b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_07b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:53:04+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_07b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_07b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, attentive interest in the ongoing mystery, mildly alert but not alarmed.",
+            "valence": "neutral",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "curious",
+              "practical"
+            ],
+            "prosody": {
+              "pitch": "Mid-level with moderate, conversational variation",
+              "energy": "Ordinary conversational intensity, evenly sustained",
+              "rate": "Normal, unhurried speaking rate",
+              "pausing": "Regular phrasing with natural clause breaks",
+              "voice_quality": "Relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly brisk and matter-of-fact, as if ready to help investigate",
+              "Mildly intrigued with a touch of light wariness"
+            ],
+            "must_avoid": [
+              "Panicked, breathy, or urgent delivery",
+              "Flat, bored monotone with no engagement"
+            ],
+            "contrastive_cue": "Unmarked baseline engagement: neither the weary drag of resignation nor the compressed urgency of a fear response.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "tone_summary": "Warm, wry sympathy for a tired housemate worn down by a recurring nuisance.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "sympathetic",
+              "warm",
+              "lightly wry"
+            ],
+            "prosody": {
+              "pitch": "Lower and narrower range, with gently falling contours",
+              "energy": "Softer than baseline, unforced",
+              "rate": "Slightly slower, easy pacing",
+              "pausing": "Relaxed, with a settled pause or two rather than clipped bursts",
+              "voice_quality": "Gentle and slightly weary but supportive"
+            },
+            "acceptable_range": [
+              "Dry, faintly amused commiseration that lightens the mood",
+              "Quiet, patient warmth that acknowledges the fatigue without dramatizing it"
+            ],
+            "must_avoid": [
+              "Bright, chipper enthusiasm mismatched to the fatigue",
+              "Sharp, alarmed urgency treating this as an emergency"
+            ],
+            "contrastive_cue": "Lowered, slowed, softened delivery with falling contours signalling shared weariness rather than alertness.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "tone_summary": "Calm urgency: steady, grounding reassurance that takes the fright seriously without amplifying it.",
+            "valence": "slightly_negative",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "calmly urgent",
+              "reassuring",
+              "protective"
+            ],
+            "prosody": {
+              "pitch": "Controlled mid-to-low pitch, deliberately steadier than the alarm it answers",
+              "energy": "Firm and clearly projected without shouting",
+              "rate": "Slightly quicker than baseline but articulate, not rushed",
+              "pausing": "Short decisive phrases with brief settling pauses",
+              "voice_quality": "Steady and grounded with audible alertness"
+            },
+            "acceptable_range": [
+              "Softer, hushed steadiness that calms while staying visibly alert",
+              "Brisk, take-charge firmness that stays warm rather than harsh"
+            ],
+            "must_avoid": [
+              "Matching the scream with equally panicked, shrill delivery",
+              "Casual, slow, unbothered tone that dismisses the fright"
+            ],
+            "contrastive_cue": "Heightened alertness and firm projection held under deliberate control, distinctly more activated than baseline or the sigh.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_08a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_08a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:53:53+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_08a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_08a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, mildly sympathetic acknowledgment; steady and matter-of-fact without dramatizing the ruined salad.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "attentive",
+              "sympathetic",
+              "matter-of-fact"
+            ],
+            "prosody": {
+              "pitch": "mid level with moderate, conversational range",
+              "energy": "moderate and even, no surges",
+              "rate": "unhurried conversational pace",
+              "pausing": "regular phrasing with ordinary clause breaks",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Slightly wry, lightly amused delivery that stays low-key and friendly",
+              "Plainly supportive, practical delivery with a touch of mild distaste"
+            ],
+            "must_avoid": [
+              "Alarmed, high-pitched, fast delivery as if something serious happened",
+              "Flat, disengaged monotone that reads as indifference to the friends"
+            ],
+            "contrastive_cue": "Even, unspiked contour throughout: no startled onset and no softened wince, just steady conversational engagement.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "tone_summary": "Briefly startled then quickly grounded; mild indignation on B's behalf, edging toward practical resolve.",
+            "valence": "slightly_negative",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "surprised",
+              "indignant on their behalf",
+              "attentive"
+            ],
+            "prosody": {
+              "pitch": "raised onset with a wider excursion, settling lower by the end",
+              "energy": "stronger initial push, then moderating",
+              "rate": "quicker at the start, easing into a normal pace",
+              "pausing": "a short beat of arrested breath near the beginning, then fluent",
+              "voice_quality": "bright and slightly breathy, becoming steadier"
+            },
+            "acceptable_range": [
+              "Sharp, incredulous disbelief aimed at the restaurant rather than at B",
+              "Wide-eyed surprise softening into brisk, take-charge practicality"
+            ],
+            "must_avoid": [
+              "Low, drawn-out commiserating wince with no lift or quickening",
+              "Panicked, escalating alarm treating a hair as an emergency"
+            ],
+            "contrastive_cue": "Raised, quickened onset with widened pitch range — an audible startle spike absent from both other versions.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "tone_summary": "Warm, wincing sympathy for the physical hurt; softened and settling rather than startled.",
+            "valence": "negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "sympathetic",
+              "gently concerned",
+              "soothing"
+            ],
+            "prosody": {
+              "pitch": "lower overall with narrow range and falling contours",
+              "energy": "softer, slightly cushioned intensity",
+              "rate": "slower, with some lengthening on sympathetic stretches",
+              "pausing": "a small pause before speaking, then unhurried breaks",
+              "voice_quality": "gentle and slightly breathy, warm rather than tense"
+            },
+            "acceptable_range": [
+              "Quiet, empathic wince that stays low and calm while checking on B",
+              "Low, warmly commiserating delivery with a small dry undertone of resignation"
+            ],
+            "must_avoid": [
+              "Bright, high, fast startled delivery that overshoots the situation",
+              "Brisk, clipped efficiency that skips over B's discomfort"
+            ],
+            "contrastive_cue": "Lowered pitch, softer energy and slowed rate — an audible commiserating wince rather than a startle or neutral steadiness.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_08b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_08b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:54:49+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_08b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_08b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, curious interest in the coin; friendly and unmarked, without strong excitement or concern.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "warm",
+              "curious"
+            ],
+            "prosody": {
+              "pitch": "mid level with moderate, conversational range",
+              "energy": "moderate and even, no surges",
+              "rate": "comfortable conversational pace",
+              "pausing": "natural phrase breaks, no dramatic holds",
+              "voice_quality": "relaxed and steady"
+            },
+            "acceptable_range": [
+              "Mildly impressed and appreciative, with a slight lift on the final phrase",
+              "Plainly inquisitive and matter-of-fact while still audibly interested"
+            ],
+            "must_avoid": [
+              "Peak amazement with sharp pitch jumps and breathy excitement",
+              "Pained, wincing sympathy or worried, hushed delivery"
+            ],
+            "contrastive_cue": "Even, unheightened baseline energy: neither the excited pitch surge of condition A nor the softened, sympathy-tinged onset of condition B.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "tone_summary": "Brightly surprised, delighted interest in the unexpectedly old find; shared excitement without alarm.",
+            "valence": "positive",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "enthusiastic",
+              "impressed",
+              "playful"
+            ],
+            "prosody": {
+              "pitch": "raised overall with wider range and clear upward peaks",
+              "energy": "livelier, with a noticeable surge early in the response",
+              "rate": "somewhat quicker, slightly forward-leaning",
+              "pausing": "short animated beat before or after the key phrase, otherwise fluent",
+              "voice_quality": "bright and open, a little breath-supported"
+            },
+            "acceptable_range": [
+              "Warm, laughing disbelief at the bargain, energetic but relaxed",
+              "Hushed, wide-eyed awe with contained energy and bright resonance"
+            ],
+            "must_avoid": [
+              "Flat, unimpressed recitation with narrow pitch range",
+              "Fearful or alarmed urgency, as if something has gone wrong"
+            ],
+            "contrastive_cue": "Elevated pitch and an early energy surge conveying pleasant astonishment, clearly above baseline and never tinged with discomfort.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "tone_summary": "Warm, sympathetic interest; brief wince for the pinched finger, then steady attention to the coin.",
+            "valence": "slightly_negative",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "sympathetic",
+              "concerned",
+              "reassuring"
+            ],
+            "prosody": {
+              "pitch": "mid to slightly lowered, with gentle falling contours",
+              "energy": "softer and more restrained, no bright peaks",
+              "rate": "slightly slower, unhurried and careful",
+              "pausing": "a small settling pause near the start, giving the discomfort room",
+              "voice_quality": "gentle and slightly compressed, caring rather than tense"
+            },
+            "acceptable_range": [
+              "Lightly wincing and teasing, sympathy carried with easy humor",
+              "Calm, practical care that softens first, then turns attentively to the coin"
+            ],
+            "must_avoid": [
+              "Bright, celebratory excitement that ignores the injury",
+              "Heavy distress or panicked urgency out of proportion to a pinched finger"
+            ],
+            "contrastive_cue": "Softened, slightly lowered and slowed delivery with an audible sympathetic wince absent from baseline and condition A.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_09a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_09a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:55:51+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_09a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_09a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, easygoing conversational delivery; mildly interested in the situation without heightened emotion.",
+            "valence": "neutral",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "attentive",
+              "warm",
+              "casual"
+            ],
+            "prosody": {
+              "pitch": "Mid level with moderate, natural declarative contours",
+              "energy": "Comfortable conversational loudness, evenly distributed",
+              "rate": "Relaxed and steady, close to ordinary chat speed",
+              "pausing": "Regular phrase-level pauses, unhurried and unbroken",
+              "voice_quality": "Relaxed and clear, lightly social"
+            },
+            "acceptable_range": [
+              "Slightly brighter, mildly amused social tone with a touch more pitch movement",
+              "Slightly flatter, matter-of-fact tone that still sounds interested and present"
+            ],
+            "must_avoid": [
+              "Alarmed or urgent delivery with sharp onsets and pressed loudness",
+              "Bored, withdrawn monotone that signals disengagement"
+            ],
+            "contrastive_cue": "Lowest emotional marking of the three: no reactive surge and no deliberate calming-down move, just steady conversational engagement.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "tone_summary": "Lightly surprised and amused, socially warm, riding the small startled beat with the speaker.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "playful",
+              "warm",
+              "attentive"
+            ],
+            "prosody": {
+              "pitch": "Somewhat raised with wider, livelier excursions and rising inflections",
+              "energy": "A little more forward and animated than baseline",
+              "rate": "Slightly quicker, with a brief lively spurt early on",
+              "pausing": "A short reactive beat before speaking, then buoyant flow",
+              "voice_quality": "Bright and light, possibly a trace of smile in the voice"
+            },
+            "acceptable_range": [
+              "Gently teasing, low-key amused delivery with softer intensity but clear liveliness",
+              "More openly surprised and animated, still friendly rather than alarmed"
+            ],
+            "must_avoid": [
+              "Fearful, urgent, or crisis-pitched delivery treating the wave as a threat",
+              "Flat, unreactive tone that ignores the surprise beat entirely"
+            ],
+            "contrastive_cue": "Brief upward, animated surprise lift and light amusement — more reactive than baseline, without the steadying downshift of condition_b.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "tone_summary": "Calm, steadying warmth that grounds an over-alarmed friend without dismissing or amplifying the panic.",
+            "valence": "slightly_positive",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "reassuring",
+              "calmly grounding",
+              "sympathetic"
+            ],
+            "prosody": {
+              "pitch": "Lower and narrower than the other conditions, with settling falling contours",
+              "energy": "Softer and well-controlled, deliberately below the speaker's intensity",
+              "rate": "Slower and measured, no rushing",
+              "pausing": "Slightly longer, settling pauses that give the moment room",
+              "voice_quality": "Steady and gentle, warm rather than clinical"
+            },
+            "acceptable_range": [
+              "Softly reassuring, almost hushed delivery with clear steadiness",
+              "Warm, gently humorous defusing tone that stays low-arousal and kind"
+            ],
+            "must_avoid": [
+              "Matching the scream's panic with loud, high, fast, tense delivery",
+              "Cold, clipped, or mocking tone that shames the overreaction"
+            ],
+            "contrastive_cue": "Deliberate downshift in pitch, loudness, and rate relative to the speaker's alarm — audibly calmer than both baseline and condition_a.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_09b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_09b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:56:39+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_09b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_09b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, matter-of-fact encouragement with mild practical briskness about the imminent call.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "supportive",
+              "matter-of-fact"
+            ],
+            "prosody": {
+              "pitch": "Mid-level with moderate, conversational range",
+              "energy": "Ordinary conversational intensity, evenly sustained",
+              "rate": "Normal to slightly brisk, unhurried",
+              "pausing": "Regular phrasing with natural clause breaks",
+              "voice_quality": "Relaxed and steady"
+            },
+            "acceptable_range": [
+              "Warm, lightly encouraging delivery with a gentle upward close",
+              "Practical, efficient delivery with minimal affective coloring"
+            ],
+            "must_avoid": [
+              "Alarmed or urgent delivery with pressed, rushed speech",
+              "Flat, disengaged monotone that reads as indifference"
+            ],
+            "contrastive_cue": "Unmarked affective baseline: no startle spike and no deliberate calming, just steady conversational engagement.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "tone_summary": "Brightly surprised, energized encouragement that shares the jolt of the sudden good news.",
+            "valence": "positive",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "enthusiastic",
+              "warm",
+              "energizing"
+            ],
+            "prosody": {
+              "pitch": "Raised overall with wider, more dynamic excursions",
+              "energy": "Noticeably lifted, with emphatic peaks",
+              "rate": "Quicker, with a slight forward push",
+              "pausing": "Short, buoyant breaks; possible brief beat before an upbeat onset",
+              "voice_quality": "Bright and animated"
+            },
+            "acceptable_range": [
+              "Delighted, exclamatory celebration of the fast turnaround",
+              "Amused, playfully hurried 'go now' delivery with warm lift"
+            ],
+            "must_avoid": [
+              "Grave, hushed delivery treating the news as bad",
+              "Flat, low-energy acknowledgment that ignores the surprise"
+            ],
+            "contrastive_cue": "Upward pitch lift and heightened brightness marking shared positive surprise, without any soothing or de-escalating quality.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "tone_summary": "Calmly urgent, grounding reassurance that steadies panic while acknowledging the short timeline.",
+            "valence": "neutral",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "reassuring",
+              "calmly urgent",
+              "steadying"
+            ],
+            "prosody": {
+              "pitch": "Lower and narrower than the other conditions, with settling contours",
+              "energy": "Controlled and firm rather than loud",
+              "rate": "Measured and deliberate, purposeful but not rushed",
+              "pausing": "Clear, slightly longer pauses that give the listener room to breathe",
+              "voice_quality": "Steady and grounded, gently firm"
+            },
+            "acceptable_range": [
+              "Soft, gentle reassurance with slow settling delivery",
+              "Confident, brisk coaching tone that stays composed under time pressure"
+            ],
+            "must_avoid": [
+              "Matching the panic with loud, high, rapid alarmed speech",
+              "Bright celebratory excitement that dismisses the distress"
+            ],
+            "contrastive_cue": "Lowered pitch and controlled, measured pacing that regulates rather than mirrors the speaker's fear.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_10a",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_10a__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:57:32+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_10a__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_10a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, practical helpfulness; light everyday concern without alarm or dramatized sympathy.",
+            "valence": "neutral",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "helpful",
+              "casual"
+            ],
+            "prosody": {
+              "pitch": "Mid-level with ordinary conversational range and mostly falling, matter-of-fact contours",
+              "energy": "Moderate, evenly distributed, no sudden surges",
+              "rate": "Normal conversational pace, slightly brisk in the practical parts",
+              "pausing": "Regular phrasing with unremarkable breaks at clause boundaries",
+              "voice_quality": "Relaxed and clear"
+            },
+            "acceptable_range": [
+              "Slightly upbeat and task-focused, as when pitching in with logistics",
+              "Marginally flatter and more procedural, with mild curiosity about the stuck foot"
+            ],
+            "must_avoid": [
+              "Alarmed or urgent delivery with sharp onsets and raised loudness",
+              "Heavy, drawn-out sympathetic softening as if responding to visible suffering"
+            ],
+            "contrastive_cue": "Absence of any affective marking: no sympathetic softening and no urgency; steady, ordinary conversational register throughout.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "groan",
+            "tone_summary": "Warm, sympathetic concern with gentle steadiness; acknowledges discomfort while staying practically useful.",
+            "valence": "slightly_negative",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "sympathetic",
+              "warm",
+              "attentive"
+            ],
+            "prosody": {
+              "pitch": "Slightly lowered overall with softened, gently falling contours; narrower range than baseline",
+              "energy": "Moderate to slightly reduced, cushioned rather than clipped",
+              "rate": "Slightly slower than baseline, unhurried",
+              "pausing": "A brief settling pause near the start; smooth, unrushed phrasing after",
+              "voice_quality": "Gentle and slightly breathy, steady underneath"
+            },
+            "acceptable_range": [
+              "Quietly wincing sympathy that stays low and soft before turning practical",
+              "Warm, lightly teasing commiseration that still audibly registers the discomfort"
+            ],
+            "must_avoid": [
+              "Bright, cheery briskness that ignores the discomfort",
+              "Panicked, loud, fast delivery treating the moment as an emergency"
+            ],
+            "contrastive_cue": "Softened, slightly lowered and slowed delivery signaling sympathy for physical discomfort, without the urgency of the fear condition.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "tone_summary": "Calmly urgent and grounding; quick, firm, controlled delivery that steadies the startled speaker.",
+            "valence": "slightly_negative",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "calmly urgent",
+              "reassuring",
+              "focused"
+            ],
+            "prosody": {
+              "pitch": "Mid to slightly raised at onset, then leveling into flat, controlled contours",
+              "energy": "Increased and forward-projected, firm but not shouted",
+              "rate": "Faster onset than the other conditions, then deliberately steadied",
+              "pausing": "Immediate, minimal hesitation at the start; short crisp phrases with clear breaks",
+              "voice_quality": "Steady and firm, alert without tremor"
+            },
+            "acceptable_range": [
+              "Brisk, take-charge steadiness that moves straight to stabilizing the situation",
+              "Softer reassurance with clear urgency underneath, lowering intensity to settle the other person"
+            ],
+            "must_avoid": [
+              "Matching the panic with equally shrill, loud, destabilizing alarm",
+              "Slow, leisurely, or amused delivery that dismisses the fright"
+            ],
+            "contrastive_cue": "Quicker onset with firmer, more projected and controlled energy—urgency that regulates rather than mirrors the alarm.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_10b",
+      "condition": "all",
+      "task_type": "tone_rubric",
+      "task_id": "v6_10b__all__tone_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "tone_rubric_writer@e6c1185215ce",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:58:32+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_10b__tone_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_10b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "tone_summary": "Engaged, easygoing practicality; light supportive interest in the practice session without concern or alarm.",
+            "valence": "slightly_positive",
+            "arousal": "medium",
+            "interpersonal_stance": [
+              "attentive",
+              "friendly",
+              "matter-of-fact"
+            ],
+            "prosody": {
+              "pitch": "Mid-level with ordinary conversational movement; no exaggerated rises or drops",
+              "energy": "Moderate, evenly distributed",
+              "rate": "Comfortable conversational pace",
+              "pausing": "Regular phrasing with natural clause breaks",
+              "voice_quality": "Relaxed and clear"
+            },
+            "acceptable_range": [
+              "Slightly upbeat and encouraging, as if commenting on the near-dunk",
+              "Cooler and more practical, focused on the slipped shoe as a small logistics issue"
+            ],
+            "must_avoid": [
+              "Alarmed or urgent delivery implying injury or danger",
+              "Flat, disengaged monotone with no conversational involvement"
+            ],
+            "contrastive_cue": "Absence of care-taking softening or protective alertness; unmarked conversational delivery treating the moment as routine.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "groan",
+            "tone_summary": "Warm, softened concern focused on how the speaker's body is doing after landing badly.",
+            "valence": "slightly_negative",
+            "arousal": "medium_low",
+            "interpersonal_stance": [
+              "sympathetic",
+              "gentle",
+              "attentive"
+            ],
+            "prosody": {
+              "pitch": "Slightly lowered overall with gently falling, rounded contours",
+              "energy": "Reduced and softened relative to baseline",
+              "rate": "A little slower, unhurried",
+              "pausing": "Slightly longer pauses, giving room to answer",
+              "voice_quality": "Gentle, warm, somewhat breathy or cushioned"
+            },
+            "acceptable_range": [
+              "Quietly sympathetic and low-key, mostly softened without much pitch movement",
+              "Warmer and lightly wry, easing the discomfort while still clearly caring"
+            ],
+            "must_avoid": [
+              "Bright, chipper cheerfulness that skips past the discomfort",
+              "Sharp, loud alarm treating a sore landing as an emergency"
+            ],
+            "contrastive_cue": "Softened, slowed, lowered delivery expressing bodily sympathy rather than the baseline's neutrality or condition B's alert steadiness.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "tone_summary": "Alert but steadying: quick, grounded reassurance that settles a startled, frightened moment.",
+            "valence": "slightly_negative",
+            "arousal": "medium_high",
+            "interpersonal_stance": [
+              "calmly urgent",
+              "reassuring",
+              "protective"
+            ],
+            "prosody": {
+              "pitch": "Mid to slightly raised at onset, resolving into level or falling contours",
+              "energy": "Stronger and more forward initially, then held steady",
+              "rate": "Brisk at first, easing to a measured pace",
+              "pausing": "Short initial burst, then clear deliberate pacing",
+              "voice_quality": "Firm and steady with an audible edge of alertness"
+            },
+            "acceptable_range": [
+              "Calm-first delivery that is quiet and anchoring, with only slight urgency",
+              "Noticeably quickened and alert at the start before settling into steady reassurance"
+            ],
+            "must_avoid": [
+              "Panicked, escalating delivery that amplifies the fear",
+              "Casual, unbothered lightness that ignores the startle entirely"
+            ],
+            "contrastive_cue": "Heightened initial alertness resolving into firm steadiness — more activated than baseline, less softly sympathetic than condition A.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    }
+  ]
+}

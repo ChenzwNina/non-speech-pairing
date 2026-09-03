@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_10a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Engaged, practical helpfulness; light everyday concern without alarm or dramatized sympathy.",
+      "valence": "neutral",
+      "arousal": "medium",
+      "interpersonal_stance": ["attentive", "helpful", "casual"],
+      "prosody": {
+        "pitch": "Mid-level with ordinary conversational range and mostly falling, matter-of-fact contours",
+        "energy": "Moderate, evenly distributed, no sudden surges",
+        "rate": "Normal conversational pace, slightly brisk in the practical parts",
+        "pausing": "Regular phrasing with unremarkable breaks at clause boundaries",
+        "voice_quality": "Relaxed and clear"
+      },
+      "acceptable_range": [
+        "Slightly upbeat and task-focused, as when pitching in with logistics",
+        "Marginally flatter and more procedural, with mild curiosity about the stuck foot"
+      ],
+      "must_avoid": [
+        "Alarmed or urgent delivery with sharp onsets and raised loudness",
+        "Heavy, drawn-out sympathetic softening as if responding to visible suffering"
+      ],
+      "contrastive_cue": "Absence of any affective marking: no sympathetic softening and no urgency; steady, ordinary conversational register throughout.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "groan",
+      "tone_summary": "Warm, sympathetic concern with gentle steadiness; acknowledges discomfort while staying practically useful.",
+      "valence": "slightly_negative",
+      "arousal": "medium",
+      "interpersonal_stance": ["sympathetic", "warm", "attentive"],
+      "prosody": {
+        "pitch": "Slightly lowered overall with softened, gently falling contours; narrower range than baseline",
+        "energy": "Moderate to slightly reduced, cushioned rather than clipped",
+        "rate": "Slightly slower than baseline, unhurried",
+        "pausing": "A brief settling pause near the start; smooth, unrushed phrasing after",
+        "voice_quality": "Gentle and slightly breathy, steady underneath"
+      },
+      "acceptable_range": [
+        "Quietly wincing sympathy that stays low and soft before turning practical",
+        "Warm, lightly teasing commiseration that still audibly registers the discomfort"
+      ],
+      "must_avoid": [
+        "Bright, cheery briskness that ignores the discomfort",
+        "Panicked, loud, fast delivery treating the moment as an emergency"
+      ],
+      "contrastive_cue": "Softened, slightly lowered and slowed delivery signaling sympathy for physical discomfort, without the urgency of the fear condition.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "tone_summary": "Calmly urgent and grounding; quick, firm, controlled delivery that steadies the startled speaker.",
+      "valence": "slightly_negative",
+      "arousal": "medium_high",
+      "interpersonal_stance": ["calmly urgent", "reassuring", "focused"],
+      "prosody": {
+        "pitch": "Mid to slightly raised at onset, then leveling into flat, controlled contours",
+        "energy": "Increased and forward-projected, firm but not shouted",
+        "rate": "Faster onset than the other conditions, then deliberately steadied",
+        "pausing": "Immediate, minimal hesitation at the start; short crisp phrases with clear breaks",
+        "voice_quality": "Steady and firm, alert without tremor"
+      },
+      "acceptable_range": [
+        "Brisk, take-charge steadiness that moves straight to stabilizing the situation",
+        "Softer reassurance with clear urgency underneath, lowering intensity to settle the other person"
+      ],
+      "must_avoid": [
+        "Matching the panic with equally shrill, loud, destabilizing alarm",
+        "Slow, leisurely, or amused delivery that dismisses the fright"
+      ],
+      "contrastive_cue": "Quicker onset with firmer, more projected and controlled energy—urgency that regulates rather than mirrors the alarm.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

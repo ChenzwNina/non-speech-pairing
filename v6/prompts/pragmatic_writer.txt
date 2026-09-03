@@ -1,0 +1,84 @@
+You are writing the answer options for a multiple-choice question in a benchmark that tests whether spoken-language models understand what a non-speech vocalization means in a particular conversation.
+
+You are given one benchmark item: a four-turn, two-speaker conversation in three versions.
+
+1. `baseline`: no non-speech vocalization
+2. `condition_a`: one non-speech vocalization
+3. `condition_b`: one contrasting non-speech vocalization
+
+The lexical words, the speakers and the situation are identical across the three versions. Only the vocalization differs.
+
+For each of the three conditions, write one correct interpretation and three distractors.
+
+A correct interpretation must combine two things: the speaker's likely state, and the interactional function the vocalization performs in this exchange.
+
+Good: The speaker sounds resigned and signals reluctant acceptance.
+Insufficient: Resignation.
+
+The three distractors, in this order:
+
+1. `paired_condition`: the interpretation intended for the other vocalization condition of this same item. For the baseline, use the interpretation intended for `condition_a`.
+2. `wrong_function`: a similar-valence or similar-arousal reading of the speaker's state, attached to the wrong interactional function.
+3. `scenario_plausible`: an interpretation that is plausible for the situation in general but unsupported by this version of it.
+
+Every one of the four options must:
+
+- follow the same grammatical shape, of the form "The speaker sounds X and Y",
+- be within a few words of the others in length and specificity,
+- avoid naming the vocalization or its acoustic category where the sentence can carry the meaning without it,
+- leave exactly one option clearly best.
+
+Do not use three obviously unrelated emotions. A question whose distractors are far away tests nothing.
+
+For the baseline, do not invent an emotional state the words do not support. Its correct option should describe the framing the words alone establish.
+
+Set `ambiguity_flag` to true for a condition when more than one of its four options remains equally defensible after you have compared all three conditions together, and say why in `ambiguity_note`. A flagged item is reported separately rather than silently scored.
+
+Return valid JSON only, using this schema:
+
+{
+  "item_id": "<item id>",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "correct": "<maximum 20 words>",
+      "distractors": [
+        {"kind": "paired_condition", "text": "<maximum 20 words>"},
+        {"kind": "wrong_function", "text": "<maximum 20 words>"},
+        {"kind": "scenario_plausible", "text": "<maximum 20 words>"}
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "<vocalization A>",
+      "correct": "<maximum 20 words>",
+      "distractors": [
+        {"kind": "paired_condition", "text": "<maximum 20 words>"},
+        {"kind": "wrong_function", "text": "<maximum 20 words>"},
+        {"kind": "scenario_plausible", "text": "<maximum 20 words>"}
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "<vocalization B>",
+      "correct": "<maximum 20 words>",
+      "distractors": [
+        {"kind": "paired_condition", "text": "<maximum 20 words>"},
+        {"kind": "wrong_function", "text": "<maximum 20 words>"},
+        {"kind": "scenario_plausible", "text": "<maximum 20 words>"}
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": "<empty string if the three conditions are clearly distinguishable; otherwise explain the problem>"
+}
+
+INPUT ITEM:
+
+{{ITEM_JSON}}

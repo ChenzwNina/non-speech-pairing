@@ -1,0 +1,123 @@
+You are creating reference annotations for a benchmark that evaluates whether spoken-language models respond appropriately to non-speech vocalizations in conversation.
+
+Each benchmark item contains one four-turn, two-speaker conversation with three versions:
+
+1. `baseline`: no non-speech vocalization
+2. `condition_a`: one non-speech vocalization
+3. `condition_b`: one contrasting non-speech vocalization
+
+The lexical speech, speaker identities, and conversational situation are intended to remain the same across all three versions. After hearing the four turns, a third person—a friend of the two speakers—will join the conversation and respond.
+
+Your task is to create a high-level CONTENT rubric for the third person's response under each condition.
+
+The rubric must describe what the response should accomplish semantically and pragmatically. It must not prescribe exact wording, prosody, speaking rate, pitch, vocal emotion, or audio quality. Tone will be evaluated separately.
+
+Important principles:
+
+- Treat the transcript and the specified vocalization together as evidence.
+- Interpret the vocalization in its local conversational context rather than relying only on a stereotypical emotion.
+- Distinguish the speaker's likely state from the interactional function of the vocalization.
+- Focus on what the third person should communicate or do conversationally.
+- Do not assume that there is only one valid response.
+- Do not require specific words or phrases.
+- A good rubric should allow multiple natural responses that perform the same function.
+- The response should address the ongoing conversation, not describe the vocalization analytically.
+- The response should sound like a friend joining naturally, not a therapist, annotator, or customer-service agent.
+- Do not reward a generic response merely because it is topically relevant.
+- Each non-baseline condition should contain at least one meaningful requirement that distinguishes it from the other two conditions.
+- Do not force a distinction unsupported by the transcript. If the intended emotional framing is weak or ambiguous, flag the item for review.
+- For fear, distress, or pain, the appropriate response does not necessarily mirror the speaker's emotion. It may instead regulate the situation by checking safety, calming, or offering help.
+- For the baseline, do not invent a strong emotional state that is not supported by the lexical transcript.
+
+For each condition, produce:
+
+- `contextual_interpretation`: One short sentence describing the speaker's likely state and the interactional function of the vocalization.
+- `primary_response_function`: The main conversational action the third person should perform, such as acknowledging, validating, checking safety, joining humor, reassuring, clarifying, sympathizing, de-escalating, or offering help.
+- `required_content`: Exactly two short, independently checkable semantic requirements. These describe meanings, not exact words.
+- `acceptable_variations`: Two alternative response strategies that would still satisfy the same underlying goal.
+- `must_avoid`: Two content-level mistakes that would make a response inappropriate or insufficiently sensitive to this condition.
+- `contrastive_requirement`: One sentence explaining what should make a response to this condition different from responses to the other two versions.
+- `reference_response`: One brief natural example for human inspection only. Judges must not require lexical similarity to this example.
+- `ambiguity_flag`: `true` if multiple incompatible interpretations remain equally plausible; otherwise `false`.
+- `ambiguity_note`: A brief explanation when `ambiguity_flag` is true; otherwise an empty string.
+
+Before producing the output, compare all three conditions jointly. Make sure the rubrics differ because of the vocalization's contextual meaning, not because you invented new facts.
+
+Return valid JSON only, using this schema:
+
+{
+  "item_id": "<item id>",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "<maximum 25 words>",
+      "primary_response_function": "<maximum 10 words>",
+      "required_content": [
+        "<short semantic requirement>",
+        "<short semantic requirement>"
+      ],
+      "acceptable_variations": [
+        "<short alternative strategy>",
+        "<short alternative strategy>"
+      ],
+      "must_avoid": [
+        "<content-level mistake>",
+        "<content-level mistake>"
+      ],
+      "contrastive_requirement": "<maximum 30 words>",
+      "reference_response": "<maximum 30 words>",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "<vocalization A>",
+      "contextual_interpretation": "<maximum 25 words>",
+      "primary_response_function": "<maximum 10 words>",
+      "required_content": [
+        "<short semantic requirement>",
+        "<short semantic requirement>"
+      ],
+      "acceptable_variations": [
+        "<short alternative strategy>",
+        "<short alternative strategy>"
+      ],
+      "must_avoid": [
+        "<content-level mistake>",
+        "<content-level mistake>"
+      ],
+      "contrastive_requirement": "<maximum 30 words>",
+      "reference_response": "<maximum 30 words>",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "<vocalization B>",
+      "contextual_interpretation": "<maximum 25 words>",
+      "primary_response_function": "<maximum 10 words>",
+      "required_content": [
+        "<short semantic requirement>",
+        "<short semantic requirement>"
+      ],
+      "acceptable_variations": [
+        "<short alternative strategy>",
+        "<short alternative strategy>"
+      ],
+      "must_avoid": [
+        "<content-level mistake>",
+        "<content-level mistake>"
+      ],
+      "contrastive_requirement": "<maximum 30 words>",
+      "reference_response": "<maximum 30 words>",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": "<empty string if the contrast is clear; otherwise explain the problem>"
+}
+
+INPUT ITEM:
+
+{{ITEM_JSON}}

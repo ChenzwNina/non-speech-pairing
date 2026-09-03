@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 pragmatic multiple-choice options",
+  "description": "One correct interpretation and three matched distractors per condition. Option order is not decided here; build_tasks.py assigns and freezes it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "item_id",
+    "conditions",
+    "item_level_review_note"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "item_level_review_note": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "condition",
+          "vocalization",
+          "correct",
+          "distractors",
+          "ambiguity_flag",
+          "ambiguity_note"
+        ],
+        "properties": {
+          "condition": {
+            "type": "string",
+            "enum": [
+              "baseline",
+              "condition_a",
+              "condition_b"
+            ]
+          },
+          "vocalization": {
+            "type": "string",
+            "minLength": 1
+          },
+          "correct": {
+            "type": "string",
+            "minLength": 1
+          },
+          "distractors": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "text"
+              ],
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "paired_condition",
+                    "wrong_function",
+                    "scenario_plausible"
+                  ]
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "ambiguity_flag": {
+            "type": "boolean"
+          },
+          "ambiguity_note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

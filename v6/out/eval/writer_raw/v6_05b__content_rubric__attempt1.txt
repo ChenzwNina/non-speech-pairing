@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_05b",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "A flatly states the cake is entirely gone; the exchange is mainly informational, with mild frustration and a practical plan already forming.",
+      "primary_response_function": "Acknowledge the situation and support the practical plan",
+      "required_content": [
+        "Registers that the entire cake, made for the daughter's birthday, is gone",
+        "Engages with resolving it, such as backing the call to Mia or the backup plan"
+      ],
+      "acceptable_variations": [
+        "Ask a clarifying question about whether Mia took it by mistake",
+        "Offer concrete practical help with the call or a replacement cake"
+      ],
+      "must_avoid": [
+        "Attributing intense distress, panic, or devastation not present in the words",
+        "Responding only with generic sympathy while ignoring the cake and the plan"
+      ],
+      "contrastive_requirement": "Should stay emotionally neutral and practical, without the deflation acknowledged after a sigh or the alarm and urgency triggered by a gasp.",
+      "reference_response": "Wait, the whole thing? Call her now, she probably grabbed the wrong box. I can run out for candles if we need a backup.",
+      "ambiguity_flag": true,
+      "ambiguity_note": "Without vocal cues, A's line reads equally as weary acceptance, dry irritation, or plain disbelief, so the emotional framing is underdetermined."
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "contextual_interpretation": "A is deflated and resigned about five hours of work lost; the sigh signals giving in rather than seeking alarm or urgent action.",
+      "primary_response_function": "Validate the deflation and offer to share the burden",
+      "required_content": [
+        "Acknowledges A's weariness or the effort lost, not just the missing cake",
+        "Offers to take on part of the remedy, such as helping remake, buy, or handle Mia"
+      ],
+      "acceptable_variations": [
+        "Lightly commiserate about the wasted work, then propose an easier fix",
+        "Reassure that the birthday is still salvageable and volunteer to do the legwork"
+      ],
+      "must_avoid": [
+        "Treating the moment as an emergency requiring urgent action or alarm",
+        "Brushing off the lost effort with pure logistics or a cheery 'no big deal'"
+      ],
+      "contrastive_requirement": "Must recognize A's tiredness and lost effort and lighten the load, rather than staying neutral (baseline) or escalating urgency (gasp).",
+      "reference_response": "Five hours, ugh. Don't start over tonight — let me call Mia, and if it's really gone I'll pick something up in the morning.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "gasp",
+      "contextual_interpretation": "A is startled, just realizing Mia drove off with the entire cake; the gasp flags a newly registered problem needing immediate attention.",
+      "primary_response_function": "Match urgency and help resolve it now",
+      "required_content": [
+        "Treats the realization as fresh and time-sensitive, e.g. catching Mia before she gets far",
+        "Pushes toward immediate action or a quick explanation, such as calling or texting her right now"
+      ],
+      "acceptable_variations": [
+        "Assume an honest mix-up and urge contacting Mia immediately to get it back",
+        "Offer to act at once, like calling her or going after her, before discussing replacements"
+      ],
+      "must_avoid": [
+        "Responding with resigned acceptance or moving straight to baking a replacement",
+        "Escalating into blaming or accusing Mia rather than resolving the mix-up"
+      ],
+      "contrastive_requirement": "Must carry immediacy and shared surprise about intercepting Mia now, unlike the resigned burden-sharing after a sigh or the flat baseline.",
+      "reference_response": "She just left? Call her right now, she can't be far — it was probably the wrong box in the fridge.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_08a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "B reports two problems matter-of-factly; the turn functions as informing, leaving physical and food complaints equally weighted.",
+      "primary_response_function": "Acknowledging and supporting practical handling",
+      "required_content": [
+        "Registers that the salad is unacceptable and shouldn't be eaten",
+        "Aligns with the plan to raise it with the server or restaurant"
+      ],
+      "acceptable_variations": [
+        "Focus on the bill and getting the dish removed or replaced",
+        "Light shared complaint about the restaurant, plus offering to flag staff"
+      ],
+      "must_avoid": [
+        "Attributing strong shock or acute pain not present in the transcript",
+        "Dismissing the hair or telling B to keep eating"
+      ],
+      "contrastive_requirement": "Should stay evenly balanced between the lip and the hair, without foregrounding shock or bodily pain as the salient issue.",
+      "reference_response": "Thirty dollars for that? Yeah, don't touch it. Let's get the server over and have it taken off the bill.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "gasp",
+      "contextual_interpretation": "B is startled by the discovery; the gasp marks the hair as a shocking find and invites shared alarm.",
+      "primary_response_function": "Validating shock and escalating the complaint",
+      "required_content": [
+        "Treats the hair as a genuinely shocking, unacceptable discovery",
+        "Supports raising it with the restaurant rather than letting it pass"
+      ],
+      "acceptable_variations": [
+        "Express shared disbelief, then move to getting the dish removed",
+        "Ask what exactly B found, then back the complaint to staff"
+      ],
+      "must_avoid": [
+        "Treating the lip injury as the main problem needing care",
+        "Downplaying the hair as a normal or trivial restaurant occurrence"
+      ],
+      "contrastive_requirement": "Uniquely centers surprise at the discovery and the restaurant's failure, rather than B's bodily discomfort or a neutral report.",
+      "reference_response": "Wait, a hair? In a thirty-dollar salad? Push it away, we're definitely telling someone about this.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "groan",
+      "contextual_interpretation": "B is in physical discomfort from the lip; the groan foregrounds pain and invites checking and care.",
+      "primary_response_function": "Checking on injury and offering help",
+      "required_content": [
+        "Attends to B's lip and whether they're hurt or bleeding",
+        "Offers concrete help or relief, such as water, ice, or a napkin"
+      ],
+      "acceptable_variations": [
+        "Ask how bad the cut is before addressing the salad",
+        "Offer something practical for the lip and suggest ordering B something else"
+      ],
+      "must_avoid": [
+        "Skipping past B's physical state straight to the complaint or bill",
+        "Reacting mainly with amusement or disbelief about the hair"
+      ],
+      "contrastive_requirement": "Uniquely prioritizes B's bodily pain and comfort over surprise at the hair or neutral practical handling.",
+      "reference_response": "Ouch, is your lip bleeding? Here, take some cold water. Forget the salad, we'll get you something else.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

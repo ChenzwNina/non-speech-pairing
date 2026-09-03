@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_08b",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Engaged, curious interest in the coin; friendly and unmarked, without strong excitement or concern.",
+      "valence": "slightly_positive",
+      "arousal": "medium",
+      "interpersonal_stance": ["attentive", "warm", "curious"],
+      "prosody": {
+        "pitch": "mid level with moderate, conversational range",
+        "energy": "moderate and even, no surges",
+        "rate": "comfortable conversational pace",
+        "pausing": "natural phrase breaks, no dramatic holds",
+        "voice_quality": "relaxed and steady"
+      },
+      "acceptable_range": [
+        "Mildly impressed and appreciative, with a slight lift on the final phrase",
+        "Plainly inquisitive and matter-of-fact while still audibly interested"
+      ],
+      "must_avoid": [
+        "Peak amazement with sharp pitch jumps and breathy excitement",
+        "Pained, wincing sympathy or worried, hushed delivery"
+      ],
+      "contrastive_cue": "Even, unheightened baseline energy: neither the excited pitch surge of condition A nor the softened, sympathy-tinged onset of condition B.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "gasp",
+      "tone_summary": "Brightly surprised, delighted interest in the unexpectedly old find; shared excitement without alarm.",
+      "valence": "positive",
+      "arousal": "medium_high",
+      "interpersonal_stance": ["enthusiastic", "impressed", "playful"],
+      "prosody": {
+        "pitch": "raised overall with wider range and clear upward peaks",
+        "energy": "livelier, with a noticeable surge early in the response",
+        "rate": "somewhat quicker, slightly forward-leaning",
+        "pausing": "short animated beat before or after the key phrase, otherwise fluent",
+        "voice_quality": "bright and open, a little breath-supported"
+      },
+      "acceptable_range": [
+        "Warm, laughing disbelief at the bargain, energetic but relaxed",
+        "Hushed, wide-eyed awe with contained energy and bright resonance"
+      ],
+      "must_avoid": [
+        "Flat, unimpressed recitation with narrow pitch range",
+        "Fearful or alarmed urgency, as if something has gone wrong"
+      ],
+      "contrastive_cue": "Elevated pitch and an early energy surge conveying pleasant astonishment, clearly above baseline and never tinged with discomfort.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "groan",
+      "tone_summary": "Warm, sympathetic interest; brief wince for the pinched finger, then steady attention to the coin.",
+      "valence": "slightly_negative",
+      "arousal": "medium",
+      "interpersonal_stance": ["sympathetic", "concerned", "reassuring"],
+      "prosody": {
+        "pitch": "mid to slightly lowered, with gentle falling contours",
+        "energy": "softer and more restrained, no bright peaks",
+        "rate": "slightly slower, unhurried and careful",
+        "pausing": "a small settling pause near the start, giving the discomfort room",
+        "voice_quality": "gentle and slightly compressed, caring rather than tense"
+      },
+      "acceptable_range": [
+        "Lightly wincing and teasing, sympathy carried with easy humor",
+        "Calm, practical care that softens first, then turns attentively to the coin"
+      ],
+      "must_avoid": [
+        "Bright, celebratory excitement that ignores the injury",
+        "Heavy distress or panicked urgency out of proportion to a pinched finger"
+      ],
+      "contrastive_cue": "Softened, slightly lowered and slowed delivery with an audible sympathetic wince absent from baseline and condition A.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

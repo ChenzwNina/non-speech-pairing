@@ -1,0 +1,69 @@
+{
+  "item_id": "v6_08b",
+  "item_level_review_note": "",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "correct": "The speaker sounds matter-of-fact and reports the coin’s age alongside the minor mishap.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds composed and reassures the friend that the finger is unharmed."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds cautious and warns the friend to handle the display case carefully."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "gasp",
+      "correct": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds pained and draws attention to the case pinching the finger."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds startled and warns the friend that the display case could hurt them."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds worried and asks the friend to inspect the injured finger."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "groan",
+      "correct": "The speaker sounds pained and draws attention to the case pinching the finger.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds distressed and warns the friend not to touch the display case."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds suspicious and questions whether the seller concealed the coin’s true age."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ]
+}

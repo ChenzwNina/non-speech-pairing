@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_07a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Engaged, practical helpfulness with mild everyday concern; matter-of-fact and lightly supportive.",
+      "valence": "neutral",
+      "arousal": "medium",
+      "interpersonal_stance": ["attentive", "helpful", "easygoing"],
+      "prosody": {
+        "pitch": "Mid-level with ordinary conversational range; unremarkable falling endings",
+        "energy": "Moderate, even loudness typical of casual talk",
+        "rate": "Normal conversational pace, neither hurried nor drawn out",
+        "pausing": "Regular phrasing with brief, natural breaks",
+        "voice_quality": "Relaxed and clear"
+      },
+      "acceptable_range": [
+        "Slightly brisk and problem-solving, as if already scanning for options",
+        "Slightly warmer and lighter, with a small amount of friendly amusement"
+      ],
+      "must_avoid": [
+        "Alarmed, loud, or breathless delivery unwarranted by the plain transcript",
+        "Flat, disengaged monotone that sounds indifferent to the friend's situation"
+      ],
+      "contrastive_cue": "Unmarked baseline: neither the softened, deflating warmth of the sigh version nor the clipped forward drive of the scream version.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "tone_summary": "Warm, sympathetic, unhurried reassurance that gently lifts a deflated friend.",
+      "valence": "slightly_positive",
+      "arousal": "medium_low",
+      "interpersonal_stance": ["warm", "sympathetic", "reassuring"],
+      "prosody": {
+        "pitch": "Slightly lower and smoother than baseline, with gentle rather than sharp contours",
+        "energy": "Softer, settled intensity without pushing",
+        "rate": "A touch slower and more even than baseline",
+        "pausing": "Slightly longer, unhurried breaks; comfortable rhythm",
+        "voice_quality": "Gentle and relaxed, mildly breathy warmth acceptable"
+      },
+      "acceptable_range": [
+        "Lightly playful commiseration, with a small smile audible in the voice",
+        "Quietly steady and pragmatic, low-key encouragement without much affect"
+      ],
+      "must_avoid": [
+        "Loud, high-energy cheerleading that overrides the low-key mood",
+        "Sighing, weary heaviness that adds to the deflation instead of easing it"
+      ],
+      "contrastive_cue": "Softer, slower, lower-energy delivery with unhurried pausing—warmth that settles rather than the urgency of the scream condition.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "tone_summary": "Calmly urgent, decisive steering: quick and energized but grounded, not panicked.",
+      "valence": "neutral",
+      "arousal": "medium_high",
+      "interpersonal_stance": ["calmly urgent", "decisive", "supportive"],
+      "prosody": {
+        "pitch": "Mid to slightly raised, with firm, downward-resolving phrase endings",
+        "energy": "Noticeably stronger and more forward than baseline, but controlled",
+        "rate": "Faster, clipped and efficient",
+        "pausing": "Short, tight breaks; little hesitation, momentum carried forward",
+        "voice_quality": "Steady and firm, slightly tense but not strained"
+      },
+      "acceptable_range": [
+        "Brisk and lightly amused, treating the outburst as comic emergency while still moving fast",
+        "Very steady and level, deliberately calming with only mild acceleration"
+      ],
+      "must_avoid": [
+        "Matching the scream with equal panic, shrillness, or shouted alarm",
+        "Slow, languid, or unbothered delivery that ignores the spike in urgency"
+      ],
+      "contrastive_cue": "Faster, more forward-driving delivery with clipped phrasing and firm endings, while remaining audibly controlled rather than alarmed.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

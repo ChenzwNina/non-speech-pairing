@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_07a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "Speaker A has a practical, moderately urgent need and is stating a logistical constraint, inviting problem-solving from the group.",
+      "primary_response_function": "Offering help with the practical bathroom problem",
+      "required_content": [
+        "Treats finding a bathroom soon as the immediate shared task",
+        "Supports or extends the café suggestion, or names another concrete option"
+      ],
+      "acceptable_variations": [
+        "Endorse the café plan and add a small practical detail, like buying something to use the restroom",
+        "Propose a different nearby option, such as a shop or gas station"
+      ],
+      "must_avoid": [
+        "Attributing strong panic, distress, or defeat that the words alone do not support",
+        "Chatting about the walk or park while ignoring the bathroom need"
+      ],
+      "contrastive_requirement": "Stays matter-of-fact and logistical, without commiserating over frustration or matching an escalated, urgent outburst.",
+      "reference_response": "Café's a good call. Just order a coffee at the counter and they'll hand you the key.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "contextual_interpretation": "A is uncomfortable and resigned about bad luck with the locked restroom; the sigh invites commiseration alongside continued problem-solving.",
+      "primary_response_function": "Acknowledging the frustration while helping practically",
+      "required_content": [
+        "Registers that the situation is annoying or unlucky for A",
+        "Still moves toward a concrete bathroom solution rather than only sympathizing"
+      ],
+      "acceptable_variations": [
+        "Light commiseration about locked park restrooms, then back the café plan",
+        "Reassure that the café is close and quick, so the wait is nearly over"
+      ],
+      "must_avoid": [
+        "Purely logistical reply that ignores A's evident exasperation",
+        "Treating A as frightened or in an emergency, or over-dramatizing the discomfort"
+      ],
+      "contrastive_requirement": "Unlike baseline, it explicitly acknowledges A's weary frustration; unlike condition_b, it does not respond to alarm or heightened urgency.",
+      "reference_response": "Ugh, of course it's locked. Café's right there though, come on, we'll be inside in one minute.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "contextual_interpretation": "A's discomfort spikes into an alarmed, possibly hyperbolic outburst; the scream escalates urgency and demands immediate response from companions.",
+      "primary_response_function": "Responding to escalated urgency and de-escalating",
+      "required_content": [
+        "Treats the need as urgent right now, prioritizing speed over deliberation",
+        "Responds to A's outburst with steadying reassurance rather than ignoring it"
+      ],
+      "acceptable_variations": [
+        "Quickly confirm A is okay, then hurry them straight to the café",
+        "Calmly take charge of the plan so A does not have to negotiate or explain"
+      ],
+      "must_avoid": [
+        "Carrying on with an unhurried, casual pace as if nothing changed",
+        "Mocking or scolding the outburst, or analyzing why A screamed"
+      ],
+      "contrastive_requirement": "Only this condition responds to a sudden spike in urgency with immediate, take-charge steadying rather than calm logistics or weary commiseration.",
+      "reference_response": "Okay okay, you're fine, go, straight across, I'll deal with the café people.",
+      "ambiguity_flag": true,
+      "ambiguity_note": "The scream could be genuine alarm or comic hyperbole about bathroom desperation; responses treating it either as real distress or as exaggerated urgency are both defensible, though neither should imply external danger."
+    }
+  ],
+  "item_level_review_note": "Contrast is usable but asymmetric: a scream in a bathroom-urgency context reads as hyperbolic desperation more than fear of harm, so condition_b should not be judged for safety-threat handling. Consider a milder alarm vocalization if literal fear framing is required."
+}

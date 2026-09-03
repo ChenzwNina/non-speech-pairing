@@ -78,12 +78,26 @@ def _xai() -> OpenAI:
 def ask_claude(model: str, system: str, prompt: str) -> str:
     """One judgement from Claude, via the CLI. The prompt goes in on stdin, so its length and
     contents need no quoting."""
+    # The CLI prefers an API key over the OAuth subscription when one is in the environment,
+    # and this module has just loaded .env into os.environ. Inheriting that key silently moves
+    # billing off the team subscription and onto API credit — which reads as "Credit balance is
+    # too low" from an account that has a perfectly good subscription. So the child does not
+    # get to see it.
+    env = {k: v for k, v in os.environ.items()
+           if k not in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN")}
     proc = subprocess.run(
         [CLAUDE_CLI, "-p", "--model", model, "--system-prompt", system, *CLI_FLAGS],
-        input=prompt, capture_output=True, text=True, timeout=CLI_TIMEOUT)
+        input=prompt, capture_output=True, text=True, timeout=CLI_TIMEOUT, env=env)
     if proc.returncode != 0:
-        raise RuntimeError(f"claude cli exit {proc.returncode}: "
-                           f"{(proc.stderr or proc.stdout)[:200]}")
+        # A failing CLI still answers in JSON, and the reason lives in `result`. Reporting the
+        # raw first 200 characters instead buries it behind the usage block, which is how an
+        # expired login reads as an unexplained exit 1.
+        reason = (proc.stderr or "").strip()
+        try:
+            reason = str(json.loads(proc.stdout).get("result") or reason)
+        except (json.JSONDecodeError, AttributeError):
+            reason = reason or proc.stdout
+        raise RuntimeError(f"claude cli exit {proc.returncode}: {reason[:200]}")
     try:
         payload = json.loads(proc.stdout)
     except json.JSONDecodeError as exc:

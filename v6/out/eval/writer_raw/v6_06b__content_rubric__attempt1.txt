@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_06b",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "Both are handling a sick-pet problem practically; B gives clinic information and A agrees to go, with no marked affect.",
+      "primary_response_function": "Supporting and advancing the practical plan",
+      "required_content": [
+        "Engages with getting Milo to the clinic before it closes",
+        "Contributes something useful: help, a next step, or relevant information"
+      ],
+      "acceptable_variations": [
+        "Offer to drive along or handle the carrier",
+        "Ask a practical question about symptoms or timing"
+      ],
+      "must_avoid": [
+        "Attributing strong distress or exhaustion to B that the words do not show",
+        "Topical pet chatter that ignores the in-progress clinic plan"
+      ],
+      "contrastive_requirement": "Stays situation-focused with no attention to B's emotional or physical state, since nothing in the words marks either.",
+      "reference_response": "Good, Oak Street's quick. Want me to meet you there so someone can hold him while you park?",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "contextual_interpretation": "B is worried and worn down by Milo's condition; the sigh registers the burden while B still pushes toward a practical solution.",
+      "primary_response_function": "Acknowledging strain while keeping plan moving",
+      "required_content": [
+        "Recognizes that this is weighing on or tiring B",
+        "Reinforces or helps carry out the clinic plan rather than stalling it"
+      ],
+      "acceptable_variations": [
+        "Offer to take over a task, such as calling the clinic",
+        "Voice steady reassurance that Milo will be seen in time"
+      ],
+      "must_avoid": [
+        "Treating B as physically unwell or in immediate danger",
+        "Responding purely logistically as if B showed no weariness"
+      ],
+      "contrastive_requirement": "Unlike baseline it registers B's weariness, and unlike condition_b that weariness is about the situation, not B's own body.",
+      "reference_response": "I know, it's been a long stretch with him. Let me make the call so you can just breathe for a second.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "groan",
+      "contextual_interpretation": "B reacts bodily—either physical discomfort or sharp dismay at the news—yet pushes through to give clinic instructions.",
+      "primary_response_function": "Checking on B, then offering to help",
+      "required_content": [
+        "Checks on B's own condition or whether something is wrong with B",
+        "Offers to absorb part of the task so B need not manage it alone"
+      ],
+      "acceptable_variations": [
+        "Ask directly whether B is hurt or unwell",
+        "Take over the clinic call or ride and tell B to sit down"
+      ],
+      "must_avoid": [
+        "Attending only to the dog and never to B's state",
+        "Analytically labeling the groan or diagnosing B clinically"
+      ],
+      "contrastive_requirement": "Uniquely turns attention to B's own wellbeing rather than only the situation, treating B as possibly needing care too.",
+      "reference_response": "Whoa, are you okay? You sound rough. I'll ring the clinic and check in on Milo—just stay put.",
+      "ambiguity_flag": true,
+      "ambiguity_note": "The groan supports two incompatible readings—physical pain in B, or acute dismay at hearing Milo is sick—and the lexical turn (practical clinic instructions) disambiguates neither."
+    }
+  ],
+  "item_level_review_note": "The sigh/groan contrast is usable but the intended pain framing for condition_b is weakly supported: nothing in the transcript indicates B is physically unwell, so the groan reads most naturally as dismay about the dog, which risks collapsing into condition_a's resignation. The contrast currently rests on B-directed concern (condition_b) versus situation-directed acknowledgment (condition_a). Recommend review: either add a lexical cue that B is physically hurting, or relabel condition_b's target emotion as dismay and rewrite its rubric accordingly."
+}

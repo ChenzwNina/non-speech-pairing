@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_06a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "Daughter is cooperative and matter-of-fact about a scheduled dental visit; the exchange is practical logistics with no marked emotional display.",
+      "primary_response_function": "Acknowledging plans and offering practical support",
+      "required_content": [
+        "Refers to the imminent dentist trip or the broken tooth",
+        "Offers practical help, a well-wish, or a light readiness remark"
+      ],
+      "acceptable_variations": [
+        "Offer to come along or hold the door while they head out",
+        "Ask a practical question about timing, the appointment, or the drive"
+      ],
+      "must_avoid": [
+        "Attributing dread, reluctance, or acute pain not present in the words",
+        "Ignoring the imminent departure and starting an unrelated topic"
+      ],
+      "contrastive_requirement": "Stays emotionally neutral and logistics-focused, without treating the daughter as reluctant or as currently hurting.",
+      "reference_response": "Three o'clock, right? Go get your shoes, I'll ride along if you want the company.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "contextual_interpretation": "Daughter reluctantly accepts an unwanted dentist trip; the sigh signals resignation and mild dread while still conceding compliance.",
+      "primary_response_function": "Validating reluctance and lightly encouraging",
+      "required_content": [
+        "Recognizes that she doesn't want to go but is going anyway",
+        "Offers encouragement, companionship, or a reason it will be manageable"
+      ],
+      "acceptable_variations": [
+        "Commiserate about disliking dentists, then nudge her out the door",
+        "Propose something to look forward to afterward, like a stop on the way home"
+      ],
+      "must_avoid": [
+        "Treating the sigh as acute physical pain requiring urgent care",
+        "Scolding her for the attitude or lecturing about dental hygiene"
+      ],
+      "contrastive_requirement": "Addresses unwillingness and dread about the appointment rather than her physical comfort or a neutral logistics update.",
+      "reference_response": "Yeah, nobody's idea of a fun afternoon. Want me to come sit in the waiting room with you?",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "groan",
+      "contextual_interpretation": "Daughter is in physical discomfort from the broken tooth; the groan signals pain and implicitly requests care while she still complies.",
+      "primary_response_function": "Checking on pain and offering relief",
+      "required_content": [
+        "Registers that she is hurting right now",
+        "Checks on or offers something that eases the pain before or during the trip"
+      ],
+      "acceptable_variations": [
+        "Ask how bad it hurts and whether she can wait until three",
+        "Offer concrete relief such as the ice pack, medication, or driving them there"
+      ],
+      "must_avoid": [
+        "Framing it as mere reluctance or dislike of the dentist",
+        "Rushing her out with logistics while ignoring the pain"
+      ],
+      "contrastive_requirement": "Centers her current bodily pain and relief, unlike the reluctance framing of condition_a or the neutral logistics of baseline.",
+      "reference_response": "Ouch, is it throbbing? Grab the ice pack now instead of the car, and I'll get your shoes.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

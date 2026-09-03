@@ -1,0 +1,69 @@
+{
+  "item_id": "v6_06b",
+  "item_level_review_note": "",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "correct": "The speaker sounds concerned and directs the sitter to seek prompt veterinary care.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds concerned and recommends monitoring Milo at home instead of seeking immediate care."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds frustrated and blames the sitter for not recognizing Milo's illness sooner."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "correct": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds pained and signals acute distress before directing Milo to veterinary care."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds resigned and suggests waiting at home rather than pursuing veterinary care."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds frustrated and blames the sitter for allowing Milo's condition to worsen."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "groan",
+      "correct": "The speaker sounds pained and signals acute distress before directing Milo to veterinary care.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds pained and asks the sitter to comfort Milo without contacting the clinic."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds worried and seeks reassurance that Milo's behavior will pass without treatment."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ]
+}

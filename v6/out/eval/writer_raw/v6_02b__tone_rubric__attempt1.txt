@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_02b",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Warm, engaged congratulation with even, conversational delivery and mild positive lift.",
+      "valence": "slightly_positive",
+      "arousal": "medium",
+      "interpersonal_stance": ["warm", "attentive", "friendly"],
+      "prosody": {
+        "pitch": "Mid level with moderate, gently rising phrase contours",
+        "energy": "Comfortable conversational intensity, no strong peaks",
+        "rate": "Even, unhurried everyday pace",
+        "pausing": "Regular phrasing with ordinary clause-level breaks",
+        "voice_quality": "Relaxed and steady, lightly bright"
+      },
+      "acceptable_range": [
+        "Understated approving remark with slightly flatter contour and calm warmth",
+        "Mildly upbeat, chatty delivery with a small rise in brightness at the end"
+      ],
+      "must_avoid": [
+        "Flat, disengaged or bored monotone that ignores good news",
+        "Highly excited, exclamatory delivery with large pitch jumps"
+      ],
+      "contrastive_cue": "Unmarked engaged warmth: neither the smiling, chuckle-adjacent looseness of A nor the heightened animated peak of B.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "laugh",
+      "tone_summary": "Playful, smiling warmth that joins the family teasing about beating mom's old mark.",
+      "valence": "positive",
+      "arousal": "medium",
+      "interpersonal_stance": ["playful", "warm", "teasing"],
+      "prosody": {
+        "pitch": "Mid to slightly high with loose, bouncy undulating contours",
+        "energy": "Easy, moderately light intensity without forceful stress",
+        "rate": "Relaxed, slightly loose with unrushed timing",
+        "pausing": "Casual, uneven rhythm; small comedic beats permitted",
+        "voice_quality": "Smiling and breathy-relaxed, audibly amused"
+      },
+      "acceptable_range": [
+        "Dry, wry delivery with restrained energy but clearly smiling voice",
+        "Openly buoyant, chuckle-tinged delivery with light bouncing pitch"
+      ],
+      "must_avoid": [
+        "Stiff, serious, or formally congratulatory delivery with no warmth or humor",
+        "Mocking, sharp-edged laughter that sounds derisive toward either speaker"
+      ],
+      "contrastive_cue": "Audible smile and relaxed, amused looseness in timing and voice quality, without the startled pitch peak of condition B.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "gasp",
+      "tone_summary": "Brightly impressed congratulation, briefly astonished then settling into admiring warmth.",
+      "valence": "positive",
+      "arousal": "medium_high",
+      "interpersonal_stance": ["impressed", "enthusiastic", "warm"],
+      "prosody": {
+        "pitch": "Higher onset with a noticeable early peak, then settling",
+        "energy": "Stronger initial intensity with a clear stressed opening",
+        "rate": "Slightly quicker at onset, easing toward the end",
+        "pausing": "Short beat of held breath or micro-pause before continuing",
+        "voice_quality": "Bright and animated, clear rather than breathy"
+      },
+      "acceptable_range": [
+        "Softer wondering admiration with a held breath and quieter but clearly heightened delivery",
+        "Openly exclamatory praise with a bright high onset and quick recovery to warmth"
+      ],
+      "must_avoid": [
+        "Flat, low-energy acknowledgement with no perceptible heightening",
+        "Alarmed or worried urgency treating the news as bad or concerning"
+      ],
+      "contrastive_cue": "A distinct heightened onset — higher pitch peak and sharper energy at the start — rather than baseline evenness or A's smiling looseness.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

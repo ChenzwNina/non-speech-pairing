@@ -1,0 +1,69 @@
+{
+  "item_id": "v6_05b",
+  "item_level_review_note": "",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "correct": "The speaker sounds certain and states the inference that Mia took the entire cake.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds thoughtful and asks the other parent whether Mia took the entire cake."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds concerned and proposes calling Mia before anyone starts baking a replacement cake."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "correct": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds startled and marks Mia's taking the entire cake as a sudden realization."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds weary and asks the other parent to recover the cake immediately."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds disappointed and proposes baking another cake for the birthday right away."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "gasp",
+      "correct": "The speaker sounds startled and marks Mia's taking the entire cake as a sudden realization.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds alarmed and warns the other parent that Mia may be in immediate danger."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds indignant and accuses Mia of intentionally stealing the birthday cake."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_04b",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Engaged, matter-of-fact teammate check-in; mildly sympathetic without strong amusement or alarm.",
+      "valence": "neutral",
+      "arousal": "medium_low",
+      "interpersonal_stance": ["attentive", "warm", "matter-of-fact"],
+      "prosody": {
+        "pitch": "mid level with moderate, unexaggerated range",
+        "energy": "conversational, evenly sustained",
+        "rate": "moderate and steady",
+        "pausing": "regular phrasing with ordinary breath pauses",
+        "voice_quality": "relaxed and steady"
+      },
+      "acceptable_range": [
+        "Slightly softer and lower, reading as low-key sympathy for the embarrassment",
+        "Slightly brighter and more casual, reading as ordinary dugout small talk"
+      ],
+      "must_avoid": [
+        "Loud alarmed urgency as if handling an emergency",
+        "Broad laughing or giddy teasing delivery"
+      ],
+      "contrastive_cue": "Absence of both audible amusement and audible alarm; unmarked steady baseline energy against which the other two conditions shift.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "laugh",
+      "tone_summary": "Light, affectionate amusement softening into friendly reassurance; teasing but clearly on his side.",
+      "valence": "slightly_positive",
+      "arousal": "medium",
+      "interpersonal_stance": ["playful", "warm", "reassuring"],
+      "prosody": {
+        "pitch": "somewhat higher and livelier, with buoyant rising-falling contours",
+        "energy": "moderately raised, animated but not booming",
+        "rate": "slightly quicker, easy and loose",
+        "pausing": "casual, with a smile-timed beat or breathy catch before landing",
+        "voice_quality": "bright, smiling, relaxed"
+      },
+      "acceptable_range": [
+        "Mostly dry and understated, with amusement carried by lilt rather than volume",
+        "More openly buoyant and chuckly, so long as it stays affectionate rather than mocking"
+      ],
+      "must_avoid": [
+        "Harsh, sharp-edged mockery that sounds like piling on at his expense",
+        "Grave, hushed concern that treats the moment as serious injury"
+      ],
+      "contrastive_cue": "Audible smile and buoyant lift in pitch and rhythm, lighter than baseline and clearly unalarmed.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "tone_summary": "Calmly urgent concern; steadying and gentle, checking he is hurt without escalating panic.",
+      "valence": "slightly_negative",
+      "arousal": "medium_high",
+      "interpersonal_stance": ["concerned", "calmly urgent", "reassuring"],
+      "prosody": {
+        "pitch": "lower and narrower than baseline, with settled falling contours",
+        "energy": "focused and controlled, slightly firmer without shouting",
+        "rate": "brisk at first, then deliberately slowed",
+        "pausing": "short purposeful pauses that leave room for an answer",
+        "voice_quality": "steady, gentle, faintly tense"
+      },
+      "acceptable_range": [
+        "Quieter and softer throughout, prioritizing soothing over urgency",
+        "Slightly more clipped and directive, still level and unpanicked"
+      ],
+      "must_avoid": [
+        "Shrill high-pitched panic that amplifies the other speaker's fear",
+        "Amused or teasing lilt that dismisses a possible injury"
+      ],
+      "contrastive_cue": "Controlled low-pitched urgency and steadying restraint — no smile, no panic — distinct from baseline's neutrality and A's lightness.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

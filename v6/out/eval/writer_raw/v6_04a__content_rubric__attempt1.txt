@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_04a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "Both coworkers are mildly puzzled by a coincidence between lifting the frame and the router lights, and are calmly investigating it.",
+      "primary_response_function": "Acknowledging and engaging with the puzzle",
+      "required_content": [
+        "Engages with the odd router behavior as something to figure out or explain",
+        "Treats the situation as ordinary workplace curiosity, without strong emotional framing"
+      ],
+      "acceptable_variations": [
+        "Offer a plausible mundane explanation, such as unrelated network activity or timing",
+        "Acknowledge the new certificate and ask what the router is actually doing"
+      ],
+      "must_avoid": [
+        "Inventing alarm, panic, or hilarity that the words alone do not support",
+        "Ignoring the router issue entirely and only talking about the certificate"
+      ],
+      "contrastive_requirement": "Should stay emotionally neutral and investigative, neither joining a joke nor responding to any alarm about the router.",
+      "reference_response": "Wait, the lights actually reacted when you picked it up? Probably a coincidence, but let's watch it once more while you hold the frame.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "laugh",
+      "contextual_interpretation": "B is amused, using the laugh to frame the coincidence as absurd and to invite shared joking about the certificate's apparent effect.",
+      "primary_response_function": "Joining the humor while staying on task",
+      "required_content": [
+        "Aligns with the playful framing that the coincidence is funny or absurd",
+        "Still engages with the router check rather than only joking"
+      ],
+      "acceptable_variations": [
+        "Extend the joke that the certificate has authority over the hardware",
+        "Tease A lightly about the framed certificate while asking to see the lights again"
+      ],
+      "must_avoid": [
+        "Treating the blinking lights as an emergency or a safety concern",
+        "Responding with flat troubleshooting that ignores B's amusement"
+      ],
+      "contrastive_requirement": "Must show uptake of shared amusement about the coincidence, unlike the neutral baseline or the reassurance needed after alarm.",
+      "reference_response": "So the router recognizes credentials now? Hold it up again, I want to see this before we go looking for a real explanation.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "contextual_interpretation": "B is startled and alarmed by the sudden router activity, using the scream to flag something as wrong and demand immediate attention.",
+      "primary_response_function": "De-escalating and checking things are okay",
+      "required_content": [
+        "Acknowledges B's alarm and checks that B, the hardware, or the network is okay",
+        "Offers help or a steady next step that treats the situation as manageable"
+      ],
+      "acceptable_variations": [
+        "Ask directly what happened and whether anything is damaged or unplugged",
+        "Calmly propose stepping back from the router and checking it together"
+      ],
+      "must_avoid": [
+        "Laughing at or mocking B's reaction as an overreaction",
+        "Amplifying the alarm or speculating about disaster without checking anything"
+      ],
+      "contrastive_requirement": "Must attend to B's alarm and steady the situation, rather than joining a joke or treating it as mere curiosity.",
+      "reference_response": "Whoa, are you two okay? Nothing's smoking, right? Put the frame down and let's look at the router together before anyone touches anything.",
+      "ambiguity_flag": true,
+      "ambiguity_note": "A scream at blinking router lights could be genuine startle/alarm or theatrical mock-horror at the coincidence; B's calm turn 4 fits both readings."
+    }
+  ],
+  "item_level_review_note": "Laugh-versus-scream contrast is directionally clear, but the fear framing is thin: blinking router lights are low-stakes, so the scream may read as exaggerated play rather than alarm. Consider strengthening the transcript cue for condition_b."
+}

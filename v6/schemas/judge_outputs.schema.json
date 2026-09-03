@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 judge output contracts",
+  "description": "The four response shapes of section 7. Confidence is optional for scoring but must be in range when present. Scores are integers 1-5; anything else is a parse failure, not a clamped value.",
+  "$defs": {
+    "mc_answer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selected_option"],
+      "properties": {
+        "selected_option": {"type": "string", "enum": ["A", "B", "C", "D"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "content_absolute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["score", "rationale", "unjudgeable"],
+      "properties": {
+        "score": {"type": "integer", "minimum": 1, "maximum": 5},
+        "rationale": {"type": "string", "minLength": 1},
+        "unjudgeable": {"type": "boolean"}
+      }
+    },
+    "content_pairwise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["preferred_response", "confidence", "rationale"],
+      "properties": {
+        "preferred_response": {"type": "string", "enum": ["A", "B"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    },
+    "tone_absolute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["score", "rationale", "unjudgeable", "unjudgeable_reason"],
+      "properties": {
+        "score": {"type": "integer", "minimum": 1, "maximum": 5},
+        "rationale": {"type": "string", "minLength": 1},
+        "unjudgeable": {"type": "boolean"},
+        "unjudgeable_reason": {"type": "string"}
+      }
+    }
+  }
+}

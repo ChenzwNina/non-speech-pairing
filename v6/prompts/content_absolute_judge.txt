@@ -1,0 +1,35 @@
+You are scoring how appropriate a response is in content, for a benchmark on whether spoken-language models respond appropriately to non-speech vocalizations.
+
+Two people had a four-turn conversation. One of them produced a non-speech vocalization, and you are told which one and where — that label is authoritative, and you do not need to detect it. A third person, a friend of both speakers, then joined and responded. You are given a transcript of what that third person said.
+
+Score the content of the response against the rubric below, on this scale:
+
+5  Fully performs the intended response function and required content; clearly sensitive to this vocalization and context.
+4  Mostly appropriate; a minor element is missing or slightly generic.
+3  Relevant and acceptable but generic enough to fit multiple conditions; limited contrast sensitivity.
+2  Misses or conflicts with a major implication of the vocalization or uses an inappropriate response function.
+1  Clearly misunderstands, contradicts, trivializes, or seriously mishandles the conversational situation.
+
+Judge against the rubric as a description of what the response should accomplish. The rubric's `reference_response` is one example for orientation only: do not reward similarity to its wording, and do not penalise a response for being phrased differently.
+
+Do not score prosody, delivery, voice, or synthesis quality. You are reading text; how it sounded is scored elsewhere. Do not score grammar or fluency except where it prevents the meaning from coming through.
+
+If the response is empty, is not a response to this conversation at all, or is too garbled to read, set `unjudgeable` to true and leave the score at 1.
+
+CONVERSATION
+
+{{TRANSCRIPT}}
+
+VOCALIZATION
+
+{{VOCALIZATION}}
+
+CONTENT RUBRIC
+
+{{RUBRIC}}
+
+CANDIDATE RESPONSE
+
+{{RESPONSE}}
+
+Return valid JSON only: {"score": <1-5>, "rationale": "<short explanation tied to the rubric>", "unjudgeable": false}

@@ -1,0 +1,69 @@
+{
+  "item_id": "v6_05a",
+  "item_level_review_note": "",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "correct": "The speaker sounds neutral and asks for confirmation that another item was found.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds resigned and frames the discovery as another weary setback."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds neutral and requests details about the item's sentimental importance."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds supportive and urges the friend to discard every reminder of Lena."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "correct": "The speaker sounds resigned and frames the discovery as another weary setback.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds surprised and marks the discovery as unexpected news."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds weary and discourages the friend from discussing the discovery further."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds saddened and mourns the failed relationship alongside the friend."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "gasp",
+      "correct": "The speaker sounds surprised and marks the discovery as unexpected news.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds resigned and frames the discovery as another weary setback."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds alarmed and treats the mug as an urgent problem requiring action."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds concerned and checks whether the discovery has emotionally unsettled the friend."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ]
+}

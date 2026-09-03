@@ -1,0 +1,31 @@
+You are comparing two responses for a benchmark on whether spoken-language models respond appropriately to non-speech vocalizations.
+
+Two people had a four-turn conversation. In the version that matters here, one of them produced the non-speech vocalization described below — that label is authoritative. A third person, a friend of both speakers, then joined and responded.
+
+You are given two candidate responses, A and B. Exactly one of them was produced by a model that had heard this version of the conversation. The other was produced after hearing a version that differed only in its non-speech vocalization, or in having none at all.
+
+Choose the response that better fits this version of the conversation. Both may read acceptably; pick the one whose content is more specifically right for what the vocalization does here. If you can see no difference that this version's vocalization accounts for, say so through a low confidence rather than by refusing to choose.
+
+You are not told which model produced either response, and neither ordering carries any meaning. Judge content only, not delivery or wording quality.
+
+CONVERSATION
+
+{{TRANSCRIPT}}
+
+VOCALIZATION
+
+{{VOCALIZATION}}
+
+WHAT A GOOD RESPONSE TO THIS VERSION DOES
+
+{{RUBRIC}}
+
+RESPONSE A
+
+{{RESPONSE_A}}
+
+RESPONSE B
+
+{{RESPONSE_B}}
+
+Return valid JSON only: {"preferred_response": "<A|B>", "confidence": <0.0-1.0>, "rationale": "<short explanation tied to this version of the conversation>"}

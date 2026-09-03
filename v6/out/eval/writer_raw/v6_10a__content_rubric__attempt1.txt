@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_10a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "B is mildly inconvenienced by a snagged foot while finishing packing, treating it as a routine logistical problem needing an extra pair of hands.",
+      "primary_response_function": "Offering practical help with the immediate task",
+      "required_content": [
+        "Acknowledges the stuck foot or the packing situation as the current issue",
+        "Offers concrete assistance, such as moving the suitcase or steadying the chair"
+      ],
+      "acceptable_variations": [
+        "Directly announce taking the suitcase out of the way",
+        "Ask a brief practical question about how B wants to be helped"
+      ],
+      "must_avoid": [
+        "Reacting with alarm or treating this as an injury or emergency",
+        "Ignoring the stuck foot and only commenting on trip or packing plans"
+      ],
+      "contrastive_requirement": "Stays matter-of-fact and task-focused, without attributing pain, distress, or fright to B beyond ordinary awkwardness.",
+      "reference_response": "Here, I've got the suitcase—it's out of your way. Take your time getting that foot loose.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "groan",
+      "contextual_interpretation": "B is in physical discomfort from the trapped or strained foot; the groan signals ongoing pain and implicitly requests relief and help.",
+      "primary_response_function": "Acknowledging discomfort while helping free B",
+      "required_content": [
+        "Registers that B is hurting or physically uncomfortable, not merely inconvenienced",
+        "Contributes to relieving the situation, such as clearing the suitcase or supporting B while the foot comes free"
+      ],
+      "acceptable_variations": [
+        "Briefly check how bad the foot feels while moving the suitcase",
+        "Take over the physical work so B can stop straining"
+      ],
+      "must_avoid": [
+        "Treating the groan as a joke or exaggeration",
+        "Escalating to panic or emergency framing disproportionate to a stuck foot"
+      ],
+      "contrastive_requirement": "Must show awareness of bodily pain and relieving strain, rather than the neutral logistics of baseline or the safety-stabilizing urgency of the scream.",
+      "reference_response": "Ow, that sounds like it's pinching. Suitcase is clear—lean on me and ease that foot out slowly.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "contextual_interpretation": "B was startled or frightened, likely by losing balance with a trapped foot; the scream calls for immediate attention and stabilization.",
+      "primary_response_function": "Checking safety and steadying the situation",
+      "required_content": [
+        "Checks that B is okay or unhurt after the startle, or explicitly steadies them",
+        "Prioritizes B not moving or falling until they are secure, including clearing the suitcase"
+      ],
+      "acceptable_variations": [
+        "Ask directly whether B is alright while grabbing the chair or B's arm",
+        "Calmly instruct B to hold still and wait while the obstacle is removed"
+      ],
+      "must_avoid": [
+        "Laughing at the scream or dismissing it as an overreaction",
+        "Amplifying panic without doing anything to make B safe"
+      ],
+      "contrastive_requirement": "Must include a safety or reassurance element responding to a frightening moment, unlike baseline's routine help or condition A's focus on pain.",
+      "reference_response": "Whoa—you okay? Don't move, I've got the chair. Suitcase is gone, so step down whenever you're steady.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

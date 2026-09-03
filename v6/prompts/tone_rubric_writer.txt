@@ -1,0 +1,139 @@
+You are creating reference annotations for a benchmark that evaluates whether spoken-language models use an appropriate vocal tone when responding to non-speech vocalizations in conversation.
+
+Each benchmark item contains one four-turn, two-speaker conversation with three versions:
+
+1. `baseline`: no non-speech vocalization
+2. `condition_a`: one non-speech vocalization
+3. `condition_b`: one contrasting non-speech vocalization
+
+The lexical speech, speaker identities, and conversational situation are intended to remain the same across the three versions. After hearing the four turns, a third person—a friend of the two speakers—will join the conversation and respond aloud.
+
+Your task is to create a high-level TONE rubric for the third person's spoken response under each condition.
+
+This rubric evaluates how the response should sound, not what it should say.
+
+Important principles:
+
+- Use the transcript and the specified vocalization jointly.
+- Interpret the vocalization in context rather than applying a fixed emotional stereotype.
+- Describe a range of acceptable delivery rather than one exact acoustic realization.
+- Do not provide required words, semantic content, conversational arguments, or a written response.
+- Do not evaluate whether the response is factually correct.
+- Do not require the responder to imitate or mirror the original vocalization.
+- The most appropriate tone may regulate the other speaker's emotion. For example, fear may invite calm urgency rather than equally intense fear.
+- Avoid gendered assumptions, accent requirements, or speaker-identity preferences.
+- Keep acoustic descriptions perceptually meaningful. Do not invent exact pitch, duration, or decibel values.
+- Treat naturalness and audio quality as separate constructs. Do not include TTS artifacts, recording noise, pronunciation, or speaker similarity in this rubric.
+- Each non-baseline condition should have at least one perceptible tone property that distinguishes it from the other two versions.
+- Do not force a distinction unsupported by the transcript. If the intended tone remains highly ambiguous, flag the item for review.
+- For the baseline, choose an engaged but relatively unmarked tone unless the lexical transcript independently supports stronger affect.
+
+For each condition, produce:
+
+- `tone_summary`: One short description of the overall appropriate delivery.
+- `valence`: One of `negative`, `slightly_negative`, `neutral`, `slightly_positive`, or `positive`.
+- `arousal`: One of `low`, `medium_low`, `medium`, `medium_high`, or `high`.
+- `interpersonal_stance`: One to three short descriptors such as warm, concerned, playful, reassuring, attentive, cautious, sympathetic, or calmly urgent.
+- `prosody.pitch`: A short relative description of pitch level, range, or contour.
+- `prosody.energy`: A short relative description of vocal intensity.
+- `prosody.rate`: A short description of speaking rate.
+- `prosody.pausing`: A short description of rhythm or pausing.
+- `prosody.voice_quality`: A short perceptual description such as relaxed, gentle, bright, restrained, steady, or tense.
+- `acceptable_range`: Two alternative tone realizations that would remain appropriate.
+- `must_avoid`: Two clearly inappropriate tone patterns.
+- `contrastive_cue`: The most important audible feature distinguishing this condition from the other two.
+- `ambiguity_flag`: `true` if multiple substantially different tone profiles are equally plausible; otherwise `false`.
+- `ambiguity_note`: A brief explanation when `ambiguity_flag` is true; otherwise an empty string.
+
+Compare the three conditions before producing the output. The contrast should come from the conversational effect of the vocalization, not from invented events or rigid assumptions about the sound category.
+
+Return valid JSON only, using this schema:
+
+{
+  "item_id": "<item id>",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "<maximum 20 words>",
+      "valence": "<allowed category>",
+      "arousal": "<allowed category>",
+      "interpersonal_stance": ["<descriptor>"],
+      "prosody": {
+        "pitch": "<short relative description>",
+        "energy": "<short relative description>",
+        "rate": "<short relative description>",
+        "pausing": "<short relative description>",
+        "voice_quality": "<short perceptual description>"
+      },
+      "acceptable_range": [
+        "<acceptable tone alternative>",
+        "<acceptable tone alternative>"
+      ],
+      "must_avoid": [
+        "<inappropriate tone pattern>",
+        "<inappropriate tone pattern>"
+      ],
+      "contrastive_cue": "<maximum 25 words>",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "<vocalization A>",
+      "tone_summary": "<maximum 20 words>",
+      "valence": "<allowed category>",
+      "arousal": "<allowed category>",
+      "interpersonal_stance": ["<descriptor>"],
+      "prosody": {
+        "pitch": "<short relative description>",
+        "energy": "<short relative description>",
+        "rate": "<short relative description>",
+        "pausing": "<short relative description>",
+        "voice_quality": "<short perceptual description>"
+      },
+      "acceptable_range": [
+        "<acceptable tone alternative>",
+        "<acceptable tone alternative>"
+      ],
+      "must_avoid": [
+        "<inappropriate tone pattern>",
+        "<inappropriate tone pattern>"
+      ],
+      "contrastive_cue": "<maximum 25 words>",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "<vocalization B>",
+      "tone_summary": "<maximum 20 words>",
+      "valence": "<allowed category>",
+      "arousal": "<allowed category>",
+      "interpersonal_stance": ["<descriptor>"],
+      "prosody": {
+        "pitch": "<short relative description>",
+        "energy": "<short relative description>",
+        "rate": "<short relative description>",
+        "pausing": "<short relative description>",
+        "voice_quality": "<short perceptual description>"
+      },
+      "acceptable_range": [
+        "<acceptable tone alternative>",
+        "<acceptable tone alternative>"
+      ],
+      "must_avoid": [
+        "<inappropriate tone pattern>",
+        "<inappropriate tone pattern>"
+      ],
+      "contrastive_cue": "<maximum 25 words>",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": "<empty string if the tone contrast is clear; otherwise explain the problem>"
+}
+
+INPUT ITEM:
+
+{{ITEM_JSON}}

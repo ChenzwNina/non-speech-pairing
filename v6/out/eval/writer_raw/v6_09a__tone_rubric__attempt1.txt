@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_09a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Engaged, easygoing conversational delivery; mildly interested in the situation without heightened emotion.",
+      "valence": "neutral",
+      "arousal": "medium_low",
+      "interpersonal_stance": ["attentive", "warm", "casual"],
+      "prosody": {
+        "pitch": "Mid level with moderate, natural declarative contours",
+        "energy": "Comfortable conversational loudness, evenly distributed",
+        "rate": "Relaxed and steady, close to ordinary chat speed",
+        "pausing": "Regular phrase-level pauses, unhurried and unbroken",
+        "voice_quality": "Relaxed and clear, lightly social"
+      },
+      "acceptable_range": [
+        "Slightly brighter, mildly amused social tone with a touch more pitch movement",
+        "Slightly flatter, matter-of-fact tone that still sounds interested and present"
+      ],
+      "must_avoid": [
+        "Alarmed or urgent delivery with sharp onsets and pressed loudness",
+        "Bored, withdrawn monotone that signals disengagement"
+      ],
+      "contrastive_cue": "Lowest emotional marking of the three: no reactive surge and no deliberate calming-down move, just steady conversational engagement.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "gasp",
+      "tone_summary": "Lightly surprised and amused, socially warm, riding the small startled beat with the speaker.",
+      "valence": "slightly_positive",
+      "arousal": "medium",
+      "interpersonal_stance": ["playful", "warm", "attentive"],
+      "prosody": {
+        "pitch": "Somewhat raised with wider, livelier excursions and rising inflections",
+        "energy": "A little more forward and animated than baseline",
+        "rate": "Slightly quicker, with a brief lively spurt early on",
+        "pausing": "A short reactive beat before speaking, then buoyant flow",
+        "voice_quality": "Bright and light, possibly a trace of smile in the voice"
+      },
+      "acceptable_range": [
+        "Gently teasing, low-key amused delivery with softer intensity but clear liveliness",
+        "More openly surprised and animated, still friendly rather than alarmed"
+      ],
+      "must_avoid": [
+        "Fearful, urgent, or crisis-pitched delivery treating the wave as a threat",
+        "Flat, unreactive tone that ignores the surprise beat entirely"
+      ],
+      "contrastive_cue": "Brief upward, animated surprise lift and light amusement — more reactive than baseline, without the steadying downshift of condition_b.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "tone_summary": "Calm, steadying warmth that grounds an over-alarmed friend without dismissing or amplifying the panic.",
+      "valence": "slightly_positive",
+      "arousal": "medium_low",
+      "interpersonal_stance": ["reassuring", "calmly grounding", "sympathetic"],
+      "prosody": {
+        "pitch": "Lower and narrower than the other conditions, with settling falling contours",
+        "energy": "Softer and well-controlled, deliberately below the speaker's intensity",
+        "rate": "Slower and measured, no rushing",
+        "pausing": "Slightly longer, settling pauses that give the moment room",
+        "voice_quality": "Steady and gentle, warm rather than clinical"
+      },
+      "acceptable_range": [
+        "Softly reassuring, almost hushed delivery with clear steadiness",
+        "Warm, gently humorous defusing tone that stays low-arousal and kind"
+      ],
+      "must_avoid": [
+        "Matching the scream's panic with loud, high, fast, tense delivery",
+        "Cold, clipped, or mocking tone that shames the overreaction"
+      ],
+      "contrastive_cue": "Deliberate downshift in pitch, loudness, and rate relative to the speaker's alarm — audibly calmer than both baseline and condition_a.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

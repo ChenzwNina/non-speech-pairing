@@ -1,0 +1,84 @@
+{
+  "item_id": "v6_05a",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "tone_summary": "Engaged, mildly supportive delivery: attentive and practical, warm without heightened emotion.",
+      "valence": "neutral",
+      "arousal": "medium",
+      "interpersonal_stance": ["attentive", "warm", "matter-of-fact"],
+      "prosody": {
+        "pitch": "mid level with moderate, conversational range",
+        "energy": "moderate and even",
+        "rate": "unhurried conversational pace",
+        "pausing": "regular phrasing with brief natural breaks",
+        "voice_quality": "relaxed and steady"
+      },
+      "acceptable_range": [
+        "Slightly lighter, easygoing delivery that keeps the moment low-stakes",
+        "Slightly softer, more caring delivery with gentle downward endings"
+      ],
+      "must_avoid": [
+        "Dramatic, high-pitched shock or urgency",
+        "Flat, disengaged monotone that reads as indifference"
+      ],
+      "contrastive_cue": "Unmarked mid-level engagement: neither the weighted slowness of the sigh version nor the heightened onset of the gasp version.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "sigh",
+      "tone_summary": "Quietly sympathetic, low-key solidarity; unhurried and settled rather than emotionally amplified.",
+      "valence": "slightly_negative",
+      "arousal": "medium_low",
+      "interpersonal_stance": ["sympathetic", "warm", "reassuring"],
+      "prosody": {
+        "pitch": "slightly lowered with narrowed range and falling endings",
+        "energy": "softened, gently supported",
+        "rate": "slower than baseline",
+        "pausing": "longer, more deliberate pauses; unrushed onset",
+        "voice_quality": "gentle and relaxed, lightly breathy"
+      },
+      "acceptable_range": [
+        "Warm, quietly wry delivery that lightens the weariness without dismissing it",
+        "Very calm, steady, almost understated delivery with minimal pitch movement"
+      ],
+      "must_avoid": [
+        "Bright, upbeat cheerfulness that overrides the weary mood",
+        "Sharp, urgent, or startled delivery"
+      ],
+      "contrastive_cue": "Slower rate and lowered, narrowed pitch with softened energy, conveying shared weariness rather than surprise.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "gasp",
+      "tone_summary": "Alert, quickly engaged reaction that then settles into steady, grounding warmth.",
+      "valence": "neutral",
+      "arousal": "medium_high",
+      "interpersonal_stance": ["attentive", "animated", "steadying"],
+      "prosody": {
+        "pitch": "raised onset with wider excursions, settling toward mid range",
+        "energy": "stronger initial intensity, easing after the opening",
+        "rate": "brisker start, moderating toward the end",
+        "pausing": "prompt onset with short, closely spaced phrases",
+        "voice_quality": "bright and slightly keyed-up, not tense"
+      },
+      "acceptable_range": [
+        "Lightly playful, intrigued delivery that treats the discovery as a small twist",
+        "Briefly startled then noticeably calming delivery that de-escalates the surprise"
+      ],
+      "must_avoid": [
+        "Slow, heavy, sighing delivery that ignores the heightened moment",
+        "Alarmed, panicked intensity out of proportion to a found mug"
+      ],
+      "contrastive_cue": "Raised, wider-ranging onset with quicker, brighter attack, distinguishing it from baseline evenness and the sigh version's slowness.",
+      "ambiguity_flag": true,
+      "ambiguity_note": "A gasp here supports either intrigued, lightly playful surprise or sympathetic, mildly alarmed concern; both are plausible given the mundane object and sensitive topic."
+    }
+  ],
+  "item_level_review_note": ""
+}

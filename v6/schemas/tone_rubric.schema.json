@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 tone rubric",
+  "description": "Section 6's writer output. Describes how a response should sound, never what it should say, and never in invented acoustic units.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "item_id",
+    "rubrics",
+    "item_level_review_note"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "item_level_review_note": {
+      "type": "string"
+    },
+    "rubrics": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "condition",
+          "vocalization",
+          "tone_summary",
+          "valence",
+          "arousal",
+          "interpersonal_stance",
+          "prosody",
+          "acceptable_range",
+          "must_avoid",
+          "contrastive_cue",
+          "ambiguity_flag",
+          "ambiguity_note"
+        ],
+        "properties": {
+          "condition": {
+            "type": "string",
+            "enum": [
+              "baseline",
+              "condition_a",
+              "condition_b"
+            ]
+          },
+          "vocalization": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tone_summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valence": {
+            "type": "string",
+            "enum": [
+              "negative",
+              "slightly_negative",
+              "neutral",
+              "slightly_positive",
+              "positive"
+            ]
+          },
+          "arousal": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium_low",
+              "medium",
+              "medium_high",
+              "high"
+            ]
+          },
+          "interpersonal_stance": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "prosody": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "pitch",
+              "energy",
+              "rate",
+              "pausing",
+              "voice_quality"
+            ],
+            "properties": {
+              "pitch": {
+                "type": "string",
+                "minLength": 1
+              },
+              "energy": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rate": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pausing": {
+                "type": "string",
+                "minLength": 1
+              },
+              "voice_quality": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "acceptable_range": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "two acceptable tone realizations"
+          },
+          "must_avoid": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "two inappropriate tone patterns"
+          },
+          "contrastive_cue": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ambiguity_flag": {
+            "type": "boolean"
+          },
+          "ambiguity_note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

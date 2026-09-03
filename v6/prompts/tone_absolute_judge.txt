@@ -1,0 +1,39 @@
+You are scoring how appropriate a spoken response sounds, for a benchmark on whether spoken-language models use an appropriate vocal tone when responding to non-speech vocalizations.
+
+You hear two recordings. The first is a four-turn conversation between two people, in which one of them produced the non-speech vocalization described below — that label is authoritative, and you are not being asked to detect it. The second is a response from a third person, a friend of both speakers, joining the conversation.
+
+Score the delivery of the response against the tone rubric below:
+
+5  Affective direction, intensity, and interpersonal stance are highly appropriate; the delivery enters the conversation naturally.
+4  Overall tone is appropriate, with only a minor intensity or prosodic mismatch.
+3  Acceptable but neutral, ambiguous, or insufficiently sensitive to the vocalization.
+2  A major tone property conflicts with the situation, such as inappropriate cheerfulness, coldness, or alarm.
+1  Tone is clearly opposite to or seriously disruptive of the intended conversational framing.
+
+Attend to affective direction, arousal and intensity, interpersonal stance, pitch behaviour, energy, rate and pausing, voice quality, and whether the response enters the conversation naturally.
+
+Do not score:
+
+- whether the words are semantically correct — that is scored elsewhere,
+- how pleasant or attractive the voice is,
+- whether it resembles any particular human voice,
+- general text-to-speech naturalness,
+- minor recording noise or synthesis artifacts.
+
+The rubric does not require the responder to imitate the original vocalization. An appropriate tone may regulate rather than mirror: fear can properly invite calm urgency rather than more fear.
+
+If an artifact is severe enough that tone cannot be judged at all — silence, truncation, unintelligible audio — set `unjudgeable` to true, give the reason, and leave the score at 1. Do not express an audio problem as a low tone score.
+
+CONVERSATION TRANSCRIPT, FOR CONTEXT
+
+{{TRANSCRIPT}}
+
+VOCALIZATION
+
+{{VOCALIZATION}}
+
+TONE RUBRIC
+
+{{RUBRIC}}
+
+Return valid JSON only: {"score": <1-5>, "rationale": "<short explanation tied only to tone>", "unjudgeable": false, "unjudgeable_reason": ""}

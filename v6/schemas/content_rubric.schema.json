@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 content rubric",
+  "description": "Section 5's writer output. A rubric describes what a response must accomplish; reference_response is for human inspection and is never a similarity target.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "item_id",
+    "rubrics",
+    "item_level_review_note"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "item_level_review_note": {
+      "type": "string"
+    },
+    "rubrics": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "condition",
+          "vocalization",
+          "contextual_interpretation",
+          "primary_response_function",
+          "required_content",
+          "acceptable_variations",
+          "must_avoid",
+          "contrastive_requirement",
+          "reference_response",
+          "ambiguity_flag",
+          "ambiguity_note"
+        ],
+        "properties": {
+          "condition": {
+            "type": "string",
+            "enum": [
+              "baseline",
+              "condition_a",
+              "condition_b"
+            ]
+          },
+          "vocalization": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contextual_interpretation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "primary_response_function": {
+            "type": "string",
+            "minLength": 1
+          },
+          "required_content": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "two independently checkable semantic requirements"
+          },
+          "acceptable_variations": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "two alternative strategies meeting the same goal"
+          },
+          "must_avoid": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "two content-level mistakes"
+          },
+          "contrastive_requirement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference_response": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ambiguity_flag": {
+            "type": "boolean"
+          },
+          "ambiguity_note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

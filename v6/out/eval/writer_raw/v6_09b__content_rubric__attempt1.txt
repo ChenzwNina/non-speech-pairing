@@ -1,0 +1,72 @@
+{
+  "item_id": "v6_09b",
+  "rubrics": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "contextual_interpretation": "Speaker reports positive feedback plus an imminent call; state reads as briskly informational with mild time pressure, no marked affect.",
+      "primary_response_function": "Acknowledging news and helping meet the deadline",
+      "required_content": [
+        "Registers that the feedback was good news",
+        "Orients to the call happening within minutes"
+      ],
+      "acceptable_variations": [
+        "Brief congratulation plus a practical logistics prompt",
+        "Quick clarifying question about setup or timing before the call"
+      ],
+      "must_avoid": [
+        "Attributing panic, shock, or distress not present in the words",
+        "Dwelling on emotion so long that the five-minute deadline is ignored"
+      ],
+      "contrastive_requirement": "Stays affectively neutral and task-focused, treating the short notice as logistics rather than as something startling or alarming.",
+      "reference_response": "Nice, strong feedback is a great sign. Five minutes though—grab your laptop and check your camera, you're good.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "gasp",
+      "contextual_interpretation": "Speaker is caught off guard by the sudden short notice; gasp marks the news as startling and flags it for the listener.",
+      "primary_response_function": "Sharing surprise and helping act fast",
+      "required_content": [
+        "Treats the five-minute notice as surprisingly sudden",
+        "Frames the development as good or promising news"
+      ],
+      "acceptable_variations": [
+        "Match the surprise, then pivot to quick practical readiness",
+        "Ask an incredulous confirming question about the timing, then encourage them"
+      ],
+      "must_avoid": [
+        "Responding as if nothing notable happened",
+        "Treating the moment as frightening or as a crisis needing calming"
+      ],
+      "contrastive_requirement": "Registers startle at the abruptness without treating the speaker as distressed, unlike the alarm-oriented handling condition_b requires.",
+      "reference_response": "Wait, five minutes? That's no warning at all—but they wouldn't rush it unless they liked you. Go, open the laptop.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "contextual_interpretation": "Speaker is overwhelmed and panicked by the imminent high-stakes call; scream signals distress and implicitly requests steadying help.",
+      "primary_response_function": "De-escalating panic and offering concrete help",
+      "required_content": [
+        "Addresses the speaker's alarm or feeling of being unprepared",
+        "Provides reassurance or concrete support for getting through the next few minutes"
+      ],
+      "acceptable_variations": [
+        "Calm the speaker first, then walk them through one immediate step",
+        "Normalize the nerves and point to the strong feedback as grounds for confidence"
+      ],
+      "must_avoid": [
+        "Ignoring the distress and giving only logistics",
+        "Treating the scream as physical danger or an emergency unrelated to the call"
+      ],
+      "contrastive_requirement": "Must attend to the speaker's distress and regulate it, rather than merely sharing surprise or moving straight to logistics.",
+      "reference_response": "Hey, breathe—you've got this. They loved you enough to call today. Water, laptop open, I'll be right here after.",
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ],
+  "item_level_review_note": ""
+}

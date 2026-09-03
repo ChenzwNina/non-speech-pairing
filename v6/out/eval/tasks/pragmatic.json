@@ -1,0 +1,3135 @@
+{
+  "built_at": "2026-09-03T21:05:09+00:00",
+  "run_id": "r20260903T210509Z",
+  "seed": 20260902,
+  "transcripts": "out/pairs_spoken.json",
+  "renderers": [
+    "dia",
+    "elevenlabs"
+  ],
+  "items_fingerprint": "sha256:cf33255933f0ce97",
+  "items": 20,
+  "task_type": "pragmatic",
+  "tasks": [
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_01a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds matter-of-fact and frames the children's safari-inspired behavior as a new game.\nB. The speaker sounds matter-of-fact and warns that the children's safari-inspired game should be stopped.\nC. The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun.\nD. The speaker sounds concerned and proposes stricter supervision for the children's safari-inspired game.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and frames the children's safari-inspired behavior as a new game."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and warns that the children's safari-inspired game should be stopped."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and proposes stricter supervision for the children's safari-inspired game."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_01a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun.\nB. The speaker sounds nostalgic and uses the children's game to reminisce about the safari.\nC. The speaker sounds resigned and frames the children's safari-inspired game as something the family must accommodate.\nD. The speaker sounds delighted and encourages the children to expand their safari-inspired game.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds nostalgic and uses the children's game to reminisce about the safari."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and frames the children's safari-inspired game as something the family must accommodate."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds delighted and encourages the children to expand their safari-inspired game."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_01a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds worried and asks the other parent to supervise the children's safari-inspired game.\nB. The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun.\nC. The speaker sounds resigned and frames the children's safari-inspired game as something the family must accommodate.\nD. The speaker sounds weary and insists that the children's safari-inspired game should end.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds worried and asks the other parent to supervise the children's safari-inspired game."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and frames the children's safari-inspired game as entertaining family fun."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds resigned and frames the children's safari-inspired game as something the family must accommodate."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds weary and insists that the children's safari-inspired game should end."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_01b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds matter-of-fact and offers the past incident as practical caution.\nB. The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory.\nC. The speaker sounds matter-of-fact and changes the subject to boast about past softball experience.\nD. The speaker sounds concerned and urges the daughter to keep her glove in her bag.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and offers the past incident as practical caution."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and changes the subject to boast about past softball experience."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and urges the daughter to keep her glove in her bag."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_01b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds resigned and presents the cautionary anecdote as a frustration they endured.\nB. The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory.\nC. The speaker sounds concerned and urges the daughter to keep her glove in her bag.\nD. The speaker sounds amused and ridicules the daughter for carrying her glove everywhere.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and presents the cautionary anecdote as a frustration they endured."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and urges the daughter to keep her glove in her bag."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds amused and ridicules the daughter for carrying her glove everywhere."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_01b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_01b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_01b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_01b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds resigned and signals reluctance to attend the daughter's upcoming practice.\nB. The speaker sounds resigned and presents the cautionary anecdote as a frustration they endured.\nC. The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory.\nD. The speaker sounds concerned and urges the daughter to keep her glove in her bag.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds resigned and signals reluctance to attend the daughter's upcoming practice."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds resigned and presents the cautionary anecdote as a frustration they endured."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and makes the cautionary anecdote feel like a lighthearted memory."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and urges the daughter to keep her glove in her bag."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_02a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds matter-of-fact and criticizes Grandma for wearing the leather jacket.\nB. The speaker sounds nostalgic and encourages sharing memories about Grandma.\nC. The speaker sounds matter-of-fact and identifies a notable detail in the photograph.\nD. The speaker sounds amused and frames Grandma's unexpected appearance as humorous.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and criticizes Grandma for wearing the leather jacket."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds nostalgic and encourages sharing memories about Grandma."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and identifies a notable detail in the photograph."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and frames Grandma's unexpected appearance as humorous."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_02a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds amused and frames Grandma's unexpected appearance as humorous.\nB. The speaker sounds affectionate and expresses pride in Grandma's adventurous past.\nC. The speaker sounds surprised and marks Grandma's unexpected appearance as a striking discovery.\nD. The speaker sounds amused and reassures the sibling that Grandma was never reckless.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds amused and frames Grandma's unexpected appearance as humorous."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds affectionate and expresses pride in Grandma's adventurous past."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds surprised and marks Grandma's unexpected appearance as a striking discovery."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds amused and reassures the sibling that Grandma was never reckless."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_02a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds surprised and marks Grandma's unexpected appearance as a striking discovery.\nB. The speaker sounds amused and frames Grandma's unexpected appearance as humorous.\nC. The speaker sounds worried and questions whether Grandma was safe riding the motorcycle.\nD. The speaker sounds startled and warns the sibling that the motorcycle poses immediate danger.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds surprised and marks Grandma's unexpected appearance as a striking discovery."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and frames Grandma's unexpected appearance as humorous."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds worried and questions whether Grandma was safe riding the motorcycle."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds startled and warns the sibling that the motorcycle poses immediate danger."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_02b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds approving and recognizes the score as a family-worthy achievement.\nB. The speaker sounds amused and playfully celebrates the student for edging past her old mark.\nC. The speaker sounds pleased and gently reassures the student that the score is good enough.\nD. The speaker sounds grateful and credits herself for helping the student prepare successfully.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds approving and recognizes the score as a family-worthy achievement."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and playfully celebrates the student for edging past her old mark."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds pleased and gently reassures the student that the score is good enough."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds grateful and credits herself for helping the student prepare successfully."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_02b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds astonished and emphasizes how impressive the student's narrow victory is.\nB. The speaker sounds amused and playfully celebrates the student for edging past her old mark.\nC. The speaker sounds proud and claims shared credit for the student's strong result.\nD. The speaker sounds amused and dismisses the one-point difference as too small to matter.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds astonished and emphasizes how impressive the student's narrow victory is."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds amused and playfully celebrates the student for edging past her old mark."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds proud and claims shared credit for the student's strong result."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds amused and dismisses the one-point difference as too small to matter."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_02b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_02b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_02b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_02b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds amused and playfully celebrates the student for edging past her old mark.\nB. The speaker sounds astonished and emphasizes how impressive the student's narrow victory is.\nC. The speaker sounds relieved and treats the score as proof that their studying worked.\nD. The speaker sounds startled and warns that beating her mark could create family rivalry.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and playfully celebrates the student for edging past her old mark."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds astonished and emphasizes how impressive the student's narrow victory is."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds relieved and treats the score as proof that their studying worked."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds startled and warns that beating her mark could create family rivalry."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_03a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds matter-of-fact and confirms that carrying all six textbooks is the best plan.\nB. The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake.\nC. The speaker sounds matter-of-fact and explains why they should reduce the number of books packed.\nD. The speaker sounds nervous and seeks reassurance about being ready for the first day.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and confirms that carrying all six textbooks is the best plan."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and explains why they should reduce the number of books packed."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds nervous and seeks reassurance about being ready for the first day."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_03a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds amused and celebrates being fully prepared with every textbook packed.\nB. The speaker sounds nervous and seeks reassurance about managing the first day of school.\nC. The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake.\nD. The speaker sounds physically pained and signals that the backpack is too heavy to carry as packed.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds amused and celebrates being fully prepared with every textbook packed."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds nervous and seeks reassurance about managing the first day of school."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds physically pained and signals that the backpack is too heavy to carry as packed."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_03a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds exhausted and signals that they no longer want to walk to school.\nB. The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake.\nC. The speaker sounds anxious and seeks reassurance about having the correct books for Monday.\nD. The speaker sounds physically pained and signals that the backpack is too heavy to carry as packed.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds exhausted and signals that they no longer want to walk to school."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and frames packing every textbook before checking the schedule as a silly mistake."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds anxious and seeks reassurance about having the correct books for Monday."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds physically pained and signals that the backpack is too heavy to carry as packed."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_03b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds matter-of-fact and confirms the supervisor explicitly canceled the expected early departure.\nB. The speaker sounds amused and highlights the absurd timing of being assigned still more work.\nC. The speaker sounds resentful and accuses the supervisor of intentionally preventing the expected early departure.\nD. The speaker sounds matter-of-fact and explains why the expected early departure did not happen.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and confirms the supervisor explicitly canceled the expected early departure."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and highlights the absurd timing of being assigned still more work."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds resentful and accuses the supervisor of intentionally preventing the expected early departure."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and explains why the expected early departure did not happen."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_03b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds amused and highlights the absurd timing of being assigned still more work.\nB. The speaker sounds irritated and blames the coworker for delaying the expected early departure.\nC. The speaker sounds amused and celebrates getting help with the remaining boxes.\nD. The speaker sounds physically strained and signals that lifting the box is causing pain.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds amused and highlights the absurd timing of being assigned still more work."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds irritated and blames the coworker for delaying the expected early departure."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds amused and celebrates getting help with the remaining boxes."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds physically strained and signals that lifting the box is causing pain."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_03b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_03b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_03b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_03b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds physically strained and asks the coworker to handle all the lifting.\nB. The speaker sounds amused and highlights the absurd timing of being assigned still more work.\nC. The speaker sounds resentful and accuses the supervisor of intentionally preventing the expected early departure.\nD. The speaker sounds physically strained and signals that lifting the box is causing pain.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds physically strained and asks the coworker to handle all the lifting."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and highlights the absurd timing of being assigned still more work."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds resentful and accuses the supervisor of intentionally preventing the expected early departure."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds physically strained and signals that lifting the box is causing pain."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_04a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds impressed and praises A for earning a professional networking certificate.\nB. The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence.\nC. The speaker sounds composed and explains how A should repair the router's blinking lights.\nD. The speaker sounds matter-of-fact and reports a link between lifting the frame and the router blinking.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds impressed and praises A for earning a professional networking certificate."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds composed and explains how A should repair the router's blinking lights."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and reports a link between lifting the frame and the router blinking."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_04a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds delighted and congratulates A on earning the networking certificate.\nB. The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence.\nC. The speaker sounds playful and suggests displaying the certificate beside the router.\nD. The speaker sounds frightened and raises alarm that the frame may be triggering the router's blinking.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds delighted and congratulates A on earning the networking certificate."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds playful and suggests displaying the certificate beside the router."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds frightened and raises alarm that the frame may be triggering the router's blinking."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_04a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds frightened and raises alarm that the frame may be triggering the router's blinking.\nB. The speaker sounds agitated and accuses A of deliberately disrupting the office network.\nC. The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence.\nD. The speaker sounds concerned and asks A to unplug the router before inspecting it.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds frightened and raises alarm that the frame may be triggering the router's blinking."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds agitated and accuses A of deliberately disrupting the office network."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and presents the frame-linked blinking as a comically absurd coincidence."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and asks A to unplug the router before inspecting it."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_04b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds detached and uses the recap to assign blame for the teammate's mistake.\nB. The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment.\nC. The speaker sounds matter-of-fact and uses the recap to establish what happened during the play.\nD. The speaker sounds concerned and uses the recap to assess whether the teammate needs medical attention.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds detached and uses the recap to assign blame for the teammate's mistake."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and uses the recap to establish what happened during the play."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and uses the recap to assess whether the teammate needs medical attention."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_04b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds frightened and uses the recap to signal alarm about the teammate's possible injury.\nB. The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment.\nC. The speaker sounds playful and uses the recap to praise the teammate's effort.\nD. The speaker sounds concerned and uses the recap to assess whether the teammate needs medical attention.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds frightened and uses the recap to signal alarm about the teammate's possible injury."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds playful and uses the recap to praise the teammate's effort."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and uses the recap to assess whether the teammate needs medical attention."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "laugh",
+      "gold_emotion": "amusement"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_04b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_04b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_04b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_04b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment.\nB. The speaker sounds frustrated and uses the recap to criticize the teammate's poor fielding.\nC. The speaker sounds frightened and uses the recap to signal alarm about the teammate's possible injury.\nD. The speaker sounds alarmed and uses the recap to warn others about an approaching ball.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds amused and uses the recap to highlight the mishap's comic embarrassment."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds frustrated and uses the recap to criticize the teammate's poor fielding."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds frightened and uses the recap to signal alarm about the teammate's possible injury."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds alarmed and uses the recap to warn others about an approaching ball."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_05a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds neutral and requests details about the item's sentimental importance.\nB. The speaker sounds resigned and frames the discovery as another weary setback.\nC. The speaker sounds neutral and asks for confirmation that another item was found.\nD. The speaker sounds supportive and urges the friend to discard every reminder of Lena.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds neutral and requests details about the item's sentimental importance."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and frames the discovery as another weary setback."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds neutral and asks for confirmation that another item was found."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds supportive and urges the friend to discard every reminder of Lena."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_05a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds saddened and mourns the failed relationship alongside the friend.\nB. The speaker sounds resigned and frames the discovery as another weary setback.\nC. The speaker sounds surprised and marks the discovery as unexpected news.\nD. The speaker sounds weary and discourages the friend from discussing the discovery further.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds saddened and mourns the failed relationship alongside the friend."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds resigned and frames the discovery as another weary setback."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds surprised and marks the discovery as unexpected news."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds weary and discourages the friend from discussing the discovery further."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_05a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds concerned and checks whether the discovery has emotionally unsettled the friend.\nB. The speaker sounds surprised and marks the discovery as unexpected news.\nC. The speaker sounds alarmed and treats the mug as an urgent problem requiring action.\nD. The speaker sounds resigned and frames the discovery as another weary setback.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and checks whether the discovery has emotionally unsettled the friend."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds surprised and marks the discovery as unexpected news."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds alarmed and treats the mug as an urgent problem requiring action."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and frames the discovery as another weary setback."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_05b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds concerned and proposes calling Mia before anyone starts baking a replacement cake.\nB. The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept.\nC. The speaker sounds certain and states the inference that Mia took the entire cake.\nD. The speaker sounds thoughtful and asks the other parent whether Mia took the entire cake.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds concerned and proposes calling Mia before anyone starts baking a replacement cake."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds certain and states the inference that Mia took the entire cake."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds thoughtful and asks the other parent whether Mia took the entire cake."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_05b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds weary and asks the other parent to recover the cake immediately.\nB. The speaker sounds startled and marks Mia's taking the entire cake as a sudden realization.\nC. The speaker sounds disappointed and proposes baking another cake for the birthday right away.\nD. The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds weary and asks the other parent to recover the cake immediately."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds startled and marks Mia's taking the entire cake as a sudden realization."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds disappointed and proposes baking another cake for the birthday right away."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_05b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_05b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_05b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_05b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds alarmed and warns the other parent that Mia may be in immediate danger.\nB. The speaker sounds startled and marks Mia's taking the entire cake as a sudden realization.\nC. The speaker sounds indignant and accuses Mia of intentionally stealing the birthday cake.\nD. The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds alarmed and warns the other parent that Mia may be in immediate danger."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds startled and marks Mia's taking the entire cake as a sudden realization."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds indignant and accuses Mia of intentionally stealing the birthday cake."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and treats Mia's taking the entire cake as an unfortunate fact to accept."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_06a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds resigned and signals reluctant compliance with leaving for the appointment.\nB. The speaker sounds matter-of-fact and confirms she will get ready to leave.\nC. The speaker sounds matter-of-fact and asks her mother to postpone the appointment.\nD. The speaker sounds anxious and seeks reassurance about the upcoming dental visit.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and signals reluctant compliance with leaving for the appointment."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and confirms she will get ready to leave."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and asks her mother to postpone the appointment."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds anxious and seeks reassurance about the upcoming dental visit."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_06a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds anxious and seeks reassurance about what the dentist will do.\nB. The speaker sounds resigned and signals reluctant compliance with leaving for the appointment.\nC. The speaker sounds weary and asks her mother to handle getting her shoes.\nD. The speaker sounds physically pained and conveys discomfort while agreeing to get ready.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds anxious and seeks reassurance about what the dentist will do."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds resigned and signals reluctant compliance with leaving for the appointment."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds weary and asks her mother to handle getting her shoes."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds physically pained and conveys discomfort while agreeing to get ready."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_06a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds resigned and signals reluctant compliance with leaving for the appointment.\nB. The speaker sounds distressed and protests that she cannot go to the appointment.\nC. The speaker sounds physically pained and conveys discomfort while agreeing to get ready.\nD. The speaker sounds anxious and seeks reassurance about what the dentist will do.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and signals reluctant compliance with leaving for the appointment."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds distressed and protests that she cannot go to the appointment."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds physically pained and conveys discomfort while agreeing to get ready."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds anxious and seeks reassurance about what the dentist will do."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_06b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care.\nB. The speaker sounds frustrated and blames the sitter for not recognizing Milo's illness sooner.\nC. The speaker sounds concerned and recommends monitoring Milo at home instead of seeking immediate care.\nD. The speaker sounds concerned and directs the sitter to seek prompt veterinary care.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds frustrated and blames the sitter for not recognizing Milo's illness sooner."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds concerned and recommends monitoring Milo at home instead of seeking immediate care."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds concerned and directs the sitter to seek prompt veterinary care."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_06b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds frustrated and blames the sitter for allowing Milo's condition to worsen.\nB. The speaker sounds pained and signals acute distress before directing Milo to veterinary care.\nC. The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care.\nD. The speaker sounds resigned and suggests waiting at home rather than pursuing veterinary care.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds frustrated and blames the sitter for allowing Milo's condition to worsen."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds pained and signals acute distress before directing Milo to veterinary care."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds resigned and suggests waiting at home rather than pursuing veterinary care."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_06b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_06b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_06b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_06b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds worried and seeks reassurance that Milo's behavior will pass without treatment.\nB. The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care.\nC. The speaker sounds pained and asks the sitter to comfort Milo without contacting the clinic.\nD. The speaker sounds pained and signals acute distress before directing Milo to veterinary care.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds worried and seeks reassurance that Milo's behavior will pass without treatment."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and signals weary acceptance that Milo now needs veterinary care."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds pained and asks the sitter to comfort Milo without contacting the clinic."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds pained and signals acute distress before directing Milo to veterinary care."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_07a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds frustrated and proposes trying the café across the street instead.\nB. The speaker sounds resigned and acknowledges that waiting until home is not feasible.\nC. The speaker sounds concerned and asks whether their friend can shorten the walk home.\nD. The speaker sounds concerned and explains that waiting until home is not feasible.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds frustrated and proposes trying the café across the street instead."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and acknowledges that waiting until home is not feasible."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds concerned and asks whether their friend can shorten the walk home."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds concerned and explains that waiting until home is not feasible."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_07a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds resigned and acknowledges that waiting until home is not feasible.\nB. The speaker sounds frightened and urgently warns that waiting until home is not feasible.\nC. The speaker sounds resigned and requests reassurance that they can wait until home.\nD. The speaker sounds frustrated and blames their friend for not finding an available restroom.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds resigned and acknowledges that waiting until home is not feasible."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds frightened and urgently warns that waiting until home is not feasible."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds resigned and requests reassurance that they can wait until home."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds frustrated and blames their friend for not finding an available restroom."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_07a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds alarmed and asks whether waiting until home might still be feasible.\nB. The speaker sounds anxious and asks whether the café will have an available restroom.\nC. The speaker sounds resigned and acknowledges that waiting until home is not feasible.\nD. The speaker sounds frightened and urgently warns that waiting until home is not feasible.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds alarmed and asks whether waiting until home might still be feasible."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds anxious and asks whether the café will have an available restroom."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and acknowledges that waiting until home is not feasible."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds frightened and urgently warns that waiting until home is not feasible."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_07b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds resigned and wearily reports that the recurring tapping has resumed.\nB. The speaker sounds matter-of-fact and reassures the housemate that the recurring tapping is harmless.\nC. The speaker sounds suspicious and suggests that someone outside is causing the tapping.\nD. The speaker sounds matter-of-fact and reports that the recurring tapping has resumed.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and reassures the housemate that the recurring tapping is harmless."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds suspicious and suggests that someone outside is causing the tapping."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and reports that the recurring tapping has resumed."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_07b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds resigned and reassures the housemate that the recurring tapping is harmless.\nB. The speaker sounds frustrated and urges the housemate to solve the recurring disturbance.\nC. The speaker sounds resigned and wearily reports that the recurring tapping has resumed.\nD. The speaker sounds terrified and urgently alerts the housemate that the unexplained tapping has resumed.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds resigned and reassures the housemate that the recurring tapping is harmless."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds frustrated and urges the housemate to solve the recurring disturbance."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds terrified and urgently alerts the housemate that the unexplained tapping has resumed."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "sigh",
+      "gold_emotion": "resignation"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_07b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_07b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_07b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_07b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds terrified and urgently alerts the housemate that the unexplained tapping has resumed.\nB. The speaker sounds resigned and wearily reports that the recurring tapping has resumed.\nC. The speaker sounds terrified and orders the housemate to stay away from the yard.\nD. The speaker sounds anxious and asks the housemate to explain what is causing the tapping.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds terrified and urgently alerts the housemate that the unexplained tapping has resumed."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds resigned and wearily reports that the recurring tapping has resumed."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds terrified and orders the housemate to stay away from the yard."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds anxious and asks the housemate to explain what is causing the tapping."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_08a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds disgusted and demands that the restaurant remove the salad charge.\nB. The speaker sounds matter-of-fact and explains why the salad is no longer acceptable.\nC. The speaker sounds dissatisfied and urges their date to complain about the expensive salad.\nD. The speaker sounds startled and highlights the unexpected discovery in the salad.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds disgusted and demands that the restaurant remove the salad charge."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and explains why the salad is no longer acceptable."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds dissatisfied and urges their date to complain about the expensive salad."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds startled and highlights the unexpected discovery in the salad."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_08a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds indignant and demands that the restaurant remove the salad charge.\nB. The speaker sounds alarmed and warns their date not to eat the contaminated salad.\nC. The speaker sounds pained and emphasizes the discomfort caused by the fork mishap.\nD. The speaker sounds startled and highlights the unexpected discovery in the salad.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds indignant and demands that the restaurant remove the salad charge."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds alarmed and warns their date not to eat the contaminated salad."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds pained and emphasizes the discomfort caused by the fork mishap."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds startled and highlights the unexpected discovery in the salad."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_08a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds startled and highlights the unexpected discovery in the salad.\nB. The speaker sounds embarrassed and apologizes for causing a scene in the restaurant.\nC. The speaker sounds distressed and asks their date to inspect the injury.\nD. The speaker sounds pained and emphasizes the discomfort caused by the fork mishap.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds startled and highlights the unexpected discovery in the salad."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds embarrassed and apologizes for causing a scene in the restaurant."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds distressed and asks their date to inspect the injury."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds pained and emphasizes the discomfort caused by the fork mishap."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_08b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds astonished and emphasizes the coin’s unexpectedly great age.\nB. The speaker sounds composed and reassures the friend that the finger is unharmed.\nC. The speaker sounds cautious and warns the friend to handle the display case carefully.\nD. The speaker sounds matter-of-fact and reports the coin’s age alongside the minor mishap.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds composed and reassures the friend that the finger is unharmed."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds cautious and warns the friend to handle the display case carefully."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and reports the coin’s age alongside the minor mishap."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_08b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds worried and asks the friend to inspect the injured finger.\nB. The speaker sounds pained and draws attention to the case pinching the finger.\nC. The speaker sounds astonished and emphasizes the coin’s unexpectedly great age.\nD. The speaker sounds startled and warns the friend that the display case could hurt them.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds worried and asks the friend to inspect the injured finger."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds pained and draws attention to the case pinching the finger."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds startled and warns the friend that the display case could hurt them."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_08b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_08b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_08b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_08b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds suspicious and questions whether the seller concealed the coin’s true age.\nB. The speaker sounds astonished and emphasizes the coin’s unexpectedly great age.\nC. The speaker sounds distressed and warns the friend not to touch the display case.\nD. The speaker sounds pained and draws attention to the case pinching the finger.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds suspicious and questions whether the seller concealed the coin’s true age."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds astonished and emphasizes the coin’s unexpectedly great age."
+        },
+        {
+          "id": "C",
+          "label": "wrong_function",
+          "text": "The speaker sounds distressed and warns the friend not to touch the display case."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds pained and draws attention to the case pinching the finger."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_09a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds matter-of-fact and reports that her boss has acknowledged her.\nB. The speaker sounds composed and reassures her friend that greeting her boss poses no problem.\nC. The speaker sounds uneasy and signals reluctance to approach her boss.\nD. The speaker sounds startled and marks her boss's attention as unexpected.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and reports that her boss has acknowledged her."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds composed and reassures her friend that greeting her boss poses no problem."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds uneasy and signals reluctance to approach her boss."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds startled and marks her boss's attention as unexpected."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_09a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds uneasy and signals reluctance to approach her boss.\nB. The speaker sounds startled and marks her boss's attention as unexpected.\nC. The speaker sounds frightened and treats her boss's attention as threatening.\nD. The speaker sounds excited and celebrates receiving friendly attention from her boss.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds uneasy and signals reluctance to approach her boss."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds startled and marks her boss's attention as unexpected."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds frightened and treats her boss's attention as threatening."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds excited and celebrates receiving friendly attention from her boss."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_09a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds frightened and treats her boss's attention as threatening.\nB. The speaker sounds startled and marks her boss's attention as unexpected.\nC. The speaker sounds embarrassed and signals reluctance to greet her boss.\nD. The speaker sounds alarmed and scolds her friend for not warning her sooner.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds frightened and treats her boss's attention as threatening."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds startled and marks her boss's attention as unexpected."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds embarrassed and signals reluctance to greet her boss."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds alarmed and scolds her friend for not warning her sooner."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_09b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds startled and highlights the unexpected urgency of the manager's request.\nB. The speaker sounds matter-of-fact and reports a promising development that requires immediate action.\nC. The speaker sounds optimistic and treats the call as confirmation that an offer is imminent.\nD. The speaker sounds composed and reassures the listener that the last-minute call will be easy.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds startled and highlights the unexpected urgency of the manager's request."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and reports a promising development that requires immediate action."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds optimistic and treats the call as confirmation that an offer is imminent."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds composed and reassures the listener that the last-minute call will be easy."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_09b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds excited and celebrates the request as proof that the position is secured.\nB. The speaker sounds frightened and signals alarm about facing the imminent video call.\nC. The speaker sounds startled and highlights the unexpected urgency of the manager's request.\nD. The speaker sounds startled and asks the listener to explain why the manager is calling.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds excited and celebrates the request as proof that the position is secured."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds frightened and signals alarm about facing the imminent video call."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds startled and highlights the unexpected urgency of the manager's request."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds startled and asks the listener to explain why the manager is calling."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "gasp",
+      "gold_emotion": "surprise"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_09b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_09b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_09b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_09b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds startled and highlights the unexpected urgency of the manager's request.\nB. The speaker sounds panicked and urges the listener to cancel the manager's video call.\nC. The speaker sounds frightened and signals alarm about facing the imminent video call.\nD. The speaker sounds hopeful and treats the call as a routine step toward an offer.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds startled and highlights the unexpected urgency of the manager's request."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds panicked and urges the listener to cancel the manager's video call."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds frightened and signals alarm about facing the imminent video call."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds hopeful and treats the call as a routine step toward an offer."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10a",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_10a__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10a__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10a__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds mildly impatient and asks the friend to finish packing the suitcase.\nB. The speaker sounds matter-of-fact and explains the predicament so the friend can help safely.\nC. The speaker sounds pained and signals that freeing the trapped foot requires careful assistance.\nD. The speaker sounds matter-of-fact and confirms that the packing task no longer requires any help.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds mildly impatient and asks the friend to finish packing the suitcase."
+        },
+        {
+          "id": "B",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and explains the predicament so the friend can help safely."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds pained and signals that freeing the trapped foot requires careful assistance."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and confirms that the packing task no longer requires any help."
+        }
+      ],
+      "correct_option": "B",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10a",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_10a__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10a__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10a__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds pained and signals that freeing the trapped foot requires careful assistance.\nB. The speaker sounds pained and blames the friend for trapping their foot behind the chair.\nC. The speaker sounds frightened and urgently signals that the trapped foot puts them in danger.\nD. The speaker sounds mildly frustrated and asks the friend to retrieve another item for packing.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds pained and signals that freeing the trapped foot requires careful assistance."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds pained and blames the friend for trapping their foot behind the chair."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds frightened and urgently signals that the trapped foot puts them in danger."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds mildly frustrated and asks the friend to retrieve another item for packing."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10a",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_10a__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10a__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10a__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds pained and signals that freeing the trapped foot requires careful assistance.\nB. The speaker sounds frightened and warns the friend not to touch or steady the chair.\nC. The speaker sounds anxious and asks the friend to check that the suitcase is fully packed.\nD. The speaker sounds frightened and urgently signals that the trapped foot puts them in danger.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "paired_condition",
+          "text": "The speaker sounds pained and signals that freeing the trapped foot requires careful assistance."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds frightened and warns the friend not to touch or steady the chair."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds anxious and asks the friend to check that the suitcase is fully packed."
+        },
+        {
+          "id": "D",
+          "label": "correct",
+          "text": "The speaker sounds frightened and urgently signals that the trapped foot puts them in danger."
+        }
+      ],
+      "correct_option": "D",
+      "correct_label": "correct",
+      "ambiguity_flag": true,
+      "ambiguity_note": "In this context, the scream could indicate sudden pain from the trapped foot rather than fear, making the paired reading defensible.",
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10b",
+      "condition": "baseline",
+      "task_type": "pragmatic",
+      "task_id": "v6_10b__baseline__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question_baseline@736e5a4f5837",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10b__baseline.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10b__baseline.mp3"
+      },
+      "question": "In this conversation, what is the most likely framing of what the speakers are doing? Select exactly one option.\n\nA. The speaker sounds matter-of-fact and reports a landing mishap that could affect the next attempt.\nB. The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury.\nC. The speaker sounds disappointed and blames the slip for failing to complete the dunk.\nD. The speaker sounds matter-of-fact and uses the slip to request an immediate change of shoes.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds matter-of-fact and reports a landing mishap that could affect the next attempt."
+        },
+        {
+          "id": "B",
+          "label": "paired_condition",
+          "text": "The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury."
+        },
+        {
+          "id": "C",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds disappointed and blames the slip for failing to complete the dunk."
+        },
+        {
+          "id": "D",
+          "label": "wrong_function",
+          "text": "The speaker sounds matter-of-fact and uses the slip to request an immediate change of shoes."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "none",
+      "gold_emotion": "ambiguous"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10b",
+      "condition": "condition_a",
+      "task_type": "pragmatic",
+      "task_id": "v6_10b__condition_a__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10b__condition_a.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10b__condition_a.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds sore and uses the mishap to argue against any further practice.\nB. The speaker sounds frustrated and complains that the ball placement is making the drill harder.\nC. The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury.\nD. The speaker sounds frightened and urgently alerts the friend to immediate danger from the slipped landing.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "wrong_function",
+          "text": "The speaker sounds sore and uses the mishap to argue against any further practice."
+        },
+        {
+          "id": "B",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds frustrated and complains that the ball placement is making the drill harder."
+        },
+        {
+          "id": "C",
+          "label": "correct",
+          "text": "The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury."
+        },
+        {
+          "id": "D",
+          "label": "paired_condition",
+          "text": "The speaker sounds frightened and urgently alerts the friend to immediate danger from the slipped landing."
+        }
+      ],
+      "correct_option": "C",
+      "correct_label": "correct",
+      "ambiguity_flag": false,
+      "ambiguity_note": "",
+      "gold_vocalization": "groan",
+      "gold_emotion": "pain"
+    },
+    {
+      "run_id": "r20260903T210509Z",
+      "item_id": "v6_10b",
+      "condition": "condition_b",
+      "task_type": "pragmatic",
+      "task_id": "v6_10b__condition_b__pragmatic",
+      "stimulus_audio_path": "",
+      "prompt_version": "pragmatic_question@7d2c24795c4a",
+      "model_provider": "",
+      "model_name": "",
+      "model_version": "",
+      "settings": {},
+      "seed": 20260902,
+      "timestamp": "2026-09-03T21:05:09+00:00",
+      "raw_response_path": "",
+      "parsed": null,
+      "status": "built",
+      "errors": [],
+      "stimulus_audio": {
+        "dia": "out/audio/dia/v6_10b__condition_b.wav",
+        "elevenlabs": "out/audio/elevenlabs/v6_10b__condition_b.mp3"
+      },
+      "question": "In this conversation, what does the non-speech vocalization most likely express or accomplish? Select exactly one option.\n\nA. The speaker sounds frightened and urgently alerts the friend to immediate danger from the slipped landing.\nB. The speaker sounds excited and celebrates reaching the rim as proof the training is finally working.\nC. The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury.\nD. The speaker sounds nervous and signals doubt that more practice will ever lead to a dunk.\n\nAnswer with JSON only: {\"selected_option\": \"<A|B|C|D>\", \"confidence\": <0.0-1.0>}\n",
+      "options": [
+        {
+          "id": "A",
+          "label": "correct",
+          "text": "The speaker sounds frightened and urgently alerts the friend to immediate danger from the slipped landing."
+        },
+        {
+          "id": "B",
+          "label": "wrong_function",
+          "text": "The speaker sounds excited and celebrates reaching the rim as proof the training is finally working."
+        },
+        {
+          "id": "C",
+          "label": "paired_condition",
+          "text": "The speaker sounds hurt and alerts the friend that the slipped landing may have caused injury."
+        },
+        {
+          "id": "D",
+          "label": "scenario_plausible",
+          "text": "The speaker sounds nervous and signals doubt that more practice will ever lead to a dunk."
+        }
+      ],
+      "correct_option": "A",
+      "correct_label": "correct",
+      "ambiguity_flag": true,
+      "ambiguity_note": "The pain interpretation is equally defensible because screaming after a slipped landing can signal an injury rather than fear.",
+      "gold_vocalization": "scream",
+      "gold_emotion": "fear"
+    }
+  ]
+}

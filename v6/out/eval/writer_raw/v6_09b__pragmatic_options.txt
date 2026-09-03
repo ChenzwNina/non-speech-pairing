@@ -1,0 +1,69 @@
+{
+  "item_id": "v6_09b",
+  "item_level_review_note": "",
+  "conditions": [
+    {
+      "condition": "baseline",
+      "vocalization": "none",
+      "correct": "The speaker sounds matter-of-fact and reports a promising development that requires immediate action.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds startled and highlights the unexpected urgency of the manager's request."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds composed and reassures the listener that the last-minute call will be easy."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds optimistic and treats the call as confirmation that an offer is imminent."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_a",
+      "vocalization": "gasp",
+      "correct": "The speaker sounds startled and highlights the unexpected urgency of the manager's request.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds frightened and signals alarm about facing the imminent video call."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds startled and asks the listener to explain why the manager is calling."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds excited and celebrates the request as proof that the position is secured."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    },
+    {
+      "condition": "condition_b",
+      "vocalization": "scream",
+      "correct": "The speaker sounds frightened and signals alarm about facing the imminent video call.",
+      "distractors": [
+        {
+          "kind": "paired_condition",
+          "text": "The speaker sounds startled and highlights the unexpected urgency of the manager's request."
+        },
+        {
+          "kind": "wrong_function",
+          "text": "The speaker sounds panicked and urges the listener to cancel the manager's video call."
+        },
+        {
+          "kind": "scenario_plausible",
+          "text": "The speaker sounds hopeful and treats the call as a routine step toward an offer."
+        }
+      ],
+      "ambiguity_flag": false,
+      "ambiguity_note": ""
+    }
+  ]
+}

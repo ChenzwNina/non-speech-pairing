@@ -1,0 +1,1869 @@
+{
+  "written_at": "2026-09-02T07:58:32+00:00",
+  "run_id": "r20260902T073936Z",
+  "writer": "claude-opus-5",
+  "transport": "cli",
+  "prompt_version": "content_rubric_writer@f90041e33e00",
+  "items": [
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_01a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_01a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:40:08+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Parents neutrally report the kids' ongoing lion game and plan to clear space; no strong feeling is expressed.",
+            "primary_response_function": "Acknowledging and engaging with the situation practically",
+            "required_content": [
+              "Shows uptake of the kids' safari-inspired lion play as the current topic",
+              "Responds at a neutral-to-mildly-positive register without attributing strong emotion to either parent"
+            ],
+            "acceptable_variations": [
+              "Offer to help move furniture or make space",
+              "Ask a light question about the safari trip or how long the game has lasted"
+            ],
+            "must_avoid": [
+              "Treating either parent as exhausted, exasperated, or complaining",
+              "Reacting as if something funny or a joke was just made"
+            ],
+            "contrastive_requirement": "Should read the situation as plain description, adding no amusement uptake and no acknowledgment of parental weariness.",
+            "reference_response": "How long did the safari trip end up being? Sounds like it stuck. Want a hand shifting that table?",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "contextual_interpretation": "B is amused by the kids' lion imitation; the laugh invites shared enjoyment and frames the disruption as endearing.",
+            "primary_response_function": "Joining the shared amusement affiliatively",
+            "required_content": [
+              "Signals that the kids' behavior is funny or charming, aligning with B's amusement",
+              "Engages with the lion game as something enjoyable rather than a problem to manage"
+            ],
+            "acceptable_variations": [
+              "Add a playful extension of the lion bit or a teasing remark about the household",
+              "Share amusement plus a light offer to help clear space, keeping the fun framing"
+            ],
+            "must_avoid": [
+              "Sympathizing with the parents as if they were worn down or burdened",
+              "Responding only with logistics about the coffee table, ignoring the humor"
+            ],
+            "contrastive_requirement": "Uniquely takes up amusement and treats the lion game as delightful, unlike the neutral baseline or the weary sigh version.",
+            "reference_response": "Oh no, you've got a pride now. Do they roar at dinner too, or only in the living room?",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "sigh",
+            "contextual_interpretation": "B is mildly worn down by the relentless lion game; the sigh signals resigned acceptance while B still accommodates it.",
+            "primary_response_function": "Acknowledging the wear and offering practical relief",
+            "required_content": [
+              "Registers that the nonstop game is tiring or wearing on the parents",
+              "Moves toward easing the load, through help, relief, or reassurance that it will pass"
+            ],
+            "acceptable_variations": [
+              "Offer concrete help with the furniture or with occupying the kids",
+              "Sympathize and normalize it, noting such phases burn out fast"
+            ],
+            "must_avoid": [
+              "Treating the moment as purely funny and laughing it off",
+              "Escalating into criticism of the kids or dramatizing the parents' exhaustion"
+            ],
+            "contrastive_requirement": "Uniquely recognizes parental fatigue and offers relief, rather than sharing amusement or staying emotionally neutral.",
+            "reference_response": "Nonstop since you got back? That's a lot. Let me grab the other end of that table, and I can take a shift.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_01b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_01b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:41:01+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Parent shares a neutral anecdote about old teammates hiding their glove while prepping the daughter for her first practice.",
+            "primary_response_function": "Acknowledging the anecdote and the upcoming practice",
+            "required_content": [
+              "Engages with the glove-hiding memory or the daughter's glove-keeping plan",
+              "Connects to the upcoming first practice as a real, current event"
+            ],
+            "acceptable_variations": [
+              "Ask the parent a light follow-up question about their old team",
+              "Encourage or wish the daughter well for Monday's practice"
+            ],
+            "must_avoid": [
+              "Attributing strong emotion (hurt, hilarity, bitterness) not present in the words",
+              "Responding generically about sports without touching the glove or practice"
+            ],
+            "contrastive_requirement": "Should stay emotionally neutral, treating the memory as information rather than as a joke or a weary complaint.",
+            "reference_response": "Monday already? Wait, people actually hid your glove? Sounds like keeping it in the bag is the smart move.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "contextual_interpretation": "Parent recalls the glove-hiding fondly as team-prank humor, inviting others to share the joke and lighten pre-season nerves.",
+            "primary_response_function": "Joining the humor and building on the memory",
+            "required_content": [
+              "Treats the glove-hiding as funny teammate mischief rather than mistreatment",
+              "Extends the light moment toward the parent's story or the daughter's practice"
+            ],
+            "acceptable_variations": [
+              "Tease the parent about being an easy prank target",
+              "Add a comparable prank story or joke about hiding the daughter's glove"
+            ],
+            "must_avoid": [
+              "Sympathizing with the parent as if the memory were painful",
+              "Ignoring the invited humor and answering only logistically"
+            ],
+            "contrastive_requirement": "Uniquely treats the memory as a shared joke worth playing along with, rather than neutral information or something to be consoled.",
+            "reference_response": "Every single time? No wonder she's guarding hers. I'd have hidden it too, honestly — sorry, but that's funny.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "sigh",
+            "contextual_interpretation": "Parent recalls the glove-hiding with mild weariness, marking it as an unpleasant old team dynamic they hope their daughter avoids.",
+            "primary_response_function": "Acknowledging the unpleasantness and offering light reassurance",
+            "required_content": [
+              "Registers that the memory was not fun for the parent",
+              "Orients toward the daughter's experience being different or better"
+            ],
+            "acceptable_variations": [
+              "Briefly sympathize, then shift to optimism about the new team",
+              "Ask the parent whether that's why they're thinking about it now"
+            ],
+            "must_avoid": [
+              "Laughing it off as a harmless prank",
+              "Escalating into heavy emotional processing or therapeutic probing"
+            ],
+            "contrastive_requirement": "Uniquely recognizes lingering unpleasantness in the memory and offers mild reassurance instead of neutral acknowledgment or shared laughter.",
+            "reference_response": "That sounds like it got old fast. Hopefully her group's better than that — sounds like she's got the bag plan covered anyway.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_02a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_02a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:41:41+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Siblings describe an unexpected photo of Grandma neutrally; B's report simply shares content and plans a visit.",
+            "primary_response_function": "Acknowledging and engaging with the discovery",
+            "required_content": [
+              "Shows interest in the photo or Grandma's motorcycle trip",
+              "Engages with the album or the plan to show Grandma"
+            ],
+            "acceptable_variations": [
+              "Ask a factual question about when or why she made the ride",
+              "Endorse bringing the album Sunday and suggest asking her about it"
+            ],
+            "must_avoid": [
+              "Attributing strong shock, grief, or hilarity not present in the text",
+              "Ignoring the photo and album entirely"
+            ],
+            "contrastive_requirement": "Stays curious and matter-of-fact, neither joining a joke nor treating the photo as a startling revelation.",
+            "reference_response": "Wait, Grandma rode across the whole state? You have to bring that album Sunday—I want to hear the story from her.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "contextual_interpretation": "B is delighted by the incongruity of Grandma as a biker; the laugh invites shared affectionate amusement.",
+            "primary_response_function": "Joining the affectionate humor",
+            "required_content": [
+              "Participates in the amusement about Grandma's biker image",
+              "Keeps the humor fond rather than mocking, and stays on the photo or visit"
+            ],
+            "acceptable_variations": [
+              "Add a playful comparison or nickname for Grandma's leather-jacket era",
+              "Riff on teasing her about it, or asking her for the story, on Sunday"
+            ],
+            "must_avoid": [
+              "Treating the photo as alarming or as something to be concerned about",
+              "Responding flatly or informationally as if no shared joke occurred"
+            ],
+            "contrastive_requirement": "Uniquely takes up a shared joke about the image, rather than reacting with surprise or neutral curiosity.",
+            "reference_response": "Grandma in leather? That's incredible. We are absolutely bringing that album Sunday so she can tell us everything.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "contextual_interpretation": "B is startled by an unexpected side of Grandma; the gasp flags the photo as a genuine revelation worth reacting to.",
+            "primary_response_function": "Sharing surprise and pursuing the revelation",
+            "required_content": [
+              "Registers that this is a surprising or previously unknown side of Grandma",
+              "Pursues the discovery, e.g. wanting to see more or learn the story"
+            ],
+            "acceptable_variations": [
+              "Express disbelief and ask whether anyone in the family knew about this",
+              "Ask what else is in the album or propose asking Grandma directly Sunday"
+            ],
+            "must_avoid": [
+              "Treating the photo as merely funny and reducing it to a joke",
+              "Interpreting the gasp as fear or distress and offering comfort or safety checks"
+            ],
+            "contrastive_requirement": "Uniquely treats the photo as a startling revelation about Grandma, not a punchline or an ordinary detail.",
+            "reference_response": "Grandma on a motorcycle? I had no idea. Did anyone in the family know about this? What else is in there?",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_02b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_02b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:42:32+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Mother is pleased and notes a family comparison matter-of-factly; no vocal cue marks amusement or astonishment.",
+            "primary_response_function": "Acknowledging and congratulating the achievement",
+            "required_content": [
+              "Recognizes the student's strong chemistry result positively",
+              "Engages the family comparison or the fridge/dinner plan as ordinary news"
+            ],
+            "acceptable_variations": [
+              "Plain congratulations plus a question about the test or the class",
+              "Comment on the practice quizzes paying off and the fridge plan"
+            ],
+            "must_avoid": [
+              "Attributing strong shock, hilarity, or drama to the mother",
+              "Treating the one-point comparison as a conflict or rivalry to referee"
+            ],
+            "contrastive_requirement": "Should read as steady, unmarked congratulation without the playful teasing of the laugh or the amazed emphasis of the gasp.",
+            "reference_response": "Ninety-five, nice work. And one point over your mom's record, that's going on the fridge for sure.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "contextual_interpretation": "Mother is proud and amused at being narrowly outdone; the laugh opens a light, self-deprecating family joke.",
+            "primary_response_function": "Joining the humor while affirming achievement",
+            "required_content": [
+              "Participates in the playful framing of the parent being beaten by one point",
+              "Still affirms the student's result as genuinely good"
+            ],
+            "acceptable_variations": [
+              "Tease the mother lightly about losing her family record",
+              "Joke that the student now owes a rematch or holds the title"
+            ],
+            "must_avoid": [
+              "Treating the mother's reaction as shock or disbelief",
+              "Responding earnestly as if someone's feelings were hurt by the comparison"
+            ],
+            "contrastive_requirement": "Uniquely picks up the shared joke about the one-point family record, rather than amazement or neutral congratulation.",
+            "reference_response": "One point? Brutal. Your record's officially retired, Mom. Congrats on the takeover, that fridge spot is earned.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "contextual_interpretation": "Mother is caught off guard and impressed by the high mark; the gasp marks the news as striking and noteworthy.",
+            "primary_response_function": "Amplifying and validating the impressive news",
+            "required_content": [
+              "Treats the score as notably impressive or better than expected",
+              "Validates the mother's reaction by sharing the sense that this is big news"
+            ],
+            "acceptable_variations": [
+              "Express admiration and ask how the student pulled it off",
+              "Highlight that beating the family record makes the result a milestone"
+            ],
+            "must_avoid": [
+              "Reading the gasp as alarm, bad news, or something needing reassurance",
+              "Turning the moment into a joke at the mother's expense"
+            ],
+            "contrastive_requirement": "Uniquely treats the mark as surprising and remarkable, rather than as a punchline or as routine good news.",
+            "reference_response": "Ninety-five? That's a huge jump. No wonder your mom's floored, you actually broke the family record.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_03a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_03a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:43:23+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "B neutrally reports over-packing six textbooks before checking the schedule; no stance signaled, so it reads as practical planning talk.",
+            "primary_response_function": "Acknowledging and offering practical help",
+            "required_content": [
+              "Engages with the practical question of which books are actually needed Monday",
+              "Treats B's packing as a logistics matter, not an emotional event"
+            ],
+            "acceptable_variations": [
+              "Offer to compare schedules or check the timetable together",
+              "Suggest a concrete fix like leaving books in a locker or splitting the load"
+            ],
+            "must_avoid": [
+              "Reacting with sympathy for pain or injury that was never expressed",
+              "Treating the over-packing as a joke and laughing along"
+            ],
+            "contrastive_requirement": "Should stay affectively neutral and task-focused, adding neither shared amusement nor concern about physical strain.",
+            "reference_response": "Pull up the schedule — you probably only need two of those on Monday. I can carry a couple if you want.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "contextual_interpretation": "B finds their own over-packing absurd; the laugh flags self-mockery and invites friends to share the joke.",
+            "primary_response_function": "Joining humor while staying on task",
+            "required_content": [
+              "Takes up B's amusement at the over-packing as something funny rather than serious",
+              "Stays engaged with the practical point about trimming the book load"
+            ],
+            "acceptable_variations": [
+              "Light teasing about hauling the whole library on day one",
+              "Playful self-inclusion, admitting a similar first-day over-preparation"
+            ],
+            "must_avoid": [
+              "Expressing concern about B's back, pain, or injury",
+              "Analyzing or naming the laugh instead of responding to the joke"
+            ],
+            "contrastive_requirement": "Uniquely shares B's amusement and treats the over-packing as comic, rather than neutral logistics or physical discomfort.",
+            "reference_response": "Six textbooks before you even looked at the schedule? Solid strategy. Let's figure out which two you actually need.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "contextual_interpretation": "B strained under the heavy backpack; the groan signals physical discomfort and implicitly invites sympathy or help lightening the load.",
+            "primary_response_function": "Sympathizing and offering practical help",
+            "required_content": [
+              "Acknowledges that the loaded backpack hurt or strained B",
+              "Offers help or a way to reduce the weight B has to carry"
+            ],
+            "acceptable_variations": [
+              "Brief check on how B's back or shoulder feels now",
+              "Concrete offer to share the load or leave books behind"
+            ],
+            "must_avoid": [
+              "Laughing at or teasing B about the heavy backpack",
+              "Ignoring the discomfort and responding only about scheduling"
+            ],
+            "contrastive_requirement": "Uniquely registers B's physical discomfort and moves to relieve it, rather than treating the over-packing as neutral or funny.",
+            "reference_response": "Ouch — is your shoulder okay? Let's cut that down to what you need Monday, and I'll take one of them.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_03b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_03b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:44:15+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "B is mildly put-out about extra work delaying departure and is recruiting help to finish the cart.",
+            "primary_response_function": "Acknowledging the delay and agreeing to help",
+            "required_content": [
+              "Recognizes that B got stuck with extra work past their expected leaving time",
+              "Signals willingness to pitch in on clearing the cart"
+            ],
+            "acceptable_variations": [
+              "Take up the practical logistics: which boxes to grab, how fast they can finish",
+              "Briefly comment on the supervisor's timing, then commit to helping"
+            ],
+            "must_avoid": [
+              "Attributing strong distress, pain, or hilarity that the words alone do not support",
+              "Ignoring the request for help and only chatting about the supervisor"
+            ],
+            "contrastive_requirement": "Stays neutral in stance: no shared joking and no concern for B's body, just uptake of the delay and the help request.",
+            "reference_response": "Classic. I'll take the top two off the cart—if we both go at it you're still out of here pretty soon.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "contextual_interpretation": "B finds the supervisor's timing absurd and laughs to frame the setback as a shared joke rather than a complaint.",
+            "primary_response_function": "Joining the humor while agreeing to help",
+            "required_content": [
+              "Takes up B's amused framing of the supervisor's ridiculous timing",
+              "Still engages with finishing the cart together"
+            ],
+            "acceptable_variations": [
+              "Add a playful exaggeration about the supervisor's knack for perfect timing",
+              "Laugh along briefly, then move straight to grabbing boxes"
+            ],
+            "must_avoid": [
+              "Treating B as hurt or upset and offering consolation or safety checks",
+              "Responding with flat sympathy that drops B's joking stance"
+            ],
+            "contrastive_requirement": "Uniquely shares B's amusement at the absurd timing instead of expressing concern or staying emotionally neutral.",
+            "reference_response": "He waited for you to bend over, didn't he? Perfect aim. Fine—hand me the top ones and let's kill this cart.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "contextual_interpretation": "B's groan at the moment of bending signals physical strain, cueing others to notice their body and take on the lifting.",
+            "primary_response_function": "Checking on B and taking over lifting",
+            "required_content": [
+              "Registers concern about B's physical strain from the bending or lifting",
+              "Offers to do the heavier lifting or reduce B's load rather than just helping equally"
+            ],
+            "acceptable_variations": [
+              "Ask how B's back is holding up while starting on the cart alone",
+              "Redirect B to lighter tasks or leaving, and handle the boxes yourself"
+            ],
+            "must_avoid": [
+              "Joking about the supervisor's timing as if nothing physical happened",
+              "Accepting B's plan to lift alongside you without addressing the strain"
+            ],
+            "contrastive_requirement": "Uniquely attends to B's body and shifts the physical burden away from them, rather than sharing a joke or splitting the work evenly.",
+            "reference_response": "Wait—is your back okay? Sit this one out. I'll take the boxes off the cart, you just tell me where they go.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_04a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_04a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:45:16+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Both coworkers are mildly puzzled by a coincidence between lifting the frame and the router lights, and are calmly investigating it.",
+            "primary_response_function": "Acknowledging and engaging with the puzzle",
+            "required_content": [
+              "Engages with the odd router behavior as something to figure out or explain",
+              "Treats the situation as ordinary workplace curiosity, without strong emotional framing"
+            ],
+            "acceptable_variations": [
+              "Offer a plausible mundane explanation, such as unrelated network activity or timing",
+              "Acknowledge the new certificate and ask what the router is actually doing"
+            ],
+            "must_avoid": [
+              "Inventing alarm, panic, or hilarity that the words alone do not support",
+              "Ignoring the router issue entirely and only talking about the certificate"
+            ],
+            "contrastive_requirement": "Should stay emotionally neutral and investigative, neither joining a joke nor responding to any alarm about the router.",
+            "reference_response": "Wait, the lights actually reacted when you picked it up? Probably a coincidence, but let's watch it once more while you hold the frame.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "contextual_interpretation": "B is amused, using the laugh to frame the coincidence as absurd and to invite shared joking about the certificate's apparent effect.",
+            "primary_response_function": "Joining the humor while staying on task",
+            "required_content": [
+              "Aligns with the playful framing that the coincidence is funny or absurd",
+              "Still engages with the router check rather than only joking"
+            ],
+            "acceptable_variations": [
+              "Extend the joke that the certificate has authority over the hardware",
+              "Tease A lightly about the framed certificate while asking to see the lights again"
+            ],
+            "must_avoid": [
+              "Treating the blinking lights as an emergency or a safety concern",
+              "Responding with flat troubleshooting that ignores B's amusement"
+            ],
+            "contrastive_requirement": "Must show uptake of shared amusement about the coincidence, unlike the neutral baseline or the reassurance needed after alarm.",
+            "reference_response": "So the router recognizes credentials now? Hold it up again, I want to see this before we go looking for a real explanation.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "contextual_interpretation": "B is startled and alarmed by the sudden router activity, using the scream to flag something as wrong and demand immediate attention.",
+            "primary_response_function": "De-escalating and checking things are okay",
+            "required_content": [
+              "Acknowledges B's alarm and checks that B, the hardware, or the network is okay",
+              "Offers help or a steady next step that treats the situation as manageable"
+            ],
+            "acceptable_variations": [
+              "Ask directly what happened and whether anything is damaged or unplugged",
+              "Calmly propose stepping back from the router and checking it together"
+            ],
+            "must_avoid": [
+              "Laughing at or mocking B's reaction as an overreaction",
+              "Amplifying the alarm or speculating about disaster without checking anything"
+            ],
+            "contrastive_requirement": "Must attend to B's alarm and steady the situation, rather than joining a joke or treating it as mere curiosity.",
+            "reference_response": "Whoa, are you two okay? Nothing's smoking, right? Put the frame down and let's look at the router together before anyone touches anything.",
+            "ambiguity_flag": true,
+            "ambiguity_note": "A scream at blinking router lights could be genuine startle/alarm or theatrical mock-horror at the coincidence; B's calm turn 4 fits both readings."
+          }
+        ],
+        "item_level_review_note": "Laugh-versus-scream contrast is directionally clear, but the fear framing is thin: blinking router lights are low-stakes, so the scream may read as exaggerated play rather than alarm. Consider strengthening the transcript cue for condition_b."
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_04b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_04b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:46:26+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "A is embarrassed after a visible misplay and minor hit; B recounts it plainly and steers A off the field.",
+            "primary_response_function": "Acknowledging the mishap and easing A's embarrassment",
+            "required_content": [
+              "Acknowledges the misplay or the hit without dwelling on it",
+              "Addresses A's self-consciousness about being watched, e.g. normalizing it or downplaying the audience"
+            ],
+            "acceptable_variations": [
+              "Brief solidarity plus a matter-of-fact 'happens to everyone' normalization",
+              "Light check-in on A followed by endorsing B's suggestion to sit"
+            ],
+            "must_avoid": [
+              "Inventing strong alarm or treating it as a serious injury emergency",
+              "Turning it into a joke at A's expense or mocking the misplay"
+            ],
+            "contrastive_requirement": "Stays emotionally neutral: neither joining amusement nor mounting an urgent safety check, and centers A's embarrassment instead.",
+            "reference_response": "Rough luck, man. Nobody by the dugout's gonna remember that in ten minutes. Sit down, shake it off.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "laugh",
+            "contextual_interpretation": "B finds the blooper funny and frames it as harmless teammate ribbing, signaling the incident is low-stakes and A is fine.",
+            "primary_response_function": "Joining the humor while keeping A included",
+            "required_content": [
+              "Treats the incident as minor and funny rather than serious",
+              "Keeps A on side, e.g. self-deprecation, solidarity, or reassurance that the teasing is affectionate"
+            ],
+            "acceptable_variations": [
+              "Adds a playful jab plus a 'we've all done it' leveler",
+              "Laughs along but redirects attention away from the staring onlookers"
+            ],
+            "must_avoid": [
+              "Responding with alarm or a medical-style injury assessment that clashes with the light framing",
+              "Piling on mockery that deepens A's humiliation with no warmth or reprieve"
+            ],
+            "contrastive_requirement": "Uniquely aligns with the amusement framing by treating the incident as a joke, which would be inappropriate in the other two conditions.",
+            "reference_response": "I saw the whole thing from the fence. Honestly a solid catch, just with your face. Come on, sit down.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "contextual_interpretation": "B reacts with alarm to the impact, marking it as shocking and potentially injurious rather than a harmless blooper.",
+            "primary_response_function": "Checking A's safety and offering practical help",
+            "required_content": [
+              "Checks how A is physically doing after being hit in the face or head",
+              "Offers or endorses concrete help, such as ice, sitting out, or getting a trainer"
+            ],
+            "acceptable_variations": [
+              "Calm safety check plus steadying reassurance that A is being looked after",
+              "Immediate practical action, e.g. fetching ice or a coach, while asking A how it feels"
+            ],
+            "must_avoid": [
+              "Joking about the incident or treating it as a funny blooper",
+              "Amplifying panic or dramatizing the injury instead of steadying the situation"
+            ],
+            "contrastive_requirement": "Uniquely prioritizes physical wellbeing and concrete help over embarrassment or humor, responding to the alarm rather than mirroring it.",
+            "reference_response": "Hey, how's your face feeling? Sit down with him, I'll grab ice and flag the coach just in case.",
+            "ambiguity_flag": true,
+            "ambiguity_note": "The scream occurs during a retelling, so it could be genuine alarm or a mock-horror re-enactment used for teasing; a safety-first response remains appropriate under either reading."
+          }
+        ],
+        "item_level_review_note": "Contrast is workable, but note that the vocalization lands on a narrative recap rather than the moment of impact, so the scream may be heard as dramatized retelling; audio direction should make it genuine alarm to keep the contrast with condition_a clean."
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_05a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_05a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:47:33+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "A keeps uncovering leftover items from Lena; B responds matter-of-factly and proposes a practical next step after breakfast.",
+            "primary_response_function": "Acknowledging and supporting the practical plan",
+            "required_content": [
+              "Registers that another of Lena's belongings turned up",
+              "Aligns with A's ongoing effort to pack things away or move on"
+            ],
+            "acceptable_variations": [
+              "Offer concrete help with the storage box or the sorting",
+              "Lightly check how A feels about finding it, without pressing"
+            ],
+            "must_avoid": [
+              "Attributing intense grief or distress not present in the words",
+              "Treating the mug's discovery as shocking or alarming news"
+            ],
+            "contrastive_requirement": "Stays low-key and practical, neither carrying accumulated weariness nor reacting as though the discovery were startling.",
+            "reference_response": "Behind the coffee tin, of course. I can grab the box after breakfast if you want an extra pair of hands.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "contextual_interpretation": "B sighs in weary recognition, framing this as one more instalment in a slow, draining process A keeps repeating.",
+            "primary_response_function": "Validating the drawn-out weariness and offering help",
+            "required_content": [
+              "Treats the find as part of a repeated, wearing pattern rather than news",
+              "Conveys sympathy or support for how tiring the process is for A"
+            ],
+            "acceptable_variations": [
+              "Gently commiserate that these things keep surfacing, then help finish the job",
+              "Offer to take the sorting off A's hands so it stops dragging out"
+            ],
+            "must_avoid": [
+              "Reacting with surprise or excitement about the mug turning up",
+              "Pushing A to hurry up and be over it, dismissing the fatigue"
+            ],
+            "contrastive_requirement": "Must carry the sense of accumulated, tiring repetition that neither the neutral baseline nor the startled gasp version conveys.",
+            "reference_response": "They just keep turning up, huh. Let's do one last sweep together after breakfast so you're not finding these for months.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "contextual_interpretation": "B is caught off guard, treating the discovery as an unexpected jolt and heightening the moment rather than normalizing it.",
+            "primary_response_function": "Acknowledging the jolt and checking on A",
+            "required_content": [
+              "Treats the discovery as a fresh, unexpected ambush rather than routine",
+              "Checks how A is taking this particular reminder"
+            ],
+            "acceptable_variations": [
+              "React to the unlikely hiding place, then ask how A's holding up",
+              "Name the sting of being caught off guard and offer to deal with it now"
+            ],
+            "must_avoid": [
+              "Framing it as the same old tired routine A has been through repeatedly",
+              "Escalating into alarm or crisis language disproportionate to a mug"
+            ],
+            "contrastive_requirement": "Must treat the find as surprising and momentarily jarring, unlike the baseline's flat practicality or condition A's worn-down repetition.",
+            "reference_response": "Behind the coffee tin? That's an ambush. You okay, or do you want it out of sight before you finish your coffee?",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": "Contrast is usable, but the gasp is somewhat outsized for finding a mug; judges should accept mild surprise and not penalize responses that stop short of strong alarm."
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_05b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_05b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:48:42+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "A flatly states the cake is entirely gone; the exchange is mainly informational, with mild frustration and a practical plan already forming.",
+            "primary_response_function": "Acknowledge the situation and support the practical plan",
+            "required_content": [
+              "Registers that the entire cake, made for the daughter's birthday, is gone",
+              "Engages with resolving it, such as backing the call to Mia or the backup plan"
+            ],
+            "acceptable_variations": [
+              "Ask a clarifying question about whether Mia took it by mistake",
+              "Offer concrete practical help with the call or a replacement cake"
+            ],
+            "must_avoid": [
+              "Attributing intense distress, panic, or devastation not present in the words",
+              "Responding only with generic sympathy while ignoring the cake and the plan"
+            ],
+            "contrastive_requirement": "Should stay emotionally neutral and practical, without the deflation acknowledged after a sigh or the alarm and urgency triggered by a gasp.",
+            "reference_response": "Wait, the whole thing? Call her now, she probably grabbed the wrong box. I can run out for candles if we need a backup.",
+            "ambiguity_flag": true,
+            "ambiguity_note": "Without vocal cues, A's line reads equally as weary acceptance, dry irritation, or plain disbelief, so the emotional framing is underdetermined."
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "contextual_interpretation": "A is deflated and resigned about five hours of work lost; the sigh signals giving in rather than seeking alarm or urgent action.",
+            "primary_response_function": "Validate the deflation and offer to share the burden",
+            "required_content": [
+              "Acknowledges A's weariness or the effort lost, not just the missing cake",
+              "Offers to take on part of the remedy, such as helping remake, buy, or handle Mia"
+            ],
+            "acceptable_variations": [
+              "Lightly commiserate about the wasted work, then propose an easier fix",
+              "Reassure that the birthday is still salvageable and volunteer to do the legwork"
+            ],
+            "must_avoid": [
+              "Treating the moment as an emergency requiring urgent action or alarm",
+              "Brushing off the lost effort with pure logistics or a cheery 'no big deal'"
+            ],
+            "contrastive_requirement": "Must recognize A's tiredness and lost effort and lighten the load, rather than staying neutral (baseline) or escalating urgency (gasp).",
+            "reference_response": "Five hours, ugh. Don't start over tonight — let me call Mia, and if it's really gone I'll pick something up in the morning.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "gasp",
+            "contextual_interpretation": "A is startled, just realizing Mia drove off with the entire cake; the gasp flags a newly registered problem needing immediate attention.",
+            "primary_response_function": "Match urgency and help resolve it now",
+            "required_content": [
+              "Treats the realization as fresh and time-sensitive, e.g. catching Mia before she gets far",
+              "Pushes toward immediate action or a quick explanation, such as calling or texting her right now"
+            ],
+            "acceptable_variations": [
+              "Assume an honest mix-up and urge contacting Mia immediately to get it back",
+              "Offer to act at once, like calling her or going after her, before discussing replacements"
+            ],
+            "must_avoid": [
+              "Responding with resigned acceptance or moving straight to baking a replacement",
+              "Escalating into blaming or accusing Mia rather than resolving the mix-up"
+            ],
+            "contrastive_requirement": "Must carry immediacy and shared surprise about intercepting Mia now, unlike the resigned burden-sharing after a sigh or the flat baseline.",
+            "reference_response": "She just left? Call her right now, she can't be far — it was probably the wrong box in the fridge.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_06a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_06a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:49:34+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Daughter is cooperative and matter-of-fact about a scheduled dental visit; the exchange is practical logistics with no marked emotional display.",
+            "primary_response_function": "Acknowledging plans and offering practical support",
+            "required_content": [
+              "Refers to the imminent dentist trip or the broken tooth",
+              "Offers practical help, a well-wish, or a light readiness remark"
+            ],
+            "acceptable_variations": [
+              "Offer to come along or hold the door while they head out",
+              "Ask a practical question about timing, the appointment, or the drive"
+            ],
+            "must_avoid": [
+              "Attributing dread, reluctance, or acute pain not present in the words",
+              "Ignoring the imminent departure and starting an unrelated topic"
+            ],
+            "contrastive_requirement": "Stays emotionally neutral and logistics-focused, without treating the daughter as reluctant or as currently hurting.",
+            "reference_response": "Three o'clock, right? Go get your shoes, I'll ride along if you want the company.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "contextual_interpretation": "Daughter reluctantly accepts an unwanted dentist trip; the sigh signals resignation and mild dread while still conceding compliance.",
+            "primary_response_function": "Validating reluctance and lightly encouraging",
+            "required_content": [
+              "Recognizes that she doesn't want to go but is going anyway",
+              "Offers encouragement, companionship, or a reason it will be manageable"
+            ],
+            "acceptable_variations": [
+              "Commiserate about disliking dentists, then nudge her out the door",
+              "Propose something to look forward to afterward, like a stop on the way home"
+            ],
+            "must_avoid": [
+              "Treating the sigh as acute physical pain requiring urgent care",
+              "Scolding her for the attitude or lecturing about dental hygiene"
+            ],
+            "contrastive_requirement": "Addresses unwillingness and dread about the appointment rather than her physical comfort or a neutral logistics update.",
+            "reference_response": "Yeah, nobody's idea of a fun afternoon. Want me to come sit in the waiting room with you?",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "contextual_interpretation": "Daughter is in physical discomfort from the broken tooth; the groan signals pain and implicitly requests care while she still complies.",
+            "primary_response_function": "Checking on pain and offering relief",
+            "required_content": [
+              "Registers that she is hurting right now",
+              "Checks on or offers something that eases the pain before or during the trip"
+            ],
+            "acceptable_variations": [
+              "Ask how bad it hurts and whether she can wait until three",
+              "Offer concrete relief such as the ice pack, medication, or driving them there"
+            ],
+            "must_avoid": [
+              "Framing it as mere reluctance or dislike of the dentist",
+              "Rushing her out with logistics while ignoring the pain"
+            ],
+            "contrastive_requirement": "Centers her current bodily pain and relief, unlike the reluctance framing of condition_a or the neutral logistics of baseline.",
+            "reference_response": "Ouch, is it throbbing? Grab the ice pack now instead of the car, and I'll get your shoes.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_06b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_06b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:50:42+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Both are handling a sick-pet problem practically; B gives clinic information and A agrees to go, with no marked affect.",
+            "primary_response_function": "Supporting and advancing the practical plan",
+            "required_content": [
+              "Engages with getting Milo to the clinic before it closes",
+              "Contributes something useful: help, a next step, or relevant information"
+            ],
+            "acceptable_variations": [
+              "Offer to drive along or handle the carrier",
+              "Ask a practical question about symptoms or timing"
+            ],
+            "must_avoid": [
+              "Attributing strong distress or exhaustion to B that the words do not show",
+              "Topical pet chatter that ignores the in-progress clinic plan"
+            ],
+            "contrastive_requirement": "Stays situation-focused with no attention to B's emotional or physical state, since nothing in the words marks either.",
+            "reference_response": "Good, Oak Street's quick. Want me to meet you there so someone can hold him while you park?",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "contextual_interpretation": "B is worried and worn down by Milo's condition; the sigh registers the burden while B still pushes toward a practical solution.",
+            "primary_response_function": "Acknowledging strain while keeping plan moving",
+            "required_content": [
+              "Recognizes that this is weighing on or tiring B",
+              "Reinforces or helps carry out the clinic plan rather than stalling it"
+            ],
+            "acceptable_variations": [
+              "Offer to take over a task, such as calling the clinic",
+              "Voice steady reassurance that Milo will be seen in time"
+            ],
+            "must_avoid": [
+              "Treating B as physically unwell or in immediate danger",
+              "Responding purely logistically as if B showed no weariness"
+            ],
+            "contrastive_requirement": "Unlike baseline it registers B's weariness, and unlike condition_b that weariness is about the situation, not B's own body.",
+            "reference_response": "I know, it's been a long stretch with him. Let me make the call so you can just breathe for a second.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "contextual_interpretation": "B reacts bodily—either physical discomfort or sharp dismay at the news—yet pushes through to give clinic instructions.",
+            "primary_response_function": "Checking on B, then offering to help",
+            "required_content": [
+              "Checks on B's own condition or whether something is wrong with B",
+              "Offers to absorb part of the task so B need not manage it alone"
+            ],
+            "acceptable_variations": [
+              "Ask directly whether B is hurt or unwell",
+              "Take over the clinic call or ride and tell B to sit down"
+            ],
+            "must_avoid": [
+              "Attending only to the dog and never to B's state",
+              "Analytically labeling the groan or diagnosing B clinically"
+            ],
+            "contrastive_requirement": "Uniquely turns attention to B's own wellbeing rather than only the situation, treating B as possibly needing care too.",
+            "reference_response": "Whoa, are you okay? You sound rough. I'll ring the clinic and check in on Milo—just stay put.",
+            "ambiguity_flag": true,
+            "ambiguity_note": "The groan supports two incompatible readings—physical pain in B, or acute dismay at hearing Milo is sick—and the lexical turn (practical clinic instructions) disambiguates neither."
+          }
+        ],
+        "item_level_review_note": "The sigh/groan contrast is usable but the intended pain framing for condition_b is weakly supported: nothing in the transcript indicates B is physically unwell, so the groan reads most naturally as dismay about the dog, which risks collapsing into condition_a's resignation. The contrast currently rests on B-directed concern (condition_b) versus situation-directed acknowledgment (condition_a). Recommend review: either add a lexical cue that B is physically hurting, or relabel condition_b's target emotion as dismay and rewrite its rubric accordingly."
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_07a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_07a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:51:40+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_07a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_07a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Speaker A has a practical, moderately urgent need and is stating a logistical constraint, inviting problem-solving from the group.",
+            "primary_response_function": "Offering help with the practical bathroom problem",
+            "required_content": [
+              "Treats finding a bathroom soon as the immediate shared task",
+              "Supports or extends the café suggestion, or names another concrete option"
+            ],
+            "acceptable_variations": [
+              "Endorse the café plan and add a small practical detail, like buying something to use the restroom",
+              "Propose a different nearby option, such as a shop or gas station"
+            ],
+            "must_avoid": [
+              "Attributing strong panic, distress, or defeat that the words alone do not support",
+              "Chatting about the walk or park while ignoring the bathroom need"
+            ],
+            "contrastive_requirement": "Stays matter-of-fact and logistical, without commiserating over frustration or matching an escalated, urgent outburst.",
+            "reference_response": "Café's a good call. Just order a coffee at the counter and they'll hand you the key.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "contextual_interpretation": "A is uncomfortable and resigned about bad luck with the locked restroom; the sigh invites commiseration alongside continued problem-solving.",
+            "primary_response_function": "Acknowledging the frustration while helping practically",
+            "required_content": [
+              "Registers that the situation is annoying or unlucky for A",
+              "Still moves toward a concrete bathroom solution rather than only sympathizing"
+            ],
+            "acceptable_variations": [
+              "Light commiseration about locked park restrooms, then back the café plan",
+              "Reassure that the café is close and quick, so the wait is nearly over"
+            ],
+            "must_avoid": [
+              "Purely logistical reply that ignores A's evident exasperation",
+              "Treating A as frightened or in an emergency, or over-dramatizing the discomfort"
+            ],
+            "contrastive_requirement": "Unlike baseline, it explicitly acknowledges A's weary frustration; unlike condition_b, it does not respond to alarm or heightened urgency.",
+            "reference_response": "Ugh, of course it's locked. Café's right there though, come on, we'll be inside in one minute.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "contextual_interpretation": "A's discomfort spikes into an alarmed, possibly hyperbolic outburst; the scream escalates urgency and demands immediate response from companions.",
+            "primary_response_function": "Responding to escalated urgency and de-escalating",
+            "required_content": [
+              "Treats the need as urgent right now, prioritizing speed over deliberation",
+              "Responds to A's outburst with steadying reassurance rather than ignoring it"
+            ],
+            "acceptable_variations": [
+              "Quickly confirm A is okay, then hurry them straight to the café",
+              "Calmly take charge of the plan so A does not have to negotiate or explain"
+            ],
+            "must_avoid": [
+              "Carrying on with an unhurried, casual pace as if nothing changed",
+              "Mocking or scolding the outburst, or analyzing why A screamed"
+            ],
+            "contrastive_requirement": "Only this condition responds to a sudden spike in urgency with immediate, take-charge steadying rather than calm logistics or weary commiseration.",
+            "reference_response": "Okay okay, you're fine, go, straight across, I'll deal with the café people.",
+            "ambiguity_flag": true,
+            "ambiguity_note": "The scream could be genuine alarm or comic hyperbole about bathroom desperation; responses treating it either as real distress or as exaggerated urgency are both defensible, though neither should imply external danger."
+          }
+        ],
+        "item_level_review_note": "Contrast is usable but asymmetric: a scream in a bathroom-urgency context reads as hyperbolic desperation more than fear of harm, so condition_b should not be judged for safety-threat handling. Consider a milder alarm vocalization if literal fear framing is required."
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_07b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_07b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:52:42+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_07b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_07b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "A reports the recurring tapping starting again as a live, unexplained event; the turn is informational rather than emotionally marked.",
+            "primary_response_function": "Acknowledging and practically engaging with the unresolved noise",
+            "required_content": [
+              "Treats the tapping as a real, still-unidentified recurring noise worth figuring out",
+              "Engages with B's plan to check the yard, e.g. joining, waiting, or coordinating"
+            ],
+            "acceptable_variations": [
+              "Offer to go outside with B instead of letting them check alone",
+              "Propose a concrete way to identify the cause, such as looking at the tree or window"
+            ],
+            "must_avoid": [
+              "Attributing strong fear or exhaustion to A that the words do not support",
+              "Ignoring the fact that the sound is happening right now"
+            ],
+            "contrastive_requirement": "Should stay emotionally neutral and problem-focused, neither comforting alarm nor commiserating about worn-down fatigue.",
+            "reference_response": "Wait, it's doing it right now? I'll come out with you — let's see if it's that branch by the window.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "sigh",
+            "contextual_interpretation": "A sounds worn down by the repeated disruption; the sigh signals weary resignation and invites shared frustration, not alarm.",
+            "primary_response_function": "Validating fatigue and pushing toward resolution",
+            "required_content": [
+              "Recognizes that the repetition and lost sleep are wearing A down",
+              "Moves toward actually settling the cause or helping so it stops recurring"
+            ],
+            "acceptable_variations": [
+              "Commiserate about the nightly disruption and offer to help check tonight",
+              "Suggest a durable fix, like trimming what's outside or swapping rooms for a night"
+            ],
+            "must_avoid": [
+              "Treating the moment as an emergency or frightening event",
+              "Brushing off the tapping as trivial or telling A it's nothing to mind"
+            ],
+            "contrastive_requirement": "Must address accumulated annoyance and sleep loss rather than immediate safety or emotional comfort, unlike the fear condition.",
+            "reference_response": "Every single night, seriously? Okay, I'm coming with you — let's actually find it this time so you can sleep.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "contextual_interpretation": "A is startled and frightened by the sound resuming; the scream calls for protection and reassurance from those present.",
+            "primary_response_function": "Checking on A, reassuring, and managing safety",
+            "required_content": [
+              "Attends to A's fright directly, checking on or steadying them",
+              "Addresses safety of the situation, e.g. staying with A or not letting B check alone"
+            ],
+            "acceptable_variations": [
+              "Stay with A and calm them while B investigates",
+              "Slow the plan down — suggest looking together, turning on lights, or calling someone"
+            ],
+            "must_avoid": [
+              "Dismissing or mocking A's fear, or calling the reaction an overreaction",
+              "Treating this as mere irritation or a routine annoyance"
+            ],
+            "contrastive_requirement": "Must respond to acute fright and safety in the moment, rather than shared weariness or neutral problem-solving.",
+            "reference_response": "Hey, you're okay — I've got you. Don't go out there by yourself, we'll turn the lights on and look together.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_08a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_08a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:53:29+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_08a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_08a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "B reports two problems matter-of-factly; the turn functions as informing, leaving physical and food complaints equally weighted.",
+            "primary_response_function": "Acknowledging and supporting practical handling",
+            "required_content": [
+              "Registers that the salad is unacceptable and shouldn't be eaten",
+              "Aligns with the plan to raise it with the server or restaurant"
+            ],
+            "acceptable_variations": [
+              "Focus on the bill and getting the dish removed or replaced",
+              "Light shared complaint about the restaurant, plus offering to flag staff"
+            ],
+            "must_avoid": [
+              "Attributing strong shock or acute pain not present in the transcript",
+              "Dismissing the hair or telling B to keep eating"
+            ],
+            "contrastive_requirement": "Should stay evenly balanced between the lip and the hair, without foregrounding shock or bodily pain as the salient issue.",
+            "reference_response": "Thirty dollars for that? Yeah, don't touch it. Let's get the server over and have it taken off the bill.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "contextual_interpretation": "B is startled by the discovery; the gasp marks the hair as a shocking find and invites shared alarm.",
+            "primary_response_function": "Validating shock and escalating the complaint",
+            "required_content": [
+              "Treats the hair as a genuinely shocking, unacceptable discovery",
+              "Supports raising it with the restaurant rather than letting it pass"
+            ],
+            "acceptable_variations": [
+              "Express shared disbelief, then move to getting the dish removed",
+              "Ask what exactly B found, then back the complaint to staff"
+            ],
+            "must_avoid": [
+              "Treating the lip injury as the main problem needing care",
+              "Downplaying the hair as a normal or trivial restaurant occurrence"
+            ],
+            "contrastive_requirement": "Uniquely centers surprise at the discovery and the restaurant's failure, rather than B's bodily discomfort or a neutral report.",
+            "reference_response": "Wait, a hair? In a thirty-dollar salad? Push it away, we're definitely telling someone about this.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "contextual_interpretation": "B is in physical discomfort from the lip; the groan foregrounds pain and invites checking and care.",
+            "primary_response_function": "Checking on injury and offering help",
+            "required_content": [
+              "Attends to B's lip and whether they're hurt or bleeding",
+              "Offers concrete help or relief, such as water, ice, or a napkin"
+            ],
+            "acceptable_variations": [
+              "Ask how bad the cut is before addressing the salad",
+              "Offer something practical for the lip and suggest ordering B something else"
+            ],
+            "must_avoid": [
+              "Skipping past B's physical state straight to the complaint or bill",
+              "Reacting mainly with amusement or disbelief about the hair"
+            ],
+            "contrastive_requirement": "Uniquely prioritizes B's bodily pain and comfort over surprise at the hair or neutral practical handling.",
+            "reference_response": "Ouch, is your lip bleeding? Here, take some cold water. Forget the salad, we'll get you something else.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_08b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_08b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:54:23+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_08b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_08b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "B reports two things flatly—an older-than-expected coin and a pinched finger—with no marked emotional weighting on either.",
+            "primary_response_function": "Acknowledging the find and the minor mishap",
+            "required_content": [
+              "Shows interest in the coin being older or cheaper than expected",
+              "Gives at least passing acknowledgment that B's finger got pinched"
+            ],
+            "acceptable_variations": [
+              "Ask about the date or what the seller charged, then briefly note the finger",
+              "Comment on the lucky bargain and add a light 'careful with that case'"
+            ],
+            "must_avoid": [
+              "Treating the pinch as an emergency or urgent injury",
+              "Reacting with dramatic shock at the coin's age that the transcript does not support"
+            ],
+            "contrastive_requirement": "Should stay evenly balanced and unheightened, neither amplifying the discovery nor foregrounding the injury the way the vocalization conditions require.",
+            "reference_response": "Wait, how old is it? Also, did that case actually get your finger?",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "contextual_interpretation": "B is startled and delighted by the coin's unexpected age; the gasp flags a discovery worth reacting to.",
+            "primary_response_function": "Joining and amplifying the shared excitement",
+            "required_content": [
+              "Registers the coin's age or bargain price as a genuinely surprising find",
+              "Invites more detail about the coin—its date, value, or how B got it so cheap"
+            ],
+            "acceptable_variations": [
+              "React to the luck of the deal and ask what it might actually be worth",
+              "Ask to see the date yourself and marvel at the seller's mistake"
+            ],
+            "must_avoid": [
+              "Redirecting the exchange primarily to the pinched finger or possible injury",
+              "Responding with flat, mild interest that ignores B's heightened reaction"
+            ],
+            "contrastive_requirement": "Unlike the groan and baseline versions, this response must center the excitement of the discovery rather than B's physical discomfort.",
+            "reference_response": "No way—the seller had no idea? Let me see that date. You basically stole it.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "groan",
+            "contextual_interpretation": "B is in real discomfort from the pinched finger; the groan foregrounds the hurt while B keeps talking about the coin.",
+            "primary_response_function": "Checking on the injury and offering help",
+            "required_content": [
+              "Attends to B's pinched finger—checking how bad it is or offering practical help",
+              "Still engages with the coin rather than dropping B's news entirely"
+            ],
+            "acceptable_variations": [
+              "Ask to see the finger and offer ice or a bandage, then look at the coin",
+              "Take the case off B's hands so B can shake it out, while asking about the date"
+            ],
+            "must_avoid": [
+              "Skipping past the injury to gush only about the coin's age or value",
+              "Overreacting as if it were a serious medical emergency requiring intervention"
+            ],
+            "contrastive_requirement": "Unlike the gasp and baseline versions, this response must actively tend to B's pain rather than merely noting it in passing.",
+            "reference_response": "Ouch, let me see that finger—want some ice? Here, I'll hold the case. Now show me this date.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_09a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_09a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:55:24+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_09a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_09a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "A reports being noticed and waved at by her boss off-duty, with no clear stance toward it.",
+            "primary_response_function": "Acknowledging and lightly clarifying A's stance",
+            "required_content": [
+              "Registers that the boss has noticed and greeted A",
+              "Leaves A's feelings about the encounter open or lightly asks about them"
+            ],
+            "acceptable_variations": [
+              "Ask whether A wants to go over or stay put",
+              "Note the wave as friendly and let A decide next steps"
+            ],
+            "must_avoid": [
+              "Attributing strong fear, dread, or panic to A",
+              "Treating the moment as thrilling or shocking news"
+            ],
+            "contrastive_requirement": "Should stay emotionally neutral, neither reacting to a startle nor soothing alarm, since no vocal reaction is present.",
+            "reference_response": "She waved back, that's a good sign. Do you feel like going over, or would you rather just enjoy your drink?",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "contextual_interpretation": "A is caught off guard at being spotted; the gasp marks the moment as startling news and invites a shared reaction.",
+            "primary_response_function": "Acknowledging the surprise and sharing the moment",
+            "required_content": [
+              "Treats being spotted as an unexpected, noteworthy turn",
+              "Responds to the encounter as manageable rather than dangerous"
+            ],
+            "acceptable_variations": [
+              "React with mild amused disbelief at the coincidence",
+              "Match the startle briefly, then nudge A toward saying hi"
+            ],
+            "must_avoid": [
+              "Treating A as frightened or in need of calming",
+              "Ignoring that something surprising just happened"
+            ],
+            "contrastive_requirement": "Unlike baseline it must register a startle, and unlike condition_b it should not treat A as alarmed or needing reassurance.",
+            "reference_response": "Wait, she actually waved? Okay, that's not bad. Wave back and go over in a minute, no big deal.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "contextual_interpretation": "A reacts with sharp alarm at being seen off-duty; the scream escalates the moment and signals dread needing settling.",
+            "primary_response_function": "De-escalating and reassuring, offering help",
+            "required_content": [
+              "Settles A's alarm by lowering the stakes of the encounter",
+              "Offers support or a concrete way through it, such as going over together or waiting"
+            ],
+            "acceptable_variations": [
+              "Reassure that being at a bar off-duty is fine and no problem",
+              "Offer to accompany A or to handle the greeting with her"
+            ],
+            "must_avoid": [
+              "Amplifying the panic or agreeing the situation is disastrous",
+              "Brushing past the outburst with only neutral logistics"
+            ],
+            "contrastive_requirement": "Must actively calm and support A rather than merely noting a surprise, addressing distress the other two conditions do not carry.",
+            "reference_response": "Hey, breathe — you're off the clock, this is allowed. Wave back, and I'll walk over with you whenever you want.",
+            "ambiguity_flag": true,
+            "ambiguity_note": "The scream may be genuine dread about workplace exposure or playful mock-horror; both readings converge on lowering the stakes, but joining the joke versus sincere reassurance are different actions."
+          }
+        ],
+        "item_level_review_note": "Contrast is usable, but a full scream in a quiet bar is socially conspicuous and the mid-clause placement ('looked over and (screams) waved') is awkward; consider moving the tag to turn onset so the reaction clearly attaches to being spotted."
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_09b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_09b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:56:15+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_09b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_09b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "Speaker reports positive feedback plus an imminent call; state reads as briskly informational with mild time pressure, no marked affect.",
+            "primary_response_function": "Acknowledging news and helping meet the deadline",
+            "required_content": [
+              "Registers that the feedback was good news",
+              "Orients to the call happening within minutes"
+            ],
+            "acceptable_variations": [
+              "Brief congratulation plus a practical logistics prompt",
+              "Quick clarifying question about setup or timing before the call"
+            ],
+            "must_avoid": [
+              "Attributing panic, shock, or distress not present in the words",
+              "Dwelling on emotion so long that the five-minute deadline is ignored"
+            ],
+            "contrastive_requirement": "Stays affectively neutral and task-focused, treating the short notice as logistics rather than as something startling or alarming.",
+            "reference_response": "Nice, strong feedback is a great sign. Five minutes though—grab your laptop and check your camera, you're good.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "gasp",
+            "contextual_interpretation": "Speaker is caught off guard by the sudden short notice; gasp marks the news as startling and flags it for the listener.",
+            "primary_response_function": "Sharing surprise and helping act fast",
+            "required_content": [
+              "Treats the five-minute notice as surprisingly sudden",
+              "Frames the development as good or promising news"
+            ],
+            "acceptable_variations": [
+              "Match the surprise, then pivot to quick practical readiness",
+              "Ask an incredulous confirming question about the timing, then encourage them"
+            ],
+            "must_avoid": [
+              "Responding as if nothing notable happened",
+              "Treating the moment as frightening or as a crisis needing calming"
+            ],
+            "contrastive_requirement": "Registers startle at the abruptness without treating the speaker as distressed, unlike the alarm-oriented handling condition_b requires.",
+            "reference_response": "Wait, five minutes? That's no warning at all—but they wouldn't rush it unless they liked you. Go, open the laptop.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "contextual_interpretation": "Speaker is overwhelmed and panicked by the imminent high-stakes call; scream signals distress and implicitly requests steadying help.",
+            "primary_response_function": "De-escalating panic and offering concrete help",
+            "required_content": [
+              "Addresses the speaker's alarm or feeling of being unprepared",
+              "Provides reassurance or concrete support for getting through the next few minutes"
+            ],
+            "acceptable_variations": [
+              "Calm the speaker first, then walk them through one immediate step",
+              "Normalize the nerves and point to the strong feedback as grounds for confidence"
+            ],
+            "must_avoid": [
+              "Ignoring the distress and giving only logistics",
+              "Treating the scream as physical danger or an emergency unrelated to the call"
+            ],
+            "contrastive_requirement": "Must attend to the speaker's distress and regulate it, rather than merely sharing surprise or moving straight to logistics.",
+            "reference_response": "Hey, breathe—you've got this. They loved you enough to call today. Water, laptop open, I'll be right here after.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_10a",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_10a__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:57:04+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_10a__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_10a",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "B is mildly inconvenienced by a snagged foot while finishing packing, treating it as a routine logistical problem needing an extra pair of hands.",
+            "primary_response_function": "Offering practical help with the immediate task",
+            "required_content": [
+              "Acknowledges the stuck foot or the packing situation as the current issue",
+              "Offers concrete assistance, such as moving the suitcase or steadying the chair"
+            ],
+            "acceptable_variations": [
+              "Directly announce taking the suitcase out of the way",
+              "Ask a brief practical question about how B wants to be helped"
+            ],
+            "must_avoid": [
+              "Reacting with alarm or treating this as an injury or emergency",
+              "Ignoring the stuck foot and only commenting on trip or packing plans"
+            ],
+            "contrastive_requirement": "Stays matter-of-fact and task-focused, without attributing pain, distress, or fright to B beyond ordinary awkwardness.",
+            "reference_response": "Here, I've got the suitcase—it's out of your way. Take your time getting that foot loose.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "groan",
+            "contextual_interpretation": "B is in physical discomfort from the trapped or strained foot; the groan signals ongoing pain and implicitly requests relief and help.",
+            "primary_response_function": "Acknowledging discomfort while helping free B",
+            "required_content": [
+              "Registers that B is hurting or physically uncomfortable, not merely inconvenienced",
+              "Contributes to relieving the situation, such as clearing the suitcase or supporting B while the foot comes free"
+            ],
+            "acceptable_variations": [
+              "Briefly check how bad the foot feels while moving the suitcase",
+              "Take over the physical work so B can stop straining"
+            ],
+            "must_avoid": [
+              "Treating the groan as a joke or exaggeration",
+              "Escalating to panic or emergency framing disproportionate to a stuck foot"
+            ],
+            "contrastive_requirement": "Must show awareness of bodily pain and relieving strain, rather than the neutral logistics of baseline or the safety-stabilizing urgency of the scream.",
+            "reference_response": "Ow, that sounds like it's pinching. Suitcase is clear—lean on me and ease that foot out slowly.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "contextual_interpretation": "B was startled or frightened, likely by losing balance with a trapped foot; the scream calls for immediate attention and stabilization.",
+            "primary_response_function": "Checking safety and steadying the situation",
+            "required_content": [
+              "Checks that B is okay or unhurt after the startle, or explicitly steadies them",
+              "Prioritizes B not moving or falling until they are secure, including clearing the suitcase"
+            ],
+            "acceptable_variations": [
+              "Ask directly whether B is alright while grabbing the chair or B's arm",
+              "Calmly instruct B to hold still and wait while the obstacle is removed"
+            ],
+            "must_avoid": [
+              "Laughing at the scream or dismissing it as an overreaction",
+              "Amplifying panic without doing anything to make B safe"
+            ],
+            "contrastive_requirement": "Must include a safety or reassurance element responding to a frightening moment, unlike baseline's routine help or condition A's focus on pain.",
+            "reference_response": "Whoa—you okay? Don't move, I've got the chair. Suitcase is gone, so step down whenever you're steady.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260902T073936Z",
+      "item_id": "v6_10b",
+      "condition": "all",
+      "task_type": "content_rubric",
+      "task_id": "v6_10b__all__content_rubric",
+      "stimulus_audio_path": "",
+      "prompt_version": "content_rubric_writer@f90041e33e00",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-02T07:58:04+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_10b__content_rubric__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_10b",
+        "rubrics": [
+          {
+            "condition": "baseline",
+            "vocalization": "none",
+            "contextual_interpretation": "B narrowly reached the rim but slipped on landing; the report is matter-of-fact, treating footing as a practical problem to solve.",
+            "primary_response_function": "Acknowledging progress and addressing the footing problem",
+            "required_content": [
+              "Registers that B got up to the rim as real progress",
+              "Engages the practical slipping/footing issue or the decision about trying again"
+            ],
+            "acceptable_variations": [
+              "Praise the jump, then suggest checking shoes or the floor before another attempt",
+              "Ask whether B wants another try now or a break, treating it as a normal setback"
+            ],
+            "must_avoid": [
+              "Assuming B is injured, frightened, or in pain",
+              "Generic encouragement that ignores both the near-dunk and the slip"
+            ],
+            "contrastive_requirement": "Should stay practical and achievement-focused, with no inference of pain or fright beyond ordinary caution about the slip.",
+            "reference_response": "Wait, you actually touched the rim? Okay, but those shoes are done—let's check the tread before you go again.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_a",
+            "vocalization": "groan",
+            "contextual_interpretation": "B likely hurt something landing badly; the groan signals bodily pain and implicitly asks others to notice and pause the activity.",
+            "primary_response_function": "Checking injury and offering practical help",
+            "required_content": [
+              "Attends to whether and where B is physically hurt",
+              "Treats another attempt as contingent on B's body, not urgent"
+            ],
+            "acceptable_variations": [
+              "Ask directly about the ankle/knee/landing and offer ice, a seat, or a look at it",
+              "Advise stopping or resting for now while asking how bad it feels"
+            ],
+            "must_avoid": [
+              "Cheering B on to jump again without addressing the possible injury",
+              "Narrating or interpreting the groan instead of responding to B"
+            ],
+            "contrastive_requirement": "Unlike baseline and the scream version, this must center bodily pain and possible injury, not just a scare or footing.",
+            "reference_response": "Hey, sit down for a sec—what hurts, the ankle? Don't put weight on it yet, let me look.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          },
+          {
+            "condition": "condition_b",
+            "vocalization": "scream",
+            "contextual_interpretation": "B was frightened by an out-of-control landing; the scream marks a startling near-miss and calls for reassurance rather than pain care.",
+            "primary_response_function": "Calming and reassuring after a scare",
+            "required_content": [
+              "Acknowledges the fall was frightening or a close call",
+              "Reassures or steadies B, including confirming they are safe now"
+            ],
+            "acceptable_variations": [
+              "Name how scary that looked and tell B to take a moment before deciding anything",
+              "Downplay danger gently while confirming B is safe and the area is being cleared"
+            ],
+            "must_avoid": [
+              "Laughing off or mocking the scream as overreaction",
+              "Pushing B to immediately try again while they are still shaken"
+            ],
+            "contrastive_requirement": "Must address fright and safety in the moment rather than injury treatment, and must not read as celebration or pain triage.",
+            "reference_response": "Whoa, that looked terrifying—you're fine, ball's out of the way. Take a breath before you even think about jumping again.",
+            "ambiguity_flag": false,
+            "ambiguity_note": ""
+          }
+        ],
+        "item_level_review_note": "Contrast is workable but partly overlapping: both non-baseline conditions license a welfare check, so the distinction rests on emphasis (bodily pain vs. fright/safety). A scream at landing could also read as sudden pain; judges should accept fright-centered responses that briefly ask if B is hurt."
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    }
+  ]
+}
