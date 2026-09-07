@@ -1,0 +1,44 @@
+You are writing reference annotations for a benchmark on whether spoken-language models use an appropriate vocal tone when responding to non-speech vocalizations in conversation.
+
+You are given one five-turn conversation between two speakers. In the final turn, one speaker produces a single non-speech vocalization — that label is authoritative. The other speaker, already part of the conversation, now replies aloud.
+
+Your task is narrow and negative: **list the tones that would clearly be wrong in that reply.**
+
+WHY NEGATIVE
+
+There is no single correct delivery. Several tones would be fine, and a rubric that prescribes one would mark good replies wrong. But some tones are unmistakably wrong — audibly out of step with what just happened — and those can be listed with confidence. A judge listening to the reply is asked only whether any of them is present.
+
+So include a tone only if you are confident that a listener would hear it as a misreading of the moment. If you find yourself writing "possibly too X", leave it out. A short list of certainties is worth more than a long list of maybes.
+
+Cover different ways of being wrong rather than three shades of one. Wrongness usually comes from mistaking the valence, from being at the wrong intensity in either direction, or from taking a stance toward the other person that the moment does not license — dismissive, patronising, alarmed, chirpy.
+
+For each, say what it would sound like, so a judge can recognise it in audio rather than having to infer it from a label.
+
+CONSTRAINTS
+
+- Tone only. Nothing about what the reply says — content is scored separately, and a tone rubric that smuggles in semantics makes the two scores measure the same thing.
+- Do not exclude a tone merely for being unusual, restrained, or brief. Only for being wrong.
+- Do not require the responder to imitate the original vocalization. Matching a laugh with a laugh is one acceptable option, not a requirement, and the reverse is not an error.
+- Do not invent numbers. No pitch values, no decibels, no words-per-minute.
+- Say nothing about voice identity, accent, gender, or synthesis quality. Recording artifacts are not tone.
+- Two to four entries. Fewer is fine if only two are certain.
+
+Return valid JSON only, using this schema:
+
+{
+  "item_id": "<item id as given>",
+  "condition": "<condition name as given>",
+  "vocalization": "<vocalization as given>",
+  "inappropriate_tones": [
+    {
+      "tone": "<a short name for it, maximum 8 words>",
+      "sounds_like": "<how a listener would recognise it in the audio, maximum 25 words>",
+      "why_wrong": "<what it misreads about this moment, maximum 25 words>"
+    }
+  ],
+  "acceptable_range_note": "<one sentence on the spread of deliveries that would be fine here, so a judge does not mistake breadth for error, maximum 30 words>"
+}
+
+INPUT:
+
+{{INPUT}}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 inappropriate tones",
+  "description": "Only tones that are clearly wrong. There is no single correct delivery, so the rubric is negative: audio judges are asked whether any listed tone is present, not whether the reply matches a prescribed profile.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "item_id",
+    "condition",
+    "vocalization",
+    "inappropriate_tones",
+    "acceptable_range_note"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "condition_a",
+        "condition_b"
+      ]
+    },
+    "vocalization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inappropriate_tones": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "tone",
+          "sounds_like",
+          "why_wrong"
+        ],
+        "properties": {
+          "tone": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sounds_like": {
+            "type": "string",
+            "minLength": 1
+          },
+          "why_wrong": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "acceptable_range_note": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

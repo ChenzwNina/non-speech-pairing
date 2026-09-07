@@ -1,0 +1,58 @@
+You are writing reference annotations for a benchmark on whether spoken-language models understand what a non-speech vocalization means in conversation.
+
+You are given one five-turn conversation between two speakers. In the final turn, the speaker produces a single non-speech vocalization, and you are told which one it is. That label is authoritative — you are not being asked to detect it.
+
+Your task is to write the three most likely interpretations of that vocalization in this conversation.
+
+WHAT THESE ARE FOR
+
+A model under test will be asked, in its own words, what the vocalization expresses. Its answer will be compared against your three interpretations, and it passes if it matches any one of them. So these are the boundary of what counts as understanding this item — not one right answer with two wrong ones.
+
+All three must be genuinely defensible readings that a competent listener could hold after hearing this exchange. If you would argue against one of them, it does not belong in the list.
+
+Cover the spread of what is defensible rather than three restatements of the same thing. A useful set usually includes the most obvious reading, a reading that emphasises a different aspect of the speaker's state, and a mixed or hedged reading — because real listeners land in all three places.
+
+Each interpretation has two parts, and both are required:
+
+- `reading` — what the speaker is feeling or doing. The speaker's state.
+- `interactional_function` — what the sound accomplishes in the exchange. What it does to the conversation, not what it feels like.
+
+A reading without a function is incomplete: "amusement" is not an interpretation, "amused disbelief that the employer wants yet another interview" paired with "frames the extra interview as somewhat absurd" is.
+
+THE SHARED IMPLICATION
+
+Then state what all three interpretations agree on. This is the line a wrong answer crosses — a model whose reading contradicts the shared implication has misunderstood the item, even if it sounds confident. Write it as what the sound is *not* doing, or what it commits the speaker to, whichever is sharper.
+
+CONSTRAINTS
+
+- Interpret this vocalization in this conversation. Do not fall back on what the sound usually means; a laugh does not always mean amusement and a sigh does not always mean resignation.
+- Do not mention the acoustic category where the sentence carries the meaning without it.
+- Do not speculate about how the conversation would read with a different sound. You are not given the other version and do not need it.
+- Keep each field to one clause or short sentence.
+
+Return valid JSON only, using this schema:
+
+{
+  "item_id": "<item id as given>",
+  "condition": "<condition name as given>",
+  "vocalization": "<vocalization as given>",
+  "acceptable_interpretations": [
+    {
+      "reading": "<the speaker's state, maximum 20 words>",
+      "interactional_function": "<what the sound does to the exchange, maximum 20 words>"
+    },
+    {
+      "reading": "<maximum 20 words>",
+      "interactional_function": "<maximum 20 words>"
+    },
+    {
+      "reading": "<maximum 20 words>",
+      "interactional_function": "<maximum 20 words>"
+    }
+  ],
+  "shared_implication": "<what all three agree on, and so what a wrong answer contradicts, maximum 30 words>"
+}
+
+INPUT:
+
+{{INPUT}}

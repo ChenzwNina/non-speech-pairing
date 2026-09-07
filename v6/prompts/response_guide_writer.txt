@@ -1,0 +1,68 @@
+You are writing reference annotations for a benchmark on whether spoken-language models respond appropriately to non-speech vocalizations in conversation.
+
+You are given one five-turn conversation between two speakers. In the final turn, one speaker produces a single non-speech vocalization — that label is authoritative. You are also given three interpretations of that vocalization, all of which are defensible readings of this exchange.
+
+**The other speaker now replies.** They are already in the conversation, not a third party joining it. They have just heard the sound and the words it came with, and they answer as the person who has been talking all along.
+
+Your task: for each of the three interpretations, write what that reply should accomplish **if that interpretation is the right one**.
+
+WHY IT IS PER INTERPRETATION
+
+A model under test will say what it thinks the vocalization means, and its reply will then be scored against the guide for whichever interpretation it actually held. A model that reads the sound differently from the most obvious reading should not be penalised for replying consistently with its own defensible reading — it should be scored on whether the reply follows from it.
+
+So the three guides must genuinely differ. If replying under interpretation 1 and interpretation 3 would call for the same thing, say so in `note` rather than inventing a difference.
+
+WHAT A GUIDE CONTAINS
+
+- `response_function` — the main conversational action the reply should perform: acknowledging, joining the humour, checking whether they are all right, offering help, reassuring, conceding, pressing for detail, and so on.
+- `required_content` — exactly two short, independently checkable things the reply should convey. Meanings, not wordings.
+- `must_avoid` — exactly two ways a reply would go wrong under this interpretation specifically.
+- `example` — one brief natural reply, for human inspection only. Judges are told never to require similarity to it.
+
+CONSTRAINTS
+
+- Describe what the reply should do, not how it should sound. Delivery is scored separately.
+- Do not require particular words or phrases. Several natural replies should satisfy any one guide.
+- The reply addresses the conversation. It does not analyse the sound out loud — "you sound relieved" is a bad reply, not a good one.
+- It should sound like the person who has been in this conversation, not a therapist, an interviewer, or a customer-service agent.
+- Do not reward a reply merely for being on topic.
+- Where the speaker may be hurt, frightened or in distress, the right reply does not have to mirror that. It may steady the situation instead — checking, calming, offering something concrete.
+
+Return valid JSON only, using this schema:
+
+{
+  "item_id": "<item id as given>",
+  "condition": "<condition name as given>",
+  "vocalization": "<vocalization as given>",
+  "responder": "<the speaker who replies, as given>",
+  "guides": [
+    {
+      "interpretation_index": 1,
+      "response_function": "<maximum 12 words>",
+      "required_content": ["<maximum 20 words>", "<maximum 20 words>"],
+      "must_avoid": ["<maximum 20 words>", "<maximum 20 words>"],
+      "example": "<maximum 30 words>",
+      "note": ""
+    },
+    {
+      "interpretation_index": 2,
+      "response_function": "<maximum 12 words>",
+      "required_content": ["<maximum 20 words>", "<maximum 20 words>"],
+      "must_avoid": ["<maximum 20 words>", "<maximum 20 words>"],
+      "example": "<maximum 30 words>",
+      "note": ""
+    },
+    {
+      "interpretation_index": 3,
+      "response_function": "<maximum 12 words>",
+      "required_content": ["<maximum 20 words>", "<maximum 20 words>"],
+      "must_avoid": ["<maximum 20 words>", "<maximum 20 words>"],
+      "example": "<maximum 30 words>",
+      "note": ""
+    }
+  ]
+}
+
+INPUT:
+
+{{INPUT}}

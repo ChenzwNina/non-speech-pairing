@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 acceptable interpretations",
+  "description": "Three defensible readings of one vocalization in one conversation — not one right answer with two distractors. A model under test answers in its own words and passes if it matches any of them, so this set is the boundary of what counts as understanding the item. `shared_implication` is the line a wrong answer crosses.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "item_id",
+    "condition",
+    "vocalization",
+    "acceptable_interpretations",
+    "shared_implication"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "condition_a",
+        "condition_b"
+      ]
+    },
+    "vocalization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "acceptable_interpretations": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "reading",
+          "interactional_function"
+        ],
+        "properties": {
+          "reading": {
+            "type": "string",
+            "minLength": 1,
+            "description": "the speaker's state"
+          },
+          "interactional_function": {
+            "type": "string",
+            "minLength": 1,
+            "description": "what the sound does to the exchange"
+          }
+        }
+      }
+    },
+    "shared_implication": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

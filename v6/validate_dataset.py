@@ -26,8 +26,11 @@ from pathlib import Path
 import evalkit as K
 
 PAREN = re.compile(r"\([^)]*\)")
-TURNS = 4
-EXPECTED_SPEAKERS = ["A", "B"] * (TURNS // 2)
+
+
+def speakers_for(turns: int) -> list[str]:
+    """A-B-A-B… for however many turns the dataset has."""
+    return [("A", "B")[n % 2] for n in range(turns)]
 
 
 def approved_tags() -> dict[str, str]:
@@ -50,11 +53,15 @@ def parentheticals(turns: list[dict]) -> list[tuple[int, str]]:
 
 
 def check_item(item: dict, tags: dict[str, str], config: dict,
-               audio_required: bool, which: list[str] | None = None
-               ) -> tuple[list[str], list[str]]:
+               audio_required: bool, which: list[str] | None = None,
+               turns_expected: int | None = None) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     notes: list[str] = []
     item_id = item.get("item_id")
+    # The turn count is a property of the dataset, not of this file: v6 moved from four turns
+    # to five when the vocalization moved to the final turn.
+    TURNS = turns_expected or len(item.get("baseline", {}).get("turns", []))
+    EXPECTED_SPEAKERS = speakers_for(TURNS)
 
     # 2 — all three conditions exist
     missing = [c for c in K.CONDITIONS if not isinstance(item.get(c), dict)
@@ -189,6 +196,7 @@ def main() -> int:
         return 2
 
     tags = approved_tags()
+    turns_expected = source.get("turns")
     if args.item_id:
         items = [i for i in items if i.get("item_id") in set(args.item_id)]
         if not items:
@@ -208,13 +216,15 @@ def main() -> int:
 
     reports, bad, noted = [], 0, 0
     for item in items:
-        errors, notes = check_item(item, tags, config, args.require_audio, args.renderer)
+        errors, notes = check_item(item, tags, config, args.require_audio, args.renderer,
+                                   turns_expected)
         reports.append({"item_id": item.get("item_id"), "errors": errors, "notes": notes,
                         "ok": not errors})
         bad += bool(errors)
         noted += bool(notes)
 
     payload = {"checked_at": K.now(), "transcripts": config["dataset"]["transcripts"],
+               "turns_expected": turns_expected,
                "renderers": args.renderer or sorted(K.renderers(config)),
                "require_audio": args.require_audio,
                "items_checked": len(reports), "items_with_errors": bad,

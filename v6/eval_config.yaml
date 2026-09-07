@@ -9,7 +9,7 @@
 dataset:
   # The transcripts the VM rendered the audio from. The eval is keyed to this file; pointing it
   # at pairs.json would score audio against text that was never spoken.
-  transcripts: out/pairs_spoken.json
+  transcripts: out/transcripts.json
 
   # Two renderers speak the same 20 transcripts, and they are being compared, so the renderer
   # is an experimental factor rather than a detail: each owns a subtree, every record stamps

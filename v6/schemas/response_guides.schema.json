@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 response guides, one per interpretation",
+  "description": "What the other speaker's reply should accomplish under each interpretation. A model is scored against the guide for the reading it actually held, so a defensible minority reading is judged on whether the reply follows from it rather than against the most obvious reading.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "item_id",
+    "condition",
+    "vocalization",
+    "responder",
+    "guides"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "condition_a",
+        "condition_b"
+      ]
+    },
+    "vocalization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "responder": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B"
+      ]
+    },
+    "guides": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "interpretation_index",
+          "response_function",
+          "required_content",
+          "must_avoid",
+          "example",
+          "note"
+        ],
+        "properties": {
+          "interpretation_index": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3
+            ]
+          },
+          "response_function": {
+            "type": "string",
+            "minLength": 1
+          },
+          "required_content": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "two checkable meanings"
+          },
+          "must_avoid": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "two ways it goes wrong under this reading"
+          },
+          "example": {
+            "type": "string",
+            "minLength": 1,
+            "description": "human inspection only; never a similarity target"
+          },
+          "note": {
+            "type": "string",
+            "description": "non-empty when this guide barely differs from another"
+          }
+        }
+      }
+    }
+  }
+}
