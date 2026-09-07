@@ -15,8 +15,7 @@ WORDS = ["The kids are asking to go back to the giraffes.",
 SPEAKERS = ["A", "B", "A", "B"]
 VOC_TURN = 2
 
-TAGS = {"laugh": "(laughs)", "sigh": "(sighs)", "gasp": "(gasps)",
-        "groan": "(groans)", "scream": "(screams)"}
+TAGS = {"laugh": "(laughs)", "sigh": "(sighs)", "gasp": "(gasps)", "groan": "(groans)"}
 
 
 def version(tag: str | None, vocalization: str, emotion: str) -> dict:
@@ -79,9 +78,9 @@ def config(audio_root: str = "out/audio-does-not-exist") -> dict:
 def mc_task(task_id: str, item_id: str, condition: str, correct_label: str,
             correct_option: str = "A") -> dict:
     others = iter([l for l in ("laugh", "sigh", "gasp", "groan", "none")
-                   if l != correct_label][:3])
+                   if l != correct_label])
     options = []
-    for option_id in "ABCD":
+    for option_id in "ABCDE":
         label = correct_label if option_id == correct_option else next(others)
         options.append({"id": option_id, "label": label, "text": label})
     return {"task_id": task_id, "item_id": item_id, "condition": condition,

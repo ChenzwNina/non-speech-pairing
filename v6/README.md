@@ -104,15 +104,12 @@ in the baseline are therefore true by construction rather than things a validato
 What is checked is the one thing construction cannot guarantee: that the marker sits at a
 sentence boundary and not inside a clause.
 
-[archived/](archived/) holds the two pipelines this replaced, with a note on what each got wrong.
-`out/transcripts_tag_at_end.json` and `out/transcripts_v2_placement.json` are the intermediate
-attempts, kept because the progression is the argument for the current design.
+[archived/](archived/) holds everything this replaced — two transcript pipelines, the first
+evaluation design, the retired dataset's audio, and the data all of them produced — with a note
+on what each got wrong. The progression is the argument for the current design, so it is kept
+rather than deleted.
 
 ## The audio
-
-> **The takes in git are for the retired 20-item dataset.** They were rendered from
-> `out/pairs_spoken.json`, which the three-stage pipeline replaced. The layout, settings and
-> reassembly recipe below all still apply; the 24 new items have not been rendered.
 
 [make_audio.py](make_audio.py) renders with ElevenLabs `eleven_v3`. **This stage renders and
 records what it rendered. It makes no judgement about the result** — whether a tag actually
@@ -205,11 +202,19 @@ heard none — which is what v3 found — and an average would hide exactly that
 | [eval_config.yaml](eval_config.yaml) | models, judges, seeds, renderers. Credentials never live here |
 | [evalkit.py](evalkit.py) | config, provenance, records, schemas, seeded draws, the dry-run guard |
 | [validate_dataset.py](validate_dataset.py) | twelve checks on the source before anything is built on it |
-| [build_tasks.py](build_tasks.py) | freezes the multiple-choice option sets |
-| [write_rubrics.py](write_rubrics.py) · [write_pragmatic.py](write_pragmatic.py) | the reference annotations |
-| [build_pairs.py](build_pairs.py) | the two directed paired-content trials per item |
+| [build_tasks.py](build_tasks.py) | freezes the perception option sets |
+| [write_annotations.py](write_annotations.py) | the three reference annotations, one call per item and condition |
+| [build_pairs.py](build_pairs.py) | the directed paired-content trials |
 | [score.py](score.py) | the metrics, with intervals clustered by item |
-| [prompts/](prompts/) · [schemas/](schemas/) · [tests/](tests/) | 9 templates, 4 schemas, 50 tests |
+| [prompts/](prompts/) · [schemas/](schemas/) · [tests/](tests/) | 7 templates, 6 schemas, 69 tests |
+
+The annotations `write_annotations.py` produces, all for the two vocalization conditions only:
+
+| | |
+| --- | --- |
+| `interpretations` | the three defensible readings of this sound here. A model answers in its own words and passes if it matches any — the set is the boundary of understanding, not one right answer |
+| `response_guides` | what the other speaker's reply should accomplish, written once per interpretation, so a model is scored against the reading it actually held |
+| `tone_exclusions` | only the tones that are clearly wrong. Several deliveries are fine, and a prescribed profile would mark good replies wrong |
 
 ```bash
 python3 v6/validate_dataset.py --renderer elevenlabs --require-audio
@@ -240,32 +245,28 @@ and every metric breaks down by it. The frozen questions are renderer-independen
 four options are asked about every rendering — which is what makes the comparison meaningful.
 
 Task sets are written once and never overwritten. Correct-answer positions are balanced
-15/15/15/15 over the 60 stimuli and each of the six perception labels is used as a distractor
-exactly 30 times, both properties of the whole set — so the item set is fingerprinted into the
-task file, and a rebuild says whether it moved.
+15/15/14/14/14 over the 72 stimuli, a property of the whole set — so the item set is
+fingerprinted into the task file, and a rebuild says whether it moved. There are no distractors
+to balance: with four vocalizations plus `none` the whole inventory fits in one question, so
+every question carries every label and only the order varies.
 
 ## What is not settled
 
-- **The eval side is still wired to the retired dataset.** `eval_config.dataset.transcripts`
-  points at `out/pairs_spoken.json`. The ElevenLabs audio, both frozen task sets and the
-  pragmatic options were all built from it, and the perception inventory it froze has six labels
-  where the current one has five. Flipping the config to `out/transcripts.json` invalidates all
-  of them; `items_fingerprint` in each task file is what makes that detectable rather than
-  silent.
-- **Nothing has been rendered for the 24 items.** About 6,800 characters at the old scale.
-- **The rubrics need rewriting.** Prompts, schemas and pipeline are changed to one rubric per
-  condition, written from that condition alone; the annotations have not been regenerated.
-  `out/eval/rubrics/superseded_joint_call/` holds what the old three-at-once design produced.
-- **`groan` splits between two readings.** The planner marked it as needing something to land in
-  the moment 6 times out of 12 — bodily pain needs a physical event in the scene, a stance
-  toward something known does not. Both are legitimate; whether the split is a problem depends
-  on whether the pairs containing it stay distinguishable.
+- **The evaluation runners do not exist yet.** Everything offline is built — validation, the
+  frozen perception set, pair construction, parsing, scoring, 69 tests — but nothing yet asks a
+  model anything. `providers.py` already speaks to all four families over realtime websockets,
+  so what is missing is wiring rather than new machinery.
+- **The annotations have not been run.** Three kinds × 24 items × 2 conditions = 144 Claude
+  calls, unspent. The prompts and schemas are in place and `--dry-run` previews every payload.
+- **`groan` splits between two readings.** The planner marked it as needing something to land
+  in the moment 6 times out of 12 — bodily pain needs a physical event in the scene, a stance
+  toward something known does not. Both are legitimate; whether the split matters depends on
+  whether the pairs containing it stay distinguishable.
 - **Framings still cluster.** Removing the fixed mapping loosened it — laugh went from 12/12
   framed as comic absurdity to 9/12 — but the residue is probably intrinsic, since laughs really
-  do usually mean something is being taken lightly. If the shortcut matters, the fix is the
-  pragmatic distractor design rather than the stimuli: build all four options to share a surface
-  emotion and differ in the specific appraisal, and naming the sound stops being enough.
-- **Dia's paths are assumed.** `out/audio/dia/{item_id}__{condition}.wav` is a placeholder until
-  that render lands. Both renderers are configured; every metric splits `by_renderer`.
-- **Nothing has heard any audio yet.** Whether a tag became a laugh is a listening question and
-  has its own stage waiting to be built.
+  do usually mean something is being taken lightly. The three-interpretation design absorbs some
+  of this: a model is no longer choosing between one right label and three wrong ones.
+- **Dia has not rendered.** `out/audio/dia/{item_id}__{condition}.wav` is a placeholder. Both
+  renderers are configured and every metric splits `by_renderer`.
+- **Nothing has heard any audio.** Whether a tag became a laugh is a listening question with its
+  own stage still to build.

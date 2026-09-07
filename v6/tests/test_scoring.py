@@ -33,10 +33,13 @@ class TestContracts(unittest.TestCase):
                                  {"score": 3.5, "rationale": "x", "unjudgeable": False})
         self.assertTrue(errors)
 
-    def test_option_letters_outside_a_to_d_are_rejected(self):
-        self.assertTrue(K.schema_errors("judge_outputs:mc_answer", {"selected_option": "E"}))
-        self.assertEqual(K.schema_errors("judge_outputs:mc_answer",
-                                         {"selected_option": "C", "confidence": 0.4}), [])
+    def test_option_letters_outside_the_five_are_rejected(self):
+        """Perception is a five-way choice: four vocalizations plus `none`."""
+        self.assertTrue(K.schema_errors("judge_outputs:mc_answer", {"selected_option": "F"}))
+        self.assertTrue(K.schema_errors("judge_outputs:mc_answer", {"selected_option": "a"}))
+        for letter in "ABCDE":
+            self.assertEqual(K.schema_errors("judge_outputs:mc_answer",
+                                             {"selected_option": letter}), [], letter)
 
     def test_confidence_outside_zero_to_one_is_rejected(self):
         self.assertTrue(K.schema_errors("judge_outputs:mc_answer",

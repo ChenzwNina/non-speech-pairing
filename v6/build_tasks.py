@@ -1,4 +1,4 @@
-"""Freeze the multiple-choice tasks: perception options, and pragmatic options once written.
+"""Freeze the perception multiple-choice tasks.
 
 Two properties matter more than they look.
 
@@ -16,12 +16,13 @@ Distractors are drawn from the remaining inventory by lowest use so far, with a 
 tie-break, so no label becomes a stock wrong answer. `none` is balanced like any other label —
 it is a real answer for the baseline stimuli and a real distractor elsewhere.
 
-Pragmatic options come from write_pragmatic.py. If that has not run, the perception tasks are
-still built and the pragmatic ones are reported as pending.
+Pragmatic understanding is no longer multiple choice — a model answers in its own words and
+judges decide whether it matches any of the acceptable interpretations — so nothing is frozen
+for it here.
 
     python v6/build_tasks.py --dry-run
-    python v6/build_tasks.py --seed 20260902
-    python v6/build_tasks.py --item-id v6_01a --task-type perception
+    python v6/build_tasks.py
+    python v6/build_tasks.py --item-id v6_01a
 """
 
 from __future__ import annotations
@@ -35,7 +36,7 @@ from pathlib import Path
 
 import evalkit as K
 
-OPTION_IDS = ("A", "B", "C", "D")
+OPTION_IDS = ("A", "B", "C", "D", "E")
 
 
 def fingerprint(items: list[dict]) -> str:
@@ -52,7 +53,7 @@ def fingerprint(items: list[dict]) -> str:
     return f"sha256:{hashlib.sha256(joined.encode()).hexdigest()[:16]}"
 
 READABLE = {"laugh": "a laugh", "sigh": "a sigh", "gasp": "a gasp", "groan": "a groan",
-            "scream": "a scream", "none": "no non-speech vocalization"}
+            "none": "no non-speech vocalization"}
 
 
 def render(template: str, options: list[dict]) -> str:
@@ -68,61 +69,29 @@ def positions(seed: int, count: int) -> list[str]:
 
 
 def perception_options(items: list[dict], seed: int) -> dict[tuple[str, str], dict]:
-    """Frozen option sets for every stimulus, balanced over the whole dataset."""
+    """Frozen option sets. Every question carries every label; only the order varies.
+
+    There are no distractors to choose. With four vocalizations and `none` the whole inventory
+    fits in one question, so a model cannot be helped or hindered by which wrong answers it was
+    offered — which removes a confound the earlier four-of-six design had to balance away.
+    What still matters is where the correct answer falls, so the positions are spread evenly
+    across the whole set rather than drawn independently.
+    """
     inventory = list(READABLE)
     stimuli = list(K.stimuli(items))
     where = positions(seed, len(stimuli))
-    used: Counter = Counter()
     plan: dict[tuple[str, str], dict] = {}
-
     for index, (item, condition) in enumerate(stimuli):
         correct = K.gold_vocalization(item, condition)
-        pool = [label for label in inventory if label != correct]
-        # Least-used first; a seeded shuffle breaks ties so the order of `inventory` does not
-        # silently decide which label becomes everyone's favourite wrong answer.
-        K.stable_rng(seed, item["item_id"], condition, "distractors").shuffle(pool)
-        distractors = sorted(pool, key=lambda label: used[label])[:3]
-        used.update(distractors)
-
-        order = list(distractors)
-        K.stable_rng(seed, item["item_id"], condition, "option-order").shuffle(order)
+        others = [label for label in inventory if label != correct]
+        K.stable_rng(seed, item["item_id"], condition, "option-order").shuffle(others)
         correct_id = where[index]
-        options, remaining = [], iter(order)
+        options, remaining = [], iter(others)
         for option_id in OPTION_IDS:
             label = correct if option_id == correct_id else next(remaining)
             options.append({"id": option_id, "label": label, "text": READABLE[label]})
         plan[(item["item_id"], condition)] = {
-            "options": options, "correct_option": correct_id, "correct_label": correct,
-            "distractor_labels": distractors}
-    return plan
-
-
-def pragmatic_options(items: list[dict], seed: int,
-                      written: dict[str, dict]) -> dict[tuple[str, str], dict]:
-    """The same treatment for the LLM-written interpretations, when they exist."""
-    stimuli = [(i, c) for i, c in K.stimuli(items) if i["item_id"] in written]
-    where = positions(seed, len(stimuli))
-    plan: dict[tuple[str, str], dict] = {}
-    for index, (item, condition) in enumerate(stimuli):
-        block = next((b for b in written[item["item_id"]]["conditions"]
-                      if b["condition"] == condition), None)
-        if block is None:
-            continue
-        order = [d["text"] for d in block["distractors"]]
-        kinds = {d["text"]: d["kind"] for d in block["distractors"]}
-        K.stable_rng(seed, item["item_id"], condition, "pragmatic-order").shuffle(order)
-        correct_id = where[index]
-        options, remaining = [], iter(order)
-        for option_id in OPTION_IDS:
-            if option_id == correct_id:
-                options.append({"id": option_id, "label": "correct", "text": block["correct"]})
-            else:
-                text = next(remaining)
-                options.append({"id": option_id, "label": kinds[text], "text": text})
-        plan[(item["item_id"], condition)] = {
-            "options": options, "correct_option": correct_id, "correct_label": "correct",
-            "ambiguity_flag": block.get("ambiguity_flag", False),
-            "ambiguity_note": block.get("ambiguity_note", "")}
+            "options": options, "correct_option": correct_id, "correct_label": correct}
     return plan
 
 
@@ -160,10 +129,6 @@ def summarize(tasks: list[dict], label: str) -> None:
     where = Counter(t["correct_option"] for t in tasks)
     print(f"  {label}: {len(tasks)} tasks · correct at "
           + ", ".join(f"{k} {where.get(k, 0)}" for k in OPTION_IDS))
-    labels = Counter(l for t in tasks for l in t.get("distractor_labels", []))
-    if labels:
-        print("    distractor use: "
-              + ", ".join(f"{k} {v}" for k, v in sorted(labels.items())))
     flagged = [t["item_id"] for t in tasks if t.get("ambiguity_flag")]
     if flagged:
         print(f"    ambiguity-flagged: {len(flagged)} ({sorted(set(flagged))})")
@@ -179,8 +144,7 @@ def main() -> int:
     parser.add_argument("--run-id")
     parser.add_argument("--item-id", action="append", help="filters the printed preview only")
     parser.add_argument("--condition", action="append", choices=list(K.CONDITIONS))
-    parser.add_argument("--task-type", action="append",
-                        choices=["perception", "pragmatic"])
+    parser.add_argument("--task-type", action="append", choices=["perception"])
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--dry-run", action="store_true",
                         help="build and report without writing task files")
@@ -199,46 +163,24 @@ def main() -> int:
     seed = args.seed if args.seed is not None else config["seed"]
     stamp = fingerprint(items)
     run = K.run_id(args.run_id)
-    wanted = set(args.task_type or ["perception", "pragmatic"])
+    wanted = set(args.task_type or ["perception"])
     out_dir = Path(args.output) if args.output else K.stage_dir("tasks")
 
     perception_q = K.prompt("perception_question")
-    pragmatic_q = K.prompt("pragmatic_question")
-    pragmatic_base_q = K.prompt("pragmatic_question_baseline")
 
     built: dict[str, list[dict]] = {}
+    pending = 0
     if "perception" in wanted:
         plan = perception_options(items, seed)
         built["perception"] = build(items, config, plan, "perception",
                                     lambda _c: perception_q, run, seed)
 
-    pending = 0
-    if "pragmatic" in wanted:
-        written_path = K.stage_dir("rubrics") / "pragmatic_options.json"
-        written, rejected = {}, 0
-        if written_path.exists():
-            # The file holds provenance records, so the options are under `parsed`, and a
-            # record whose writer failed validation must not become a task.
-            for row in json.loads(written_path.read_text())["items"]:
-                if row.get("status") == "ok" and row.get("parsed"):
-                    written[row["item_id"]] = row["parsed"]
-                else:
-                    rejected += 1
-        pending = len(items) - len(written)
-        if rejected:
-            print(f"  pragmatic: {rejected} written record(s) failed validation and were "
-                  f"not turned into tasks")
-        plan = pragmatic_options(items, seed, written)
-        built["pragmatic"] = build(
-            items, config, plan, "pragmatic",
-            lambda c: pragmatic_base_q if c == "baseline" else pragmatic_q, run, seed)
-
     invalid = 0
     for task_type, tasks in built.items():
         for task in tasks:
-            if len({o["id"] for o in task["options"]}) != 4:
+            if len({o["id"] for o in task["options"]}) != len(OPTION_IDS):
                 invalid += 1
-            if len({o["text"] for o in task["options"]}) != 4:
+            if len({o["text"] for o in task["options"]}) != len(OPTION_IDS):
                 invalid += 1
 
     K.report("build-tasks",

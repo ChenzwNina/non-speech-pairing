@@ -14,8 +14,8 @@ import build_tasks as B
 import evalkit as K
 
 ITEMS = [fixtures.item(f"t_{n:02d}", *pair) for n, pair in enumerate(
-    [("laugh", "sigh"), ("laugh", "gasp"), ("gasp", "scream"), ("groan", "scream"),
-     ("sigh", "groan"), ("laugh", "groan"), ("sigh", "scream"), ("gasp", "groan")], start=1)]
+    [("laugh", "sigh"), ("laugh", "gasp"), ("laugh", "groan"), ("sigh", "gasp"),
+     ("sigh", "groan"), ("gasp", "groan"), ("laugh", "sigh"), ("gasp", "groan")], start=1)]
 SEED = 20260902
 
 
@@ -23,18 +23,18 @@ class TestPerceptionOptions(unittest.TestCase):
     def setUp(self):
         self.plan = B.perception_options(ITEMS, SEED)
 
-    def test_one_correct_option_and_three_unique_distractors(self):
+    def test_every_question_carries_the_whole_inventory_once(self):
+        """No distractors to choose: five labels, five options, exactly one correct."""
+        inventory = set(B.READABLE)
         for (item_id, condition), frozen in self.plan.items():
             options = frozen["options"]
-            self.assertEqual(len(options), 4)
-            self.assertEqual(len({o["id"] for o in options}), 4)
-            self.assertEqual(len({o["label"] for o in options}), 4,
-                             f"{item_id}/{condition} repeats a label")
+            self.assertEqual(len(options), len(B.OPTION_IDS))
+            self.assertEqual({o["id"] for o in options}, set(B.OPTION_IDS))
+            self.assertEqual({o["label"] for o in options}, inventory,
+                             f"{item_id}/{condition} does not carry every label")
             correct = [o for o in options if o["id"] == frozen["correct_option"]]
             self.assertEqual(len(correct), 1)
             self.assertEqual(correct[0]["label"], frozen["correct_label"])
-            self.assertNotIn(frozen["correct_label"], frozen["distractor_labels"])
-            self.assertEqual(len(set(frozen["distractor_labels"])), 3)
 
     def test_correct_label_is_the_condition_gold(self):
         for item in ITEMS:
@@ -56,10 +56,6 @@ class TestPerceptionOptions(unittest.TestCase):
         self.assertEqual(set(counts), set(B.OPTION_IDS))
         self.assertLessEqual(max(counts.values()) - min(counts.values()), 1)
 
-    def test_distractor_use_is_balanced(self):
-        counts = Counter(l for f in self.plan.values() for l in f["distractor_labels"])
-        self.assertLessEqual(max(counts.values()) - min(counts.values()), 2, counts)
-
     def test_the_plan_is_global_so_the_item_set_is_fingerprinted(self):
         """Balance is a property of the whole set, so options move when the set moves.
 
@@ -69,8 +65,8 @@ class TestPerceptionOptions(unittest.TestCase):
         came from, rather than being quietly rebuildable.
         """
         other = B.perception_options(list(reversed(ITEMS)), SEED)
-        self.assertNotEqual([f["distractor_labels"] for f in self.plan.values()],
-                            [other[k]["distractor_labels"] for k in self.plan])
+        self.assertNotEqual([f["correct_option"] for f in self.plan.values()],
+                            [other[k]["correct_option"] for k in self.plan])
         self.assertNotEqual(B.fingerprint(ITEMS), B.fingerprint(list(reversed(ITEMS))))
         self.assertEqual(B.fingerprint(ITEMS), B.fingerprint(list(ITEMS)))
 
