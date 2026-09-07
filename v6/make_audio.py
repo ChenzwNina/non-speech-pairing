@@ -54,7 +54,11 @@ RENDERER = "elevenlabs"
 # Two renderers are being compared over one dataset, so each owns a subtree and neither can
 # overwrite the other. A stimulus is identified by (renderer, item, condition) from here on.
 TAKE_DIR = OUT / "audio_turns" / RENDERER
+# Where the assembled conversations belong — written by whatever aligns and sews them, and read
+# by the evaluation. make_audio.py does not write here.
 AUDIO_DIR = OUT / "audio" / RENDERER
+# Its own rough assembly, for looking at a render locally. Ignored by git.
+CHECK_DIR = OUT / "audio_local_check" / RENDERER
 # Beside the takes, not beside the sewn output: the takes are what is committed and the
 # manifest is what describes them. The sewn conversations are derived and are not in git.
 MANIFEST = TAKE_DIR / "manifest.json"
@@ -153,7 +157,7 @@ def sew_conditions(item: dict, gap: float) -> list[dict]:
                 pieces.append(("silence", gap))
             use = variant if turn["turn"] == voc_turn else ""
             pieces.append(("file", take_path(item["item_id"], turn["turn"], use)))
-        dest = AUDIO_DIR / f"{item['item_id']}__{condition}.mp3"
+        dest = CHECK_DIR / f"{item['item_id']}__{condition}.mp3"
         sew.build(pieces, dest)
         built.append({"condition": condition, "path": str(dest.relative_to(K.HERE)),
                       "seconds": round(duration_of(dest), 2)})
@@ -167,6 +171,11 @@ def main() -> int:
     parser.add_argument("--only", action="append", help="item ids")
     parser.add_argument("--limit", type=int)
     parser.add_argument("--gap", type=float, default=GAP)
+    parser.add_argument("--sew", action="store_true",
+                        help="also hard-cut the takes into conversations under "
+                             "out/audio_local_check/, to listen to a render locally. The "
+                             "assembled conversations the evaluation reads come from the "
+                             "aligning stage, not from here.")
     parser.add_argument("--stability", type=float, default=STABILITY)
     parser.add_argument("--overwrite", action="store_true",
                         help="re-render takes that already exist")
@@ -246,7 +255,7 @@ def main() -> int:
         if stopped:
             return 2
 
-        conditions = sew_conditions(item, args.gap)
+        conditions = sew_conditions(item, args.gap) if args.sew else []
         by_id[item["item_id"]] = {
             "item_id": item["item_id"], "rendered_at": K.now(),
             "model": TTS_MODEL, "output_format": OUTPUT_FORMAT, "voices": VOICES,
@@ -259,9 +268,10 @@ def main() -> int:
             "assembly": {"gap_seconds": args.gap, **assembly(item)},
             # Locally sewn for inspection; rebuilt downstream, so not committed.
             "conditions_local": conditions}
-        print(f"  {item['item_id']} · "
-              + " · ".join(f"{c['condition'].replace('condition_', '')} {c['seconds']}s"
-                           for c in conditions), flush=True)
+        print(f"  {item['item_id']} · {len(takes)} takes"
+              + ("" if not conditions else " · " + " · ".join(
+                  f"{c['condition'].replace('condition_', '')} {c['seconds']}s"
+                  for c in conditions)), flush=True)
 
     if args.dry_run:
         total = sum(len(planned_takes(i, tags)) for i in items)

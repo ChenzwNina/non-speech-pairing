@@ -117,37 +117,44 @@ became a laugh needs a listener, the way v3 sent every clip to speech models bef
 and that belongs in its own stage where a verdict can be recorded and revisited. The durations
 in the manifest are measurements, not evidence.
 
+**Both halves of the audio live in git, because git is how they travel.** The takes go up from
+wherever the text-to-speech was called; the machine that aligns and assembles them pulls those,
+sews each conversation, and pushes the results back:
+
+```
+render  →  out/audio_turns/<renderer>/  →  git  →  align and sew
+                                                →  out/audio/<renderer>/  →  git  →  evaluation
+```
+
+Neither half is disposable. The takes cannot be re-rendered identically — every ElevenLabs call
+returns different samples — and the assembled conversations are what the evaluation actually
+plays. `make_audio.py --sew` writes a hard-cut assembly to `out/audio_local_check/`, which git
+ignores; it exists only to listen to a render locally, and uses the same filenames as the real
+thing, so keeping both would make provenance unreadable.
+[out/audio/README.md](out/audio/README.md) is the handoff contract.
+
 ### What is in `out/audio_turns/elevenlabs/`
 
-120 mp3 files, 6.7 MB, plus `manifest.json`. **Per-turn takes, not conversations.** Each item
-contributes six:
+168 mp3 files, 8.6 MB, plus `manifest.json`. **Per-turn takes, not conversations.** Each item
+contributes seven:
 
 | File | What it is |
 | --- | --- |
-| `<item>__t1.mp3` … `<item>__t4.mp3` | the four spoken turns, no vocalization |
-| `<item>__t<voc>__a.mp3` | the vocalization turn again, carrying condition A's tag |
-| `<item>__t<voc>__b.mp3` | the vocalization turn again, carrying condition B's tag |
+| `<item>__t1.mp3` … `<item>__t5.mp3` | the five spoken turns, no vocalization |
+| `<item>__t5__a.mp3` | turn 5 again, carrying condition A's tag |
+| `<item>__t5__b.mp3` | turn 5 again, carrying condition B's tag |
 
-So `v6_01a` is `t1, t2, t2__a, t2__b, t3, t4` — 80 plain takes and 40 tagged ones across the set.
+So `v6_01a` is `t1, t2, t3, t4, t5, t5__a, t5__b` — 120 plain takes and 48 tagged across the
+set. The vocalization is in turn 5 for every item, since that is where the design puts it, but
+read `vocalization_turn` or the `assembly` block rather than relying on it.
 
-**`<voc>` is not always turn 2.** It is turn 2 for 14 items and turn 3 for 6. Read
-`vocalization_turn` from the manifest rather than assuming, or read the `assembly` block, which
-names the files directly.
+`__a` and `__b` are that item's `voc_a` and `voc_b`, a different pair of sounds for each pair of
+items: `v6_01a`'s `__a` is a laugh, `v6_06a`'s is a gasp. The manifest gives `dia_tag` and
+`elevenlabs_tag` per take, so no filename has to be decoded.
 
-`__a` and `__b` mean condition A and condition B, which are that item's `voc_a` and `voc_b` — a
-different pair of sounds for every pair of items. `v6_01a`'s `__a` is a laugh; `v6_09a`'s is a
-gasp. The manifest gives `dia_tag` and `elevenlabs_tag` per take, so no filename has to be
-decoded.
-
-Every take records the exact text sent, which for a tagged take is the transcript line with the
-bracketed tag substituted:
-
-```json
-{ "turn": 2, "speaker": "B", "variant": "b",
-  "text": "[sighs] Looks like the safari gave them a new game.",
-  "dia_tag": "(sighs)", "elevenlabs_tag": "[sighs]",
-  "path": "out/audio_turns/elevenlabs/v6_01a__t2__b.mp3", "seconds": 3.28 }
-```
+**Turns 1 to 4 are shared bit-for-bit by all three conditions.** That is the point of storing
+takes rather than conversations: an assembler that re-encodes or re-times them per condition
+breaks the design, because a model answering differently might be answering to that.
 
 ### Render settings
 

@@ -1,12 +1,12 @@
 {
-  "rendered_at": "2026-09-07T04:05:35+00:00",
+  "rendered_at": "2026-09-07T21:02:01+00:00",
   "renderer": "elevenlabs",
   "model": "eleven_v3",
   "transcripts": "out/transcripts.json",
   "items": [
     {
       "item_id": "v6_01a",
-      "rendered_at": "2026-09-07T04:05:05+00:00",
+      "rendered_at": "2026-09-07T21:02:01+00:00",
       "model": "eleven_v3",
       "output_format": "mp3_44100_128",
       "voices": {
@@ -111,23 +111,7 @@
           "v6_01a__t5__b.mp3"
         ]
       },
-      "conditions_local": [
-        {
-          "condition": "baseline",
-          "path": "out/audio/elevenlabs/v6_01a__baseline.mp3",
-          "seconds": 13.4
-        },
-        {
-          "condition": "condition_a",
-          "path": "out/audio/elevenlabs/v6_01a__condition_a.mp3",
-          "seconds": 13.32
-        },
-        {
-          "condition": "condition_b",
-          "path": "out/audio/elevenlabs/v6_01a__condition_b.mp3",
-          "seconds": 13.96
-        }
-      ]
+      "conditions_local": []
     },
     {
       "item_id": "v6_01b",
