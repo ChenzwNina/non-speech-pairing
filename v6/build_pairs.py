@@ -1,13 +1,16 @@
 """Build the directed paired-content trials from the collected responses.
 
 For a target condition, the question is whether the response produced after hearing *that*
-version fits it better than the response the same model produced after hearing a different
-version. So each target condition faces the other two, giving two trials, and all three
-conditions as targets give six directed trials per item and evaluated model.
+version fits it better than the response the same model produced after hearing the other one.
+Responses are elicited for the two vocalization conditions only — the baseline has no
+vocalization for a response to be appropriate to, so nearly any sensible reply fits it — which
+gives **two directed trials per item and evaluated model**: `CA` asking whether RA beats RB, and
+`CB` asking whether RB beats RA.
 
-`CA` comparing RA against RB and `CB` comparing RA against RB are different trials even though
-the two candidates are the same pair of texts: the target context changes, and so does which
-candidate is supposed to win. Both are kept.
+Those two are different trials even though the candidates are the same pair of texts. The
+target context changes, and so does which candidate is supposed to win, so a model whose two
+responses are interchangeable loses both while a model that answered the sounds differently
+should win both.
 
 Candidate order is drawn per trial from the run seed, so it is reproducible, and the slot the
 matching response landed in is recorded — a judge with a first-slot habit would otherwise look
@@ -44,16 +47,18 @@ def group(records: list[dict]) -> dict[tuple[str, str], dict[str, dict]]:
 
 
 def trials(responses: dict[tuple[str, str], dict[str, dict]], seed: int, run: str,
-           prompt_version: str, swap: bool) -> tuple[list[dict], list[str]]:
+           prompt_version: str, swap: bool,
+           conditions: tuple[str, ...] = K.DEFAULT_RESPONSE_CONDITIONS
+           ) -> tuple[list[dict], list[str]]:
     built: list[dict] = []
     incomplete: list[str] = []
     for (model, item_id), by_condition in sorted(responses.items()):
-        missing = [c for c in K.CONDITIONS if c not in by_condition]
+        missing = [c for c in conditions if c not in by_condition]
         if missing:
             incomplete.append(f"{model}/{item_id} missing {missing}")
             continue
-        for target in K.CONDITIONS:
-            for against in K.CONDITIONS:
+        for target in conditions:
+            for against in conditions:
                 if against == target:
                     continue
                 gold, other = by_condition[target], by_condition[against]
@@ -126,17 +131,20 @@ def main() -> int:
     swap = args.swap_duplicate or config.get("paired", {}).get("swap_duplicate", False)
     _, version = K.prompt("content_pairwise_judge")
 
+    conditions = K.response_conditions(config)
+    per_group = len(conditions) * (len(conditions) - 1) * (2 if swap else 1)
     responses = group(records)
-    built, incomplete = trials(responses, seed, K.run_id(args.run_id), version, swap)
+    built, incomplete = trials(responses, seed, K.run_id(args.run_id), version, swap,
+                               conditions)
 
     per_model = Counter(t["evaluated_model"] for t in built)
     slots = Counter(t["gold_slot"] for t in built)
-    K.report("build-pairs", planned=len(responses) * (6 * (2 if swap else 1)),
+    K.report("build-pairs", planned=len(responses) * per_group,
              completed=len(built), skipped=len(incomplete), failed=0,
              invalid=sum(1 for t in built if not all(
                  c["response_text"] for c in t["candidates"].values())))
-    print(f"  {len(responses)} (model, item) group(s) · "
-          f"{6 * (2 if swap else 1)} trial(s) each · gold in slot "
+    print(f"  {len(responses)} (model, item) group(s) · {per_group} trial(s) each over "
+          f"{list(conditions)} · gold in slot "
           + ", ".join(f"{k} {v}" for k, v in sorted(slots.items())))
     for model, count in sorted(per_model.items()):
         print(f"    {model}: {count}")

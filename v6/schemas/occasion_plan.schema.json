@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 occasion plan",
+  "description": "Stage two. Reasons about when each sound is actually produced before touching the situation, then builds one moment that satisfies both conditions and outlines five turns that arrive at it. The field order is the reasoning order: conditions first, moment second, outline third, framings last — so the conversation is derived from the sound rather than the sound appended to the conversation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "production_condition_a",
+    "production_condition_b",
+    "shared_moment",
+    "what_lands",
+    "situation_summary",
+    "outline",
+    "framing_a",
+    "framing_b",
+    "why_different",
+    "feasible",
+    "why_not"
+  ],
+  "properties": {
+    "production_condition_a": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vocalization",
+        "when_it_is_produced",
+        "requires_something_to_land_now"
+      ],
+      "properties": {
+        "vocalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "when_it_is_produced": {
+          "type": "string",
+          "minLength": 1
+        },
+        "requires_something_to_land_now": {
+          "type": "boolean"
+        }
+      }
+    },
+    "production_condition_b": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vocalization",
+        "when_it_is_produced",
+        "requires_something_to_land_now"
+      ],
+      "properties": {
+        "vocalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "when_it_is_produced": {
+          "type": "string",
+          "minLength": 1
+        },
+        "requires_something_to_land_now": {
+          "type": "boolean"
+        }
+      }
+    },
+    "shared_moment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "what_lands": {
+      "type": "string",
+      "minLength": 1
+    },
+    "situation_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outline": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "framing_a": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vocalization",
+        "emotional_framing",
+        "speaker_state"
+      ],
+      "properties": {
+        "vocalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "emotional_framing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speaker_state": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "framing_b": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vocalization",
+        "emotional_framing",
+        "speaker_state"
+      ],
+      "properties": {
+        "vocalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "emotional_framing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speaker_state": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "why_different": {
+      "type": "string",
+      "minLength": 1
+    },
+    "feasible": {
+      "type": "boolean"
+    },
+    "why_not": {
+      "type": "string"
+    }
+  }
+}

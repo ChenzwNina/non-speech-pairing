@@ -1,0 +1,64 @@
+You are writing a contrastive stimulus for a benchmark on whether spoken-language models hear meaning in non-speech vocalizations.
+
+A plan has already been made: a situation, an outline of five turns, and the two emotional framings the same conversation should take on depending on which non-speech vocalization ends it. Your job is to write the actual dialogue.
+
+WHAT YOU RETURN
+
+Five spoken turns between two speakers, strictly alternating A, B, A, B, A. You write the words ONCE. The final turn contains the marker «VOC» exactly once, standing where the vocalization goes. Three versions are built from what you return: one with the first vocalization at the marker, one with the second, and one with nothing there. The words are identical in all three.
+
+WHERE THE MARKER GOES
+
+**The moment has already been decided.** The plan names one instant — the point at which something reaches the final speaker and either sound could genuinely come out of them. Your job is to write five turns that arrive at that instant, and to put the marker exactly there.
+
+It goes in the FINAL turn, at that moment, and never inside a sentence. The three legal positions are all sentence boundaries:
+
+- at the very start of the turn, before any words
+- between two complete sentences
+- at the very end, after the last word
+
+Which one is right follows from the moment the plan describes. If the thing lands on the speaker as the other person finishes talking, the sound comes before the words it prompts:
+
+    «VOC» Twelve dollars. I paid twelve dollars for that.
+
+If the speaker lands on it while saying it themselves, the sound follows their own words:
+
+    So we're up at three, stuck in Frankfurt all day, then walking into work straight from the airport. «VOC»
+
+This is wrong, because the marker interrupts a clause:
+
+    The team gave me story feedback «VOC» and told the manager.
+
+And this is wrong for a different reason — the marker is legally placed, but the turn is a flat answer to a question, so nothing lands and the sound attaches to nothing:
+
+    Yeah, I kept her number. I paid twelve dollars for it. «VOC»
+
+THE FIVE CONSTRAINTS
+
+1. BOTH FRAMINGS MUST SURVIVE THE WORDS. Read the five turns with no sound at all: both of the planned framings have to remain honest readings. If one is already obvious from the words, the sound has nothing left to do — rewrite.
+
+2. THE WORDS MUST NOT NAME THE EMOTION. No "I'm so relieved", "that's hilarious", "this is awful". No emotion adjectives about anyone's state. Lines report events and leave the appraisal open.
+
+3. NATURAL SPOKEN ENGLISH. Two people actually talking: contractions, ordinary word choice, short clauses, the occasional fragment. Not written prose read aloud. Nobody narrates their own feelings, and nobody explains the situation for a listener's benefit.
+
+4. THE FOURTH TURN PUTS THE LANDING IN POSITION, THE FIFTH IS THE LANDING. The plan says what reaches the final speaker and where it comes from. Turn 4 has to deliver it, and turn 5 has to be that speaker taking it in — not a flat answer to a question, not a logistical detail, not a change of subject. If nothing lands in turn 5, the sound attaches to nothing, however well the words are written.
+
+5. CLEAR REFERENTS. Someone hearing this with no context should follow it. Avoid bare "they", "that", "the thing" unless what they point to is unmistakable.
+
+Return valid JSON only, using this schema:
+
+{
+  "turns": [
+    {"turn": 1, "speaker": "A", "text": "..."},
+    {"turn": 2, "speaker": "B", "text": "..."},
+    {"turn": 3, "speaker": "A", "text": "..."},
+    {"turn": 4, "speaker": "B", "text": "..."},
+    {"turn": 5, "speaker": "A", "text": "... «VOC» ..."}
+  ],
+  "how_a_lands": "<why the first vocalization produces its planned framing here, maximum 40 words>",
+  "how_b_lands": "<why the second vocalization produces its planned framing here, maximum 40 words>",
+  "still_open_without_sound": "<how the exchange reads with no vocalization, maximum 30 words>"
+}
+
+INPUT:
+
+{{INPUT}}

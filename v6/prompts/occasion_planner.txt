@@ -1,0 +1,86 @@
+You are planning a contrastive stimulus for a benchmark on whether spoken-language models hear meaning in non-speech vocalizations.
+
+A five-turn conversation between two speakers will be written. The same words will be heard three ways: once with no non-speech vocalization, and twice with one vocalization in the final turn — a different one each time. The two sounds occupy the SAME position in the SAME turn. Only the sound differs.
+
+You are given a situation and two vocalizations. You are not writing dialogue. You are deciding when each sound would actually be produced, and building a moment that can carry both.
+
+WORK IN THIS ORDER
+
+**First, think about each sound on its own, before you think about this situation at all.**
+
+For each vocalization, describe the circumstance in which a person actually produces it. Not what it means — what has to be true at that instant for the sound to come out of someone. Sounds differ here, and the difference is what most often makes a stimulus fail:
+
+- Some require the speaker to be encountering something as it happens. The sound is the moment of contact. A person cannot produce it about information they are themselves delivering, or about something they learned last week and are now recounting.
+- Others express a stance toward something already known. The speaker can produce them while telling a story, while conceding a point, while looking at a situation they have lived with for months.
+
+Write the condition for each sound honestly. Do not soften a strict one to make your job easier.
+
+**Second, find the one moment that satisfies both conditions.**
+
+The same instant carries both sounds, so you need a moment where each of them could genuinely come out of the final speaker. Take the stricter of the two conditions and satisfy that; the looser one will follow.
+
+If one sound needs the speaker to be encountering something now, then the final turn cannot be the speaker answering a question about something they already know, or reporting what a third party told them earlier. Something has to reach them, in the conversation, at that turn.
+
+**Third, outline five turns that arrive at that moment.**
+
+The first four turns bring the situation out and put whatever has to land in position. The fifth is where it lands, and where the sound goes. Work backwards from the moment you chose: the outline exists to create it.
+
+**Fourth, say what each sound makes the whole conversation mean.**
+
+The two framings must be genuinely different — not two shades of one feeling, and not the same stance at two intensities. Different valence, or a different appraisal of what has happened, or a different stance toward the other speaker.
+
+Both framings must be honest readings of the SAME five turns. If you need the words to differ, the plan is wrong.
+
+THE WORDS MUST NOT NAME THE EMOTION
+
+Plan for lines that report what happened and leave the appraisal open. If a turn would say "I'm so relieved" or "that's hilarious", the sound is redundant and the item is dead.
+
+USING THE SITUATION
+
+The situation comes from EmpatheticDialogues and is a seed, not a script. Take the circumstance and the relationship. Do not reproduce its wording, and do not name the emotion it was filed under. Note that these seeds are written as past events being recounted — if your sounds need something to land in the moment, you will have to place the conversation where that can happen rather than where the seed narrates from.
+
+IF IT CANNOT BE DONE
+
+If this situation cannot support both sounds at one moment — not that it is hard, but that the stricter condition cannot honestly be met here — set `feasible` to false and say why. A forced item is worse than a missing one.
+
+Return valid JSON only, using this schema:
+
+{
+  "production_condition_a": {
+    "vocalization": "<vocalization A as given>",
+    "when_it_is_produced": "<what must be true at the instant this sound comes out, maximum 30 words>",
+    "requires_something_to_land_now": true
+  },
+  "production_condition_b": {
+    "vocalization": "<vocalization B as given>",
+    "when_it_is_produced": "<maximum 30 words>",
+    "requires_something_to_land_now": false
+  },
+  "shared_moment": "<the one instant in this situation where both sounds could genuinely come out of the final speaker, maximum 35 words>",
+  "what_lands": "<what reaches the final speaker at that instant, and where it comes from, maximum 30 words>",
+  "situation_summary": "<one sentence describing the circumstance, maximum 25 words>",
+  "outline": [
+    "<what turn 1 does, maximum 20 words>",
+    "<what turn 2 does>",
+    "<what turn 3 does>",
+    "<what turn 4 does — it must put the landing in position>",
+    "<what turn 5 does — the landing, and the sound>"
+  ],
+  "framing_a": {
+    "vocalization": "<vocalization A>",
+    "emotional_framing": "<what the whole conversation comes to mean with this sound, maximum 25 words>",
+    "speaker_state": "<the final speaker's likely state, maximum 15 words>"
+  },
+  "framing_b": {
+    "vocalization": "<vocalization B>",
+    "emotional_framing": "<maximum 25 words>",
+    "speaker_state": "<maximum 15 words>"
+  },
+  "why_different": "<one sentence naming what separates the two framings, maximum 30 words>",
+  "feasible": true,
+  "why_not": ""
+}
+
+INPUT:
+
+{{INPUT}}

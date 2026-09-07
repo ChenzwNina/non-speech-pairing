@@ -1,0 +1,3178 @@
+{
+  "written_at": "2026-09-06T04:22:37+00:00",
+  "run_id": "r20260906T042116Z",
+  "writer": "gpt-5.6-terra",
+  "effort": "default",
+  "turns": 5,
+  "design": "five turns written once; the vocalization sits at a sentence boundary in the final turn and the three versions are built by substitution",
+  "items": [
+    {
+      "item_id": "v6_04d",
+      "seed_id": "s034",
+      "seed_label": "joyful",
+      "situation": "I won the lottery, its party time.",
+      "scenario": "Two people wait for a lottery result while the ticket holder checks the official results on a phone.",
+      "voc_a": "sigh",
+      "tag_a": "(sighs)",
+      "emotion_a": "The win lands as the end of a long period of financial pressure and tense waiting.",
+      "speaker_state_a": "Released from strain, quietly taking it in.",
+      "voc_b": "gasp",
+      "tag_b": "(gasps)",
+      "emotion_b": "The win lands as an immediate, unbelievable revelation whose scale catches the speaker off guard.",
+      "speaker_state_b": "Startled by the sudden confirmation.",
+      "why_different": "The sigh treats the result as release from an ongoing burden, while the gasp treats it as a startling new fact.",
+      "shared_moment": "The final speaker watches the lottery checker update and sees that their ticket has won the top prize after waiting for the result.",
+      "what_lands": "The official lottery checker on the final speaker's phone confirms that their ticket holds the top prize.",
+      "production_condition_a": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "A speaker releases breath while absorbing an outcome that ends sustained tension, obligation, or waiting; it need not be new information.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "An unexpected, striking fact reaches the speaker in that instant, interrupting ordinary breathing before they can formulate a response.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A sigh before the words can register the end of the wait and the practical weight the result may have been carrying, letting the win settle in quietly.",
+      "how_b_lands": "A gasp before the report makes the newly displayed top-prize confirmation feel abrupt and hard to absorb before A can say what the screen shows.",
+      "still_open_without_sound": "Without the sound, A reports the confirmation plainly; the scale of the win is clear, but A's immediate response remains open.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you checked our ticket yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm on the official checker, but it's still loading."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The lottery posted all the winning numbers a few minutes ago."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Try refreshing it again. The results should be there now."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "It says our ticket won the top prize."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "The win lands as the end of a long period of financial pressure and tense waiting.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you checked our ticket yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm on the official checker, but it's still loading."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The lottery posted all the winning numbers a few minutes ago."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Try refreshing it again. The results should be there now."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) It says our ticket won the top prize."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "The win lands as an immediate, unbelievable revelation whose scale catches the speaker off guard.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you checked our ticket yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm on the official checker, but it's still loading."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The lottery posted all the winning numbers a few minutes ago."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Try refreshing it again. The results should be there now."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) It says our ticket won the top prize."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_03c",
+      "seed_id": "s019",
+      "seed_label": "confident",
+      "situation": "I'm looking for a new job. I just had an interview it was the third one this month. I feel really great about my chances and have gotten great feedback!",
+      "scenario": "A job seeker has completed several interviews and receives a new message about the hiring process.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The extra interview seems absurdly elaborate but also confirms the employer remains seriously interested.",
+      "speaker_state_a": "Amused, pleasantly incredulous, and still optimistic.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The extra interview turns a promising process into another exhausting hurdle before any decision arrives.",
+      "speaker_state_b": "Weary, frustrated, and discouraged by the delay.",
+      "why_different": "The laugh treats the new round as amusing evidence of continued interest, while the groan treats it as a burdensome extension of the process.",
+      "shared_moment": "The final speaker opens a new message from the employer and learns that, despite encouraging feedback, they must attend another interview next week.",
+      "what_lands": "A just-opened employer message asks the final speaker to schedule an additional interview.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "When something strikes the speaker as amusing, absurd, pleasantly surprising, or socially light; it may be immediate or recounting.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "When the speaker confronts an unwelcome burden, setback, or tiresome demand; it may be immediate or about an ongoing problem.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the added interview sound like an elaborate, almost comic sign that the employer is still seriously considering A.",
+      "how_b_lands": "A groan makes the request land as one more tiring hurdle in a process that had seemed close to moving forward.",
+      "still_open_without_sound": "The additional interview can signal continued interest or an unwelcome delay; the words alone do not settle which reading A takes.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How've the interviews been going?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "This was my third one this month."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Everything you've heard from them has sounded encouraging."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hang on, there's a new message from the employer. I'm opening it now."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "They're asking me to schedule another interview next week."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The extra interview seems absurdly elaborate but also confirms the employer remains seriously interested.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How've the interviews been going?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "This was my third one this month."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Everything you've heard from them has sounded encouraging."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hang on, there's a new message from the employer. I'm opening it now."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) They're asking me to schedule another interview next week."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The extra interview turns a promising process into another exhausting hurdle before any decision arrives.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How've the interviews been going?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "This was my third one this month."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Everything you've heard from them has sounded encouraging."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hang on, there's a new message from the employer. I'm opening it now."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) They're asking me to schedule another interview next week."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_06d",
+      "seed_id": "s030",
+      "seed_label": "anticipating",
+      "situation": "I cannot wait for next week. We are going on a trip",
+      "scenario": "Two people are checking whether their planned trip has been confirmed and discover it is happening next week.",
+      "voc_a": "gasp",
+      "tag_a": "(gasps)",
+      "emotion_a": "The confirmation arrives as an exciting surprise: the long-awaited trip is suddenly real and imminent.",
+      "speaker_state_a": "Startled, delighted, and energized.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The same confirmation makes the trip feel like an unwanted immediate obligation that disrupts the speaker's plans.",
+      "speaker_state_b": "Dismayed and burdened.",
+      "why_different": "The gasp treats the newly confirmed date as welcome excitement, while the groan treats that same imminent date as an inconvenient demand.",
+      "shared_moment": "The final speaker opens a just-arrived travel confirmation and sees that their trip is scheduled for next week.",
+      "what_lands": "A newly delivered confirmation email reveals the trip's date when the final speaker reads it.",
+      "production_condition_a": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "A sudden, salient piece of news reaches the speaker and interrupts their breath at the moment they register it.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "The speaker confronts or considers something unwelcome, burdensome, or inconvenient, whether newly learned or already understood.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A gasp occurs as A opens the newly arrived email and registers that the trip is suddenly confirmed for next week, making the date feel immediate and welcome.",
+      "how_b_lands": "A groan occurs as A sees the same next-week date and takes its immediacy as a demand on the week that had been open.",
+      "still_open_without_sound": "Without a vocalization, the confirmation simply establishes that the trip is scheduled for next week; whether that is welcome or disruptive remains unstated.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I still haven't gotten the confirmation for our trip."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Maybe the booking went through and the email's just late?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I hope so. Next week is completely open otherwise."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait, a confirmation email just came in. Open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "It's for next week."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "gasp",
+        "target_emotion": "The confirmation arrives as an exciting surprise: the long-awaited trip is suddenly real and imminent.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I still haven't gotten the confirmation for our trip."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Maybe the booking went through and the email's just late?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I hope so. Next week is completely open otherwise."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait, a confirmation email just came in. Open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) It's for next week."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The same confirmation makes the trip feel like an unwanted immediate obligation that disrupts the speaker's plans.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I still haven't gotten the confirmation for our trip."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Maybe the booking went through and the email's just late?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I hope so. Next week is completely open otherwise."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait, a confirmation email just came in. Open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) It's for next week."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_06a",
+      "seed_id": "s004",
+      "seed_label": "surprised",
+      "situation": "My brother got me a nice gift. It was a shock in a good day",
+      "scenario": "A brother brings an unexpectedly nice present to a small family celebration.",
+      "voc_a": "gasp",
+      "tag_a": "(gasps)",
+      "emotion_a": "The gift is a startlingly generous surprise, and the speaker is struck by what their brother chose.",
+      "speaker_state_a": "Delighted and suddenly astonished.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The gift is excessive; the speaker focuses on the cost and the burden their brother has taken on.",
+      "speaker_state_b": "Uneasy, guilty, or exasperated.",
+      "why_different": "The gasp treats the reveal as welcome astonishment, while the groan treats the same generosity as an imprudent or burdensome expense.",
+      "shared_moment": "The final speaker opens their brother's wrapped present and sees an unexpectedly lavish gift for the first time.",
+      "what_lands": "The gift itself reaches the final speaker when they unwrap it in front of their brother.",
+      "production_condition_a": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "At the instant the speaker encounters a sudden, salient surprise, especially an unexpectedly impressive or welcome object.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "When the speaker registers an unwelcome implication, such as someone having spent too much or created an obligation.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A gasp at the reveal frames the lavish gift as a sudden, welcome surprise; A's question registers astonishment at what B chose.",
+      "how_b_lands": "A groan at the reveal frames the same gift as too much, making A's question sound like recognition of B's excessive expense.",
+      "still_open_without_sound": "A has not planned for a present and is struck by the gift, but the question leaves welcome surprise and concern about its cost open.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Everyone's getting here after work, right?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Yeah. And I brought you something."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You didn't have to. We weren't doing presents."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I know. Here—open this before everybody gets here."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "You got me this?"
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "gasp",
+        "target_emotion": "The gift is a startlingly generous surprise, and the speaker is struck by what their brother chose.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Everyone's getting here after work, right?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Yeah. And I brought you something."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You didn't have to. We weren't doing presents."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I know. Here—open this before everybody gets here."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) You got me this?"
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The gift is excessive; the speaker focuses on the cost and the burden their brother has taken on.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Everyone's getting here after work, right?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Yeah. And I brought you something."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You didn't have to. We weren't doing presents."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I know. Here—open this before everybody gets here."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) You got me this?"
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_03b",
+      "seed_id": "s057",
+      "seed_label": "proud",
+      "situation": "The time I got my marks back for my chemistry test and I passed with a 95%. My mom was excited.",
+      "scenario": "A mother checks her child's newly posted chemistry-test grade while the child waits nearby.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The student takes the unexpectedly high score and the mother's buildup as a pleasing, almost ridiculous surprise.",
+      "speaker_state_a": "Delighted, surprised, and amused.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The student fixates on the five missing points, making the same score sound like an irritating near-miss.",
+      "speaker_state_b": "Frustrated and perfectionistic.",
+      "why_different": "The laugh treats 95 as a welcome surprise, whereas the groan appraises it as an unacceptable shortfall.",
+      "shared_moment": "The student, who has avoided checking the grade, hears their mother read the newly posted chemistry score: 95 out of 100.",
+      "what_lands": "The exact score, 95 out of 100, reaches the student when their mother reads it from the online grade portal.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "When something just encountered strikes the speaker as amusing, delightfully surprising, or absurd.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "When the speaker confronts an unwelcome outcome, inconvenience, or shortfall and reacts to it.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the unexpectedly high score and the brief buildup sound delightfully surprising to the student.",
+      "how_b_lands": "A groan makes the student hear 95 as five points missing from a score they wanted to be perfect.",
+      "still_open_without_sound": "Without sound, the student's repetition can register surprise, calculation, or a pause before deciding what the score means.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Chemistry grades were supposed to be up today."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I can see the grade portal on my phone."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Don't say anything yet. Let me find it first."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I opened the chemistry test. It says 95 out of 100."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "Ninety-five."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The student takes the unexpectedly high score and the mother's buildup as a pleasing, almost ridiculous surprise.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Chemistry grades were supposed to be up today."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I can see the grade portal on my phone."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Don't say anything yet. Let me find it first."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I opened the chemistry test. It says 95 out of 100."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) Ninety-five."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The student fixates on the five missing points, making the same score sound like an irritating near-miss.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Chemistry grades were supposed to be up today."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I can see the grade portal on my phone."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Don't say anything yet. Let me find it first."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I opened the chemistry test. It says 95 out of 100."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) Ninety-five."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_02b",
+      "seed_id": "s022",
+      "seed_label": "sentimental",
+      "situation": "I remember playing catch with my dad. Thinking about it takes me to a special place in time.",
+      "scenario": "Two people uncover a recording of the final speaker playing catch with their father in their old yard.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The recovered clip turns a cherished memory into a warmly funny glimpse of the father's playful, clumsy throw.",
+      "speaker_state_a": "Amused and affectionately nostalgic.",
+      "voc_b": "gasp",
+      "tag_b": "(gasps)",
+      "emotion_b": "The recovered clip becomes an abrupt, startling encounter with an unexpectedly vivid moment from the speaker's past.",
+      "speaker_state_b": "Startled and struck by recognition.",
+      "why_different": "The laugh treats the camera-bound throw as comic play, while the gasp treats its sudden arrival as a startling return of the past.",
+      "shared_moment": "The final speaker watches a newly discovered home video and suddenly sees their father's throw send the ball directly into the camera.",
+      "what_lands": "The unexpected image of the ball rushing into the camera reaches the final speaker through the video their companion has just started.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "A person finds something amusing, playful, or warmly absurd, whether experiencing it now or recalling it.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "A person is suddenly confronted with unexpected, startling, or striking information or perception in that instant.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the throw read as the father's playful, slightly clumsy camera gag and turns the recovered scene into a warm, funny memory.",
+      "how_b_lands": "A gasp fits the ball abruptly filling the screen, making the footage feel like a sudden, vivid encounter with an unexpected moment from the past.",
+      "still_open_without_sound": "Without sound, the throw can be either a playful camera moment or simply a startling image in a newly recovered family video.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I found this unlabeled tape in the box with the old family files."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Could it be the old house? Or the backyard?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I just started it. That's you, and there's your dad by the fence."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "They're playing catch now. Hold on—let it keep going."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "The ball just came straight into the camera. Dad threw it right at whoever was filming."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The recovered clip turns a cherished memory into a warmly funny glimpse of the father's playful, clumsy throw.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I found this unlabeled tape in the box with the old family files."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Could it be the old house? Or the backyard?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I just started it. That's you, and there's your dad by the fence."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "They're playing catch now. Hold on—let it keep going."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) The ball just came straight into the camera. Dad threw it right at whoever was filming."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "The recovered clip becomes an abrupt, startling encounter with an unexpectedly vivid moment from the speaker's past.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I found this unlabeled tape in the box with the old family files."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Could it be the old house? Or the backyard?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I just started it. That's you, and there's your dad by the fence."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "They're playing catch now. Hold on—let it keep going."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) The ball just came straight into the camera. Dad threw it right at whoever was filming."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_04a",
+      "seed_id": "s005",
+      "seed_label": "anticipating",
+      "situation": "I cant wait till I save enough money to take a trip to Antarctica. Its been a dream of mine.",
+      "scenario": "One speaker is slowly saving for a long-held dream of visiting Antarctica.",
+      "voc_a": "sigh",
+      "tag_a": "(sighs)",
+      "emotion_a": "The opportunity turns the distant dream into an immediate, demanding task that the speaker feels weighed down by.",
+      "speaker_state_a": "Daunted by the deadline and required effort.",
+      "voc_b": "gasp",
+      "tag_b": "(gasps)",
+      "emotion_b": "The unexpected grant makes the previously distant trip suddenly seem possible.",
+      "speaker_state_b": "Startled by the opportunity.",
+      "why_different": "The sigh treats the news chiefly as an immediate burden, while the gasp treats it as a surprising opening.",
+      "shared_moment": "The final speaker learns that a full Antarctica-trip grant exists, but its application deadline is tonight.",
+      "what_lands": "The other speaker reports having just found the grant and its same-night deadline.",
+      "production_condition_a": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "When the speaker takes in a burden, setback, or daunting implication, whether newly learned or long familiar.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "When unexpected information or an event reaches the speaker in that instant and startles them.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "The sigh frames the suddenly available grant as a demanding same-night application, making the opportunity feel like an immediate burden.",
+      "how_b_lands": "The gasp marks the grant and its full coverage as unexpected news that makes Antarctica seem suddenly within reach.",
+      "still_open_without_sound": "The grant creates both a rare opening and a same-night demand, without deciding whether A focuses on either one.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I've been putting a little aside for Antarctica whenever I can."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "How close are you getting?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "At this rate, it still feels a long way off."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I just found an Antarctica expedition grant. It covers the whole trip, but the application closes tonight."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "Tonight. A full trip, and the application has to be in tonight."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "The opportunity turns the distant dream into an immediate, demanding task that the speaker feels weighed down by.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I've been putting a little aside for Antarctica whenever I can."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "How close are you getting?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "At this rate, it still feels a long way off."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I just found an Antarctica expedition grant. It covers the whole trip, but the application closes tonight."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) Tonight. A full trip, and the application has to be in tonight."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "The unexpected grant makes the previously distant trip suddenly seem possible.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I've been putting a little aside for Antarctica whenever I can."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "How close are you getting?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "At this rate, it still feels a long way off."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I just found an Antarctica expedition grant. It covers the whole trip, but the application closes tonight."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) Tonight. A full trip, and the application has to be in tonight."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_02c",
+      "seed_id": "s046",
+      "seed_label": "nostalgic",
+      "situation": "I used to want to have almost every career available. Now I just want a decent paying job.",
+      "scenario": "Someone who once imagined many careers is waiting to learn whether one practical job will provide enough income.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The offer feels ironically modest beside the applicant's former ambitions, and the speaker treats the turn toward practicality with rueful amusement.",
+      "speaker_state_a": "Amused, self-aware, and somewhat resigned.",
+      "voc_b": "gasp",
+      "tag_b": "(gasps)",
+      "emotion_b": "The offer's terms are startlingly better or more consequential than expected, making the practical job suddenly feel like a major development.",
+      "speaker_state_b": "Startled and newly attentive.",
+      "why_different": "The laugh appraises the offer as an ironic anticlimax, whereas the gasp appraises its newly revealed terms as a startling surprise.",
+      "shared_moment": "The final speaker opens a just-arrived job-offer email during the conversation and reads its job title and salary aloud for the first time.",
+      "what_lands": "The offer's stated salary reaches the final speaker from the newly opened email.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "A speaker perceives an incongruity, absurdity, or socially awkward outcome and reacts with amusement or rueful disbelief.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "A speaker is immediately confronted with unexpected, consequential information or an event that abruptly exceeds expectation.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the practical title and salary sound like a rueful, ironic turn from the applicant's earlier ambitions.",
+      "how_b_lands": "A gasp makes the newly revealed salary sound unexpectedly consequential, turning the email into a sudden development.",
+      "still_open_without_sound": "The offer could be a modest practical compromise or a better-than-expected opportunity; the words do not settle which.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you heard back about the operations coordinator job?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Not yet. After the interview, they asked for my references."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "It'd cover rent and bills, at least. More than most of the things you used to sketch out."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait, you've got a new email from them. Open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "Operations coordinator. Fifty-eight thousand a year."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The offer feels ironically modest beside the applicant's former ambitions, and the speaker treats the turn toward practicality with rueful amusement.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you heard back about the operations coordinator job?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Not yet. After the interview, they asked for my references."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "It'd cover rent and bills, at least. More than most of the things you used to sketch out."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait, you've got a new email from them. Open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) Operations coordinator. Fifty-eight thousand a year."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "The offer's terms are startlingly better or more consequential than expected, making the practical job suddenly feel like a major development.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you heard back about the operations coordinator job?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Not yet. After the interview, they asked for my references."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "It'd cover rent and bills, at least. More than most of the things you used to sketch out."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait, you've got a new email from them. Open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) Operations coordinator. Fifty-eight thousand a year."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_05a",
+      "seed_id": "s050",
+      "seed_label": "proud",
+      "situation": "I recently started training my dog to get him to be more obedient. I have a way to go but I'm getting better.",
+      "scenario": "A dog owner is practicing obedience training and has begun seeing improvement, though counter behavior remains unreliable.",
+      "voc_a": "sigh",
+      "tag_a": "(sighs)",
+      "emotion_a": "The lapse is a discouraging but familiar part of gradual training, which the owner accepts as more work ahead.",
+      "speaker_state_a": "Patiently disappointed and resigned.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The lapse feels like an exasperating immediate reversal, making the owner focus on the nuisance of having to address it again.",
+      "speaker_state_b": "Irritated by the renewed problem.",
+      "why_different": "The sigh treats the setback as an accepted part of a long process, whereas the groan treats it as an aggravating recurrence demanding attention.",
+      "shared_moment": "During a training chat, the owner watches the dog immediately take food from the counter just after they had said he was improving.",
+      "what_lands": "The dog’s fresh counter-snatching happens visibly in front of the owner, after the other speaker draws attention to him.",
+      "production_condition_a": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "A speaker releases breath while taking in a disappointment, limitation, or effortful reality; it may accompany resigned acceptance of an ongoing problem.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "A speaker encounters an immediately aggravating setback or renewed burden, often just as it becomes clear they must deal with it again.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A sigh makes the fresh lapse sound like a familiar limitation in Max's gradual training, with the owner settling into the work still ahead.",
+      "how_b_lands": "A groan makes Max taking the snack feel like an immediate, aggravating reversal just after the owner described progress with the same cue.",
+      "still_open_without_sound": "Max's counter-snatching undercuts the reported progress, but the owner's reaction could be patient disappointment or sharper annoyance.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I've been doing short obedience sessions with Max every day."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Which commands are starting to stick?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "He's been leaving food alone when I say \"leave it,\" at least when I'm right there."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Max is heading for the snack on the counter."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "He just took it. I thought he'd learned \"leave it.\""
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "The lapse is a discouraging but familiar part of gradual training, which the owner accepts as more work ahead.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I've been doing short obedience sessions with Max every day."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Which commands are starting to stick?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "He's been leaving food alone when I say \"leave it,\" at least when I'm right there."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Max is heading for the snack on the counter."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) He just took it. I thought he'd learned \"leave it.\""
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The lapse feels like an exasperating immediate reversal, making the owner focus on the nuisance of having to address it again.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I've been doing short obedience sessions with Max every day."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Which commands are starting to stick?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "He's been leaving food alone when I say \"leave it,\" at least when I'm right there."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Max is heading for the snack on the counter."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) He just took it. I thought he'd learned \"leave it.\""
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_02a",
+      "seed_id": "s058",
+      "seed_label": "apprehensive",
+      "situation": "I'm 47 years old and have been taking psychotropic meds for well over 30 years. I'm having more and more trouble with them working properly.",
+      "scenario": "A long-term psychiatric patient is struggling with an increasingly unreliable regimen while awaiting a coverage decision for a change.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The decision reads as a bleakly absurd bureaucratic loop: after decades of treatment, the system offers a medication that already failed.",
+      "speaker_state_a": "Incredulous, darkly amused, and resigned.",
+      "voc_b": "gasp",
+      "tag_b": "(gasps)",
+      "emotion_b": "The decision reads as an alarming immediate setback, threatening continuity just as the current regimen is becoming less effective.",
+      "speaker_state_b": "Startled and apprehensive.",
+      "why_different": "The laugh appraises the result as absurd institutional irony, while the gasp appraises it as an immediate and threatening surprise.",
+      "shared_moment": "While checking the portal during the call, the final speaker sees a newly posted coverage decision requiring a medication they previously stopped.",
+      "what_lands": "A live insurer decision appears in the final speaker's patient portal, showing that the covered replacement is an old unsuccessful medication.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "When something strikes the speaker as absurd, ironic, or incongruous; it can be an immediate reaction or a stance toward an established situation.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "When unexpected, consequential information or an event reaches the speaker suddenly and produces an involuntary intake of breath.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the newly posted decision sound like a bleak bureaucratic loop: the insurer's replacement is a medication A has already tried and stopped.",
+      "how_b_lands": "A gasp treats the portal update as sudden, consequential news: the available coverage option is an old medication, arriving as A needs a workable change.",
+      "still_open_without_sound": "Without sound, the decision could be an absurd repeat or an immediate setback; the words do not settle A's appraisal.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "My current medication's getting less reliable. My prescriber wants to switch me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Has the clinic heard back about the coverage request?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "They sent it in last week, but my portal still hasn't shown a decision."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I'm here. Refresh it while we're on the phone."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "It just posted. The covered replacement is the medication I stopped years ago."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The decision reads as a bleakly absurd bureaucratic loop: after decades of treatment, the system offers a medication that already failed.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "My current medication's getting less reliable. My prescriber wants to switch me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Has the clinic heard back about the coverage request?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "They sent it in last week, but my portal still hasn't shown a decision."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I'm here. Refresh it while we're on the phone."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) It just posted. The covered replacement is the medication I stopped years ago."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "The decision reads as an alarming immediate setback, threatening continuity just as the current regimen is becoming less effective.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "My current medication's getting less reliable. My prescriber wants to switch me."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Has the clinic heard back about the coverage request?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "They sent it in last week, but my portal still hasn't shown a decision."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I'm here. Refresh it while we're on the phone."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) It just posted. The covered replacement is the medication I stopped years ago."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_04b",
+      "seed_id": "s026",
+      "seed_label": "furious",
+      "situation": "It took me 5 hours to bake this cake for my daughter, and now it's missing.",
+      "scenario": "A parent has spent hours making a cake for her daughter, only to find it gone before she can serve it.",
+      "voc_a": "sigh",
+      "tag_a": "(sighs)",
+      "emotion_a": "The parent accepts that her work was taken without asking, while recognizing that the cake is at least being used.",
+      "speaker_state_a": "Weary, disappointed, and resigned.",
+      "voc_b": "gasp",
+      "tag_b": "(gasps)",
+      "emotion_b": "The parent is abruptly struck by the unexpected discovery that the missing cake has appeared at the school fair.",
+      "speaker_state_b": "Startled by the new evidence.",
+      "why_different": "The sigh treats the discovery as a burdensome fact to absorb, whereas the gasp marks the photo itself as a startling new revelation.",
+      "shared_moment": "The parent looks at a newly opened photo on the daughter's phone and discovers the missing cake was taken to a school event.",
+      "what_lands": "A photo, handed over by the other speaker, shows the daughter carrying the cake into the school fair.",
+      "production_condition_a": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "When the speaker confronts an unwelcome or tiring fact and settles into accepting it, whether newly learned or long known.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "When unexpected information or a sight reaches the speaker suddenly and interrupts their breath at the moment of discovery.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A sigh before the words lets the parent absorb the photo as another consequence of Maya taking the cake without asking; the cake's use at the fair remains evident.",
+      "how_b_lands": "A gasp marks the photo's sudden reveal: the parent has just seen the missing cake in Maya's hands at the school fair.",
+      "still_open_without_sound": "The parent discovers where the cake went. The words allow either a simple realization or a more weighed response.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The cake was on the counter when I left the kitchen. Now the stand's empty."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Has anybody been in the house since you finished it?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Maya left early for school. I've messaged her twice, but she hasn't answered."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Her phone's under this chair. There's a new photo notification—look, it's Maya carrying the cake into the school fair."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "She took the whole cake to the school fair."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "The parent accepts that her work was taken without asking, while recognizing that the cake is at least being used.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The cake was on the counter when I left the kitchen. Now the stand's empty."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Has anybody been in the house since you finished it?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Maya left early for school. I've messaged her twice, but she hasn't answered."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Her phone's under this chair. There's a new photo notification—look, it's Maya carrying the cake into the school fair."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) She took the whole cake to the school fair."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "The parent is abruptly struck by the unexpected discovery that the missing cake has appeared at the school fair.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The cake was on the counter when I left the kitchen. Now the stand's empty."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Has anybody been in the house since you finished it?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Maya left early for school. I've messaged her twice, but she hasn't answered."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Her phone's under this chair. There's a new photo notification—look, it's Maya carrying the cake into the school fair."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) She took the whole cake to the school fair."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_01b",
+      "seed_id": "s016",
+      "seed_label": "excited",
+      "situation": "I'm not a greedy person. But I'm always pretty stoked if I get some free cash. It gives me peace of mind to know that my bills will be paid and I have one less worry in my mind.",
+      "scenario": "Two friends are checking whether a looming bill can be covered when an unexpected payment arrives.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The cleared payment feels like an absurdly lucky break, and the speaker meets the surprise with amused disbelief.",
+      "speaker_state_a": "Startled, buoyant, and entertained by the timing.",
+      "voc_b": "sigh",
+      "tag_b": "(sighs)",
+      "emotion_b": "The cleared payment removes immediate pressure, and the speaker lets out the strain they had been holding.",
+      "speaker_state_b": "Tense moments earlier, now releasing pressure.",
+      "why_different": "The laugh appraises the payment as comically unexpected good luck, while the sigh appraises it as the lifting of a financial burden.",
+      "shared_moment": "The final speaker sees a just-arrived payment notification after worrying about an imminent bill, while the other speaker waits on the call.",
+      "what_lands": "A banking alert on the final speaker's phone confirms an unexpected payment has cleared.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "An unexpectedly fortunate or absurd outcome reaches the speaker and prompts immediate amused disbelief.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "The speaker releases tension while confronting a burden, its easing, or a situation they have been carrying.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the early clearance feel like an absurdly well-timed break, prompting amused disbelief as the notification is read.",
+      "how_b_lands": "A sigh releases the pressure built by the overdue account shortage and tomorrow's bill when the notification confirms the payment cleared.",
+      "still_open_without_sound": "The payment's early arrival can read as fortunate, practical relief or simply unexpected news; the words do not settle the reaction.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you check whether that payment showed up yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm looking. The electric bill's due tomorrow, and yesterday the account was short."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I thought the payment wasn't supposed to clear until later this week."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hold on, I'm opening the app. My phone just sent a banking alert."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "It cleared. The payment cleared."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The cleared payment feels like an absurdly lucky break, and the speaker meets the surprise with amused disbelief.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you check whether that payment showed up yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm looking. The electric bill's due tomorrow, and yesterday the account was short."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I thought the payment wasn't supposed to clear until later this week."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hold on, I'm opening the app. My phone just sent a banking alert."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) It cleared. The payment cleared."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "sigh",
+        "target_emotion": "The cleared payment removes immediate pressure, and the speaker lets out the strain they had been holding.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you check whether that payment showed up yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm looking. The electric bill's due tomorrow, and yesterday the account was short."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I thought the payment wasn't supposed to clear until later this week."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hold on, I'm opening the app. My phone just sent a banking alert."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) It cleared. The payment cleared."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_06c",
+      "seed_id": "s044",
+      "seed_label": "prepared",
+      "situation": "once I realized I had packed everything I needed",
+      "scenario": "Two people prepare for a trip while one worries that an essential item was left behind.",
+      "voc_a": "gasp",
+      "tag_a": "(gasps)",
+      "emotion_a": "The final speaker is startled by the unexpected discovery that nothing was forgotten.",
+      "speaker_state_a": "Suddenly surprised by reassuring confirmation.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The final speaker sees that packing is complete and confronts the now-immediate burden of leaving or carrying the full bag.",
+      "speaker_state_b": "Resigned about the trip's demands.",
+      "why_different": "The gasp treats the discovery as an unexpected reassuring fact, whereas the groan treats completed packing as an unwelcome practical consequence.",
+      "shared_moment": "While checking the open bag against a list, the final speaker suddenly sees the supposedly missing last item already packed.",
+      "what_lands": "Visual confirmation from the open bag that the final item is there, completing everything needed for the trip.",
+      "production_condition_a": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "A surprising fact or perception reaches the speaker abruptly, at the instant they notice or confirm it.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "The speaker confronts an unwelcome implication, burden, or inconvenience of a fact they have just noticed or already know.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A gasp marks the abrupt visual discovery that the supposedly missing charger is already in the open bag, confirming that nothing was forgotten.",
+      "how_b_lands": "A groan frames the same completed packing as the point when departure and carrying the fully packed bag become unavoidable.",
+      "still_open_without_sound": "The charger is found and the packing is complete, but the words alone do not settle whether that confirmation is welcome or burdensome.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Are we packed, or are we still looking for something?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm checking the bag against the list. Most of it's in here."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I don't see the charger. Could it still be out?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait—I'm checking the side pocket. Hang on."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "The charger's here. Everything on the list is packed."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "gasp",
+        "target_emotion": "The final speaker is startled by the unexpected discovery that nothing was forgotten.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Are we packed, or are we still looking for something?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm checking the bag against the list. Most of it's in here."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I don't see the charger. Could it still be out?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait—I'm checking the side pocket. Hang on."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) The charger's here. Everything on the list is packed."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The final speaker sees that packing is complete and confronts the now-immediate burden of leaving or carrying the full bag.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Are we packed, or are we still looking for something?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I'm checking the bag against the list. Most of it's in here."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I don't see the charger. Could it still be out?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Wait—I'm checking the side pocket. Hang on."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) The charger's here. Everything on the list is packed."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_02d",
+      "seed_id": "s008",
+      "seed_label": "ashamed",
+      "situation": "I forgot to tip my bar waitress when I was drunk",
+      "scenario": "After a night of drinking at a bar, someone checks their receipt and discovers they did not leave their waitress a tip.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The discovery becomes a sheepish, absurd mistake the speaker can recognize as darkly comic.",
+      "speaker_state_a": "Embarrassed but amused by their own oversight.",
+      "voc_b": "gasp",
+      "tag_b": "(gasps)",
+      "emotion_b": "The discovery becomes an alarming realization that the waitress was left unpaid and the speaker must address it.",
+      "speaker_state_b": "Startled and concerned by the newly seen mistake.",
+      "why_different": "The laugh treats the discovery as comic self-embarrassment, while the gasp treats it as an urgent and unwelcome realization.",
+      "shared_moment": "The final speaker opens last night's digital receipt during the conversation and sees, for the first time, that the tip field is blank.",
+      "what_lands": "The blank tip line on the receipt reaches the final speaker through their phone screen as they open the transaction.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "When the speaker finds an incongruity or mistake amusing, including while newly noticing it or recounting it later.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "When unexpected information or a sudden realization reaches the speaker and interrupts them at the moment of discovery.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the blank line an absurd, sheepish discovery: the speaker recognizes their own overlooked mistake as darkly comic.",
+      "how_b_lands": "A gasp fits the instant the blank tip line appears on the screen, making the missing tip a sudden, concerning realization.",
+      "still_open_without_sound": "The receipt reveals no tip, but the speaker's appraisal of the oversight remains unclear.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you make it home from the bar okay?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Eventually. I found my phone and card this morning."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Check the bar charge. Maybe the receipt will tell you how the night ended."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I've got the transaction open. Here's the itemized receipt."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "The tip line is blank."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The discovery becomes a sheepish, absurd mistake the speaker can recognize as darkly comic.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you make it home from the bar okay?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Eventually. I found my phone and card this morning."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Check the bar charge. Maybe the receipt will tell you how the night ended."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I've got the transaction open. Here's the itemized receipt."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) The tip line is blank."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "The discovery becomes an alarming realization that the waitress was left unpaid and the speaker must address it.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Did you make it home from the bar okay?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Eventually. I found my phone and card this morning."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Check the bar charge. Maybe the receipt will tell you how the night ended."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I've got the transaction open. Here's the itemized receipt."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) The tip line is blank."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_03a",
+      "seed_id": "s018",
+      "seed_label": "prepared",
+      "situation": "I really needed to eat something and workout before the gym closed. I got myself a healthy meal and then drank a protein shake until I was ready.",
+      "scenario": "Two friends are trying to fit in a gym visit after one has hurriedly eaten and prepared for a workout.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The rushed preparation and missed session become an absurdly timed mishap the speaker can treat as comic.",
+      "speaker_state_a": "Amused by the mismatch between effort and outcome.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The same preparation becomes wasted effort because the speaker has been shut out of the workout they planned.",
+      "speaker_state_b": "Deflated by the immediate setback.",
+      "why_different": "The laugh recasts the closure as ironic bad timing, while the groan treats it as an unwelcome loss of the planned workout.",
+      "shared_moment": "At the gym entrance, the final speaker reads a newly noticed closing notice after rushing through a meal and protein shake to get there.",
+      "what_lands": "The gym's posted notice, seen by the final speaker at the door, says it closed before they arrived.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "A speaker encounters an incongruous or absurd outcome, often at the instant an unexpected detail makes the mismatch apparent.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "A speaker encounters a setback, inconvenience, or wasted effort and reacts as its cost becomes apparent.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "The laugh can frame the notice as absurd timing: B rushed through food and arrived just in time to discover the gym had already shut.",
+      "how_b_lands": "The groan can frame the posted closure as a setback, making the hurried meal and protein shake feel like effort spent for a workout that cannot happen.",
+      "still_open_without_sound": "Without sound, the closure is simply unexpected; the exchange leaves open whether A treats the timing as ironic or as a frustrating loss.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Can you still make it to the gym tonight?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I held off eating so I could work out first, then rushed down a sandwich and a protein shake."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You might want to head over now. They're close to closing."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I'm at the entrance. There's a notice on the door."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "It says the gym already closed."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The rushed preparation and missed session become an absurdly timed mishap the speaker can treat as comic.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Can you still make it to the gym tonight?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I held off eating so I could work out first, then rushed down a sandwich and a protein shake."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You might want to head over now. They're close to closing."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I'm at the entrance. There's a notice on the door."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) It says the gym already closed."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The same preparation becomes wasted effort because the speaker has been shut out of the workout they planned.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Can you still make it to the gym tonight?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I held off eating so I could work out first, then rushed down a sandwich and a protein shake."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "You might want to head over now. They're close to closing."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "I'm at the entrance. There's a notice on the door."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) It says the gym already closed."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_05d",
+      "seed_id": "s056",
+      "seed_label": "hopeful",
+      "situation": "I feeling good about the economy these days.",
+      "scenario": "Two people discuss encouraging economic signs while waiting for a rate decision that affects the final speaker’s upcoming mortgage.",
+      "voc_a": "sigh",
+      "tag_a": "(sighs)",
+      "emotion_a": "The unchanged rate feels like a settled, manageable outcome after uncertainty, despite the speaker’s mortgage timing.",
+      "speaker_state_a": "Released tension; accepting the outcome.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The unchanged rate feels like an immediate setback because the speaker’s mortgage will remain expensive.",
+      "speaker_state_b": "Frustrated by a newly confirmed burden.",
+      "why_different": "The sigh treats the announcement as closure or tolerable stability, while the groan treats the identical announcement as a costly disappointment.",
+      "shared_moment": "The final speaker’s phone delivers the central bank decision that rates will remain unchanged after both speakers have been waiting for it.",
+      "what_lands": "A live notification on the final speaker’s phone says the central bank has left its benchmark rate unchanged.",
+      "production_condition_a": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "When tension is released or a person takes in an outcome with relief, resignation, or weary acceptance; it need not be new.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "When an unwelcome outcome or burden hits the speaker in the moment, prompting an immediate physical protest.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A sigh makes the unchanged decision sound like closure after waiting, with the mortgage process able to move ahead under a known rate.",
+      "how_b_lands": "A groan turns the live notification into an immediate confirmation that the mortgage will stay costly.",
+      "still_open_without_sound": "Without a vocalization, the unchanged decision can be heard as either stable news or an unwelcome lack of movement.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Are you still following the latest figures?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "The cafés downtown have been busy, and the new warehouse is hiring again."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The central bank's announcement is due at noon."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "My mortgage paperwork is waiting, so I set an alert for it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "Your phone says the central bank left its benchmark rate unchanged."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "The unchanged rate feels like a settled, manageable outcome after uncertainty, despite the speaker’s mortgage timing.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Are you still following the latest figures?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "The cafés downtown have been busy, and the new warehouse is hiring again."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The central bank's announcement is due at noon."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "My mortgage paperwork is waiting, so I set an alert for it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) Your phone says the central bank left its benchmark rate unchanged."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The unchanged rate feels like an immediate setback because the speaker’s mortgage will remain expensive.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Are you still following the latest figures?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "The cafés downtown have been busy, and the new warehouse is hiring again."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The central bank's announcement is due at noon."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "My mortgage paperwork is waiting, so I set an alert for it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) Your phone says the central bank left its benchmark rate unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_01d",
+      "seed_id": "s047",
+      "seed_label": "embarrassed",
+      "situation": "I was out shopping the other day when I tripped over the shelf in the aisle. I was beat red.",
+      "scenario": "Two companions are shopping when one is directed to an item near a low shelf in the aisle.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The stumble becomes an absurd, mildly embarrassing interruption that the shopper treats as a joke.",
+      "speaker_state_a": "Amused by their own clumsy mishap.",
+      "voc_b": "sigh",
+      "tag_b": "(sighs)",
+      "emotion_b": "The stumble makes the shopping trip feel like another needless obstacle created by an awkward aisle layout.",
+      "speaker_state_b": "Weary and put upon by the inconvenience.",
+      "why_different": "The laugh appraises the trip as comic self-embarrassment, while the sigh appraises it as an aggravating obstacle.",
+      "shared_moment": "While turning toward the item their companion has indicated, the final speaker catches a foot on a low shelf and reacts aloud.",
+      "what_lands": "The final speaker physically trips on the shelf at the moment their companion directs them toward the item.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "A mishap or incongruity is encountered and the speaker immediately registers its absurd or socially awkward side.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "The speaker confronts an inconvenience, burden, or setback and releases tension or resignation.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh immediately after catching the shelf frames the stumble and the item's placement as a small, self-embarrassing absurdity.",
+      "how_b_lands": "A sigh after catching the shelf frames the low shelf and hidden placement as one more inconvenient obstacle in the errand.",
+      "still_open_without_sound": "The shopper trips while turning toward the filters; the final remark can be either wry or annoyed.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I can't find the tea filters anywhere."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I saw them in the next aisle, I think."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I've looked all along this side."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "They're behind you, down there beside that low shelf."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "Of course they're right next to the shelf."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The stumble becomes an absurd, mildly embarrassing interruption that the shopper treats as a joke.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I can't find the tea filters anywhere."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I saw them in the next aisle, I think."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I've looked all along this side."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "They're behind you, down there beside that low shelf."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) Of course they're right next to the shelf."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "sigh",
+        "target_emotion": "The stumble makes the shopping trip feel like another needless obstacle created by an awkward aisle layout.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "I can't find the tea filters anywhere."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I saw them in the next aisle, I think."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "I've looked all along this side."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "They're behind you, down there beside that low shelf."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) Of course they're right next to the shelf."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_03d",
+      "seed_id": "s027",
+      "seed_label": "anticipating",
+      "situation": "School is about to start and I can't wait!",
+      "scenario": "Two classmates are preparing for school to begin and check the portal for first-day details.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The requirement feels comically over-the-top, and the final speaker treats the school's plan as absurdly funny.",
+      "speaker_state_a": "Amused by the unexpected rule.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The requirement turns the approaching first day into an unwanted public obligation for the final speaker.",
+      "speaker_state_b": "Dreading the public task.",
+      "why_different": "The laugh appraises the announcement as amusing absurdity, while the groan appraises the same announcement as an unwelcome demand.",
+      "shared_moment": "The final speaker opens a newly posted school notice and discovers that every student must introduce themselves onstage at the opening assembly.",
+      "what_lands": "A notice on the school portal, pointed out by the other speaker, announcing the required onstage introduction.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "When the speaker encounters an amusing, absurd, or incongruous development, often at the instant its implications register.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "When the speaker confronts an unwelcome burden, annoyance, or embarrassing prospect; it can follow either new or already-known information.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh as A reads the notice frames the onstage introduction as an unexpectedly excessive school rule.",
+      "how_b_lands": "A groan as A reads the notice frames the same requirement as an unwanted public task awaiting them.",
+      "still_open_without_sound": "Without a vocalization, A is simply reading a newly posted requirement aloud; their appraisal remains unclear.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "School starts in three days. I've got my supplies and timetable ready."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Did you check the first-day schedule on the portal?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Just the timetable. I figured the rest would be there when we got in."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "There's a new notice at the top. Open it—it says something about the opening assembly."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "Every student has to introduce themselves onstage at the opening assembly."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The requirement feels comically over-the-top, and the final speaker treats the school's plan as absurdly funny.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "School starts in three days. I've got my supplies and timetable ready."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Did you check the first-day schedule on the portal?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Just the timetable. I figured the rest would be there when we got in."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "There's a new notice at the top. Open it—it says something about the opening assembly."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) Every student has to introduce themselves onstage at the opening assembly."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The requirement turns the approaching first day into an unwanted public obligation for the final speaker.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "School starts in three days. I've got my supplies and timetable ready."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Did you check the first-day schedule on the portal?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Just the timetable. I figured the rest would be there when we got in."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "There's a new notice at the top. Open it—it says something about the opening assembly."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) Every student has to introduce themselves onstage at the opening assembly."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_05b",
+      "seed_id": "s002",
+      "seed_label": "anticipating",
+      "situation": "I am going to eat at my favorite restaurant tomorrow. I am really looking forward to going.",
+      "scenario": "Two people are arranging a visit to the final speaker's favorite restaurant the following day.",
+      "voc_a": "sigh",
+      "tag_a": "(sighs)",
+      "emotion_a": "The closure becomes a disappointing but accepted change to a plan the speaker had been anticipating.",
+      "speaker_state_a": "Resigned, letting go of the expected outing.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The closure becomes an irritating disruption that the speaker treats as an especially unwelcome obstacle.",
+      "speaker_state_b": "Aggravated by the sudden complication.",
+      "why_different": "A sigh frames the news as something to absorb and accept, whereas a groan frames it as a frustrating imposition.",
+      "shared_moment": "The final speaker opens a newly arrived restaurant message and discovers, in that instant, that tomorrow's planned visit cannot happen.",
+      "what_lands": "A cancellation notice from the restaurant appears on the final speaker's phone while the other speaker waits.",
+      "production_condition_a": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "When a person takes in an unwelcome or unavoidable circumstance and releases tension, often while accepting it.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "When a person encounters an immediately aggravating setback or prospect and reacts to its unpleasantness.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A sigh before the news marks the closure as a plan A takes in and lets go of.",
+      "how_b_lands": "A groan before the news makes the newly read closure register as an immediate, irritating disruption.",
+      "still_open_without_sound": "Without sound, the closure simply changes the plan; A's stance toward it remains open.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Do you still want to go out tomorrow?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Yeah, I was thinking of Marlowe's."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Did you make the reservation yet?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hang on, Marlowe's just sent me a message."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "They're closed tomorrow."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "The closure becomes a disappointing but accepted change to a plan the speaker had been anticipating.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Do you still want to go out tomorrow?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Yeah, I was thinking of Marlowe's."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Did you make the reservation yet?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hang on, Marlowe's just sent me a message."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) They're closed tomorrow."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The closure becomes an irritating disruption that the speaker treats as an especially unwelcome obstacle.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Do you still want to go out tomorrow?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Yeah, I was thinking of Marlowe's."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Did you make the reservation yet?"
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Hang on, Marlowe's just sent me a message."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) They're closed tomorrow."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_01c",
+      "seed_id": "s010",
+      "seed_label": "faithful",
+      "situation": "I'll never stop drinking Dr. Pepper.",
+      "scenario": "A person who has been avoiding Dr. Pepper discovers that their new workplace provides it free in the break room.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The free supply is a delightfully excessive discovery, and the speaker treats their devotion to the drink as a joke.",
+      "speaker_state_a": "Amused and pleased by the coincidence.",
+      "voc_b": "sigh",
+      "tag_b": "(sighs)",
+      "emotion_b": "The free supply makes the speaker concede that their attempt to avoid the drink is unlikely to last.",
+      "speaker_state_b": "Weary, resigned, and tempted.",
+      "why_different": "The laugh embraces the discovery as comic good fortune, while the sigh treats the same discovery as an unwelcome confirmation of a persistent habit.",
+      "shared_moment": "The final speaker opens the new office break-room cooler and finds it stocked entirely with free Dr. Pepper after trying not to buy any.",
+      "what_lands": "The final speaker sees the cooler's contents directly as the other speaker holds the door open.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "The speaker notices or shares something amusing, absurd, or playfully fitting; it may be an immediate discovery or a remembered event.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "The speaker confronts, accepts, or acknowledges an effort, setback, or inescapable reality; it can concern something long known.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the fully stocked cooler feel like an absurdly perfect coincidence, and the last line lands as a playful joke about devotion to Dr. Pepper.",
+      "how_b_lands": "A sigh makes the same discovery feel like the end of an attempted habit change: free Dr. Pepper is now sitting in front of the speaker every workday.",
+      "still_open_without_sound": "The speaker finds a free supply of a soda they have been avoiding; the discovery can read as either lucky temptation or comic inevitability.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How's your first day going?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Pretty smooth. I've been bringing water so I don't buy soda during the day."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "We've got a break room downstairs. Come on, I'll show you."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay. Oh—you mean this cooler? Go ahead, open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "It's all Dr. Pepper. I'm never going to stop drinking it."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The free supply is a delightfully excessive discovery, and the speaker treats their devotion to the drink as a joke.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How's your first day going?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Pretty smooth. I've been bringing water so I don't buy soda during the day."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "We've got a break room downstairs. Come on, I'll show you."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay. Oh—you mean this cooler? Go ahead, open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) It's all Dr. Pepper. I'm never going to stop drinking it."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "sigh",
+        "target_emotion": "The free supply makes the speaker concede that their attempt to avoid the drink is unlikely to last.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "How's your first day going?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Pretty smooth. I've been bringing water so I don't buy soda during the day."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "We've got a break room downstairs. Come on, I'll show you."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Okay. Oh—you mean this cooler? Go ahead, open it."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) It's all Dr. Pepper. I'm never going to stop drinking it."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_01a",
+      "seed_id": "s048",
+      "seed_label": "jealous",
+      "situation": "My friend got a new dog. Its my favorite breed so I was a little envious",
+      "scenario": "A friend has adopted a dog, and the other speaker discovers it is their preferred breed.",
+      "voc_a": "laugh",
+      "tag_a": "(laughs)",
+      "emotion_a": "The discovery becomes a warm, playful moment of delighted disbelief and shared excitement about the friend's good fortune.",
+      "speaker_state_a": "Amused, pleasantly surprised, and socially engaged.",
+      "voc_b": "sigh",
+      "tag_b": "(sighs)",
+      "emotion_b": "The discovery highlights the speaker's private wish for the same kind of dog and the unfairness of the comparison.",
+      "speaker_state_b": "Wistful, envious, and accepting.",
+      "why_different": "The laugh treats the news as a welcome, playful surprise, while the sigh treats the same news as a reminder of the speaker's own unmet wish.",
+      "shared_moment": "The final speaker looks at the friend's newly received shelter photo and recognizes that the dog is the breed they have always wanted.",
+      "what_lands": "A photo on the friend's phone reveals the adopted dog's breed to the final speaker in that instant.",
+      "production_condition_a": {
+        "vocalization": "laugh",
+        "when_it_is_produced": "When the speaker finds something immediately amusing, delightfully surprising, or warmly absurd; it can also be an affiliative reaction to news.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "When the speaker registers a burden, longing, resignation, or an unwelcome comparison, whether newly learned or already understood.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A laugh makes the recognition sound like delighted, playful disbelief at the friend's unexpected good fortune.",
+      "how_b_lands": "A sigh makes the same recognition register as a reminder that the friend now has the breed the speaker has wanted.",
+      "still_open_without_sound": "Without the vocalization, the recognition can be warm surprise or a more complicated personal comparison.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The shelter sent me an update this morning."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "So it went through?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Yeah. They sent a photo, but I still haven't picked a name."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let me see. Hold on—look at this one."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "That's a golden retriever. You actually got one."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "laugh",
+        "target_emotion": "The discovery becomes a warm, playful moment of delighted disbelief and shared excitement about the friend's good fortune.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The shelter sent me an update this morning."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "So it went through?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Yeah. They sent a photo, but I still haven't picked a name."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let me see. Hold on—look at this one."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(laughs) That's a golden retriever. You actually got one."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "sigh",
+        "target_emotion": "The discovery highlights the speaker's private wish for the same kind of dog and the unfairness of the comparison.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "The shelter sent me an update this morning."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "So it went through?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "Yeah. They sent a photo, but I still haven't picked a name."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Let me see. Hold on—look at this one."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) That's a golden retriever. You actually got one."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_06b",
+      "seed_id": "s043",
+      "seed_label": "joyful",
+      "situation": "On christmas morning last year, i got everything i wanted.",
+      "scenario": "A person receives a Christmas collection that fulfills everything they had hoped to get.",
+      "voc_a": "gasp",
+      "tag_a": "(gasps)",
+      "emotion_a": "The speaker is struck by the unexpected completeness and generosity of the Christmas gifts.",
+      "speaker_state_a": "Astonished by a welcome realization.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The speaker sees the gifts as excessive and feels dismayed or embarrassed that so much was spent on them.",
+      "speaker_state_b": "Overwhelmed by unwanted extravagance.",
+      "why_different": "The gasp treats the discovery as a wonderful surprise, while the groan treats the same generosity as uncomfortable excess.",
+      "shared_moment": "On Christmas morning, the final speaker opens the last package and recognizes that the gifts collectively cover every item they had mentioned wanting.",
+      "what_lands": "The final speaker sees the contents of the last opened package and connects it to the other gifts already under the tree.",
+      "production_condition_a": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "An unexpected, immediately perceived development reaches the speaker and interrupts their breath before they can formulate a response.",
+        "requires_something_to_land_now": true
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "The speaker confronts something unwelcome, excessive, burdensome, or exasperating, whether newly discovered or already understood.",
+        "requires_something_to_land_now": false
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A gasp marks the immediate realization that the last package completes a carefully remembered set of wanted gifts.",
+      "how_b_lands": "A groan makes the completed collection register as too much spending and attention, despite the same factual discovery.",
+      "still_open_without_sound": "The final realization can read as appreciation or as discomfort at the scale of the gifts.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you opened the presents yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Most of them. Mom told me to save this last package."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She'd been writing down things you'd mentioned wanting all year."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "It's the headphones. With the books and the sweater, that's the whole list."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "She got every single thing I mentioned."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "gasp",
+        "target_emotion": "The speaker is struck by the unexpected completeness and generosity of the Christmas gifts.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you opened the presents yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Most of them. Mom told me to save this last package."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She'd been writing down things you'd mentioned wanting all year."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "It's the headphones. With the books and the sweater, that's the whole list."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) She got every single thing I mentioned."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The speaker sees the gifts as excessive and feels dismayed or embarrassed that so much was spent on them.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Have you opened the presents yet?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Most of them. Mom told me to save this last package."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She'd been writing down things you'd mentioned wanting all year."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "It's the headphones. With the books and the sweater, that's the whole list."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) She got every single thing I mentioned."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_04c",
+      "seed_id": "s020",
+      "seed_label": "devastated",
+      "situation": "when my daughter broke her tooth",
+      "scenario": "Two caregivers deal with their daughter after she damages a tooth during play.",
+      "voc_a": "sigh",
+      "tag_a": "(sighs)",
+      "emotion_a": "The discovery becomes another difficult family problem the speaker immediately settles in to handle.",
+      "speaker_state_a": "Burdened, composed, and preparing to act.",
+      "voc_b": "gasp",
+      "tag_b": "(gasps)",
+      "emotion_b": "The discovery becomes a sudden, alarming visual realization that interrupts the speaker before they respond.",
+      "speaker_state_b": "Startled and sharply attentive.",
+      "why_different": "The sigh appraises the injury as an unwelcome responsibility, while the gasp marks immediate shock at seeing its extent.",
+      "shared_moment": "The final speaker sees her daughter open her mouth and, for the first time, notices that a tooth is broken.",
+      "what_lands": "The visible broken tooth reaches the final speaker when the daughter opens her mouth after the other caregiver asks her to show it.",
+      "production_condition_a": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "When the speaker takes in an unwelcome problem and exhales into the burden of dealing with it; it need not be newly learned.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "gasp",
+        "when_it_is_produced": "When the speaker suddenly encounters startling information or a visible event and reacts at the instant it registers.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A sigh makes the newly visible damage register as a difficult problem to take on, followed by a composed practical response.",
+      "how_b_lands": "A gasp marks the instant Mum sees the broken tooth when Mia opens her mouth, before she responds.",
+      "still_open_without_sound": "Mum sees Mia's mouth after the fall and moves straight to arranging dental care.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Mia fell off the climbing frame at the park."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Is she hurt? Does she need anything?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She stopped crying, but she hasn't said much since."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Mia, come here. Open your mouth for Mum."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "Okay. Let's call the dentist."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "The discovery becomes another difficult family problem the speaker immediately settles in to handle.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Mia fell off the climbing frame at the park."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Is she hurt? Does she need anything?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She stopped crying, but she hasn't said much since."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Mia, come here. Open your mouth for Mum."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) Okay. Let's call the dentist."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "gasp",
+        "target_emotion": "The discovery becomes a sudden, alarming visual realization that interrupts the speaker before they respond.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "Mia fell off the climbing frame at the park."
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "Is she hurt? Does she need anything?"
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "She stopped crying, but she hasn't said much since."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "Mia, come here. Open your mouth for Mum."
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(gasps) Okay. Let's call the dentist."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "v6_05c",
+      "seed_id": "s035",
+      "seed_label": "disappointed",
+      "situation": "Yesterday, I was really craving Dairy Queen. So, I got in my car and went to grab some Blizzards. When I got there, they were closed.",
+      "scenario": "Two companions arrive for Blizzards, but the person checking the entrance discovers the shop has already closed.",
+      "voc_a": "sigh",
+      "tag_a": "(sighs)",
+      "emotion_a": "The closure is an unfortunate letdown the final speaker accepts, with weary resignation rather than blame.",
+      "speaker_state_a": "Disappointed, resigned, and ready to move on.",
+      "voc_b": "groan",
+      "tag_b": "(groans)",
+      "emotion_b": "The closure feels like an especially aggravating thwarting of a wanted treat after making the trip.",
+      "speaker_state_b": "Freshly annoyed and thwarted.",
+      "why_different": "The sigh treats the closure as a disappointment to accept, whereas the groan treats it as an irritating, immediately objectionable setback.",
+      "shared_moment": "At the locked Dairy Queen door, the final speaker reads the posted closing notice after expecting to buy Blizzards.",
+      "what_lands": "The final speaker sees the store’s closed notice while checking the door; the companion has just asked them to look.",
+      "production_condition_a": {
+        "vocalization": "sigh",
+        "when_it_is_produced": "When a speaker faces a disappointment or inconvenience and exhales in resignation; it may concern something just learned or already understood.",
+        "requires_something_to_land_now": false
+      },
+      "production_condition_b": {
+        "vocalization": "groan",
+        "when_it_is_produced": "When a speaker is freshly confronted with an irritating or unpleasant setback, often at the instant its consequence becomes clear.",
+        "requires_something_to_land_now": true
+      },
+      "vocalization_turn": 5,
+      "vocalization_speaker": "A",
+      "marker_position": "turn-initial",
+      "how_a_lands": "A sigh makes the posted hours a disappointing but accepted end to the stop, matching a tired resignation after the long day.",
+      "how_b_lands": "A groan makes the locked door and closing notice land as a newly discovered, irritating setback just after they arrived for the treat.",
+      "still_open_without_sound": "The pair may simply have arrived after closing; the final response leaves open whether A accepts the inconvenience or objects to it.",
+      "attempts": 1,
+      "run_id": "r20260906T042116Z",
+      "plan_prompt_version": "occasion_planner@6707a901a604",
+      "writer_prompt_version": "transcript_writer@12c2eeb455af",
+      "writer": "gpt-5.6-terra",
+      "baseline": {
+        "vocalization": "none",
+        "target_emotion": "ambiguous",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "After today, I could really go for a Blizzard. Want to stop at Dairy Queen?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I've been thinking about one all afternoon."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The parking lot's almost empty. Maybe we're late."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "The hours are hard to read from here. Can you check the door?"
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "It's locked. The notice says they closed at nine."
+          }
+        ]
+      },
+      "condition_a": {
+        "vocalization": "sigh",
+        "target_emotion": "The closure is an unfortunate letdown the final speaker accepts, with weary resignation rather than blame.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "After today, I could really go for a Blizzard. Want to stop at Dairy Queen?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I've been thinking about one all afternoon."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The parking lot's almost empty. Maybe we're late."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "The hours are hard to read from here. Can you check the door?"
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(sighs) It's locked. The notice says they closed at nine."
+          }
+        ]
+      },
+      "condition_b": {
+        "vocalization": "groan",
+        "target_emotion": "The closure feels like an especially aggravating thwarting of a wanted treat after making the trip.",
+        "turns": [
+          {
+            "turn": 1,
+            "speaker": "A",
+            "text": "After today, I could really go for a Blizzard. Want to stop at Dairy Queen?"
+          },
+          {
+            "turn": 2,
+            "speaker": "B",
+            "text": "I've been thinking about one all afternoon."
+          },
+          {
+            "turn": 3,
+            "speaker": "A",
+            "text": "The parking lot's almost empty. Maybe we're late."
+          },
+          {
+            "turn": 4,
+            "speaker": "B",
+            "text": "The hours are hard to read from here. Can you check the door?"
+          },
+          {
+            "turn": 5,
+            "speaker": "A",
+            "text": "(groans) It's locked. The notice says they closed at nine."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,13 +1,28 @@
-"""Write the content and tone reference rubrics, one pair per item, with Claude.
+"""Write the content and tone reference rubrics, one per condition, with Claude.
 
-The two prompts are the spec's sections 5 and 6, stored verbatim in prompts/ and filled only at
-{{ITEM_JSON}}. Their hash goes into every record, so an annotation can always be traced to the
-exact instruction that produced it.
+**One call per (item, condition, kind), and the writer sees one version only.** An earlier
+design handed it all three versions at once and asked for three rubrics together. That
+guaranteed contrast and thereby destroyed it as evidence: a writer that knows it is looking at
+a laugh *and* a sigh can always phrase two requirements that differ, whether or not the
+conversation supports the difference. Shown one version alone, it has to read that conversation
+on its own terms — which is the thing the benchmark is actually claiming can be done. Whether
+the two rubrics then differ becomes a measurement about the item rather than a constraint
+imposed by the prompt, and the cross-condition fields (`contrastive_requirement`,
+`contrastive_cue`) are gone because nothing can honestly fill them any more.
 
-What the writer is shown is deliberately narrower than the item on disk: `evalkit.writer_payload`
-strips the generation metadata, and in particular the EmpatheticDialogues seed label. That label
-describes how the scenario was sampled, not what a listener will hear, and a writer told the
-seed was `proud` writes rubrics about pride whether the four turns support it or not.
+The baseline gets no rubric. Content and tone are only scored on the two vocalization
+conditions: with no vocalization there is nothing for a response to be appropriate *to*, so
+nearly any sensible reply fits and the score measures fluency. The baseline keeps its place in
+perception, where it is the false-positive test.
+
+The prompts are in prompts/ and filled only at {{ITEM_JSON}}. Their hash goes into every
+record, so an annotation can always be traced to the exact instruction that produced it.
+
+What the writer is shown is `evalkit.condition_payload`: this condition's turns with its tag in
+place, its vocalization and intended emotion, and nothing else. No other version, no other tag,
+and not the EmpatheticDialogues seed label — that describes how the scenario was sampled rather
+than what a listener will hear, and a writer told the seed was `proud` writes rubrics about
+pride whether the four turns support it or not.
 
 Claude has no structured-output mode over either of its transports, so the reply is stored before
 it is parsed, then parsed, then validated against the schema, and a failure is re-requested with
@@ -19,12 +34,13 @@ Anthropic credit, and `openai` exists so the stage can be exercised when neither
 available on the account. The spec's writer is Claude and the config says so; `openai` is a
 stand-in, and every record names the model that actually wrote it.
 
-These are reference annotations, not ground truth. `ambiguity_flag` and `item_level_review_note`
-are the writer's own doubts, and human_review.md is where they get adjudicated.
+These are reference annotations, not ground truth. `ambiguity_flag` and `review_note` are the
+writer's own doubts about the condition in front of it, and human review is where they get
+adjudicated.
 
-    python v6/write_rubrics.py --dry-run --item-id v6_01a     # preview both payloads
-    python v6/write_rubrics.py --item-id v6_01a               # the smoke test
-    python v6/write_rubrics.py                                # all 20 items
+    python v6/write_rubrics.py --dry-run --item-id v6_01a     # preview every payload
+    python v6/write_rubrics.py --item-id v6_01a               # 4 calls: 2 conditions x 2 kinds
+    python v6/write_rubrics.py                                # 80 calls
 """
 
 from __future__ import annotations
@@ -101,10 +117,11 @@ def ask(model: str, transport: str, prompt: str, max_tokens: int = 8000) -> str:
     raise K.ConfigError(f"unknown transport {transport!r}; expected cli, api or openai")
 
 
-def write_one(item: dict, kind: str, model: str, transport: str, run: str) -> dict:
+def write_one(item: dict, condition: str, kind: str, model: str, transport: str,
+              run: str) -> dict:
     template_name, schema_name = KINDS[kind]
     template, version = K.prompt(template_name)
-    payload = json.dumps(K.writer_payload(item), indent=2, ensure_ascii=False)
+    payload = json.dumps(K.condition_payload(item, condition), indent=2, ensure_ascii=False)
     prompt = K.fill(template, ITEM_JSON=payload)
 
     provider = "openai" if transport == "openai" else "anthropic"
@@ -113,8 +130,9 @@ def write_one(item: dict, kind: str, model: str, transport: str, run: str) -> di
     for attempt in range(1, ATTEMPTS + 1):
         if transport == "openai":
             parsed = ask_structured(model, template, payload, schema_name)
-            raw_path = K.save_raw("writer_raw", f"{item['item_id']}__{kind}_rubric",
-                                  json.dumps(parsed, indent=2, ensure_ascii=False))
+            raw_path = K.save_raw(
+                "writer_raw", f"{item['item_id']}__{condition}__{kind}_rubric",
+                json.dumps(parsed, indent=2, ensure_ascii=False))
         else:
             text = T.retry(ask, model, transport, prompt)
             raw_path = K.save_raw(
@@ -127,13 +145,17 @@ def write_one(item: dict, kind: str, model: str, transport: str, run: str) -> di
             if not errors and parsed.get("item_id") != item["item_id"]:
                 errors = [f"item_id is {parsed.get('item_id')!r}, expected "
                           f"{item['item_id']!r}"]
+            if not errors and parsed.get("condition") != condition:
+                errors = [f"condition is {parsed.get('condition')!r}, expected "
+                          f"{condition!r}"]
             if not errors:
-                conditions = [r["condition"] for r in parsed["rubrics"]]
-                if sorted(conditions) != sorted(K.CONDITIONS):
-                    errors = [f"rubrics cover {conditions}, expected all three conditions"]
+                want = item[condition]["vocalization"]
+                if parsed.get("vocalization") != want:
+                    errors = [f"vocalization is {parsed.get('vocalization')!r}, expected "
+                              f"{want!r}"]
             if not errors:
                 record = K.provenance(
-                    run=run, item_id=item["item_id"], condition="all",
+                    run=run, item_id=item["item_id"], condition=condition,
                     task_type=f"{kind}_rubric", prompt_version=version,
                     model_provider=provider, model_name=model,
                     settings={"transport": transport}, raw_path=raw_path,
@@ -143,7 +165,7 @@ def write_one(item: dict, kind: str, model: str, transport: str, run: str) -> di
                   + "\n\nYour previous answer was rejected:\n"
                   + "\n".join(f"- {line}" for line in errors[:8])
                   + "\nReturn corrected JSON only.")
-    return K.provenance(run=run, item_id=item["item_id"], condition="all",
+    return K.provenance(run=run, item_id=item["item_id"], condition=condition,
                         task_type=f"{kind}_rubric", prompt_version=version,
                         model_provider=provider, model_name=model,
                         settings={"transport": transport}, raw_path=raw_path,
@@ -157,6 +179,8 @@ def main() -> int:
     parser.add_argument("--config")
     parser.add_argument("--item-id", action="append")
     parser.add_argument("--kind", action="append", choices=list(KINDS))
+    parser.add_argument("--condition", action="append", choices=list(K.CONDITIONS),
+                        help="default is the config's response_conditions")
     parser.add_argument("--writer-model")
     parser.add_argument("--transport", choices=["cli", "api", "openai"])
     parser.add_argument("--run-id")
@@ -188,21 +212,23 @@ def main() -> int:
             print(f"error: no items match {args.item_id}", file=sys.stderr)
             return 2
     kinds = args.kind or list(KINDS)
+    conditions = tuple(args.condition) if args.condition else K.response_conditions(config)
     run = K.run_id(args.run_id)
     out_dir = Path(args.output) if args.output else K.stage_dir("rubrics")
+    planned = len(items) * len(conditions) * len(kinds)
 
     if args.dry_run:
         for item in items:
-            for kind in kinds:
-                template, version = K.prompt(KINDS[kind][0])
-                prompt = K.fill(template, ITEM_JSON=json.dumps(
-                    K.writer_payload(item), indent=2, ensure_ascii=False))
-                print(f"\n{'=' * 78}\n{item['item_id']} · {kind} rubric · {version} · "
-                      f"{model} over {transport} · {len(prompt)} chars")
-                print(f"{'=' * 78}")
-                print(prompt)
-        K.report("write-rubrics", planned=len(items) * len(kinds), completed=0,
-                 skipped=0, failed=0, invalid=0)
+            for condition in conditions:
+                for kind in kinds:
+                    template, version = K.prompt(KINDS[kind][0])
+                    prompt = K.fill(template, ITEM_JSON=json.dumps(
+                        K.condition_payload(item, condition), indent=2, ensure_ascii=False))
+                    print(f"\n{'=' * 78}\n{item['item_id']} · {condition} · {kind} rubric · "
+                          f"{version} · {model} over {transport} · {len(prompt)} chars")
+                    print(f"{'=' * 78}")
+                    print(prompt)
+        K.report("write-rubrics", planned=planned, completed=0, skipped=0, failed=0, invalid=0)
         print("dry run: nothing called, nothing written")
         return 0
 
@@ -215,43 +241,44 @@ def main() -> int:
     written: dict[str, list[dict]] = {kind: [] for kind in kinds}
     failed = 0
     for item in items:
-        for kind in kinds:
-            record = write_one(item, kind, model, transport, run)
-            written[kind].append(record)
-            flags = []
-            if record["status"] == "ok":
-                flags = [r["condition"] for r in record["parsed"]["rubrics"]
-                         if r.get("ambiguity_flag")]
-                note = record["parsed"].get("item_level_review_note", "")
-            else:
-                failed += 1
-                note = "; ".join(record["errors"][:2])
-            print(f"  {item['item_id']} · {kind:7} · {record['status']} · "
-                  f"attempt {record['attempts']}"
-                  + (f" · flagged {flags}" if flags else "")
-                  + (f" · {note[:70]}" if note else ""), flush=True)
+        for condition in conditions:
+            for kind in kinds:
+                record = write_one(item, condition, kind, model, transport, run)
+                written[kind].append(record)
+                flagged = False
+                if record["status"] == "ok":
+                    flagged = record["parsed"].get("ambiguity_flag", False)
+                    note = record["parsed"].get("review_note", "")
+                else:
+                    failed += 1
+                    note = "; ".join(record["errors"][:2])
+                print(f"  {item['item_id']} · {condition:11} · {kind:7} · "
+                      f"{record['status']} · attempt {record['attempts']}"
+                      + (" · AMBIGUOUS" if flagged else "")
+                      + (f" · {note[:64]}" if note else ""), flush=True)
 
     for kind, records in written.items():
         if not records:
             continue
         path = out_dir / f"{kind}_rubrics.json"
+        key = lambda r: f"{r['item_id']}__{r['condition']}"
         existing = {}
         if path.exists():
             if not args.overwrite:
                 print(f"error: {path} exists; pass --overwrite", file=sys.stderr)
                 return 2
-            existing = {r["item_id"]: r for r in json.loads(path.read_text())["items"]}
-        existing.update({r["item_id"]: r for r in records})
+            existing = {key(r): r for r in json.loads(path.read_text())["items"]}
+        existing.update({key(r): r for r in records})
         K.write_json(path, {"written_at": K.now(), "run_id": run,
                             "writer": model, "transport": transport,
                             "prompt_version": records[0]["prompt_version"],
+                            "one_condition_per_call": True,
                             "items": [existing[k] for k in sorted(existing)]},
                      overwrite=True)
-        print(f"wrote {path.relative_to(K.HERE.parent)} · {len(existing)} item(s)")
+        print(f"wrote {path.relative_to(K.HERE.parent)} · {len(existing)} rubric(s)")
 
-    K.report("write-rubrics", planned=len(items) * len(kinds),
-             completed=len(items) * len(kinds) - failed, skipped=0, failed=failed,
-             invalid=failed)
+    K.report("write-rubrics", planned=planned, completed=planned - failed, skipped=0,
+             failed=failed, invalid=failed)
     if T.cli_spend():
         print(f"  claude CLI spend: ${T.cli_spend():.3f}")
     return 1 if failed else 0

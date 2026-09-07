@@ -1,0 +1,68 @@
+You are planning a contrastive stimulus for a benchmark on whether spoken-language models hear meaning in non-speech vocalizations.
+
+A five-turn conversation between two speakers will be written. The very same words will be heard three ways: once with no non-speech vocalization at all, and twice with one vocalization at the end of the final turn — a different one each time.
+
+You are not writing the dialogue yet. You are deciding what it should be about, and what each of the two vocalizations would make it mean.
+
+YOUR TASK
+
+Given a situation and two vocalizations, work out a five-turn exchange in which BOTH vocalizations are things the final speaker could genuinely produce, and in which each one sends the whole conversation somewhere different.
+
+THE REQUIREMENT THAT MATTERS
+
+The two emotional framings must be genuinely different — not two shades of the same feeling, and not the same stance at two intensities. Different valence, or a different appraisal of what has happened, or a different stance toward the other speaker.
+
+These are too close, and would fail:
+- "mildly frustrated" against "quite frustrated"
+- "amused" against "delighted"
+
+These are far enough apart:
+- the speaker is letting the whole thing go as funny, against the speaker conceding it is not going to change
+- the speaker has just realised something they had not seen, against the speaker is hurt by what they have realised
+
+Both framings must be honest readings of the SAME five turns. If you find yourself needing the words to differ, the plan is wrong — go back and choose a situation where one set of words genuinely supports both.
+
+WHAT MAKES THIS POSSIBLE
+
+The vocalization lands at the end of the conversation, so it reinterprets what has already been said rather than colouring what comes next. Plan for that: the exchange should build to something whose meaning is still open when the last speaker reacts to it. A conversation that has already settled how everyone feels leaves the sound nothing to do.
+
+Do not let the words name the emotion. If a line says "I'm so relieved" or "that's hilarious", the sound is redundant and the item is dead. The words report what happened; the sound says how the speaker is taking it.
+
+USING THE SITUATION
+
+The situation comes from EmpatheticDialogues and is a seed, not a script. Take the circumstance and the relationship. Do not reproduce its wording, and do not name the emotion it was filed under.
+
+IF IT CANNOT BE DONE
+
+If this situation genuinely cannot support both vocalizations — not that it is hard, but that one of them would be incoherent or callous here — set `feasible` to false and say why. A forced item is worse than a missing one.
+
+Return valid JSON only, using this schema:
+
+{
+  "situation_summary": "<one sentence: the circumstance the conversation is about, maximum 25 words>",
+  "outline": [
+    "<what turn 1 does, maximum 20 words>",
+    "<what turn 2 does>",
+    "<what turn 3 does>",
+    "<what turn 4 does>",
+    "<what turn 5 does, the turn that carries the vocalization>"
+  ],
+  "open_question": "<what is still unsettled when the last speaker reacts, maximum 25 words>",
+  "framing_a": {
+    "vocalization": "<vocalization A as given>",
+    "emotional_framing": "<what the whole conversation comes to mean with this sound, maximum 25 words>",
+    "speaker_state": "<the final speaker's likely state, maximum 15 words>"
+  },
+  "framing_b": {
+    "vocalization": "<vocalization B as given>",
+    "emotional_framing": "<maximum 25 words>",
+    "speaker_state": "<maximum 15 words>"
+  },
+  "why_different": "<one sentence naming what separates the two framings, maximum 30 words>",
+  "feasible": true,
+  "why_not": ""
+}
+
+INPUT:
+
+{{INPUT}}

@@ -39,6 +39,12 @@ CONFIG = HERE / "eval_config.yaml"
 STAGES = ("validation", "tasks", "writer_raw", "rubrics", "responses", "judgments", "scores")
 CONDITIONS = ("baseline", "condition_a", "condition_b")
 RESPONSE_CODE = {"baseline": "R0", "condition_a": "RA", "condition_b": "RB"}
+# The conditions a response is elicited for, and therefore the only ones content and tone can
+# be judged on. The baseline is out by default: with no vocalization there is nothing for a
+# response to be appropriate *to*, so almost any reasonable reply fits it and a score against
+# it measures fluency. It stays in perception and pragmatic, where it is the false-positive
+# test and is doing real work.
+DEFAULT_RESPONSE_CONDITIONS = ("condition_a", "condition_b")
 
 
 class ConfigError(RuntimeError):
@@ -245,6 +251,37 @@ def load_items(config: dict) -> tuple[dict, list[dict]]:
 
 WRITER_FIELDS = ("item_id", "scenario", "vocalization_turn", "vocalization_speaker",
                  "voc_a", "emotion_a", "tag_a", "voc_b", "emotion_b", "tag_b")
+
+
+def response_conditions(config: dict) -> tuple[str, ...]:
+    return tuple(config["dataset"].get("response_conditions",
+                                       DEFAULT_RESPONSE_CONDITIONS))
+
+
+def condition_payload(item: dict, condition: str) -> dict:
+    """What an annotator sees: one version of the conversation, and no sign of any other.
+
+    Deliberately narrower than `writer_payload`. A rubric written while looking at both
+    vocalizations can always be made to contrast, because the writer knows what it is
+    contrasting with — so the contrast stops being evidence about the stimulus and becomes an
+    artefact of how the annotation was collected. Shown one version alone, the writer has to
+    read this conversation on its own terms, and whether the two rubrics then differ is a fact
+    about the item that can be measured.
+
+    So `voc_b`, `emotion_b`, `tag_b` and the other conditions' turns are all absent, along with
+    the seed label that `writer_payload` already withheld.
+    """
+    if condition not in CONDITIONS:
+        raise ConfigError(f"unknown condition {condition!r}")
+    block = item[condition]
+    return {"item_id": item["item_id"], "condition": condition,
+            "scenario": item["scenario"],
+            "vocalization": block["vocalization"],
+            "target_emotion": block["target_emotion"],
+            "tag": item["tag_a"] if condition == "condition_a" else item["tag_b"],
+            "vocalization_turn": item["vocalization_turn"],
+            "vocalization_speaker": item["vocalization_speaker"],
+            "turns": block["turns"]}
 
 
 def writer_payload(item: dict) -> dict:

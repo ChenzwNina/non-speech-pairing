@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 transcript",
+  "description": "Stage two. Five turns written once, with the vocalization standing as a marker in the final turn. The three versions are built from this in code, so identical words, identical position and exactly one vocalization are true by construction rather than things a validator has to catch afterwards.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "turns",
+    "how_a_lands",
+    "how_b_lands",
+    "still_open_without_sound"
+  ],
+  "properties": {
+    "turns": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "turn",
+          "speaker",
+          "text"
+        ],
+        "properties": {
+          "turn": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "how_a_lands": {
+      "type": "string",
+      "minLength": 1
+    },
+    "how_b_lands": {
+      "type": "string",
+      "minLength": 1
+    },
+    "still_open_without_sound": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

@@ -31,6 +31,12 @@ dataset:
   # Used when a command is not told which renderer to work on.
   default_renderer: elevenlabs
 
+  # The conditions a response is elicited for, and so the only ones content and tone are scored
+  # on. The baseline is excluded: with no vocalization there is nothing for a response to be
+  # appropriate *to*, so nearly any sensible reply fits it and the score measures fluency
+  # instead. It remains in perception — where it is the false-positive test — and in pragmatic.
+  response_conditions: [condition_a, condition_b]
+
 # One seed governs every deterministic draw: option order, correct-answer position, paired-trial
 # candidate order. Changing it reshuffles the frozen task set, so it changes the benchmark.
 seed: 20260902

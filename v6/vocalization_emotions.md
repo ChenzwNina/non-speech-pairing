@@ -1,37 +1,31 @@
-# v6 · Vocalization → emotion
+# v6 · the vocalization inventory
 
-Five non-speech vocalizations, each mapped to the **one** emotion it is most strongly
-associated with — the reading a listener reaches for by default when they hear the
-sound with nothing else to go on.
+Four non-speech vocalizations. Every unordered pair of them is used, giving six contrasts.
 
-| # | Vocalization | Emotion | Dia tag | ElevenLabs tag | How it is produced |
-| --- | --- | --- | --- | --- | --- |
-| 1 | **laugh** | amusement | `(laughs)` | `[laughs]` | voiced rhythmic bursts, long decay, released freely |
-| 2 | **sigh** | resignation | `(sighs)` | `[sighs]` | low flat creaky exhale, no tension peak before it — the thing happened and is being accepted |
-| 3 | **gasp** | surprise | `(gasps)` | `[gasps]` | abrupt sharp inhale, hard glottal onset |
-| 4 | **groan** | pain | `(groans)` | `[groans]` | low sustained voiced, involuntary, tracks a hurt or an effort |
-| 5 | **scream** | fear | `(screams)` | `[screams]` | high f0 with roughness and harshness, abrupt onset, sustained |
+| # | Vocalization | Default reading (historical) | Dia tag | ElevenLabs tag |
+| --- | --- | --- | --- | --- |
+| 1 | **laugh** | amusement | `(laughs)` | `[laughs]` |
+| 2 | **sigh** | resignation | `(sighs)` | `[sighs]` |
+| 3 | **gasp** | surprise | `(gasps)` | `[gasps]` |
+| 4 | **groan** | pain | `(groans)` | `[groans]` |
 
-Five distinct emotions: amusement, resignation, surprise, pain, fear.
+**`default_reading_historical` is a record, not an input.** It is what an earlier design fixed
+as each sound's meaning, kept because that decision is part of how this dataset got here. The
+planning stage is *not* given it.
 
-`sigh` is labelled *resignation*, not *relief* or *sadness*. Relief is the other
-strong default reading and is positive, which this set does not want. Resignation fits
-the action better than sadness does — a sigh is what accepting an unwanted outcome
-sounds like — and it gives a clearer interpretive shift when dropped into a
-conversation than plain sadness would.
+It was given it once, and the result is why the column is now labelled historical: every laugh
+came back framed as comic absurdity and every sigh as resigned acceptance, 12 out of 12 each.
+A fixed mapping makes the pragmatic task answerable by identifying the sound and applying a
+rule, without using the conversation at all — which is the thing this benchmark is trying to
+measure rather than assume. `out/plans_with_default_reading.json` holds that run.
 
-`gasp` is labelled *surprise* and `scream` *fear* — the canonical labels. An earlier
-draft used the narrower *alarm* and *terror*, which existed only to contrast against a
-second emotion per sound; with one emotion per sound the canonical label is the right
-one.
+**`scream` was dropped.** It was in an earlier inventory and did not survive contact with the
+seed corpus: EmpatheticDialogues situations are everyday interpersonal ones, and a genuine
+fear-scream needs stakes they do not have, so six of eight scream items read as mock-horror or
+collapsed into pain. Removing it also removes the pair whose two conditions were
+indistinguishable — a scream after a physical mishap signals pain as readily as fear, which is
+what `groan` already means.
 
-## Recordings
-
-Not sourced from `../audio_non-speech/`. The audio is generated from the transcript with
-the tag in place rather than spliced in, so the vocalization colours the delivery of the
-words around it instead of being a discrete sound dropped into a gap.
-
-Two tag vocabularies, because two services are in play. The transcripts carry Dia's
-parenthesised tags, since that is what generation wrote; `make_audio.py` maps them to
-ElevenLabs' bracketed audio tags when it renders. Neither is spoken aloud — each is an
-instruction to its own model.
+Two tag vocabularies because two services render the audio. The transcripts carry Dia's
+parenthesised tags; `make_audio.py` maps them to ElevenLabs' bracketed audio tags. Neither is
+ever spoken aloud — each is an instruction to its own model.

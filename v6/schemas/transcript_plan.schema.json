@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 transcript plan",
+  "description": "Stage one. Decides what the conversation is about and what each of the two vocalizations would make it mean, before any dialogue exists. The two framings must differ in valence, appraisal or stance — not in intensity.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "situation_summary",
+    "outline",
+    "open_question",
+    "framing_a",
+    "framing_b",
+    "why_different",
+    "feasible",
+    "why_not"
+  ],
+  "properties": {
+    "situation_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outline": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "open_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "framing_a": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vocalization",
+        "emotional_framing",
+        "speaker_state"
+      ],
+      "properties": {
+        "vocalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "emotional_framing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speaker_state": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "framing_b": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vocalization",
+        "emotional_framing",
+        "speaker_state"
+      ],
+      "properties": {
+        "vocalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "emotional_framing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speaker_state": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "why_different": {
+      "type": "string",
+      "minLength": 1
+    },
+    "feasible": {
+      "type": "boolean"
+    },
+    "why_not": {
+      "type": "string"
+    }
+  }
+}

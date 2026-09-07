@@ -79,6 +79,44 @@ class TestPerceptionOptions(unittest.TestCase):
                             B.fingerprint(ITEMS + [fixtures.item("t_99")]))
 
 
+class TestAnnotationPayload(unittest.TestCase):
+    """A rubric writer must not be able to see the version it is not annotating.
+
+    If it can, any contrast between the two rubrics may be an artefact of the writer knowing
+    what it was contrasting with, rather than evidence about the stimulus.
+    """
+
+    def test_the_payload_carries_one_condition_only(self):
+        item = fixtures.item()
+        for condition, other in (("condition_a", "condition_b"),
+                                 ("condition_b", "condition_a")):
+            payload = K.condition_payload(item, condition)
+            blob = str(payload)
+            self.assertEqual(payload["condition"], condition)
+            self.assertNotIn(other, blob)
+            self.assertNotIn("baseline", blob)
+            self.assertNotIn(item[other]["vocalization"], blob)
+            self.assertNotIn(item["tag_b" if condition == "condition_a" else "tag_a"], blob)
+
+    def test_the_payload_carries_this_conditions_tag_and_turns(self):
+        payload = K.condition_payload(fixtures.item(), "condition_a")
+        self.assertEqual(payload["tag"], fixtures.TAGS["laugh"])
+        self.assertEqual(payload["vocalization"], "laugh")
+        self.assertEqual(len(payload["turns"]), 4)
+        tagged = payload["turns"][fixtures.VOC_TURN - 1]
+        self.assertIn(fixtures.TAGS["laugh"], tagged["text"])
+
+    def test_the_payload_withholds_the_seed_label(self):
+        item = dict(fixtures.item(), seed_label="proud", situation="a seed sentence")
+        blob = str(K.condition_payload(item, "condition_a"))
+        self.assertNotIn("proud", blob)
+        self.assertNotIn("a seed sentence", blob)
+
+    def test_an_unknown_condition_is_refused(self):
+        with self.assertRaises(K.ConfigError):
+            K.condition_payload(fixtures.item(), "condition_c")
+
+
 class TestDryRun(unittest.TestCase):
     def test_guard_refuses_paid_calls_under_dry_run(self):
         K.set_dry_run(True)

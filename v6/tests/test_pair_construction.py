@@ -1,4 +1,4 @@
-"""Six directed paired trials per item, with the gold identity preserved through shuffling."""
+"""Two directed paired trials per item, with the gold identity preserved through shuffling."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ import evalkit as K
 SEED = 20260902
 
 
-def responses(item_ids, models=("openai",), conditions=K.CONDITIONS):
+def responses(item_ids, models=("openai",), conditions=K.DEFAULT_RESPONSE_CONDITIONS):
     return [fixtures.response(item_id, condition, model)
             for item_id in item_ids for model in models for condition in conditions]
 
@@ -21,17 +21,31 @@ class TestPairConstruction(unittest.TestCase):
     def build(self, records, swap=False):
         return P.trials(P.group(records), SEED, "rtest", "content_pairwise_judge@test", swap)
 
-    def test_each_target_condition_produces_exactly_two_trials(self):
+    def test_each_vocalization_condition_is_a_target_exactly_once(self):
         built, incomplete = self.build(responses(["t_01"]))
         self.assertEqual(incomplete, [])
         per_target = Counter(t["target_condition"] for t in built)
-        for condition in K.CONDITIONS:
-            self.assertEqual(per_target[condition], 2, per_target)
+        self.assertEqual(dict(per_target), {"condition_a": 1, "condition_b": 1})
 
-    def test_three_targets_give_six_directed_trials_per_item(self):
+    def test_two_targets_give_two_directed_trials_per_item(self):
         built, _ = self.build(responses(["t_01", "t_02"]))
-        self.assertEqual(len(built), 12)
-        self.assertEqual(len({t["task_id"] for t in built}), 12)
+        self.assertEqual(len(built), 4)
+        self.assertEqual(len({t["task_id"] for t in built}), 4)
+
+    def test_the_baseline_is_never_a_target_or_a_candidate(self):
+        """No response is elicited for it, so it cannot appear on either side."""
+        built, _ = self.build(responses(["t_01", "t_02", "t_03"]))
+        self.assertTrue(built)
+        for trial in built:
+            self.assertNotEqual(trial["target_condition"], "baseline")
+            self.assertNotEqual(trial["against_condition"], "baseline")
+            for candidate in trial["candidates"].values():
+                self.assertNotEqual(candidate["condition"], "baseline")
+
+    def test_a_stray_baseline_response_does_not_create_trials(self):
+        records = responses(["t_01"]) + [fixtures.response("t_01", "baseline")]
+        built, _ = self.build(records)
+        self.assertEqual(len(built), 2)
 
     def test_a_target_never_faces_itself(self):
         built, _ = self.build(responses(["t_01"]))
@@ -67,6 +81,7 @@ class TestPairConstruction(unittest.TestCase):
         plain, _ = self.build(responses(["t_01"]))
         swapped, _ = self.build(responses(["t_01"]), swap=True)
         self.assertEqual(len(swapped), 2 * len(plain))
+        self.assertEqual(len(swapped), 4)
         by_key = {}
         for trial in swapped:
             by_key.setdefault((trial["target_condition"], trial["against_condition"]),
@@ -75,15 +90,15 @@ class TestPairConstruction(unittest.TestCase):
             self.assertEqual(sorted(slots), ["A", "B"])
 
     def test_an_item_missing_a_condition_is_skipped_not_half_built(self):
-        records = responses(["t_01"]) + [fixtures.response("t_02", "baseline")]
+        records = responses(["t_01"]) + [fixtures.response("t_02", "condition_a")]
         built, incomplete = self.build(records)
-        self.assertEqual(len(built), 6)
+        self.assertEqual(len(built), 2)
         self.assertEqual(len(incomplete), 1)
         self.assertIn("t_02", incomplete[0])
 
     def test_models_are_kept_apart(self):
         built, _ = self.build(responses(["t_01"], models=("openai", "gemini")))
-        self.assertEqual(len(built), 12)
+        self.assertEqual(len(built), 4)
         for trial in built:
             for candidate in trial["candidates"].values():
                 self.assertIn(trial["evaluated_model"], candidate["response_text"])
