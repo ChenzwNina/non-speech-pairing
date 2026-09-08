@@ -30,20 +30,23 @@
     "ref_aKw9UnnjRq5scbeeGI7Z.mp3",
     "dia_reference.wav"
   ],
-  "clone_from": {
+  "voice_match_reference": {
     "file": "ElevenLabs_correct_speaker_ref.mp3",
     "seconds": 4.05,
     "codec": "mp3",
     "sample_rate": 44100,
     "channels": 1,
-    "role": "the timbre a cloning renderer should reproduce",
-    "why_only_one_voice_is_needed": "Dia supplies only the gasp and groan clips, and the vocalization is always produced by the speaker of turn 5 — speaker A in every item, since the turns run A-B-A-B-A. So a cloning renderer never needs speaker B's voice.",
-    "dataset_speaker": null,
-    "voice_id": null,
+    "role": "the timbre a generated vocalization clip has to match, for a verifier to compare against",
+    "used_by": "an audio model checking that a Dia-generated gasp or groan sounds like the same person as the ElevenLabs speech it will be spliced into",
     "transcript": null,
+    "why_no_transcript": "None is needed. A verifier comparing timbre does not read words, so this is not a cloning input and the transcript gap that applies to one does not apply here.",
+    "dataset_speaker": null,
     "unconfirmed": [
-      "Which dataset speaker this is. Speaker A (s3TPKV1kjDlVtZbl4Ksh) is the inference, because A produces every vocalization, but it is not stated and has not been checked by listening.",
-      "What is said in it. Dia conditions on a reference recording together with its transcript, so this is left null rather than guessed — the same gap the previous Dia reference had."
+      "Which dataset speaker this is. Speaker A (s3TPKV1kjDlVtZbl4Ksh) is the inference, because A produces every vocalization and so is the only voice a clip ever has to match. Not stated, and not checked by listening — it matters for reading a verifier's verdict, not for running one."
     ]
+  },
+  "clone_source": {
+    "file": "ElevenLabs_ref.mp3",
+    "why": "A cloning renderer conditions on a recording together with the words spoken in it, and this is the clip whose transcript is recorded. Its two speakers are labelled S1 and S2 — see mapping_warning, they run opposite to the dataset's A and B."
   }
 }

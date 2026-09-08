@@ -3467,12 +3467,13 @@
         },
         "sets_not_yet_rendered": {
           "dia_voc": {
-            "what": "the same ElevenLabs speech with the gasp and groan clips replaced by Dia ones, cloned from reference/ElevenLabs_correct_speaker_ref.mp3",
+            "what": "the same ElevenLabs speech with the gasp and groan clips replaced by Dia ones, in the same voice as the speech around them",
             "scope": "all 24 items, both revisions — nothing has been rendered for this set, so the revision split does not narrow it",
             "which_conditions": "only the conditions whose vocalization is gasp or groan; laugh and sigh clips stay as they are",
             "must_hold": "the speech has to be the same samples as the elevenlabs set. Only the clip spliced into turn 5 differs, and that is what makes a difference between the two sets attributable to the sound rather than to voice or pacing.",
-            "blocked_on": "reference/reference.json records no transcript for the clone source, and a cloning renderer conditions on the recording together with the words spoken in it.",
-            "config": "eval_config.yaml renderers.dia_voc"
+            "config": "eval_config.yaml renderers.dia_voc",
+            "clone_source": "reference/ElevenLabs_ref.mp3, whose transcript is recorded in reference/reference.json — a cloning renderer needs both.",
+            "voice_match_check": "reference/ElevenLabs_correct_speaker_ref.mp3 is the timbre a generated clip has to match. Worth verifying, because a clip in a different voice makes the splice audible and a model then reacts to a speaker change rather than to the vocalization."
           }
         }
       },

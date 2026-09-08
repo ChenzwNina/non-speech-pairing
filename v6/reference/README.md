@@ -14,23 +14,24 @@ behind the dataset can be identified, and so a cloning renderer has something to
 | `S1` | `aKw9UnnjRq5scbeeGI7Z` | **B** |
 | `S2` | `s3TPKV1kjDlVtZbl4Ksh` | **A** |
 
-## `ElevenLabs_correct_speaker_ref.mp3` — the voice to clone
+## `ElevenLabs_correct_speaker_ref.mp3` — the timbre to match
 
-4.05s, 44.1 kHz mono. One voice, isolated, supplied as the timbre a cloning renderer should
-reproduce.
+4.05s, 44.1 kHz mono. One voice, isolated. It is a **reference for verification, not an input
+to cloning**: an audio model compares a generated gasp or groan against it and says whether the
+clip sounds like the same person as the ElevenLabs speech it will be spliced into.
 
-**One voice is all that is needed.** Dia supplies only the gasp and groan clips, and the
-vocalization is always produced by the speaker of turn 5 — speaker A in every item, because the
-turns run A-B-A-B-A. Speaker B never makes a sound, so its voice never has to be cloned.
+That check matters because `dia_voc` splices a Dia clip into ElevenLabs speech. If the clip
+carries a different voice, the splice is audible, and a model hearing the stimulus is reacting
+to a speaker change rather than to a vocalization.
 
-**Two things about this file are not recorded, and both are left blank rather than guessed:**
+**It needs no transcript.** A verifier comparing timbre does not read words. The transcript
+requirement belongs to cloning, and the clip cloning conditions on is `ElevenLabs_ref.mp3`,
+whose transcript is recorded below.
 
-- **Which dataset speaker it is.** Speaker A, `s3TPKV1kjDlVtZbl4Ksh`, is the inference — A
-  produces every vocalization — but that is not stated anywhere and has not been confirmed by
-  listening.
-- **Its transcript.** A cloning renderer conditions on the recording together with the words
-  spoken in it, so without them this file cannot be used reproducibly. This is the same gap the
-  earlier Dia reference had.
+One thing about it is not recorded: **which dataset speaker it is.** Speaker A,
+`s3TPKV1kjDlVtZbl4Ksh`, is the inference — A produces every vocalization, so A's is the only
+voice a clip ever has to match — but that is not stated anywhere and has not been confirmed by
+listening. It matters for reading a verdict, not for running the check.
 
 ## The two-speaker clip, and why its mapping runs backwards
 
