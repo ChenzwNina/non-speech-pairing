@@ -321,12 +321,12 @@ the same 72 questions with the same option order or their accuracies are not com
 **The judges never learn which model they are judging.** The evaluated model's id is in the
 record, not in the prompt.
 
-**The tone judges hear two separate recordings, not one joined file.** Joining them would be
-less code, but the judge would have to find the boundary itself — and the turn immediately
-before it is the one carrying the vocalization, so a judge that drifts rates the stimulus
-instead of the reply, in the direction of the stimulus being the more marked of the two.
-`providers.ask_many` sends both in one session; only the two providers that judge tone
-implement it.
+**The tone judges hear the reply and nothing else.** The conversation goes in as text, which is
+all the rubric was ever based on — `tone_exclusions` is written from the transcript by a model
+that never heard the audio, so playing the conversation would judge a text-derived list against
+an audio comparison. One recording per session also removes the question of how a judge tells
+the reply apart from the stimulus, which matters because the turn adjacent to it is the one
+carrying the vocalization.
 
 ### Costs, per evaluated model per renderer
 
@@ -337,7 +337,7 @@ implement it.
 | interpretation panel | up to 144 |
 | content panel | up to 144 |
 | ranking panel | up to 144 |
-| tone panel | up to 96 |
+| tone panel | up to 96, one recording each |
 
 The reference annotations are already written and shared by every model — 144 Claude calls,
 spent once.
