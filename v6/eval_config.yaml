@@ -11,26 +11,29 @@ dataset:
   # at pairs.json would score audio against text that was never spoken.
   transcripts: out/transcripts.json
 
-  # Two renderers speak the same 20 transcripts, and they are being compared, so the renderer
-  # is an experimental factor rather than a detail: each owns a subtree, every record stamps
-  # which one produced the stimulus it was asked about, and every metric breaks down by it.
-  # Adding a third is a block here plus a render; nothing downstream needs to change.
+  # The variable here is where the vocalization clip came from, not who rendered the audio.
+  # All the speech is ElevenLabs in both sets, cut from the same takes — turns 1 to 4 and the
+  # words of turn 5 are the same samples throughout. Only the clip spliced into turn 5 differs,
+  # which is what makes a difference between these two attributable to the sound itself rather
+  # than to voice, pacing or overall audio quality.
   renderers:
     elevenlabs:
       audio_root: out/audio/elevenlabs
       audio_path_template: "{item_id}__{condition}.mp3"
       notes: >
-        eleven_v3, two stock voices, stability 0.30. The vocalization is a bracketed audio tag
-        rendered inline, so it colours the delivery of the words around it.
-    dia:
-      audio_root: out/audio/dia
-      audio_path_template: "{item_id}__{condition}.wav"
+        Every clip cut from ElevenLabs' own tagged take of turn 5. eleven_v3, two stock voices,
+        stability 0.30.
+    dia_voc:
+      audio_root: out/audio/dia_voc
+      audio_path_template: "{item_id}__{condition}.mp3"
       notes: >
-        Voice-cloned from reference/ElevenLabs_ref.mp3, parenthesised non-verbal
-        tags. That clip's S1 is the dataset's speaker B and S2 is speaker A —
-        the reverse of the tag order — so check reference/README.md before
-        wiring the speaker map, or the two renderers' voices end up swapped. Rendered on the
-        VM; set the template to whatever that job actually wrote.
+        The same ElevenLabs speech, with the gasp and groan clips replaced by Dia ones.
+        ElevenLabs' gasps and groans were judged inadequate by listening, so those two sounds
+        come from Dia, voice-cloned from reference/ElevenLabs_ref.mp3 so each clip sits in the
+        same voice as the speech around it. Laughs and sighs are unchanged. Clip source is
+        therefore confounded with which vocalization it is — Dia supplies only two of the four
+        — so a difference between these sets says gasp and groan changed, not that Dia clips
+        are better.
   # Used when a command is not told which renderer to work on.
   default_renderer: elevenlabs
 

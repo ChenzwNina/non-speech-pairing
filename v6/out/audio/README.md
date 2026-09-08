@@ -22,8 +22,18 @@ v6_01a__condition_a.mp3
 v6_01a__condition_b.mp3
 ```
 
-24 items × 3 = 72 files per renderer. `eval_config.yaml` holds the extension per renderer —
-`.mp3` for elevenlabs, `.wav` for dia — so match what is configured there or change it.
+24 items × 3 = 72 files per set. There are two sets, and they differ only in where two of the
+four vocalization clips came from:
+
+| Set | speech | laugh · sigh | gasp · groan |
+| --- | --- | --- | --- |
+| `elevenlabs/` | ElevenLabs | ElevenLabs | ElevenLabs |
+| `dia_voc/` | the same takes | ElevenLabs | Dia |
+
+ElevenLabs' gasps and groans were judged inadequate by listening, so `dia_voc` swaps those two
+clips for Dia ones cloned from `reference/ElevenLabs_ref.mp3`. **The speech must be the same
+samples in both sets** — only the inserted clip changes. `eval_config.yaml` holds the extension
+per set; match what is configured there or change it.
 
 ## How to assemble
 

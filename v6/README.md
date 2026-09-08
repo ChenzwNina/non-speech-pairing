@@ -246,87 +246,36 @@ rubrics actually differ is now a measurement about the item.
 [out/eval/rubrics/superseded_joint_call/](out/eval/rubrics/superseded_joint_call/) holds what the
 old design produced.
 
-Two renderers speak the same 20 transcripts and are being compared, so the renderer is an
-experimental factor: each owns a subtree, every record stamps which one produced the stimulus,
-and every metric breaks down by it. The frozen questions are renderer-independent — the same
-four options are asked about every rendering — which is what makes the comparison meaningful.
+**Two audio sets, differing only in where two of the four vocalization clips came from.**
 
-Task sets are written once and never overwritten. Correct-answer positions are balanced
-15/15/14/14/14 over the 72 stimuli, a property of the whole set — so the item set is
-fingerprinted into the task file, and a rebuild says whether it moved. There are no distractors
-to balance: with four vocalizations plus `none` the whole inventory fits in one question, so
-every question carries every label and only the order varies.
+ElevenLabs' gasps and groans were judged inadequate by listening, so in the second set those two
+sounds are Dia clips instead, voice-cloned from `reference/ElevenLabs_ref.mp3` so each sits in
+the same voice as the speech around it. Laughs and sighs are unchanged.
 
-## Running the evaluation
+| | speech | laugh · sigh | gasp · groan |
+| --- | --- | --- | --- |
+| `elevenlabs` | ElevenLabs | ElevenLabs | ElevenLabs |
+| `dia_voc` | **the same takes** | ElevenLabs | **Dia** |
 
-Every stage is resumable — rerunning skips what is already on disk unless `--redo` is passed —
-and every stage takes `--dry-run`, which prints the payloads it would send and calls nothing.
+**The speech is identical in both.** Turns 1 to 4 and the words of turn 5 are the same samples
+throughout, because the assembler inserts the vocalization into the clean take rather than
+swapping the whole turn — nothing is removed. So the only thing varying between the sets is a
+fraction of a second of sound, and a difference in results is attributable to that rather than
+to voice, pacing or overall audio quality. That makes this a sharper comparison than rendering
+both sets end to end with different engines would have been.
 
-**Before anything, check the audio is there.** The assembled conversations come from whichever
-machine sews them, so this is the step that catches a half-finished handoff:
+Every metric splits by set, and the frozen questions are set-independent: the same 72 perception
+questions in the same option order are asked about both, and each task carries one audio path
+per set.
 
-```bash
-python3 v6/validate_dataset.py --renderer elevenlabs --require-audio
-```
+**One confound to state when reporting.** Dia supplies only two of the four sounds, so clip
+source is not separable from which vocalization it is. A difference between the sets says *gasp
+and groan changed*, not *Dia clips are better*. Separating those would need Dia laughs and sighs
+too, which is worth doing only if ElevenLabs' laughs and sighs also come into question.
 
-It must report 24 of 24. Nonzero exit means missing or empty files, named individually.
-
-**1 — ask the models.** Perception first, then interpretation in the *same* session, then a
-reply in a *fresh* one:
-
-```bash
-python3 v6/run_models.py --renderer elevenlabs
-```
-
-Writes `out/eval/judgments/perception.jsonl`, `out/eval/responses/interpretations.jsonl` and
-`out/eval/responses/responses.jsonl` plus a `.wav` per reply. A condition whose vocalization was
-misidentified has its interpretation marked `gated_out` and gets no reply elicited.
-
-**2 — build the ranking trials.** This reads the perception results, so it must come after
-step 1:
-
-```bash
-python3 v6/build_pairs.py --responses out/eval/responses/responses.jsonl
-```
-
-Two directed trials per eligible item, and an `_ineligible.jsonl` beside them so coverage stays
-computable.
-
-**3 — run the judges**, in this order because `content` needs to know which interpretation each
-model actually held:
-
-```bash
-python3 v6/run_judges.py --stage interp
-python3 v6/run_judges.py --stage content --stage rank --stage tone
-```
-
-**4 — score:**
-
-```bash
-python3 v6/score.py
-```
-
-### What the runners will not let you do
-
-**Perception and interpretation share one session; the reply does not.** Sharing the first two
-is what makes interpretation conditional on perception rather than independent of it. Keeping
-the reply separate — with a prompt that never mentions a vocalization — is what makes it a test
-of whether the model notices the sound on its own. Both are enforced in `run_models.py` rather
-than left to whoever runs it.
-
-**Nothing regenerates the frozen task set.** `build_tasks.py` refuses to overwrite
-`out/eval/tasks/perception.json` without `--overwrite`, because every evaluated model has to see
-the same 72 questions with the same option order or their accuracies are not comparable.
-
-**The judges never learn which model they are judging.** The evaluated model's id is in the
-record, not in the prompt.
-
-**The tone judges hear the reply and nothing else.** The conversation goes in as text, which is
-all the rubric was ever based on — `tone_exclusions` is written from the transcript by a model
-that never heard the audio, so playing the conversation would judge a text-derived list against
-an audio comparison. One recording per session also removes the question of how a judge tells
-the reply apart from the stimulus, which matters because the turn adjacent to it is the one
-carrying the vocalization.
+**And the substitution is a finding, not only a fix.** If both sets are run, ElevenLabs' gasp and
+groan conditions should show lower perception accuracy than its laughs and sighs — which turns a
+listening judgement into a measured one.
 
 ### Costs, per evaluated model per renderer
 
