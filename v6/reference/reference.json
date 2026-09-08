@@ -1,0 +1,40 @@
+{
+  "what": "Voice reference recordings. Not stimuli — nothing in out/ is derived from these.",
+  "transcript": "The old clockmaker placed the tiny brass gear onto the workbench. His hands shook, but his eyes were clear. For fifty years, he had fixed the broken time of the town.",
+  "clips": [
+    {
+      "file": "ref_s3TPKV1kjDlVtZbl4Ksh.mp3",
+      "renderer": "elevenlabs",
+      "speaker": "A",
+      "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
+      "transcript": "The old clockmaker placed the tiny brass gear onto the workbench. His hands shook, but his eyes were clear. For fifty years, he had fixed the broken time of the town.",
+      "seconds": 10.68,
+      "codec": "mp3",
+      "sample_rate": 44100,
+      "channels": 1
+    },
+    {
+      "file": "ref_aKw9UnnjRq5scbeeGI7Z.mp3",
+      "renderer": "elevenlabs",
+      "speaker": "B",
+      "voice_id": "aKw9UnnjRq5scbeeGI7Z",
+      "transcript": "The old clockmaker placed the tiny brass gear onto the workbench. His hands shook, but his eyes were clear. For fifty years, he had fixed the broken time of the town.",
+      "seconds": 15.31,
+      "codec": "mp3",
+      "sample_rate": 44100,
+      "channels": 1
+    },
+    {
+      "file": "dia_reference.wav",
+      "renderer": "dia",
+      "speaker": null,
+      "voice_id": null,
+      "transcript": null,
+      "note": "Dia clones from a reference recording plus its transcript. The transcript for this clip has not been recorded, so it is null rather than guessed — Dia cannot be run reproducibly from this folder until someone writes down what is said in it.",
+      "seconds": 8.19,
+      "codec": "pcm_s16le",
+      "sample_rate": 44100,
+      "channels": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "item_id": "v6_01b",
+  "condition": "condition_a",
+  "vocalization": "laugh",
+  "responder": "B",
+  "guides": [
+    {
+      "interpretation_index": 1,
+      "response_function": "Share the relief and confirm the bill is now covered",
+      "required_content": ["Registers the good news as settling the worry that drove the last few turns", "Ties it to the electric bill being payable now"],
+      "must_avoid": ["Continuing to search or treating the account as possibly still short", "Flat acknowledgement that ignores the tension just released"],
+      "example": "Oh thank god. So we're fine for the electric tomorrow — I'll just pay it tonight and stop worrying about it.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 2,
+      "response_function": "Join the amusement at the early clearing, lightly tease the prediction",
+      "required_content": ["Marks the timing as earlier than either of them expected", "Plays off A having called it wrong, without any sting"],
+      "must_avoid": ["Treating the wrong guess as a real error worth correcting or defending", "Responding only with sober logistics and no shared amusement"],
+      "example": "Later this week, huh? Well, I'm not complaining. It just showed up on my alert too — three days early.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 3,
+      "response_function": "Wind the scare down and signal both can stop checking",
+      "required_content": ["Accepts the search is over and drops the checking", "Names the worry as finished rather than merely paused"],
+      "must_avoid": ["Raising new financial worries or auditing how close it came", "Prolonging verification by asking A to confirm the amount or date"],
+      "example": "Okay. Okay, I'm closing the app. That was a rough two days for nothing — we're good, let's not think about it tonight.",
+      "note": "Overlaps with interpretation 1 in tone; differs in that the reply must actively stand down the checking rather than just welcome the news."
+    }
+  ]
+}

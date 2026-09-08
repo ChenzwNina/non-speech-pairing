@@ -1,0 +1,32 @@
+{
+  "item_id": "v6_04c",
+  "condition": "condition_b",
+  "vocalization": "gasp",
+  "responder": "B",
+  "guides": [
+    {
+      "interpretation_index": 1,
+      "response_function": "Treats injury as confirmed; moves to act on it now",
+      "required_content": ["Agreement that the dentist is needed, or a move to make that happen immediately", "Some acknowledgement of what A has just seen in Mia's mouth"],
+      "must_avoid": ["Questioning whether it is bad enough to bother a dentist about", "Downplaying, or suggesting they wait and see how it looks tomorrow"],
+      "example": "Yeah, that's a chipped tooth. I'll ring them now — grab her shoes and the car keys.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 2,
+      "response_function": "Registers the answer to the earlier question, closes the puzzle",
+      "required_content": ["Recognition that this explains why Mia had gone quiet since the fall", "Uptake of the dentist plan as following from that"],
+      "must_avoid": ["Asking again what is wrong as though nothing has been established", "Reading the gasp as unrelated to Mia's silence"],
+      "example": "That's why she's been so quiet, then. No wonder. Right — dentist. Where's their number?",
+      "note": ""
+    },
+    {
+      "interpretation_index": 3,
+      "response_function": "Matches A's composure and takes on the practical next step",
+      "required_content": ["Acceptance of the dentist plan without adding alarm in front of Mia", "Something steadying — toward Mia, or toward A, or a concrete task taken on"],
+      "must_avoid": ["Amplifying the shock or dramatising the injury while Mia is listening", "Naming A's reaction or Mia's state as the topic instead of just carrying on"],
+      "example": "Good idea. Mia, you're alright, love — we'll get it looked at. I'll call while you find her coat.",
+      "note": "Differs from 1 mainly in what B withholds: same practical uptake, but held down for the child's benefit rather than treated as confirmation."
+    }
+  ]
+}

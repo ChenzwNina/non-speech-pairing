@@ -26,7 +26,7 @@ dataset:
       audio_root: out/audio/dia
       audio_path_template: "{item_id}__{condition}.wav"
       notes: >
-        Voice-cloned from reference_audio.wav, parenthesised non-verbal tags. Rendered on the
+        Voice-cloned from reference/dia_reference.wav, parenthesised non-verbal tags. Rendered on the
         VM; set the template to whatever that job actually wrote.
   # Used when a command is not told which renderer to work on.
   default_renderer: elevenlabs
