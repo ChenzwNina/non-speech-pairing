@@ -321,6 +321,13 @@ the same 72 questions with the same option order or their accuracies are not com
 **The judges never learn which model they are judging.** The evaluated model's id is in the
 record, not in the prompt.
 
+**The tone judges hear two separate recordings, not one joined file.** Joining them would be
+less code, but the judge would have to find the boundary itself — and the turn immediately
+before it is the one carrying the vocalization, so a judge that drifts rates the stimulus
+instead of the reply, in the direction of the stimulus being the more marked of the two.
+`providers.ask_many` sends both in one session; only the two providers that judge tone
+implement it.
+
 ### Costs, per evaluated model per renderer
 
 | Stage | Calls |

@@ -13,9 +13,11 @@ decided by the interpretation panel.
 Every judge is blind to which model produced what it is judging, and is given the authoritative
 vocalization label so its own perception cannot become a confound in someone else's score.
 
-The tone judges need to hear the conversation and the reply. No provider primitive takes two
-audio inputs, so the two are joined into one file with a second of silence between them and the
-prompt says which part to judge — the alternative was extending four provider implementations.
+The tone judges hear the conversation and the reply as two separate recordings in one session,
+through `providers.ask_many`. Joining them into one file would have been less code, but a judge
+then has to find the boundary itself — and the turn immediately before it is the one carrying
+the vocalization, so a judge that drifts rates the stimulus rather than the reply, in the
+direction of the stimulus being the more marked of the two.
 
     python v6/run_judges.py --dry-run
     python v6/run_judges.py --stage interp --limit 2
@@ -31,7 +33,6 @@ from pathlib import Path
 
 import evalkit as K
 import providers as P
-import sew
 import text_models as T
 
 CONTRACT = {"interp": "judge_outputs:interpretation_match",
@@ -52,18 +53,18 @@ def ask_text(judge: dict, prompt: str) -> str:
     return T.ask(judge["model"], SYSTEM, prompt, max_tokens=900)
 
 
-def ask_audio(judge: dict, audio: Path, prompt: str) -> str:
+def ask_audio(judge: dict, audios: list[Path], prompt: str) -> str:
     K.guard(f"{judge['provider']} {judge['model']}")
-    return P.ask(judge["provider"], audio, SYSTEM, prompt, judge["model"])
+    return P.ask_many(judge["provider"], audios, SYSTEM, prompt, judge["model"])
 
 
-def judge_once(judge: dict, prompt: str, kind: str, audio: Path | None,
+def judge_once(judge: dict, prompt: str, kind: str, audios: list[Path] | None,
                name: str) -> tuple[dict | None, str, list[str]]:
     """One judgement, validated. The reply is stored before anything parses it."""
     errors: list[str] = []
     raw = ""
     for attempt in range(1, ATTEMPTS + 1):
-        raw = (ask_audio(judge, audio, prompt) if audio is not None
+        raw = (ask_audio(judge, audios, prompt) if audios is not None
                else ask_text(judge, prompt))
         parsed = K.json_object(raw)
         if parsed is None:
@@ -185,7 +186,7 @@ def main() -> int:
             if built is None:
                 counts["skipped"] += 1
                 continue
-            prompt, audio = built
+            prompt, audios = built
             for judge in panel:
                 stamp = (judge["id"], unit.get("task_id"), unit.get("evaluated_model"))
                 if stamp in already and not args.redo:
@@ -193,7 +194,8 @@ def main() -> int:
                     continue
                 name = f"{stage}__{judge['id']}__{unit.get('evaluated_model','?')}__{key}"
                 try:
-                    parsed, raw, errors = judge_once(judge, prompt, stage, audio, name)
+                    parsed, raw, errors = judge_once(judge, prompt, stage, audios,
+                                                     name)
                 except Exception as exc:                      # noqa: BLE001 - recorded
                     counts["failed"] += 1
                     print(f"    {name} FAILED {type(exc).__name__}: {exc}"[:140], flush=True)
@@ -260,12 +262,9 @@ def build_prompt(stage, template, unit, item, key, interps, guides, tones, match
         return None
     listed = "\n".join(f"- {t['tone']}: {t['sounds_like']} (wrong because {t['why_wrong']})"
                        for t in source["inappropriate_tones"])
-    joined = K.stage_dir("judgments") / "tone_audio" / f"{unit['evaluated_model']}__{key}.mp3"
-    if not joined.exists():
-        sew.build([("file", K.HERE / unit["stimulus_audio_path"]), ("silence", 1.0),
-                   ("file", K.HERE / unit["response_audio_path"])], joined)
     return K.fill(template, **common, INAPPROPRIATE_TONES=listed,
-                  ACCEPTABLE_RANGE_NOTE=source["acceptable_range_note"]), joined
+                  ACCEPTABLE_RANGE_NOTE=source["acceptable_range_note"]), [
+        K.HERE / unit["stimulus_audio_path"], K.HERE / unit["response_audio_path"]]
 
 
 if __name__ == "__main__":
