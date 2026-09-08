@@ -1,12 +1,12 @@
 {
-  "planned_at": "2026-09-06T04:20:59+00:00",
-  "run_id": "r20260906T041607Z",
+  "planned_at": "2026-09-08T20:47:13+00:00",
+  "run_id": "r20260908T204348Z",
   "planner": "gpt-5.6-terra",
   "effort": "default",
   "prompt_version": "occasion_planner@6707a901a604",
   "items": [
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_04d",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -20,40 +20,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:16:21+00:00",
+      "timestamp": "2026-09-08T20:44:15+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "sigh",
-          "when_it_is_produced": "A speaker releases breath while absorbing an outcome that ends sustained tension, obligation, or waiting; it need not be new information.",
+          "when_it_is_produced": "A speaker releases accumulated tension or takes in the weight of a development, often after uncertainty has been resolved.",
           "requires_something_to_land_now": false
         },
         "production_condition_b": {
           "vocalization": "gasp",
-          "when_it_is_produced": "An unexpected, striking fact reaches the speaker in that instant, interrupting ordinary breathing before they can formulate a response.",
+          "when_it_is_produced": "A speaker is abruptly confronted with unexpected, striking information or an event at the instant it becomes apparent.",
           "requires_something_to_land_now": true
         },
-        "shared_moment": "The final speaker watches the lottery checker update and sees that their ticket has won the top prize after waiting for the result.",
-        "what_lands": "The official lottery checker on the final speaker's phone confirms that their ticket holds the top prize.",
-        "situation_summary": "Two people wait for a lottery result while the ticket holder checks the official results on a phone.",
+        "shared_moment": "The ticket owner watches a live ticket check and hears that every number matches, then asks a factual question while still processing it.",
+        "what_lands": "The confirmation that the ticket belongs to the final speaker and matches all winning numbers reaches them from the other speaker's live check.",
+        "situation_summary": "Two friends check one friend's lottery ticket together after the winning numbers have been announced.",
         "outline": [
-          "One speaker asks whether the ticket holder has checked the drawing.",
-          "The ticket holder says the official checker is still loading.",
-          "The other speaker notes that all the winning numbers have been posted.",
-          "The other speaker asks the ticket holder to refresh the checker again.",
-          "The phone confirms the top prize; the ticket holder reports what the screen says, with the sound."
+          "Speaker one asks whether the other kept the ticket they bought earlier.",
+          "Speaker two says the ticket is here and proposes checking the numbers together.",
+          "Speaker one reads several matching numbers while comparing them to the ticket.",
+          "Speaker two reaches the final number and pauses before confirming the ticket holder's name.",
+          "The confirmation lands; the ticket owner vocalizes, then says, “That’s my ticket?”"
         ],
         "framing_a": {
           "vocalization": "sigh",
-          "emotional_framing": "The win lands as the end of a long period of financial pressure and tense waiting.",
-          "speaker_state": "Released from strain, quietly taking it in."
+          "emotional_framing": "The win ends a period of financial uncertainty but immediately feels weighty and consequential to the ticket owner.",
+          "speaker_state": "Tension releasing as they absorb new responsibility."
         },
         "framing_b": {
           "vocalization": "gasp",
-          "emotional_framing": "The win lands as an immediate, unbelievable revelation whose scale catches the speaker off guard.",
-          "speaker_state": "Startled by the sudden confirmation."
+          "emotional_framing": "The matching ticket is received as an astonishing reversal, making the owner’s question a startled check of what they heard.",
+          "speaker_state": "Abruptly stunned by the confirmation."
         },
-        "why_different": "The sigh treats the result as release from an ongoing burden, while the gasp treats it as a startling new fact.",
+        "why_different": "The sigh treats the confirmation as a heavy release after strain, whereas the gasp treats it as a startling and scarcely believable discovery.",
         "feasible": true,
         "why_not": ""
       },
@@ -68,7 +68,7 @@
       "tag_b": "(gasps)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_03c",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -82,40 +82,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:16:31+00:00",
+      "timestamp": "2026-09-08T20:44:27+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "laugh",
-          "when_it_is_produced": "When something strikes the speaker as amusing, absurd, pleasantly surprising, or socially light; it may be immediate or recounting.",
-          "requires_something_to_land_now": false
+          "when_it_is_produced": "An amusing, absurd, or socially incongruous event reaches the speaker in the moment and prompts a spontaneous reaction.",
+          "requires_something_to_land_now": true
         },
         "production_condition_b": {
           "vocalization": "groan",
-          "when_it_is_produced": "When the speaker confronts an unwelcome burden, setback, or tiresome demand; it may be immediate or about an ongoing problem.",
-          "requires_something_to_land_now": false
+          "when_it_is_produced": "A burdensome, frustrating, or tiresome development confronts the speaker, either newly learned or immediately salient.",
+          "requires_something_to_land_now": true
         },
-        "shared_moment": "The final speaker opens a new message from the employer and learns that, despite encouraging feedback, they must attend another interview next week.",
-        "what_lands": "A just-opened employer message asks the final speaker to schedule an additional interview.",
-        "situation_summary": "A job seeker has completed several interviews and receives a new message about the hiring process.",
+        "shared_moment": "While discussing the promising interviews, the final speaker reads a new notification asking them to attend yet another interview tomorrow.",
+        "what_lands": "A scheduling message reaches the final speaker's phone during the final turn, requesting a fourth interview.",
+        "situation_summary": "A job seeker has had several encouraging interviews but receives a request for one more meeting.",
         "outline": [
-          "One speaker asks how the recent job interviews have been going.",
-          "The other says this was their third interview this month.",
-          "The first speaker notes that the feedback has sounded encouraging.",
-          "The final speaker notices a new message from the employer and opens it.",
-          "The message requests another interview next week; the final speaker reacts with the sound and reports it."
+          "One speaker asks how the job search has been going.",
+          "The other describes having several interviews recently.",
+          "The first speaker asks whether any employer has followed up.",
+          "The job seeker mentions favorable comments, then notices a new phone notification.",
+          "The job seeker reads that another interview is requested tomorrow; the vocalization occurs before reporting it."
         ],
         "framing_a": {
           "vocalization": "laugh",
-          "emotional_framing": "The extra interview seems absurdly elaborate but also confirms the employer remains seriously interested.",
-          "speaker_state": "Amused, pleasantly incredulous, and still optimistic."
+          "emotional_framing": "The extra interview is treated as comically excessive, while still suggesting the employer remains interested.",
+          "speaker_state": "Amused by the absurd repetition."
         },
         "framing_b": {
           "vocalization": "groan",
-          "emotional_framing": "The extra interview turns a promising process into another exhausting hurdle before any decision arrives.",
-          "speaker_state": "Weary, frustrated, and discouraged by the delay."
+          "emotional_framing": "The extra interview is treated as another draining hurdle despite the otherwise encouraging progress.",
+          "speaker_state": "Weary at an added obligation."
         },
-        "why_different": "The laugh treats the new round as amusing evidence of continued interest, while the groan treats it as a burdensome extension of the process.",
+        "why_different": "The laugh appraises the fourth interview as absurdly funny, whereas the groan appraises the same request as an exhausting burden.",
         "feasible": true,
         "why_not": ""
       },
@@ -440,7 +440,7 @@
       "tag_b": "(gasps)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_02c",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -454,40 +454,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:17:38+00:00",
+      "timestamp": "2026-09-08T20:44:54+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "laugh",
-          "when_it_is_produced": "A speaker perceives an incongruity, absurdity, or socially awkward outcome and reacts with amusement or rueful disbelief.",
+          "when_it_is_produced": "A speaker perceives an incongruity, irony, or absurdly fitting outcome; it may react to new information or to a situation already understood.",
           "requires_something_to_land_now": false
         },
         "production_condition_b": {
           "vocalization": "gasp",
-          "when_it_is_produced": "A speaker is immediately confronted with unexpected, consequential information or an event that abruptly exceeds expectation.",
+          "when_it_is_produced": "An unexpected, salient development reaches the speaker immediately, producing a sudden intake before they can fully formulate a response.",
           "requires_something_to_land_now": true
         },
-        "shared_moment": "The final speaker opens a just-arrived job-offer email during the conversation and reads its job title and salary aloud for the first time.",
-        "what_lands": "The offer's stated salary reaches the final speaker from the newly opened email.",
-        "situation_summary": "Someone who once imagined many careers is waiting to learn whether one practical job will provide enough income.",
+        "shared_moment": "The final speaker refreshes a vacancy link during the call and, for the first time, sees that its listed pay and start date meet their practical needs.",
+        "what_lands": "The newly refreshed job listing reaches the final speaker's screen, showing a sufficient salary and an immediate opening.",
+        "situation_summary": "A friend helps someone who once imagined many careers check a newly reopened job listing.",
         "outline": [
-          "One speaker asks whether the other has heard back about the application.",
-          "The applicant says the employer asked for references after the interview.",
-          "The other speaker notes that the position would cover rent and bills.",
-          "The other speaker notices a new message and asks the applicant to open it.",
-          "The applicant reads the newly arrived offer aloud, with the vocalization before or within the response."
+          "Speaker 1 asks whether the final speaker has settled on any applications.",
+          "Speaker 2 says they once considered many kinds of work.",
+          "Speaker 1 asks what the final speaker is looking for now.",
+          "Speaker 1 sends a link to a vacancy and asks them to refresh it.",
+          "Speaker 2 sees the updated listing, vocalizes, and reports its pay and start date."
         ],
         "framing_a": {
           "vocalization": "laugh",
-          "emotional_framing": "The offer feels ironically modest beside the applicant's former ambitions, and the speaker treats the turn toward practicality with rueful amusement.",
-          "speaker_state": "Amused, self-aware, and somewhat resigned."
+          "emotional_framing": "The opening feels comically apt: after an expansive list of ambitions, an ordinary available position suddenly becomes exactly the relevant answer.",
+          "speaker_state": "Self-aware, amused by the turn of events."
         },
         "framing_b": {
           "vocalization": "gasp",
-          "emotional_framing": "The offer's terms are startlingly better or more consequential than expected, making the practical job suddenly feel like a major development.",
-          "speaker_state": "Startled and newly attentive."
+          "emotional_framing": "The opening feels like an unexpected opportunity, because the listing's concrete terms arrive as a sudden and consequential discovery.",
+          "speaker_state": "Startled by the newly visible option."
         },
-        "why_different": "The laugh appraises the offer as an ironic anticlimax, whereas the gasp appraises its newly revealed terms as a startling surprise.",
+        "why_different": "The laugh treats the outcome as ironic and fitting, while the gasp treats the newly revealed listing as a startling development.",
         "feasible": true,
         "why_not": ""
       },
@@ -688,7 +688,7 @@
       "tag_b": "(gasps)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_01b",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -702,40 +702,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:18:29+00:00",
+      "timestamp": "2026-09-08T20:45:10+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "laugh",
-          "when_it_is_produced": "An unexpectedly fortunate or absurd outcome reaches the speaker and prompts immediate amused disbelief.",
-          "requires_something_to_land_now": true
+          "when_it_is_produced": "When an outcome feels amusingly incongruous or improbably lucky, either on encountering it or reflecting on it.",
+          "requires_something_to_land_now": false
         },
         "production_condition_b": {
           "vocalization": "sigh",
-          "when_it_is_produced": "The speaker releases tension while confronting a burden, its easing, or a situation they have been carrying.",
+          "when_it_is_produced": "When pressure, effort, or resignation is felt in response to a situation, especially as a burden eases.",
           "requires_something_to_land_now": false
         },
-        "shared_moment": "The final speaker sees a just-arrived payment notification after worrying about an imminent bill, while the other speaker waits on the call.",
-        "what_lands": "A banking alert on the final speaker's phone confirms an unexpected payment has cleared.",
-        "situation_summary": "Two friends are checking whether a looming bill can be covered when an unexpected payment arrives.",
+        "shared_moment": "A payment notification reaches the final speaker during the last turn, showing an unexpected credit that exactly covers a bill due that day.",
+        "what_lands": "A phone alert shows that a pending reimbursement has cleared into the final speaker's account.",
+        "situation_summary": "Two friends are checking whether an awaited reimbursement arrived before a utility bill is due.",
         "outline": [
-          "Speaker 1 asks whether the final speaker has checked the account for a pending payment.",
-          "Speaker 2 says the bill is due soon and the account was short yesterday.",
-          "Speaker 1 mentions the payment was not expected to clear until later.",
-          "Speaker 2 opens the banking app as a new phone alert appears.",
-          "Speaker 2 reads that the payment cleared, with the vocalization immediately before responding."
+          "One speaker mentions the utility payment due later that day.",
+          "The other asks whether the pending reimbursement has shown up.",
+          "The final speaker says the payment app has not updated yet.",
+          "The other suggests checking again because transfers sometimes post late.",
+          "A notification arrives; the final speaker notes that it cleared and covers the bill, with the sound."
         ],
         "framing_a": {
           "vocalization": "laugh",
-          "emotional_framing": "The cleared payment feels like an absurdly lucky break, and the speaker meets the surprise with amused disbelief.",
-          "speaker_state": "Startled, buoyant, and entertained by the timing."
+          "emotional_framing": "The credit's exact timing and amount seem comically fortunate, making the exchange about an improbable bit of luck.",
+          "speaker_state": "Amused by the unlikely timing."
         },
         "framing_b": {
           "vocalization": "sigh",
-          "emotional_framing": "The cleared payment removes immediate pressure, and the speaker lets out the strain they had been holding.",
-          "speaker_state": "Tense moments earlier, now releasing pressure."
+          "emotional_framing": "The credit ends an immediate financial strain, making the exchange about finally getting through a pressing obligation.",
+          "speaker_state": "Letting go of held pressure."
         },
-        "why_different": "The laugh appraises the payment as comically unexpected good luck, while the sigh appraises it as the lifting of a financial burden.",
+        "why_different": "The laugh treats the arrival as absurdly lucky, while the sigh treats it as the release of a practical burden.",
         "feasible": true,
         "why_not": ""
       },
@@ -750,7 +750,7 @@
       "tag_b": "(sighs)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_06c",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -764,40 +764,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:18:37+00:00",
+      "timestamp": "2026-09-08T20:45:32+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "gasp",
-          "when_it_is_produced": "A surprising fact or perception reaches the speaker abruptly, at the instant they notice or confirm it.",
+          "when_it_is_produced": "An unexpected fact or sight reaches the speaker immediately, producing a sudden intake of breath at the moment of discovery.",
           "requires_something_to_land_now": true
         },
         "production_condition_b": {
           "vocalization": "groan",
-          "when_it_is_produced": "The speaker confronts an unwelcome implication, burden, or inconvenience of a fact they have just noticed or already know.",
+          "when_it_is_produced": "The speaker confronts an inconvenient, tiring, or self-reproach-inducing realization, whether newly discovered or already understood.",
           "requires_something_to_land_now": false
         },
-        "shared_moment": "While checking the open bag against a list, the final speaker suddenly sees the supposedly missing last item already packed.",
-        "what_lands": "Visual confirmation from the open bag that the final item is there, completing everything needed for the trip.",
-        "situation_summary": "Two people prepare for a trip while one worries that an essential item was left behind.",
+        "shared_moment": "While checking a suitcase pocket at the other speaker's suggestion, the final speaker suddenly finds every supposedly missing travel item already packed.",
+        "what_lands": "The contents of the overlooked suitcase pocket reach the final speaker through their own immediate visual check.",
+        "situation_summary": "A traveler worries that essential items are missing before leaving, then checks an overlooked part of their bag.",
         "outline": [
-          "One speaker asks whether the packing is finished before departure.",
-          "The other says they have been checking the bag against a list.",
-          "The first speaker names an item they cannot see and suggests it may be missing.",
-          "The final speaker searches a side pocket while the other waits for confirmation.",
-          "The item is found; the final speaker realizes everything needed is packed and makes the sound."
+          "Speaker 1 mentions that departure is close and the bag has been searched repeatedly.",
+          "Speaker 2 asks which necessary items still seem absent.",
+          "Speaker 1 lists a few essentials they cannot locate.",
+          "Speaker 2 points out an unopened inner pocket and asks them to check it.",
+          "Speaker 1 opens it, finds the listed items inside, and reports what is there with the sound."
         ],
         "framing_a": {
           "vocalization": "gasp",
-          "emotional_framing": "The final speaker is startled by the unexpected discovery that nothing was forgotten.",
-          "speaker_state": "Suddenly surprised by reassuring confirmation."
+          "emotional_framing": "The speaker is abruptly astonished that the missing necessities were packed all along.",
+          "speaker_state": "Startled by an unexpected discovery."
         },
         "framing_b": {
           "vocalization": "groan",
-          "emotional_framing": "The final speaker sees that packing is complete and confronts the now-immediate burden of leaving or carrying the full bag.",
-          "speaker_state": "Resigned about the trip's demands."
+          "emotional_framing": "The speaker realizes their frantic searching was unnecessary and reacts to their own avoidable oversight.",
+          "speaker_state": "Exasperated and self-reproachful."
         },
-        "why_different": "The gasp treats the discovery as an unexpected reassuring fact, whereas the groan treats completed packing as an unwelcome practical consequence.",
+        "why_different": "The gasp treats the finding as surprising good news, while the groan treats it as evidence of the speaker's frustrating mistake.",
         "feasible": true,
         "why_not": ""
       },
@@ -874,7 +874,7 @@
       "tag_b": "(gasps)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_03a",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -888,40 +888,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:18:58+00:00",
+      "timestamp": "2026-09-08T20:45:47+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "laugh",
-          "when_it_is_produced": "A speaker encounters an incongruous or absurd outcome, often at the instant an unexpected detail makes the mismatch apparent.",
+          "when_it_is_produced": "A current incongruity or unexpectedly absurd outcome registers, often at the instant new information makes the situation seem ridiculous.",
           "requires_something_to_land_now": true
         },
         "production_condition_b": {
           "vocalization": "groan",
-          "when_it_is_produced": "A speaker encounters a setback, inconvenience, or wasted effort and reacts as its cost becomes apparent.",
-          "requires_something_to_land_now": true
+          "when_it_is_produced": "A setback, burden, or irritating outcome becomes salient; it can be immediate or a reaction to an already understood problem.",
+          "requires_something_to_land_now": false
         },
-        "shared_moment": "At the gym entrance, the final speaker reads a newly noticed closing notice after rushing through a meal and protein shake to get there.",
-        "what_lands": "The gym's posted notice, seen by the final speaker at the door, says it closed before they arrived.",
-        "situation_summary": "Two friends are trying to fit in a gym visit after one has hurriedly eaten and prepared for a workout.",
+        "shared_moment": "Just as the final speaker is ready to leave for the gym, they receive a live message that it closed early because of an equipment problem.",
+        "what_lands": "A newly arriving closure message from the gym reaches the final speaker after they have eaten and finished the protein shake.",
+        "situation_summary": "A person rushes to fuel up before a gym visit, only to learn at the last moment that the gym is unavailable.",
         "outline": [
-          "One speaker checks whether the other can still make the gym tonight.",
-          "The final speaker says they delayed eating because they wanted time to work out.",
-          "The other speaker notes that the gym's closing time is close.",
-          "The final speaker arrives at the entrance and looks at a notice on the door.",
-          "The final speaker reads that the gym already closed, reports it, and produces the sound."
+          "Speaker 1 asks whether the other person is still going to work out tonight.",
+          "Speaker 2 says they had to eat first because they had not had anything substantial.",
+          "Speaker 1 notes that the gym normally closes soon.",
+          "Speaker 2 says they finished a healthy meal and protein shake and are grabbing their things.",
+          "Speaker 2 sees the gym's new closure message, reacts with the sound, and reports what it says."
         ],
         "framing_a": {
           "vocalization": "laugh",
-          "emotional_framing": "The rushed preparation and missed session become an absurdly timed mishap the speaker can treat as comic.",
-          "speaker_state": "Amused by the mismatch between effort and outcome."
+          "emotional_framing": "The sequence becomes an absurdly mistimed routine: all that preparation has culminated in a comically useless trip.",
+          "speaker_state": "Amused by the timing and irony."
         },
         "framing_b": {
           "vocalization": "groan",
-          "emotional_framing": "The same preparation becomes wasted effort because the speaker has been shut out of the workout they planned.",
-          "speaker_state": "Deflated by the immediate setback."
+          "emotional_framing": "The sequence becomes a thwarted plan: careful preparation has been wasted by an inconvenient last-minute closure.",
+          "speaker_state": "Frustrated by the lost workout."
         },
-        "why_different": "The laugh recasts the closure as ironic bad timing, while the groan treats it as an unwelcome loss of the planned workout.",
+        "why_different": "The laugh treats the closure as ironic and comic, while the groan treats the identical outcome as an aggravating obstruction.",
         "feasible": true,
         "why_not": ""
       },
@@ -1122,7 +1122,7 @@
       "tag_b": "(groans)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_05b",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -1136,40 +1136,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:19:48+00:00",
+      "timestamp": "2026-09-08T20:46:06+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "sigh",
-          "when_it_is_produced": "When a person takes in an unwelcome or unavoidable circumstance and releases tension, often while accepting it.",
+          "when_it_is_produced": "When a person pauses to release tension or settle into acceptance, disappointment, or anticipation about a situation already understood.",
           "requires_something_to_land_now": false
         },
         "production_condition_b": {
           "vocalization": "groan",
-          "when_it_is_produced": "When a person encounters an immediately aggravating setback or prospect and reacts to its unpleasantness.",
+          "when_it_is_produced": "When an unwelcome complication or burden is encountered, especially as it becomes immediately relevant to the speaker's plans.",
           "requires_something_to_land_now": true
         },
-        "shared_moment": "The final speaker opens a newly arrived restaurant message and discovers, in that instant, that tomorrow's planned visit cannot happen.",
-        "what_lands": "A cancellation notice from the restaurant appears on the final speaker's phone while the other speaker waits.",
-        "situation_summary": "Two people are arranging a visit to the final speaker's favorite restaurant the following day.",
+        "shared_moment": "The final speaker learns that the only available table at their favorite restaurant tomorrow is much later than expected and responds while accepting it.",
+        "what_lands": "The other speaker reports the restaurant's only remaining reservation time for tomorrow: 9:45 p.m.",
+        "situation_summary": "Two people arrange tomorrow's visit to one speaker's favorite restaurant, but the available booking time is inconveniently late.",
         "outline": [
-          "One speaker asks whether the final speaker still wants to go out tomorrow.",
-          "The final speaker identifies the restaurant they had planned to visit.",
-          "The other speaker asks whether they have made the reservation yet.",
-          "The final speaker checks a new message from the restaurant before answering.",
-          "The message reveals the restaurant is closed tomorrow; the final speaker reports this, with the sound in the same position."
+          "Speaker 1 asks whether the favorite restaurant is still the plan for tomorrow.",
+          "Speaker 2 says they called to check whether a table could be reserved.",
+          "Speaker 1 asks what times the restaurant had available.",
+          "Speaker 2 says every earlier table was taken and states the sole remaining time.",
+          "Speaker 1 hears the 9:45 reservation, vocalizes, and says they will take it."
         ],
         "framing_a": {
           "vocalization": "sigh",
-          "emotional_framing": "The closure becomes a disappointing but accepted change to a plan the speaker had been anticipating.",
-          "speaker_state": "Resigned, letting go of the expected outing."
+          "emotional_framing": "The speaker lets go of their preferred timing and accepts the late meal because going to the restaurant still matters.",
+          "speaker_state": "Resigned but still willing to go."
         },
         "framing_b": {
           "vocalization": "groan",
-          "emotional_framing": "The closure becomes an irritating disruption that the speaker treats as an especially unwelcome obstacle.",
-          "speaker_state": "Aggravated by the sudden complication."
+          "emotional_framing": "The speaker treats the late reservation as an irritating obstacle and accepts it under protest.",
+          "speaker_state": "Annoyed by the inconvenience."
         },
-        "why_different": "A sigh frames the news as something to absorb and accept, whereas a groan frames it as a frustrating imposition.",
+        "why_different": "The sigh marks yielding acceptance, whereas the groan marks active objection to the newly learned constraint.",
         "feasible": true,
         "why_not": ""
       },
@@ -1184,7 +1184,7 @@
       "tag_b": "(groans)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_01c",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -1198,40 +1198,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:20:04+00:00",
+      "timestamp": "2026-09-08T20:46:39+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "laugh",
-          "when_it_is_produced": "The speaker notices or shares something amusing, absurd, or playfully fitting; it may be an immediate discovery or a remembered event.",
-          "requires_something_to_land_now": false
+          "when_it_is_produced": "A newly perceived outcome or incongruity registers as amusing in the instant, prompting an involuntary amused release.",
+          "requires_something_to_land_now": true
         },
         "production_condition_b": {
           "vocalization": "sigh",
-          "when_it_is_produced": "The speaker confronts, accepts, or acknowledges an effort, setback, or inescapable reality; it can concern something long known.",
+          "when_it_is_produced": "The speaker acknowledges an unwelcome inevitability, effort, or familiar pattern, whether newly confirmed or long understood.",
           "requires_something_to_land_now": false
         },
-        "shared_moment": "The final speaker opens the new office break-room cooler and finds it stocked entirely with free Dr. Pepper after trying not to buy any.",
-        "what_lands": "The final speaker sees the cooler's contents directly as the other speaker holds the door open.",
-        "situation_summary": "A person who has been avoiding Dr. Pepper discovers that their new workplace provides it free in the break room.",
+        "shared_moment": "The final speaker hears that their soda loyalty account has accumulated enough points for a free case, making their longstanding habit suddenly concrete.",
+        "what_lands": "The other speaker reports the just-checked reward total from the store account: enough points for a free case of Dr. Pepper.",
+        "situation_summary": "A frequent Dr. Pepper buyer learns their routine purchases have earned a surprisingly large store reward.",
         "outline": [
-          "Speaker 1 asks how the final speaker's first day at the new office is going.",
-          "Speaker 2 mentions bringing water lately instead of buying soda during the day.",
-          "Speaker 1 says the building has a break room and offers to show them.",
-          "Speaker 2 follows Speaker 1 to the cooler, which Speaker 1 opens for them.",
-          "Speaker 2 sees the cooler full of Dr. Pepper, makes the sound, and says they will never stop drinking it."
+          "Speaker 1 mentions stopping at the convenience store after work.",
+          "Speaker 2 asks whether the store’s rewards account was scanned.",
+          "Speaker 1 says the cashier could not see the point total earlier.",
+          "Speaker 2 says they have just checked the account online and found a reward.",
+          "Speaker 2 reports the free-case reward; Speaker 1 vocalizes, then says they will never stop drinking Dr. Pepper."
         ],
         "framing_a": {
           "vocalization": "laugh",
-          "emotional_framing": "The free supply is a delightfully excessive discovery, and the speaker treats their devotion to the drink as a joke.",
-          "speaker_state": "Amused and pleased by the coincidence."
+          "emotional_framing": "The reward makes the speaker’s devotion to the drink feel comically excessive and worth embracing.",
+          "speaker_state": "Amused by the absurd scale of their routine."
         },
         "framing_b": {
           "vocalization": "sigh",
-          "emotional_framing": "The free supply makes the speaker concede that their attempt to avoid the drink is unlikely to last.",
-          "speaker_state": "Weary, resigned, and tempted."
+          "emotional_framing": "The reward confirms a habit the speaker recognizes as hard to escape, despite seeing its scale.",
+          "speaker_state": "Weary and resigned about the routine."
         },
-        "why_different": "The laugh embraces the discovery as comic good fortune, while the sigh treats the same discovery as an unwelcome confirmation of a persistent habit.",
+        "why_different": "The laugh treats the purchase history as a funny achievement, while the sigh treats the same evidence as confirmation of an inescapable habit.",
         "feasible": true,
         "why_not": ""
       },
@@ -1246,7 +1246,7 @@
       "tag_b": "(sighs)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_01a",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -1260,40 +1260,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:20:21+00:00",
+      "timestamp": "2026-09-08T20:46:57+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "laugh",
-          "when_it_is_produced": "When the speaker finds something immediately amusing, delightfully surprising, or warmly absurd; it can also be an affiliative reaction to news.",
-          "requires_something_to_land_now": false
+          "when_it_is_produced": "The speaker encounters something amusing or incongruous, often at the instant they see or hear it.",
+          "requires_something_to_land_now": true
         },
         "production_condition_b": {
           "vocalization": "sigh",
-          "when_it_is_produced": "When the speaker registers a burden, longing, resignation, or an unwelcome comparison, whether newly learned or already understood.",
+          "when_it_is_produced": "The speaker takes in a situation and releases a resigned, wistful, or burdened appraisal of it.",
           "requires_something_to_land_now": false
         },
-        "shared_moment": "The final speaker looks at the friend's newly received shelter photo and recognizes that the dog is the breed they have always wanted.",
-        "what_lands": "A photo on the friend's phone reveals the adopted dog's breed to the final speaker in that instant.",
-        "situation_summary": "A friend has adopted a dog, and the other speaker discovers it is their preferred breed.",
+        "shared_moment": "The final speaker opens a photo just sent by their friend: the new dog is triumphantly carrying one of the friend's slippers.",
+        "what_lands": "A newly sent photo of the friend's favorite-breed puppy carrying a slipper reaches the final speaker on their phone.",
+        "situation_summary": "A friend has just brought home a dog of a breed the other speaker has long wanted.",
         "outline": [
-          "Friend mentions receiving an update from the shelter.",
-          "Other speaker asks whether the adoption went through.",
-          "Friend says they were sent a photo but has not named the dog.",
-          "Friend holds out the phone and asks the other speaker to look.",
-          "The other speaker sees the dog, vocalizes, and says, \"That's a [breed]. You actually got one.\""
+          "Speaker 1 says they finally brought the dog home.",
+          "Speaker 2 asks whether the dog has settled in yet.",
+          "Speaker 1 reports that the puppy has already explored the whole apartment.",
+          "Speaker 2 asks for a picture, and Speaker 1 says they are sending one now.",
+          "Speaker 2 receives the photo and comments on the puppy holding the slipper; the vocalization occurs first."
         ],
         "framing_a": {
           "vocalization": "laugh",
-          "emotional_framing": "The discovery becomes a warm, playful moment of delighted disbelief and shared excitement about the friend's good fortune.",
-          "speaker_state": "Amused, pleasantly surprised, and socially engaged."
+          "emotional_framing": "The speaker warmly shares the amusement of the puppy's immediate mischief and celebrates their friend's new pet.",
+          "speaker_state": "Amused and charmed by the puppy."
         },
         "framing_b": {
           "vocalization": "sigh",
-          "emotional_framing": "The discovery highlights the speaker's private wish for the same kind of dog and the unfairness of the comparison.",
-          "speaker_state": "Wistful, envious, and accepting."
+          "emotional_framing": "The speaker sees the appealing puppy and dwells on the fact that their friend has the dog they would like to have.",
+          "speaker_state": "Wistful and quietly envious."
         },
-        "why_different": "The laugh treats the news as a welcome, playful surprise, while the sigh treats the same news as a reminder of the speaker's own unmet wish.",
+        "why_different": "The laugh joins the friend's amusement at the puppy's behavior, while the sigh foregrounds the speaker's longing for the dog.",
         "feasible": true,
         "why_not": ""
       },
@@ -1308,7 +1308,7 @@
       "tag_b": "(sighs)"
     },
     {
-      "run_id": "r20260906T041607Z",
+      "run_id": "r20260908T204348Z",
       "item_id": "v6_06b",
       "condition": "all",
       "task_type": "occasion_plan",
@@ -1322,40 +1322,40 @@
         "effort": "default"
       },
       "seed": null,
-      "timestamp": "2026-09-06T04:20:33+00:00",
+      "timestamp": "2026-09-08T20:47:13+00:00",
       "raw_response_path": "",
       "parsed": {
         "production_condition_a": {
           "vocalization": "gasp",
-          "when_it_is_produced": "An unexpected, immediately perceived development reaches the speaker and interrupts their breath before they can formulate a response.",
+          "when_it_is_produced": "A surprising or startling thing reaches the speaker in that instant, often through directly seeing or hearing it.",
           "requires_something_to_land_now": true
         },
         "production_condition_b": {
           "vocalization": "groan",
-          "when_it_is_produced": "The speaker confronts something unwelcome, excessive, burdensome, or exasperating, whether newly discovered or already understood.",
+          "when_it_is_produced": "The speaker confronts something excessive, inconvenient, or regrettable, whether newly learned or already understood.",
           "requires_something_to_land_now": false
         },
-        "shared_moment": "On Christmas morning, the final speaker opens the last package and recognizes that the gifts collectively cover every item they had mentioned wanting.",
-        "what_lands": "The final speaker sees the contents of the last opened package and connects it to the other gifts already under the tree.",
-        "situation_summary": "A person receives a Christmas collection that fulfills everything they had hoped to get.",
+        "shared_moment": "On Christmas morning, the final speaker opens the last package and sees that every item from their wish list is there.",
+        "what_lands": "The final speaker directly sees the complete set of wished-for gifts in the opened package and surrounding pile.",
+        "situation_summary": "Two close people exchange Christmas gifts, and one discovers that their entire wish list has been fulfilled.",
         "outline": [
-          "Speaker 1 asks whether the final speaker has opened the presents yet.",
-          "Speaker 2 says they have opened several but were told to save one package.",
-          "Speaker 1 explains that the packages were chosen from things the final speaker had mentioned over time.",
-          "Speaker 2 opens the last package and notices it completes the collection.",
-          "Speaker 2 sees the final item and says it is every thing they mentioned wanting, with the sound first."
+          "One speaker notes that there is still a package under the tree.",
+          "The other says they thought the gifts had all been opened.",
+          "The first speaker points out that the remaining package has the other's name on it.",
+          "The first speaker asks them to open it before clearing away the wrapping.",
+          "The final speaker opens it, sees every wished-for item, vocalizes, and remarks on the complete set."
         ],
         "framing_a": {
           "vocalization": "gasp",
-          "emotional_framing": "The speaker is struck by the unexpected completeness and generosity of the Christmas gifts.",
-          "speaker_state": "Astonished by a welcome realization."
+          "emotional_framing": "The complete collection is an unexpected, generous Christmas surprise that overwhelms the recipient in a good way.",
+          "speaker_state": "Startled and delighted by the discovery."
         },
         "framing_b": {
           "vocalization": "groan",
-          "emotional_framing": "The speaker sees the gifts as excessive and feels dismayed or embarrassed that so much was spent on them.",
-          "speaker_state": "Overwhelmed by unwanted extravagance."
+          "emotional_framing": "The complete collection feels uncomfortably extravagant, making the recipient worry that the giver went far beyond a reasonable gift.",
+          "speaker_state": "Dismayed by the excess."
         },
-        "why_different": "The gasp treats the discovery as a wonderful surprise, while the groan treats the same generosity as uncomfortable excess.",
+        "why_different": "The gasp treats the discovery as a wonderful surprise, while the groan treats the same generosity as excessive and troublesome.",
         "feasible": true,
         "why_not": ""
       },

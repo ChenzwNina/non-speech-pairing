@@ -1,12 +1,12 @@
 {
-  "written_at": "2026-09-08T01:53:41+00:00",
+  "written_at": "2026-09-08T21:07:43+00:00",
   "writer": "claude-opus-5",
   "transport": "cli",
   "prompt_version": "tone_exclusion_writer@3e861e73e3b2",
   "transcripts": "out/transcripts.json",
   "items": [
     {
-      "run_id": "r20260908T015108Z",
+      "run_id": "r20260908T210634Z",
       "item_id": "v6_01a",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -20,7 +20,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:51:23+00:00",
+      "timestamp": "2026-09-08T21:06:46+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01a__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_01a",
@@ -28,34 +28,34 @@
         "vocalization": "laugh",
         "inappropriate_tones": [
           {
-            "tone": "Flat clinical neutrality",
-            "sounds_like": "Even, affectless delivery with no lift or breath of amusement; the same voice used to read out a confirmation number.",
-            "why_wrong": "Ignores an audible shared laugh at a light moment, leaving the reply sounding like it landed on no one."
+            "tone": "Flat, affectless delivery",
+            "sounds_like": "Even pitch, no breath or smile in the voice, businesslike pacing, as if reading an unrelated line aloud.",
+            "why_wrong": "Ignores a shared amused moment; leaves the other speaker's laugh hanging with nothing warm returned."
           },
           {
-            "tone": "Concerned, gently soothing",
-            "sounds_like": "Softened, slowed, downward-inflected voice with careful warmth, as though checking on someone who is upset.",
-            "why_wrong": "Treats a laugh as distress, reading a comfortable teasing moment as something needing consolation."
+            "tone": "Concerned or alarmed",
+            "sounds_like": "Tightened voice, falling worried intonation, sharp intake of breath, urgency as if reacting to bad news.",
+            "why_wrong": "Reads a light, fond moment about a puppy as a problem needing sympathy or intervention."
           },
           {
-            "tone": "Over-cranked hype",
-            "sounds_like": "Loud, rising, exclamatory delivery with a shout or squeal; energy far above the other speaker's light laugh.",
-            "why_wrong": "Overshoots a small easy laugh between friends, forcing a big reaction the moment does not carry."
+            "tone": "Overblown hysterics",
+            "sounds_like": "Loud sustained cackling, gasping, near-shouted delivery, energy far above the other speaker's light laugh.",
+            "why_wrong": "Escalates a small domestic joke into something far bigger than the moment carries."
           },
           {
-            "tone": "Defensive or apologetic",
-            "sounds_like": "Tightened, hurried, slightly pleading delivery with justifying emphasis, as if fending off criticism.",
-            "why_wrong": "Hears the laugh as mockery rather than affectionate amusement, taking an unwarranted wounded stance."
+            "tone": "Dismissive or bored",
+            "sounds_like": "Clipped, sighing, trailing-off delivery with downward drop, the sound of humoring someone and moving on.",
+            "why_wrong": "Treats the other speaker's amusement as tedious when they were inviting shared enjoyment."
           }
         ],
-        "acceptable_range_note": "Anything from a quiet amused warmth to an audible laugh, sheepish pride, or dry playful teasing works, including brief understated delivery."
+        "acceptable_range_note": "Anything from a quiet smiling warmth to an open laugh works, including dry or understated amusement, as long as the delivery stays light and engaged."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T015123Z",
+      "run_id": "r20260908T210646Z",
       "item_id": "v6_01a",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -69,7 +69,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:51:36+00:00",
+      "timestamp": "2026-09-08T21:07:01+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01a__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_01a",
@@ -77,34 +77,34 @@
         "vocalization": "sigh",
         "inappropriate_tones": [
           {
-            "tone": "Alarmed or concerned",
-            "sounds_like": "Sudden drop in pitch, urgent clipped delivery, tight breathy voice as if checking whether something is wrong.",
-            "why_wrong": "Reads the sigh as distress or bad news, when it lands on a happy surprise being revealed."
+            "tone": "Grave concern or alarm",
+            "sounds_like": "Sudden drop in pitch, tightened urgent delivery, worried breath before speaking, as if responding to bad news.",
+            "why_wrong": "Reads a light, fond exasperation about a puppy as a distressing event needing crisis handling."
           },
           {
-            "tone": "Flat, disengaged monotone",
-            "sounds_like": "Even pitch throughout, no lift or warmth, steady unhurried pace as if reading something aloud.",
-            "why_wrong": "Gives nothing back at a charged reveal moment, making the responder sound uninvested in their own surprise."
+            "tone": "Heavy therapeutic sympathy",
+            "sounds_like": "Slow, hushed, over-gentle consoling voice with drawn-out soothing vowels, the register used for genuine grief.",
+            "why_wrong": "Treats a mild sigh as real emotional pain, inflating a small domestic complaint into something weighty."
           },
           {
-            "tone": "Chirpy game-show announcer brightness",
-            "sounds_like": "Loud, high, sing-song delivery with big rising emphasis and performed excitement, like presenting a prize.",
-            "why_wrong": "Overshoots an intimate two-person moment into performance, trampling the softness the sigh just introduced."
+            "tone": "Chirpy hyped-up cheer",
+            "sounds_like": "Bouncy, loud, exclamatory delivery with sharp rising pitch and gushing excitement pushed well past the conversation's energy.",
+            "why_wrong": "Overshoots the low-key amused register and steamrolls the small weariness the sigh carried."
           },
           {
-            "tone": "Smug or teasing gloat",
-            "sounds_like": "Drawn-out sly delivery, self-satisfied lilt, smiling-through-the-words with a taunting downward curl at phrase ends.",
-            "why_wrong": "Takes a one-up stance over the other person's reaction rather than sharing the moment with them."
+            "tone": "Flat bored disengagement",
+            "sounds_like": "Monotone, clipped, no warmth or lift, trailing off as though the topic barely registered.",
+            "why_wrong": "Ignores that the speaker just offered a shared beat of feeling in an otherwise engaged exchange."
           }
         ],
-        "acceptable_range_note": "Warm and animated, quietly amused, softly stunned, or near-deadpan understated all work; brief or restrained delivery is fine."
+        "acceptable_range_note": "Anything from quiet warm amusement to a soft laugh to dry understated commentary works, at conversational energy with some warmth."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014621Z",
+      "run_id": "r20260908T210358Z",
       "item_id": "v6_01b",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -118,7 +118,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:46:33+00:00",
+      "timestamp": "2026-09-08T21:04:11+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01b__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_01b",
@@ -126,34 +126,34 @@
         "vocalization": "laugh",
         "inappropriate_tones": [
           {
-            "tone": "Flat, unmoved delivery",
-            "sounds_like": "Even, unlifted voice with no warmth or release; same register as reading a list aloud.",
-            "why_wrong": "The laugh signals shared relief after real worry; a neutral read leaves the other speaker's release unmet."
+            "tone": "Grave, sympathetic concern",
+            "sounds_like": "Slow, hushed, downward-drifting delivery with a consoling softness, as though responding to bad news.",
+            "why_wrong": "Reads the laugh as distress when it marks relief at a problem resolving."
           },
           {
-            "tone": "Alarmed or urgent",
-            "sounds_like": "Tight, fast, sharply rising voice; clipped breath, as if bad news just landed.",
-            "why_wrong": "Misreads valence — the tension just broke, so worry-pitch fights what the laugh established."
+            "tone": "Flat, disengaged monotone",
+            "sounds_like": "Even pitch, no lift or warmth, clipped pacing — the same voice used to read out a serial number.",
+            "why_wrong": "Ignores an audible shift in the other speaker's mood at the moment it lands."
           },
           {
-            "tone": "Dismissive or curt",
-            "sounds_like": "Clipped, downward-closing delivery, slight flatness or sigh, as if brushing the moment aside.",
-            "why_wrong": "Takes a stance the moment doesn't license; the other speaker's relief is offered, not imposed."
+            "tone": "Over-the-top celebratory whooping",
+            "sounds_like": "Loud, sustained excitement, exclamatory pitch spikes, cheering energy far above the other speaker's chuckle.",
+            "why_wrong": "Overinflates a small piece of mundane good news into a triumph."
           },
           {
-            "tone": "Overblown celebratory hype",
-            "sounds_like": "Loud, whooping, exclamatory delivery at party volume; drawn-out excitement far above the room's level.",
-            "why_wrong": "Wrong intensity — a bill clearing is relief, not triumph; the outsized pitch reads as performance."
+            "tone": "Smug, told-you-so needling",
+            "sounds_like": "Sing-song lilt, drawn-out stressed syllables, self-satisfied smile audible in the voice, faintly taunting.",
+            "why_wrong": "Takes a scoring-points stance the moment does not license; makes the relief about the responder."
           }
         ],
-        "acceptable_range_note": "Anything from a quiet exhaled relief to a warm chuckle or brightly amused reply works, whether or not the responder laughs."
+        "acceptable_range_note": "Anything from a quiet, warm acknowledgment to a light shared chuckle or mild pleased surprise works, including brief or understated deliveries."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014633Z",
+      "run_id": "r20260908T210411Z",
       "item_id": "v6_01b",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -167,7 +167,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:46:53+00:00",
+      "timestamp": "2026-09-08T21:04:29+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01b__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_01b",
@@ -175,34 +175,34 @@
         "vocalization": "sigh",
         "inappropriate_tones": [
           {
-            "tone": "Alarmed urgency",
-            "sounds_like": "Tight, fast, breath-catching delivery with rising pitch and sharp onset, as if reacting to bad news breaking.",
-            "why_wrong": "Reads the sigh as distress when the tension has just resolved; treats a settled situation as an emergency."
+            "tone": "Alarmed, worried concern",
+            "sounds_like": "Tightened, urgent delivery with rising pitch and quickened pace, as if bracing for bad news or checking that something is wrong.",
+            "why_wrong": "Reads the sigh as distress when it lands on a resolved worry; treats a released moment as an emergency."
           },
           {
-            "tone": "Heavy consoling gloom",
-            "sounds_like": "Slow, hushed, downward-drifting delivery with sympathetic softening, the voice used for comforting someone after a loss.",
-            "why_wrong": "Mistakes the valence: the sigh releases worry rather than expressing grief, so mourning-toned warmth overshoots downward."
-          },
-          {
-            "tone": "Over-the-top celebratory hype",
-            "sounds_like": "Sudden volume jump, bright exclamatory whoop or sing-song excitement, party-announcement energy.",
-            "why_wrong": "Overshoots the intensity of a mundane relief about a bill clearing, turning an exhale into a triumph."
+            "tone": "Chirpy celebratory over-excitement",
+            "sounds_like": "Loud, bright, bouncing delivery — congratulatory whoop, exclamation-heavy lift, party-announcer energy far above the room's volume.",
+            "why_wrong": "Inflates a small mundane relief into a triumph, overshooting the low-key deflation the sigh actually carries."
           },
           {
             "tone": "Smug vindication",
-            "sounds_like": "Slowed, sing-song or knowing delivery with a self-satisfied lilt and audible smirk, leaning on the words.",
-            "why_wrong": "Takes a scoring-a-point stance the moment does not license; makes shared relief into a contest over who was right."
+            "sounds_like": "Slow, self-satisfied lilt with a knowing lean on certain words; a little laugh of triumph aimed at the other speaker.",
+            "why_wrong": "Turns a shared relief into a scoring moment, taking a superior stance the exchange never licenses."
+          },
+          {
+            "tone": "Bored, disengaged flatness",
+            "sounds_like": "Monotone, clipped, energy dropping away mid-phrase, as if reading something unrelated and eager to move on.",
+            "why_wrong": "Signals indifference to a moment the other person clearly felt, withholding any acknowledgement the sigh invites."
           }
         ],
-        "acceptable_range_note": "Anything from a quiet exhaled relief or brief matter-of-fact acknowledgement to warm, lightly amused ease would all be fine here."
+        "acceptable_range_note": "Anything from a quiet warm exhale of relief to mild pleased amusement or calm matter-of-fact steadiness works; brevity and restraint are fine."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T015037Z",
+      "run_id": "r20260908T210604Z",
       "item_id": "v6_01c",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -216,7 +216,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:50:52+00:00",
+      "timestamp": "2026-09-08T21:06:16+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01c__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_01c",
@@ -224,34 +224,34 @@
         "vocalization": "laugh",
         "inappropriate_tones": [
           {
-            "tone": "Flat, affectless recitation",
-            "sounds_like": "Even pitch, no lift or breath of amusement, clipped businesslike pacing, as though reading an unrelated notice aloud.",
-            "why_wrong": "Ignores an audible shared joke offered directly to the listener; leaves the other speaker's laugh hanging unacknowledged."
+            "tone": "Flat clinical neutrality",
+            "sounds_like": "Even, unvaried delivery with no warmth or lift, as if reading out an account balance to a stranger.",
+            "why_wrong": "Ignores that the other speaker just laughed at a shared joke; leaves the offered amusement completely unmet."
           },
           {
-            "tone": "Concerned or alarmed gravity",
-            "sounds_like": "Lowered, slowed delivery with a worried catch, soft careful emphasis of the kind used for bad news.",
-            "why_wrong": "Treats a light self-aware joke about soda as a serious problem, inflating a small moment into distress."
+            "tone": "Concerned or cautioning gravity",
+            "sounds_like": "Slowed, lowered, careful delivery with a worried edge, the sound of raising a health or habit problem.",
+            "why_wrong": "Treats a light throwaway quip as a confession needing sober response, souring an easy moment."
           },
           {
-            "tone": "Scolding, patronising correction",
-            "sounds_like": "Tutting warmth over firm downward emphasis, slow sing-song lecturing cadence aimed at someone being told off.",
-            "why_wrong": "Takes a superior stance toward a colleague joking about themselves on a casual first-day tour."
+            "tone": "Manic over-excitement",
+            "sounds_like": "Loud, fast, high-energy exclaiming with game-show enthusiasm, far bigger than the small laugh that preceded it.",
+            "why_wrong": "Wildly overshoots the low-stakes register of a joke about convenience-store reward points."
           },
           {
-            "tone": "Derisive mockery at the speaker",
-            "sounds_like": "Sharp scoffing laugh, sneering edge, exaggerated incredulity pointed at the other person rather than shared with them.",
-            "why_wrong": "Converts a self-deprecating joke into ridicule of the person, a stance the new-colleague rapport does not license."
+            "tone": "Dismissive or exasperated flatness",
+            "sounds_like": "Clipped, sighing, or eye-roll delivery with a downward drop, as if the other person is tiresome.",
+            "why_wrong": "Takes a judgmental stance the moment does not license; the laugh invited shared amusement, not correction."
           }
         ],
-        "acceptable_range_note": "Anything from a quiet amused exhale to an open laugh, or dry deadpan wit, works — warmth and shared amusement matter more than volume."
+        "acceptable_range_note": "Anything from a quiet warm smile in the voice to an audible chuckle, or dry deadpan amusement, works fine here."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T015052Z",
+      "run_id": "r20260908T210616Z",
       "item_id": "v6_01c",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -265,7 +265,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:51:08+00:00",
+      "timestamp": "2026-09-08T21:06:34+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01c__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_01c",
@@ -273,27 +273,27 @@
         "vocalization": "sigh",
         "inappropriate_tones": [
           {
-            "tone": "Alarmed gravity",
-            "sounds_like": "Sharp intake, tightened urgent voice, faster clipped delivery, pitch jumping up as if something serious just went wrong.",
-            "why_wrong": "Treats a comic sigh over a soda cooler as a crisis, inflating a low-stakes moment far past its weight."
+            "tone": "Grave concern, solemn worry",
+            "sounds_like": "Slowed, hushed delivery with careful soft landings, weighted pauses, the register used for bad news or an intervention.",
+            "why_wrong": "Treats a wry sigh of comic resignation as genuine distress, inflating a throwaway joke into a serious problem."
           },
           {
-            "tone": "Patronising consolation",
-            "sounds_like": "Slow soothing hush, softened cooing warmth, drawn-out sympathetic murmur like comforting a child or a patient.",
-            "why_wrong": "Casts the sigher as needing care, taking a caretaker stance the light self-deprecating moment never invited."
+            "tone": "Chirpy upbeat cheerleading",
+            "sounds_like": "Bright bouncy pitch, exclamatory lift, game-show or salesperson brightness, energy pushed well above the other speaker's.",
+            "why_wrong": "Overshoots the low-key deflated humor, steamrolling the resigned mood with enthusiasm the moment never reached."
           },
           {
-            "tone": "Chirpy upbeat brightness",
-            "sounds_like": "Bouncy singsong lift, loud perky energy, smiling announcer-style delivery pushing forward with no acknowledgement of the exhale.",
-            "why_wrong": "Overrides the deflated valence of the sigh with unearned cheer, sounding oblivious to what was just expressed."
+            "tone": "Patronising disapproval or scolding",
+            "sounds_like": "Sing-song tutting cadence, drawn-out chiding vowels, downward finger-wagging emphasis as if correcting a child.",
+            "why_wrong": "Takes a superior corrective stance the exchange does not license; A was joking at their own expense, not confessing."
           },
           {
-            "tone": "Flat bored disinterest",
-            "sounds_like": "Monotone, low energy, no warmth or inflection, trailing off as if barely listening or wanting the exchange over.",
-            "why_wrong": "Reads as dismissing a shared beat of wry commiseration, withholding any engagement the sigh clearly opened up."
+            "tone": "Flat bored dismissal",
+            "sounds_like": "Clipped monotone, no inflection shift, trailing off as though barely listening or ready to end the exchange.",
+            "why_wrong": "Withholds any acknowledgment of the sigh's rueful humor, reading as disengagement from a shared joke."
           }
         ],
-        "acceptable_range_note": "Amused, wry, gently sympathetic, dryly deadpan, or lightly teasing all work, at anything from quiet understatement to an open laugh."
+        "acceptable_range_note": "Anything from a soft amused chuckle to dry deadpan to quiet warm agreement works; low energy and understatement are fine here."
       },
       "status": "ok",
       "errors": [],
@@ -594,7 +594,7 @@
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014417Z",
+      "run_id": "r20260908T210320Z",
       "item_id": "v6_02c",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -608,7 +608,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:44:39+00:00",
+      "timestamp": "2026-09-08T21:03:40+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02c__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_02c",
@@ -616,34 +616,34 @@
         "vocalization": "laugh",
         "inappropriate_tones": [
           {
-            "tone": "Flat, affectless recitation",
-            "sounds_like": "Even, unvaried delivery with no lift or breath change, the pacing of reading a shopping list aloud.",
-            "why_wrong": "Registers nothing at a moment that just landed news about the responder's own life and money."
+            "tone": "Grave, sympathetic concern",
+            "sounds_like": "Softened, lowered voice with slow careful pacing and a falling, consoling contour, as if receiving bad or delicate news.",
+            "why_wrong": "Treats a buoyant, amused reaction to a promising listing as something to be gentle about."
           },
           {
-            "tone": "Somber, consoling gravity",
-            "sounds_like": "Low, slowed, gentle-with-bad-news delivery; softened edges and a downward drift, as though comforting someone.",
-            "why_wrong": "Treats an opened offer and a laugh as loss or disappointment, inverting the valence of the moment."
+            "tone": "Flat, unmodulated recitation",
+            "sounds_like": "Even pitch, unchanged pace and energy from earlier turns, no lift or breath change anywhere in the line.",
+            "why_wrong": "Registers nothing at all happening, when the other speaker just laughed at something notable."
           },
           {
-            "tone": "Manic celebratory overdrive",
-            "sounds_like": "Shouted, breathless, game-show-host escalation with whooping and stretched vowels sustained across the whole reply.",
-            "why_wrong": "Blows past the other speaker's single laugh into performance, overshooting the scale of what was shared."
+            "tone": "Alarmed or urgent",
+            "sounds_like": "Sharp onset, raised and tightened voice, quickened clipped delivery, audible tension as though something has gone wrong.",
+            "why_wrong": "Reads a light laugh as a crisis signal; nothing in the moment warrants urgency."
           },
           {
-            "tone": "Derisive scorn aimed at the other speaker",
-            "sounds_like": "Sneering, clipped, hard-consonant delivery with a mocking curl, pointed at the person who read the email.",
-            "why_wrong": "Takes an adversarial stance the exchange has not licensed; the laugh was shared, not directed at anyone."
+            "tone": "Patronising or placating warmth",
+            "sounds_like": "Cooing, over-soft sing-song with exaggerated encouraging swells, the voice adults use to reassure a child.",
+            "why_wrong": "Takes a condescending stance toward a peer sharing an amused, casual moment between equals."
           }
         ],
-        "acceptable_range_note": "Anything from a stunned quiet exhale through wry disbelief, guarded relief, or open unforced delight would read as fine here."
+        "acceptable_range_note": "Anything from dry, quiet amusement to open delight works, laughing along or not, including brisk matter-of-fact interest with a slight lift."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014439Z",
+      "run_id": "r20260908T210340Z",
       "item_id": "v6_02c",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -657,7 +657,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:44:52+00:00",
+      "timestamp": "2026-09-08T21:03:58+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02c__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_02c",
@@ -665,27 +665,27 @@
         "vocalization": "gasp",
         "inappropriate_tones": [
           {
-            "tone": "Flat, unmoved recitation",
-            "sounds_like": "Level pitch, no lift or break, steady unhurried pace, as if reading a line off a page.",
-            "why_wrong": "Treats a sharp intake of breath at good news as nothing worth reacting to."
-          },
-          {
             "tone": "Alarmed or dread-filled",
-            "sounds_like": "Tightened, lowered voice, urgent clipped delivery, breath held, the sound of bracing for bad news.",
-            "why_wrong": "Misreads the gasp's valence — this is a windfall, not a shock or a crisis."
+            "sounds_like": "Sharp, tightened voice, breath caught high, urgent clipped delivery as though bracing for something bad.",
+            "why_wrong": "Reads the gasp as fright or bad news when it lands on a welcome, favourable discovery."
           },
           {
-            "tone": "Dismissive or deflating",
-            "sounds_like": "Sighing onset, downward drift, flat trailing ends, a faint scoff or eye-roll audible in the voice.",
-            "why_wrong": "Withholds shared excitement and reads the other person's reaction as overblown."
+            "tone": "Flat, disengaged monotone",
+            "sounds_like": "Even pitch throughout, no lift or quickening, unhurried and affectless, as if reading something unrelated aloud.",
+            "why_wrong": "Registers nothing at a moment of sudden good news about the speaker's own pressing need."
           },
           {
-            "tone": "Patronising congratulation",
-            "sounds_like": "Sing-song cooing, exaggerated warm swells, slowed indulgent delivery aimed downward, as at a child.",
-            "why_wrong": "Takes a superior stance toward a peer whose own news this is."
+            "tone": "Soothing, patronising reassurance",
+            "sounds_like": "Slowed, softened, downward-gliding delivery with gentling warmth, the voice used to calm someone upset.",
+            "why_wrong": "Treats an excited gasp as distress needing management, casting the other speaker as fragile."
+          },
+          {
+            "tone": "Theatrical hype, game-show pitch",
+            "sounds_like": "Loud, stretched vowels, exaggerated whooping swoops, performed astonishment far above the other speaker's energy.",
+            "why_wrong": "Overshoots a brief startled intake between two people talking practically about rent and hours."
           }
         ],
-        "acceptable_range_note": "Anything from a quiet stunned hush to loud delighted disbelief works, including brief, breathy, or laughing deliveries, as long as it registers the surprise."
+        "acceptable_range_note": "Anything from quiet caught-breath interest to bright audible delight works, as does a wry or guarded lift; warmth and restraint are both fine."
       },
       "status": "ok",
       "errors": [],
@@ -790,7 +790,7 @@
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014811Z",
+      "run_id": "r20260908T210505Z",
       "item_id": "v6_03a",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -804,7 +804,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:48:36+00:00",
+      "timestamp": "2026-09-08T21:05:28+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03a__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_03a",
@@ -812,34 +812,34 @@
         "vocalization": "laugh",
         "inappropriate_tones": [
           {
-            "tone": "Alarmed, urgent panic",
-            "sounds_like": "Sharp rising delivery, quickened pace, tight breathy voice as if reporting an emergency or bad news.",
-            "why_wrong": "Treats a minor mistimed errand as a crisis, ignoring the light, already-amused framing of the other speaker."
+            "tone": "Alarmed, urgent concern",
+            "sounds_like": "Sharp intake, quickened tempo, rising pitch, clipped words pushed out as if reacting to an emergency.",
+            "why_wrong": "Treats a minor, funny inconvenience delivered through a laugh as an urgent problem demanding immediate response."
           },
           {
-            "tone": "Chirpy delight",
-            "sounds_like": "Bouncy, bright, upbeat sing-song energy, like happily announcing good news or a pleasant surprise.",
-            "why_wrong": "Misreads the valence: the laugh is at a wasted rush, not a genuinely welcome outcome."
+            "tone": "Hushed, solemn condolence",
+            "sounds_like": "Slowed, lowered, softened delivery with sympathetic warmth, the register used for delivering or receiving bad news.",
+            "why_wrong": "Reads real loss into a wry moment; gravity is out of proportion to a closed gym."
           },
           {
-            "tone": "Mournful gravity",
-            "sounds_like": "Slow, heavy, sighing delivery with downcast weight, as though describing a real loss or disappointment.",
-            "why_wrong": "Massively overshoots the stakes of a closed gym and clashes with the amusement just offered."
+            "tone": "Bright chirpy delight",
+            "sounds_like": "Sing-song upswing, perky energy, unmixed cheerfulness, like announcing good news or performing enthusiasm.",
+            "why_wrong": "Overshoots the shared irony into unclouded happiness, ignoring that the effort just went to waste."
           },
           {
-            "tone": "Patronising consolation toward the other speaker",
-            "sounds_like": "Soft, cooing, gently soothing warmth, the voice used to comfort someone who is upset.",
-            "why_wrong": "The other speaker is laughing, not distressed; comforting them takes an unearned caretaking stance."
+            "tone": "Sharp hostile snap",
+            "sounds_like": "Hard clipped consonants, tightened throat, accusatory stress landing heavily, real irritation aimed at the other speaker.",
+            "why_wrong": "Turns a teasing shared joke into a grievance; genuine anger at the messenger misplaces the frustration."
           }
         ],
-        "acceptable_range_note": "Anything from a shared chuckle to dry deadpan, wry resignation, or plain mild exasperation works, including flat or very brief delivery."
+        "acceptable_range_note": "Anything from a laugh along, to a groan or sigh, to dry deadpan or mild mock-exasperation reads fine here."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014836Z",
+      "run_id": "r20260908T210528Z",
       "item_id": "v6_03a",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -853,7 +853,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:48:48+00:00",
+      "timestamp": "2026-09-08T21:05:40+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03a__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_03a",
@@ -861,27 +861,27 @@
         "vocalization": "groan",
         "inappropriate_tones": [
           {
-            "tone": "Bright chirpy cheerfulness",
-            "sounds_like": "Lifted, sing-song delivery with a smile audible in the voice, upward endings, brisk energetic pace.",
-            "why_wrong": "Treats a shared setback as good news; ignores the frustration the groan just expressed."
+            "tone": "Bright, upbeat cheerfulness",
+            "sounds_like": "Lifted, smiling delivery with rising energy and a peppy lilt, as if reacting to welcome news.",
+            "why_wrong": "The groan marks a small shared frustration; sunny brightness reads as ignoring the letdown that was just voiced."
           },
           {
-            "tone": "Alarmed, urgent distress",
-            "sounds_like": "Sharp raised volume, tight fast speech, breathy or panicked edge, as if reporting an emergency.",
-            "why_wrong": "A closed gym is a minor annoyance; crisis-level intensity wildly overshoots the moment."
+            "tone": "Alarmed or distressed urgency",
+            "sounds_like": "Sharp intake, tightened voice, fast clipped delivery, pitch jumping up as though something serious went wrong.",
+            "why_wrong": "A closed gym is a minor annoyance; crisis-pitched delivery wildly overshoots the everyday scale of the moment."
           },
           {
-            "tone": "Flat, uninflected indifference",
-            "sounds_like": "Monotone, even volume, no pitch movement, clipped and detached, as if reading unrelated text aloud.",
-            "why_wrong": "Registers nothing of the shared irritation, reading as disengaged from a partner who just reacted."
+            "tone": "Flat, disengaged monotone",
+            "sounds_like": "Even pitch, no inflection change, mechanical pacing, indistinguishable from reading an unrelated sentence aloud.",
+            "why_wrong": "Registers nothing of the shared annoyance, making the groan land as if it were never heard."
           },
           {
-            "tone": "Patronising soothing or teasing scorn",
-            "sounds_like": "Cooing, slowed comfort-voice pitched downward at the listener, or a smirking scoffing lilt at their expense.",
-            "why_wrong": "Takes a superior stance toward a peer sharing a mundane frustration, which the exchange does not license."
+            "tone": "Patronising or scolding smugness",
+            "sounds_like": "Sing-song condescension or a tutting, told-you-so lean, drawn-out vowels aimed down at the other speaker.",
+            "why_wrong": "Nothing here licenses talking down; the groan invites commiseration, not correction or superiority."
           }
         ],
-        "acceptable_range_note": "Anything from a wry exhaled laugh to deadpan resignation, mild exasperation, or a quiet commiserating sigh works, whether energetic or subdued."
+        "acceptable_range_note": "Deflated sighing, wry amusement, mild irritation, resigned flatness, or a brief clipped remark all fit; warmth and dryness are equally fine."
       },
       "status": "ok",
       "errors": [],
@@ -986,7 +986,7 @@
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014131Z",
+      "run_id": "r20260908T210235Z",
       "item_id": "v6_03c",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -1000,42 +1000,42 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:41:48+00:00",
-      "raw_response_path": "out/eval/writer_raw/v6_03c__condition_a__tone_exclusions__attempt1.txt",
+      "timestamp": "2026-09-08T21:03:00+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03c__condition_a__tone_exclusions__attempt2.txt",
       "parsed": {
         "item_id": "v6_03c",
         "condition": "condition_a",
         "vocalization": "laugh",
         "inappropriate_tones": [
           {
-            "tone": "Alarmed gravity",
-            "sounds_like": "Sudden drop in pitch and pace, tight breath, hushed serious delivery as if hearing bad news.",
-            "why_wrong": "Treats a wry laugh about one more interview as a crisis, overriding the light valence just set."
+            "tone": "Flat, uninflected acknowledgment",
+            "sounds_like": "Even pitch, no lift or warmth, clipped delivery as if reading a list item aloud.",
+            "why_wrong": "Ignores the shared delight in the laugh, leaving the good news audibly unmet."
           },
           {
-            "tone": "Chirpy celebratory hype",
-            "sounds_like": "Bright loud exclamation, rising sing-song lift, congratulatory whoop pitched like an announcement.",
-            "why_wrong": "Ignores the fatigue inside the laugh and overshoots an ordinary scheduling update into a triumph."
+            "tone": "Concerned or worried",
+            "sounds_like": "Lowered pitch, slowed pace, soft careful delivery of the sort used for bad news.",
+            "why_wrong": "Misreads a pleased laugh as distress, treating a good development as trouble."
           },
           {
-            "tone": "Flat bored disengagement",
-            "sounds_like": "Monotone, clipped, low energy with no breath of amusement or warmth; sounds like reading something unrelated.",
-            "why_wrong": "Leaves the shared laugh unanswered entirely, reading as indifference to the moment."
+            "tone": "Dismissive or deflating",
+            "sounds_like": "Sighing exhale, downward drop at the end, faint flatness bordering on boredom.",
+            "why_wrong": "Withholds any recognition of a moment the speaker just laughed with pleasure about."
           },
           {
-            "tone": "Patronising consolation",
-            "sounds_like": "Slowed soothing coo, sympathetic downward inflection, the voice used for comforting a child.",
-            "why_wrong": "Recasts amusement as distress needing comfort, taking a stance above the other speaker."
+            "tone": "Overblown celebratory shouting",
+            "sounds_like": "Loud, near-yelling excitement, exaggerated stretched vowels, breathless pace far above the speaker's own level.",
+            "why_wrong": "Overshoots a light amused laugh, turning a small shared moment into a spectacle."
           }
         ],
-        "acceptable_range_note": "Anything from a shared chuckle to dry deadpan to quiet warm interest works, at conversational energy, with or without audible laughter."
+        "acceptable_range_note": "Anything from a quiet warm chuckle to bright genuine enthusiasm works, including dry amusement or calm interest, so long as some warmth registers."
       },
       "status": "ok",
       "errors": [],
-      "attempts": 1
+      "attempts": 2
     },
     {
-      "run_id": "r20260908T014148Z",
+      "run_id": "r20260908T210300Z",
       "item_id": "v6_03c",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -1049,7 +1049,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:42:04+00:00",
+      "timestamp": "2026-09-08T21:03:20+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03c__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_03c",
@@ -1058,26 +1058,26 @@
         "inappropriate_tones": [
           {
             "tone": "Bright celebratory cheer",
-            "sounds_like": "Lifted, smiling delivery with rising excitement, brisk congratulatory energy, as if reacting to welcome news.",
-            "why_wrong": "Reads the groan's clear frustration as good news, inverting the valence of the moment."
+            "sounds_like": "Upswinging, congratulatory delivery with a smile audible throughout, energy lifting at the end as if announcing good news.",
+            "why_wrong": "Reads the moment as unmixed good fortune and steps straight over the audible dismay the groan just expressed."
           },
           {
-            "tone": "Alarmed urgency",
-            "sounds_like": "Tight, fast, breath-catching delivery with sharp emphasis and worried pitch climb, like reacting to bad news.",
-            "why_wrong": "Escalates a weary complaint into a crisis; the groan signals annoyance, not distress or emergency."
+            "tone": "Alarmed, grave concern",
+            "sounds_like": "Hushed, tightened voice, slowed pace, breath caught — the register used for bad medical news or a crisis.",
+            "why_wrong": "Escalates a weary complaint into calamity, treating ordinary exasperation as something requiring emergency gravity."
           },
           {
-            "tone": "Patronising soothing",
-            "sounds_like": "Slow, cooing, over-gentle delivery with drawn-out softness, the voice used to comfort a child.",
-            "why_wrong": "Treats an adult's ordinary exasperation as fragility, taking a caretaking stance the moment does not license."
+            "tone": "Cooing, patronising comfort",
+            "sounds_like": "Sing-song lilt, drawn-out vowels, soft head-tilt warmth of the kind used to soothe a small child.",
+            "why_wrong": "Takes a caretaking stance toward an adult venting mild frustration, condescending rather than commiserating as a peer."
           },
           {
-            "tone": "Flat bored disengagement",
-            "sounds_like": "Monotone, clipped, low-energy delivery with no warmth or inflection, trailing off indifferently.",
-            "why_wrong": "Registers nothing of the groan at all, reading as inattention to a bid for sympathy."
+            "tone": "Bored, dismissive brush-off",
+            "sounds_like": "Flat clipped delivery, falling energy, faint impatience or a sigh of one's own, as if moving past the topic.",
+            "why_wrong": "Treats the groan as noise not worth registering, withdrawing engagement at the moment it was invited."
           }
         ],
-        "acceptable_range_note": "Anything from a dry commiserating sigh to warm sympathy to light wry amusement works, at low or moderate energy."
+        "acceptable_range_note": "Wry amusement, warm commiseration, a dry chuckle, quiet sympathy, or a light matched groan all work; restrained and brief is equally fine."
       },
       "status": "ok",
       "errors": [],
@@ -1476,7 +1476,7 @@
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014101Z",
+      "run_id": "r20260908T210211Z",
       "item_id": "v6_04d",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -1490,7 +1490,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:41:19+00:00",
+      "timestamp": "2026-09-08T21:02:23+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04d__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_04d",
@@ -1498,34 +1498,34 @@
         "vocalization": "sigh",
         "inappropriate_tones": [
           {
-            "tone": "Somber condolence",
-            "sounds_like": "Low, slowed, gently commiserating delivery with falling phrase ends, the voice used for bad news or comforting a loss.",
-            "why_wrong": "Reads the sigh as disappointment when it accompanies a win; mourns a moment that is overwhelmingly good."
+            "tone": "Flat, unmoved bureaucratic confirmation",
+            "sounds_like": "Even, clipped delivery with no lift or warmth, like reading a number back off a form.",
+            "why_wrong": "Treats a life-changing, disbelieving moment as routine data entry, leaving the other person's stunned reaction unmet."
           },
           {
-            "tone": "Flat indifference",
-            "sounds_like": "Even, affectless monotone with unchanged pace and no lift, as if reading back a status update.",
-            "why_wrong": "Registers no reaction at all to a stunning announcement, leaving the speaker's release of tension unanswered."
+            "tone": "Dismissive brush-off",
+            "sounds_like": "Short, throwaway delivery with a shrug in the voice, trailing off as if the topic is closing.",
+            "why_wrong": "Waves away a moment the speaker is visibly struggling to absorb, and their sigh invites acknowledgment, not dismissal."
           },
           {
-            "tone": "Dismissive impatience",
-            "sounds_like": "Clipped, brisk, slightly exasperated delivery, air pushed out on the first word, sentence trailing off early.",
-            "why_wrong": "Treats the sigh as a complaint to be waved off, taking an irritated stance the moment does not license."
+            "tone": "Alarmed or panicked urgency",
+            "sounds_like": "Tight, fast, high-strung voice with sharp breath, as though reporting an emergency or bad news.",
+            "why_wrong": "Reads the sigh as distress or catastrophe rather than the overwhelm of something extraordinary and good."
           },
           {
             "tone": "Patronising soothing",
-            "sounds_like": "Softened singsong cooing, drawn-out vowels and downward petting cadence, as though calming a distressed child.",
-            "why_wrong": "Casts the sighing speaker as fragile and needing management rather than someone delivering extraordinary news."
+            "sounds_like": "Slow, singsong, caregiver-style softening, as if calming a distressed child.",
+            "why_wrong": "Casts an adult peer as fragile and needing management, a stance the moment does not license."
           }
         ],
-        "acceptable_range_note": "Anything from stunned quiet and breathy disbelief through rising incredulity to loud elated shock works, as does a beat of speechless restraint."
+        "acceptable_range_note": "Anything from hushed disbelief to bright excitement to a quiet steady confirmation works, as long as the delivery registers that something remarkable just happened."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014119Z",
+      "run_id": "r20260908T210223Z",
       "item_id": "v6_04d",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -1539,7 +1539,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:41:31+00:00",
+      "timestamp": "2026-09-08T21:02:35+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04d__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_04d",
@@ -1548,26 +1548,26 @@
         "inappropriate_tones": [
           {
             "tone": "Flat, unmoved neutrality",
-            "sounds_like": "Even, low-energy delivery with no lift or breath change, as if reading a status update aloud.",
-            "why_wrong": "Treats a shared jackpot win as routine, ignoring the startled excitement the gasp just put into the room."
+            "sounds_like": "Even, level delivery with no lift or energy change from earlier turns; reads like confirming a grocery item.",
+            "why_wrong": "Treats a life-changing shock as routine information, leaving the other speaker's gasp hanging unmet."
           },
           {
-            "tone": "Dismissive or skeptical brush-off",
-            "sounds_like": "Clipped, deflating delivery with a scoffing or sighing edge, downward drop at the end.",
-            "why_wrong": "Puts the responder above the moment, waving off news that plainly warrants shared reaction."
+            "tone": "Alarmed or fearful urgency",
+            "sounds_like": "Tight, sharp, breath-caught voice with rising panic; the pitch of bad news breaking.",
+            "why_wrong": "Misreads a positive shock as danger, converting a windfall into an emergency."
           },
           {
-            "tone": "Alarmed, fearful urgency",
-            "sounds_like": "Tight, breathless, sharp-edged voice pitched toward panic or dread, tempo pushed forward.",
-            "why_wrong": "Reads the gasp as bad news when the follow-through is unambiguously good fortune."
+            "tone": "Dismissive or teasing brush-off",
+            "sounds_like": "Flat drawl, light scoff or eye-roll audible in the voice, trailing off as if unimpressed.",
+            "why_wrong": "Belittles a genuinely astonishing moment the responder just helped confirm and was equally invested in."
           },
           {
-            "tone": "Patronising soothing of the other",
-            "sounds_like": "Slowed, softened, cooing delivery like calming a distressed child, heavy reassuring warmth.",
-            "why_wrong": "Casts the other speaker as needing comfort rather than someone sharing good news."
+            "tone": "Soothing, patronising calm",
+            "sounds_like": "Slow, hushed, downward-settling delivery, as if gentling someone who is overreacting.",
+            "why_wrong": "Frames the gasp as distress needing management rather than warranted amazement."
           }
         ],
-        "acceptable_range_note": "Anything from a quiet stunned exhale to loud whooping delight works, including disbelieving, laughing, or urgently double-checking deliveries."
+        "acceptable_range_note": "Anything from an explosive shared shout to a stunned, quiet, breath-held disbelief works, as long as astonishment is audible and positive."
       },
       "status": "ok",
       "errors": [],
@@ -1672,7 +1672,7 @@
       "attempts": 1
     },
     {
-      "run_id": "r20260908T015012Z",
+      "run_id": "r20260908T210540Z",
       "item_id": "v6_05b",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -1686,7 +1686,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:50:24+00:00",
+      "timestamp": "2026-09-08T21:05:52+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05b__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_05b",
@@ -1694,34 +1694,34 @@
         "vocalization": "sigh",
         "inappropriate_tones": [
           {
-            "tone": "Bright, chirpy upbeat delivery",
-            "sounds_like": "Lifted pitch, smiling energy, bouncy rhythm, like announcing good news or greeting someone cheerfully.",
-            "why_wrong": "Treats a deflated sigh over a spoiled plan as something pleasant; misreads the negative valence entirely."
+            "tone": "Bright, chirpy enthusiasm",
+            "sounds_like": "Upbeat lift on the first word, sing-song rise, smiling delivery as if delivering good news.",
+            "why_wrong": "Treats a resigned sigh as shared excitement, ignoring the mild disappointment A just expressed about the late slot."
           },
           {
-            "tone": "Alarmed, urgent distress",
-            "sounds_like": "Sharp intake, tight raised voice, fast clipped words, the pitch of hearing about an emergency.",
-            "why_wrong": "A closed restaurant is a minor letdown; crisis-level intensity wildly overshoots the moment."
+            "tone": "Alarmed or apologetic distress",
+            "sounds_like": "Tight, rushed, higher-strung voice with anxious over-emphasis, as though something serious went wrong.",
+            "why_wrong": "Escalates a minor scheduling annoyance into a crisis; the sigh signals small resignation, not upset needing repair."
           },
           {
-            "tone": "Flat dismissive brush-off",
-            "sounds_like": "Clipped, bored monotone with a downward cutoff, as if the other person's sigh were not worth acknowledging.",
-            "why_wrong": "Takes a cold stance toward a shared disappointment the responder is equally part of."
+            "tone": "Clipped, dismissive flatness",
+            "sounds_like": "Curt, dropped-off delivery with no warmth, cutting in fast as if the exchange is a nuisance.",
+            "why_wrong": "Reads A's sigh as complaining and brushes it aside, refusing the small acknowledgement the moment invites."
           },
           {
-            "tone": "Amused, teasing lilt",
-            "sounds_like": "Suppressed laugh, playful sing-song stretch on words, as if the sigh were funny or overdramatic.",
-            "why_wrong": "Makes light of the other speaker's genuine deflation rather than meeting it."
+            "tone": "Patronising soothing",
+            "sounds_like": "Slowed, cooing, sing-song comfort voice with exaggerated gentleness, as if consoling a child.",
+            "why_wrong": "Overweights a mild sigh into something needing consolation, condescending to an adult over a dinner time."
           }
         ],
-        "acceptable_range_note": "Anything from a quiet deflated murmur to a mildly rueful or briskly practical delivery works, including a matching sigh or none."
+        "acceptable_range_note": "Anything from a wry, light-amused shrug to a plain, matter-of-fact confirmation to a warm, low-key commiserating delivery works fine here."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T015024Z",
+      "run_id": "r20260908T210552Z",
       "item_id": "v6_05b",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -1735,7 +1735,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:50:37+00:00",
+      "timestamp": "2026-09-08T21:06:04+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05b__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_05b",
@@ -1743,27 +1743,27 @@
         "vocalization": "groan",
         "inappropriate_tones": [
           {
-            "tone": "Bright, chirpy enthusiasm",
-            "sounds_like": "Lifted, sing-song delivery with a smile audible in the voice, upward endings, brisk peppy energy.",
-            "why_wrong": "Reads the groan as good news or neutral; sounds cheerful about a plan just falling through."
+            "tone": "Bright chirpy enthusiasm",
+            "sounds_like": "Upswinging, smiley delivery with lifted energy, as if announcing good news about the late table.",
+            "why_wrong": "Treats the groan as agreement or excitement, ignoring the audible displeasure at the only remaining time."
           },
           {
             "tone": "Alarmed or distressed urgency",
-            "sounds_like": "Sharp intake, tightened raised pitch, fast clipped delivery, voice edging toward panic or crisis.",
-            "why_wrong": "Treats a minor scheduling annoyance as an emergency, escalating far past the mild frustration expressed."
+            "sounds_like": "Tightened, fast, higher-pressure voice with worried breathiness, as though something has gone seriously wrong.",
+            "why_wrong": "Escalates a small scheduling annoyance into a crisis the groan and the calm follow-up do not signal."
           },
           {
-            "tone": "Flat, disengaged monotone",
-            "sounds_like": "Unvarying pitch, no warmth or emphasis, dropped energy, as if reading aloud from an unrelated page.",
-            "why_wrong": "Ignores the shared disappointment entirely; sounds like the other person's reaction did not register."
+            "tone": "Clipped dismissiveness or irritation",
+            "sounds_like": "Flat, curt, edged delivery, slight sigh of impatience, cutting off warmth as if the groan were an imposition.",
+            "why_wrong": "Takes an adversarial stance toward a mild complaint that was immediately followed by cooperation."
           },
           {
-            "tone": "Patronising soothing or amused dismissal",
-            "sounds_like": "Cooing, exaggeratedly gentle consolation, or a light scoff and indulgent chuckle at the groan itself.",
-            "why_wrong": "Positions the responder above a shared inconvenience, treating the groan as overreaction needing management rather than a mutual setback."
+            "tone": "Patronising soothing",
+            "sounds_like": "Slow, sing-song, over-gentle consoling voice, the kind used to settle a upset child.",
+            "why_wrong": "Treats a minor gripe as real hurt needing comfort, condescending to an adult who already agreed."
           }
         ],
-        "acceptable_range_note": "Anything from a sympathetic sigh or wry half-laugh to brisk matter-of-fact problem-solving or quiet mild irritation works here."
+        "acceptable_range_note": "Wry commiseration, a light apologetic shrug, matter-of-fact confirmation, a small shared sigh, or dry amusement all work; brief and understated is fine."
       },
       "status": "ok",
       "errors": [],
@@ -2064,7 +2064,7 @@
       "attempts": 1
     },
     {
-      "run_id": "r20260908T015136Z",
+      "run_id": "r20260908T210701Z",
       "item_id": "v6_06b",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -2078,42 +2078,42 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:52:09+00:00",
-      "raw_response_path": "out/eval/writer_raw/v6_06b__condition_a__tone_exclusions__attempt2.txt",
+      "timestamp": "2026-09-08T21:07:13+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06b__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_06b",
         "condition": "condition_a",
         "vocalization": "gasp",
         "inappropriate_tones": [
           {
-            "tone": "Flat, unmoved recitation",
-            "sounds_like": "Even pitch, no lift or breath change, delivered like reading an inventory aloud with no warmth.",
-            "why_wrong": "Leaves the other speaker's audible surprise and delight hanging unacknowledged, as if nothing notable happened."
+            "tone": "Flat, unmoved delivery",
+            "sounds_like": "Even pitch, no lift or breath, steady low energy, as if reading a line unrelated to what just happened.",
+            "why_wrong": "Treats a peak of delighted surprise as unremarkable, leaving the other speaker's excitement hanging unanswered."
           },
           {
-            "tone": "Alarmed or worried urgency",
-            "sounds_like": "Tightened, quickened voice with a rising anxious edge, as though checking whether something bad occurred.",
-            "why_wrong": "Misreads a gasp of happy amazement about gifts as distress needing concern."
+            "tone": "Alarmed or worried",
+            "sounds_like": "Sharp intake, tight urgent voice, rising pitch of concern, faster clipped words as though something had gone wrong.",
+            "why_wrong": "Reads the gasp as shock or distress when it is joyful surprise at a good outcome."
           },
           {
-            "tone": "Dismissive, deflating flatness",
-            "sounds_like": "Clipped, downward-falling delivery with a slight sigh or eye-roll audible in the voice.",
-            "why_wrong": "Treats the other speaker's touched reaction as overblown, withdrawing from a warm shared moment."
+            "tone": "Dismissive or bored",
+            "sounds_like": "Sighing, trailing-off cadence, downward flat inflection, faint impatience, as if moving on from something tedious.",
+            "why_wrong": "Takes a deflating stance toward the other person's excitement, which the shared happy moment does not license."
           },
           {
-            "tone": "Overblown game-show exuberance",
-            "sounds_like": "Loud, stretched vowels and theatrical whooping pitched far above the intimacy of a quiet family exchange.",
-            "why_wrong": "Escalates a tender, small moment of realization into performed spectacle that overshoots the scene's scale."
+            "tone": "Overblown theatrical astonishment",
+            "sounds_like": "Shrieking or loud exaggerated wonder, big swooping pitch swings, sustained volume far exceeding the moment's scale.",
+            "why_wrong": "Escalates a warm domestic surprise into spectacle, overshadowing rather than meeting the other speaker's reaction."
           }
         ],
-        "acceptable_range_note": "Anything from soft, quietly moved warmth to bright shared amazement works, including calm understatement or a light laugh, as long as warmth is audible."
+        "acceptable_range_note": "Anything from quiet, warm pleasure to bright shared delight works, including amused or knowing warmth, brief or unhurried."
       },
       "status": "ok",
       "errors": [],
-      "attempts": 2
+      "attempts": 1
     },
     {
-      "run_id": "r20260908T015209Z",
+      "run_id": "r20260908T210713Z",
       "item_id": "v6_06b",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -2127,42 +2127,42 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:52:36+00:00",
-      "raw_response_path": "out/eval/writer_raw/v6_06b__condition_b__tone_exclusions__attempt1.txt",
+      "timestamp": "2026-09-08T21:07:43+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06b__condition_b__tone_exclusions__attempt2.txt",
       "parsed": {
         "item_id": "v6_06b",
         "condition": "condition_b",
         "vocalization": "groan",
         "inappropriate_tones": [
           {
-            "tone": "Alarmed concern, as if something bad happened",
-            "sounds_like": "Tightened, urgent delivery with a sudden lift and quickened pace, breath caught, pitched like checking whether someone is hurt.",
-            "why_wrong": "Treats a low-stakes gift-table groan as distress or pain, escalating a light moment into an emergency."
+            "tone": "Consoling sympathy for bad news",
+            "sounds_like": "Soft, lowered voice with a falling, tender contour — the hushed 'oh no' delivery used to comfort someone who just got hurt.",
+            "why_wrong": "Hears the groan as distress, when it lands on a happy discovery; the valence is inverted."
           },
           {
-            "tone": "Flat affectless recitation",
-            "sounds_like": "Even, unmodulated line reading with no lift, no smile in the voice, same delivery as reading an address aloud.",
-            "why_wrong": "Registers nothing of the groan's exasperated humour, leaving the other speaker's reaction hanging unacknowledged."
+            "tone": "Flat, disengaged monotone",
+            "sounds_like": "Even pitch, no lift or warmth, same pacing as reading a list aloud; no reaction audible at all.",
+            "why_wrong": "Registers nothing at a moment the other speaker has visibly reacted to; reads as not listening."
           },
           {
-            "tone": "Over-bright chirpy enthusiasm",
-            "sounds_like": "Bouncy, exclamatory, high-energy delivery with sing-song lift and gushing emphasis, like narrating a celebratory unboxing.",
-            "why_wrong": "Answers a groan with party energy, running past the wry deflation instead of meeting it."
+            "tone": "Manic game-show hype",
+            "sounds_like": "Loud, high, breathless celebration with exaggerated stretched vowels and rising exclamation, pitched at an audience rather than one person.",
+            "why_wrong": "Vastly overshoots a small shared moment between two people in a room; performance where reaction belongs."
           },
           {
-            "tone": "Dismissive impatience toward the other speaker",
-            "sounds_like": "Clipped, hurried, slightly hard delivery with a downward flick, the audible shape of an eye-roll or brush-off.",
-            "why_wrong": "Takes a stance of annoyance at the groaner, which an affectionate, low-stakes exchange does not license."
+            "tone": "Patronising sing-song coo",
+            "sounds_like": "Slowed, lilting, over-sweetened delivery with exaggerated melodic rise and fall, the register used for a small child.",
+            "why_wrong": "Takes a condescending stance toward an adult peer that nothing in the conversation invites."
           }
         ],
-        "acceptable_range_note": "Anything from a quiet amused exhale or wry commiseration to warm matter-of-fact fondness or a small answering groan works fine."
+        "acceptable_range_note": "Anything from a quiet amused hum to bright pleased warmth works, including dry teasing or a soft understated acknowledgement."
       },
       "status": "ok",
       "errors": [],
-      "attempts": 1
+      "attempts": 2
     },
     {
-      "run_id": "r20260908T014653Z",
+      "run_id": "r20260908T210429Z",
       "item_id": "v6_06c",
       "condition": "condition_a",
       "task_type": "tone_exclusions",
@@ -2176,7 +2176,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:47:04+00:00",
+      "timestamp": "2026-09-08T21:04:52+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06c__condition_a__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_06c",
@@ -2184,34 +2184,34 @@
         "vocalization": "gasp",
         "inappropriate_tones": [
           {
-            "tone": "Alarmed, emergency-pitched delivery",
-            "sounds_like": "Sharp intake, urgent clipped words, rising volume, as if reacting to danger or bad news.",
-            "why_wrong": "Reads the gasp as fright rather than relief at finding the charger; escalates a resolved moment."
+            "tone": "Alarmed, panicked urgency",
+            "sounds_like": "Sharp intake, tight throat, rushed clipped delivery, rising volume — the sound of reacting to something going wrong.",
+            "why_wrong": "Treats the gasp as bad news when it marks a good discovery; imports crisis into a moment of relief."
           },
           {
             "tone": "Flat, disengaged monotone",
-            "sounds_like": "Even pitch, no lift or warmth, words trailing off as though reading an unrelated list aloud.",
-            "why_wrong": "Ignores that the search just ended well; leaves the partner's spike of feeling unmet."
+            "sounds_like": "Even pitch, no lift or warmth, unhurried and affectless, as if reading an unrelated line aloud.",
+            "why_wrong": "Registers nothing at a small shared payoff the responder helped produce; reads as not listening."
           },
           {
-            "tone": "Dismissive or exasperated",
-            "sounds_like": "Sigh before speaking, clipped impatient delivery, faint eye-roll quality or condescending drawl.",
-            "why_wrong": "Treats the partner's reaction as overblown when B was mid-search and equally invested."
+            "tone": "Smug, scolding condescension",
+            "sounds_like": "Drawn-out sing-song vindication, downward tut, exaggerated patience — a talking-to-a-child cadence over 'told you so'.",
+            "why_wrong": "Takes a superior stance the moment does not license; turns a relieved find into a correction of the speaker."
           },
           {
-            "tone": "Overblown theatrical celebration",
-            "sounds_like": "Loud whooping, drawn-out exclamations, game-show-host brightness far above the scale of a found charger.",
-            "why_wrong": "Mismatches intensity; a small packing relief does not license triumphant fanfare."
+            "tone": "Hushed, solemn sympathy",
+            "sounds_like": "Softened, breathy, slowed consoling delivery with sagging pitch, the voice used for delivering or receiving bad news.",
+            "why_wrong": "Mistakes the gasp for distress and offers comfort where the tension has just resolved."
           }
         ],
-        "acceptable_range_note": "Anything from quiet relieved exhale to warm brightened confirmation works, including calm matter-of-fact closure or a light laugh."
+        "acceptable_range_note": "Warm relief, quiet satisfaction, amused vindication, bright surprise, or a brisk clock-aware 'good, go' all work, from understated to lively."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T014704Z",
+      "run_id": "r20260908T210452Z",
       "item_id": "v6_06c",
       "condition": "condition_b",
       "task_type": "tone_exclusions",
@@ -2225,7 +2225,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:47:28+00:00",
+      "timestamp": "2026-09-08T21:05:05+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06c__condition_b__tone_exclusions__attempt1.txt",
       "parsed": {
         "item_id": "v6_06c",
@@ -2233,27 +2233,27 @@
         "vocalization": "groan",
         "inappropriate_tones": [
           {
+            "tone": "Gloating, triumphant I-told-you-so",
+            "sounds_like": "Rising sing-song lilt, stretched vowels, smug smile audible, punchy emphasis landing like a victory lap.",
+            "why_wrong": "Treats the other person's self-directed frustration as a scoring opportunity rather than a moment of relief under time pressure."
+          },
+          {
             "tone": "Alarmed, urgent concern",
-            "sounds_like": "Tightened voice, quickened pace, rising worried pitch, breath caught — the sound of responding to pain or bad news.",
-            "why_wrong": "Reads a low-stakes exasperated groan as distress, when the packing problem just resolved fine."
+            "sounds_like": "Tight throat, sharp intake, fast clipped delivery, raised volume as if something has gone badly wrong.",
+            "why_wrong": "The groan marks minor self-annoyance at a solved problem; treating it as crisis misjudges the stakes entirely."
           },
           {
-            "tone": "Bright celebratory cheer",
-            "sounds_like": "Loud singsong lift, exclamatory punch, game-show brightness, wide smiling resonance well above the room's energy.",
-            "why_wrong": "Inflates a small mundane relief into a triumph, ignoring the fatigue audible in the groan."
+            "tone": "Flat, disengaged monotone",
+            "sounds_like": "Even pitch, no inflection shift, unhurried and affectless, as if reading something unrelated aloud.",
+            "why_wrong": "Registers nothing of the exasperation just voiced, reading as indifference to a person visibly stressed about a deadline."
           },
           {
-            "tone": "Patronising soothing",
-            "sounds_like": "Slowed, cooing, over-gentle descending warmth with softened consonants, like calming an upset child.",
-            "why_wrong": "Takes a caretaking stance the moment does not license between two adults packing a bag."
-          },
-          {
-            "tone": "Sharp irritation or scolding edge",
-            "sounds_like": "Clipped hard consonants, snapped emphasis, tightened defensive pitch — the sound of pushing back at someone.",
-            "why_wrong": "Turns a shared minor annoyance into friction, treating the groan as an accusation aimed at the responder."
+            "tone": "Patronising soothing, as to a child",
+            "sounds_like": "Slowed, softened, cooing warmth with descending petting cadence and exaggerated gentleness on each phrase.",
+            "why_wrong": "Casts a competent adult's mild frustration as distress needing comfort, condescending rather than matching a small ordinary annoyance."
           }
         ],
-        "acceptable_range_note": "Anything from dry amused, to a warm relieved exhale, to brisk matter-of-fact confirmation works, including a brief or understated delivery."
+        "acceptable_range_note": "Warm amusement, a light laugh, dry deadpan, brisk practicality, or gentle sympathy all work; brevity and understatement are fine."
       },
       "status": "ok",
       "errors": [],

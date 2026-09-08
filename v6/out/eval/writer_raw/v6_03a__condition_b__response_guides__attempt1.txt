@@ -1,1 +1,32 @@
-{"item_id": "v6_03a", "condition": "condition_b", "vocalization": "groan", "responder": "B", "guides": [{"interpretation_index": 1, "response_function": "Absorbs the bad news and confirms the wasted plan", "required_content": ["Registers the gym being shut as the confirmed outcome, not something to double-check", "Names what the closure costs him — the timing, the skipped workout, the effort now pointless"], "must_avoid": ["Treating the closure as uncertain or asking A to reread the notice", "Reading A as the source of the problem or owed an apology"], "example": "Well, that's the whole evening's planning down the drain. I ate late for nothing.", "note": ""}, {"interpretation_index": 2, "response_function": "Waves off any fault, keeps blame on the gym", "required_content": ["Makes clear A is not at fault for the late warning", "Puts the problem on the closing time or the notice rather than either of them"], "must_avoid": ["Accepting or amplifying A's implied responsibility, even lightly or jokingly", "Dwelling on how much earlier A could have said something"], "example": "Not on you at all — you couldn't have known they'd shut early. Who closes at this hour anyway?", "note": ""}, {"interpretation_index": 3, "response_function": "Joins A in exasperation at the pointless trip", "required_content": ["Matches A's fed-up stance toward the situation as a shared complaint", "Treats the errand as over — a plan to abandon or replace rather than salvage"], "must_avoid": ["Responding as neutral fact-receiver with no stance toward the situation", "Turning the shared irritation into blame aimed at A"], "example": "Unbelievable. I rushed a sandwich for this. I'm going home and eating properly.", "note": ""}]}
+{
+  "item_id": "v6_03a",
+  "condition": "condition_b",
+  "vocalization": "groan",
+  "responder": "B",
+  "guides": [
+    {
+      "interpretation_index": 1,
+      "response_function": "Absorbs the news, voices own frustration at wasted effort",
+      "required_content": ["Registers that the closure ruins the plan B was minutes from starting", "Reacts to the wasted preparation or hurry rather than analysing why"],
+      "must_avoid": ["Blaming self for eating first or conceding A's earlier timing warning was right", "Treating the news as trivial or as if the plan still stands"],
+      "example": "Are you serious? I literally have my bag in my hand. Well, that's dinner and a shake for nothing.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 2,
+      "response_function": "Joins the complaint, directs annoyance at the gym",
+      "required_content": ["Takes up A's irritation at the gym rather than at the delay in leaving", "Engages with the closure itself — the short notice, the equipment, or how long it'll last"],
+      "must_avoid": ["Turning the annoyance back on themselves or on A for the earlier warning", "Defending the gym or brushing the early closure off as reasonable"],
+      "example": "Of course they did. They couldn't have sent that an hour ago? Does it say when they're opening back up?",
+      "note": ""
+    },
+    {
+      "interpretation_index": 3,
+      "response_function": "Receives the flagged bad news, releases A from delivering it",
+      "required_content": ["Signals the news has landed and A isn't at fault for bringing it", "Responds to what it means for tonight — dropping the plan or finding another option"],
+      "must_avoid": ["Shooting the messenger or reading A's reluctance as smugness about the earlier warning", "Making A elaborate or apologise before acknowledging the news"],
+      "example": "Oh no. Okay, well, nothing you could do about that. Guess I'm doing something at home instead.",
+      "note": ""
+    }
+  ]
+}

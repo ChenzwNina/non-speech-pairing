@@ -4,58 +4,58 @@
 
 **Seed** (`joyful`): I won the lottery, its party time.
 
-**Scenario:** Two people wait for a lottery result while the ticket holder checks the official results on a phone.
+**Scenario:** Two friends check one friend's lottery ticket together after the winning numbers have been announced.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** Have you checked our ticket yet?
-2. **B:** I'm on the official checker, but it's still loading.
-3. **A:** The lottery posted all the winning numbers a few minutes ago.
-4. **B:** Try refreshing it again. The results should be there now.
-5. **A:** It says our ticket won the top prize.  ← baseline
-5. **A:** (sighs) It says our ticket won the top prize.
-5. **A:** (gasps) It says our ticket won the top prize.
+1. **A:** Did you keep the ticket I picked up earlier?
+2. **B:** It's right here. The winning numbers are up—want to check it together?
+3. **A:** Okay. Four, seventeen, twenty-six... those are all on mine.
+4. **B:** And the last one is thirty-eight. Your ticket has thirty-eight too—and the name on it is yours.
+5. **A:** That's my ticket?  ← baseline
+5. **A:** (sighs) That's my ticket?
+5. **A:** (gasps) That's my ticket?
 
 | version | framing |
 | --- | --- |
-| none | Without the sound, A reports the confirmation plainly; the scale of the win is clear, but A's immediate response remains open. |
-| `(sighs)` | The win lands as the end of a long period of financial pressure and tense waiting. |
-| `(gasps)` | The win lands as an immediate, unbelievable revelation whose scale catches the speaker off guard. |
+| none | The ticket appears to match every winning number, but A's question can reflect either cautious processing or disbelief. |
+| `(sighs)` | The win ends a period of financial uncertainty but immediately feels weighty and consequential to the ticket owner. |
+| `(gasps)` | The matching ticket is received as an astonishing reversal, making the owner’s question a startled check of what they heard. |
 
-**Why the two differ:** The sigh treats the result as release from an ongoing burden, while the gasp treats it as a startling new fact.
+**Why the two differ:** The sigh treats the confirmation as a heavy release after strain, whereas the gasp treats it as a startling and scarcely believable discovery.
 
-**How sigh lands:** A sigh before the words can register the end of the wait and the practical weight the result may have been carrying, letting the win settle in quietly.
+**How sigh lands:** A sigh makes the confirmation feel like a release after uncertainty, with the question showing A is still taking in the scale of what the ticket means.
 
-**How gasp lands:** A gasp before the report makes the newly displayed top-prize confirmation feel abrupt and hard to absorb before A can say what the screen shows.
+**How gasp lands:** A gasp makes B's final confirmation register as sudden, striking news; A's question is an immediate check of the astonishing result.
 
 ---
 ## v6_03c · laugh vs groan
 
 **Seed** (`confident`): I'm looking for a new job. I just had an interview it was the third one this month. I feel really great about my chances and have gotten great feedback!
 
-**Scenario:** A job seeker has completed several interviews and receives a new message about the hiring process.
+**Scenario:** A job seeker has had several encouraging interviews but receives a request for one more meeting.
 
-The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
+The tag sits in turn 5 (sentence-boundary), spoken by A. Every word is identical across the three versions.
 
-1. **A:** How've the interviews been going?
-2. **B:** This was my third one this month.
-3. **A:** Everything you've heard from them has sounded encouraging.
-4. **B:** Hang on, there's a new message from the employer. I'm opening it now.
-5. **A:** They're asking me to schedule another interview next week.  ← baseline
-5. **A:** (laughs) They're asking me to schedule another interview next week.
-5. **A:** (groans) They're asking me to schedule another interview next week.
+1. **A:** I've had three interviews in the last two weeks.
+2. **B:** Oh, so the job search is moving, then?
+3. **A:** Yeah. One hiring manager said my experience was exactly what they needed.
+4. **B:** That's promising. Did anyone follow up?
+5. **A:** My phone just lit up. They're asking me to come in for a fourth interview tomorrow.  ← baseline
+5. **A:** My phone just lit up. (laughs) They're asking me to come in for a fourth interview tomorrow.
+5. **A:** My phone just lit up. (groans) They're asking me to come in for a fourth interview tomorrow.
 
 | version | framing |
 | --- | --- |
-| none | The additional interview can signal continued interest or an unwelcome delay; the words alone do not settle which reading A takes. |
-| `(laughs)` | The extra interview seems absurdly elaborate but also confirms the employer remains seriously interested. |
-| `(groans)` | The extra interview turns a promising process into another exhausting hurdle before any decision arrives. |
+| none | The new request could signal encouraging interest or another demanding step; the words alone do not settle A's appraisal. |
+| `(laughs)` | The extra interview is treated as comically excessive, while still suggesting the employer remains interested. |
+| `(groans)` | The extra interview is treated as another draining hurdle despite the otherwise encouraging progress. |
 
-**Why the two differ:** The laugh treats the new round as amusing evidence of continued interest, while the groan treats it as a burdensome extension of the process.
+**Why the two differ:** The laugh appraises the fourth interview as absurdly funny, whereas the groan appraises the same request as an exhausting burden.
 
-**How laugh lands:** A laugh makes the added interview sound like an elaborate, almost comic sign that the employer is still seriously considering A.
+**How laugh lands:** A laugh makes the fourth interview tomorrow sound comically excessive, while the message still signals that the employer wants to keep talking.
 
-**How groan lands:** A groan makes the request land as one more tiring hurdle in a process that had seemed close to moving forward.
+**How groan lands:** A groan makes the same next-day fourth interview sound like an added, tiresome hurdle despite the favorable comments.
 
 ---
 ## v6_06d · gasp vs groan
@@ -207,29 +207,29 @@ The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical acro
 
 **Seed** (`nostalgic`): I used to want to have almost every career available. Now I just want a decent paying job.
 
-**Scenario:** Someone who once imagined many careers is waiting to learn whether one practical job will provide enough income.
+**Scenario:** A friend helps someone who once imagined many careers check a newly reopened job listing.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** Have you heard back about the operations coordinator job?
-2. **B:** Not yet. After the interview, they asked for my references.
-3. **A:** It'd cover rent and bills, at least. More than most of the things you used to sketch out.
-4. **B:** Wait, you've got a new email from them. Open it.
-5. **A:** Operations coordinator. Fifty-eight thousand a year.  ← baseline
-5. **A:** (laughs) Operations coordinator. Fifty-eight thousand a year.
-5. **A:** (gasps) Operations coordinator. Fifty-eight thousand a year.
+1. **A:** Have you settled on any applications yet?
+2. **B:** I used to picture myself doing everything—teaching, design, even park work.
+3. **A:** What do you need from a job now?
+4. **B:** Enough to cover rent, and something that starts soon. I found the library assistant listing again—refresh the link I just sent you.
+5. **A:** It says twenty-two an hour, and they need someone Monday.  ← baseline
+5. **A:** (laughs) It says twenty-two an hour, and they need someone Monday.
+5. **A:** (gasps) It says twenty-two an hour, and they need someone Monday.
 
 | version | framing |
 | --- | --- |
-| none | The offer could be a modest practical compromise or a better-than-expected opportunity; the words do not settle which. |
-| `(laughs)` | The offer feels ironically modest beside the applicant's former ambitions, and the speaker treats the turn toward practicality with rueful amusement. |
-| `(gasps)` | The offer's terms are startlingly better or more consequential than expected, making the practical job suddenly feel like a major development. |
+| none | The listing may be a promising practical match, but A's response can still be read as either surprise or wry recognition. |
+| `(laughs)` | The opening feels comically apt: after an expansive list of ambitions, an ordinary available position suddenly becomes exactly the relevant answer. |
+| `(gasps)` | The opening feels like an unexpected opportunity, because the listing's concrete terms arrive as a sudden and consequential discovery. |
 
-**Why the two differ:** The laugh appraises the offer as an ironic anticlimax, whereas the gasp appraises its newly revealed terms as a startling surprise.
+**Why the two differ:** The laugh treats the outcome as ironic and fitting, while the gasp treats the newly revealed listing as a startling development.
 
-**How laugh lands:** A laugh makes the practical title and salary sound like a rueful, ironic turn from the applicant's earlier ambitions.
+**How laugh lands:** A laugh makes the ordinary library opening feel comically fitting after A's wide-ranging ambitions: the practical answer is suddenly right there.
 
-**How gasp lands:** A gasp makes the newly revealed salary sound unexpectedly consequential, turning the email into a sudden development.
+**How gasp lands:** A gasp reads as A's immediate reaction to the refreshed listing, whose pay and Monday start unexpectedly satisfy the concrete requirements.
 
 ---
 ## v6_05a · sigh vs groan
@@ -323,58 +323,58 @@ The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical acro
 
 **Seed** (`excited`): I'm not a greedy person. But I'm always pretty stoked if I get some free cash. It gives me peace of mind to know that my bills will be paid and I have one less worry in my mind.
 
-**Scenario:** Two friends are checking whether a looming bill can be covered when an unexpected payment arrives.
+**Scenario:** Two friends are checking whether an awaited reimbursement arrived before a utility bill is due.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** Did you check whether that payment showed up yet?
-2. **B:** I'm looking. The electric bill's due tomorrow, and yesterday the account was short.
-3. **A:** I thought the payment wasn't supposed to clear until later this week.
-4. **B:** Hold on, I'm opening the app. My phone just sent a banking alert.
-5. **A:** It cleared. The payment cleared.  ← baseline
-5. **A:** (laughs) It cleared. The payment cleared.
-5. **A:** (sighs) It cleared. The payment cleared.
+1. **A:** My electric bill's due today, and I was hoping the reimbursement would clear first.
+2. **B:** Has the reimbursement shown up yet?
+3. **A:** Not in the app. It still says pending.
+4. **B:** Check once more. Transfers sometimes post late in the day.
+5. **A:** There it is. It cleared for exactly the bill amount.  ← baseline
+5. **A:** (laughs) There it is. It cleared for exactly the bill amount.
+5. **A:** (sighs) There it is. It cleared for exactly the bill amount.
 
 | version | framing |
 | --- | --- |
-| none | The payment's early arrival can read as fortunate, practical relief or simply unexpected news; the words do not settle the reaction. |
-| `(laughs)` | The cleared payment feels like an absurdly lucky break, and the speaker meets the surprise with amused disbelief. |
-| `(sighs)` | The cleared payment removes immediate pressure, and the speaker lets out the strain they had been holding. |
+| none | The reimbursement arrives just in time; the words alone leave its exact timing open as either lucky or simply useful. |
+| `(laughs)` | The credit's exact timing and amount seem comically fortunate, making the exchange about an improbable bit of luck. |
+| `(sighs)` | The credit ends an immediate financial strain, making the exchange about finally getting through a pressing obligation. |
 
-**Why the two differ:** The laugh appraises the payment as comically unexpected good luck, while the sigh appraises it as the lifting of a financial burden.
+**Why the two differ:** The laugh treats the arrival as absurdly lucky, while the sigh treats it as the release of a practical burden.
 
-**How laugh lands:** A laugh makes the early clearance feel like an absurdly well-timed break, prompting amused disbelief as the notification is read.
+**How laugh lands:** A laugh makes the exact same-day amount sound improbably neat, framing the notification as a comically lucky coincidence.
 
-**How sigh lands:** A sigh releases the pressure built by the overdue account shortage and tomorrow's bill when the notification confirms the payment cleared.
+**How sigh lands:** A sigh makes the cleared reimbursement register as the end of immediate pressure from a bill due that day.
 
 ---
 ## v6_06c · gasp vs groan
 
 **Seed** (`prepared`): once I realized I had packed everything I needed
 
-**Scenario:** Two people prepare for a trip while one worries that an essential item was left behind.
+**Scenario:** A traveler worries that essential items are missing before leaving, then checks an overlooked part of their bag.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** Are we packed, or are we still looking for something?
-2. **B:** I'm checking the bag against the list. Most of it's in here.
-3. **A:** I don't see the charger. Could it still be out?
-4. **B:** Wait—I'm checking the side pocket. Hang on.
-5. **A:** The charger's here. Everything on the list is packed.  ← baseline
-5. **A:** (gasps) The charger's here. Everything on the list is packed.
-5. **A:** (groans) The charger's here. Everything on the list is packed.
+1. **A:** My train leaves in an hour, and I've gone through this suitcase twice already.
+2. **B:** What are you still looking for?
+3. **A:** My passport pouch, my charger, and the little bag with my medication.
+4. **B:** Did you check that zipped pocket on the inside flap? I don't think you've opened it.
+5. **A:** They're all in here. The passport pouch, charger, everything.  ← baseline
+5. **A:** (gasps) They're all in here. The passport pouch, charger, everything.
+5. **A:** (groans) They're all in here. The passport pouch, charger, everything.
 
 | version | framing |
 | --- | --- |
-| none | The charger is found and the packing is complete, but the words alone do not settle whether that confirmation is welcome or burdensome. |
-| `(gasps)` | The final speaker is startled by the unexpected discovery that nothing was forgotten. |
-| `(groans)` | The final speaker sees that packing is complete and confronts the now-immediate burden of leaving or carrying the full bag. |
+| none | A finds the missing items in an unopened pocket; the discovery can read as either fortunate surprise or an avoidable oversight. |
+| `(gasps)` | The speaker is abruptly astonished that the missing necessities were packed all along. |
+| `(groans)` | The speaker realizes their frantic searching was unnecessary and reacts to their own avoidable oversight. |
 
-**Why the two differ:** The gasp treats the discovery as an unexpected reassuring fact, whereas the groan treats completed packing as an unwelcome practical consequence.
+**Why the two differ:** The gasp treats the finding as surprising good news, while the groan treats it as evidence of the speaker's frustrating mistake.
 
-**How gasp lands:** A gasp marks the abrupt visual discovery that the supposedly missing charger is already in the open bag, confirming that nothing was forgotten.
+**How gasp lands:** A gasp marks the immediate surprise of opening the overlooked pocket and seeing all the missing essentials already packed.
 
-**How groan lands:** A groan frames the same completed packing as the point when departure and carrying the fully packed bag become unavoidable.
+**How groan lands:** A groan marks A's realization that the repeated search and worry came from overlooking the pocket containing everything.
 
 ---
 ## v6_02d · laugh vs gasp
@@ -410,29 +410,29 @@ The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical acro
 
 **Seed** (`prepared`): I really needed to eat something and workout before the gym closed. I got myself a healthy meal and then drank a protein shake until I was ready.
 
-**Scenario:** Two friends are trying to fit in a gym visit after one has hurriedly eaten and prepared for a workout.
+**Scenario:** A person rushes to fuel up before a gym visit, only to learn at the last moment that the gym is unavailable.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** Can you still make it to the gym tonight?
-2. **B:** I held off eating so I could work out first, then rushed down a sandwich and a protein shake.
-3. **A:** You might want to head over now. They're close to closing.
-4. **B:** I'm at the entrance. There's a notice on the door.
-5. **A:** It says the gym already closed.  ← baseline
-5. **A:** (laughs) It says the gym already closed.
-5. **A:** (groans) It says the gym already closed.
+1. **A:** You still going to work out tonight?
+2. **B:** Yeah, I had to eat first. I hadn't had anything substantial all day.
+3. **A:** You know the gym usually closes pretty soon.
+4. **B:** I know. I finished dinner and a protein shake, and I'm grabbing my things now.
+5. **A:** The gym just sent a message—they closed early because of an equipment problem.  ← baseline
+5. **A:** (laughs) The gym just sent a message—they closed early because of an equipment problem.
+5. **A:** (groans) The gym just sent a message—they closed early because of an equipment problem.
 
 | version | framing |
 | --- | --- |
-| none | Without sound, the closure is simply unexpected; the exchange leaves open whether A treats the timing as ironic or as a frustrating loss. |
-| `(laughs)` | The rushed preparation and missed session become an absurdly timed mishap the speaker can treat as comic. |
-| `(groans)` | The same preparation becomes wasted effort because the speaker has been shut out of the workout they planned. |
+| none | The gym closes unexpectedly after someone has eaten and prepared to leave; the response could be amused or annoyed. |
+| `(laughs)` | The sequence becomes an absurdly mistimed routine: all that preparation has culminated in a comically useless trip. |
+| `(groans)` | The sequence becomes a thwarted plan: careful preparation has been wasted by an inconvenient last-minute closure. |
 
-**Why the two differ:** The laugh recasts the closure as ironic bad timing, while the groan treats it as an unwelcome loss of the planned workout.
+**Why the two differ:** The laugh treats the closure as ironic and comic, while the groan treats the identical outcome as an aggravating obstruction.
 
-**How laugh lands:** The laugh can frame the notice as absurd timing: B rushed through food and arrived just in time to discover the gym had already shut.
+**How laugh lands:** The newly arrived closure message makes the carefully timed meal, shake, and rushed departure suddenly seem absurdly mistimed.
 
-**How groan lands:** The groan can frame the posted closure as a setback, making the hurried meal and protein shake feel like effort spent for a workout that cannot happen.
+**How groan lands:** The same fresh message turns the completed preparation into a last-minute obstacle that blocks the planned workout.
 
 ---
 ## v6_05d · sigh vs groan
@@ -526,116 +526,116 @@ The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical acro
 
 **Seed** (`anticipating`): I am going to eat at my favorite restaurant tomorrow. I am really looking forward to going.
 
-**Scenario:** Two people are arranging a visit to the final speaker's favorite restaurant the following day.
+**Scenario:** Two people arrange tomorrow's visit to one speaker's favorite restaurant, but the available booking time is inconveniently late.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** Do you still want to go out tomorrow?
-2. **B:** Yeah, I was thinking of Marlowe's.
-3. **A:** Did you make the reservation yet?
-4. **B:** Hang on, Marlowe's just sent me a message.
-5. **A:** They're closed tomorrow.  ← baseline
-5. **A:** (sighs) They're closed tomorrow.
-5. **A:** (groans) They're closed tomorrow.
+1. **A:** Are we still doing Bellini's tomorrow?
+2. **B:** Yeah, I called to see if I could get us a table.
+3. **A:** What times did they have?
+4. **B:** Everything earlier was taken. The only table left is at 9:45.
+5. **A:** Okay. Let's take it.  ← baseline
+5. **A:** (sighs) Okay. Let's take it.
+5. **A:** (groans) Okay. Let's take it.
 
 | version | framing |
 | --- | --- |
-| none | Without sound, the closure simply changes the plan; A's stance toward it remains open. |
-| `(sighs)` | The closure becomes a disappointing but accepted change to a plan the speaker had been anticipating. |
-| `(groans)` | The closure becomes an irritating disruption that the speaker treats as an especially unwelcome obstacle. |
+| none | A hears that the only table is late and agrees to take it; the words alone do not settle whether the timing feels like resignation or irritation. |
+| `(sighs)` | The speaker lets go of their preferred timing and accepts the late meal because going to the restaurant still matters. |
+| `(groans)` | The speaker treats the late reservation as an irritating obstacle and accepts it under protest. |
 
-**Why the two differ:** A sigh frames the news as something to absorb and accept, whereas a groan frames it as a frustrating imposition.
+**Why the two differ:** The sigh marks yielding acceptance, whereas the groan marks active objection to the newly learned constraint.
 
-**How sigh lands:** A sigh before the news marks the closure as a plan A takes in and lets go of.
+**How sigh lands:** A sigh after hearing the late time marks letting go of an earlier dinner and settling on the remaining reservation at a restaurant A still wants to visit.
 
-**How groan lands:** A groan before the news makes the newly read closure register as an immediate, irritating disruption.
+**How groan lands:** A groan at the same moment treats 9:45 as an immediately unwelcome inconvenience; A agrees to book it, but the acceptance carries protest.
 
 ---
 ## v6_01c · laugh vs sigh
 
 **Seed** (`faithful`): I'll never stop drinking Dr. Pepper.
 
-**Scenario:** A person who has been avoiding Dr. Pepper discovers that their new workplace provides it free in the break room.
+**Scenario:** A frequent Dr. Pepper buyer learns their routine purchases have earned a surprisingly large store reward.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** How's your first day going?
-2. **B:** Pretty smooth. I've been bringing water so I don't buy soda during the day.
-3. **A:** We've got a break room downstairs. Come on, I'll show you.
-4. **B:** Okay. Oh—you mean this cooler? Go ahead, open it.
-5. **A:** It's all Dr. Pepper. I'm never going to stop drinking it.  ← baseline
-5. **A:** (laughs) It's all Dr. Pepper. I'm never going to stop drinking it.
-5. **A:** (sighs) It's all Dr. Pepper. I'm never going to stop drinking it.
+1. **A:** I stopped at the convenience store after work.
+2. **B:** Did they scan your rewards account?
+3. **A:** Yeah, but the cashier couldn't see my point total.
+4. **B:** I just checked it online. You've got enough points for a free case of Dr. Pepper.
+5. **A:** I'm never stopping drinking Dr. Pepper.  ← baseline
+5. **A:** (laughs) I'm never stopping drinking Dr. Pepper.
+5. **A:** (sighs) I'm never stopping drinking Dr. Pepper.
 
 | version | framing |
 | --- | --- |
-| none | The speaker finds a free supply of a soda they have been avoiding; the discovery can read as either lucky temptation or comic inevitability. |
-| `(laughs)` | The free supply is a delightfully excessive discovery, and the speaker treats their devotion to the drink as a joke. |
-| `(sighs)` | The free supply makes the speaker concede that their attempt to avoid the drink is unlikely to last. |
+| none | The reward reveals an unusually steady buying habit; A's final line can sound either proudly playful or matter-of-fact. |
+| `(laughs)` | The reward makes the speaker’s devotion to the drink feel comically excessive and worth embracing. |
+| `(sighs)` | The reward confirms a habit the speaker recognizes as hard to escape, despite seeing its scale. |
 
-**Why the two differ:** The laugh embraces the discovery as comic good fortune, while the sigh treats the same discovery as an unwelcome confirmation of a persistent habit.
+**Why the two differ:** The laugh treats the purchase history as a funny achievement, while the sigh treats the same evidence as confirmation of an inescapable habit.
 
-**How laugh lands:** A laugh makes the fully stocked cooler feel like an absurdly perfect coincidence, and the last line lands as a playful joke about devotion to Dr. Pepper.
+**How laugh lands:** A laugh makes the free case register as a comic measure of how much Dr. Pepper A has bought, turning the habit into an achievement worth doubling down on.
 
-**How sigh lands:** A sigh makes the same discovery feel like the end of an attempted habit change: free Dr. Pepper is now sitting in front of the speaker every workday.
+**How sigh lands:** A sigh makes the same reward sound like proof that A's regular Dr. Pepper routine has become a familiar pattern they cannot quite leave behind.
 
 ---
 ## v6_01a · laugh vs sigh
 
 **Seed** (`jealous`): My friend got a new dog. Its my favorite breed so I was a little envious
 
-**Scenario:** A friend has adopted a dog, and the other speaker discovers it is their preferred breed.
+**Scenario:** A friend has just brought home a dog of a breed the other speaker has long wanted.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** The shelter sent me an update this morning.
-2. **B:** So it went through?
-3. **A:** Yeah. They sent a photo, but I still haven't picked a name.
-4. **B:** Let me see. Hold on—look at this one.
-5. **A:** That's a golden retriever. You actually got one.  ← baseline
-5. **A:** (laughs) That's a golden retriever. You actually got one.
-5. **A:** (sighs) That's a golden retriever. You actually got one.
+1. **A:** Mara finally brought home a corgi. The exact kind I keep sending you.
+2. **B:** Has the puppy settled in at all yet?
+3. **A:** Apparently she's already made it through every room in Mara's apartment.
+4. **B:** Send me a picture. Oh—Mara just sent me one. Forwarding it now.
+5. **A:** She's got Mara's slipper in her mouth already.  ← baseline
+5. **A:** (laughs) She's got Mara's slipper in her mouth already.
+5. **A:** (sighs) She's got Mara's slipper in her mouth already.
 
 | version | framing |
 | --- | --- |
-| none | Without the vocalization, the recognition can be warm surprise or a more complicated personal comparison. |
-| `(laughs)` | The discovery becomes a warm, playful moment of delighted disbelief and shared excitement about the friend's good fortune. |
-| `(sighs)` | The discovery highlights the speaker's private wish for the same kind of dog and the unfairness of the comparison. |
+| none | The puppy's slipper theft is amusing, while A's interest in the breed leaves their reaction open. |
+| `(laughs)` | The speaker warmly shares the amusement of the puppy's immediate mischief and celebrates their friend's new pet. |
+| `(sighs)` | The speaker sees the appealing puppy and dwells on the fact that their friend has the dog they would like to have. |
 
-**Why the two differ:** The laugh treats the news as a welcome, playful surprise, while the sigh treats the same news as a reminder of the speaker's own unmet wish.
+**Why the two differ:** The laugh joins the friend's amusement at the puppy's behavior, while the sigh foregrounds the speaker's longing for the dog.
 
-**How laugh lands:** A laugh makes the recognition sound like delighted, playful disbelief at the friend's unexpected good fortune.
+**How laugh lands:** A laugh joins Mara's amusement at the puppy's immediate mischief: the photo reveals the small dog triumphantly carrying a slipper.
 
-**How sigh lands:** A sigh makes the same recognition register as a reminder that the friend now has the breed the speaker has wanted.
+**How sigh lands:** A sigh can make the photo linger as a reminder that Mara has brought home the exact kind of corgi A has long been drawn to.
 
 ---
 ## v6_06b · gasp vs groan
 
 **Seed** (`joyful`): On christmas morning last year, i got everything i wanted.
 
-**Scenario:** A person receives a Christmas collection that fulfills everything they had hoped to get.
+**Scenario:** Two close people exchange Christmas gifts, and one discovers that their entire wish list has been fulfilled.
 
 The tag sits in turn 5 (turn-initial), spoken by A. Every word is identical across the three versions.
 
-1. **A:** Have you opened the presents yet?
-2. **B:** Most of them. Mom told me to save this last package.
-3. **A:** She'd been writing down things you'd mentioned wanting all year.
-4. **B:** It's the headphones. With the books and the sweater, that's the whole list.
-5. **A:** She got every single thing I mentioned.  ← baseline
-5. **A:** (gasps) She got every single thing I mentioned.
-5. **A:** (groans) She got every single thing I mentioned.
+1. **A:** There's still a package under the tree.
+2. **B:** I thought we'd opened everything.
+3. **A:** Wait, this one has my name on it.
+4. **B:** Open it before we clear all this wrapping away.
+5. **A:** It's all of it. Every single thing from my list.  ← baseline
+5. **A:** (gasps) It's all of it. Every single thing from my list.
+5. **A:** (groans) It's all of it. Every single thing from my list.
 
 | version | framing |
 | --- | --- |
-| none | The final realization can read as appreciation or as discomfort at the scale of the gifts. |
-| `(gasps)` | The speaker is struck by the unexpected completeness and generosity of the Christmas gifts. |
-| `(groans)` | The speaker sees the gifts as excessive and feels dismayed or embarrassed that so much was spent on them. |
+| none | A has just discovered that the final package contains every item from their wish list; the reaction remains open. |
+| `(gasps)` | The complete collection is an unexpected, generous Christmas surprise that overwhelms the recipient in a good way. |
+| `(groans)` | The complete collection feels uncomfortably extravagant, making the recipient worry that the giver went far beyond a reasonable gift. |
 
-**Why the two differ:** The gasp treats the discovery as a wonderful surprise, while the groan treats the same generosity as uncomfortable excess.
+**Why the two differ:** The gasp treats the discovery as a wonderful surprise, while the groan treats the same generosity as excessive and troublesome.
 
-**How gasp lands:** A gasp marks the immediate realization that the last package completes a carefully remembered set of wanted gifts.
+**How gasp lands:** A gasp makes the complete set register as a sudden, generous surprise when A sees it in the last package.
 
-**How groan lands:** A groan makes the completed collection register as too much spending and attention, despite the same factual discovery.
+**How groan lands:** A groan makes the same complete set sound like more than A expected or wanted anyone to spend.
 
 ---
 ## v6_04c · sigh vs gasp
