@@ -1,0 +1,41 @@
+You are judging whether a model understood a non-speech vocalization in a conversation.
+
+Below is the conversation, the vocalization the speaker produced and where — that label is authoritative, and you are not being asked to detect it — and three interpretations that are all defensible readings of it. Then there is a model's answer, given in its own words.
+
+Decide whether the answer matches any one of the three interpretations.
+
+HOW TO DECIDE
+
+Match on substance, not wording. The answer will not use the interpretation's phrasing, and it should not have to. What matters is whether it identifies a comparable state for the speaker and a comparable function for the sound. An answer that gets the state right and the function wrong has not matched.
+
+The answer may be less specific than the interpretation and still match, as long as what it does say is right. It may also be more specific, or hedge between two of the three — hedging counts as a match if one of the readings it names is among them and it does not commit to something that contradicts them.
+
+`shared_implication` is the line. Every one of the three interpretations agrees on it, so an answer that contradicts it has misread the item and cannot match, however fluent it sounds or however close its vocabulary comes to one of the readings.
+
+Judge only the answer in front of you. Do not credit what a model probably meant, and do not penalise an answer for omitting something none of the interpretations require.
+
+If it matches more than one, name the closest.
+
+CONVERSATION
+
+{{TRANSCRIPT}}
+
+VOCALIZATION
+
+{{VOCALIZATION}}
+
+ACCEPTABLE INTERPRETATIONS
+
+{{INTERPRETATIONS}}
+
+SHARED IMPLICATION
+
+{{SHARED_IMPLICATION}}
+
+THE MODEL'S ANSWER
+
+{{ANSWER}}
+
+Return valid JSON only: {"matched": true, "interpretation_index": 1, "rationale": "<one or two sentences on what decided it>"}
+
+Set `matched` to false and `interpretation_index` to 0 if none of the three fits.

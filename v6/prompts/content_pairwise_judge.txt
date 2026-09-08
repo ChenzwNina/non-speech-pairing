@@ -1,8 +1,10 @@
 You are comparing two responses for a benchmark on whether spoken-language models respond appropriately to non-speech vocalizations.
 
-Two people had a four-turn conversation. In the version that matters here, one of them produced the non-speech vocalization described below — that label is authoritative. A third person, a friend of both speakers, then joined and responded.
+Two people had a conversation. In the version that matters here, one of them produced the non-speech vocalization described below in the final turn — that label is authoritative. The other person, already part of the conversation, then replied.
 
-You are given two candidate responses, A and B. Exactly one of them was produced by a model that had heard this version of the conversation. The other was produced after hearing a version that differed only in its non-speech vocalization, or in having none at all.
+You are given two candidate replies, A and B. Both came from the same model. Exactly one was produced after it heard this version; the other after it heard a version differing only in which non-speech vocalization the final turn carried, or in carrying none.
+
+Because both come from the same model, how eloquent it is in general tells you nothing. The only thing that separates them is whether one answers *this* version more specifically.
 
 Choose the response that better fits this version of the conversation. Both may read acceptably; pick the one whose content is more specifically right for what the vocalization does here. If you can see no difference that this version's vocalization accounts for, say so through a low confidence rather than by refusing to choose.
 

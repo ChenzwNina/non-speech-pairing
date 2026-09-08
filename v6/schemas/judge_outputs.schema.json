@@ -104,6 +104,92 @@
           "type": "string"
         }
       }
+    },
+    "interpretation_match": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Whether a model's own account of the vocalization matches any acceptable interpretation. Three judges answer; two agreeing carries the item. interpretation_index is 0 when nothing matched.",
+      "required": [
+        "matched",
+        "interpretation_index",
+        "rationale"
+      ],
+      "properties": {
+        "matched": {
+          "type": "boolean"
+        },
+        "interpretation_index": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "content_match": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How well a reply follows from the interpretation the model actually held, scored against that interpretation's guide rather than against the majority reading.",
+      "required": [
+        "score",
+        "rationale",
+        "unjudgeable"
+      ],
+      "properties": {
+        "score": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unjudgeable": {
+          "type": "boolean"
+        }
+      }
+    },
+    "tone_judgement": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Whether any clearly-wrong tone is audible in the reply. Negative by design: there is no single correct delivery, so a judge is asked what it hears from a list rather than to score against a profile. Two audio judges answer; both hearing one scores 0, neither scores 1, and a split goes to human review rather than into the denominator.",
+      "required": [
+        "inappropriate_present",
+        "tones_heard",
+        "rationale",
+        "unjudgeable",
+        "unjudgeable_reason"
+      ],
+      "properties": {
+        "inappropriate_present": {
+          "type": "boolean"
+        },
+        "tones_heard": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unjudgeable": {
+          "type": "boolean"
+        },
+        "unjudgeable_reason": {
+          "type": "string"
+        }
+      }
     }
   }
 }

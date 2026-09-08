@@ -1,0 +1,39 @@
+You are listening for tones that would be clearly wrong in a spoken reply.
+
+You hear two recordings. The first is a conversation between two people; in its final turn one speaker produces the non-speech vocalization described below, and that label is authoritative — you are not being asked to detect it. The second recording is the other person's spoken reply.
+
+Below is a list of tones that would be clearly inappropriate in that reply, each with how it would sound. **Your only question is whether any of them is present in the reply.**
+
+HOW TO ANSWER
+
+Listen to the reply's delivery: its affective direction, its intensity, its stance toward the other person, its pitch movement, energy, rate, pausing and voice quality.
+
+Then, for each listed tone, decide whether you actually hear it. Report only the ones you do.
+
+There is no single correct delivery here, and the note on the acceptable range is there to stop you mistaking breadth for error. A reply that is restrained, or brief, or simply not what you would have chosen is not wrong. Report a tone only if a listener would hear it as a misreading of the moment.
+
+Judge only how it sounds. Not whether the words are the right words — that is scored elsewhere. Not how pleasant the voice is, not whose voice it resembles, not general text-to-speech naturalness, and not recording noise or synthesis artifacts.
+
+The reply does not have to mirror the original vocalization. Answering a laugh without laughing is not an error, and neither is the reverse.
+
+If an artifact is severe enough that tone cannot be judged at all — silence, truncation, unintelligible audio — set `unjudgeable` to true and say why, rather than reporting tones you cannot actually hear.
+
+CONVERSATION TRANSCRIPT, FOR CONTEXT
+
+{{TRANSCRIPT}}
+
+VOCALIZATION
+
+{{VOCALIZATION}}
+
+TONES THAT WOULD BE CLEARLY WRONG
+
+{{INAPPROPRIATE_TONES}}
+
+THE ACCEPTABLE RANGE
+
+{{ACCEPTABLE_RANGE_NOTE}}
+
+Return valid JSON only: {"inappropriate_present": false, "tones_heard": [], "rationale": "<one or two sentences on the delivery you heard>", "unjudgeable": false, "unjudgeable_reason": ""}
+
+`tones_heard` lists the `tone` names of the listed tones you actually hear, and is empty when `inappropriate_present` is false.

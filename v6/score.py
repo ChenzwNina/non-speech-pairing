@@ -31,10 +31,10 @@ from pathlib import Path
 import evalkit as K
 
 CONTRACT = {"perception": "judge_outputs:mc_answer",
-            "pragmatic": "judge_outputs:mc_answer",
-            "content_absolute": "judge_outputs:content_absolute",
+            "interpretation": "judge_outputs:interpretation_match",
+            "content_match": "judge_outputs:content_match",
             "content_pair": "judge_outputs:content_pairwise",
-            "tone_absolute": "judge_outputs:tone_absolute"}
+            "tone": "judge_outputs:tone_judgement"}
 
 
 # ---------------------------------------------------------------- loading and validation
@@ -231,91 +231,187 @@ def score_multiple_choice(rows: list[dict], tasks: dict, labels: list[str], cfg)
     }
 
 
-def score_absolute(rows: list[dict], cfg, what: str) -> dict:
+def majority(votes: list) -> bool | None:
+    """True, False, or None on a tie. A tie is reported, never rounded into a score."""
+    if not votes:
+        return None
+    yes = sum(1 for v in votes if v)
+    if yes * 2 == len(votes):
+        return None
+    return yes * 2 > len(votes)
+
+
+def score_interpretation(rows: list[dict], cfg) -> dict:
+    """Did the model's own account of the sound match any acceptable reading?
+
+    Three judges; two agreeing carries it. A tie is not half a point — it is recorded, because
+    a split panel means the answer sat on the boundary of the interpretation set, which is a
+    fact about the item rather than about the model.
+    """
+    resamples, confidence, seed = cfg
+    by_task: dict[str, list[dict]] = defaultdict(list)
+    for row in rows:
+        by_task[row["task_id"]].append(row)
+    decided, ties = [], []
+    for votes in by_task.values():
+        verdict = majority([v["parsed"]["matched"] for v in votes])
+        row = dict(votes[0])
+        if verdict is None:
+            ties.append(row)
+            continue
+        row["_correct"] = verdict
+        picked = Counter(v["parsed"]["interpretation_index"]
+                         for v in votes if v["parsed"]["matched"]).most_common(1)
+        row["_which"] = picked[0][0] if picked else 0
+        decided.append(row)
+    return {
+        "n": len(decided), "ties": len(ties),
+        "tie_rate": len(ties) / len(by_task) if by_task else None,
+        "judges": sorted({r.get("judge", "?") for r in rows}),
+        "accuracy": cluster_bootstrap(decided, accuracy, resamples, confidence, seed),
+        "by_model": by_group(decided, lambda r: r.get("evaluated_model", "?"), accuracy,
+                             resamples, confidence, seed),
+        "by_vocalization": by_group(decided, lambda r: r.get("gold_vocalization", "?"),
+                                    accuracy, resamples, confidence, seed),
+        "which_matched": dict(sorted(Counter(r["_which"] for r in decided).items())),
+        "tie_items": sorted({r["item_id"] for r in ties}),
+    }
+
+
+def score_ranking(rows: list[dict], trials: dict, ineligible: list[dict], cfg) -> dict:
+    """Conditional ranking accuracy over the A/B pair, and the coverage it is conditional on.
+
+    The unit is the item, not the trial. An eligible item is judged in both directions — does
+    R_A win under A's context, does R_B win under B's context — and scores 1, 0.5 or 0. A model
+    whose two replies are interchangeable cannot collect 0.5 by luck the way one direction
+    would let it; it has to win the direction it was given, twice.
+
+    Ineligible items are N/A, not zero. Their perception failure is already counted in the
+    perception score and charging it again here would penalise it twice. Coverage is what keeps
+    that honest, reported beside the accuracy so a thin denominator cannot hide behind a high
+    score.
+    """
+    resamples, confidence, seed = cfg
+    by_direction: dict[tuple, list[dict]] = defaultdict(list)
+    for row in rows:
+        trial = trials.get(row["task_id"])
+        if trial is None:
+            continue
+        won = row["parsed"]["preferred_response"] == trial["gold_slot"]
+        by_direction[(trial["evaluated_model"], trial["item_id"],
+                      trial["direction"])].append(won)
+
+    per_item: dict[tuple, dict] = defaultdict(dict)
+    ties = 0
+    for (model, item_id, direction), votes in by_direction.items():
+        verdict = majority(votes)
+        ties += verdict is None
+        per_item[(model, item_id)][direction] = verdict
+
+    scored, widths = [], Counter()
+    for (model, item_id), directions in sorted(per_item.items()):
+        decided = [v for v in directions.values() if v is not None]
+        if not decided:
+            continue
+        widths[len(decided)] += 1
+        scored.append({"evaluated_model": model, "item_id": item_id,
+                       "_score": sum(1.0 for v in decided if v) / len(decided)})
+
+    eligible = len(per_item)
+    planned = eligible + len({(r["evaluated_model"], r["item_id"]) for r in ineligible})
+    statistic = lambda rs: mean(r["_score"] for r in rs)
+    return {
+        "eligible_items": eligible, "planned_items": planned,
+        "coverage": eligible / planned if planned else None,
+        "ineligible_reasons": dict(sorted(Counter(
+            r["reason"].split(" for ")[0] for r in ineligible).items())),
+        "judges": sorted({r.get("judge", "?") for r in rows}),
+        "direction_ties": ties,
+        "items_with_both_directions": widths.get(2, 0),
+        "conditional_accuracy": cluster_bootstrap(scored, statistic, resamples, confidence,
+                                                  seed),
+        "by_model": by_group(scored, lambda r: r["evaluated_model"], statistic, resamples,
+                             confidence, seed),
+        "score_distribution": dict(sorted(Counter(r["_score"] for r in scored).items())),
+        "chance": 0.5,
+    }
+
+
+def score_response_quality(rows: list[dict], heard: set, cfg) -> dict:
+    """A 1-5 mean over the conditions whose sound was identified, and the same with the rest floored.
+
+    Two questions from one set of judgements. The conditional score asks whether a model that
+    heard the sound can respond to it; the end-to-end score asks whether it gets from hearing to
+    responding at all, so its denominator is every condition rather than the surviving ones.
+    Reporting only the first flatters a model that heard little and answered that little well;
+    reporting only the second hides which half it failed at.
+    """
     resamples, confidence, seed = cfg
     valid, unjudgeable = [], []
     for row in rows:
         if row["parsed"].get("unjudgeable"):
             unjudgeable.append(row)
             continue
-        valid.append(dict(row, _score=float(row["parsed"]["score"])))
+        key = (row.get("evaluated_model", "?"), row["item_id"], row["condition"])
+        valid.append(dict(row, _score=float(row["parsed"]["score"]), _heard=key in heard))
+    conditional = [r for r in valid if r["_heard"]]
+    # Normalised so a perception failure scores 0 rather than the 0.25 a floored 1-5 would give.
+    end_to_end = [dict(r, _norm=(r["_score"] - 1) / 4 if r["_heard"] else 0.0) for r in valid]
     statistic = lambda rs: mean(r["_score"] for r in rs)
+    normalized = lambda rs: mean(r["_norm"] for r in rs)
     return {
-        "n": len(valid), "unjudgeable": len(unjudgeable),
-        "unjudgeable_rate": (len(unjudgeable) / (len(valid) + len(unjudgeable))
-                             if valid or unjudgeable else None),
-        "unjudgeable_reasons": Counter(
-            r["parsed"].get("unjudgeable_reason", "") for r in unjudgeable),
-        f"{what}_absolute": cluster_bootstrap(valid, statistic, resamples, confidence, seed),
-        "normalized": (mean((r["_score"] - 1) / 4 for r in valid) if valid else None),
-        "by_model": by_group(valid, lambda r: r.get("evaluated_model", "?"),
-                             statistic, resamples, confidence, seed),
-        "by_renderer": by_group(valid, lambda r: r.get("renderer", "?"), statistic,
-                                resamples, confidence, seed),
-        "by_condition": by_group(valid, lambda r: r["condition"], statistic,
-                                 resamples, confidence, seed),
-        "by_vocalization": by_group(valid, lambda r: r.get("gold_vocalization", "?"),
-                                    statistic, resamples, confidence, seed),
-        "by_judge": by_group(valid, lambda r: r.get("judge", "?"), statistic,
-                             resamples, confidence, seed),
-        "distribution": dict(sorted(Counter(int(r["_score"]) for r in valid).items())),
-        "agreement": ordinal_agreement(valid) if valid else {},
+        "n": len(valid), "n_conditional": len(conditional),
+        "unjudgeable": len(unjudgeable),
+        "judges": sorted({r.get("judge", "?") for r in rows}),
+        "conditional_quality": cluster_bootstrap(conditional, statistic, resamples,
+                                                 confidence, seed),
+        "end_to_end": cluster_bootstrap(end_to_end, normalized, resamples, confidence, seed),
+        "by_model_conditional": by_group(conditional, lambda r: r.get("evaluated_model", "?"),
+                                         statistic, resamples, confidence, seed),
+        "by_model_end_to_end": by_group(end_to_end, lambda r: r.get("evaluated_model", "?"),
+                                        normalized, resamples, confidence, seed),
+        "distribution": dict(sorted(Counter(int(r["_score"]) for r in conditional).items())),
+        "agreement": ordinal_agreement(conditional) if conditional else {},
     }
 
 
-def score_pairs(rows: list[dict], trials: dict, cfg, tie_policy: str) -> dict:
+def score_tone(rows: list[dict], cfg) -> dict:
+    """Two audio judges. Both hearing a wrong tone scores 0, neither scores 1, a split waits.
+
+    A split is neither 0.5 nor dropped quietly — it goes to a human queue and stays out of the
+    denominator until someone listens. The rubric is a list of things a judge should be
+    confident about, so disagreement means neither verdict was.
+    """
     resamples, confidence, seed = cfg
-    prepared = []
+    by_task: dict[str, list[dict]] = defaultdict(list)
+    unjudgeable = 0
     for row in rows:
-        trial = trials.get(row["task_id"])
-        if trial is None:
+        if row["parsed"].get("unjudgeable"):
+            unjudgeable += 1
             continue
-        prepared.append(dict(row, _correct=row["parsed"]["preferred_response"]
-                             == trial["gold_slot"],
-                             _confidence=row["parsed"].get("confidence"),
-                             _target=trial["target_condition"],
-                             _against=trial["against_condition"],
-                             _gold_slot=trial["gold_slot"],
-                             _swapped=trial.get("swapped", False)))
-    # Aggregated per trial, to report the split rate the tie policy is about.
-    votes: dict[str, list[dict]] = defaultdict(list)
-    for row in prepared:
-        votes[row["task_id"]].append(row)
-    splits = sum(1 for rs in votes.values()
-                 if len(rs) > 1 and sum(r["_correct"] for r in rs) * 2 == len(rs))
-    aggregated = []
-    for task, rs in votes.items():
-        share = mean(1.0 if r["_correct"] else 0.0 for r in rs)
-        if share == 0.5 and tie_policy == "unresolved":
+        by_task[row["task_id"]].append(row)
+    scored, review = [], []
+    for task, votes in by_task.items():
+        heard = [v["parsed"]["inappropriate_present"] for v in votes]
+        if len(set(heard)) > 1:
+            review.append({"task_id": task, "item_id": votes[0]["item_id"],
+                           "condition": votes[0]["condition"],
+                           "evaluated_model": votes[0].get("evaluated_model", "?"),
+                           "verdicts": {v.get("judge", "?"): v["parsed"] for v in votes}})
             continue
-        aggregated.append(dict(rs[0], _correct=share > 0.5,
-                               _half=share == 0.5))
-    statistic = accuracy
+        scored.append(dict(votes[0], _score=0.0 if heard[0] else 1.0,
+                           _tones=[t for v in votes for t in v["parsed"]["tones_heard"]]))
+    statistic = lambda rs: mean(r["_score"] for r in rs)
     return {
-        "n": len(prepared), "trials": len(votes),
-        "tie_policy": tie_policy,
-        "split_decisions": splits,
-        "split_rate": (splits / len(votes)) if votes else None,
-        "content_pair_accuracy": cluster_bootstrap(prepared, statistic, resamples,
-                                                   confidence, seed),
-        "aggregated_accuracy": cluster_bootstrap(
-            aggregated,
-            (lambda rs: mean((0.5 if r.get("_half") else (1.0 if r["_correct"] else 0.0))
-                             for r in rs)) if tie_policy == "half" else statistic,
-            resamples, confidence, seed),
-        "by_model": by_group(prepared, lambda r: r.get("evaluated_model", "?"), statistic,
+        "n": len(scored), "awaiting_human_review": len(review),
+        "split_rate": len(review) / len(by_task) if by_task else None,
+        "unjudgeable": unjudgeable,
+        "judges": sorted({r.get("judge", "?") for r in rows}),
+        "tone_ok_rate": cluster_bootstrap(scored, statistic, resamples, confidence, seed),
+        "by_model": by_group(scored, lambda r: r.get("evaluated_model", "?"), statistic,
                              resamples, confidence, seed),
-        "by_renderer": by_group(prepared, lambda r: r.get("renderer", "?"), statistic,
-                                resamples, confidence, seed),
-        "by_target": by_group(prepared, lambda r: r["_target"], statistic,
-                              resamples, confidence, seed),
-        "by_judge": by_group(prepared, lambda r: r.get("judge", "?"), statistic,
-                             resamples, confidence, seed),
-        "gold_slot_balance": dict(sorted(Counter(r["_gold_slot"] for r in prepared).items())),
-        "accuracy_by_gold_slot": by_group(prepared, lambda r: r["_gold_slot"], statistic,
-                                          resamples, confidence, seed),
-        "agreement": binary_agreement(prepared) if prepared else {},
-        "chance": 0.5,
+        "tones_heard": dict(sorted(Counter(t for r in scored for t in r["_tones"]).items())),
+        "review_queue": review,
     }
 
 
@@ -370,6 +466,7 @@ def main() -> int:
             for task in json.loads(path.read_text())["tasks"]:
                 lookup[task["task_id"]] = task
     trials = {t["task_id"]: t for t in K.read_jsonl(tasks_dir / "content_pairs.jsonl")}
+    ineligible = K.read_jsonl(tasks_dir / "content_pairs_ineligible.jsonl")
 
     good, bad = load_judgments(judgments_dir)
     if args.item_id:
@@ -382,22 +479,28 @@ def main() -> int:
         if record["task_type"] in wanted:
             buckets[record["task_type"]].append(record)
 
+    # Which (model, item, condition) had its vocalization identified. Everything downstream is
+    # conditional on this, so it is derived once from the perception judgements rather than
+    # trusted from a flag someone else set.
+    heard = set()
+    for row in buckets["perception"]:
+        task = lookup.get(row["task_id"])
+        if task and row["parsed"]["selected_option"] == task["correct_option"]:
+            heard.add((row.get("evaluated_model", "?"), row["item_id"], row["condition"]))
+
     labels = list(config["inventory"])
     scores: dict[str, dict] = {}
     if buckets["perception"]:
         scores["perception"] = score_multiple_choice(buckets["perception"], lookup, labels, cfg)
-    if buckets["pragmatic"]:
-        scores["pragmatic"] = score_multiple_choice(
-            buckets["pragmatic"], lookup,
-            ["correct", "paired_condition", "wrong_function", "scenario_plausible"], cfg)
-    if buckets["content_absolute"]:
-        scores["content_absolute"] = score_absolute(buckets["content_absolute"], cfg, "content")
+    if buckets["interpretation"]:
+        scores["interpretation"] = score_interpretation(buckets["interpretation"], cfg)
+    if buckets["content_match"]:
+        scores["response_quality"] = score_response_quality(buckets["content_match"], heard,
+                                                            cfg)
     if buckets["content_pair"]:
-        scores["content_pair"] = score_pairs(
-            buckets["content_pair"], trials, cfg,
-            config.get("paired", {}).get("tie_policy", "individual"))
-    if buckets["tone_absolute"]:
-        scores["tone_absolute"] = score_absolute(buckets["tone_absolute"], cfg, "tone")
+        scores["ranking"] = score_ranking(buckets["content_pair"], trials, ineligible, cfg)
+    if buckets["tone"]:
+        scores["tone"] = score_tone(buckets["tone"], cfg)
 
     invalid_by_type = Counter(r.get("task_type", "?") for r in bad)
     K.report("score", planned=len(good) + len(bad), completed=len(good),
@@ -415,37 +518,36 @@ def main() -> int:
 
     for name, block in scores.items():
         print(f"\n{name}")
-        if name in ("perception", "pragmatic"):
-            show("overall accuracy", block, "overall_accuracy")
+        if name == "perception":
+            show("accuracy", block, "overall_accuracy")
             show("macro-F1", block, "macro_f1")
-            if name == "perception":
-                show("baseline false-positive rate", block,
-                     "baseline_false_positive_rate")
-            for model, stat in block["by_model"].items():
-                show(f"  {model}", {"x": stat}, "x")
-            if block["flagged_excluded"]:
-                print(f"  excluded as ambiguous: {block['flagged_excluded']} row(s) "
-                      f"over {len(block['flagged_items'])} item(s)")
-        elif name == "content_pair":
-            show("paired accuracy (chance 0.500)", block, "content_pair_accuracy")
-            show("aggregated", block, "aggregated_accuracy")
-            print(f"  split decisions: {block['split_decisions']} of {block['trials']} "
-                  f"trial(s) · policy {block['tie_policy']}")
-            agreement = block["agreement"]
-            print(f"  judge agreement: pairwise "
-                  f"{agreement.get('pairwise_agreement')}, kappa "
-                  f"{agreement.get('fleiss_kappa')}")
-        else:
-            key = "content_absolute" if name == "content_absolute" else "tone_absolute"
-            show("mean score (1-5)", block, key)
-            print(f"  normalized (0-1): {block['normalized']}")
-            print(f"  distribution: {block['distribution']}")
-            print(f"  unjudgeable: {block['unjudgeable']} "
-                  f"({block['unjudgeable_rate']})")
-            agreement = block["agreement"]
-            print(f"  judge agreement: exact {agreement.get('exact_agreement')}, "
-                  f"within one {agreement.get('within_one')}, spearman "
-                  f"{agreement.get('mean_pairwise_spearman')}")
+            show("baseline false positives", block, "baseline_false_positive_rate")
+        elif name == "interpretation":
+            show("match rate (2 of 3 judges)", block, "accuracy")
+            print(f"  panel ties: {block['ties']} ({block['tie_rate']})")
+            print(f"  which reading matched: {block['which_matched']}")
+        elif name == "response_quality":
+            show("conditional quality (1-5)", block, "conditional_quality")
+            show("end-to-end (0-1)", block, "end_to_end")
+            print(f"  scored {block['n_conditional']} of {block['n']} on perception-correct "
+                  f"conditions · distribution {block['distribution']}")
+        elif name == "ranking":
+            show("conditional accuracy (chance .500)", block, "conditional_accuracy")
+            print(f"  coverage: {block['eligible_items']}/{block['planned_items']} items "
+                  f"eligible ({block['coverage']})")
+            print(f"  both directions judged: {block['items_with_both_directions']} · "
+                  f"panel ties: {block['direction_ties']}")
+            print(f"  per-item scores: {block['score_distribution']}")
+            if block["ineligible_reasons"]:
+                print(f"  ineligible: {block['ineligible_reasons']}")
+        elif name == "tone":
+            show("tone acceptable rate", block, "tone_ok_rate")
+            print(f"  awaiting human review: {block['awaiting_human_review']} "
+                  f"({block['split_rate']}) · unjudgeable {block['unjudgeable']}")
+            if block["tones_heard"]:
+                print(f"  tones heard: {block['tones_heard']}")
+        for model, stat in block.get("by_model", {}).items():
+            show(f"  {model}", {"x": stat}, "x")
 
     if args.dry_run:
         print("\ndry run: nothing written")
