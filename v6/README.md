@@ -257,6 +257,92 @@ fingerprinted into the task file, and a rebuild says whether it moved. There are
 to balance: with four vocalizations plus `none` the whole inventory fits in one question, so
 every question carries every label and only the order varies.
 
+## Running the evaluation
+
+Every stage is resumable — rerunning skips what is already on disk unless `--redo` is passed —
+and every stage takes `--dry-run`, which prints the payloads it would send and calls nothing.
+
+**Before anything, check the audio is there.** The assembled conversations come from whichever
+machine sews them, so this is the step that catches a half-finished handoff:
+
+```bash
+python3 v6/validate_dataset.py --renderer elevenlabs --require-audio
+```
+
+It must report 24 of 24. Nonzero exit means missing or empty files, named individually.
+
+**1 — ask the models.** Perception first, then interpretation in the *same* session, then a
+reply in a *fresh* one:
+
+```bash
+python3 v6/run_models.py --renderer elevenlabs
+```
+
+Writes `out/eval/judgments/perception.jsonl`, `out/eval/responses/interpretations.jsonl` and
+`out/eval/responses/responses.jsonl` plus a `.wav` per reply. A condition whose vocalization was
+misidentified has its interpretation marked `gated_out` and gets no reply elicited.
+
+**2 — build the ranking trials.** This reads the perception results, so it must come after
+step 1:
+
+```bash
+python3 v6/build_pairs.py --responses out/eval/responses/responses.jsonl
+```
+
+Two directed trials per eligible item, and an `_ineligible.jsonl` beside them so coverage stays
+computable.
+
+**3 — run the judges**, in this order because `content` needs to know which interpretation each
+model actually held:
+
+```bash
+python3 v6/run_judges.py --stage interp
+python3 v6/run_judges.py --stage content --stage rank --stage tone
+```
+
+**4 — score:**
+
+```bash
+python3 v6/score.py
+```
+
+### What the runners will not let you do
+
+**Perception and interpretation share one session; the reply does not.** Sharing the first two
+is what makes interpretation conditional on perception rather than independent of it. Keeping
+the reply separate — with a prompt that never mentions a vocalization — is what makes it a test
+of whether the model notices the sound on its own. Both are enforced in `run_models.py` rather
+than left to whoever runs it.
+
+**Nothing regenerates the frozen task set.** `build_tasks.py` refuses to overwrite
+`out/eval/tasks/perception.json` without `--overwrite`, because every evaluated model has to see
+the same 72 questions with the same option order or their accuracies are not comparable.
+
+**The judges never learn which model they are judging.** The evaluated model's id is in the
+record, not in the prompt.
+
+### Costs, per evaluated model per renderer
+
+| Stage | Calls |
+| --- | --- |
+| perception + interpretation | 72 sessions |
+| replies | up to 48, perception-gated |
+| interpretation panel | up to 144 |
+| content panel | up to 144 |
+| ranking panel | up to 144 |
+| tone panel | up to 96 |
+
+The reference annotations are already written and shared by every model — 144 Claude calls,
+spent once.
+
+### If a stage half-fails
+
+Records are appended as they are produced, so an interruption loses at most the call in flight.
+A malformed judge reply is retried once, then kept with `status: invalid` and excluded from
+every denominator rather than dropped, and `score.py` reports how many there were. An eligible
+item whose judging failed entirely is named as `eligible but unjudged` — it stays in the
+coverage denominator and out of the accuracy.
+
 ## What is not settled
 
 - **The evaluation runners do not exist yet.** Everything offline is built — validation, the

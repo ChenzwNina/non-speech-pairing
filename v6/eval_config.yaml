@@ -64,18 +64,19 @@ evaluated_models:
   - {id: qwen,   provider: qwen,   model: qwen-audio-3.0-realtime-plus}
 
 judges:
-  # Text judges score response content. Four families, one judgement each.
+  # Text judges: three families, one judgement each, majority carries it. Vendor diversity is
+  # the point — a panel drawn from one family agrees with itself.
   text:
-    - {id: gpt,    provider: openai, model: gpt-5.6-sol}
-    - {id: gemini, provider: gemini, model: gemini-3.1-pro}
-    - {id: grok,   provider: grok,   model: grok-4.6}
-    - {id: qwen,   provider: qwen,   model: qwen3-max}
-  # Audio judges score response tone. They must listen, so the panel is smaller.
+    - {id: opus,  provider: anthropic, model: claude-opus-5, transport: cli}
+    - {id: gpt,   provider: openai,    model: gpt-5.6-sol}
+    - {id: grok,  provider: grok,      model: grok-4.6}
+  # Audio judges for tone. Two, because the rubric is a list of things a judge should be
+  # confident about: agreement scores it, disagreement goes to a human rather than to 0.5.
   audio:
-    - {id: gpt-audio,    provider: openai, model: gpt-realtime-2.1}
-    - {id: gemini-audio, provider: gemini, model: gemini-3.1-flash-live-preview}
-  # 2.0 found that a model rating its own reply is a conflict the blinding does not remove, and
-  # scored the tone panel leave-one-out instead. Kept as the default; the spec is silent on it.
+    - {id: gpt-audio,    provider: openai, model: gpt-4o-audio-preview}
+    - {id: gemini-audio, provider: gemini, model: gemini-2.5-pro}
+  # 2.0 found that a model rating its own reply is a conflict blinding does not remove, and
+  # scored its tone panel leave-one-out instead. Kept as the default.
   audio_leave_one_out: true
 
 paired:
