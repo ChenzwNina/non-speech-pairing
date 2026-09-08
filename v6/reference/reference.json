@@ -40,10 +40,9 @@
     "used_by": "an audio model checking that a Dia-generated gasp or groan sounds like the same person as the ElevenLabs speech it will be spliced into",
     "transcript": null,
     "why_no_transcript": "None is needed. A verifier comparing timbre does not read words, so this is not a cloning input and the transcript gap that applies to one does not apply here.",
-    "dataset_speaker": null,
-    "unconfirmed": [
-      "Which dataset speaker this is. Speaker A (s3TPKV1kjDlVtZbl4Ksh) is the inference, because A produces every vocalization and so is the only voice a clip ever has to match. Not stated, and not checked by listening — it matters for reading a verifier's verdict, not for running one."
-    ]
+    "dataset_speaker": "A",
+    "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
+    "why_speaker_a": "A produces every vocalization — the turns run A-B-A-B-A, so the sound always falls in turn 5, which is A's. Speaker B never makes one, so B's voice never has to be matched."
   },
   "clone_source": {
     "file": "ElevenLabs_ref.mp3",

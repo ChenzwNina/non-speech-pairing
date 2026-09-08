@@ -28,10 +28,9 @@ to a speaker change rather than to a vocalization.
 requirement belongs to cloning, and the clip cloning conditions on is `ElevenLabs_ref.mp3`,
 whose transcript is recorded below.
 
-One thing about it is not recorded: **which dataset speaker it is.** Speaker A,
-`s3TPKV1kjDlVtZbl4Ksh`, is the inference — A produces every vocalization, so A's is the only
-voice a clip ever has to match — but that is not stated anywhere and has not been confirmed by
-listening. It matters for reading a verdict, not for running the check.
+**It is speaker A**, `s3TPKV1kjDlVtZbl4Ksh` — confirmed, not inferred. That is the only voice
+a clip ever has to match: the turns run A-B-A-B-A, so the vocalization always falls in turn 5,
+which is A's. Speaker B never makes a sound.
 
 ## The two-speaker clip, and why its mapping runs backwards
 

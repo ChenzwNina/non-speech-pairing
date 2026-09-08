@@ -3473,7 +3473,7 @@
             "must_hold": "the speech has to be the same samples as the elevenlabs set. Only the clip spliced into turn 5 differs, and that is what makes a difference between the two sets attributable to the sound rather than to voice or pacing.",
             "config": "eval_config.yaml renderers.dia_voc",
             "clone_source": "reference/ElevenLabs_ref.mp3, whose transcript is recorded in reference/reference.json — a cloning renderer needs both.",
-            "voice_match_check": "reference/ElevenLabs_correct_speaker_ref.mp3 is the timbre a generated clip has to match. Worth verifying, because a clip in a different voice makes the splice audible and a model then reacts to a speaker change rather than to the vocalization."
+            "voice_match_check": "reference/ElevenLabs_correct_speaker_ref.mp3 is speaker A (s3TPKV1kjDlVtZbl4Ksh), the timbre a generated clip has to match — the only one it ever has to, since the turns run A-B-A-B-A and the vocalization always falls in A's turn 5. Worth verifying, because a clip in a different voice makes the splice audible and a model then reacts to a speaker change rather than to the vocalization."
           }
         }
       },
