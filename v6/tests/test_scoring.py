@@ -168,6 +168,40 @@ class TestRanking(unittest.TestCase):
         self.assertAlmostEqual(block["coverage"], 0.25)
         self.assertEqual(block["ineligible_reasons"], {"perception wrong": 3})
 
+    def test_item_ids_are_reported_for_every_bucket(self):
+        block = self.build([{"RA": True, "RB": True}], ineligible=2)
+        self.assertEqual(block["eligible_item_ids"], ["t_01"])
+        self.assertEqual(block["ineligible_item_ids"], ["x_0", "x_1"])
+        self.assertEqual(block["unjudged_item_ids"], [])
+        self.assertEqual(block["eligible_items"], len(block["eligible_item_ids"]))
+        self.assertEqual(block["conditional_accuracy"]["items"], block["eligible_items"])
+
+    def test_an_eligible_item_whose_judging_failed_stays_in_the_denominator(self):
+        """It passed the perception gate, so coverage must still count it.
+
+        Deriving `planned` as eligible + ineligible would let it vanish from both buckets and
+        silently shrink the denominator, making coverage look better than it was.
+        """
+        trials, rows = {}, []
+        for item_id, judged in (("t_01", True), ("t_99", False)):
+            for direction in ("RA", "RB"):
+                condition = "condition_a" if direction == "RA" else "condition_b"
+                task = f"{item_id}__{condition}__content_pair__{direction}"
+                trials[task] = {"task_id": task, "item_id": item_id,
+                                "evaluated_model": "openai", "target_condition": condition,
+                                "direction": direction, "gold_slot": "A"}
+                if judged:
+                    rows.append(judgment(task, item_id, "content_pair",
+                                         {"preferred_response": "A", "confidence": 0.7,
+                                          "rationale": "x"}, condition=condition))
+        block = S.score_ranking(rows, trials, [], CFG)
+        self.assertEqual(block["eligible_item_ids"], ["t_01"])
+        self.assertEqual(block["unjudged_item_ids"], ["t_99"])
+        self.assertEqual(block["planned_items"], 2)
+        self.assertAlmostEqual(block["coverage"], 0.5)
+        self.assertAlmostEqual(block["conditional_accuracy"]["value"], 1.0)
+        self.assertEqual(block["conditional_accuracy"]["items"], 1)
+
     def test_chance_is_a_half(self):
         self.assertEqual(self.build([{"RA": True, "RB": True}])["chance"], 0.5)
 

@@ -317,12 +317,23 @@ def score_ranking(rows: list[dict], trials: dict, ineligible: list[dict], cfg) -
         scored.append({"evaluated_model": model, "item_id": item_id,
                        "_score": sum(1.0 for v in decided if v) / len(decided)})
 
-    eligible = len(per_item)
-    planned = eligible + len({(r["evaluated_model"], r["item_id"]) for r in ineligible})
+    # Planned comes from the trials that were built, not from `eligible + ineligible`. An item
+    # that passed the perception gate but whose judging failed belongs in the denominator's
+    # accounting: computing planned as a sum of the two buckets would let it vanish from both
+    # and quietly shrink coverage's denominator.
+    built_items = {(t["evaluated_model"], t["item_id"]) for t in trials.values()}
+    skipped_items = {(r["evaluated_model"], r["item_id"]) for r in ineligible}
+    judged_items = set(per_item)
+    unjudged = built_items - judged_items
+    eligible = len(judged_items)
+    planned = len(built_items | skipped_items)
     statistic = lambda rs: mean(r["_score"] for r in rs)
     return {
         "eligible_items": eligible, "planned_items": planned,
         "coverage": eligible / planned if planned else None,
+        "eligible_item_ids": sorted({i for _, i in judged_items}),
+        "ineligible_item_ids": sorted({i for _, i in skipped_items}),
+        "unjudged_item_ids": sorted({i for _, i in unjudged}),
         "ineligible_reasons": dict(sorted(Counter(
             r["reason"].split(" for ")[0] for r in ineligible).items())),
         "judges": sorted({r.get("judge", "?") for r in rows}),
@@ -535,11 +546,16 @@ def main() -> int:
             show("conditional accuracy (chance .500)", block, "conditional_accuracy")
             print(f"  coverage: {block['eligible_items']}/{block['planned_items']} items "
                   f"eligible ({block['coverage']})")
-            print(f"  both directions judged: {block['items_with_both_directions']} · "
-                  f"panel ties: {block['direction_ties']}")
-            print(f"  per-item scores: {block['score_distribution']}")
-            if block["ineligible_reasons"]:
-                print(f"  ineligible: {block['ineligible_reasons']}")
+            print(f"  eligible items:   {block['eligible_item_ids']}")
+            print(f"  ineligible items: {block['ineligible_item_ids']}"
+                  + (f" · {block['ineligible_reasons']}" if block["ineligible_reasons"]
+                     else ""))
+            if block["unjudged_item_ids"]:
+                print(f"  eligible but unjudged: {block['unjudged_item_ids']} — in the "
+                      f"coverage denominator, absent from the accuracy")
+            print(f"  per-item scores: {block['score_distribution']} · both directions "
+                  f"judged {block['items_with_both_directions']}/{block['eligible_items']} · "
+                  f"panel ties {block['direction_ties']}")
         elif name == "tone":
             show("tone acceptable rate", block, "tone_ok_rate")
             print(f"  awaiting human review: {block['awaiting_human_review']} "
