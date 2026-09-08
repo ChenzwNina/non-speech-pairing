@@ -1,36 +1,41 @@
-# Voice references
+# Voice reference
 
-Recordings of the voices, not stimuli. Nothing in `out/` is derived from them — they exist so
-the voices behind the dataset can be identified, compared and reproduced.
+`ElevenLabs_ref.mp3` — 6.84s, 44.1 kHz mono, rendered by ElevenLabs with the two voice ids the
+dataset uses. Not a stimulus; nothing in `out/` is derived from it. It exists so the voices
+behind the dataset can be identified, and so a cloning renderer has something to clone from.
 
-| File | Renderer | Speaker | Voice id |
-| --- | --- | --- | --- |
-| `ref_s3TPKV1kjDlVtZbl4Ksh.mp3` | elevenlabs | A | `s3TPKV1kjDlVtZbl4Ksh` |
-| `ref_aKw9UnnjRq5scbeeGI7Z.mp3` | elevenlabs | B | `aKw9UnnjRq5scbeeGI7Z` |
-| `dia_reference.wav` | dia | — | cloned, not pinned |
+```
+[S1] Did you end up going to that new café near campus?
+[S2] Yeah, I went yesterday after class. It was actually pretty nice.
+```
 
-`reference.json` carries the transcript, durations and formats.
+| Tag | Voice id | Dataset speaker |
+| --- | --- | --- |
+| `S1` | `aKw9UnnjRq5scbeeGI7Z` | **B** |
+| `S2` | `s3TPKV1kjDlVtZbl4Ksh` | **A** |
 
-**The two ElevenLabs clips read the same passage**, so they are directly comparable — the
-difference between them is the voice, not the words:
+## The mapping runs backwards — read this before wiring a cloning renderer
 
-> The old clockmaker placed the tiny brass gear onto the workbench. His hands shook, but his
-> eyes were clear. For fifty years, he had fixed the broken time of the town.
+**`S1` is the dataset's speaker B, and `S2` is speaker A.** `make_audio.py` pins
+`A -> s3TPKV1kjDlVtZbl4Ksh` and `B -> aKw9UnnjRq5scbeeGI7Z`, which is the reverse of the tag
+order here.
 
-The ids are pinned in `make_audio.py`, so the dataset's speech comes from these two voices and
-nothing else. They were inherited from `laughter_sigh_contrast_v3/2.0`, which means v6 and v3
-audio are comparable in timbre.
+Wiring Dia as `S1 -> A`, `S2 -> B` would put each conversation's voices on the wrong speakers
+relative to the ElevenLabs renders. It would not fail or sound broken — turn 1 would simply be
+spoken by the voice that says turns 2 and 4 in the other renderer. Since every metric splits by
+renderer, that swap would surface as a renderer effect and be indistinguishable from one.
 
-## Why the Dia clip is different in kind
+## What it replaces, and why one clip is better than three
 
-ElevenLabs is given a voice id, so its speaker is fixed by reference to a catalogue entry and
-this clip is only an illustration of it. Dia clones from a recording, so its speaker *is* this
-file — change it and the dataset's voices change.
+Three files: a solo clip per ElevenLabs voice, and a separate Dia clip whose transcript was
+never written down. That last gap meant Dia could not be run reproducibly at all.
 
-**Its transcript is not recorded.** Dia conditions on a reference recording together with the
-words spoken in it, so `transcript` is null in `reference.json` rather than guessed. Dia cannot
-be run reproducibly from this folder until someone writes down what is said in the clip.
+One two-speaker clip fixes both. It has a transcript, which is what a cloning renderer needs
+alongside the recording, and it carries both voices in the arrangement the dataset uses — so
+cloning from it should put Dia's speech in the same timbres as the ElevenLabs speech.
 
-That asymmetry matters when the two renderers are compared: the speaking voices are not the
-same, so a difference between renderers includes a difference in timbre and delivery, not only
-in how the vocalization was produced.
+That is worth more than tidiness. The renderer comparison was previously confounded: ElevenLabs
+spoke in two catalogue voices and Dia in whatever its old reference happened to sound like, so a
+difference between renderers carried a difference in voice as well as in how the vocalization
+was produced. Cloning from this clip removes that, and leaves the comparison closer to being
+about the vocalization alone.

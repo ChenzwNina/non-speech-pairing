@@ -26,7 +26,10 @@ dataset:
       audio_root: out/audio/dia
       audio_path_template: "{item_id}__{condition}.wav"
       notes: >
-        Voice-cloned from reference/dia_reference.wav, parenthesised non-verbal tags. Rendered on the
+        Voice-cloned from reference/ElevenLabs_ref.mp3, parenthesised non-verbal
+        tags. That clip's S1 is the dataset's speaker B and S2 is speaker A —
+        the reverse of the tag order — so check reference/README.md before
+        wiring the speaker map, or the two renderers' voices end up swapped. Rendered on the
         VM; set the template to whatever that job actually wrote.
   # Used when a command is not told which renderer to work on.
   default_renderer: elevenlabs

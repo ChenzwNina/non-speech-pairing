@@ -1,40 +1,32 @@
 {
-  "what": "Voice reference recordings. Not stimuli — nothing in out/ is derived from these.",
-  "transcript": "The old clockmaker placed the tiny brass gear onto the workbench. His hands shook, but his eyes were clear. For fifty years, he had fixed the broken time of the town.",
-  "clips": [
+  "what": "The voice reference. Not a stimulus — nothing in out/ is derived from it.",
+  "clip": {
+    "file": "ElevenLabs_ref.mp3",
+    "rendered_by": "elevenlabs",
+    "seconds": 6.84,
+    "codec": "mp3",
+    "sample_rate": 44100,
+    "channels": 1,
+    "transcript": "[S1] Did you end up going to that new café near campus?\n[S2] Yeah, I went yesterday after class. It was actually pretty nice."
+  },
+  "speakers": [
     {
-      "file": "ref_s3TPKV1kjDlVtZbl4Ksh.mp3",
-      "renderer": "elevenlabs",
-      "speaker": "A",
-      "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
-      "transcript": "The old clockmaker placed the tiny brass gear onto the workbench. His hands shook, but his eyes were clear. For fifty years, he had fixed the broken time of the town.",
-      "seconds": 10.68,
-      "codec": "mp3",
-      "sample_rate": 44100,
-      "channels": 1
-    },
-    {
-      "file": "ref_aKw9UnnjRq5scbeeGI7Z.mp3",
-      "renderer": "elevenlabs",
-      "speaker": "B",
+      "tag": "S1",
       "voice_id": "aKw9UnnjRq5scbeeGI7Z",
-      "transcript": "The old clockmaker placed the tiny brass gear onto the workbench. His hands shook, but his eyes were clear. For fifty years, he had fixed the broken time of the town.",
-      "seconds": 15.31,
-      "codec": "mp3",
-      "sample_rate": 44100,
-      "channels": 1
+      "dataset_speaker": "B",
+      "line": "Did you end up going to that new café near campus?"
     },
     {
-      "file": "dia_reference.wav",
-      "renderer": "dia",
-      "speaker": null,
-      "voice_id": null,
-      "transcript": null,
-      "note": "Dia clones from a reference recording plus its transcript. The transcript for this clip has not been recorded, so it is null rather than guessed — Dia cannot be run reproducibly from this folder until someone writes down what is said in it.",
-      "seconds": 8.19,
-      "codec": "pcm_s16le",
-      "sample_rate": 44100,
-      "channels": 1
+      "tag": "S2",
+      "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
+      "dataset_speaker": "A",
+      "line": "Yeah, I went yesterday after class. It was actually pretty nice."
     }
+  ],
+  "mapping_warning": "S1 and S2 run opposite to the dataset's A and B. S1 is aKw9UnnjRq5scbeeGI7Z, which make_audio.py assigns to speaker B; S2 is s3TPKV1kjDlVtZbl4Ksh, which it assigns to speaker A. Wiring a cloning renderer S1->A and S2->B would swap the voices against the ElevenLabs renders, and every metric splits by renderer, so the difference would look like a renderer effect.",
+  "supersedes": [
+    "ref_s3TPKV1kjDlVtZbl4Ksh.mp3",
+    "ref_aKw9UnnjRq5scbeeGI7Z.mp3",
+    "dia_reference.wav"
   ]
 }
