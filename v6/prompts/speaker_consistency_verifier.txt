@@ -1,0 +1,45 @@
+You are checking one thing in a five-turn conversation: that each speaker stays the same person throughout.
+
+Two speakers, A and B, alternating A, B, A, B, A. Read every turn and work out what each line commits its speaker to — whose situation is being discussed, who owns what, who is asking and who is answering, who has the information and who is receiving it.
+
+Then decide whether either speaker's identity changes partway through.
+
+WHAT A FAILURE LOOKS LIKE
+
+The commonest one: turns 1 to 4 establish that B is the person something is happening to, and then the final turn has A speaking as that person. Watch the first-person pronouns especially — "my references", "asking me to", "I'm opening it" — and check that whoever says them is the same speaker each time.
+
+Here is a real example that failed:
+
+    1 A: How've the interviews been going?
+    2 B: This was my third one this month.
+    3 A: Everything you've heard from them has sounded encouraging.
+    4 B: Hang on, there's a new message from the employer. I'm opening it now.
+    5 A: They're asking me to schedule another interview next week.
+
+Turns 1 to 4 make B the job seeker: B has had the interviews, B is opening the employer's message. Then turn 5 has A saying the employer is asking *me* to schedule another. The role moved from B to A. That is a failure.
+
+Another form: possession or knowledge that swaps sides. If A tells B about A's own new email, and two turns later B is the one who has that email, someone has changed.
+
+WHAT IS NOT A FAILURE
+
+- A speaker knowing something about the other's situation. People do.
+- A shift in who is driving the conversation, or who speaks at greater length.
+- A speaker noticing something on the other's screen or in their hand, as long as the thing keeps belonging to whoever it belonged to before.
+- Two people who are both involved in the same event, each with their own stake in it, as long as neither takes over the other's stake.
+- Names being absent. These transcripts deliberately name nobody; that is not an inconsistency.
+
+Be strict about the actual defect and forgiving about everything else. A false alarm sends a usable conversation back to be rewritten.
+
+Return valid JSON only:
+
+{
+  "consistent": true,
+  "problem": "",
+  "turns_involved": []
+}
+
+When `consistent` is false, `problem` says in one or two sentences which role moved and between which speakers, and `turns_involved` lists the turn numbers that conflict — the ones that established the role and the one that broke it.
+
+CONVERSATION
+
+{{TRANSCRIPT}}

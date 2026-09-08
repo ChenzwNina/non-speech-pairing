@@ -57,6 +57,10 @@ writers:
   # The pragmatic multiple-choice options are written by a different family from the rubrics, so
   # a distractor differs from the correct answer in substance rather than in one model's style.
   pragmatic: {model: gpt-5.6-sol, effort: high}
+  # Checks that each speaker stays the same person across a transcript's five turns. A different
+  # family from the writer on purpose: a model asked to find the fault in its own prose tends to
+  # explain why it is not a fault.
+  verifier: {model: claude-opus-5, transport: cli}
 
 # The systems under test. Each is a speech-to-speech model reached over realtime websockets by
 # providers.py, at its own default effort — 2.0's convention, kept.

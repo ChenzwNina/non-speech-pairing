@@ -14,7 +14,25 @@ behind the dataset can be identified, and so a cloning renderer has something to
 | `S1` | `aKw9UnnjRq5scbeeGI7Z` | **B** |
 | `S2` | `s3TPKV1kjDlVtZbl4Ksh` | **A** |
 
-## The mapping runs backwards — read this before wiring a cloning renderer
+## `ElevenLabs_correct_speaker_ref.mp3` — the voice to clone
+
+4.05s, 44.1 kHz mono. One voice, isolated, supplied as the timbre a cloning renderer should
+reproduce.
+
+**One voice is all that is needed.** Dia supplies only the gasp and groan clips, and the
+vocalization is always produced by the speaker of turn 5 — speaker A in every item, because the
+turns run A-B-A-B-A. Speaker B never makes a sound, so its voice never has to be cloned.
+
+**Two things about this file are not recorded, and both are left blank rather than guessed:**
+
+- **Which dataset speaker it is.** Speaker A, `s3TPKV1kjDlVtZbl4Ksh`, is the inference — A
+  produces every vocalization — but that is not stated anywhere and has not been confirmed by
+  listening.
+- **Its transcript.** A cloning renderer conditions on the recording together with the words
+  spoken in it, so without them this file cannot be used reproducibly. This is the same gap the
+  earlier Dia reference had.
+
+## The two-speaker clip, and why its mapping runs backwards
 
 **`S1` is the dataset's speaker B, and `S2` is speaker A.** `make_audio.py` pins
 `A -> s3TPKV1kjDlVtZbl4Ksh` and `B -> aKw9UnnjRq5scbeeGI7Z`, which is the reverse of the tag

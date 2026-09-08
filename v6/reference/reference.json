@@ -7,7 +7,8 @@
     "codec": "mp3",
     "sample_rate": 44100,
     "channels": 1,
-    "transcript": "[S1] Did you end up going to that new café near campus?\n[S2] Yeah, I went yesterday after class. It was actually pretty nice."
+    "transcript": "[S1] Did you end up going to that new café near campus?\n[S2] Yeah, I went yesterday after class. It was actually pretty nice.",
+    "role": "identifies both voices, and documents which tag is which dataset speaker"
   },
   "speakers": [
     {
@@ -28,5 +29,21 @@
     "ref_s3TPKV1kjDlVtZbl4Ksh.mp3",
     "ref_aKw9UnnjRq5scbeeGI7Z.mp3",
     "dia_reference.wav"
-  ]
+  ],
+  "clone_from": {
+    "file": "ElevenLabs_correct_speaker_ref.mp3",
+    "seconds": 4.05,
+    "codec": "mp3",
+    "sample_rate": 44100,
+    "channels": 1,
+    "role": "the timbre a cloning renderer should reproduce",
+    "why_only_one_voice_is_needed": "Dia supplies only the gasp and groan clips, and the vocalization is always produced by the speaker of turn 5 — speaker A in every item, since the turns run A-B-A-B-A. So a cloning renderer never needs speaker B's voice.",
+    "dataset_speaker": null,
+    "voice_id": null,
+    "transcript": null,
+    "unconfirmed": [
+      "Which dataset speaker this is. Speaker A (s3TPKV1kjDlVtZbl4Ksh) is the inference, because A produces every vocalization, but it is not stated and has not been checked by listening.",
+      "What is said in it. Dia conditions on a reference recording together with its transcript, so this is left null rather than guessed — the same gap the previous Dia reference had."
+    ]
+  }
 }

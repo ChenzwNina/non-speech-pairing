@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 speaker consistency check",
+  "description": "Whether each speaker stays the same person across all five turns. Checked because the turn order makes the final turn speaker A, while a plan often puts the news on the other speaker — so the writer can end up moving a role across speakers to get the landing into turn 5.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "consistent",
+    "problem",
+    "turns_involved"
+  ],
+  "properties": {
+    "consistent": {
+      "type": "boolean"
+    },
+    "problem": {
+      "type": "string",
+      "description": "empty when consistent"
+    },
+    "turns_involved": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  }
+}

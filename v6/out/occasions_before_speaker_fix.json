@@ -1,0 +1,1497 @@
+{
+  "planned_at": "2026-09-06T04:20:59+00:00",
+  "run_id": "r20260906T041607Z",
+  "planner": "gpt-5.6-terra",
+  "effort": "default",
+  "prompt_version": "occasion_planner@6707a901a604",
+  "items": [
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_04d",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_04d__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:16:21+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "A speaker releases breath while absorbing an outcome that ends sustained tension, obligation, or waiting; it need not be new information.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "An unexpected, striking fact reaches the speaker in that instant, interrupting ordinary breathing before they can formulate a response.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The final speaker watches the lottery checker update and sees that their ticket has won the top prize after waiting for the result.",
+        "what_lands": "The official lottery checker on the final speaker's phone confirms that their ticket holds the top prize.",
+        "situation_summary": "Two people wait for a lottery result while the ticket holder checks the official results on a phone.",
+        "outline": [
+          "One speaker asks whether the ticket holder has checked the drawing.",
+          "The ticket holder says the official checker is still loading.",
+          "The other speaker notes that all the winning numbers have been posted.",
+          "The other speaker asks the ticket holder to refresh the checker again.",
+          "The phone confirms the top prize; the ticket holder reports what the screen says, with the sound."
+        ],
+        "framing_a": {
+          "vocalization": "sigh",
+          "emotional_framing": "The win lands as the end of a long period of financial pressure and tense waiting.",
+          "speaker_state": "Released from strain, quietly taking it in."
+        },
+        "framing_b": {
+          "vocalization": "gasp",
+          "emotional_framing": "The win lands as an immediate, unbelievable revelation whose scale catches the speaker off guard.",
+          "speaker_state": "Startled by the sudden confirmation."
+        },
+        "why_different": "The sigh treats the result as release from an ongoing burden, while the gasp treats it as a startling new fact.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s034",
+      "seed_label": "joyful",
+      "situation": "I won the lottery, its party time.",
+      "voc_a": "sigh",
+      "voc_b": "gasp",
+      "tag_a": "(sighs)",
+      "tag_b": "(gasps)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_03c",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_03c__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:16:31+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "When something strikes the speaker as amusing, absurd, pleasantly surprising, or socially light; it may be immediate or recounting.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "When the speaker confronts an unwelcome burden, setback, or tiresome demand; it may be immediate or about an ongoing problem.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "The final speaker opens a new message from the employer and learns that, despite encouraging feedback, they must attend another interview next week.",
+        "what_lands": "A just-opened employer message asks the final speaker to schedule an additional interview.",
+        "situation_summary": "A job seeker has completed several interviews and receives a new message about the hiring process.",
+        "outline": [
+          "One speaker asks how the recent job interviews have been going.",
+          "The other says this was their third interview this month.",
+          "The first speaker notes that the feedback has sounded encouraging.",
+          "The final speaker notices a new message from the employer and opens it.",
+          "The message requests another interview next week; the final speaker reacts with the sound and reports it."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The extra interview seems absurdly elaborate but also confirms the employer remains seriously interested.",
+          "speaker_state": "Amused, pleasantly incredulous, and still optimistic."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The extra interview turns a promising process into another exhausting hurdle before any decision arrives.",
+          "speaker_state": "Weary, frustrated, and discouraged by the delay."
+        },
+        "why_different": "The laugh treats the new round as amusing evidence of continued interest, while the groan treats it as a burdensome extension of the process.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s019",
+      "seed_label": "confident",
+      "situation": "I'm looking for a new job. I just had an interview it was the third one this month. I feel really great about my chances and have gotten great feedback!",
+      "voc_a": "laugh",
+      "voc_b": "groan",
+      "tag_a": "(laughs)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_06d",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_06d__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:16:41+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "A sudden, salient piece of news reaches the speaker and interrupts their breath at the moment they register it.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "The speaker confronts or considers something unwelcome, burdensome, or inconvenient, whether newly learned or already understood.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "The final speaker opens a just-arrived travel confirmation and sees that their trip is scheduled for next week.",
+        "what_lands": "A newly delivered confirmation email reveals the trip's date when the final speaker reads it.",
+        "situation_summary": "Two people are checking whether their planned trip has been confirmed and discover it is happening next week.",
+        "outline": [
+          "One speaker mentions that they still have not received the travel confirmation.",
+          "The other asks whether the booking may have gone through anyway.",
+          "The first speaker says the trip matters because next week is otherwise unplanned.",
+          "The other notices a new confirmation email and asks the final speaker to open it.",
+          "The final speaker reads that the trip is next week, with the vocalization placed before their response."
+        ],
+        "framing_a": {
+          "vocalization": "gasp",
+          "emotional_framing": "The confirmation arrives as an exciting surprise: the long-awaited trip is suddenly real and imminent.",
+          "speaker_state": "Startled, delighted, and energized."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The same confirmation makes the trip feel like an unwanted immediate obligation that disrupts the speaker's plans.",
+          "speaker_state": "Dismayed and burdened."
+        },
+        "why_different": "The gasp treats the newly confirmed date as welcome excitement, while the groan treats that same imminent date as an inconvenient demand.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s030",
+      "seed_label": "anticipating",
+      "situation": "I cannot wait for next week. We are going on a trip",
+      "voc_a": "gasp",
+      "voc_b": "groan",
+      "tag_a": "(gasps)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_06a",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_06a__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:16:53+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "At the instant the speaker encounters a sudden, salient surprise, especially an unexpectedly impressive or welcome object.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "When the speaker registers an unwelcome implication, such as someone having spent too much or created an obligation.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "The final speaker opens their brother's wrapped present and sees an unexpectedly lavish gift for the first time.",
+        "what_lands": "The gift itself reaches the final speaker when they unwrap it in front of their brother.",
+        "situation_summary": "A brother brings an unexpectedly nice present to a small family celebration.",
+        "outline": [
+          "Speaker 1 mentions that the family is gathering after work.",
+          "Speaker 2 says they brought something for Speaker 1.",
+          "Speaker 1 says no exchange had been planned.",
+          "Speaker 2 hands over a wrapped box and asks Speaker 1 to open it.",
+          "Speaker 1 opens it, sees the lavish gift, says the same open words, and vocalizes."
+        ],
+        "framing_a": {
+          "vocalization": "gasp",
+          "emotional_framing": "The gift is a startlingly generous surprise, and the speaker is struck by what their brother chose.",
+          "speaker_state": "Delighted and suddenly astonished."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The gift is excessive; the speaker focuses on the cost and the burden their brother has taken on.",
+          "speaker_state": "Uneasy, guilty, or exasperated."
+        },
+        "why_different": "The gasp treats the reveal as welcome astonishment, while the groan treats the same generosity as an imprudent or burdensome expense.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s004",
+      "seed_label": "surprised",
+      "situation": "My brother got me a nice gift. It was a shock in a good day",
+      "voc_a": "gasp",
+      "voc_b": "groan",
+      "tag_a": "(gasps)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_03b",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_03b__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:17:02+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "When something just encountered strikes the speaker as amusing, delightfully surprising, or absurd.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "When the speaker confronts an unwelcome outcome, inconvenience, or shortfall and reacts to it.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The student, who has avoided checking the grade, hears their mother read the newly posted chemistry score: 95 out of 100.",
+        "what_lands": "The exact score, 95 out of 100, reaches the student when their mother reads it from the online grade portal.",
+        "situation_summary": "A mother checks her child's newly posted chemistry-test grade while the child waits nearby.",
+        "outline": [
+          "The student mentions that chemistry grades were due today.",
+          "The mother says she can see the grade portal on her phone.",
+          "The student asks her not to say anything until she finds the result.",
+          "The mother opens the posted test entry and pauses over the number.",
+          "The mother reads the 95; the student responds with the same words, preceded by either sound."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The student takes the unexpectedly high score and the mother's buildup as a pleasing, almost ridiculous surprise.",
+          "speaker_state": "Delighted, surprised, and amused."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The student fixates on the five missing points, making the same score sound like an irritating near-miss.",
+          "speaker_state": "Frustrated and perfectionistic."
+        },
+        "why_different": "The laugh treats 95 as a welcome surprise, whereas the groan appraises it as an unacceptable shortfall.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s057",
+      "seed_label": "proud",
+      "situation": "The time I got my marks back for my chemistry test and I passed with a 95%. My mom was excited.",
+      "voc_a": "laugh",
+      "voc_b": "groan",
+      "tag_a": "(laughs)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_02b",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_02b__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:17:16+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "A person finds something amusing, playful, or warmly absurd, whether experiencing it now or recalling it.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "A person is suddenly confronted with unexpected, startling, or striking information or perception in that instant.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The final speaker watches a newly discovered home video and suddenly sees their father's throw send the ball directly into the camera.",
+        "what_lands": "The unexpected image of the ball rushing into the camera reaches the final speaker through the video their companion has just started.",
+        "situation_summary": "Two people uncover a recording of the final speaker playing catch with their father in their old yard.",
+        "outline": [
+          "Speaker one mentions finding an unlabeled recording among old family files.",
+          "Speaker two asks whether it might show the old house or backyard.",
+          "Speaker one starts the clip and identifies the final speaker and their father.",
+          "The video reaches the familiar catch game, and speaker one lets it continue.",
+          "The ball suddenly fills the camera image; the final speaker reacts with the vocalization and describes the footage."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The recovered clip turns a cherished memory into a warmly funny glimpse of the father's playful, clumsy throw.",
+          "speaker_state": "Amused and affectionately nostalgic."
+        },
+        "framing_b": {
+          "vocalization": "gasp",
+          "emotional_framing": "The recovered clip becomes an abrupt, startling encounter with an unexpectedly vivid moment from the speaker's past.",
+          "speaker_state": "Startled and struck by recognition."
+        },
+        "why_different": "The laugh treats the camera-bound throw as comic play, while the gasp treats its sudden arrival as a startling return of the past.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s022",
+      "seed_label": "sentimental",
+      "situation": "I remember playing catch with my dad. Thinking about it takes me to a special place in time.",
+      "voc_a": "laugh",
+      "voc_b": "gasp",
+      "tag_a": "(laughs)",
+      "tag_b": "(gasps)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_04a",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_04a__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:17:26+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "When the speaker takes in a burden, setback, or daunting implication, whether newly learned or long familiar.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "When unexpected information or an event reaches the speaker in that instant and startles them.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The final speaker learns that a full Antarctica-trip grant exists, but its application deadline is tonight.",
+        "what_lands": "The other speaker reports having just found the grant and its same-night deadline.",
+        "situation_summary": "One speaker is slowly saving for a long-held dream of visiting Antarctica.",
+        "outline": [
+          "Speaker A mentions putting aside money for a future Antarctica trip.",
+          "Speaker B asks how close A is to being able to go.",
+          "Speaker A says the trip still seems far off at their current pace.",
+          "Speaker B says they found an expedition grant and checks its details.",
+          "Speaker A hears it covers the trip but must be applied for tonight; the sound occurs."
+        ],
+        "framing_a": {
+          "vocalization": "sigh",
+          "emotional_framing": "The opportunity turns the distant dream into an immediate, demanding task that the speaker feels weighed down by.",
+          "speaker_state": "Daunted by the deadline and required effort."
+        },
+        "framing_b": {
+          "vocalization": "gasp",
+          "emotional_framing": "The unexpected grant makes the previously distant trip suddenly seem possible.",
+          "speaker_state": "Startled by the opportunity."
+        },
+        "why_different": "The sigh treats the news chiefly as an immediate burden, while the gasp treats it as a surprising opening.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s005",
+      "seed_label": "anticipating",
+      "situation": "I cant wait till I save enough money to take a trip to Antarctica. Its been a dream of mine.",
+      "voc_a": "sigh",
+      "voc_b": "gasp",
+      "tag_a": "(sighs)",
+      "tag_b": "(gasps)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_02c",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_02c__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:17:38+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "A speaker perceives an incongruity, absurdity, or socially awkward outcome and reacts with amusement or rueful disbelief.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "A speaker is immediately confronted with unexpected, consequential information or an event that abruptly exceeds expectation.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The final speaker opens a just-arrived job-offer email during the conversation and reads its job title and salary aloud for the first time.",
+        "what_lands": "The offer's stated salary reaches the final speaker from the newly opened email.",
+        "situation_summary": "Someone who once imagined many careers is waiting to learn whether one practical job will provide enough income.",
+        "outline": [
+          "One speaker asks whether the other has heard back about the application.",
+          "The applicant says the employer asked for references after the interview.",
+          "The other speaker notes that the position would cover rent and bills.",
+          "The other speaker notices a new message and asks the applicant to open it.",
+          "The applicant reads the newly arrived offer aloud, with the vocalization before or within the response."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The offer feels ironically modest beside the applicant's former ambitions, and the speaker treats the turn toward practicality with rueful amusement.",
+          "speaker_state": "Amused, self-aware, and somewhat resigned."
+        },
+        "framing_b": {
+          "vocalization": "gasp",
+          "emotional_framing": "The offer's terms are startlingly better or more consequential than expected, making the practical job suddenly feel like a major development.",
+          "speaker_state": "Startled and newly attentive."
+        },
+        "why_different": "The laugh appraises the offer as an ironic anticlimax, whereas the gasp appraises its newly revealed terms as a startling surprise.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s046",
+      "seed_label": "nostalgic",
+      "situation": "I used to want to have almost every career available. Now I just want a decent paying job.",
+      "voc_a": "laugh",
+      "voc_b": "gasp",
+      "tag_a": "(laughs)",
+      "tag_b": "(gasps)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_05a",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_05a__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:17:50+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "A speaker releases breath while taking in a disappointment, limitation, or effortful reality; it may accompany resigned acceptance of an ongoing problem.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "A speaker encounters an immediately aggravating setback or renewed burden, often just as it becomes clear they must deal with it again.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "During a training chat, the owner watches the dog immediately take food from the counter just after they had said he was improving.",
+        "what_lands": "The dog’s fresh counter-snatching happens visibly in front of the owner, after the other speaker draws attention to him.",
+        "situation_summary": "A dog owner is practicing obedience training and has begun seeing improvement, though counter behavior remains unreliable.",
+        "outline": [
+          "The owner mentions working regularly on the dog’s obedience.",
+          "The other speaker asks which commands have started to work.",
+          "The owner describes recent progress with a cue used around food.",
+          "The other speaker notices the dog moving toward an unattended snack on the counter.",
+          "The dog takes the snack; the owner reacts with the sound and remarks that they thought he had learned that cue."
+        ],
+        "framing_a": {
+          "vocalization": "sigh",
+          "emotional_framing": "The lapse is a discouraging but familiar part of gradual training, which the owner accepts as more work ahead.",
+          "speaker_state": "Patiently disappointed and resigned."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The lapse feels like an exasperating immediate reversal, making the owner focus on the nuisance of having to address it again.",
+          "speaker_state": "Irritated by the renewed problem."
+        },
+        "why_different": "The sigh treats the setback as an accepted part of a long process, whereas the groan treats it as an aggravating recurrence demanding attention.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s050",
+      "seed_label": "proud",
+      "situation": "I recently started training my dog to get him to be more obedient. I have a way to go but I'm getting better.",
+      "voc_a": "sigh",
+      "voc_b": "groan",
+      "tag_a": "(sighs)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_02a",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_02a__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:18:10+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "When something strikes the speaker as absurd, ironic, or incongruous; it can be an immediate reaction or a stance toward an established situation.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "When unexpected, consequential information or an event reaches the speaker suddenly and produces an involuntary intake of breath.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "While checking the portal during the call, the final speaker sees a newly posted coverage decision requiring a medication they previously stopped.",
+        "what_lands": "A live insurer decision appears in the final speaker's patient portal, showing that the covered replacement is an old unsuccessful medication.",
+        "situation_summary": "A long-term psychiatric patient is struggling with an increasingly unreliable regimen while awaiting a coverage decision for a change.",
+        "outline": [
+          "The final speaker describes their medication becoming less dependable and needing a treatment change.",
+          "The other speaker asks whether the clinic or insurer has answered the recent request.",
+          "The final speaker says the clinic submitted the request but the portal has shown nothing yet.",
+          "The other speaker remains on the call while the final speaker refreshes the portal.",
+          "A new decision appears; the final speaker reacts, then notes that the only covered alternative is one they stopped years ago."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The decision reads as a bleakly absurd bureaucratic loop: after decades of treatment, the system offers a medication that already failed.",
+          "speaker_state": "Incredulous, darkly amused, and resigned."
+        },
+        "framing_b": {
+          "vocalization": "gasp",
+          "emotional_framing": "The decision reads as an alarming immediate setback, threatening continuity just as the current regimen is becoming less effective.",
+          "speaker_state": "Startled and apprehensive."
+        },
+        "why_different": "The laugh appraises the result as absurd institutional irony, while the gasp appraises it as an immediate and threatening surprise.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s058",
+      "seed_label": "apprehensive",
+      "situation": "I'm 47 years old and have been taking psychotropic meds for well over 30 years. I'm having more and more trouble with them working properly.",
+      "voc_a": "laugh",
+      "voc_b": "gasp",
+      "tag_a": "(laughs)",
+      "tag_b": "(gasps)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_04b",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_04b__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:18:21+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "When the speaker confronts an unwelcome or tiring fact and settles into accepting it, whether newly learned or long known.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "When unexpected information or a sight reaches the speaker suddenly and interrupts their breath at the moment of discovery.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The parent looks at a newly opened photo on the daughter's phone and discovers the missing cake was taken to a school event.",
+        "what_lands": "A photo, handed over by the other speaker, shows the daughter carrying the cake into the school fair.",
+        "situation_summary": "A parent has spent hours making a cake for her daughter, only to find it gone before she can serve it.",
+        "outline": [
+          "The parent tells a friend that the finished cake has disappeared from the kitchen.",
+          "The friend asks whether anyone has been in the house since it was finished.",
+          "The parent says her daughter left for school early and has not answered messages.",
+          "The friend finds the daughter's phone under a chair, with a new photo notification visible.",
+          "The parent opens the photo, sees the cake at the school fair, and speaks with the vocalization."
+        ],
+        "framing_a": {
+          "vocalization": "sigh",
+          "emotional_framing": "The parent accepts that her work was taken without asking, while recognizing that the cake is at least being used.",
+          "speaker_state": "Weary, disappointed, and resigned."
+        },
+        "framing_b": {
+          "vocalization": "gasp",
+          "emotional_framing": "The parent is abruptly struck by the unexpected discovery that the missing cake has appeared at the school fair.",
+          "speaker_state": "Startled by the new evidence."
+        },
+        "why_different": "The sigh treats the discovery as a burdensome fact to absorb, whereas the gasp marks the photo itself as a startling new revelation.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s026",
+      "seed_label": "furious",
+      "situation": "It took me 5 hours to bake this cake for my daughter, and now it's missing.",
+      "voc_a": "sigh",
+      "voc_b": "gasp",
+      "tag_a": "(sighs)",
+      "tag_b": "(gasps)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_01b",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_01b__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:18:29+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "An unexpectedly fortunate or absurd outcome reaches the speaker and prompts immediate amused disbelief.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "The speaker releases tension while confronting a burden, its easing, or a situation they have been carrying.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "The final speaker sees a just-arrived payment notification after worrying about an imminent bill, while the other speaker waits on the call.",
+        "what_lands": "A banking alert on the final speaker's phone confirms an unexpected payment has cleared.",
+        "situation_summary": "Two friends are checking whether a looming bill can be covered when an unexpected payment arrives.",
+        "outline": [
+          "Speaker 1 asks whether the final speaker has checked the account for a pending payment.",
+          "Speaker 2 says the bill is due soon and the account was short yesterday.",
+          "Speaker 1 mentions the payment was not expected to clear until later.",
+          "Speaker 2 opens the banking app as a new phone alert appears.",
+          "Speaker 2 reads that the payment cleared, with the vocalization immediately before responding."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The cleared payment feels like an absurdly lucky break, and the speaker meets the surprise with amused disbelief.",
+          "speaker_state": "Startled, buoyant, and entertained by the timing."
+        },
+        "framing_b": {
+          "vocalization": "sigh",
+          "emotional_framing": "The cleared payment removes immediate pressure, and the speaker lets out the strain they had been holding.",
+          "speaker_state": "Tense moments earlier, now releasing pressure."
+        },
+        "why_different": "The laugh appraises the payment as comically unexpected good luck, while the sigh appraises it as the lifting of a financial burden.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s016",
+      "seed_label": "excited",
+      "situation": "I'm not a greedy person. But I'm always pretty stoked if I get some free cash. It gives me peace of mind to know that my bills will be paid and I have one less worry in my mind.",
+      "voc_a": "laugh",
+      "voc_b": "sigh",
+      "tag_a": "(laughs)",
+      "tag_b": "(sighs)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_06c",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_06c__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:18:37+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "A surprising fact or perception reaches the speaker abruptly, at the instant they notice or confirm it.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "The speaker confronts an unwelcome implication, burden, or inconvenience of a fact they have just noticed or already know.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "While checking the open bag against a list, the final speaker suddenly sees the supposedly missing last item already packed.",
+        "what_lands": "Visual confirmation from the open bag that the final item is there, completing everything needed for the trip.",
+        "situation_summary": "Two people prepare for a trip while one worries that an essential item was left behind.",
+        "outline": [
+          "One speaker asks whether the packing is finished before departure.",
+          "The other says they have been checking the bag against a list.",
+          "The first speaker names an item they cannot see and suggests it may be missing.",
+          "The final speaker searches a side pocket while the other waits for confirmation.",
+          "The item is found; the final speaker realizes everything needed is packed and makes the sound."
+        ],
+        "framing_a": {
+          "vocalization": "gasp",
+          "emotional_framing": "The final speaker is startled by the unexpected discovery that nothing was forgotten.",
+          "speaker_state": "Suddenly surprised by reassuring confirmation."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The final speaker sees that packing is complete and confronts the now-immediate burden of leaving or carrying the full bag.",
+          "speaker_state": "Resigned about the trip's demands."
+        },
+        "why_different": "The gasp treats the discovery as an unexpected reassuring fact, whereas the groan treats completed packing as an unwelcome practical consequence.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s044",
+      "seed_label": "prepared",
+      "situation": "once I realized I had packed everything I needed",
+      "voc_a": "gasp",
+      "voc_b": "groan",
+      "tag_a": "(gasps)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_02d",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_02d__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:18:47+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "When the speaker finds an incongruity or mistake amusing, including while newly noticing it or recounting it later.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "When unexpected information or a sudden realization reaches the speaker and interrupts them at the moment of discovery.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The final speaker opens last night's digital receipt during the conversation and sees, for the first time, that the tip field is blank.",
+        "what_lands": "The blank tip line on the receipt reaches the final speaker through their phone screen as they open the transaction.",
+        "situation_summary": "After a night of drinking at a bar, someone checks their receipt and discovers they did not leave their waitress a tip.",
+        "outline": [
+          "One speaker asks whether the other made it home after being at the bar.",
+          "The other speaker says they found their phone and card this morning.",
+          "The first speaker suggests checking the bar charge to see what happened.",
+          "The final speaker opens the banking transaction and pulls up the itemized receipt.",
+          "The receipt shows a blank tip line; the final speaker reacts with the sound, then reports what it says."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The discovery becomes a sheepish, absurd mistake the speaker can recognize as darkly comic.",
+          "speaker_state": "Embarrassed but amused by their own oversight."
+        },
+        "framing_b": {
+          "vocalization": "gasp",
+          "emotional_framing": "The discovery becomes an alarming realization that the waitress was left unpaid and the speaker must address it.",
+          "speaker_state": "Startled and concerned by the newly seen mistake."
+        },
+        "why_different": "The laugh treats the discovery as comic self-embarrassment, while the gasp treats it as an urgent and unwelcome realization.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s008",
+      "seed_label": "ashamed",
+      "situation": "I forgot to tip my bar waitress when I was drunk",
+      "voc_a": "laugh",
+      "voc_b": "gasp",
+      "tag_a": "(laughs)",
+      "tag_b": "(gasps)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_03a",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_03a__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:18:58+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "A speaker encounters an incongruous or absurd outcome, often at the instant an unexpected detail makes the mismatch apparent.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "A speaker encounters a setback, inconvenience, or wasted effort and reacts as its cost becomes apparent.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "At the gym entrance, the final speaker reads a newly noticed closing notice after rushing through a meal and protein shake to get there.",
+        "what_lands": "The gym's posted notice, seen by the final speaker at the door, says it closed before they arrived.",
+        "situation_summary": "Two friends are trying to fit in a gym visit after one has hurriedly eaten and prepared for a workout.",
+        "outline": [
+          "One speaker checks whether the other can still make the gym tonight.",
+          "The final speaker says they delayed eating because they wanted time to work out.",
+          "The other speaker notes that the gym's closing time is close.",
+          "The final speaker arrives at the entrance and looks at a notice on the door.",
+          "The final speaker reads that the gym already closed, reports it, and produces the sound."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The rushed preparation and missed session become an absurdly timed mishap the speaker can treat as comic.",
+          "speaker_state": "Amused by the mismatch between effort and outcome."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The same preparation becomes wasted effort because the speaker has been shut out of the workout they planned.",
+          "speaker_state": "Deflated by the immediate setback."
+        },
+        "why_different": "The laugh recasts the closure as ironic bad timing, while the groan treats it as an unwelcome loss of the planned workout.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s018",
+      "seed_label": "prepared",
+      "situation": "I really needed to eat something and workout before the gym closed. I got myself a healthy meal and then drank a protein shake until I was ready.",
+      "voc_a": "laugh",
+      "voc_b": "groan",
+      "tag_a": "(laughs)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_05d",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_05d__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:19:11+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "When tension is released or a person takes in an outcome with relief, resignation, or weary acceptance; it need not be new.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "When an unwelcome outcome or burden hits the speaker in the moment, prompting an immediate physical protest.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The final speaker’s phone delivers the central bank decision that rates will remain unchanged after both speakers have been waiting for it.",
+        "what_lands": "A live notification on the final speaker’s phone says the central bank has left its benchmark rate unchanged.",
+        "situation_summary": "Two people discuss encouraging economic signs while waiting for a rate decision that affects the final speaker’s upcoming mortgage.",
+        "outline": [
+          "Speaker 1 asks whether the final speaker is still following the latest economic figures.",
+          "Speaker 2 mentions busy local businesses and recent hiring without evaluating either.",
+          "Speaker 1 notes that the central bank announcement is due at noon.",
+          "Speaker 2 says their mortgage paperwork is waiting and sets a phone alert for the decision.",
+          "Speaker 2 receives the notification that rates are unchanged, reads it aloud, and vocalizes."
+        ],
+        "framing_a": {
+          "vocalization": "sigh",
+          "emotional_framing": "The unchanged rate feels like a settled, manageable outcome after uncertainty, despite the speaker’s mortgage timing.",
+          "speaker_state": "Released tension; accepting the outcome."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The unchanged rate feels like an immediate setback because the speaker’s mortgage will remain expensive.",
+          "speaker_state": "Frustrated by a newly confirmed burden."
+        },
+        "why_different": "The sigh treats the announcement as closure or tolerable stability, while the groan treats the identical announcement as a costly disappointment.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s056",
+      "seed_label": "hopeful",
+      "situation": "I feeling good about the economy these days.",
+      "voc_a": "sigh",
+      "voc_b": "groan",
+      "tag_a": "(sighs)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_01d",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_01d__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:19:23+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "A mishap or incongruity is encountered and the speaker immediately registers its absurd or socially awkward side.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "The speaker confronts an inconvenience, burden, or setback and releases tension or resignation.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "While turning toward the item their companion has indicated, the final speaker catches a foot on a low shelf and reacts aloud.",
+        "what_lands": "The final speaker physically trips on the shelf at the moment their companion directs them toward the item.",
+        "situation_summary": "Two companions are shopping when one is directed to an item near a low shelf in the aisle.",
+        "outline": [
+          "One shopper says they cannot find the item on their list.",
+          "The other says they saw it in the next aisle.",
+          "The first shopper walks over while scanning the shelves.",
+          "The companion points behind the shopper, toward an item beside a low shelf.",
+          "The shopper catches a foot on the shelf and comments on where the item was placed, with the sound."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The stumble becomes an absurd, mildly embarrassing interruption that the shopper treats as a joke.",
+          "speaker_state": "Amused by their own clumsy mishap."
+        },
+        "framing_b": {
+          "vocalization": "sigh",
+          "emotional_framing": "The stumble makes the shopping trip feel like another needless obstacle created by an awkward aisle layout.",
+          "speaker_state": "Weary and put upon by the inconvenience."
+        },
+        "why_different": "The laugh appraises the trip as comic self-embarrassment, while the sigh appraises it as an aggravating obstacle.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s047",
+      "seed_label": "embarrassed",
+      "situation": "I was out shopping the other day when I tripped over the shelf in the aisle. I was beat red.",
+      "voc_a": "laugh",
+      "voc_b": "sigh",
+      "tag_a": "(laughs)",
+      "tag_b": "(sighs)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_03d",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_03d__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:19:36+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "When the speaker encounters an amusing, absurd, or incongruous development, often at the instant its implications register.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "When the speaker confronts an unwelcome burden, annoyance, or embarrassing prospect; it can follow either new or already-known information.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "The final speaker opens a newly posted school notice and discovers that every student must introduce themselves onstage at the opening assembly.",
+        "what_lands": "A notice on the school portal, pointed out by the other speaker, announcing the required onstage introduction.",
+        "situation_summary": "Two classmates are preparing for school to begin and check the portal for first-day details.",
+        "outline": [
+          "One speaker mentions that school begins in a few days.",
+          "The other asks whether they have checked the first-day schedule.",
+          "The first speaker says they have their supplies and timetable ready.",
+          "The other notices a new portal announcement and asks them to open it.",
+          "The final speaker reads the onstage-introduction requirement aloud; the vocalization occurs as it registers."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The requirement feels comically over-the-top, and the final speaker treats the school's plan as absurdly funny.",
+          "speaker_state": "Amused by the unexpected rule."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The requirement turns the approaching first day into an unwanted public obligation for the final speaker.",
+          "speaker_state": "Dreading the public task."
+        },
+        "why_different": "The laugh appraises the announcement as amusing absurdity, while the groan appraises the same announcement as an unwelcome demand.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s027",
+      "seed_label": "anticipating",
+      "situation": "School is about to start and I can't wait!",
+      "voc_a": "laugh",
+      "voc_b": "groan",
+      "tag_a": "(laughs)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_05b",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_05b__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:19:48+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "When a person takes in an unwelcome or unavoidable circumstance and releases tension, often while accepting it.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "When a person encounters an immediately aggravating setback or prospect and reacts to its unpleasantness.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The final speaker opens a newly arrived restaurant message and discovers, in that instant, that tomorrow's planned visit cannot happen.",
+        "what_lands": "A cancellation notice from the restaurant appears on the final speaker's phone while the other speaker waits.",
+        "situation_summary": "Two people are arranging a visit to the final speaker's favorite restaurant the following day.",
+        "outline": [
+          "One speaker asks whether the final speaker still wants to go out tomorrow.",
+          "The final speaker identifies the restaurant they had planned to visit.",
+          "The other speaker asks whether they have made the reservation yet.",
+          "The final speaker checks a new message from the restaurant before answering.",
+          "The message reveals the restaurant is closed tomorrow; the final speaker reports this, with the sound in the same position."
+        ],
+        "framing_a": {
+          "vocalization": "sigh",
+          "emotional_framing": "The closure becomes a disappointing but accepted change to a plan the speaker had been anticipating.",
+          "speaker_state": "Resigned, letting go of the expected outing."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The closure becomes an irritating disruption that the speaker treats as an especially unwelcome obstacle.",
+          "speaker_state": "Aggravated by the sudden complication."
+        },
+        "why_different": "A sigh frames the news as something to absorb and accept, whereas a groan frames it as a frustrating imposition.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s002",
+      "seed_label": "anticipating",
+      "situation": "I am going to eat at my favorite restaurant tomorrow. I am really looking forward to going.",
+      "voc_a": "sigh",
+      "voc_b": "groan",
+      "tag_a": "(sighs)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_01c",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_01c__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:20:04+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "The speaker notices or shares something amusing, absurd, or playfully fitting; it may be an immediate discovery or a remembered event.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "The speaker confronts, accepts, or acknowledges an effort, setback, or inescapable reality; it can concern something long known.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "The final speaker opens the new office break-room cooler and finds it stocked entirely with free Dr. Pepper after trying not to buy any.",
+        "what_lands": "The final speaker sees the cooler's contents directly as the other speaker holds the door open.",
+        "situation_summary": "A person who has been avoiding Dr. Pepper discovers that their new workplace provides it free in the break room.",
+        "outline": [
+          "Speaker 1 asks how the final speaker's first day at the new office is going.",
+          "Speaker 2 mentions bringing water lately instead of buying soda during the day.",
+          "Speaker 1 says the building has a break room and offers to show them.",
+          "Speaker 2 follows Speaker 1 to the cooler, which Speaker 1 opens for them.",
+          "Speaker 2 sees the cooler full of Dr. Pepper, makes the sound, and says they will never stop drinking it."
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The free supply is a delightfully excessive discovery, and the speaker treats their devotion to the drink as a joke.",
+          "speaker_state": "Amused and pleased by the coincidence."
+        },
+        "framing_b": {
+          "vocalization": "sigh",
+          "emotional_framing": "The free supply makes the speaker concede that their attempt to avoid the drink is unlikely to last.",
+          "speaker_state": "Weary, resigned, and tempted."
+        },
+        "why_different": "The laugh embraces the discovery as comic good fortune, while the sigh treats the same discovery as an unwelcome confirmation of a persistent habit.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s010",
+      "seed_label": "faithful",
+      "situation": "I'll never stop drinking Dr. Pepper.",
+      "voc_a": "laugh",
+      "voc_b": "sigh",
+      "tag_a": "(laughs)",
+      "tag_b": "(sighs)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_01a",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_01a__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:20:21+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "laugh",
+          "when_it_is_produced": "When the speaker finds something immediately amusing, delightfully surprising, or warmly absurd; it can also be an affiliative reaction to news.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "When the speaker registers a burden, longing, resignation, or an unwelcome comparison, whether newly learned or already understood.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "The final speaker looks at the friend's newly received shelter photo and recognizes that the dog is the breed they have always wanted.",
+        "what_lands": "A photo on the friend's phone reveals the adopted dog's breed to the final speaker in that instant.",
+        "situation_summary": "A friend has adopted a dog, and the other speaker discovers it is their preferred breed.",
+        "outline": [
+          "Friend mentions receiving an update from the shelter.",
+          "Other speaker asks whether the adoption went through.",
+          "Friend says they were sent a photo but has not named the dog.",
+          "Friend holds out the phone and asks the other speaker to look.",
+          "The other speaker sees the dog, vocalizes, and says, \"That's a [breed]. You actually got one.\""
+        ],
+        "framing_a": {
+          "vocalization": "laugh",
+          "emotional_framing": "The discovery becomes a warm, playful moment of delighted disbelief and shared excitement about the friend's good fortune.",
+          "speaker_state": "Amused, pleasantly surprised, and socially engaged."
+        },
+        "framing_b": {
+          "vocalization": "sigh",
+          "emotional_framing": "The discovery highlights the speaker's private wish for the same kind of dog and the unfairness of the comparison.",
+          "speaker_state": "Wistful, envious, and accepting."
+        },
+        "why_different": "The laugh treats the news as a welcome, playful surprise, while the sigh treats the same news as a reminder of the speaker's own unmet wish.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s048",
+      "seed_label": "jealous",
+      "situation": "My friend got a new dog. Its my favorite breed so I was a little envious",
+      "voc_a": "laugh",
+      "voc_b": "sigh",
+      "tag_a": "(laughs)",
+      "tag_b": "(sighs)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_06b",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_06b__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:20:33+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "An unexpected, immediately perceived development reaches the speaker and interrupts their breath before they can formulate a response.",
+          "requires_something_to_land_now": true
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "The speaker confronts something unwelcome, excessive, burdensome, or exasperating, whether newly discovered or already understood.",
+          "requires_something_to_land_now": false
+        },
+        "shared_moment": "On Christmas morning, the final speaker opens the last package and recognizes that the gifts collectively cover every item they had mentioned wanting.",
+        "what_lands": "The final speaker sees the contents of the last opened package and connects it to the other gifts already under the tree.",
+        "situation_summary": "A person receives a Christmas collection that fulfills everything they had hoped to get.",
+        "outline": [
+          "Speaker 1 asks whether the final speaker has opened the presents yet.",
+          "Speaker 2 says they have opened several but were told to save one package.",
+          "Speaker 1 explains that the packages were chosen from things the final speaker had mentioned over time.",
+          "Speaker 2 opens the last package and notices it completes the collection.",
+          "Speaker 2 sees the final item and says it is every thing they mentioned wanting, with the sound first."
+        ],
+        "framing_a": {
+          "vocalization": "gasp",
+          "emotional_framing": "The speaker is struck by the unexpected completeness and generosity of the Christmas gifts.",
+          "speaker_state": "Astonished by a welcome realization."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The speaker sees the gifts as excessive and feels dismayed or embarrassed that so much was spent on them.",
+          "speaker_state": "Overwhelmed by unwanted extravagance."
+        },
+        "why_different": "The gasp treats the discovery as a wonderful surprise, while the groan treats the same generosity as uncomfortable excess.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s043",
+      "seed_label": "joyful",
+      "situation": "On christmas morning last year, i got everything i wanted.",
+      "voc_a": "gasp",
+      "voc_b": "groan",
+      "tag_a": "(gasps)",
+      "tag_b": "(groans)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_04c",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_04c__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:20:45+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "When the speaker takes in an unwelcome problem and exhales into the burden of dealing with it; it need not be newly learned.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "gasp",
+          "when_it_is_produced": "When the speaker suddenly encounters startling information or a visible event and reacts at the instant it registers.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "The final speaker sees her daughter open her mouth and, for the first time, notices that a tooth is broken.",
+        "what_lands": "The visible broken tooth reaches the final speaker when the daughter opens her mouth after the other caregiver asks her to show it.",
+        "situation_summary": "Two caregivers deal with their daughter after she damages a tooth during play.",
+        "outline": [
+          "One caregiver mentions that the daughter had a fall while playing.",
+          "The final speaker asks whether she seems hurt or needs attention.",
+          "The other caregiver says she has stopped crying but will not say much.",
+          "The other caregiver brings the daughter over and asks her to open her mouth for the final speaker.",
+          "The daughter reveals the tooth; the final speaker vocalizes, then says the same practical next words."
+        ],
+        "framing_a": {
+          "vocalization": "sigh",
+          "emotional_framing": "The discovery becomes another difficult family problem the speaker immediately settles in to handle.",
+          "speaker_state": "Burdened, composed, and preparing to act."
+        },
+        "framing_b": {
+          "vocalization": "gasp",
+          "emotional_framing": "The discovery becomes a sudden, alarming visual realization that interrupts the speaker before they respond.",
+          "speaker_state": "Startled and sharply attentive."
+        },
+        "why_different": "The sigh appraises the injury as an unwelcome responsibility, while the gasp marks immediate shock at seeing its extent.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s020",
+      "seed_label": "devastated",
+      "situation": "when my daughter broke her tooth",
+      "voc_a": "sigh",
+      "voc_b": "gasp",
+      "tag_a": "(sighs)",
+      "tag_b": "(gasps)"
+    },
+    {
+      "run_id": "r20260906T041607Z",
+      "item_id": "v6_05c",
+      "condition": "all",
+      "task_type": "occasion_plan",
+      "task_id": "v6_05c__all__occasion_plan",
+      "stimulus_audio_path": "",
+      "prompt_version": "occasion_planner@6707a901a604",
+      "model_provider": "openai",
+      "model_name": "gpt-5.6-terra",
+      "model_version": "",
+      "settings": {
+        "effort": "default"
+      },
+      "seed": null,
+      "timestamp": "2026-09-06T04:20:59+00:00",
+      "raw_response_path": "",
+      "parsed": {
+        "production_condition_a": {
+          "vocalization": "sigh",
+          "when_it_is_produced": "When a speaker faces a disappointment or inconvenience and exhales in resignation; it may concern something just learned or already understood.",
+          "requires_something_to_land_now": false
+        },
+        "production_condition_b": {
+          "vocalization": "groan",
+          "when_it_is_produced": "When a speaker is freshly confronted with an irritating or unpleasant setback, often at the instant its consequence becomes clear.",
+          "requires_something_to_land_now": true
+        },
+        "shared_moment": "At the locked Dairy Queen door, the final speaker reads the posted closing notice after expecting to buy Blizzards.",
+        "what_lands": "The final speaker sees the store’s closed notice while checking the door; the companion has just asked them to look.",
+        "situation_summary": "Two companions arrive for Blizzards, but the person checking the entrance discovers the shop has already closed.",
+        "outline": [
+          "One speaker suggests stopping for a Blizzard after a long day.",
+          "The other says they have been thinking about one all afternoon.",
+          "They arrive and notice the parking lot is nearly empty.",
+          "One speaker asks the other to check the door because the hours are hard to see.",
+          "The checker finds the locked door and closing notice, vocalizes, then reports what they see."
+        ],
+        "framing_a": {
+          "vocalization": "sigh",
+          "emotional_framing": "The closure is an unfortunate letdown the final speaker accepts, with weary resignation rather than blame.",
+          "speaker_state": "Disappointed, resigned, and ready to move on."
+        },
+        "framing_b": {
+          "vocalization": "groan",
+          "emotional_framing": "The closure feels like an especially aggravating thwarting of a wanted treat after making the trip.",
+          "speaker_state": "Freshly annoyed and thwarted."
+        },
+        "why_different": "The sigh treats the closure as a disappointment to accept, whereas the groan treats it as an irritating, immediately objectionable setback.",
+        "feasible": true,
+        "why_not": ""
+      },
+      "status": "ok",
+      "errors": [],
+      "seed_id": "s035",
+      "seed_label": "disappointed",
+      "situation": "Yesterday, I was really craving Dairy Queen. So, I got in my car and went to grab some Blizzards. When I got there, they were closed.",
+      "voc_a": "sigh",
+      "voc_b": "groan",
+      "tag_a": "(sighs)",
+      "tag_b": "(groans)"
+    }
+  ]
+}

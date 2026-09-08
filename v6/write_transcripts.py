@@ -98,6 +98,31 @@ def version(turns: list[dict], tag: str | None) -> list[dict]:
              "text": tidy(t["text"].replace(MARKER, tag or ""))} for t in turns]
 
 
+def check_speakers(turns: list[dict], args) -> tuple[bool, str, list[int]]:
+    """Claude reads the draft and says whether either speaker changed identity partway."""
+    if args.no_verify:
+        return True, "", []
+    template, _version = K.prompt("speaker_consistency_verifier")
+    body = "\n".join(f"{t['turn']} {t['speaker']}: {t['text'].replace(MARKER, '').strip()}"
+                      for t in turns)
+    K.guard(f"{args.verifier_transport} {args.verifier}")
+    if args.verifier_transport == "cli":
+        raw = T.ask_claude(args.verifier, "You return valid JSON only.",
+                           K.fill(template, TRANSCRIPT=body))
+    else:
+        import anthropic
+        reply = anthropic.Anthropic(api_key=T.key("ANTHROPIC_API_KEY")).messages.create(
+            model=args.verifier, max_tokens=700, system="You return valid JSON only.",
+            messages=[{"role": "user", "content": K.fill(template, TRANSCRIPT=body)}])
+        raw = "".join(b.text for b in reply.content
+                      if getattr(b, "type", "") == "text").strip()
+    parsed = K.json_object(raw)
+    if parsed is None or K.schema_errors("speaker_check", parsed):
+        # A verifier that cannot be parsed must not silently pass a draft it may have failed.
+        return False, f"the speaker check returned nothing usable: {raw[:120]!r}", []
+    return parsed["consistent"], parsed["problem"], parsed["turns_involved"]
+
+
 def write_one(plan: dict, args, run: str) -> dict:
     parsed = plan["parsed"]
     template, version_stamp = K.prompt("transcript_writer")
@@ -121,6 +146,11 @@ def write_one(plan: dict, args, run: str) -> dict:
                          K.strict(K.schema("transcript")), "transcript", args.effort,
                          MAX_TOKENS)
         found = problems(result)
+        if not found:
+            consistent, problem, where = check_speakers(result["turns"], args)
+            if not consistent:
+                found = [f"a speaker changes identity partway through (turns {where}): "
+                         f"{problem}"]
         if found:
             prompt = ("Write the dialogue as JSON.\n\nYour previous answer was rejected:\n"
                       + "\n".join(f"- {line}" for line in found)
@@ -148,6 +178,8 @@ def write_one(plan: dict, args, run: str) -> dict:
             "how_a_lands": result["how_a_lands"], "how_b_lands": result["how_b_lands"],
             "still_open_without_sound": result["still_open_without_sound"],
             "attempts": attempt, "run_id": run,
+            "speaker_check": {"verifier": args.verifier if not args.no_verify else None,
+                              "consistent": True},
             "plan_prompt_version": plan["prompt_version"],
             "writer_prompt_version": version_stamp,
             "writer": args.writer,
@@ -198,10 +230,23 @@ def main() -> int:
     parser.add_argument("--effort", default=None,
                         help="reasoning effort; omitted by default, so the model runs at its "
                              "own. 2.0's convention: nothing in the pipeline sets it.")
+    parser.add_argument("--verifier", help="default comes from writers.verifier")
+    parser.add_argument("--verifier-transport", choices=["cli", "api"])
+    parser.add_argument("--no-verify", action="store_true",
+                        help="skip the speaker-consistency check")
     parser.add_argument("--run-id")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     K.set_dry_run(args.dry_run)
+
+    try:
+        config = K.load_config()
+    except K.ConfigError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+    verifier = config["writers"].get("verifier", {})
+    args.verifier = args.verifier or verifier.get("model", "claude-opus-5")
+    args.verifier_transport = args.verifier_transport or verifier.get("transport", "cli")
 
     if not PLANS.exists():
         print(f"error: no plans at {PLANS}; run plan_occasions.py first", file=sys.stderr)
@@ -246,7 +291,8 @@ def main() -> int:
             continue
         by_id[item["item_id"]] = item
         print(f"  {item['item_id']} · {item['voc_a']}/{item['voc_b']} · "
-              f"{item['marker_position']:18} · attempt {item['attempts']}", flush=True)
+              f"{item['marker_position']:18} · attempt {item['attempts']}"
+              + ("" if args.no_verify else " · speakers ok"), flush=True)
         ordered = sorted(by_id.values(), key=lambda r: order.get(r["item_id"], 999))
         K.write_json(TRANSCRIPTS, {"written_at": K.now(), "run_id": run,
                                    "writer": args.writer, "effort": args.effort or "default",
