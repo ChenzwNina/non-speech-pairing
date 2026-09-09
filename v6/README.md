@@ -429,7 +429,9 @@ coverage denominator and out of the accuracy.
   frozen perception set, pair construction, parsing, scoring, 116 tests — but nothing yet asks a
   model anything. `providers.py` already speaks to all four families over realtime websockets,
   so what is missing is wiring rather than new machinery.
-- **The tone exclusions have not been run.** `interpretations` and `response_guides` are written for all 24 items and both conditions — 125 readings, one guide each — leaving `tone_exclusions` as the only annotation still unspent.
+- **The annotations are complete.** All three kinds cover all 24 items and both conditions:
+  125 readings, one guide each, and 48 tone-exclusion records. The ten items rewritten for
+  speaker consistency had their annotations rewritten after the rewrite, not before.
 - **`groan` splits between two readings.** The planner marked it as needing something to land
   in the moment 6 times out of 12 — bodily pain needs a physical event in the scene, a stance
   toward something known does not. Both are legitimate; whether the split matters depends on
