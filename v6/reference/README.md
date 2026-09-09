@@ -1,4 +1,41 @@
-# Voice reference
+# Voice references
+
+Three clips, three jobs. None is a stimulus — nothing in `out/` is derived from them.
+
+| File | Job |
+| --- | --- |
+| `ElevenLabs_ref_single_speaker.mp3` | **what a cloning renderer clones from** — one voice, speaker A, transcript recorded |
+| `ElevenLabs_correct_speaker_ref.mp3` | the timbre a generated clip has to match, for a verifier to compare against |
+| `ElevenLabs_ref.mp3` | documents which voice id is which dataset speaker |
+
+## ⚠ `S1` means a different person in different files
+
+| File | S1 | S2 |
+| --- | --- | --- |
+| `ElevenLabs_ref_single_speaker.mp3` | **A** | **A** (one voice throughout) |
+| `ElevenLabs_ref.mp3` | **B** | **A** |
+
+The numbering is per-file and does not carry over. Reading `S1` without checking which file it
+came from gets it backwards, and a cloning renderer wired that way produces the wrong voice —
+which will not fail, only sound like someone else.
+
+## `ElevenLabs_ref_single_speaker.mp3` — the clone source
+
+6.61s, 44.1 kHz mono, one voice throughout: dataset speaker A, `s3TPKV1kjDlVtZbl4Ksh`.
+
+```
+[S1] Yeah, I went yesterday after class. It was actually pretty nice.
+[S2] We had a cup of coffee and chat a lot about what recently happened.
+```
+
+**One voice is the point.** Dia only ever produces speaker A's gasps and groans — the turns run
+A-B-A-B-A, so the vocalization always falls in A's turn 5, and speaker B never makes a sound. A
+reference carrying two voices lets a cloning renderer pick the wrong one or invent a second; one
+voice under both tags leaves it nothing to get wrong.
+
+The first line is verbatim what A says in the two-speaker clip, which is how the voice was
+identified.
+
 
 `ElevenLabs_ref.mp3` — 6.84s, 44.1 kHz mono, rendered by ElevenLabs with the two voice ids the
 dataset uses. Not a stimulus; nothing in `out/` is derived from it. It exists so the voices

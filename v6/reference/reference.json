@@ -45,7 +45,34 @@
     "why_speaker_a": "A produces every vocalization — the turns run A-B-A-B-A, so the sound always falls in turn 5, which is A's. Speaker B never makes one, so B's voice never has to be matched."
   },
   "clone_source": {
-    "file": "ElevenLabs_ref.mp3",
-    "why": "A cloning renderer conditions on a recording together with the words spoken in it, and this is the clip whose transcript is recorded. Its two speakers are labelled S1 and S2 — see mapping_warning, they run opposite to the dataset's A and B."
+    "file": "ElevenLabs_ref_single_speaker.mp3",
+    "seconds": 6.61,
+    "codec": "mp3",
+    "sample_rate": 44100,
+    "channels": 1,
+    "voice": "one voice throughout — dataset speaker A, s3TPKV1kjDlVtZbl4Ksh",
+    "transcript": "[S1] Yeah, I went yesterday after class. It was actually pretty nice.\n[S2] We had a cup of coffee and chat a lot about what recently happened.",
+    "lines": [
+      {
+        "tag": "S1",
+        "text": "Yeah, I went yesterday after class. It was actually pretty nice."
+      },
+      {
+        "tag": "S2",
+        "text": "We had a cup of coffee and chat a lot about what recently happened."
+      }
+    ],
+    "why_a_single_voice": "Dia only ever produces speaker A's gasps and groans, because the turns run A-B-A-B-A and the vocalization always falls in A's turn 5. A reference carrying two voices lets a cloning renderer pick the wrong one or invent a second; one voice under both tags leaves it nothing to get wrong.",
+    "tag_numbering_differs_from_the_two_speaker_clip": "In THIS file S1 is speaker A. In ElevenLabs_ref.mp3 S1 is speaker B and S2 is A. The numbering is per-file and does not carry over — reading 'S1' without checking which file it came from gets it backwards. The first line here is verbatim what A says in the two-speaker clip, which is how the voice was identified."
+  },
+  "speaker_mapping_by_file": {
+    "ElevenLabs_ref_single_speaker.mp3": {
+      "S1": "A",
+      "S2": "A"
+    },
+    "ElevenLabs_ref.mp3": {
+      "S1": "B",
+      "S2": "A"
+    }
   }
 }

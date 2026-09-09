@@ -3472,7 +3472,7 @@
             "which_conditions": "only the conditions whose vocalization is gasp or groan; laugh and sigh clips stay as they are",
             "must_hold": "the speech has to be the same samples as the elevenlabs set. Only the clip spliced into turn 5 differs, and that is what makes a difference between the two sets attributable to the sound rather than to voice or pacing.",
             "config": "eval_config.yaml renderers.dia_voc",
-            "clone_source": "reference/ElevenLabs_ref.mp3, whose transcript is recorded in reference/reference.json — a cloning renderer needs both.",
+            "clone_source": "reference/ElevenLabs_ref_single_speaker.mp3 — one voice throughout (speaker A), transcript in reference/reference.json. Note that S1 means speaker A in that file and speaker B in ElevenLabs_ref.mp3; the numbering is per-file.",
             "voice_match_check": "reference/ElevenLabs_correct_speaker_ref.mp3 is speaker A (s3TPKV1kjDlVtZbl4Ksh), the timbre a generated clip has to match — the only one it ever has to, since the turns run A-B-A-B-A and the vocalization always falls in A's turn 5. Worth verifying, because a clip in a different voice makes the splice audible and a model then reacts to a speaker change rather than to the vocalization."
           }
         }
