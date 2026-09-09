@@ -1,1 +1,35 @@
-{"item_id": "v6_05c", "condition": "condition_a", "vocalization": "sigh", "responder": "B", "guides": [{"interpretation_index": 1, "response_function": "Share the disappointment about the missed treat", "required_content": ["Registers the letdown as felt by both of them, not just A", "Refers to the Blizzard they had both been looking forward to", "Refers to the Blizzard they had both been looking forward to"], "must_avoid": ["Treating the closed door as fine or unimportant", "Immediately pivoting to a substitute plan before acknowledging the letdown"], "example": "Oh no. I had that thing built up in my head all afternoon.", "note": ""}, {"interpretation_index": 2, "response_function": "Accept the outcome and let the plan go", "required_content": ["Agrees nothing can be done tonight given the closing time", "Lets the outing end rather than reopening it", "Lets the outing end rather than reopening it"], "must_avoid": ["Proposing workarounds, other locations, or arguing with the posted hours", "Pressing A for more detail about the notice or the door"], "example": "Yeah, that's that then. Nine's earlier than I thought. Let's just head home.", "note": ""}, {"interpretation_index": 3, "response_function": "Commiserate about the whole day, not just this", "required_content": ["Connects the closed door to how draining the day has already been", "Signals solidarity with A about the day overall", "Signals solidarity with A about the day overall"], "must_avoid": ["Treating this as an isolated small inconvenience with no wider context", "Turning it into probing questions about A's day"], "example": "Of course it is. That's exactly how today's been going. What a day to cap off.", "note": ""}]}
+{
+  "item_id": "v6_05c",
+  "condition": "condition_a",
+  "vocalization": "sigh",
+  "responder": "B",
+  "guides": [
+    {
+      "interpretation_index": 1,
+      "response_function": "Shares the letdown; treats the closed store as a real disappointment",
+      "required_content": ["Registers missing out as a genuine bummer for both of them, not neutral information"],
+      "acceptable_variations": ["Names their own craving going unmet", "Floats somewhere else or another night"],
+      "must_avoid": ["Treating it as no big deal, or brightly moving on as if nothing was lost"],
+      "example": "Ah, no. I had my heart set on that.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 2,
+      "response_function": "Accepts that it's over and lets the plan close",
+      "required_content": ["Takes the closure as settled — doesn't push to verify, wait, or get in anyway"],
+      "acceptable_variations": ["Suggests heading home", "Mentions coming back another time without pressing on tonight"],
+      "must_avoid": ["Insisting on checking other doors, knocking, or arguing the hours must be wrong"],
+      "example": "That's that, then. Let's head back.",
+      "note": "Overlaps with 1 in acknowledging the loss; differs in that pressing for a fix here misreads the sound."
+    },
+    {
+      "interpretation_index": 3,
+      "response_function": "Acknowledges this landing on top of an already draining day",
+      "required_content": ["Treats the locked door as one more thing on a bad day, not an isolated setback"],
+      "acceptable_variations": ["Commiserates about the day itself", "Offers something easy instead — home, something in the freezer"],
+      "must_avoid": ["Responding only to the ice cream as if the day behind it weren't part of it"],
+      "example": "Of course it is. Today's been determined, hasn't it.",
+      "note": ""
+    }
+  ]
+}

@@ -141,8 +141,16 @@ def write_one(item: dict, condition: str, kind: str, model: str, transport: str,
                 if parsed.get("responder") != responder(item):
                     errors = [f"responder is {parsed.get('responder')!r}, expected "
                               f"{responder(item)!r} — the speaker who did not make the sound"]
-                elif [g["interpretation_index"] for g in parsed["guides"]] != [1, 2, 3]:
-                    errors = ["guides must be indexed 1, 2, 3 in order"]
+                else:
+                    # One guide per interpretation, indexed in order. The count is whatever the
+                    # interpretation pass found supportable — checking against a fixed three
+                    # rejected the writer for correctly writing fewer.
+                    wanted = len(interpretations["acceptable_interpretations"])
+                    got = [g["interpretation_index"] for g in parsed["guides"]]
+                    if got != list(range(1, wanted + 1)):
+                        errors = [f"guides are indexed {got}; there are {wanted} "
+                                  f"interpretation(s), so they must be "
+                                  f"{list(range(1, wanted + 1))} in order"]
             if not errors:
                 return K.provenance(
                     run=run, item_id=item["item_id"], condition=condition, task_type=kind,

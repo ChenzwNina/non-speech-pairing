@@ -1,18 +1,18 @@
 {
-  "written_at": "2026-09-08T20:57:22+00:00",
+  "written_at": "2026-09-09T05:40:36+00:00",
   "writer": "claude-opus-5",
   "transport": "cli",
-  "prompt_version": "interpretation_writer@a4266a6b5027",
+  "prompt_version": "interpretation_writer@7651acd01a05",
   "transcripts": "out/transcripts.json",
   "items": [
     {
-      "run_id": "r20260908T205639Z",
+      "run_id": "r20260909T053836Z",
       "item_id": "v6_01a",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_01a__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -20,7 +20,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:56:48+00:00",
+      "timestamp": "2026-09-09T05:38:45+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01a__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_01a",
@@ -28,32 +28,35 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Delight at the photo showing the puppy caught mid-mischief, exactly as predicted.",
-            "interactional_function": "Signals A has opened the picture and invites B to share the amusement before describing it."
+            "reading": "Delight at the photo showing the puppy already chewing a slipper.",
+            "interactional_function": "Registers receipt of the picture and shares the reaction before describing it.",
+            "supported_by": "\"Forwarding it now\" / \"got Mara's slipper in her mouth already\""
           },
           {
-            "reading": "Fond, knowing recognition that the puppy's chaos is already confirming A's running corgi campaign.",
-            "interactional_function": "Frames the slipper-chewing as endearing rather than a problem, and lightly vindicates A's earlier pitch."
+            "reading": "Amused that the puppy is already causing trouble, faster than expected.",
+            "interactional_function": "Frames the slipper-stealing as predictable puppy mischief rather than a complaint.",
+            "supported_by": "\"already made it through every room\" / \"already\" in turn 5"
           },
           {
-            "reading": "Affectionate amusement mixed with mock sympathy for Mara, whose apartment is being systematically claimed.",
-            "interactional_function": "Softens the report of destruction into a joke both can laugh at rather than a complaint."
+            "reading": "Vindicated amusement that the corgi he kept recommending is behaving exactly as corgis do.",
+            "interactional_function": "Ties the photo back to his own campaign for this breed.",
+            "supported_by": "\"The exact kind I keep sending you\""
           }
         ],
-        "shared_implication": "A finds the puppy's behaviour charming and is sharing that pleasure; the sound is not disapproval, alarm, mockery of B, or awkwardness."
+        "shared_implication": "The speaker is warmly entertained by the puppy's behavior in the photo; the sound is not disapproval, worry, or sympathy for Mara's slipper."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205648Z",
+      "run_id": "r20260909T053845Z",
       "item_id": "v6_01a",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_01a__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -61,7 +64,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:57:05+00:00",
+      "timestamp": "2026-09-09T05:39:07+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01a__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_01a",
@@ -69,32 +72,30 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Fond exasperation at the puppy's already-predictable mischief",
-            "interactional_function": "Frames the slipper as inevitable, endearing chaos and invites shared amusement rather than concern"
+            "reading": "Fond exasperation at the puppy predictably causing trouble already — chewing a slipper on day one.",
+            "interactional_function": "Frames the slipper as inevitable puppy mischief rather than a real problem, inviting shared amusement.",
+            "supported_by": "\"already made it through every room\"; \"slipper in her mouth already\""
           },
           {
-            "reading": "Rueful acknowledgment that the corgi A kept campaigning for is a handful in practice",
-            "interactional_function": "Softly concedes A's own role in the outcome before reporting it, hedging the earlier enthusiasm"
-          },
-          {
-            "reading": "Weary sympathy for Mara's belongings, mixed with affection for the dog",
-            "interactional_function": "Presents the news as the opening of an ongoing saga, keeping the tone light and knowing"
+            "reading": "Wistful longing — A has wanted this exact dog for ages and Mara is the one who has it.",
+            "interactional_function": "Colors the report of the picture with envy, marking A as the one still wanting rather than merely reporting news.",
+            "supported_by": "\"The exact kind I keep sending you\"; \"Mara finally brought home a corgi\""
           }
         ],
-        "shared_implication": "A is not disapproving of the dog or reporting a real problem; the enthusiasm stands, only tempered by the mess it entails."
+        "shared_implication": "A is warmly invested in this puppy; the sound is not disapproval, irritation at Mara, or a report of anything genuinely bad."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205459Z",
+      "run_id": "r20260909T053419Z",
       "item_id": "v6_01b",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_01b__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -102,7 +103,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:55:07+00:00",
+      "timestamp": "2026-09-09T05:34:38+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01b__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_01b",
@@ -110,32 +111,35 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Delight tinged with disbelief at the money arriving exactly when and as needed",
-            "interactional_function": "Marks the coincidence as remarkable and concedes B's advice was right"
+            "reading": "Relief that the reimbursement landed in time to cover the bill due today.",
+            "interactional_function": "Releases the worry built up over the previous turns and closes the problem.",
+            "supported_by": "\"due today\", \"hoping the reimbursement would clear first\", \"There it is.\""
           },
           {
-            "reading": "Relief releasing the worry about covering the electric bill",
-            "interactional_function": "Signals the problem is resolved before the words confirm it"
+            "reading": "Amusement at the tidy coincidence of the transfer matching the bill to the cent.",
+            "interactional_function": "Flags the outcome as almost too neat, inviting B to share the small absurdity.",
+            "supported_by": "\"It cleared for exactly the bill amount.\""
           },
           {
-            "reading": "Wry amusement at how absurdly precise the timing and amount turned out",
-            "interactional_function": "Invites B to share the joke about a too-neat outcome"
+            "reading": "Good-natured concession that B's suggestion to look again was right.",
+            "interactional_function": "Softens A's earlier certainty that nothing had arrived and credits B's prompt.",
+            "supported_by": "\"It still says pending\" then \"Check once more\" then \"There it is.\""
           }
         ],
-        "shared_implication": "The speaker has found the money and the worry is over; the sound is not frustration, bad news, or continued anxiety."
+        "shared_implication": "The laugh marks good news arriving on time; it is not frustration, disbelief that the money is still missing, or anxiety about the bill."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205507Z",
+      "run_id": "r20260909T053438Z",
       "item_id": "v6_01b",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_01b__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -143,7 +147,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:55:22+00:00",
+      "timestamp": "2026-09-09T05:34:53+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01b__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_01b",
@@ -151,32 +155,30 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Relief as held tension releases on seeing the reimbursement finally posted.",
-            "interactional_function": "Marks the worry of the last four turns as resolved before delivering the good news."
+            "reading": "Relief that the reimbursement landed in time to cover the bill due today",
+            "interactional_function": "Discharges the worry raised in turn 1 and closes the problem before the good news is stated",
+            "supported_by": "\"bill's due today\", \"hoping the reimbursement would clear\", \"There it is\""
           },
           {
-            "reading": "Weary bracing before looking again, expecting the same 'pending' disappointment.",
-            "interactional_function": "Signals reluctant compliance with B's suggestion, setting up the reversal that follows."
-          },
-          {
-            "reading": "Relief mixed with fatigue at living this close to the margin, covered to the dollar.",
-            "interactional_function": "Keeps the good news qualified, inviting B to hear strain rather than celebration."
+            "reading": "Relief edged with weariness that the money covers the bill and nothing more",
+            "interactional_function": "Tempers the good news, marking the reprieve as narrow rather than a win",
+            "supported_by": "\"It cleared for exactly the bill amount\""
           }
         ],
-        "shared_implication": "The money genuinely mattered and the wait was stressful; the sound is not indifference, not dismissal of B's advice, and not uncomplicated triumph."
+        "shared_implication": "The speaker confirms the money arrived and the immediate worry is over; the sound is not disappointment, bad news, or continued uncertainty."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205621Z",
+      "run_id": "r20260909T053808Z",
       "item_id": "v6_01c",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_01c__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -184,7 +186,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:56:30+00:00",
+      "timestamp": "2026-09-09T05:38:18+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01c__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_01c",
@@ -192,32 +194,35 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Delighted, self-aware amusement at how much Dr. Pepper the points total reveals he drinks",
-            "interactional_function": "Turns the reward into a joke about his own habit, inviting B to share the punchline"
+            "reading": "Delight at the unexpected windfall of a free case from points he didn't know he had",
+            "interactional_function": "Receipts B's news as good news and sets up the mock-vow that follows",
+            "supported_by": "\"enough points for a free case\" followed by \"never stopping drinking Dr. Pepper\""
           },
           {
-            "reading": "Pleased surprise at the unexpected payoff for something he was already doing anyway",
-            "interactional_function": "Registers the good news warmly and rewards B for having looked it up"
+            "reading": "Self-aware amusement at how much Dr. Pepper he must have bought to earn that many points",
+            "interactional_function": "Flags his own habit as the joke, pre-empting any teasing from B",
+            "supported_by": "\"You've got enough points\" — earned by the stops he keeps making after work"
           },
           {
-            "reading": "Amused mock-defiance, half-joking about a habit he knows is excessive",
-            "interactional_function": "Pre-empts any teasing by owning the excess before B can point it out"
+            "reading": "Playful exaggeration, treating the reward as reason enough to commit for life",
+            "interactional_function": "Marks \"never stopping\" as a joke rather than a literal declaration",
+            "supported_by": "\"I'm never stopping drinking Dr. Pepper\" as a response to one free case"
           }
         ],
-        "shared_implication": "The speaker welcomes the news and treats his own consumption as funny; he is not annoyed, embarrassed, dismissive, or regretful about the habit or B's checking."
+        "shared_implication": "The speaker welcomes the news and is in on the joke about his own habit; the sound is not embarrassment, regret, or dismissal."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205630Z",
+      "run_id": "r20260909T053818Z",
       "item_id": "v6_01c",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_01c__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -225,7 +230,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:56:39+00:00",
+      "timestamp": "2026-09-09T05:38:36+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01c__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_01c",
@@ -233,32 +238,35 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Rueful self-recognition that the reward proves how much Dr. Pepper he drinks.",
-            "interactional_function": "Frames the good news as evidence of a habit he can't escape, softening the admission."
+            "reading": "Mock resignation that a free case guarantees the habit continues, delivered self-deprecatingly.",
+            "interactional_function": "Frames the good news as a joke at the speaker's own expense, inviting shared amusement.",
+            "supported_by": "\"enough points for a free case\" / \"I'm never stopping drinking Dr. Pepper\""
           },
           {
-            "reading": "Mock defeat at being pulled deeper into a habit he half-jokingly wanted to quit.",
-            "interactional_function": "Plays up surrender for comic effect, inviting B to share the joke."
+            "reading": "Genuine weariness at being unable to quit something they keep buying.",
+            "interactional_function": "Recasts the reward as a mixed blessing and concedes the habit rather than celebrating.",
+            "supported_by": "\"never stopping\" as an admission after learning the reward"
           },
           {
-            "reading": "Pleased resignation — happy about the free case while conceding the habit is permanent.",
-            "interactional_function": "Accepts B's news while wryly hedging the enthusiasm as inevitability rather than choice."
+            "reading": "Happy capitulation — the free case settles it, and the speaker gives in willingly.",
+            "interactional_function": "Accepts B's news as the deciding argument, closing the topic with a verdict.",
+            "supported_by": "\"You've got enough points\" followed by \"I'm never stopping\""
           }
         ],
-        "shared_implication": "The speaker is not annoyed at B or rejecting the news; he wryly concedes his own Dr. Pepper habit is entrenched and now reinforced."
+        "shared_implication": "The sigh concedes continued attachment to Dr. Pepper; it is not disappointment in the news, indifference to the points, or an intention to quit."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012544Z",
+      "run_id": "r20260909T053701Z",
       "item_id": "v6_01d",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_01d__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -266,7 +274,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:25:53+00:00",
+      "timestamp": "2026-09-09T05:37:10+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01d__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_01d",
@@ -274,32 +282,30 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Amused at the absurdity of having searched past the filters sitting in plain view",
-            "interactional_function": "Concedes B was right while framing the miss as comic rather than incompetent"
+            "reading": "Rueful amusement at herself for missing something that was in plain reach behind her",
+            "interactional_function": "Concedes the search failure was hers and defuses any embarrassment at needing to be told",
+            "supported_by": "\"I've looked all along this side\" then \"Of course they're right next to the shelf\""
           },
           {
-            "reading": "Mild self-directed embarrassment at insisting she had looked everywhere",
-            "interactional_function": "Softens the climb-down from her own confident claim in turn 3"
-          },
-          {
-            "reading": "Wry exasperation at store layout that hides things in obvious-in-hindsight places",
-            "interactional_function": "Shifts the blame outward to the shelving while accepting B's correction"
+            "reading": "Wry recognition that the item was, predictably, in the least obvious spot",
+            "interactional_function": "Treats the store's layout as the absurd party, inviting B to share the joke rather than gloat",
+            "supported_by": "\"Of course\" — the placement as typical, exasperating luck"
           }
         ],
-        "shared_implication": "The speaker accepts that the filters have been found where B said; the sound is not disbelief, refusal, or continued searching."
+        "shared_implication": "The speaker accepts B was right and finds the outcome funny; she is not annoyed at B, doubting the location, or still searching."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012553Z",
+      "run_id": "r20260909T053710Z",
       "item_id": "v6_01d",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_01d__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -307,7 +313,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:26:01+00:00",
+      "timestamp": "2026-09-09T05:37:21+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_01d__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_01d",
@@ -315,32 +321,35 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Mild self-directed exasperation at having missed something that was in plain sight behind her.",
-            "interactional_function": "Concedes B was right while softening the admission into a shared joke about her own searching."
+            "reading": "Mild exasperation at having searched thoroughly and missed something that was right behind her.",
+            "interactional_function": "Concedes B was right while marking the outcome as annoying rather than thanking B.",
+            "supported_by": "\"I've looked all along this side\" then \"Of course they're right next to the shelf.\""
           },
           {
-            "reading": "Weary irritation at the store's layout for stocking filters in an unguessable spot.",
-            "interactional_function": "Redirects blame away from her own search onto the shelving, pre-empting any 'you didn't look' reply."
+            "reading": "Resigned, self-deprecating recognition that this is typical of how store searches go for her.",
+            "interactional_function": "Softens the admission of failure into a shared joke about predictable bad luck.",
+            "supported_by": "\"Of course\" framing the location as inevitable rather than surprising."
           },
           {
-            "reading": "Deflated relief at the search ending, mixed with annoyance at how long it took.",
-            "interactional_function": "Closes the search out loud and signals no further help is needed."
+            "reading": "Low-grade frustration with the store's placement — items stashed in an unhelpful low spot.",
+            "interactional_function": "Redirects blame from her own searching onto the awkward shelf location.",
+            "supported_by": "\"behind you, down there beside that low shelf\"; \"right next to the shelf.\""
           }
         ],
-        "shared_implication": "The speaker accepts the filters have been found and is not disputing B, doubting the location, or expressing anger at B."
+        "shared_implication": "The speaker accepts the filters have been found and is not disputing B or expressing pleasure; the sound registers annoyance at the anticlimax."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012311Z",
+      "run_id": "r20260909T053306Z",
       "item_id": "v6_02a",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_02a__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -348,7 +357,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:23:26+00:00",
+      "timestamp": "2026-09-09T05:33:26+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02a__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_02a",
@@ -356,32 +365,30 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Wry disbelief at the absurd outcome — the approved drug is one already known to fail.",
-            "interactional_function": "Marks the news as ironic, cueing B to hear it as bad rather than good."
+            "reading": "Wry disbelief that the approved replacement is a drug she already abandoned years ago",
+            "interactional_function": "Frames the decision as absurd and invites B to share the incredulity",
+            "supported_by": "\"The covered replacement is the medication I stopped years ago.\""
           },
           {
-            "reading": "Frustration and dismay at being sent backwards after a week of waiting.",
-            "interactional_function": "Vents exasperation while keeping the delivery light enough to avoid burdening B."
-          },
-          {
-            "reading": "Bleak, tired amusement mixed with resignation about a system that ignores her history.",
-            "interactional_function": "Softens the disappointment as she reports it, inviting shared recognition of the futility."
+            "reading": "Exasperation that a week of waiting produced an outcome that solves nothing",
+            "interactional_function": "Softens the delivery of bad news and heads off B's congratulation",
+            "supported_by": "\"sent it in last week\", \"still hasn't shown a decision\", \"stopped years ago\""
           }
         ],
-        "shared_implication": "The speaker treats the coverage decision as a bad, useless outcome; the sound is not relief, delight, or genuine good news about the approval."
+        "shared_implication": "The laugh is not pleasure or relief at a good result; the speaker treats the coverage decision as useless or absurd, not a solution."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012326Z",
+      "run_id": "r20260909T053326Z",
       "item_id": "v6_02a",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_02a__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -389,7 +396,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:23:35+00:00",
+      "timestamp": "2026-09-09T05:33:45+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02a__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_02a",
@@ -397,32 +404,30 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Dismay at seeing the approved substitute is a drug she already abandoned years ago",
-            "interactional_function": "Flags the result as bad news before the words arrive, cueing B to brace"
+            "reading": "Caught off guard that the decision appeared the instant she refreshed, after a week of nothing.",
+            "interactional_function": "Announces live news mid-call, pulling B into the moment before the content is stated.",
+            "supported_by": "\"Refresh it while we're on the phone\" / \"It just posted.\""
           },
           {
-            "reading": "Startled surprise that the decision appeared the instant she refreshed",
-            "interactional_function": "Marks the update as breaking news and pulls B into the moment of reading it"
-          },
-          {
-            "reading": "Shock at the outcome mixed with relief that the long wait finally ended",
-            "interactional_function": "Signals the news is significant and consequential without yet settling whether it is good"
+            "reading": "Dismay that the approved replacement is a drug she already tried and stopped.",
+            "interactional_function": "Marks the coverage decision as bad news rather than the resolution they were hoping for.",
+            "supported_by": "\"The covered replacement is the medication I stopped years ago.\""
           }
         ],
-        "shared_implication": "The speaker is genuinely caught off guard by what the portal shows; she is not indifferent, joking, or performing surprise at an expected result."
+        "shared_implication": "Something unexpected has just landed and is being reported in real time; the speaker is not treating this as routine or as the hoped-for outcome."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012134Z",
+      "run_id": "r20260909T053138Z",
       "item_id": "v6_02b",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_02b__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -430,7 +435,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:21:43+00:00",
+      "timestamp": "2026-09-09T05:31:48+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02b__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_02b",
@@ -438,32 +443,35 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Delighted surprise at the ball flying straight at the camera on the old tape",
-            "interactional_function": "Flags the moment as the funny payoff worth watching, inviting B to share the amusement"
+            "reading": "Amused surprise at the ball flying straight into the lens on the old tape.",
+            "interactional_function": "Flags the moment as a funny surprise and invites B to enjoy it too.",
+            "supported_by": "\"The ball just came straight into the camera\""
           },
           {
-            "reading": "Warm affection toward B's dad, entertained by his careless throw at the filmer",
-            "interactional_function": "Colors the found footage as fond family comedy rather than a solemn keepsake"
+            "reading": "Delight that the unlabeled tape turned out to capture something this good.",
+            "interactional_function": "Rewards B's \"let it keep going\" and confirms the tape was worth playing.",
+            "supported_by": "\"unlabeled tape\"; \"Hold on—let it keep going\""
           },
           {
-            "reading": "Amused startlement at the sudden intrusion, before narrating what actually happened",
-            "interactional_function": "Marks the on-screen event as unexpected and previews the explanation the next sentence gives"
+            "reading": "Startled reaction at the ball's sudden arrival, resolving into amusement.",
+            "interactional_function": "Registers the jolt while marking it as harmless, keeping the shared viewing light.",
+            "supported_by": "\"just came straight into the camera\"; \"threw it right at\""
           }
         ],
-        "shared_implication": "A pleasurable reaction to something funny on the tape; not distress, not mockery of B or his dad, and not discomfort about the recording."
+        "shared_implication": "The speaker is enjoying the moment, not criticizing Dad's throw or expressing alarm, concern, or discomfort about what the tape shows."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012143Z",
+      "run_id": "r20260909T053148Z",
       "item_id": "v6_02b",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_02b__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -471,7 +479,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:21:52+00:00",
+      "timestamp": "2026-09-09T05:31:58+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02b__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_02b",
@@ -479,32 +487,30 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Startled by the ball flying at the lens, reacting as if it were coming at her now",
-            "interactional_function": "Marks the on-tape moment as the surprise worth noticing and cues B to look"
+            "reading": "Startled by the ball flying straight at the lens, as if thrown at them.",
+            "interactional_function": "Reacts in real time to the on-screen moment, marking it as sudden and unexpected.",
+            "supported_by": "\"came straight into the camera\"; \"threw it right at\""
           },
           {
-            "reading": "Delighted shock at catching an unexpectedly vivid, funny moment preserved on the old tape",
-            "interactional_function": "Flags the find as a discovery, inviting B to share the excitement"
-          },
-          {
-            "reading": "Startled and moved, dawning realization about the unseen person holding the camera",
-            "interactional_function": "Halts the running commentary and hands the significance of the moment to B"
+            "reading": "Delighted surprise at what the unlabeled tape turned out to capture.",
+            "interactional_function": "Flags the moment as worth B's attention and confirms the tape is a find.",
+            "supported_by": "\"unlabeled tape\"; \"let it keep going\"; \"that's you, and there's your dad\""
           }
         ],
-        "shared_implication": "The vocalization registers something abrupt and unanticipated on the tape as significant; it is not boredom, confusion about what she sees, or mere narration."
+        "shared_implication": "The speaker is reacting to something abrupt and unanticipated on the tape; the sound is not alarm at harm or bad news."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205438Z",
+      "run_id": "r20260909T053217Z",
       "item_id": "v6_02c",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_02c__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -512,7 +518,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:54:51+00:00",
+      "timestamp": "2026-09-09T05:32:36+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02c__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_02c",
@@ -520,32 +526,30 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Delighted surprise that the listing actually meets both of B's stated conditions.",
-            "interactional_function": "Endorses the job as a real option and hands B the good news warmly."
+            "reading": "Delighted surprise that the listing matches B's stated needs almost too neatly.",
+            "interactional_function": "Flags the good news before stating it, endorsing the listing as worth acting on.",
+            "supported_by": "'cover rent, and something that starts soon' answered by 'twenty-two an hour' and 'Monday'."
           },
           {
-            "reading": "Amused disbelief at how exactly the pay and start date answer what B just said.",
-            "interactional_function": "Frames the fit as almost comically on-the-nose before reciting it as evidence."
-          },
-          {
-            "reading": "Pleased but slightly startled by how abruptly soon 'Monday' is.",
-            "interactional_function": "Softens the delivery while flagging the timeline as the thing B must now decide about."
+            "reading": "Amusement at how abruptly soon the start date is — Monday, essentially now.",
+            "interactional_function": "Softens the suddenness into a shared joke while alerting B to move fast.",
+            "supported_by": "'they need someone Monday' following B's 'something that starts soon'."
           }
         ],
-        "shared_implication": "The speaker is reacting to how aptly and abruptly the listing's terms fit B's needs, not mocking B's ambitions or dismissing the job."
+        "shared_implication": "The speaker treats the listing as a real, favorable fit for B; the laugh is not mocking the job, B, or the search."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205451Z",
+      "run_id": "r20260909T053236Z",
       "item_id": "v6_02c",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_02c__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -553,7 +557,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:54:59+00:00",
+      "timestamp": "2026-09-09T05:32:46+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02c__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_02c",
@@ -561,32 +565,35 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Delighted surprise that the listing pays and starts better than B expected.",
-            "interactional_function": "Flags the details as unexpectedly good news before A even reads them out."
+            "reading": "Pleasant shock at the pay rate being higher than B expected to find",
+            "interactional_function": "Flags the listing as unexpectedly good news before A reads out the numbers",
+            "supported_by": "\"It says twenty-two an hour\" after B's \"enough to cover rent\""
           },
           {
-            "reading": "Startled urgency at the Monday start date, which leaves almost no time.",
-            "interactional_function": "Marks the posting as time-critical and pushes B toward acting immediately."
+            "reading": "Startled at how fast the job starts, given B needs something starting soon",
+            "interactional_function": "Marks urgency, pressing B to act on the listing now",
+            "supported_by": "\"they need someone Monday\"; \"something that starts soon\""
           },
           {
-            "reading": "Struck by the listing mattering, mixing excitement about the pay with alarm at the deadline.",
-            "interactional_function": "Raises the stakes of the link so both treat it as a live decision, not idle browsing."
+            "reading": "Excited recognition that this listing meets both of B's stated requirements at once",
+            "interactional_function": "Signals A has found the answer to B's search and hands it back to B",
+            "supported_by": "\"refresh the link I just sent you\"; rent and soon-start both met"
           }
         ],
-        "shared_implication": "A finds the listing's terms genuinely striking and consequential for B; the sound is not boredom, dismissal, or indifference toward the posting."
+        "shared_implication": "A is reacting to something in the listing that exceeds expectation — not dismay, doubt, or bad news about the job."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012434Z",
+      "run_id": "r20260909T053511Z",
       "item_id": "v6_02d",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_02d__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -594,7 +601,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:24:42+00:00",
+      "timestamp": "2026-09-09T05:35:28+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02d__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_02d",
@@ -602,32 +609,30 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Amusement at the blank tip line as evidence of how far gone B was.",
-            "interactional_function": "Flags the detail as the punchline of the night's story before naming it."
+            "reading": "Amused that the receipt's blank tip line is comic proof of how far gone B was",
+            "interactional_function": "Delivers the found detail as a punchline to their joint reconstruction of the night",
+            "supported_by": "\"the receipt will tell you how the night ended\"; \"The tip line is blank\""
           },
           {
-            "reading": "Delighted teasing of B for stiffing the bartender.",
-            "interactional_function": "Sets up a gentle accusation, inviting B to own or defend the lapse."
-          },
-          {
-            "reading": "Amused surprise mixed with mild sympathy for B's rough night.",
-            "interactional_function": "Softens the reveal so it lands as shared joke rather than reproach."
+            "reading": "Teasing mock-disapproval that B stiffed the bartender",
+            "interactional_function": "Frames the accusation as a joke rather than a real reproach, inviting B to laugh along",
+            "supported_by": "\"tip line is blank\" on B's own itemized bar charge"
           }
         ],
-        "shared_implication": "A treats the blank tip line as funny and telling about B's state that night, not as a neutral report or serious moral criticism."
+        "shared_implication": "A treats the blank tip line as telling and funny evidence about B's night, not as neutral reading-out, concern, or alarm."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012442Z",
+      "run_id": "r20260909T053528Z",
       "item_id": "v6_02d",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_02d__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -635,7 +640,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:24:51+00:00",
+      "timestamp": "2026-09-09T05:35:48+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_02d__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_02d",
@@ -643,32 +648,35 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Mock scandal at B having stiffed the bartender on a big night out",
-            "interactional_function": "Playfully indicts B for the omission, inviting a defense or laughing confession"
+            "reading": "Mock-scandalized that B left the bartender no tip at all",
+            "interactional_function": "Plays up the etiquette breach as a scandal, teasing B about it",
+            "supported_by": "\"The tip line is blank\" as the seized-on detail of the bar charge"
           },
           {
-            "reading": "Genuine surprise at spotting the one detail the receipt reveals",
-            "interactional_function": "Marks the blank tip line as the significant find and directs B's attention to it"
+            "reading": "Genuine dismay that the blank line shows how far gone B was that night",
+            "interactional_function": "Treats the blank line as evidence answering how the night ended",
+            "supported_by": "\"how the night ended\"; \"Eventually\"; found phone and card only this morning"
           },
           {
-            "reading": "Half-teasing alarm that the blank line means B was too far gone to sign",
-            "interactional_function": "Treats the gap as evidence about how the night ended, prompting B to reconstruct it"
+            "reading": "Struck by having found the telling detail they were hunting for in the receipt",
+            "interactional_function": "Marks the discovery, pointing B to the line that matters",
+            "supported_by": "\"Check the bar charge. Maybe the receipt will tell you\"; \"I've got the transaction open\""
           }
         ],
-        "shared_implication": "A has spotted something noteworthy in the receipt and is flagging it as significant, not dismissing it, changing subject, or expressing boredom or indifference."
+        "shared_implication": "A treats the blank tip line as a significant, revealing detail worth reacting to — not a neutral or unremarkable feature of the receipt."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205540Z",
+      "run_id": "r20260909T053548Z",
       "item_id": "v6_03a",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_03a__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -676,7 +684,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:55:50+00:00",
+      "timestamp": "2026-09-09T05:35:57+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03a__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_03a",
@@ -684,32 +692,35 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Amusement at the bad timing — B rushed through dinner for a gym that is already shut.",
-            "interactional_function": "Frames the news as a comic anticlimax rather than a complaint, softening the blow before delivering it."
+            "reading": "Amusement at the bad timing — B ate and prepared just as the gym shut",
+            "interactional_function": "Frames the news as an ironic punchline rather than a plain announcement",
+            "supported_by": "\"grabbing my things now\" then \"they closed early\""
           },
           {
-            "reading": "Wry vindication after twice warning B about the closing time, now overtaken by a different cause.",
-            "interactional_function": "Marks the outcome as ironically proving A's point while stopping short of an outright I-told-you-so."
+            "reading": "Sympathetic, wincing amusement at wasted effort, softening bad news for B",
+            "interactional_function": "Cushions the delivery so it lands as commiseration, not gloating",
+            "supported_by": "\"finished dinner and a protein shake, and I'm grabbing my things\""
           },
           {
-            "reading": "Sympathetic amusement mixed with mild commiseration for B's wasted preparation.",
-            "interactional_function": "Cushions unwelcome news and invites B to treat the evening as absurd rather than annoying."
+            "reading": "Mild vindication after having warned about closing time, held lightly",
+            "interactional_function": "Recalls A's earlier warning without turning it into a rebuke",
+            "supported_by": "\"You know the gym usually closes pretty soon\""
           }
         ],
-        "shared_implication": "A finds the situation ironically funny and is not delivering the news neutrally, apologetically, or as genuine bad news demanding concern."
+        "shared_implication": "The laugh treats the gym's early closure as unfortunate timing worth reacting to lightly; it is not hostility, mockery, or indifference toward B."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205550Z",
+      "run_id": "r20260909T053557Z",
       "item_id": "v6_03a",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_03a__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -717,7 +728,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:56:04+00:00",
+      "timestamp": "2026-09-09T05:36:15+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03a__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_03a",
@@ -725,32 +736,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Vicarious dismay that B's eating, prep, and hurry were all for nothing.",
-            "interactional_function": "Marks the news as bad for B and aligns A with B's frustration."
+            "reading": "Dismay at the news A is about to relay — the workout is off after all.",
+            "interactional_function": "Flags bad news before it lands, bracing B for the announcement that follows.",
+            "supported_by": "\"they closed early\" delivered immediately after the sound"
           },
           {
-            "reading": "Exasperation at the gym for closing early over an equipment problem.",
-            "interactional_function": "Places blame on the gym rather than on B's slow start, pre-empting any I-told-you-so reading."
+            "reading": "Frustration on B's behalf that B's rushing to eat and pack was for nothing.",
+            "interactional_function": "Aligns A with B's disappointment rather than reviving A's earlier warning as criticism.",
+            "supported_by": "\"I'm grabbing my things now\" following \"I had to eat first\""
           },
           {
-            "reading": "Reluctance to be the one delivering news that undoes B's whole evening.",
-            "interactional_function": "Prefaces and softens the announcement, warning B that something unwelcome is coming."
+            "reading": "Annoyance at the gym for closing earlier than its normal hours.",
+            "interactional_function": "Places blame on the gym's failure, treating the closure as unreasonable rather than expected.",
+            "supported_by": "\"closed early because of an equipment problem\" versus \"usually closes pretty soon\""
           }
         ],
-        "shared_implication": "A treats the closure as genuinely unwelcome and is not gloating, teasing, or claiming vindication for having warned B about the time."
+        "shared_implication": "The sound treats the gym's early closure as unwelcome news; it is not amusement, smugness at having warned B, or physical discomfort."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012110Z",
+      "run_id": "r20260909T053056Z",
       "item_id": "v6_03b",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_03b__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -758,7 +772,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:21:21+00:00",
+      "timestamp": "2026-09-09T05:31:10+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03b__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_03b",
@@ -766,32 +780,30 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Delighted relief that the grade she was bracing for turned out to be high",
-            "interactional_function": "Releases the built-up suspense and accepts B's news as good before repeating it"
+            "reading": "Delight and release at hearing a 95 on the chemistry test.",
+            "interactional_function": "Registers the score as good news and celebrates it before A says anything evaluative.",
+            "supported_by": "\"It says 95 out of 100\" followed by A's \"Ninety-five.\""
           },
           {
-            "reading": "Pleased disbelief that the number is that high, half-checking she heard right",
-            "interactional_function": "Marks the score as better than expected and invites B to confirm it"
-          },
-          {
-            "reading": "Happy but wryly resigned that B spoiled the reveal she asked to have herself",
-            "interactional_function": "Lightly chides B for jumping in while conceding the news is too good to mind"
+            "reading": "Amused exasperation that B read the grade out after being told to wait.",
+            "interactional_function": "Lets A protest the spoiled reveal without real complaint, since the news was good.",
+            "supported_by": "\"Don't say anything yet. Let me find it first.\" then B announces it anyway."
           }
         ],
-        "shared_implication": "The speaker treats 95 as welcome news; the sound is not disappointment, dismay, or a complaint about the grade itself."
+        "shared_implication": "The laugh treats 95 as welcome news; it is not disappointment, self-deprecation, or genuine anger at B for speaking."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012121Z",
+      "run_id": "r20260909T053110Z",
       "item_id": "v6_03b",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_03b__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -799,7 +811,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:21:34+00:00",
+      "timestamp": "2026-09-09T05:31:38+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03b__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_03b",
@@ -807,32 +819,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Frustration that B revealed the score after being explicitly asked to wait",
-            "interactional_function": "Reproaches B for spoiling the reveal and marks the request as violated"
+            "reading": "Exasperated that B read the score aloud after being explicitly asked to wait.",
+            "interactional_function": "Registers a complaint about B ignoring the request, before any reaction to the number.",
+            "supported_by": "\"Don't say anything yet. Let me find it first.\" / \"It says 95 out of 100.\""
           },
           {
-            "reading": "Disappointment that the score fell short of the perfect mark A hoped for",
-            "interactional_function": "Frames 95 as a near-miss rather than a success worth celebrating"
+            "reading": "Deflated that the moment of finding out for herself has been taken away.",
+            "interactional_function": "Marks the news as spoiled, so the flat repetition replaces the reaction she wanted to have.",
+            "supported_by": "\"Let me find it first\" followed by the flat echo \"Ninety-five.\""
           },
           {
-            "reading": "Deflated resignation — good news, but arriving secondhand and slightly under target",
-            "interactional_function": "Registers a complaint while still accepting the number, tempering B's announcement"
+            "reading": "Mock-protest that concedes the grade is good but objects to how it arrived.",
+            "interactional_function": "Turns the spoiler into a shared joke rather than a real grievance.",
+            "supported_by": "\"95 out of 100\" answered with a groan and the number repeated back."
           }
         ],
-        "shared_implication": "A is not receiving 95 as uncomplicated good news; the sound registers a complaint about the score or its delivery, not delight."
+        "shared_implication": "The groan protests how the score was delivered, not the score itself; it does not treat 95 as bad news or a disappointment."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205421Z",
+      "run_id": "r20260909T052918Z",
       "item_id": "v6_03c",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_03c__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -840,7 +855,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:54:30+00:00",
+      "timestamp": "2026-09-09T05:29:28+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03c__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_03c",
@@ -848,32 +863,35 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Delight and slight disbelief at how fast the search suddenly turned in their favour",
-            "interactional_function": "Shares the good news warmly and invites B to celebrate the turnaround with them"
+            "reading": "Amused disbelief that a fourth interview is being asked of him after three already",
+            "interactional_function": "Frames the additional round as excessive before stating it, inviting B to share the incredulity",
+            "supported_by": "three interviews in the last two weeks; a fourth interview tomorrow"
           },
           {
-            "reading": "Amused incredulity that a fourth interview is being asked of them at all",
-            "interactional_function": "Flags the extra round as faintly absurd while keeping the report light rather than complaining"
+            "reading": "Delight at the immediate callback, buoyed that the search is clearly going well",
+            "interactional_function": "Marks the news as good and answers B's follow-up question with evident pleasure",
+            "supported_by": "My phone just lit up; exactly what they needed; Did anyone follow up?"
           },
           {
-            "reading": "Pleased but weary — glad to be wanted, tired of being interviewed",
-            "interactional_function": "Lets them report progress and the fatigue of it in one move, without dampening the news"
+            "reading": "Pleased but wearied — glad to advance yet worn down by the drawn-out process",
+            "interactional_function": "Hedges the good news, letting B respond to either the progress or the fatigue",
+            "supported_by": "three interviews in two weeks; asking me to come in for a fourth"
           }
         ],
-        "shared_implication": "The speaker is reporting a genuinely positive development, not disappointment, rejection, or bad news; the sound accepts the momentum rather than dismissing it."
+        "shared_implication": "The speaker treats the news as real progress, not rejection or bad news; the laugh registers the fourth interview, not disappointment or self-deprecation."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205430Z",
+      "run_id": "r20260909T052928Z",
       "item_id": "v6_03c",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_03c__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -881,7 +899,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:54:38+00:00",
+      "timestamp": "2026-09-09T05:29:37+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03c__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_03c",
@@ -889,32 +907,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Exasperation at being dragged through yet another round after already being told he's the right fit",
-            "interactional_function": "Frames the fourth interview as an unreasonable imposition rather than good news"
+            "reading": "Dismay that a fourth interview is being asked of him after three already.",
+            "interactional_function": "Marks the news as bad news despite its surface promise, pre-empting congratulation.",
+            "supported_by": "three interviews in the last two weeks; a fourth interview tomorrow"
           },
           {
-            "reading": "Weariness and depletion — he doesn't have the energy for another interview tomorrow",
-            "interactional_function": "Invites sympathy for the toll of the process rather than congratulation on progress"
+            "reading": "Exasperation at a process that keeps extending despite being told his experience fit exactly.",
+            "interactional_function": "Frames the extra round as excessive, inviting B to share the judgement.",
+            "supported_by": "exactly what they needed; asking me to come in for a fourth"
           },
           {
-            "reading": "Mixed feeling: the callback is genuinely encouraging but the demand is tiresome",
-            "interactional_function": "Pre-empts B's upbeat framing, marking the news as good-but-draining before delivering it"
+            "reading": "Weariness at the short notice — another round, tomorrow, on top of the rest.",
+            "interactional_function": "Flags the burden ahead rather than the outcome, casting the request as a drain.",
+            "supported_by": "come in for a fourth interview tomorrow; three interviews in two weeks"
           }
         ],
-        "shared_implication": "The speaker treats the further interview as a burden, not as welcome news; he is not celebrating, joking, or expressing excitement about the callback."
+        "shared_implication": "The speaker treats the fourth interview as an unwelcome imposition, not as good news or encouraging progress to be celebrated."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012601Z",
+      "run_id": "r20260909T053721Z",
       "item_id": "v6_03d",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_03d__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -922,7 +943,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:26:10+00:00",
+      "timestamp": "2026-09-09T05:37:37+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03d__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_03d",
@@ -930,32 +951,35 @@
         "vocalization": "laugh",
         "acceptable_interpretations": [
           {
-            "reading": "Amused dismay at discovering a mandatory onstage introduction he never signed up for",
-            "interactional_function": "Flags the notice as an unwelcome surprise while keeping the delivery light"
+            "reading": "Dismay at an unwelcome onstage introduction, softened rather than voiced as complaint",
+            "interactional_function": "Flags the notice as bad news for the speaker while reading it out",
+            "supported_by": "\"has to introduce themselves onstage\" read out immediately after opening it"
           },
           {
-            "reading": "Rueful self-recognition that skipping the rest of the portal has just backfired",
-            "interactional_function": "Concedes B's earlier point about checking, softening the admission of being caught out"
+            "reading": "Rueful amusement at having claimed readiness while skipping the rest of the portal",
+            "interactional_function": "Concedes B's point that checking mattered, without a full admission",
+            "supported_by": "\"supplies and timetable ready\"; \"Just the timetable\"; \"figured the rest would be there\""
           },
           {
-            "reading": "Disbelief that the school would require every single student to present onstage",
-            "interactional_function": "Frames the requirement as absurd and invites B to react to it with him"
+            "reading": "Incredulity that the school requires this of every single student",
+            "interactional_function": "Frames the requirement as excessive, inviting B to share the reaction",
+            "supported_by": "\"Every student has to\" at the opening assembly"
           }
         ],
-        "shared_implication": "The laugh registers the assembly requirement as unwelcome or absurd news, not as delight, indifference, or a joke he is telling."
+        "shared_implication": "The speaker treats the notice as an unanticipated catch that undercuts feeling prepared; the laugh is not pleasure at the news or indifference to it."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012610Z",
+      "run_id": "r20260909T053737Z",
       "item_id": "v6_03d",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_03d__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -963,7 +987,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:26:19+00:00",
+      "timestamp": "2026-09-09T05:37:46+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_03d__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_03d",
@@ -971,32 +995,30 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Dismay at learning he must speak onstage in front of the whole school.",
-            "interactional_function": "Registers the notice as bad news before reading it out, framing the requirement as a burden."
+            "reading": "Dismay at having to introduce himself onstage in front of the whole school",
+            "interactional_function": "Registers the requirement as bad news before stating it, framing it as something to dread",
+            "supported_by": "\"Every student has to introduce themselves onstage at the opening assembly.\""
           },
           {
-            "reading": "Dread of public speaking specifically — anticipatory nerves about being exposed onstage.",
-            "interactional_function": "Signals the reaction is about the ordeal itself, inviting sympathy or reassurance from B."
-          },
-          {
-            "reading": "Annoyance that his careful preparation missed something now imposed on him.",
-            "interactional_function": "Concedes B was right to check the portal while complaining about the extra demand."
+            "reading": "Deflation that his preparation missed something he now has to deal with",
+            "interactional_function": "Concedes B's point that checking the portal mattered, without saying so directly",
+            "supported_by": "\"I've got my supplies and timetable ready\"; \"Just the timetable.\""
           }
         ],
-        "shared_implication": "The speaker treats the assembly requirement as unwelcome; he is not pleased, indifferent, excited, or merely neutrally relaying information he already knew."
+        "shared_implication": "The speaker treats the assembly requirement as unwelcome, not as neutral information or something pleasant, surprising-but-fine, or worth looking forward to."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012152Z",
+      "run_id": "r20260909T053158Z",
       "item_id": "v6_04a",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_04a__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1004,7 +1026,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:22:01+00:00",
+      "timestamp": "2026-09-09T05:32:08+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04a__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_04a",
@@ -1012,32 +1034,35 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Dismay that the fully-funded opportunity comes with an impossibly tight deadline.",
-            "interactional_function": "Registers the deadline as the problem before A even addresses whether to apply."
+            "reading": "Dismay that a fully-funded trip is gated behind a deadline hours away",
+            "interactional_function": "Registers the deadline as the problem before restating it, flagging the timing as bad news",
+            "supported_by": "\"the application has to be in tonight\"; \"closes tonight\""
           },
           {
-            "reading": "Braced resignation — A is absorbing that a scramble tonight is now unavoidable.",
-            "interactional_function": "Marks the news as a burden being taken on rather than simply good news."
+            "reading": "Bracing for a rushed scramble to get an application in tonight",
+            "interactional_function": "Marks the effort ahead while accepting the task, prefacing rather than declining",
+            "supported_by": "\"Tonight.\" repeated; \"A full trip\""
           },
           {
-            "reading": "Mixed relief and pressure: the money A couldn't save is available, but only right now.",
-            "interactional_function": "Flags the offer as double-edged, inviting B to help or acknowledge the crunch."
+            "reading": "Overwhelmed at how abruptly a distant, slowly-saved-for goal became suddenly reachable",
+            "interactional_function": "Discharges the shock of the reversal and keeps the floor while she takes it in",
+            "supported_by": "\"putting a little aside\"; \"a long way off\"; \"covers the whole trip\""
           }
         ],
-        "shared_implication": "The sound is not indifference or rejection of the grant; A treats it as significant and feels the weight of the tonight deadline."
+        "shared_implication": "The sigh does not dismiss or devalue the grant; the trip still matters and the deadline's nearness, not the offer, is what weighs on her."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012201Z",
+      "run_id": "r20260909T053208Z",
       "item_id": "v6_04a",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_04a__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1045,7 +1070,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:22:17+00:00",
+      "timestamp": "2026-09-09T05:32:17+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04a__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_04a",
@@ -1053,32 +1078,35 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Startled excitement that the trip she's been slowly saving for could suddenly be fully funded.",
-            "interactional_function": "Registers B's news as a big deal and invites B to help her act on it."
+            "reading": "Excited shock that a grant covering the whole trip she's been slowly saving for exists",
+            "interactional_function": "Registers B's news as a big deal and invites B to say more about it",
+            "supported_by": "\"putting a little aside\", \"covers the whole trip\", \"A full trip\""
           },
           {
-            "reading": "Alarm at the deadline — a real chance that could be lost within hours.",
-            "interactional_function": "Flags urgency and shifts the exchange toward whether she can apply in time."
+            "reading": "Alarm at the deadline — the chance is real but expires tonight",
+            "interactional_function": "Flags urgency and shifts the exchange toward acting immediately",
+            "supported_by": "\"closes tonight\", repeated \"Tonight\", \"has to be in tonight\""
           },
           {
-            "reading": "Stunned disbelief that something this good and this time-pressured landed at once.",
-            "interactional_function": "Buys a beat to absorb the news before her repetition confirms the details aloud."
+            "reading": "Both at once: thrilled at the opportunity and jolted by how little time remains",
+            "interactional_function": "Marks the news as good but pressured, opening a decision rather than just reacting",
+            "supported_by": "\"A full trip, and the application has to be in tonight.\""
           }
         ],
-        "shared_implication": "She treats the grant as significant and personally consequential news that lands suddenly; she is not dismissing it, doubting B, or reacting with indifference."
+        "shared_implication": "The speaker treats the grant as significant and personally relevant news, not as trivial, unwelcome, doubted, or already out of reach."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012335Z",
+      "run_id": "r20260909T053345Z",
       "item_id": "v6_04b",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_04b__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1086,7 +1114,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:23:43+00:00",
+      "timestamp": "2026-09-09T05:34:03+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04b__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_04b",
@@ -1094,32 +1122,35 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Exasperated relief that the mystery is solved but the cake is gone for good",
-            "interactional_function": "Closes the search and marks the outcome as settled rather than still investigable"
+            "reading": "Exasperation that Maya took the entire cake without asking and ignored two messages",
+            "interactional_function": "Registers a mild complaint about Maya before the flat statement of what she did",
+            "supported_by": "\"the whole cake\"; \"messaged her twice, but she hasn't answered\""
           },
           {
-            "reading": "Resignation at a daughter's characteristic impulsiveness she has no real recourse against",
-            "interactional_function": "Signals the complaint is being absorbed, not escalated into blame or a call to the school"
+            "reading": "Deflation as the mystery collapses into an ordinary explanation",
+            "interactional_function": "Closes the search B and A were conducting; no further investigating needed",
+            "supported_by": "photo notification answering \"Has anybody been in the house\""
           },
           {
-            "reading": "Deflated dismay at losing work she had put into the cake, tempered by understanding why",
-            "interactional_function": "Invites B's sympathy while conceding the taking wasn't malicious"
+            "reading": "Resigned acceptance that the cake is already gone and nothing can be done",
+            "interactional_function": "Marks the outcome as settled rather than something to be undone or contested",
+            "supported_by": "\"took the whole cake to the school fair\" — already delivered"
           }
         ],
-        "shared_implication": "The speaker accepts what happened rather than suspecting theft or wrongdoing; she is not delighted, and not treating the cake's fate as still open."
+        "shared_implication": "The sound treats the photo as the answer and the cake as gone; it is not alarm, suspicion of theft, or neutral reporting."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012343Z",
+      "run_id": "r20260909T053403Z",
       "item_id": "v6_04b",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_04b__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1127,7 +1158,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:23:51+00:00",
+      "timestamp": "2026-09-09T05:34:19+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04b__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_04b",
@@ -1135,32 +1166,30 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Shocked recognition that Maya took the entire cake without asking.",
-            "interactional_function": "Marks the photo as the answer and registers the discovery as a violation."
+            "reading": "Startled disbelief that Maya took the entire cake without asking or answering messages",
+            "interactional_function": "Marks the photo as an unwelcome revelation and flags the daughter's nerve as the issue",
+            "supported_by": "\"She took the whole cake\"; \"I've messaged her twice, but she hasn't answered\""
           },
           {
-            "reading": "Startled dismay at losing the whole cake she made, not just a slice.",
-            "interactional_function": "Foregrounds the scale of the loss and invites B to share the alarm."
-          },
-          {
-            "reading": "Surprise mixed with relief that the cake is accounted for rather than stolen or ruined.",
-            "interactional_function": "Closes the mystery while flagging that the outcome is still not okay."
+            "reading": "Sudden click of the answer — the missing cake is explained, nothing sinister happened",
+            "interactional_function": "Closes the search opened in turn 1 and treats the photo as conclusive",
+            "supported_by": "\"Now the stand's empty\"; \"look, it's Maya carrying the cake into the school fair\""
           }
         ],
-        "shared_implication": "The photo is new, unexpected information that resolves the missing cake; the speaker is not calm, unmoved, or already aware of what Maya did."
+        "shared_implication": "The photo is a genuine, unanticipated revelation; A was not already aware or quietly suspecting where the cake had gone."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012819Z",
+      "run_id": "r20260909T053935Z",
       "item_id": "v6_04c",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_04c__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1168,7 +1197,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:28:28+00:00",
+      "timestamp": "2026-09-09T05:39:50+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04c__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_04c",
@@ -1176,32 +1205,30 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Reluctant acceptance that the injury is worse than hoped and needs professional care",
-            "interactional_function": "Concedes B's implicit finding and marks the dentist call as an unwelcome but settled next step"
+            "reading": "Weary acceptance that the fall has turned into another problem to deal with",
+            "interactional_function": "Concedes B's check without argument and moves the exchange straight to the practical next step",
+            "supported_by": "\"Okay. Let's call the dentist.\""
           },
           {
-            "reading": "Weariness at another disruption on top of an already draining afternoon",
-            "interactional_function": "Registers the cost of the errand before agreeing to it, without contesting the need"
-          },
-          {
-            "reading": "Worry about Mia's teeth mixed with relief that the silence finally has an explanation",
-            "interactional_function": "Braces the pair for the next step while signalling the guessing phase is over"
+            "reading": "Dismay at what B's look inside Mia's mouth reveals about the injury",
+            "interactional_function": "Registers the discovery, confirming B's hunch about why Mia went quiet, before naming the action",
+            "supported_by": "\"hasn't said much since\"; \"Open your mouth for Mum\""
           }
         ],
-        "shared_implication": "The speaker accepts that calling the dentist is necessary; the sound is not dismissal, disagreement with B, or amusement about Mia's fall."
+        "shared_implication": "The speaker accepts that something unwelcome has been found and needs attention; the sound is not dismissing B's check or making light of it."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012828Z",
+      "run_id": "r20260909T053950Z",
       "item_id": "v6_04c",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_04c__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1209,7 +1236,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:28:43+00:00",
+      "timestamp": "2026-09-09T05:40:09+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04c__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_04c",
@@ -1217,32 +1244,30 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Alarm at seeing damage inside Mia's mouth the moment she opens it",
-            "interactional_function": "Marks the injury as confirmed and serious, motivating the immediate call to the dentist"
+            "reading": "Shock at what she sees when Mia opens her mouth — visible damage to a tooth.",
+            "interactional_function": "Marks the moment of discovery and justifies the abrupt jump to calling a dentist.",
+            "supported_by": "\"Open your mouth for Mum.\" / \"Let's call the dentist.\""
           },
           {
-            "reading": "Sudden realisation of why Mia went quiet after the fall",
-            "interactional_function": "Signals the discovery to B without describing it, closing the earlier question about what is wrong"
-          },
-          {
-            "reading": "Dismay held in check, worried but staying composed in front of the child",
-            "interactional_function": "Registers the shock briefly, then hands over to a practical next step rather than escalating"
+            "reading": "Sudden understanding of why Mia has gone quiet since the fall.",
+            "interactional_function": "Signals the earlier puzzle is now resolved, closing the question B raised about what Mia needs.",
+            "supported_by": "\"She stopped crying, but she hasn't said much since.\" / \"Okay.\""
           }
         ],
-        "shared_implication": "A has just seen something newly bad in Mia's mouth; the sound escalates concern and cannot be relief, reassurance, or amusement."
+        "shared_implication": "The sound registers an involuntary reaction to seeing something wrong in Mia's mouth — not relief, amusement, or doubt about B's instruction."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205403Z",
+      "run_id": "r20260909T052856Z",
       "item_id": "v6_04d",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_04d__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1250,7 +1275,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:54:12+00:00",
+      "timestamp": "2026-09-09T05:29:09+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04d__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_04d",
@@ -1258,32 +1283,30 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Stunned disbelief at learning the winning ticket is genuinely hers",
-            "interactional_function": "Registers the news as momentous and prompts B to confirm it again"
+            "reading": "Overwhelmed disbelief at learning the winning ticket is his own",
+            "interactional_function": "Releases the built-up tension of the number-by-number check before asking for confirmation",
+            "supported_by": "'the name on it is yours' / 'That's my ticket?'"
           },
           {
-            "reading": "Overwhelm releasing as breath before the good news can be processed",
-            "interactional_function": "Marks the moment as too large to respond to plainly, buying a beat"
-          },
-          {
-            "reading": "Cautious hope mixed with fear of a mistake in the reading",
-            "interactional_function": "Hedges her reaction pending confirmation rather than celebrating outright"
+            "reading": "Steadying himself, bracing against believing it until B confirms",
+            "interactional_function": "Holds the moment open, marking the news as too big to accept on first hearing",
+            "supported_by": "'That's my ticket?' asked despite having just matched every number"
           }
         ],
-        "shared_implication": "The sound does not express disappointment, boredom, or resignation; the speaker treats the match as significant and is seeking confirmation, not deflating it."
+        "shared_implication": "The speaker is reacting to the ticket being a winner as genuinely momentous; the sound is not disappointment, boredom, or resignation."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205412Z",
+      "run_id": "r20260909T052909Z",
       "item_id": "v6_04d",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_04d__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1291,7 +1314,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:54:21+00:00",
+      "timestamp": "2026-09-09T05:29:18+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_04d__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_04d",
@@ -1299,32 +1322,30 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Shocked elation at realising the winning ticket is genuinely hers.",
-            "interactional_function": "Marks the news as life-changing and invites B to confirm and share the moment."
+            "reading": "Shock at realizing the ticket matching every drawn number is her own.",
+            "interactional_function": "Marks the moment the win registers and prompts B to confirm it.",
+            "supported_by": "'the name on it is yours' / 'That's my ticket?'"
           },
           {
-            "reading": "Stunned disbelief, unable to accept the match is real yet.",
-            "interactional_function": "Suspends acceptance and presses B to verify the claim before she commits to it."
-          },
-          {
-            "reading": "Overwhelmed, joy mixed with panic at what such a win means.",
-            "interactional_function": "Signals she needs a beat before responding, handing the floor back to B."
+            "reading": "Elated disbelief as the final number thirty-eight completes the match.",
+            "interactional_function": "Registers the outcome as extraordinary rather than routine before words catch up.",
+            "supported_by": "'the last one is thirty-eight. Your ticket has thirty-eight too'"
           }
         ],
-        "shared_implication": "She registers the win as real and startling news; the sound is not skepticism about B, boredom, dread of bad news, or a joke."
+        "shared_implication": "The speaker has just registered something momentous and unexpected about the ticket; the sound is not doubt about B's reading, boredom, or dismay."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012255Z",
+      "run_id": "r20260909T053246Z",
       "item_id": "v6_05a",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_05a__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1332,7 +1353,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:23:04+00:00",
+      "timestamp": "2026-09-09T05:32:56+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05a__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_05a",
@@ -1340,32 +1361,35 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Deflated disappointment that Max's training has not held up when it counted.",
-            "interactional_function": "Concedes the setback before reporting it, framing the theft as a letdown rather than news."
+            "reading": "Deflated disappointment that the training he'd been doing daily didn't hold when it counted",
+            "interactional_function": "Concedes the optimistic report from earlier in the exchange was premature",
+            "supported_by": "\"I thought he'd learned 'leave it.'\" after \"doing short obedience sessions every day\""
           },
           {
-            "reading": "Weary resignation that the work will have to continue longer than hoped.",
-            "interactional_function": "Signals that A expected better progress and is bracing for more sessions, inviting sympathy."
+            "reading": "Weary resignation at a setback he half-expected, given the dog only obeys with him right there",
+            "interactional_function": "Downgrades the moment to a familiar frustration rather than a shock, inviting no alarm",
+            "supported_by": "\"at least when I'm right there\"; \"He just took it.\""
           },
           {
-            "reading": "Mild exasperation at the dog mixed with self-directed recognition that A overestimated the training.",
-            "interactional_function": "Softens the admission that A's earlier confident claim was premature."
+            "reading": "Mild exasperation with the dog, tolerant rather than angry",
+            "interactional_function": "Softens the report of misbehaviour into a rueful complaint rather than a reprimand",
+            "supported_by": "\"He just took it\" reported flatly, with no scolding or consequence"
           }
         ],
-        "shared_implication": "A treats the outcome as an unwelcome failure of the training, not as amusing, surprising-in-a-good-way, or indifferent; the sound concedes rather than boasts."
+        "shared_implication": "The speaker treats the theft as a genuine setback to training he was invested in; the sound is not amusement, indifference, or surprise at Max's capability."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012304Z",
+      "run_id": "r20260909T053256Z",
       "item_id": "v6_05a",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_05a__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1373,7 +1397,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:23:11+00:00",
+      "timestamp": "2026-09-09T05:33:06+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05a__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_05a",
@@ -1381,32 +1405,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Dismay at watching the training fail exactly when it counted",
-            "interactional_function": "Registers the setback in real time before the words explain it"
+            "reading": "Dismay that Max stole the snack despite the training A had just been praising",
+            "interactional_function": "Registers the failure before narrating it, marking the outcome as bad news A expected not to give",
+            "supported_by": "\"He just took it. I thought he'd learned 'leave it.'\""
           },
           {
-            "reading": "Frustration with himself for trusting the command was reliably learned",
-            "interactional_function": "Concedes his earlier optimistic report was overstated"
+            "reading": "Frustrated disappointment that daily training sessions haven't held up in practice",
+            "interactional_function": "Concedes the progress A reported in earlier turns was overstated",
+            "supported_by": "\"short obedience sessions every day\"; \"at least when I'm right there\""
           },
           {
-            "reading": "Rueful, half-amused exasperation at the dog's predictable opportunism",
-            "interactional_function": "Softens the failure into a shared complaint rather than a real crisis"
+            "reading": "Exasperated resignation at a dog behaving predictably badly, without real anger",
+            "interactional_function": "Softens the report into a shared complaint about Max rather than a serious setback",
+            "supported_by": "B's warning \"Max is heading for the snack\" preceding the inevitable grab"
           }
         ],
-        "shared_implication": "The speaker treats the theft as an unwelcome setback to his claim about Max's training, not as success, indifference, or approval."
+        "shared_implication": "A is reacting negatively to Max taking the snack and treating it as a failure of the training, not approving, joking about, or claiming success."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205604Z",
+      "run_id": "r20260909T053746Z",
       "item_id": "v6_05b",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_05b__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1414,7 +1441,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:56:13+00:00",
+      "timestamp": "2026-09-09T05:37:57+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05b__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_05b",
@@ -1422,32 +1449,30 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Mild disappointment that 9:45 is later than A wanted to eat",
-            "interactional_function": "Registers the late slot as a downside before A agrees to it anyway"
+            "reading": "Mild disappointment that the only remaining table is uncomfortably late.",
+            "interactional_function": "Marks 9:45 as a concession while still agreeing to it.",
+            "supported_by": "\"The only table left is at 9:45\" followed by \"Okay. Let's take it.\""
           },
           {
-            "reading": "Reluctant acceptance — A is resigning themselves to the only option available",
-            "interactional_function": "Marks the agreement as a concession rather than an enthusiastic yes"
-          },
-          {
-            "reading": "Weariness at the hassle, mixed with acknowledgement that B did what they could",
-            "interactional_function": "Vents the annoyance at the situation while leaving B's effort uncriticised"
+            "reading": "Resignation that there is no better option worth holding out for.",
+            "interactional_function": "Closes off further searching and settles the plan.",
+            "supported_by": "\"Everything earlier was taken\"; \"Let's take it.\""
           }
         ],
-        "shared_implication": "A is going along with the 9:45 booking; the sound conveys displeasure at the time, not refusal, blame toward B, or a request to cancel."
+        "shared_implication": "The speaker is accepting the 9:45 table, not refusing it or faulting B's effort; the sound registers a downside, not an objection."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205613Z",
+      "run_id": "r20260909T053757Z",
       "item_id": "v6_05b",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_05b__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1455,7 +1480,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:56:21+00:00",
+      "timestamp": "2026-09-09T05:38:08+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05b__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_05b",
@@ -1463,32 +1488,30 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Dismay at a dinner slot far later than she wanted",
-            "interactional_function": "Registers the time as a real cost before she nonetheless agrees to it"
+            "reading": "Dismay that 9:45 is uncomfortably late for dinner",
+            "interactional_function": "Registers the time as bad news before agreeing anyway",
+            "supported_by": "\"The only table left is at 9:45\" followed by \"Okay.\""
           },
           {
-            "reading": "Tired reluctance about staying up late, outweighed by wanting the dinner",
-            "interactional_function": "Marks the acceptance as a concession rather than an enthusiastic yes"
-          },
-          {
-            "reading": "Mild exasperation at the restaurant's booking situation, not at B",
-            "interactional_function": "Vents about the constraint while signaling B did nothing wrong in taking it"
+            "reading": "Resignation that no better slot exists, so this one has to do",
+            "interactional_function": "Marks the booking as settling rather than a choice made happily",
+            "supported_by": "\"Everything earlier was taken\" / \"Let's take it.\""
           }
         ],
-        "shared_implication": "The speaker finds 9:45 undesirable and accepts it anyway; the sound is not approval, not indifference, and not a complaint about B's handling."
+        "shared_implication": "The speaker dislikes the 9:45 slot yet still agrees to it; the sound is not refusing the plan or faulting B."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012843Z",
+      "run_id": "r20260909T054009Z",
       "item_id": "v6_05c",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_05c__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1496,7 +1519,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:28:51+00:00",
+      "timestamp": "2026-09-09T05:40:24+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05c__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_05c",
@@ -1504,32 +1527,35 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Deflated disappointment at missing the Blizzard both of them had been anticipating all afternoon.",
-            "interactional_function": "Delivers the bad news' emotional verdict before the words, priming B for a letdown."
+            "reading": "Deflated disappointment that the Blizzard both of them wanted is no longer possible",
+            "interactional_function": "Prefaces the bad news, cueing B to expect a letdown before the words arrive",
+            "supported_by": "\"I could really go for a Blizzard\"; \"It's locked\""
           },
           {
-            "reading": "Resigned acceptance that they arrived too late and nothing can be done about it.",
-            "interactional_function": "Closes off the plan rather than inviting a fix, treating the outcome as settled."
+            "reading": "Resigned acceptance that the outing is over and nothing can be done about it",
+            "interactional_function": "Closes off the plan rather than inviting alternatives or further checking",
+            "supported_by": "\"they closed at nine\"; the notice as final word"
           },
           {
-            "reading": "Weary letdown capping an already draining day that this small failure tops off.",
-            "interactional_function": "Ties the closed door to the day's accumulated fatigue, inviting shared commiseration."
+            "reading": "Weariness at one more thing going wrong at the end of an already draining day",
+            "interactional_function": "Frames the locked door as the last straw rather than a neutral fact",
+            "supported_by": "\"After today\"; \"Maybe we're late\""
           }
         ],
-        "shared_implication": "The speaker takes the closure as an unwelcome outcome; the sound is not amusement, relief, indifference, or a prelude to proposing an alternative."
+        "shared_implication": "The speaker treats the closed store as an unwelcome outcome to something they wanted; the sound is not amusement, surprise, or indifference."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012851Z",
+      "run_id": "r20260909T054024Z",
       "item_id": "v6_05c",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_05c__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1537,7 +1563,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:29:01+00:00",
+      "timestamp": "2026-09-09T05:40:36+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05c__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_05c",
@@ -1545,32 +1571,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Disappointment at arriving too late for the Blizzard both of them had been anticipating all afternoon.",
-            "interactional_function": "Delivers the bad news before the words do, so B knows the outcome instantly."
+            "reading": "Disappointment that the anticipated Blizzard is now impossible; the shop closed before they arrived.",
+            "interactional_function": "Delivers the bad news ahead of the words, so B knows the outcome before hearing it.",
+            "supported_by": "\"could really go for a Blizzard\"; \"It's locked\"; \"closed at nine\""
           },
           {
-            "reading": "Frustration at the wasted trip and the poor luck of missing closing time.",
-            "interactional_function": "Registers the outing as a small failure and invites B's shared complaint."
+            "reading": "Frustration at having missed it narrowly, confirming the fear he raised at the parking lot.",
+            "interactional_function": "Marks the closed sign as the annoying confirmation of \"maybe we're late.\"",
+            "supported_by": "\"The parking lot's almost empty. Maybe we're late.\"; \"closed at nine\""
           },
           {
-            "reading": "Half-comic dismay at a trivial letdown capping an already draining day.",
-            "interactional_function": "Marks the setback as commiseration-worthy without treating it as genuinely serious."
+            "reading": "Shared letdown on both their behalves, having heard B wanted one all afternoon too.",
+            "interactional_function": "Voices the disappointment jointly, inviting B to commiserate rather than just reporting a fact.",
+            "supported_by": "\"I've been thinking about one all afternoon\"; \"Want to stop\""
           }
         ],
-        "shared_implication": "The speaker treats the closed store as an unwelcome outcome; the sound is not neutral reporting, relief, or indifference toward missing the Blizzard."
+        "shared_implication": "The sound registers an unwelcome outcome — the trip failed; it is not effort, physical discomfort, amusement, or indifference to missing the ice cream."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012508Z",
+      "run_id": "r20260909T053615Z",
       "item_id": "v6_05d",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_05d__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1578,7 +1607,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:25:28+00:00",
+      "timestamp": "2026-09-09T05:36:41+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05d__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_05d",
@@ -1586,32 +1615,35 @@
         "vocalization": "sigh",
         "acceptable_interpretations": [
           {
-            "reading": "Deflation that the long-anticipated noon announcement turned out to be a non-event — no change at all.",
-            "interactional_function": "Frames the result as anticlimactic before stating it, deflating the stakes both speakers had built up."
+            "reading": "Deflation that the awaited noon announcement produced no change at all.",
+            "interactional_function": "Frames the news as an anticlimax before A even delivers it.",
+            "supported_by": "\"announcement is due at noon\" then \"left its benchmark rate unchanged\""
           },
           {
-            "reading": "Resignation on B's behalf, since an unchanged rate leaves B's pending mortgage situation unimproved.",
-            "interactional_function": "Pre-marks the news as unwelcome, softening delivery of a result B was waiting on."
+            "reading": "Weary resignation at a standstill that leaves B's mortgage paperwork still waiting.",
+            "interactional_function": "Delivers the result as unwelcome-but-expected and invites B to share the resignation.",
+            "supported_by": "\"My mortgage paperwork is waiting\"; \"unchanged\""
           },
           {
-            "reading": "Weariness with the whole thread — tracking the figures, and B's drifting, half-engaged replies, for no payoff.",
-            "interactional_function": "Signals A is winding the topic down, delivering the outcome as a closing rather than an opening."
+            "reading": "Mild exasperation that B set the alert but left A to read it off B's phone.",
+            "interactional_function": "Marks A as the one doing the following-along after two deflections from B.",
+            "supported_by": "\"I set an alert for it\"; \"Your phone says\""
           }
         ],
-        "shared_implication": "A treats the unchanged rate as an unsatisfying, effortful, or unwelcome outcome — not as good news, excitement, or a neutral report."
+        "shared_implication": "A treats the unchanged rate as a letdown or non-event; the sound is not excitement, surprise, or satisfaction at the outcome."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012528Z",
+      "run_id": "r20260909T053641Z",
       "item_id": "v6_05d",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_05d__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1619,7 +1651,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:25:44+00:00",
+      "timestamp": "2026-09-09T05:37:01+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_05d__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_05d",
@@ -1627,32 +1659,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Disappointment that the benchmark rate held, offering no relief for the mortgage B is waiting on",
-            "interactional_function": "Frames the news as bad before he states it, telling B the outcome went the wrong way"
+            "reading": "Disappointment that the rate was held rather than moved as A had been watching for",
+            "interactional_function": "Pre-frames the announcement as bad news before A even reads it out",
+            "supported_by": "\"following the latest figures\"; \"left its benchmark rate unchanged\""
           },
           {
-            "reading": "Deflation at an anticlimax after the buildup toward the noon announcement",
-            "interactional_function": "Marks the long-awaited announcement as a non-event and lets the topic collapse"
+            "reading": "Exasperation at the anticlimax — the awaited noon announcement amounted to nothing",
+            "interactional_function": "Deflates the anticipation built up around the announcement and the alert",
+            "supported_by": "\"announcement is due at noon\"; \"I set an alert\"; \"unchanged\""
           },
           {
-            "reading": "Weary dismay on B's behalf, half-expected, mixed with irritation at having watched for nothing",
-            "interactional_function": "Braces B for unwelcome news and invites a shared complaint rather than a neutral report"
+            "reading": "Groaning on B's behalf, since a hold leaves B's pending mortgage where it was",
+            "interactional_function": "Delivers the news as commiseration rather than neutral relay to the person affected",
+            "supported_by": "\"My mortgage paperwork is waiting\"; \"Your phone says\""
           }
         ],
-        "shared_implication": "The unchanged rate is unwelcome or deflating to A; the sound is not relief, satisfaction, surprise, or a neutral delivery of the figure."
+        "shared_implication": "The sound treats the unchanged rate as unwelcome or deflating, not as relief, good news, or neutral reporting."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012044Z",
+      "run_id": "r20260909T053024Z",
       "item_id": "v6_06a",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_06a__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1660,7 +1695,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:20:52+00:00",
+      "timestamp": "2026-09-09T05:30:32+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06a__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_06a",
@@ -1668,32 +1703,30 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Delighted surprise at receiving an unexpectedly generous or long-wanted gift.",
-            "interactional_function": "Registers the gift as a big deal and rewards B's effort before any words arrive."
+            "reading": "Delighted surprise at a gift that exceeds what she expected on a no-presents occasion",
+            "interactional_function": "Marks the gift as a big deal and rewards B's choice to break the rule",
+            "supported_by": "\"You got me this?\" after \"We weren't doing presents\""
           },
           {
-            "reading": "Startled disbelief that B went this far after they'd agreed on no presents.",
-            "interactional_function": "Marks the gift as exceeding what was agreed, setting up the incredulous question that follows."
-          },
-          {
-            "reading": "Touched and slightly overwhelmed, moved that B thought of them this specifically.",
-            "interactional_function": "Signals the gift landed emotionally, inviting B to enjoy the reaction rather than downplay it."
+            "reading": "Startled disbelief that B spent this much on her when they had agreed otherwise",
+            "interactional_function": "Registers the gift as too much, inviting B to justify or reassure",
+            "supported_by": "\"You didn't have to\"; \"You got me this?\""
           }
         ],
-        "shared_implication": "The speaker is genuinely struck by the gift and treats it as significant — not unimpressed, not dismayed, not politely feigning a reaction."
+        "shared_implication": "The speaker is genuinely taken aback by the specific gift's significance; she is not unmoved, merely polite, or already expecting it."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012052Z",
+      "run_id": "r20260909T053032Z",
       "item_id": "v6_06a",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_06a__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1701,7 +1734,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:21:10+00:00",
+      "timestamp": "2026-09-09T05:30:56+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06a__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_06a",
@@ -1709,32 +1742,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Mock-exasperated, affectionate protest that B ignored the no-presents agreement and gave something anyway.",
-            "interactional_function": "Chides B playfully while accepting the gift, keeping the objection light rather than genuine."
+            "reading": "Overwhelmed and touched that B spent on her anyway; mock-protest at being given too much.",
+            "interactional_function": "Softens the objection into affection, accepting the gift while marking it as more than warranted.",
+            "supported_by": "\"You didn't have to. We weren't doing presents.\" / \"You got me this?\""
           },
           {
-            "reading": "Overwhelmed delight at receiving something A clearly wanted but would never have asked for.",
-            "interactional_function": "Signals the gift landed hard, rewarding B before A can find words for it."
+            "reading": "Embarrassed at being caught out — B broke the no-presents pact and she has nothing in return.",
+            "interactional_function": "Registers being put on the spot, half-scolding B for going against what they agreed.",
+            "supported_by": "\"We weren't doing presents.\" / \"I know. Here—\""
           },
           {
-            "reading": "Touched but flustered — pleased at the gift, uneasy at being outdone with nothing to give back.",
-            "interactional_function": "Registers the gift's weight while flagging A's discomfort at being put on the spot."
+            "reading": "Undone by the specific item, disbelief that B got her exactly this.",
+            "interactional_function": "Marks the gift as hitting home before she can put the reaction into words.",
+            "supported_by": "\"You got me this?\" — the emphasis on the particular thing"
           }
         ],
-        "shared_implication": "The sound reacts to the gift mattering more than A expected; it is not indifference, boredom, or a real refusal of B's gesture."
+        "shared_implication": "The sound registers an unexpectedly generous gift as more than she expected or feels owed — not displeasure with it, disappointment, or refusal."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205705Z",
+      "run_id": "r20260909T053907Z",
       "item_id": "v6_06b",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_06b__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1742,7 +1778,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:57:13+00:00",
+      "timestamp": "2026-09-09T05:39:15+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06b__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_06b",
@@ -1750,32 +1786,30 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Delighted shock at receiving everything on their wish list.",
-            "interactional_function": "Marks the discovery as a peak moment and invites B to share the excitement."
+            "reading": "Overwhelmed delight at finding the gift contains everything she asked for.",
+            "interactional_function": "Marks the discovery as a peak moment before the words explain it.",
+            "supported_by": "\"It's all of it. Every single thing from my list.\""
           },
           {
-            "reading": "Disbelief that someone secretly tracked and bought the entire list.",
-            "interactional_function": "Registers the surprise as unexpected, crediting B with having pulled it off."
-          },
-          {
-            "reading": "Overwhelmed gratitude, moved to the point of being briefly speechless.",
-            "interactional_function": "Signals the gift exceeded expectations before words catch up, opening a thank-you."
+            "reading": "Startled disbelief that a forgotten package turned out to hold the whole list.",
+            "interactional_function": "Registers the surprise as unexpected, inviting B to share the reaction.",
+            "supported_by": "\"I thought we'd opened everything\"; \"still a package under the tree\""
           }
         ],
-        "shared_implication": "The speaker is positively astonished by the gift's contents; the sound is not fear, dismay, or disappointment at what the package holds."
+        "shared_implication": "The speaker is astonished by what the package contains, not disappointed, indifferent, or merely narrating; the contents exceed expectation."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205713Z",
+      "run_id": "r20260909T053915Z",
       "item_id": "v6_06b",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_06b__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1783,7 +1817,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:57:22+00:00",
+      "timestamp": "2026-09-09T05:39:35+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06b__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_06b",
@@ -1791,32 +1825,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Overwhelmed by a gift that generous, feeling almost embarrassed at how much was spent on them",
-            "interactional_function": "Registers the scale of the gift as more than expected before naming its contents"
+            "reading": "Overwhelmed that the gift is excessive — everything asked for, all at once",
+            "interactional_function": "Registers the gift as over-the-top; a complaint that reads as appreciation",
+            "supported_by": "\"It's all of it. Every single thing from my list.\""
           },
           {
-            "reading": "Mock complaint at being so thoroughly indulged, affection expressed as protest",
-            "interactional_function": "Softens the reveal by pretending to object, inviting B to enjoy the reaction"
+            "reading": "Embarrassed and slightly uncomfortable at receiving so much",
+            "interactional_function": "Flags that the scale is more than the speaker feels able to simply accept",
+            "supported_by": "\"all of it\", \"every single thing\" — the enumerated totality"
           },
           {
-            "reading": "Struck to the point of speechlessness, feeling touched, exposed, and unsure how to respond",
-            "interactional_function": "Fills the beat before words arrive and marks the moment as emotionally loaded"
+            "reading": "Delighted mock-exasperation at B for going overboard",
+            "interactional_function": "Teasingly holds B responsible while accepting the surprise B urged them to open",
+            "supported_by": "\"this one has my name on it\"; B's \"Open it before we clear all this wrapping away\""
           }
         ],
-        "shared_implication": "The speaker is moved by an unexpectedly generous gift; the sound is not disappointment, dislike, or genuine displeasure at what they received."
+        "shared_implication": "The sound reacts to the gift being more than expected, not to disappointment, dislike, or a discovery the speaker regrets making."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205522Z",
+      "run_id": "r20260909T053453Z",
       "item_id": "v6_06c",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_06c__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1824,7 +1861,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:55:31+00:00",
+      "timestamp": "2026-09-09T05:35:02+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06c__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_06c",
@@ -1832,32 +1869,35 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Sudden relief at finding the missing items just before having to leave for the train.",
-            "interactional_function": "Marks the moment of discovery and confirms B's suggestion paid off."
+            "reading": "Sudden relief at finding all three missing items just before the train leaves.",
+            "interactional_function": "Marks the search as over and confirms B's suggestion worked.",
+            "supported_by": "\"They're all in here. The passport pouch, charger, everything.\""
           },
           {
-            "reading": "Startled surprise that everything was in a pocket she had twice overlooked.",
-            "interactional_function": "Flags the find as unexpected, treating her own two searches as having missed it."
+            "reading": "Surprise that everything was in the one pocket she hadn't opened.",
+            "interactional_function": "Registers the discovery as unexpected, crediting B for the pocket she overlooked.",
+            "supported_by": "\"gone through this suitcase twice\"; \"I don't think you've opened it\""
           },
           {
-            "reading": "Relief mixed with self-directed disbelief at having panicked over items that were there all along.",
-            "interactional_function": "Opens the news while implicitly conceding B was right to ask about that pocket."
+            "reading": "Relief mixed with self-directed exasperation at having missed them twice.",
+            "interactional_function": "Concedes her own search was the problem while announcing the items found.",
+            "supported_by": "\"I've gone through this suitcase twice already\"; \"They're all in here.\""
           }
         ],
-        "shared_implication": "The speaker has found the items and reacts to a real, unexpected discovery — not dismay, bad news, continued searching, or doubt about B's suggestion."
+        "shared_implication": "The speaker has found the items; the sound reacts to a resolved search, not continued panic, dismay, or a new problem."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T205531Z",
+      "run_id": "r20260909T053502Z",
       "item_id": "v6_06c",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_06c__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1865,7 +1905,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T20:55:40+00:00",
+      "timestamp": "2026-09-09T05:35:11+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06c__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_06c",
@@ -1873,32 +1913,35 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Exasperation at herself for having missed the obvious pocket twice while panicking about time",
-            "interactional_function": "Concedes B was right and marks her own searching as the failure, pre-empting comment"
+            "reading": "Self-directed exasperation at having missed the pocket after searching the suitcase twice",
+            "interactional_function": "Concedes B was right before stating it, marking the find as the speaker's own oversight",
+            "supported_by": "gone through this suitcase twice already; They're all in here"
           },
           {
-            "reading": "Relief mixed with embarrassment that the frantic hunt was unnecessary all along",
-            "interactional_function": "Deflates the urgency she built up, closing the search rather than continuing it"
+            "reading": "Frustration at the wasted effort and panic with a train leaving in an hour",
+            "interactional_function": "Registers the cost of the search rather than relief, keeping the time pressure in play",
+            "supported_by": "My train leaves in an hour; gone through this suitcase twice"
           },
           {
-            "reading": "Frustration at the wasted effort so close to departure, not directed at B",
-            "interactional_function": "Registers the anticlimax before reporting the find, inviting sympathy rather than help"
+            "reading": "Relief at finding everything, mixed with embarrassment at where it was",
+            "interactional_function": "Closes the search while acknowledging the outcome is faintly humiliating",
+            "supported_by": "I don't think you've opened it; everything"
           }
         ],
-        "shared_implication": "The items were found where B suggested; the sound is not disagreement, continued searching, or bad news, and does not blame B."
+        "shared_implication": "The speaker has found the items and accepts the fault was theirs; the sound is not doubt, disagreement, or complaint about B's suggestion."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012019Z",
+      "run_id": "r20260909T052937Z",
       "item_id": "v6_06d",
       "condition": "condition_a",
       "task_type": "interpretations",
       "task_id": "v6_06d__condition_a__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1906,7 +1949,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:20:27+00:00",
+      "timestamp": "2026-09-09T05:29:47+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06d__condition_a__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_06d",
@@ -1914,32 +1957,35 @@
         "vocalization": "gasp",
         "acceptable_interpretations": [
           {
-            "reading": "Sudden relief and delight that the booking exists and lands on the right week.",
-            "interactional_function": "Marks the news as good before the words arrive, confirming B's optimistic guess was right."
+            "reading": "Surprised relief that the booking did go through for the intended week.",
+            "interactional_function": "Signals the good news before stating it, confirming B's guess was right.",
+            "supported_by": "\"I hope so\" then \"It's for next week\" — the hoped-for outcome landed."
           },
           {
-            "reading": "Startled surprise at seeing the dates in writing after days of uncertainty.",
-            "interactional_function": "Flags the moment of discovery and pulls B's attention to the reveal that follows."
+            "reading": "Excitement that the trip is actually happening next week.",
+            "interactional_function": "Opens the news as something to celebrate, inviting B to share the reaction.",
+            "supported_by": "\"our trip\"; \"Next week is completely open otherwise\"; \"It's for next week.\""
           },
           {
-            "reading": "Excited disbelief, half not trusting the confirmation until reading it aloud.",
-            "interactional_function": "Opens the announcement with heightened stakes, inviting B to share the reaction."
+            "reading": "Startled at the suddenness of the confirmation arriving right as they discussed it.",
+            "interactional_function": "Marks the email as an abrupt reveal, holding B's attention on what it says.",
+            "supported_by": "\"a confirmation email just came in. Open it.\""
           }
         ],
-        "shared_implication": "The speaker has just registered the confirmation as real and welcome news — not disappointment, dread, or a discovery that the dates are wrong."
+        "shared_implication": "The speaker is reacting to confirmation that the trip is on for next week — not to bad news, an error, or a scheduling conflict."
       },
       "status": "ok",
       "errors": [],
       "attempts": 1
     },
     {
-      "run_id": "r20260908T012027Z",
+      "run_id": "r20260909T052947Z",
       "item_id": "v6_06d",
       "condition": "condition_b",
       "task_type": "interpretations",
       "task_id": "v6_06d__condition_b__interpretations",
       "stimulus_audio_path": "",
-      "prompt_version": "interpretation_writer@a4266a6b5027",
+      "prompt_version": "interpretation_writer@7651acd01a05",
       "model_provider": "anthropic",
       "model_name": "claude-opus-5",
       "model_version": "",
@@ -1947,7 +1993,7 @@
         "transport": "cli"
       },
       "seed": null,
-      "timestamp": "2026-09-08T01:20:44+00:00",
+      "timestamp": "2026-09-09T05:30:24+00:00",
       "raw_response_path": "out/eval/writer_raw/v6_06d__condition_b__interpretations__attempt1.txt",
       "parsed": {
         "item_id": "v6_06d",
@@ -1955,19 +2001,22 @@
         "vocalization": "groan",
         "acceptable_interpretations": [
           {
-            "reading": "Dismay that the booking landed on the wrong dates, not the ones A wanted.",
-            "interactional_function": "Flags the email as a new problem rather than the resolution B expected."
+            "reading": "Dismay that the dates on the confirmation are not the ones A wanted or expected",
+            "interactional_function": "Marks the news as bad before the words land, blocking B from celebrating",
+            "supported_by": "\"a confirmation email just came in\" / \"It's for next week\""
           },
           {
-            "reading": "Exasperation that the trip is now imminent, leaving no time to prepare.",
-            "interactional_function": "Braces B for hassle and reframes the arrival of confirmation as bad timing."
+            "reading": "Exasperation that the long-awaited confirmation creates a problem instead of settling anything",
+            "interactional_function": "Registers a fresh hassle and invites B to commiserate or help sort it out",
+            "supported_by": "\"still haven't gotten the confirmation\" / \"I hope so\""
           },
           {
-            "reading": "Brief relief at the email overtaken by dread once A reads the dates.",
-            "interactional_function": "Marks the turn from waiting to a worse problem, prefacing the bad detail."
+            "reading": "Deflation at how soon the trip falls, with next week having been treated as unplanned",
+            "interactional_function": "Flags the timing itself as the trouble, reframing B's hopeful guess as cold comfort",
+            "supported_by": "\"Next week is completely open otherwise\""
           }
         ],
-        "shared_implication": "The sound treats the confirmation as bad news, not reassurance; A is not relieved or vindicated that the booking worked out."
+        "shared_implication": "A treats the arrived confirmation as unwelcome — it is not relief or pleasure that the booking finally came through."
       },
       "status": "ok",
       "errors": [],

@@ -1,0 +1,3417 @@
+{
+  "written_at": "2026-09-08T21:02:11+00:00",
+  "writer": "claude-opus-5",
+  "transport": "cli",
+  "prompt_version": "response_guide_writer@5564dad71b98",
+  "transcripts": "out/transcripts.json",
+  "items": [
+    {
+      "run_id": "r20260908T210118Z",
+      "item_id": "v6_01a",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_01a__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:01:31+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01a__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01a",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Joins the shared amusement at the photo just opened",
+            "required_content": [
+              "Reacts with matching amusement to the picture A has evidently just looked at",
+              "Engages with the specific detail of the puppy holding the slipper"
+            ],
+            "must_avoid": [
+              "Asking A to send or describe a picture B has already forwarded",
+              "Treating the laugh as a topic change or ignoring the photo moment"
+            ],
+            "example": "Ha—she got there fast. That slipper never stood a chance.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Laughs along while conceding A's corgi campaign was right",
+            "required_content": [
+              "Shares the amusement at the puppy's antics",
+              "Acknowledges A's long-running corgi enthusiasm as vindicated or well-founded"
+            ],
+            "must_avoid": [
+              "Conceding so heavily that the moment turns into a serious discussion about getting a dog",
+              "Reading the slipper-chewing as a warning sign that reflects badly on corgis"
+            ],
+            "example": "Okay, you win. You've been right about corgis this whole time and I'm not going to hear the end of it.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Joins the joke with mock sympathy for Mara",
+            "required_content": [
+              "Shares the amusement rather than treating the chewing as damage",
+              "Directs playful pity or teasing toward Mara and her belongings"
+            ],
+            "must_avoid": [
+              "Offering genuine advice about training, chewing, or protecting Mara's things",
+              "Sounding concerned or disapproving about the puppy's behaviour"
+            ],
+            "example": "Poor Mara. One slipper down, whole apartment to go. She knew what she signed up for, right?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T210131Z",
+      "item_id": "v6_01a",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_01a__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:01:44+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01a__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01a",
+        "condition": "condition_b",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Join the amusement at predictable puppy chaos",
+            "required_content": [
+              "Treats the slipper as expected puppy behaviour rather than a problem",
+              "Adds to the shared joke, e.g. predicting what she destroys next"
+            ],
+            "must_avoid": [
+              "Treating the sigh as a complaint needing sympathy or problem-solving advice",
+              "Suggesting the dog is badly behaved or that Mara made a mistake"
+            ],
+            "example": "Of course she does. Give it a week and Mara won't own a matching pair of anything.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Tease A gently about their own campaigning, without retracting",
+            "required_content": [
+              "Links the mischief back to A's enthusiasm for getting this exact breed",
+              "Keeps the affection intact — the dog is still a good thing"
+            ],
+            "must_avoid": [
+              "Letting A actually take blame or agreeing the campaign was a mistake",
+              "Ignoring A's role and responding as if the news were about strangers"
+            ],
+            "example": "You did spend six months lobbying for this specific animal. The slippers are on you, honestly.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Register the slipper as chapter one of a saga",
+            "required_content": [
+              "Frames this as the first of many casualties in Mara's apartment",
+              "Signals continued interest in hearing the updates"
+            ],
+            "must_avoid": [
+              "Turning it into real concern about damage, cost, or training",
+              "Closing the topic off as if the story were finished"
+            ],
+            "example": "One slipper down. I want a running tally — I assume the couch legs are next.",
+            "note": "Differs from interpretation 1 mainly in scope: forward-looking saga rather than amusement at this one moment."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205842Z",
+      "item_id": "v6_01b",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_01b__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:58:56+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01b__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01b",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Shares the delight and marks the timing as remarkable",
+            "required_content": [
+              "Positive reaction to the money landing right when it was needed",
+              "Acknowledges the exact-amount coincidence as striking or lucky"
+            ],
+            "must_avoid": [
+              "Gloating over having been right about checking again",
+              "Treating the news as routine with no reaction to the coincidence"
+            ],
+            "example": "No way, exactly the bill amount? That's some timing. Glad it landed before the due date.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Confirms the worry is over and closes the loop",
+            "required_content": [
+              "Registers that the bill is now covered and the problem is settled",
+              "Simple shared relief or good-news reaction on their behalf"
+            ],
+            "must_avoid": [
+              "Reopening the worry with new questions about timing or whether it'll stick",
+              "Dwelling on the coincidence instead of the fact that it's sorted"
+            ],
+            "example": "Oh good, that's a load off. So you can pay the electric today and be done with it.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Joins the joke about the absurdly neat outcome",
+            "required_content": [
+              "Plays along with how suspiciously precise the amount and timing were",
+              "Signals the situation is fine, just comically tidy"
+            ],
+            "must_avoid": [
+              "Taking the precision as a literal concern needing explanation or verification",
+              "Responding flatly and leaving the offered joke unshared"
+            ],
+            "example": "To the cent? Someone's reading your mail. Nice of them to cut it that close, though.",
+            "note": "Differs from 1 in stance: 1 reacts to genuine good fortune, 3 riffs on the too-neat coincidence as a joke."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205856Z",
+      "item_id": "v6_01b",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_01b__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:59:09+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01b__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01b",
+        "condition": "condition_b",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Share the relief and confirm the bill is now covered",
+            "required_content": [
+              "Registers that the money landing is good news and the waiting is over",
+              "Points to the bill being payable now, closing the original worry"
+            ],
+            "must_avoid": [
+              "Treating the sigh as bad news or continuing to problem-solve a resolved issue",
+              "Taking credit for the suggestion or making the moment about being right"
+            ],
+            "example": "Oh good. Told you they post late. Pay it now before anything else moves.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Register the reversal; note the dread was unfounded",
+            "required_content": [
+              "Acknowledges A expected disappointment and got the opposite",
+              "Confirms the outcome is good and the checking was worth it"
+            ],
+            "must_avoid": [
+              "Reading the sigh as continued bad news and commiserating",
+              "Scolding A for doubting, or labouring the point that B was right"
+            ],
+            "example": "Ha — see? It was just sitting there waiting. Glad you looked again.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Acknowledge good news while recognising the strain behind it",
+            "required_content": [
+              "Confirms the bill is covered without treating it as an unqualified win",
+              "Registers that cutting it this fine is wearing, or offers something concrete"
+            ],
+            "must_avoid": [
+              "Celebrating loudly as if nothing were wrong, flattening the fatigue",
+              "Turning into a budgeting lecture or advice A did not ask for"
+            ],
+            "example": "Covered, at least. Down to the dollar though — that's a rough way to do it every month. Want me to float you next time?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T210034Z",
+      "item_id": "v6_01c",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_01c__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:00:48+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01c__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01c",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Joins the joke about how much he drinks",
+            "required_content": [
+              "Plays along with the punchline that the points reveal his Dr. Pepper volume",
+              "Treats the free case as fuel for the running joke, not a concern"
+            ],
+            "must_avoid": [
+              "Moralising about soda intake or suggesting he cut back",
+              "Answering only with logistics of redeeming the points, ignoring the joke"
+            ],
+            "example": "Those points didn't come from nowhere, you know. The machine has been keeping score.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Shares his pleasure at the payoff and confirms it",
+            "required_content": [
+              "Warm agreement that it's a good deal for something he'd do anyway",
+              "Something concrete about the reward — that it's real, or how to claim it"
+            ],
+            "must_avoid": [
+              "Teasing him about the size of the habit rather than celebrating the win",
+              "Undercutting the news with caveats, doubts, or fine print"
+            ],
+            "example": "Right? Free case just for buying what you already buy. I can pull it up again if you want the barcode.",
+            "note": "Differs from 1 by centring the good news rather than his habit."
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Accepts the owned excess without piling on",
+            "required_content": [
+              "Lets the self-deprecation stand rather than confirming the habit is a problem",
+              "Signals he's not being judged — teasing, if any, stays affectionate"
+            ],
+            "must_avoid": [
+              "Actually scolding him or agreeing that he drinks too much",
+              "Reassuring earnestly as if he'd confessed something he feels bad about"
+            ],
+            "example": "Nobody was going to say anything. Enjoy your case, you've clearly earned it fair and square.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T210048Z",
+      "item_id": "v6_01c",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_01c__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:01:18+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01c__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01c",
+        "condition": "condition_b",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Acknowledge the self-recognition lightly, treating the habit as familiar",
+            "required_content": [
+              "Registers that the points total is proof of how much he drinks",
+              "Takes the admission in stride, as something already known between them"
+            ],
+            "must_avoid": [
+              "Turning it into concern about sugar, health, or suggesting he cut back",
+              "Treating the sigh as distress that needs comfort or a wellbeing check"
+            ],
+            "example": "The points don't lie. That's a lot of trips to the cooler aisle.",
+            "note": "Centers on the admission itself; contrast with guide 3, which keeps the free case in play."
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Join the joke and play along with the mock surrender",
+            "required_content": [
+              "Treats the surrender as a bit rather than a real wish to quit",
+              "Adds something of B's own — a tease or escalation of the premise"
+            ],
+            "must_avoid": [
+              "Responding earnestly as though he wants to quit and needs encouragement",
+              "Bare acknowledgement of the news that leaves the joke unreturned"
+            ],
+            "example": "Resistance is futile. They've got you on a payment plan now — one free case at a time.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Accept the concession and move the free case forward",
+            "required_content": [
+              "Keeps the reward practical — how, when, or where he'd claim it",
+              "Lets the habit stand as settled rather than arguing he could quit"
+            ],
+            "must_avoid": [
+              "Dropping the free case entirely to dwell on the habit",
+              "Insisting he could stop if he wanted, or nudging him to try"
+            ],
+            "example": "Might as well cash it in, then. It's sitting on the account — just tell them at the register.",
+            "note": "Differs from guide 1 by advancing B's news rather than responding to the admission."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013642Z",
+      "item_id": "v6_01d",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_01d__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:36:55+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01d__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01d",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Joins the joke about the hidden-in-plain-sight find",
+            "required_content": [
+              "Shares the amusement at how the filters sat in plain view the whole time",
+              "Treats the search as over and the filters as found"
+            ],
+            "must_avoid": [
+              "Claiming vindication or pointing out that B said so first",
+              "Restarting directions or re-explaining where the filters are"
+            ],
+            "example": "Right there the whole time, staring at you. Grab a couple while you're down there.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Waves off the climb-down and moves on lightly",
+            "required_content": [
+              "Makes the miss unremarkable — easy to walk past, no fault involved",
+              "Keeps the moment moving rather than dwelling on the earlier claim"
+            ],
+            "must_avoid": [
+              "Teasing about the confident 'I've looked all along this side' claim",
+              "Heavy reassurance that treats a small miss as something needing comfort"
+            ],
+            "example": "That bottom shelf swallows everything. I only spotted them because I dropped my list.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Agrees the shelving is at fault and closes the errand",
+            "required_content": [
+              "Endorses the complaint about the store's layout or low-shelf placement",
+              "Confirms these are the right filters so they can move on"
+            ],
+            "must_avoid": [
+              "Defending the store or implying she simply overlooked them",
+              "Only grumbling about the layout without settling that the item is found"
+            ],
+            "example": "Whoever stocks this place hides everything at ankle height. Are those the ones you wanted?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013655Z",
+      "item_id": "v6_01d",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_01d__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:37:07+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01d__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_01d",
+        "condition": "condition_b",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Take the shared joke without rubbing in being right",
+            "required_content": [
+              "Treats her missing them as an easy, ordinary thing to miss",
+              "Stays light rather than correcting or re-explaining where they are"
+            ],
+            "must_avoid": [
+              "Saying I told you so, or restating that they were behind her all along",
+              "Turning it serious with reassurance about her attention or eyesight"
+            ],
+            "example": "They blend right into that shelf. I only spotted them because I walked past twice.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Agree the placement is absurd, siding with her",
+            "required_content": [
+              "Endorses that filters belong somewhere more findable than a low shelf",
+              "Signals no blame for how she searched"
+            ],
+            "must_avoid": [
+              "Defending the store or implying she should have checked lower",
+              "Making her the joke instead of the shelving"
+            ],
+            "example": "Who puts tea filters down by the floor? Nobody's finding those on purpose.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Close the search out and move on to what's next",
+            "required_content": [
+              "Registers the search is over and nothing more is needed",
+              "Points forward — grabbing them, the rest of the list, leaving"
+            ],
+            "must_avoid": [
+              "Reopening the search with more directions or offers to look",
+              "Dwelling on how long it took or who was right"
+            ],
+            "example": "Grab a box and we're done. Anything else on the list, or is that it?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013318Z",
+      "item_id": "v6_02a",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_02a__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:33:31+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02a__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02a",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Register the irony and confirm the approval is worthless",
+            "required_content": [
+              "Treats the decision as bad news, not a win, matching A's ironic framing",
+              "Names the absurdity that the covered drug is one A already failed on"
+            ],
+            "must_avoid": [
+              "Congratulating A or treating the posted approval as progress worth celebrating",
+              "Jumping straight to logistics without acknowledging the outcome is backwards"
+            ],
+            "example": "Of course that's the one they approved. A week of waiting to be told to take the thing that already didn't work.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Absorb the frustration and turn toward a concrete next move",
+            "required_content": [
+              "Validates that a week of waiting for this result is genuinely infuriating",
+              "Offers something actionable — appeal, calling the prescriber, documenting the prior failure"
+            ],
+            "must_avoid": [
+              "Treating the laugh as amusement and matching it with a joke instead of taking the setback seriously",
+              "Minimising with silver linings like at least there's coverage or worth another try"
+            ],
+            "example": "A whole week for that? Ugh. Your prescriber can file an appeal with the history — you already have documentation that it failed.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Share the tired recognition that the system ignored her history",
+            "required_content": [
+              "Acknowledges the futility that A's documented history apparently counted for nothing",
+              "Stays alongside A in the resignation rather than arguing her out of it"
+            ],
+            "must_avoid": [
+              "Immediately problem-solving over the moment A is inviting her to sit in",
+              "Reassuring that the system will get it right or that it will work out"
+            ],
+            "example": "It's like none of your record exists to them. You've been on this drug already and they just... sent you back to the start.",
+            "note": "Differs from 2 by staying with A rather than mobilising; differs from 1 by shared weariness over sharp irony."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013331Z",
+      "item_id": "v6_02a",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_02a__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:33:46+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02a__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02a",
+        "condition": "condition_b",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Register the bad news and steady her toward next steps",
+            "required_content": [
+              "Recognition that this specific drug being the covered option is a real problem for her",
+              "Something concrete to do about it — appeal, call the prescriber, ask for an exception"
+            ],
+            "must_avoid": [
+              "Treating the approval as good news or urging her to just try it again",
+              "Leaving her alone with it — sympathy only, nothing actionable or forward-looking"
+            ],
+            "example": "Oh no, not that one. Okay — the prescriber can request an exception; you've got documented history with it. Can you message them today?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Match the moment, then ask what the decision actually says",
+            "required_content": [
+              "Acknowledgement that the decision has finally landed after the wait",
+              "A request for detail about what is on the screen or what it means for her"
+            ],
+            "must_avoid": [
+              "Assuming the outcome is bad and jumping to appeals before she has said more",
+              "Ignoring that something just changed and continuing the earlier discussion"
+            ],
+            "example": "Wait, it's up? What does it actually say — is that the only thing they'll cover, or is there a list?",
+            "note": "Differs from 1 and 3 in staying at the arrival of the news rather than its content."
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Acknowledge the wait ending while taking the outcome seriously",
+            "required_content": [
+              "Relief or acknowledgement that the limbo is over and there is finally an answer",
+              "Recognition that the particular drug named is a complication, not a settled resolution"
+            ],
+            "must_avoid": [
+              "Congratulating her as if approval alone solves it",
+              "Framing it as purely bad and erasing that the stall finally broke"
+            ],
+            "example": "At least they finally answered. But that one — you came off it for a reason. Is there room to push back now that there's a decision to argue with?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013132Z",
+      "item_id": "v6_02b",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_02b__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:31:44+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02b__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02b",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Joins the amusement and keeps watching for more",
+            "required_content": [
+              "Shares the laugh at the ball hitting the camera",
+              "Signals wanting the tape to keep playing or rewound for that bit"
+            ],
+            "must_avoid": [
+              "Treating the moment as concerning, or worrying about the camera or filmer",
+              "Shifting to solemn reflection about the tape instead of enjoying the moment"
+            ],
+            "example": "Ha! Right in the lens. Back it up a few seconds, I want to see that again.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Joins humour by affectionately characterizing his dad",
+            "required_content": [
+              "Fond amusement directed at his dad, treating the throw as typical of him",
+              "Adds or confirms something about his dad rather than only about the footage"
+            ],
+            "must_avoid": [
+              "Making his dad look bad or defending him as if criticized",
+              "Keeping it purely about the camera moment with no warmth toward his dad"
+            ],
+            "example": "That's Dad exactly — no idea where anything was going. He did that to me constantly.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Reacts to the surprise and takes up the narration",
+            "required_content": [
+              "Registers the moment as sudden or unexpected on screen",
+              "Asks about or comments on what happened next, or who was filming"
+            ],
+            "must_avoid": [
+              "Reading the laugh as being about his dad's character rather than the surprise",
+              "Treating the jolt as genuine alarm about someone being hurt"
+            ],
+            "example": "Whoa, out of nowhere. Did whoever was holding it drop the thing? Who even was behind the camera?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013144Z",
+      "item_id": "v6_02b",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_02b__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:31:58+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02b__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02b",
+        "condition": "condition_b",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "React to the near-miss on screen, look immediately",
+            "required_content": [
+              "Registers the ball coming at the lens as the startling thing just seen",
+              "Keeps attention on the tape — rewind, replay, or watch what happens next"
+            ],
+            "must_avoid": [
+              "Treating A as actually in danger or asking if she got hit",
+              "Shifting to who was behind the camera or what it means"
+            ],
+            "example": "Whoa—did it hit the lens? Back it up ten seconds, I want to see that again.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Share the delight, treat the moment as a find",
+            "required_content": [
+              "Enjoys how good or funny the caught moment is",
+              "Adds something of her own — memory of Dad's throwing, or wanting to keep/show it"
+            ],
+            "must_avoid": [
+              "Sombre or reverent framing that drains the fun out of it",
+              "Flat acknowledgement that doesn't take up the excitement"
+            ],
+            "example": "That is so him. He could never resist. We're saving that bit—Mum has to see it.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Take up the realization about who held the camera",
+            "required_content": [
+              "Engages with the unseen person filming — who it was, or that it was likely Mum",
+              "Gives the moment weight rather than moving straight on"
+            ],
+            "must_avoid": [
+              "Playing it as a funny clip or joking about the throw",
+              "Narrating more on-screen action as if nothing shifted"
+            ],
+            "example": "So someone was standing right there. That's Mum holding it, isn't it. Pause it a second.",
+            "note": "Distinct from 1: 1 stays with the on-screen event, 3 moves to the person off-screen."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205815Z",
+      "item_id": "v6_02c",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_02c__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:58:29+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02c__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02c",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Shares the good news and treats the listing as viable",
+            "required_content": [
+              "Registers that the pay and timing meet what B said they needed",
+              "Moves toward acting on it — applying, checking details, or saying they'll take it"
+            ],
+            "must_avoid": [
+              "Hedging or downplaying the fit as if the numbers were disappointing",
+              "Treating A's laugh as mockery of B's earlier ambitions"
+            ],
+            "example": "Wait, twenty-two? That's more than I expected. Okay, I'm applying tonight — can you send me the link again so I don't lose it?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Joins the joke about how absurdly well it matches",
+            "required_content": [
+              "Plays along with the comic neatness of the listing answering B's exact conditions",
+              "Still accepts the terms as real information, not just a bit"
+            ],
+            "must_avoid": [
+              "Responding only earnestly with no uptake of the shared amusement",
+              "Turning the joke self-deprecating, as if the fit were too good to trust"
+            ],
+            "example": "Did I write that listing in my sleep? Rent money, starts Monday — it's like it was reading over my shoulder. Fine, I'm applying.",
+            "note": "Differs from 1 in that the reply must take up A's amusement, not just the good news."
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Reacts to the short notice and weighs whether Monday works",
+            "required_content": [
+              "Registers Monday as soon — surprise, a check on the date, or a quick logistics thought",
+              "Signals interest anyway rather than backing off"
+            ],
+            "must_avoid": [
+              "Ignoring the start date and responding only to the pay",
+              "Sounding alarmed or treating the short notice as disqualifying"
+            ],
+            "example": "Monday, seriously? That's like three days. I mean — I could do Monday. I'd just have to sort the shift I already said yes to.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205829Z",
+      "item_id": "v6_02c",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_02c__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:58:42+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02c__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02c",
+        "condition": "condition_b",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Share the good news and confirm the terms are better than expected",
+            "required_content": [
+              "Registers the pay or terms as better than B had been hoping for",
+              "Signals real interest in the listing — wanting it, applying, treating it as a find"
+            ],
+            "must_avoid": [
+              "Treating the gasp as bad news or asking whether something is wrong",
+              "Flat acknowledgement that skips any reaction to how good the terms are"
+            ],
+            "example": "Twenty-two? That's way over what I was bracing for. Okay, that one I'm actually applying to.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "React to the tight deadline and move toward acting now",
+            "required_content": [
+              "Acknowledges Monday leaves very little time to get an application in",
+              "Proposes or commits to a concrete immediate next step — applying tonight, calling, sending it"
+            ],
+            "must_avoid": [
+              "Dwelling on the pay while ignoring that the start date is the pressing part",
+              "Vague enthusiasm with no move toward doing something before the deadline"
+            ],
+            "example": "Monday? That's basically no time. Let me pull up my resume now and get something in tonight.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Treat the listing as a real decision — good terms, short fuse",
+            "required_content": [
+              "Responds to both sides: the terms are worth wanting and the timing is tight",
+              "Shifts from browsing to deciding — commits, or names what needs resolving first"
+            ],
+            "must_avoid": [
+              "Picking up only the pay or only the deadline and dropping the other",
+              "Staying noncommittal, as if the listing were still just one option among many"
+            ],
+            "example": "Okay, that's actually the number I need — but Monday. I think I just go for it and figure out the rest after.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013507Z",
+      "item_id": "v6_02d",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_02d__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:35:21+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02d__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02d",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Join the laugh, own the detail as story evidence",
+            "required_content": [
+              "Treats the blank tip line as funny confirmation of how gone B was that night",
+              "Adds or invites a further detail about what state B was in"
+            ],
+            "must_avoid": [
+              "Treating the blank line as a serious problem needing correction or an apology",
+              "Getting defensive as if accused of cheapness"
+            ],
+            "example": "Blank. Yeah, that tracks — I couldn't work out which card was mine, let alone do arithmetic.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Take the ribbing; own or playfully defend the stiff",
+            "required_content": [
+              "Responds to the implied accusation about the bartender rather than only to the night generally",
+              "Either concedes the lapse or mounts a joking defence"
+            ],
+            "must_avoid": [
+              "Ignoring the accusation and treating it as a neutral observation about the receipt",
+              "Genuine guilt-ridden self-reproach that kills the teasing"
+            ],
+            "example": "Okay, in my defence, the machine and I were not on speaking terms. I'll go back and square it with her.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Share the joke while acknowledging the night was rough",
+            "required_content": [
+              "Laughs along rather than treating it as a charge to answer",
+              "Acknowledges the state B was in, without being defensive about it"
+            ],
+            "must_avoid": [
+              "Reading it as an accusation and defending or apologising for the missing tip",
+              "Dwelling on how bad the night was in a way that drops the humour"
+            ],
+            "example": "God. That's about the level I was operating at. I'm amazed the card went through at all.",
+            "note": "Differs from 1 in that B leans on how rough it was rather than on it being the punchline."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013521Z",
+      "item_id": "v6_02d",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_02d__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:35:34+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02d__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_02d",
+        "condition": "condition_b",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Takes the mock accusation and defends or confesses to it",
+            "required_content": [
+              "Engages with the charge of having stiffed the bartender rather than deflecting from it",
+              "Offers a defense, a guilty admission, or a plan to make it right"
+            ],
+            "must_avoid": [
+              "Treating the blank line as alarming evidence about B's state that night",
+              "Ignoring the accusation and reading the receipt as neutral information"
+            ],
+            "example": "Okay, in my defense, I think I left cash. Probably. I'm going back tomorrow and tipping him double either way.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Confirms the find and works out what it means",
+            "required_content": [
+              "Acknowledges the blank tip line as the notable detail on the receipt",
+              "Adds something about what it might indicate — cash tip, unsigned slip, closed tab"
+            ],
+            "must_avoid": [
+              "Playing it as an accusation or a joke at B's own expense",
+              "Downplaying the detail or moving on to other lines of the receipt"
+            ],
+            "example": "Huh, you're right. Nothing on the tip line at all. So either I left cash or I never actually signed the thing.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Half-jokingly reckons with what the gap says about the night",
+            "required_content": [
+              "Accepts the blank line as evidence about how far gone B was",
+              "Tries to reconstruct or admit uncertainty about that part of the night"
+            ],
+            "must_avoid": [
+              "Treating it purely as a tipping etiquette offense against the bartender",
+              "Refusing the implication about B's state with no engagement at all"
+            ],
+            "example": "That tracks, honestly. I don't remember signing anything after about eleven. Somebody must have just closed me out.",
+            "note": "Shares interpretation 2's focus on the blank line, but here B reads it as evidence about their own state rather than a neutral finding."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205936Z",
+      "item_id": "v6_03a",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_03a__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:59:49+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03a__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03a",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Takes in the news and joins the comic anticlimax",
+            "required_content": [
+              "Registers that the gym is shut and the rush was for nothing",
+              "Plays along with the absurdity of the timing rather than protesting"
+            ],
+            "must_avoid": [
+              "Treating the closure as a real problem needing complaint, blame, or a fix",
+              "Ignoring the news and continuing as if still heading out"
+            ],
+            "example": "Of course. I inhale a whole dinner in ten minutes and the place is dark. Bag's already packed and everything.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Concedes A's point while noting the irony of the cause",
+            "required_content": [
+              "Acknowledges A was right that the gym wouldn't work out tonight",
+              "Points out closing time wasn't actually what stopped it"
+            ],
+            "must_avoid": [
+              "Getting genuinely defensive or annoyed at A for being right",
+              "Conceding flatly without registering A's amusement at all"
+            ],
+            "example": "Alright, you win, sort of. You kept saying I'd miss it — turns out I'd have missed it anyway, broken machines and all.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Accepts the commiseration and writes off the evening",
+            "required_content": [
+              "Acknowledges the wasted prep — the meal, the shake, the packed bag",
+              "Settles on what happens instead, or shrugs the night off"
+            ],
+            "must_avoid": [
+              "Reading A as gloating and pushing back at them",
+              "Sounding genuinely upset in a way that rejects the light framing"
+            ],
+            "example": "So I force-fed myself a protein shake for nothing. Well, that's the night. Guess I'm on the couch.",
+            "note": "Shares the light register with interpretation 1, but here B lands on the wasted effort and what to do now, rather than on the timing joke itself."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205949Z",
+      "item_id": "v6_03a",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_03a__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:00:04+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03a__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03a",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Absorbs the news, voices own frustration at wasted effort",
+            "required_content": [
+              "Registers that the closure ruins the plan B was minutes from starting",
+              "Reacts to the wasted preparation or hurry rather than analysing why"
+            ],
+            "must_avoid": [
+              "Blaming self for eating first or conceding A's earlier timing warning was right",
+              "Treating the news as trivial or as if the plan still stands"
+            ],
+            "example": "Are you serious? I literally have my bag in my hand. Well, that's dinner and a shake for nothing.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Joins the complaint, directs annoyance at the gym",
+            "required_content": [
+              "Takes up A's irritation at the gym rather than at the delay in leaving",
+              "Engages with the closure itself — the short notice, the equipment, or how long it'll last"
+            ],
+            "must_avoid": [
+              "Turning the annoyance back on themselves or on A for the earlier warning",
+              "Defending the gym or brushing the early closure off as reasonable"
+            ],
+            "example": "Of course they did. They couldn't have sent that an hour ago? Does it say when they're opening back up?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Receives the flagged bad news, releases A from delivering it",
+            "required_content": [
+              "Signals the news has landed and A isn't at fault for bringing it",
+              "Responds to what it means for tonight — dropping the plan or finding another option"
+            ],
+            "must_avoid": [
+              "Shooting the messenger or reading A's reluctance as smugness about the earlier warning",
+              "Making A elaborate or apologise before acknowledging the news"
+            ],
+            "example": "Oh no. Okay, well, nothing you could do about that. Guess I'm doing something at home instead.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013105Z",
+      "item_id": "v6_03b",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_03b__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:31:18+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03b__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03b",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Share the relief and celebrate the good result with her",
+            "required_content": [
+              "Affirms the grade is genuinely good and worth being happy about",
+              "Signals the waiting and worrying is over, matching her release"
+            ],
+            "must_avoid": [
+              "Treating the number as uncertain or offering to double-check it",
+              "Dwelling on how nervous she was or how badly it could have gone"
+            ],
+            "example": "Ninety-five! You were sweating that all week for nothing. That's your best one yet.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Confirm the number and back up that it's real",
+            "required_content": [
+              "Restates or verifies the score as ninety-five out of a hundred",
+              "Treats her disbelief as answerable — the portal really says that"
+            ],
+            "must_avoid": [
+              "Skipping confirmation and moving straight to celebration or teasing",
+              "Casting doubt on the number or suggesting it might be a different test"
+            ],
+            "example": "Ninety-five, yeah — I'm looking right at it. Chemistry test, top of the page. It's yours.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Take the light chiding and play up spoiling the reveal",
+            "required_content": [
+              "Acknowledges jumping in when she asked to find it herself",
+              "Keeps the news framed as good, not letting the apology sour it"
+            ],
+            "must_avoid": [
+              "Confirming the score earnestly as if she doubted it",
+              "A heavy or defensive apology that makes the moment about B's mistake"
+            ],
+            "example": "Okay, okay, I ruined it. But be honest — you'd have wanted me to say something if it was a forty-five.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013118Z",
+      "item_id": "v6_03b",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_03b__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:31:32+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03b__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03b",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Owns spoiling the reveal; apologises without retracting the number",
+            "required_content": [
+              "Acknowledges having read it out after A asked to find it first",
+              "Signals the news itself is good, so A can still be pleased"
+            ],
+            "must_avoid": [
+              "Treating the groan as disappointment in the score and consoling A about 95",
+              "Defending the interruption or insisting A should just be grateful"
+            ],
+            "example": "Sorry — you said wait and I went straight in. I couldn't help it. It's a really good mark, for what it's worth.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Pushes back on the near-miss framing; affirms the score",
+            "required_content": [
+              "Treats 95 as a genuinely strong result rather than a shortfall",
+              "Engages with A's hope for a perfect mark instead of ignoring it"
+            ],
+            "must_avoid": [
+              "Apologising for having looked, which misreads what A is reacting to",
+              "Agreeing it's a letdown or dwelling on the five lost marks"
+            ],
+            "example": "Ninety-five is not a bad grade. I know you wanted the hundred, but that's an A by any measure — take the win.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Concedes the complaint lightly, then holds onto the good news",
+            "required_content": [
+              "Registers that the delivery or the number fell short of what A wanted",
+              "Still lands the point that 95 is a good outcome worth accepting"
+            ],
+            "must_avoid": [
+              "Only apologising or only cheerleading — this reading needs both notes",
+              "Overinterpreting the groan as real distress and turning solicitous"
+            ],
+            "example": "Okay, fair — I jumped the gun and it's not the hundred. Still, ninety-five. You'd have taken that last week.",
+            "note": "Differs from 1 and 2 by combining the concession with the affirmation rather than choosing one."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205747Z",
+      "item_id": "v6_03c",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_03c__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:58:01+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03c__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03c",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Celebrates the turnaround and matches their delight",
+            "required_content": [
+              "Treats the fourth-interview call as a strong sign things are going their way",
+              "Some forward-looking interest in tomorrow, e.g. how they feel going in"
+            ],
+            "must_avoid": [
+              "Hedging the good news with warnings about employers stringing candidates along",
+              "Treating the extra round as a burden they need sympathy for"
+            ],
+            "example": "Tomorrow already? They're not letting you get away. Two weeks ago you had nothing lined up and now they're chasing you.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Joins the joke about a fourth round being excessive",
+            "required_content": [
+              "Acknowledges four interviews as a lot, playing along with the absurdity",
+              "Still registers that being asked back is a good sign, not a complaint"
+            ],
+            "must_avoid": [
+              "Earnest defence of the company's hiring process as reasonable or normal",
+              "Turning the joke into real criticism they didn't make"
+            ],
+            "example": "A fourth? What's left, do they want to meet your parents? Still — nobody does four rounds on someone they're not serious about.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Affirms the news while acknowledging the fatigue",
+            "required_content": [
+              "Recognises that another round on short notice is tiring after three already",
+              "Keeps the progress itself in good standing rather than souring it"
+            ],
+            "must_avoid": [
+              "Ignoring the weariness and responding as pure uncomplicated celebration",
+              "Suggesting they skip, delay, or push back when they haven't raised that"
+            ],
+            "example": "Four rounds in two weeks is a lot to keep up. Good sign they want you in that fast, though. You feeling up to tomorrow?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205801Z",
+      "item_id": "v6_03c",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_03c__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:58:15+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03c__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03c",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Agrees the fourth round is unreasonable; sides with him",
+            "required_content": [
+              "Treats a fourth interview as excessive given he was already told he's the right fit",
+              "Stays on his side rather than defending the employer's process"
+            ],
+            "must_avoid": [
+              "Congratulating him on the callback as straightforwardly good news",
+              "Justifying the extra round or telling him it's normal hiring practice"
+            ],
+            "example": "A fourth one? They already told you you're exactly what they need. What else do they think they're going to find out?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Checks how he's holding up; eases the load practically",
+            "required_content": [
+              "Acknowledges the process has worn him down, not just that the news arrived",
+              "Offers something concrete — help preparing, a lighter evening, or asking to move the day"
+            ],
+            "must_avoid": [
+              "Rallying him with pep talk or urging him to push through one more",
+              "Treating the callback as the headline and skipping over how tired he is"
+            ],
+            "example": "Tomorrow, already? You've barely had a break. Do you want to run through it tonight, or just leave it and get some sleep?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Holds both sides: real progress, genuinely tiring demand",
+            "required_content": [
+              "Registers the callback as a good sign about where he stands",
+              "Names the same breath that another round tomorrow is a drain"
+            ],
+            "must_avoid": [
+              "Landing only on the good news and erasing the weariness he flagged",
+              "Reading it as pure complaint and dismissing the callback as meaningless"
+            ],
+            "example": "Well, they clearly want you — they don't drag people back a fourth time otherwise. Doesn't make doing it tomorrow any less of a slog, though.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013707Z",
+      "item_id": "v6_03d",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_03d__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:37:21+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03d__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03d",
+        "condition": "condition_a",
+        "vocalization": "laugh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Joins the light dismay and reacts to the requirement itself",
+            "required_content": [
+              "Registers the onstage introduction as an unwelcome surprise rather than good news",
+              "Engages with what it means for him — how bad it'll be, or that it's survivable"
+            ],
+            "must_avoid": [
+              "Treating the laugh as delight or the news as something to congratulate him on",
+              "Turning back to whether he should have checked the portal earlier"
+            ],
+            "example": "Onstage? In front of the whole school? That's rough. Though it's probably thirty seconds each — name, class, done.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Accepts the concession lightly without pressing the point",
+            "required_content": [
+              "Acknowledges that this is exactly the kind of thing the portal check was for",
+              "Declines to make more of being right — moves him toward what to do now"
+            ],
+            "must_avoid": [
+              "Lecturing or repeating the told-you-so beyond one light beat",
+              "Ignoring the concession entirely and reacting only to the assembly requirement"
+            ],
+            "example": "Yeah, that's the sort of thing hiding down there. Anyway — three days. Want to work out what you're actually going to say?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Reacts with him to the absurdity of the blanket requirement",
+            "required_content": [
+              "Shares or engages his sense that requiring every student onstage is unreasonable",
+              "Takes up the practical implausibility — the numbers, the time, how it would even run"
+            ],
+            "must_avoid": [
+              "Defending the school's policy as sensible or telling him it's no big deal",
+              "Shifting focus onto his own nerves rather than the requirement being absurd"
+            ],
+            "example": "Every student? There are hundreds of you. That assembly would run all day. Are you sure it doesn't mean per class or something?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013721Z",
+      "item_id": "v6_03d",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_03d__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:37:35+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03d__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_03d",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Acknowledges the bad news and engages with what it means",
+            "required_content": [
+              "Recognition that the announced requirement is unwelcome news to A",
+              "Some engagement with the requirement itself — its scope, timing, or what it involves"
+            ],
+            "must_avoid": [
+              "Treating the announcement as good or exciting news, or as something A already knew",
+              "Jumping straight to coaching or pep talk without registering that it lands badly"
+            ],
+            "example": "Onstage? For every single student? That's going to take all morning. Does it say how long each person gets?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Steadies him about the ordeal of speaking onstage",
+            "required_content": [
+              "Recognition that the nerve-wracking part is standing up in front of everyone",
+              "Something that makes it feel manageable — practice, brevity, shared experience, or company"
+            ],
+            "must_avoid": [
+              "Dismissing the nerves as silly or insisting it is nothing to worry about",
+              "Focusing only on logistics or portal details while ignoring how he feels about it"
+            ],
+            "example": "It'll be short, and everyone there is doing the same thing. Want to figure out what you'd say and run through it before Monday?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Takes the complaint lightly without gloating about being right",
+            "required_content": [
+              "Acknowledgement that his preparation was thorough and this came out of nowhere",
+              "Something forward-looking — that there is still time, or what he can do about it now"
+            ],
+            "must_avoid": [
+              "Rubbing in that A should have checked the portal earlier",
+              "Treating it as a serious fear of performing rather than an irritating extra demand"
+            ],
+            "example": "Of course there's one more thing. Well, you've still got three days — that's more warning than most people will get.",
+            "note": "Differs from 1 in that the reply must not scold; the grievance is the surprise, not the stage."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013158Z",
+      "item_id": "v6_04a",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_04a__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:32:11+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04a__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04a",
+        "condition": "condition_a",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Acknowledge the bad timing, then weigh whether it's still doable",
+            "required_content": [
+              "Agrees the tonight cutoff is the hard part, not the grant itself",
+              "Gives A something concrete about feasibility — how long it takes, what's actually required"
+            ],
+            "must_avoid": [
+              "Treating the sigh as reluctance about Antarctica or backing off the suggestion",
+              "Only sympathising about the deadline without any read on whether it's still possible"
+            ],
+            "example": "I know, it's brutal timing. But I looked — it's a short form and a budget page. That's an evening, not a week.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Take the scramble as decided and help plan tonight",
+            "required_content": [
+              "Treats A as already committed to attempting it rather than still deciding",
+              "Proposes a concrete step or division of the work for tonight"
+            ],
+            "must_avoid": [
+              "Re-arguing whether A should apply, as if the decision were still open",
+              "Piling on more tasks or urgency without offering to carry any of it"
+            ],
+            "example": "Right, tonight it is. Send me the link and I'll pull the dates and costs together while you write the personal statement.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Name the upside, then acknowledge the cost of the timing",
+            "required_content": [
+              "Marks that this solves the money problem A has been slowly chipping at",
+              "Recognises the catch — it's only available if A moves immediately"
+            ],
+            "must_avoid": [
+              "Selling it as pure good news with no acknowledgement of the crunch",
+              "Dwelling on the deadline so heavily that the funding win disappears"
+            ],
+            "example": "Years of saving, and this covers the lot. Rough that it lands with hours to spare — but that's the whole trip, in one go.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013211Z",
+      "item_id": "v6_04a",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_04a__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:32:25+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04a__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04a",
+        "condition": "condition_b",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Share her excitement and move toward helping her apply",
+            "required_content": [
+              "Affirms the trip she's been saving for is genuinely within reach now",
+              "Offers something concrete toward getting the application done, or asks to start on it"
+            ],
+            "must_avoid": [
+              "Dampening the news with caveats about odds, eligibility, or how unlikely grants are",
+              "Leaving it as pleasant news with no move toward acting on it"
+            ],
+            "example": "Right? The whole thing covered. Send me the link and I'll help you fill it in — we've got hours, not weeks.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Match the urgency and orient toward making the deadline",
+            "required_content": [
+              "Confirms the deadline is real and time is short",
+              "Turns to what has to happen now — time remaining, what's needed, or splitting the work"
+            ],
+            "must_avoid": [
+              "Downplaying the time pressure or suggesting there'll be another round later",
+              "Celebrating at length without addressing whether she can actually get it in"
+            ],
+            "example": "Tonight, yeah. What time exactly — let's check. If it's midnight you've got seven hours and I can pull the details together.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Confirm the details she's repeating, then steady her",
+            "required_content": [
+              "Verifies the two facts she said back — full funding, closes tonight",
+              "Gives her footing to move: it's real, it's doable, here's where to start"
+            ],
+            "must_avoid": [
+              "Piling on more information or excitement before she's absorbed what she heard",
+              "Treating her repetition as doubt about B or the grant's legitimacy"
+            ],
+            "example": "Both true. Full trip, closes tonight. I know it's a lot at once — but it's real, and it's a form, not a miracle.",
+            "note": "Differs from 2 by confirming the facts first rather than jumping straight to logistics; differs from 1 by steadying rather than amplifying."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013346Z",
+      "item_id": "v6_04b",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_04b__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:34:00+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04b__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04b",
+        "condition": "condition_a",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Confirms the mystery is solved and closes the search",
+            "required_content": [
+              "Treats the question of where the cake went as now answered and settled",
+              "Acknowledges the cake itself is gone — not retrievable or replaceable today"
+            ],
+            "must_avoid": [
+              "Proposing further investigation, calling the school, or asking who else might have taken it",
+              "Treating the outcome as still uncertain or the cake as recoverable"
+            ],
+            "example": "Well, that's that mystery over. No getting it back now — it's probably half eaten already.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Absorbs the complaint, treats it as typical Maya, defuses blame",
+            "required_content": [
+              "Recognises this as in character for Maya rather than a serious wrong",
+              "Signals no further action against her — no confrontation, punishment, or escalation"
+            ],
+            "must_avoid": [
+              "Framing Maya as deceitful or urging that she be confronted or disciplined",
+              "Turning it into a broader grievance about her behaviour or A's parenting"
+            ],
+            "example": "Classic Maya. She'd have thought you'd made it for exactly that. Not worth a row over it.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Sympathises with the lost effort while excusing Maya's intent",
+            "required_content": [
+              "Acknowledges the work A put into the cake and that losing it stings",
+              "Grants that Maya meant no harm — she wasn't taking it to be sneaky"
+            ],
+            "must_avoid": [
+              "Dismissing the effort with 'it's only a cake' or rushing A past the disappointment",
+              "Attributing bad intent to Maya, which would undercut the tempering understanding"
+            ],
+            "example": "After all that work on it, too. She won't have thought twice — she'd just have been proud to bring it in.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013400Z",
+      "item_id": "v6_04b",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_04b__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:34:14+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04b__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04b",
+        "condition": "condition_b",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Confirm the discovery and treat it as needing addressing",
+            "required_content": [
+              "Agreement that Maya took it without asking, treating that as the point",
+              "Something concrete about what happens next — reaching her, the fair, talking to her"
+            ],
+            "must_avoid": [
+              "Laughing it off or framing Maya's choice as harmless or cute",
+              "Softening into pure mystery-solved relief with no acknowledgement she overstepped"
+            ],
+            "example": "She didn't ask you once. The fair runs till four — want to head over, or wait and have it out with her tonight?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Match the dismay about the whole cake being gone",
+            "required_content": [
+              "Recognition of the scale — the entire cake, not a slice, and A made it",
+              "Some response to the loss itself: sympathy, or what can be salvaged"
+            ],
+            "must_avoid": [
+              "Minimising the loss or telling A it's only a cake",
+              "Redirecting straight to Maya's misconduct without registering what A lost"
+            ],
+            "example": "The whole thing? After you were up half the night on it. Maybe there's some left by now — I can drive over and see.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Close the mystery while keeping the problem open",
+            "required_content": [
+              "The cake is accounted for — no theft, nothing ruined, Maya is fine",
+              "It still isn't okay, so something is owed or needs sorting out"
+            ],
+            "must_avoid": [
+              "Declaring the matter settled and dropping it entirely",
+              "Treating it as alarming or unresolved when the photo explains everything"
+            ],
+            "example": "Well, at least we know where it went and nobody's run off with it. Doesn't mean she gets away with it, though.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013945Z",
+      "item_id": "v6_04c",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_04c__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:40:01+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04c__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04c",
+        "condition": "condition_a",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Confirms the finding and takes the dentist call forward",
+            "required_content": [
+              "Confirms something is actually wrong with the tooth or mouth, so the call is warranted",
+              "Moves the call forward concretely — who rings, when, which practice"
+            ],
+            "must_avoid": [
+              "Re-opening whether a dentist is needed, or hedging that it may be nothing",
+              "Treating A's sigh as resistance that needs persuading or arguing against"
+            ],
+            "example": "Yeah, there's a chip on the front one. I'll ring them now — they should still be open for another hour.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Acknowledges the drain and absorbs part of the errand",
+            "required_content": [
+              "Recognises this lands on top of an already hard afternoon for A",
+              "Offers to carry some of it — making the call, driving, handling the rest of the evening"
+            ],
+            "must_avoid": [
+              "Skipping past A's tiredness straight into logistics as if nothing was expressed",
+              "Making the weariness the topic — dwelling on how exhausted A must be"
+            ],
+            "example": "I know, it's been a day. Let me phone them and take her over — you sit down for ten minutes.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Names what's found and steadies both about the outcome",
+            "required_content": [
+              "States plainly what the mouth shows, closing off the guessing about her silence",
+              "Frames the outlook as manageable — this is fixable, they now know what to deal with"
+            ],
+            "must_avoid": [
+              "Leaving the finding vague so the uncertainty A just escaped is reintroduced",
+              "False cheer that denies there's anything to be concerned about with her teeth"
+            ],
+            "example": "That's why she's gone quiet — a tooth's loose at the front. They're good with this at her age. Let's get her seen.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T014001Z",
+      "item_id": "v6_04c",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_04c__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:40:16+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04c__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04c",
+        "condition": "condition_b",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Treats injury as confirmed; moves to act on it now",
+            "required_content": [
+              "Agreement that the dentist is needed, or a move to make that happen immediately",
+              "Some acknowledgement of what A has just seen in Mia's mouth"
+            ],
+            "must_avoid": [
+              "Questioning whether it is bad enough to bother a dentist about",
+              "Downplaying, or suggesting they wait and see how it looks tomorrow"
+            ],
+            "example": "Yeah, that's a chipped tooth. I'll ring them now — grab her shoes and the car keys.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Registers the answer to the earlier question, closes the puzzle",
+            "required_content": [
+              "Recognition that this explains why Mia had gone quiet since the fall",
+              "Uptake of the dentist plan as following from that"
+            ],
+            "must_avoid": [
+              "Asking again what is wrong as though nothing has been established",
+              "Reading the gasp as unrelated to Mia's silence"
+            ],
+            "example": "That's why she's been so quiet, then. No wonder. Right — dentist. Where's their number?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Matches A's composure and takes on the practical next step",
+            "required_content": [
+              "Acceptance of the dentist plan without adding alarm in front of Mia",
+              "Something steadying — toward Mia, or toward A, or a concrete task taken on"
+            ],
+            "must_avoid": [
+              "Amplifying the shock or dramatising the injury while Mia is listening",
+              "Naming A's reaction or Mia's state as the topic instead of just carrying on"
+            ],
+            "example": "Good idea. Mia, you're alright, love — we'll get it looked at. I'll call while you find her coat.",
+            "note": "Differs from 1 mainly in what B withholds: same practical uptake, but held down for the child's benefit rather than treated as confirmation."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205722Z",
+      "item_id": "v6_04d",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_04d__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:57:34+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04d__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04d",
+        "condition": "condition_a",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Confirms the win plainly and re-verifies the match for her",
+            "required_content": [
+              "An unambiguous yes — the ticket is hers and it matches",
+              "A concrete re-check offered or performed, e.g. reading the numbers or name back"
+            ],
+            "must_avoid": [
+              "Treating the sigh as bad news or asking whether she is disappointed",
+              "Leaving the confirmation vague or hedged so she still doesn't know"
+            ],
+            "example": "Yes — four, seventeen, twenty-six, thirty-eight, all five. And your name's printed right there. That's yours.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Stays with her, giving the moment room before anything practical",
+            "required_content": [
+              "Acknowledgement that this is enormous and she doesn't have to react yet",
+              "Presence or a steadying beat rather than immediate next steps"
+            ],
+            "must_avoid": [
+              "Rushing into logistics like claiming, banks, taxes, or who to tell",
+              "Demanding she explain or perform a reaction right now"
+            ],
+            "example": "Take a second. I know. Sit down if you want — it's not going anywhere. I'll be right here.",
+            "note": "Differs from 1 by holding the beat rather than re-confirming, and from 3 by not re-verifying."
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Meets the caution by checking the reading again before celebrating",
+            "required_content": [
+              "Acknowledgement that it's worth being sure, treating the doubt as reasonable",
+              "A specific verification step — recheck the draw, date, or numbers side by side"
+            ],
+            "must_avoid": [
+              "Dismissing her worry or insisting she just accept it",
+              "Declaring victory outright without addressing the possibility of a misread"
+            ],
+            "example": "Fair — let's do it once more. I'll pull up tonight's draw and you read the ticket out, number by number, and the date too.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205734Z",
+      "item_id": "v6_04d",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_04d__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:57:47+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04d__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_04d",
+        "condition": "condition_b",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Confirms the win and shares the excitement with her",
+            "required_content": [
+              "Affirms the ticket is hers and it matches",
+              "Joins her reaction rather than staying flat or neutral"
+            ],
+            "must_avoid": [
+              "Hedging or casting doubt on the match after already confirming it",
+              "Jumping straight to money logistics, taxes, or claim procedures"
+            ],
+            "example": "Yes! It's yours — every number, your name on it. You just won.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Verifies the match again so she can believe it",
+            "required_content": [
+              "Re-checks or re-reads the numbers and name against the draw",
+              "States plainly that it does check out"
+            ],
+            "must_avoid": [
+              "Brushing off the doubt with mere excitement instead of checking",
+              "Introducing new uncertainty about whether the ticket is valid"
+            ],
+            "example": "Hold on, let me read them again — four, seventeen, twenty-six, thirty-eight. All there. And that's your name.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Steadies her and gives her room before anything else",
+            "required_content": [
+              "Signals there's no rush and she can take a moment",
+              "Offers something concrete and grounding — sit down, keep the ticket safe"
+            ],
+            "must_avoid": [
+              "Escalating the intensity or piling on what she must decide now",
+              "Treating her silence as a cue to press for a reaction"
+            ],
+            "example": "Okay — sit down a second. Nothing has to happen tonight. I'll put the ticket somewhere safe and we'll figure it out.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013252Z",
+      "item_id": "v6_05a",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_05a__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:33:06+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05a__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05a",
+        "condition": "condition_a",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Acknowledges the letdown and puts the single lapse in perspective",
+            "required_content": [
+              "Recognition that the theft is a genuine disappointment after A's earlier progress",
+              "Something that keeps the setback proportionate — one slip, not the training undone"
+            ],
+            "must_avoid": [
+              "Treating it as funny, cute, or a good story about the dog",
+              "Launching into training advice or next steps instead of registering the letdown"
+            ],
+            "example": "Ugh, right when you'd just said he had it. One counter snack doesn't undo three weeks of \"leave it\" though.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Sympathises with the long haul and encourages continuing",
+            "required_content": [
+              "Sympathy that the work is taking longer than A hoped",
+              "Something supportive about the ongoing effort — that more sessions will get there"
+            ],
+            "must_avoid": [
+              "Implying A should give up or that Max will not learn it",
+              "Skipping the sympathy and moving straight to praise for the dog or the theft itself"
+            ],
+            "example": "That's the annoying part — it's weeks more of the same drill. You've clearly got it moving, though. Keep going.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Lets A off the hook for having claimed the training worked",
+            "required_content": [
+              "Acknowledgement that A's earlier confidence was reasonable given what they'd seen",
+              "That the gap between supervised and unsupervised \"leave it\" is expected, not A's misjudgment"
+            ],
+            "must_avoid": [
+              "Agreeing that A was wrong to claim progress or pointing out they said it too soon",
+              "Piling on about the dog's behaviour without addressing A's own admission"
+            ],
+            "example": "You did see him do it, though — with you standing right there. Off-leash and unsupervised is a whole separate thing to teach.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013306Z",
+      "item_id": "v6_05a",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_05a__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:33:18+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05a__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05a",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Register the loss with him and address the immediate moment",
+            "required_content": [
+              "Acknowledges the theft just happened and that it was a setback",
+              "Points at something immediate — the snack, getting it back, whether it's safe for the dog"
+            ],
+            "must_avoid": [
+              "Treating the moment as funny or as a joke to riff on",
+              "Lecturing about training method before acknowledging what just happened"
+            ],
+            "example": "Ah, he got it. Was that the chocolate one? Grab it off him if you can.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Push back gently on his self-blame; reframe the setback",
+            "required_content": [
+              "Signals he wasn't wrong to be encouraged — the earlier progress still counts",
+              "Frames \"leave it\" as partly learned rather than failed, e.g. context-dependent"
+            ],
+            "must_avoid": [
+              "Agreeing he over-claimed or that the training was worthless",
+              "Empty cheerleading with no reason attached to it"
+            ],
+            "example": "You did say it only holds when you're standing right there. Counter height with nobody watching is a totally different ask.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Join the rueful complaint about the dog's opportunism",
+            "required_content": [
+              "Treats the theft as characteristic of Max rather than as a real failure",
+              "Adds to the shared complaint — a comparable dog moment or a dry read of his motives"
+            ],
+            "must_avoid": [
+              "Treating it as a serious problem needing reassurance or a fix",
+              "Deflating the shared joke by turning to earnest training advice"
+            ],
+            "example": "He was never going to leave that. He was just waiting for you to say the word so he could ignore it properly.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T210004Z",
+      "item_id": "v6_05b",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_05b__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:00:19+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05b__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05b",
+        "condition": "condition_a",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Acknowledge the late time, confirm booking anyway",
+            "required_content": [
+              "Recognition that 9:45 is later than they'd have liked to eat",
+              "Confirmation that B will lock in that table"
+            ],
+            "must_avoid": [
+              "Treating the sigh as reluctance needing persuasion or a pitch for the plan",
+              "Cancelling, reopening the decision, or asking whether A really wants to go"
+            ],
+            "example": "Yeah, it's a late one. I'll grab it — we can get a snack beforehand if you're starving.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Accept the concession; offer an out or alternative",
+            "required_content": [
+              "Recognition that A is settling rather than genuinely happy with this",
+              "Something concrete — book it, or name another night or place if A prefers"
+            ],
+            "must_avoid": [
+              "Ignoring the reluctance and booking as though A said yes eagerly",
+              "Pushing A to justify or explain their hesitation"
+            ],
+            "example": "We don't have to force it. I'll take the 9:45, but say the word and I'll try Thursday instead.",
+            "note": "Differs from 1 by treating the yes as provisional and leaving a door open, not just noting the hour."
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Commiserate about the hassle; note effort was made",
+            "required_content": [
+              "Shared annoyance directed at the restaurant or the scramble, not at A or B",
+              "Confirmation the 9:45 is going ahead"
+            ],
+            "must_avoid": [
+              "Defensiveness or justifying B's own effort as if A had criticised it",
+              "Apologising at length or taking the sigh as blame"
+            ],
+            "example": "I know, it was slim pickings — that place books out fast. Booking the 9:45 now.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T210019Z",
+      "item_id": "v6_05b",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_05b__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:00:34+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05b__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05b",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Acknowledges the late slot's cost while confirming the booking",
+            "required_content": [
+              "Recognizes 9:45 is later than she wanted and treats that as legitimate",
+              "Confirms taking the table, or offers to keep looking for something earlier"
+            ],
+            "must_avoid": [
+              "Treating the groan as criticism of B and getting defensive about the call",
+              "Talking her out of the reaction or insisting 9:45 is actually fine"
+            ],
+            "example": "Yeah, it's brutal. I'll lock it in, but I'll call back in the morning in case something opens up earlier.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Acknowledges the tiredness and eases the late night",
+            "required_content": [
+              "Registers that a 9:45 dinner means a late night for her",
+              "Offers something concrete about the lateness, or explicitly leaves the door open to skipping"
+            ],
+            "must_avoid": [
+              "Ignoring the tiredness and just confirming logistics as if she'd said yes happily",
+              "Pushing her to commit enthusiastically or hyping up the evening"
+            ],
+            "example": "It'll be a late one, I know. If you're wiped tomorrow we can push it to the weekend — otherwise I'll book it and we can cab home.",
+            "note": "Differs from 1 by responding to her state, not the slot itself."
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Joins the gripe about the restaurant, confirms the booking",
+            "required_content": [
+              "Shares or endorses the annoyance at how hard the place is to get into",
+              "Confirms she's taking it and treats it as settled"
+            ],
+            "must_avoid": [
+              "Apologizing or explaining B's handling as if blame had been assigned",
+              "Checking on her mood or wellbeing, which overreads a gripe about the restaurant"
+            ],
+            "example": "Right? You basically need to call a month out for that place. Booking it now before someone else grabs it.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T014016Z",
+      "item_id": "v6_05c",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_05c__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:40:39+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05c__condition_a__response_guides__attempt2.txt",
+      "parsed": {
+        "item_id": "v6_05c",
+        "condition": "condition_a",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Sharing the disappointment about the missed Blizzard",
+            "required_content": [
+              "Registers the letdown as felt by both of them, not just A",
+              "Names the missed Blizzard as what they had both wanted"
+            ],
+            "must_avoid": [
+              "Brushing it off as unimportant or lecturing A about planning ahead",
+              "Immediately pivoting to another dessert plan instead of registering the letdown"
+            ],
+            "example": "Oh no. I had that Blizzard picked out in my head and everything.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Accepting the outcome and letting the plan close",
+            "required_content": [
+              "Agrees nothing can be done tonight given the closing time",
+              "Lets the outing end rather than reopening it"
+            ],
+            "must_avoid": [
+              "Proposing alternatives, other locations, or rushing to fix the evening",
+              "Pressing A to check again, knock, or read the notice more carefully"
+            ],
+            "example": "Figures. Nine's early. Let's just head home.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Commiserating about the whole day, not just this",
+            "required_content": [
+              "Connects the closed door to how draining the day has already been",
+              "Signals solidarity with A about the day overall"
+            ],
+            "must_avoid": [
+              "Treating the closed door as the only problem worth acknowledging",
+              "Turning it into probing questions about what went wrong in A's day"
+            ],
+            "example": "Of course it's closed. That is exactly how today has gone for us.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 2
+    },
+    {
+      "run_id": "r20260908T014039Z",
+      "item_id": "v6_05c",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_05c__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:41:01+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05c__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05c",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Take the news as settled and share the letdown",
+            "required_content": [
+              "Accepts that they've missed it and the Blizzard isn't happening tonight",
+              "Matches A's disappointment or offers a concrete alternative for the craving"
+            ],
+            "must_avoid": [
+              "Asking A to re-check the door or repeat what the notice said",
+              "Treating the closure as fine, funny-only, or not worth minding"
+            ],
+            "example": "Ah, no. And I'd been picturing it all afternoon. There's that place by the gas station — want to try that instead?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Join the complaint about the wasted trip and timing",
+            "required_content": [
+              "Agrees the drive out here was for nothing or the timing was rotten luck",
+              "Registers annoyance alongside A rather than only sympathising with them"
+            ],
+            "must_avoid": [
+              "Implying A's slowness, the detour, or the late start caused the miss",
+              "Inflating a small annoyance into a long grievance about the place"
+            ],
+            "example": "Nine? That's early. We drove all the way over here for a locked door. Of course that's how today ends.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Play along, commiserating lightly over a small last straw",
+            "required_content": [
+              "Keeps the setback small and shared rather than a real misfortune",
+              "Nods to the day having earned them better than this"
+            ],
+            "must_avoid": [
+              "Heavy sympathy or consolation out of proportion to a missed dessert",
+              "Answering flatly with logistics and ignoring the wry, day-capping framing"
+            ],
+            "example": "Naturally. Perfect end to a perfect day. Locked out of ice cream — that's the one thing today hadn't taken yet.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013601Z",
+      "item_id": "v6_05d",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_05d__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:36:28+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05d__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05d",
+        "condition": "condition_a",
+        "vocalization": "sigh",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Join the deflation; treat the outcome as a non-event",
+            "required_content": [
+              "Registers that nothing changed — the result lands as anticlimax, not as news",
+              "Marks the build-up as having come to nothing, matching A's flatness"
+            ],
+            "must_avoid": [
+              "Treating an unchanged benchmark rate as surprising, exciting, or significant news",
+              "Ignoring the anticlimax and asking eagerly what the announcement means next"
+            ],
+            "example": "All that waiting for noon and they just left it where it was.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Take the news personally; say what it means for the mortgage",
+            "required_content": [
+              "Connects the unchanged rate to B's own pending paperwork or decision",
+              "Indicates what B now does — proceed, keep waiting, or accept the status quo"
+            ],
+            "must_avoid": [
+              "Handling it as abstract economic commentary with no bearing on B's situation",
+              "Escalating into distress out of proportion to a rate holding steady"
+            ],
+            "example": "So nothing shifts for me either. I'll just sign at the rate they already quoted.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Accept the wind-down; acknowledge and let the topic close",
+            "required_content": [
+              "Receives the result without opening fresh speculation about rates or the next meeting",
+              "Signals the thread is done — moves on, or lets it rest"
+            ],
+            "must_avoid": [
+              "Pressing A for analysis, forecasts, or when the next announcement lands",
+              "Reopening the earlier tangents about cafés, hiring, or B's half-attention"
+            ],
+            "example": "Right, that's that. I'll turn the alert off and get back to the paperwork.",
+            "note": "Differs from interpretation 1: there the reply shares A's deflation about the result; here it closes the conversation itself, whatever the result."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013628Z",
+      "item_id": "v6_05d",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_05d__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:36:42+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05d__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_05d",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Register the bad news for the mortgage and respond practically",
+            "required_content": [
+              "Treats the held rate as unwelcome for B's own mortgage situation",
+              "Says something about what B does now — wait, proceed, or reconsider the paperwork"
+            ],
+            "must_avoid": [
+              "Treating the unchanged rate as good, safe, or reassuring news",
+              "Ignoring the mortgage stake and responding as if it were abstract economic news"
+            ],
+            "example": "Figures. So I'm signing at the same rate I was dreading. Might as well send the paperwork through today then.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Match the deflation and let the topic wind down",
+            "required_content": [
+              "Marks the announcement as having amounted to nothing",
+              "Drops or redirects the subject rather than pursuing the rate further"
+            ],
+            "must_avoid": [
+              "Digging into rate analysis or asking what the decision means going forward",
+              "Treating the non-event as dramatic or consequential"
+            ],
+            "example": "All that for a nothing. I'll turn the alert off. Anyway — you said the warehouse is hiring again?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Join the complaint and commiserate over the wasted wait",
+            "required_content": [
+              "Shares A's exasperation rather than just receiving the information",
+              "Acknowledges it was more or less what they both expected"
+            ],
+            "must_avoid": [
+              "Delivering a neutral or informational reply that leaves A complaining alone",
+              "Consoling A from outside, as if only A were put out"
+            ],
+            "example": "Of course they did. We both saw that coming, and I still sat here with an alert on for it. Waste of a morning.",
+            "note": "Differs from 1 by centring shared grievance over the wasted watching rather than B's mortgage decision."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013039Z",
+      "item_id": "v6_06a",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_06a__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:30:52+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06a__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06a",
+        "condition": "condition_a",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Enjoys the delight and confirms the gift is theirs",
+            "required_content": [
+              "Confirms the gift is genuinely for them, no hesitation or qualification",
+              "Adds something that extends the pleasure — why B chose it, or urging them to open/use it"
+            ],
+            "must_avoid": [
+              "Deflecting or minimizing the gift's significance, brushing off their excitement",
+              "Shifting to the guests arriving or other logistics before the gift moment lands"
+            ],
+            "example": "Yes! I saw it and knew immediately. Go on, take it out — I want to see your face.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Owns breaking the no-presents agreement without apologizing much",
+            "required_content": [
+              "Acknowledges they went past what the two of them agreed",
+              "Makes clear they did it deliberately and don't want it argued about"
+            ],
+            "must_avoid": [
+              "Treating the reaction as pure delight and ignoring the agreement being broken",
+              "Getting defensive or apologetic in a way that makes them feel guilty for accepting"
+            ],
+            "example": "I know, I know, we said no presents. I decided that rule didn't apply this year. Just open it.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Lets the emotion land and affirms the thought behind it",
+            "required_content": [
+              "Conveys that B chose this specifically with them in mind",
+              "Gives them room to be moved rather than rushing past the moment"
+            ],
+            "must_avoid": [
+              "Downplaying it as no big deal or nothing, which dismisses the feeling",
+              "Making them explain or perform their reaction, or teasing them about it"
+            ],
+            "example": "I've been thinking about it since you mentioned it months ago. Take your time — nobody's here yet.",
+            "note": "Differs from 1 in what it rewards: 1 celebrates the excitement outward, 3 makes quiet room for feeling."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013052Z",
+      "item_id": "v6_06a",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_06a__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:31:05+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06a__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06a",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Playfully owns breaking the rule, presses A to open it",
+            "required_content": [
+              "Cheerful admission that B broke the no-presents pact and isn't sorry",
+              "Push for A to keep going and open or accept it anyway"
+            ],
+            "must_avoid": [
+              "Treating the protest as genuine and apologising or offering to take the gift back",
+              "Getting solemn about why the gift matters instead of trading the joke"
+            ],
+            "example": "I know, I know, we said no presents. I lied. Open it properly before everyone shows up.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Takes credit warmly, savours that it landed",
+            "required_content": [
+              "Confirmation that yes, this is for A, chosen deliberately",
+              "Pleasure that A reacted this way, inviting A to look closer"
+            ],
+            "must_avoid": [
+              "Downplaying the gift as nothing so A's reaction has nowhere to go",
+              "Reading the groan as objection and defending the decision to give it"
+            ],
+            "example": "You've been talking about that thing for a year. Go on—take it out, I want to see your face.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Reassures A nothing is owed, keeps it easy",
+            "required_content": [
+              "Explicit release from any obligation to reciprocate or even out",
+              "Something that keeps the moment low-stakes, e.g. why B just wanted to"
+            ],
+            "must_avoid": [
+              "Insisting A make a fuss or thank B more, which sharpens the discomfort",
+              "Joking that A now owes B something, even lightly"
+            ],
+            "example": "Don't start. You don't owe me anything—I saw it and thought of you. That's the whole story.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T210144Z",
+      "item_id": "v6_06b",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_06b__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:01:56+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06b__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06b",
+        "condition": "condition_a",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Join the delight and enjoy the moment with them",
+            "required_content": [
+              "Shares the excitement rather than staying neutral about the discovery",
+              "Keeps attention on the gift itself, e.g. inviting them to look through it"
+            ],
+            "must_avoid": [
+              "Treating the gasp as alarm or asking whether something is wrong",
+              "Deflecting into modesty or logistics that flattens the peak moment"
+            ],
+            "example": "I know! Go on, get it all out — I want to see your face for the last one.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Own the secret and enjoy having pulled it off",
+            "required_content": [
+              "Acknowledges having deliberately tracked or sourced the whole list",
+              "Confirms the surprise landed, e.g. how long it was kept quiet"
+            ],
+            "must_avoid": [
+              "Acting equally surprised or disclaiming any role in the gift",
+              "Explaining the logistics at length instead of letting the reveal land"
+            ],
+            "example": "You left that list on the fridge in October. I've been sitting on this for two months.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Receive the emotion warmly and let them find words",
+            "required_content": [
+              "Accepts the unspoken gratitude without requiring them to articulate it",
+              "Warmly plays down the effort so they are not overwhelmed by owing thanks"
+            ],
+            "must_avoid": [
+              "Pressing them to say more or perform a thank-you while speechless",
+              "Boasting about the effort or expense, which deepens the sense of debt"
+            ],
+            "example": "You don't have to say anything. I just wanted you to have a good one this year.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T210156Z",
+      "item_id": "v6_06b",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_06b__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T21:02:11+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06b__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06b",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Waves off the excess, keeps A from feeling indebted",
+            "required_content": [
+              "Signals the cost or scale is not something A needs to feel bad about",
+              "Keeps A pointed at enjoying the gift rather than at the expense"
+            ],
+            "must_avoid": [
+              "Detailing what it cost, where it came from, or how much effort it took",
+              "Treating the groan as reluctance about the items themselves"
+            ],
+            "example": "Don't do the maths on it. I wanted to get the whole list in one go — that was the fun part. Go on, what's on top?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Plays along with the mock protest, enjoys landing it",
+            "required_content": [
+              "Meets the fake complaint in kind rather than taking it at face value",
+              "Shows B is pleased the surprise worked"
+            ],
+            "must_avoid": [
+              "Reassuring or apologising as though A were genuinely burdened",
+              "Dropping the joke to explain sincerely why B bought everything"
+            ],
+            "example": "Oh, terrible for you. Absolutely ruined your morning. I've been sitting on that box for three weeks waiting for this.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Gives A room, holds the moment without demanding words",
+            "required_content": [
+              "Accepts that A is moved and does not need to produce a proper thank-you",
+              "Offers something easy to do or say next so the beat isn't left hanging"
+            ],
+            "must_avoid": [
+              "Pressing A to react, describing their emotion back to them, or fussing over them",
+              "Filling the silence with jokes that brush past how loaded the moment is"
+            ],
+            "example": "You don't have to say anything. Here — start with that flat one, I think it's the one you've been going on about since summer.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205909Z",
+      "item_id": "v6_06c",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_06c__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:59:22+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06c__condition_a__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06c",
+        "condition": "condition_a",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Share the relief and turn her toward leaving on time",
+            "required_content": [
+              "Registers that the missing things are found and the crisis is over",
+              "Points her at the next step — closing up and getting to the train"
+            ],
+            "must_avoid": [
+              "Dwelling on how she missed them twice or how close she came",
+              "Claiming credit for the suggestion or making it about being right"
+            ],
+            "example": "Oh thank god. Right, zip it up and go — you've still got fifty minutes.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Confirm the surprise and explain how it went unnoticed",
+            "required_content": [
+              "Treats the pocket as an easy one to miss, not a lapse on her part",
+              "Confirms everything she listed is accounted for"
+            ],
+            "must_avoid": [
+              "Reassuring about distress or panic she has not expressed here",
+              "Scolding or teasing her for searching twice without finding it"
+            ],
+            "example": "That flap sits flat so it looks like lining — I've missed it on that bag too. So passport, charger, meds, all three?",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Let her off the hook and close the subject warmly",
+            "required_content": [
+              "Waves off any self-blame for the panic or the missed searches",
+              "Keeps things moving rather than lingering on the mistake"
+            ],
+            "must_avoid": [
+              "Agreeing she was silly, or emphasising that you told her so",
+              "Turning it into a lesson about how to pack or search next time"
+            ],
+            "example": "Happens to everyone when you're watching the clock. Anyway — found is found. Want a hand getting that shut?",
+            "note": "Distinct from guide 1: here the reply must actively absorb her self-directed embarrassment, not just share relief."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T205922Z",
+      "item_id": "v6_06c",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_06c__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T20:59:36+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06c__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06c",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Lets her off the hook without claiming vindication",
+            "required_content": [
+              "Signals no fault in missing the pocket, e.g. it's an easy one to overlook",
+              "Moves past the search rather than dwelling on who was right"
+            ],
+            "must_avoid": [
+              "Taking credit or teasing her for missing what B pointed out twice",
+              "Suggesting she keep checking, or treating the items as still unfound"
+            ],
+            "example": "That pocket hides from everyone, honestly. Right — that's all three, so you're set.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Deflates the panic and marks the search closed",
+            "required_content": [
+              "Confirms the hunt is over and nothing more needs finding",
+              "Downplays the fuss so the embarrassment has nowhere to land"
+            ],
+            "must_avoid": [
+              "Reviving urgency about the packing or the missing items",
+              "Dwelling on how much she panicked, or amplifying the embarrassment"
+            ],
+            "example": "Well, that's everything then. Zip it up and forget the last twenty minutes ever happened.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Sympathises with the wasted effort, then turns to departure",
+            "required_content": [
+              "Acknowledges the annoyance of having burned time for nothing",
+              "Orients to the train — time is fine, or she can get moving now"
+            ],
+            "must_avoid": [
+              "Offering further help searching, which she is not asking for",
+              "Brushing off the frustration as if nothing irritating just happened"
+            ],
+            "example": "Twenty minutes for something that was there the whole time — infuriating. Still, you've got time. Go.",
+            "note": "Differs from 2 in where it lands: sympathy for lost time and a push toward the train, rather than defusing her own embarrassment."
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    },
+    {
+      "run_id": "r20260908T013000Z",
+      "item_id": "v6_06d",
+      "condition": "condition_a",
+      "task_type": "response_guides",
+      "task_id": "v6_06d__condition_a__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:30:26+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06d__condition_a__response_guides__attempt2.txt",
+      "parsed": {
+        "item_id": "v6_06d",
+        "condition": "condition_a",
+        "vocalization": "gasp",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Shares the relief and confirms the trip is on",
+            "required_content": [
+              "Registers the news as good and the booking as real",
+              "Treats the right week as settled, e.g. the plan is now on"
+            ],
+            "must_avoid": [
+              "Treating the gasp as alarm or asking whether something went wrong",
+              "Casting doubt on the booking or hedging that it may still fall through"
+            ],
+            "example": "Oh thank god. So it did go through, and it's the week we wanted. We're actually going.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Presses for the details now visible on screen",
+            "required_content": [
+              "Asks for or seeks the specifics — dates, times, what else the email says",
+              "Acknowledges the uncertainty is over now that it's in writing"
+            ],
+            "must_avoid": [
+              "Only celebrating without following up on what the email actually shows",
+              "Reacting as if B already knows the contents A just discovered"
+            ],
+            "example": "Wait, what days exactly? Read me the whole thing — flights, hotel, all of it. Finally something in writing.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Matches the excitement and helps confirm it's real",
+            "required_content": [
+              "Joins the heightened reaction rather than staying flat",
+              "Backs up that it's genuine — double-check the dates or reference, and it holds"
+            ],
+            "must_avoid": [
+              "Dampening the moment or treating the excitement as overblown",
+              "Dismissing the check as unnecessary when A is inviting confirmation"
+            ],
+            "example": "No way — read it again? Next week, our dates, real booking reference? Okay, it's happening. I can't believe it.",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 2
+    },
+    {
+      "run_id": "r20260908T013026Z",
+      "item_id": "v6_06d",
+      "condition": "condition_b",
+      "task_type": "response_guides",
+      "task_id": "v6_06d__condition_b__response_guides",
+      "stimulus_audio_path": "",
+      "prompt_version": "response_guide_writer@5564dad71b98",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-08T01:30:39+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06d__condition_b__response_guides__attempt1.txt",
+      "parsed": {
+        "item_id": "v6_06d",
+        "condition": "condition_b",
+        "vocalization": "groan",
+        "responder": "B",
+        "guides": [
+          {
+            "interpretation_index": 1,
+            "response_function": "Register the wrong dates and turn to fixing the booking",
+            "required_content": [
+              "Recognition that the dates on the confirmation are not the ones A wanted",
+              "A concrete next step, such as changing the booking or contacting whoever booked it"
+            ],
+            "must_avoid": [
+              "Treating the confirmation as good news or congratulating A that it arrived",
+              "Reading the groan as being about time pressure rather than incorrect dates"
+            ],
+            "example": "Next week? That's not what we asked for. Forward it to me and I'll see if it can be moved.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 2,
+            "response_function": "Acknowledge the short notice and start reducing the scramble",
+            "required_content": [
+              "Recognition that next week leaves very little time to get ready",
+              "Something that eases the crunch — help, a plan, or noting what actually still needs doing"
+            ],
+            "must_avoid": [
+              "Suggesting the dates are a mistake to be corrected rather than simply soon",
+              "Brushing off the timing as no big deal or telling A to relax"
+            ],
+            "example": "Next week, seriously? Okay, that's tight but doable — tell me what's left and I'll take half of it.",
+            "note": ""
+          },
+          {
+            "interpretation_index": 3,
+            "response_function": "Follow the pivot and ask what the dates actually say",
+            "required_content": [
+              "Acknowledgement that the email solved the waiting but produced a worse problem",
+              "A prompt for the specific detail — the dates, or what exactly is wrong with them"
+            ],
+            "must_avoid": [
+              "Still responding as if the arrival of the email settled things",
+              "Assuming which problem it is before A has said"
+            ],
+            "example": "Oh no — so it did go through, just not how we wanted. What does it actually say?",
+            "note": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1
+    }
+  ]
+}

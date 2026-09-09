@@ -1,1 +1,56 @@
-{"item_id": "v6_01c", "condition": "condition_a", "vocalization": "laugh", "responder": "B", "guides": [{"interpretation_index": 1, "response_function": "Joins the joke about how much he drinks", "required_content": ["Plays along with the punchline that the points reveal his Dr. Pepper volume", "Treats the free case as fuel for the running joke, not a concern"], "must_avoid": ["Moralising about soda intake or suggesting he cut back", "Answering only with logistics of redeeming the points, ignoring the joke"], "example": "Those points didn't come from nowhere, you know. The machine has been keeping score.", "note": ""}, {"interpretation_index": 2, "response_function": "Shares his pleasure at the payoff and confirms it", "required_content": ["Warm agreement that it's a good deal for something he'd do anyway", "Something concrete about the reward — that it's real, or how to claim it"], "must_avoid": ["Teasing him about the size of the habit rather than celebrating the win", "Undercutting the news with caveats, doubts, or fine print"], "example": "Right? Free case just for buying what you already buy. I can pull it up again if you want the barcode.", "note": "Differs from 1 by centring the good news rather than his habit."}, {"interpretation_index": 3, "response_function": "Accepts the owned excess without piling on", "required_content": ["Lets the self-deprecation stand rather than confirming the habit is a problem", "Signals he's not being judged — teasing, if any, stays affectionate"], "must_avoid": ["Actually scolding him or agreeing that he drinks too much", "Reassuring earnestly as if he'd confessed something he feels bad about"], "example": "Nobody was going to say anything. Enjoy your case, you've clearly earned it fair and square.", "note": ""}]}
+{
+  "item_id": "v6_01c",
+  "condition": "condition_a",
+  "vocalization": "laugh",
+  "responder": "B",
+  "guides": [
+    {
+      "interpretation_index": 1,
+      "response_function": "Shares the pleasure of the windfall as good news landing",
+      "required_content": [
+        "Treats the news as having landed happily rather than needing further explanation or checking"
+      ],
+      "acceptable_variations": [
+        "Says how or when he can claim the free case",
+        "Mentions he was sitting on the points without knowing"
+      ],
+      "must_avoid": [
+        "Reads the laugh as disbelief or confusion and re-explains the points total"
+      ],
+      "example": "Right? Free case, just sitting there waiting for you.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 2,
+      "response_function": "Joins his joke about his own Dr. Pepper habit",
+      "required_content": [
+        "Treats the habit as something he has already made the joke about, not a fresh observation or worry"
+      ],
+      "acceptable_variations": [
+        "Adds a figure or estimate of how many bottles that took",
+        "Mentions the after-work stops as the source of the points"
+      ],
+      "must_avoid": [
+        "Delivers concern or a lecture about how much soda he drinks"
+      ],
+      "example": "Those points didn't come from nowhere, that's for sure.",
+      "note": "Overlaps with guide 3 in joining the humour, but the joke's target is his habit rather than the vow."
+    },
+    {
+      "interpretation_index": 3,
+      "response_function": "Plays along with the mock-vow as obvious exaggeration",
+      "required_content": [
+        "Treats \"never stopping\" as a joke rather than a literal commitment being announced"
+      ],
+      "acceptable_variations": [
+        "Extends the bit — loyalty for life, a sponsorship, more free cases",
+        "Notes how cheaply his loyalty was bought"
+      ],
+      "must_avoid": [
+        "Responds earnestly to the vow, as advice, agreement, or a caution about lifelong soda drinking"
+      ],
+      "example": "One free case and they've got you for life. Cheap date.",
+      "note": ""
+    }
+  ]
+}

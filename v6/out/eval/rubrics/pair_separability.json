@@ -1,0 +1,728 @@
+{
+  "checked_at": "2026-09-09T06:01:44+00:00",
+  "verifier": "claude-opus-5",
+  "prompt_version": "pair_separability_check@442be37530b6",
+  "not_separable": [
+    "v6_01a",
+    "v6_01b",
+    "v6_01c",
+    "v6_01d",
+    "v6_02a",
+    "v6_02b",
+    "v6_02c",
+    "v6_02d",
+    "v6_03a",
+    "v6_03b",
+    "v6_03c",
+    "v6_03d",
+    "v6_04a",
+    "v6_04b",
+    "v6_04c",
+    "v6_04d",
+    "v6_05a",
+    "v6_05b",
+    "v6_05c",
+    "v6_05d",
+    "v6_06a",
+    "v6_06b",
+    "v6_06c"
+  ],
+  "items": [
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_01a",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_01a__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T06:00:44+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01a__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both call for shared amusement at predictable puppy mischief — B's fond-exasperation reading is functionally identical to A's. Only B's wistful-longing reading would differ, and it contradicts the transcript (A is the one sending pictures to B).",
+        "example_response_fitting_both": "Ha, of course she does — day one and she's already claimed the slippers. That is so corgi.",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "sigh"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_01b",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_01b__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:58:52+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01b__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions deliver the same news — money arrived, bill covered, worry over — and both invite B to acknowledge the resolution and the exact-amount coincidence. Only the emotional tint differs; the reply's job is identical.",
+        "example_response_fitting_both": "Ha, right down to the cent. Well, at least it's covered — go pay it before anything else eats it.",
+        "which_side_is_weaker": "condition_a"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "sigh"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_01c",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_01c__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T06:00:34+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01c__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions invite the same thing: teasing acknowledgment of the habit and shared amusement about the free case. Laugh and sigh both mark the vow as a joke, so a wry habit-teasing reply fits either.",
+        "example_response_fitting_both": "Ha, at this rate you'll have earned the next case before you finish this one. Want me to redeem it before the points expire?",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "sigh"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_01d",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_01d__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T06:00:06+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_01d__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both accept B was right and cast the miss as predictable; each invites the same reply — light commiseration that the spot is easy to overlook. Only tone differs (amused vs. annoyed), not what B must do.",
+        "example_response_fitting_both": "Honestly, that's the easiest place to miss — they tuck them right down where nobody looks.",
+        "which_side_is_weaker": "neither"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "sigh"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_02a",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_02a__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:58:21+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02a__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions land the same bad news and invite the same reply: incredulity at the absurd approval plus a move toward next steps. Wry laugh vs. startled gasp changes A's affect, not what B must do.",
+        "example_response_fitting_both": "Wait — the one you already stopped? After all that waiting, that's what they approved? That's no answer at all. Can your prescriber push back on it, or does the clinic have to file something new?",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "gasp"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_02b",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_02b__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:57:35+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02b__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both call for the same thing: shared surprise-and-delight at a rediscovered moment, no concern or repair. Laugh adds amusement, gasp adds jolt, but each version's own readings already include delighted surprise, so replies converge.",
+        "example_response_fitting_both": "Oh my god, I remember that — he was always doing that. Rewind it, I want to see it again.",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "gasp"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_02c",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_02c__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:57:59+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02c__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions are A flagging the listing as unexpectedly good and urgent; B's reply in either case is excited uptake plus a move to apply before Monday. Nothing asks B to do different work.",
+        "example_response_fitting_both": "Wait, twenty-two? That's actually above what I needed. Okay, Monday is tight but I can do it — I'm applying tonight.",
+        "which_side_is_weaker": "condition_a"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "gasp"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_02d",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_02d__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:59:26+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_02d__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both call on B to own the blank tip line with rueful embarrassment about how gone they were plus intent to fix it; laugh's teasing and gasp's mock-scandal ask for the same self-deprecating admission.",
+        "example_response_fitting_both": "Oh no — nothing at all? She was running around for us all night. I'm going back today and handing her cash.",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "gasp"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_03a",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_03a__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:59:40+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03a__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions call for the same thing from B: rueful frustration at the wasted rush. Laugh invites shared irony, groan shared complaint, but a wry-exasperated reaction lands naturally against either delivery.",
+        "example_response_fitting_both": "Are you kidding me? I choked down dinner and a whole protein shake for this.",
+        "which_side_is_weaker": "neither"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_03b",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_03b__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:57:21+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03b__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions treat 95 as good news and foreground B's spoiling of the reveal, so both invite the same reply: a light apology for reading it out plus celebration of the score. Nothing forces divergent action.",
+        "example_response_fitting_both": "Sorry — I know you wanted to find it yourself. I couldn't sit on it, though. Ninety-five, Mom!",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_03c",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_03c__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:56:41+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03c__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both invite B to share incredulity that a fourth round is being asked. Condition A's 'amused disbelief at excess' and B's 'exasperation at excess' request the same move from B; only pure congratulation or pure sympathy would separate them, and neither is required.",
+        "example_response_fitting_both": "A fourth one? What could they possibly still not know about you — and tomorrow, no less?",
+        "which_side_is_weaker": "condition_a"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_03d",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_03d__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T06:00:14+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_03d__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions have A reading out unwelcome news that undercuts his claimed readiness. Either way B reacts to the requirement — sympathy, teasing about skipping the portal, or shared dismay — and the same reply lands for both.",
+        "example_response_fitting_both": "Onstage? In front of everyone? Okay, so maybe the portal was worth checking after all. At least you've got three days to figure out what to say.",
+        "which_side_is_weaker": "condition_a"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "laugh",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_04a",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_04a__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:57:52+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04a__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions leave B doing the same thing: acknowledge the tight deadline, affirm the grant is worth it, and push toward applying tonight. Only tone-matching words (\"I know\" vs \"Right?!\") differ; substance is identical.",
+        "example_response_fitting_both": "I know, tonight is tight — but it's the whole trip. Let's start it right now; I'll sit with you and we'll get it in.",
+        "which_side_is_weaker": "condition_a"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "sigh",
+      "voc_b": "gasp"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_04b",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_04b__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:58:40+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04b__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both treat the photo as the answer and the cake as gone; B's reply is sympathy plus a practical next step either way. Startle versus deflation changes A's intensity, not what B must do.",
+        "example_response_fitting_both": "The whole thing, without even asking. After all those hours you put in—do you want me to text her, or just let her have her moment and I'll help you make another one this weekend?",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "sigh",
+      "voc_b": "gasp"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_04c",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_04c__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T06:01:23+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04c__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both call for B to accept the plan and move to action — ring the dentist, comfort Mia. Condition A's own second reading (dismay at discovery) duplicates B's shock reading, so nothing distinct is asked of the reply.",
+        "example_response_fitting_both": "Okay — I'll ring them now and see if they can fit her in today. Mia, sweetheart, you're all right, we'll get it looked at.",
+        "which_side_is_weaker": "condition_a"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "sigh",
+      "voc_b": "gasp"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_04d",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_04d__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:56:29+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_04d__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both call for the same thing: confirm the ticket is his and mark the win as real. Sigh and gasp differ only in inner arousal; neither shifts what B must do — confirm, then share the enormity.",
+        "example_response_fitting_both": "Yes — that's yours, every number. Take a breath and look again: you actually won.",
+        "which_side_is_weaker": "condition_a"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "sigh",
+      "voc_b": "gasp"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_05a",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_05a__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:58:07+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05a__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both are negative reactions to the same setback, treating it as rueful training failure. Acceptable replies commiserate and reframe the progress (obeys only when watched) either way; nothing asks the listener to do anything different.",
+        "example_response_fitting_both": "Ah, so \"leave it\" only works while you're standing over him. That's still progress — counters are the last thing to click, honestly.",
+        "which_side_is_weaker": "neither"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "sigh",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_05b",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_05b__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T06:00:21+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05b__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions have A accepting a disliked late slot; both replies confirm booking with light sympathy about the hour. Sigh vs groan differ only in intensity, not in what B must do.",
+        "example_response_fitting_both": "Yeah, I know, it's later than I'd like too — I'll lock in the 9:45 and we can grab a snack beforehand.",
+        "which_side_is_weaker": "neither"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "sigh",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_05c",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_05c__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T06:01:44+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05c__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both are unwelcome-outcome reactions to the same locked door delivering the same news. Both invite commiseration and a next-move suggestion. Groan reads slightly louder, but no reply commits to one and misfires on the other.",
+        "example_response_fitting_both": "Ugh, seriously? Nine? We were so close. Okay — there's that place on Fifth that's open till eleven, want to just go there instead?",
+        "which_side_is_weaker": "neither"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "sigh",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_05d",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_05d__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:59:53+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_05d__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions have A pre-framing the hold as unwelcome and deflating, inviting B's shared disappointment about the stalled mortgage. Nothing asks a different action of B — sigh and groan both call for commiseration plus a next-step remark.",
+        "example_response_fitting_both": "Unchanged? Great — so the paperwork just sits there until the next meeting. I'll tell the broker we're holding.",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "sigh",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_06a",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_06a__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:57:06+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06a__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions have A registering the gift as more than expected and gently protesting; both invite B to wave off the objection and urge her to open it. Nothing forces different action from B.",
+        "example_response_fitting_both": "I know, I know — you didn't have to and we weren't doing presents. I wanted to. Now open it before they all show up.",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "gasp",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_06b",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_06b__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T06:01:06+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06b__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions put B's own excess on the table and invite B to own it warmly; gasp wants shared delight, groan wants gentle defense — but one self-deprecating explanation satisfies both. Neither reply reads oddly against the other.",
+        "example_response_fitting_both": "I couldn't help myself — once I had the list, I wasn't going to leave anything off it.",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "gasp",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_06c",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_06c__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:59:11+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06c__pair_separability.txt",
+      "parsed": {
+        "separable": false,
+        "overlap": "Both versions end the search, concede B was right, and keep the train clock running. Every reply does the same work: confirm the find, wave off the double-miss, push A out the door. Only affective tint differs.",
+        "example_response_fitting_both": "Ha — right where I said. Anyway, they're found. Zip it up and go, you've still got time.",
+        "which_side_is_weaker": "condition_a"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "gasp",
+      "voc_b": "groan"
+    },
+    {
+      "run_id": "r20260909T055619Z",
+      "item_id": "v6_06d",
+      "condition": "pair",
+      "task_type": "pair_separability",
+      "task_id": "v6_06d__pair__pair_separability",
+      "stimulus_audio_path": "",
+      "prompt_version": "pair_separability_check@442be37530b6",
+      "model_provider": "anthropic",
+      "model_name": "claude-opus-5",
+      "model_version": "",
+      "settings": {
+        "transport": "cli"
+      },
+      "seed": null,
+      "timestamp": "2026-09-09T05:56:55+00:00",
+      "raw_response_path": "out/eval/writer_raw/v6_06d__pair_separability.txt",
+      "parsed": {
+        "separable": true,
+        "overlap": "Both call for reacting to surprising timing, but valence forks the reply: gasp invites shared delight and planning excitement, groan demands commiseration or damage control (rebooking, packing scramble). Congratulating a groan reads badly.",
+        "example_response_fitting_both": "",
+        "which_side_is_weaker": "condition_b"
+      },
+      "status": "ok",
+      "errors": [],
+      "attempts": 1,
+      "voc_a": "gasp",
+      "voc_b": "groan"
+    }
+  ]
+}

@@ -1,1 +1,35 @@
-{"item_id":"v6_06c","condition":"condition_b","vocalization":"groan","responder":"B","guides":[{"interpretation_index":1,"response_function":"Lets her off the hook without claiming vindication","required_content":["Signals no fault in missing the pocket, e.g. it's an easy one to overlook","Moves past the search rather than dwelling on who was right"],"must_avoid":["Taking credit or teasing her for missing what B pointed out twice","Suggesting she keep checking, or treating the items as still unfound"],"example":"That pocket hides from everyone, honestly. Right — that's all three, so you're set.","note":""},{"interpretation_index":2,"response_function":"Deflates the panic and marks the search closed","required_content":["Confirms the hunt is over and nothing more needs finding","Downplays the fuss so the embarrassment has nowhere to land"],"must_avoid":["Reviving urgency about the packing or the missing items","Dwelling on how much she panicked, or amplifying the embarrassment"],"example":"Well, that's everything then. Zip it up and forget the last twenty minutes ever happened.","note":""},{"interpretation_index":3,"response_function":"Sympathises with the wasted effort, then turns to departure","required_content":["Acknowledges the annoyance of having burned time for nothing","Orients to the train — time is fine, or she can get moving now"],"must_avoid":["Offering further help searching, which she is not asking for","Brushing off the frustration as if nothing irritating just happened"],"example":"Twenty minutes for something that was there the whole time — infuriating. Still, you've got time. Go.","note":"Differs from 2 in where it lands: sympathy for lost time and a push toward the train, rather than defusing her own embarrassment."}]}
+{
+  "item_id": "v6_06c",
+  "condition": "condition_b",
+  "vocalization": "groan",
+  "responder": "B",
+  "guides": [
+    {
+      "interpretation_index": 1,
+      "response_function": "Absorbs the self-reproach lightly without dwelling on being right",
+      "required_content": ["Treats the find as a small self-inflicted annoyance rather than plain good news"],
+      "acceptable_variations": ["Says it happens to everyone / that pocket is easy to miss", "Moves things along toward packing up or leaving"],
+      "must_avoid": ["Hearing the groan as annoyance at B and defending the suggestion", "Gloating or labouring the point that B had said so"],
+      "example": "Of course they were. That pocket gets everyone at least once.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 2,
+      "response_function": "Steadies them about the time rather than celebrating the find",
+      "required_content": ["Treats the groan as cost and pressure, not as the search ending happily"],
+      "acceptable_variations": ["Points out there's still enough time for the train", "Offers to help close up the case or call a car"],
+      "must_avoid": ["Reading it as pure relief and treating the problem as over", "Adding to the panic about the hour"],
+      "example": "Annoying, but you've still got the hour. Zip it up and go.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 3,
+      "response_function": "Joins the mild comedy of where the things turned up",
+      "required_content": ["Treats the outcome as both a resolution and faintly embarrassing"],
+      "acceptable_variations": ["Teases gently about the two searches", "Waves it off as no harm done"],
+      "must_avoid": ["Taking the groan as bad news or something still unresolved", "Mocking hard enough to sting rather than sharing the joke"],
+      "example": "All of it, in the one pocket you skipped. At least it's the funny ending.",
+      "note": ""
+    }
+  ]
+}

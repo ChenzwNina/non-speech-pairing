@@ -1,1 +1,58 @@
-{"item_id": "v6_05a", "condition": "condition_a", "vocalization": "sigh", "responder": "B", "guides": [{"interpretation_index": 1, "response_function": "Acknowledges the letdown and puts the single lapse in perspective", "required_content": ["Recognition that the theft is a genuine disappointment after A's earlier progress", "Something that keeps the setback proportionate — one slip, not the training undone"], "must_avoid": ["Treating it as funny, cute, or a good story about the dog", "Launching into training advice or next steps instead of registering the letdown"], "example": "Ugh, right when you'd just said he had it. One counter snack doesn't undo three weeks of \"leave it\" though.", "note": ""}, {"interpretation_index": 2, "response_function": "Sympathises with the long haul and encourages continuing", "required_content": ["Sympathy that the work is taking longer than A hoped", "Something supportive about the ongoing effort — that more sessions will get there"], "must_avoid": ["Implying A should give up or that Max will not learn it", "Skipping the sympathy and moving straight to praise for the dog or the theft itself"], "example": "That's the annoying part — it's weeks more of the same drill. You've clearly got it moving, though. Keep going.", "note": ""}, {"interpretation_index": 3, "response_function": "Lets A off the hook for having claimed the training worked", "required_content": ["Acknowledgement that A's earlier confidence was reasonable given what they'd seen", "That the gap between supervised and unsupervised \"leave it\" is expected, not A's misjudgment"], "must_avoid": ["Agreeing that A was wrong to claim progress or pointing out they said it too soon", "Piling on about the dog's behaviour without addressing A's own admission"], "example": "You did see him do it, though — with you standing right there. Off-leash and unsupervised is a whole separate thing to teach.", "note": ""}]}
+{
+  "item_id": "v6_05a",
+  "condition": "condition_a",
+  "vocalization": "sigh",
+  "responder": "B",
+  "guides": [
+    {
+      "interpretation_index": 1,
+      "response_function": "Acknowledges the letdown after real effort; commiserates without dismissing",
+      "required_content": [
+        "Treats the failed \"leave it\" as a genuine disappointment to work he'd invested in, not a neutral event"
+      ],
+      "acceptable_variations": [
+        "Reframes it as partial progress — the command does hold when he's right there",
+        "Suggests or asks about what to try next in training"
+      ],
+      "must_avoid": [
+        "Treats it as funny or trivial, or as impressive on Max's part",
+        "Responds as if surprised by news A has already reported flatly"
+      ],
+      "example": "Ugh, that's a rough one after all those sessions. You really thought it had stuck.",
+      "note": ""
+    },
+    {
+      "interpretation_index": 2,
+      "response_function": "Takes it as a familiar hitch; matches his low-key resignation",
+      "required_content": [
+        "Treats the theft as unsurprising and unalarming — a known limit of the training so far, not a shock"
+      ],
+      "acceptable_variations": [
+        "Notes that off-leash or unsupervised reliability takes much longer",
+        "Moves on practically — moving the snack, closing the kitchen"
+      ],
+      "must_avoid": [
+        "Reacts with alarm or urgency, as though something unexpected just went wrong"
+      ],
+      "example": "Yeah, that tracks — it only really holds while you're standing over him. Counter stuff is a whole other level.",
+      "note": "Differs from guide 1 in calibration: here the reply downgrades the moment rather than sitting with the disappointment."
+    },
+    {
+      "interpretation_index": 3,
+      "response_function": "Joins the rueful complaint about Max, tolerantly",
+      "required_content": [
+        "Directs the exasperation at Max's behaviour in a forgiving, complaining register rather than a serious problem"
+      ],
+      "acceptable_variations": [
+        "Adds a comparable story of Max or another dog doing the same",
+        "Comments on Max's timing or nerve"
+      ],
+      "must_avoid": [
+        "Scolds Max in earnest or implies A mishandled the training",
+        "Treats the moment as amusing to the point of ignoring that A is annoyed"
+      ],
+      "example": "Of course he did. He waited for exactly the right second, didn't he.",
+      "note": ""
+    }
+  ]
+}
