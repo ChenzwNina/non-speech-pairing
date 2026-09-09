@@ -276,8 +276,16 @@ to that one turn.
 
 ## The evaluation
 
-Five metrics, kept apart. A model can hear every vocalization and still answer as though it had
-heard none — which is what v3 found — and an average would hide exactly that.
+Five metrics, kept apart, of which four run. A model can hear every vocalization and still
+answer as though it had heard none — which is what v3 found — and an average would hide
+exactly that. There is no composite score: each metric is computed and reported on its own.
+
+**Ranking is off by default.** Measuring the pairs found only 10 of 24 items where the two
+versions prefer different replies, so a pairwise judge over the whole set would spend three
+judges per item choosing between two equally good answers on 14 of them. Nothing else
+depends on it: perception, interpretation, response quality and tone each score one
+condition against its own guides and need no contrast between the versions, so all 24 items
+count in all four. `run_judges.py --stage rank` opts back in.
 
 | | |
 | --- | --- |

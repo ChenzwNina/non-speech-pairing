@@ -9,7 +9,8 @@ sound but replied well is no longer punished twice for the same thing.
     interp    3 text judges — does the model's own account match any acceptable reading?
               Two agreeing carries it; a tie is recorded, never rounded.
     content   3 text judges — 1 to 5 against the best-fitting guide, chosen from all of them.
-    rank      3 text judges — R_A against R_B, in both conditions' contexts.
+    rank      3 text judges — R_A against R_B, in both conditions' contexts. Off by default:
+              only 10 of 24 items separate well enough for the comparison to mean anything.
     tone      2 audio judges — is any clearly-wrong tone audible in the reply?
 
 Every judge is blind to which model produced what it is judging, and is given the authoritative
@@ -24,7 +25,8 @@ one carrying the vocalization.
 
     python v6/run_judges.py --dry-run
     python v6/run_judges.py --stage interp --limit 2
-    python v6/run_judges.py
+    python v6/run_judges.py                      # interp, content, tone
+    python v6/run_judges.py --stage rank         # opt in, on the 10 separable items
 """
 
 from __future__ import annotations
@@ -45,6 +47,14 @@ CONTRACT = {"interp": "judge_outputs:interpretation_match",
 PROMPT = {"interp": "interpretation_match_judge", "content": "content_match_judge",
           "rank": "content_pairwise_judge", "tone": "tone_judge"}
 ORDER = ("interp", "content", "rank", "tone")
+# `rank` is off by default. Measuring the pairs found only 10 of 24 items where the two
+# versions prefer different replies — a laugh and a sigh on the same words usually change the
+# stance a reply takes, not what it has to do — so a pairwise judge run over the whole set
+# would spend three judges per item to choose between two equally good answers on 14 of them.
+# The other three stages are unaffected: each scores one condition against its own guides and
+# needs no contrast between the versions. Pass `--stage rank` to run it anyway, on the 10 that
+# support it. See out/eval/rubrics/pair_separability.json and the README.
+DEFAULT_STAGES = ("interp", "content", "tone")
 ATTEMPTS = 2
 SYSTEM = "You return valid JSON only. No markdown fences, no commentary."
 
@@ -122,7 +132,7 @@ def main() -> int:
         print(f"error: {exc}", file=sys.stderr)
         return 2
     by_id = {i["item_id"]: i for i in items}
-    stages = [s for s in ORDER if s in (args.stage or ORDER)]
+    stages = [s for s in ORDER if s in (args.stage or DEFAULT_STAGES)]
     text_panel = [j for j in config["judges"]["text"]
                   if not args.judge or j["id"] in set(args.judge)]
     audio_panel = [j for j in config["judges"]["audio"]
