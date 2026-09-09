@@ -1,0 +1,798 @@
+{
+  "measured_at": "2026-09-09T06:50:26+00:00",
+  "judge": "claude-opus-5",
+  "transport": "cli",
+  "method": "cross-scored reference replies; preference = home - away, max over each condition's guides",
+  "rule": "an item separates when both sides have mean delta > 0 and more replies preferring their own condition than the other; generic replies (delta 0) abstain",
+  "not_separable": [
+    "v6_01a",
+    "v6_01b",
+    "v6_01d",
+    "v6_02a",
+    "v6_02b",
+    "v6_02c",
+    "v6_03b",
+    "v6_03d",
+    "v6_04b",
+    "v6_04c",
+    "v6_04d",
+    "v6_05b",
+    "v6_05d",
+    "v6_06a"
+  ],
+  "items": [
+    {
+      "separable": false,
+      "margin": 0.4,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 1,
+        "mean_delta": -0.33,
+        "leans_right_way": false,
+        "deltas": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 1,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.5,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          3
+        ]
+      },
+      "item_id": "v6_01a",
+      "voc_a": "laugh",
+      "voc_b": "sigh"
+    },
+    {
+      "separable": false,
+      "margin": 0.4,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 1,
+        "prefers_other": 1,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          -2,
+          2,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 1,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          2
+        ]
+      },
+      "item_id": "v6_01b",
+      "voc_a": "laugh",
+      "voc_b": "sigh"
+    },
+    {
+      "separable": true,
+      "margin": 0.5,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          1,
+          1,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.33,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          0,
+          1
+        ]
+      },
+      "item_id": "v6_01c",
+      "voc_a": "laugh",
+      "voc_b": "sigh"
+    },
+    {
+      "separable": false,
+      "margin": 0.6,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          1,
+          2,
+          0
+        ]
+      },
+      "item_id": "v6_01d",
+      "voc_a": "laugh",
+      "voc_b": "sigh"
+    },
+    {
+      "separable": false,
+      "margin": 0.5,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 1,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          2,
+          0
+        ]
+      },
+      "item_id": "v6_02a",
+      "voc_a": "laugh",
+      "voc_b": "gasp"
+    },
+    {
+      "separable": false,
+      "margin": 0.2,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.33,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          1,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "item_id": "v6_02b",
+      "voc_a": "laugh",
+      "voc_b": "gasp"
+    },
+    {
+      "separable": false,
+      "margin": -0.2,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 1,
+        "mean_delta": -0.33,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "item_id": "v6_02c",
+      "voc_a": "laugh",
+      "voc_b": "gasp"
+    },
+    {
+      "separable": true,
+      "margin": 1.0,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 1,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 0.5,
+        "leans_right_way": true,
+        "deltas": [
+          1,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 1.33,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          0,
+          4
+        ]
+      },
+      "item_id": "v6_02d",
+      "voc_a": "laugh",
+      "voc_b": "gasp"
+    },
+    {
+      "separable": true,
+      "margin": 1.0,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          0,
+          3
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          0,
+          3
+        ]
+      },
+      "item_id": "v6_03a",
+      "voc_a": "laugh",
+      "voc_b": "groan"
+    },
+    {
+      "separable": false,
+      "margin": 0.6,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 1,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.5,
+        "leans_right_way": true,
+        "deltas": [
+          3,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 0,
+        "generic": 3,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0,
+          0
+        ]
+      },
+      "item_id": "v6_03b",
+      "voc_a": "laugh",
+      "voc_b": "groan"
+    },
+    {
+      "separable": true,
+      "margin": 1.33,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.67,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          2,
+          3
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          0,
+          3
+        ]
+      },
+      "item_id": "v6_03c",
+      "voc_a": "laugh",
+      "voc_b": "groan"
+    },
+    {
+      "separable": false,
+      "margin": 1.0,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 2.0,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          3,
+          3
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 1,
+        "prefers_other": 1,
+        "mean_delta": -0.5,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          -1
+        ]
+      },
+      "item_id": "v6_03d",
+      "voc_a": "laugh",
+      "voc_b": "groan"
+    },
+    {
+      "separable": true,
+      "margin": 1.33,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.67,
+        "leans_right_way": true,
+        "deltas": [
+          3,
+          0,
+          2
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          3,
+          0,
+          0
+        ]
+      },
+      "item_id": "v6_04a",
+      "voc_a": "sigh",
+      "voc_b": "gasp"
+    },
+    {
+      "separable": false,
+      "margin": 0.4,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          0,
+          2
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "item_id": "v6_04b",
+      "voc_a": "sigh",
+      "voc_b": "gasp"
+    },
+    {
+      "separable": false,
+      "margin": 0.5,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 1,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          2,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "item_id": "v6_04c",
+      "voc_a": "sigh",
+      "voc_b": "gasp"
+    },
+    {
+      "separable": false,
+      "margin": 0.0,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "item_id": "v6_04d",
+      "voc_a": "sigh",
+      "voc_b": "gasp"
+    },
+    {
+      "separable": true,
+      "margin": 0.67,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 0,
+        "prefers_other": 1,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          3,
+          1,
+          -2
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          0,
+          2
+        ]
+      },
+      "item_id": "v6_05a",
+      "voc_a": "sigh",
+      "voc_b": "groan"
+    },
+    {
+      "separable": false,
+      "margin": 0.0,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "item_id": "v6_05b",
+      "voc_a": "sigh",
+      "voc_b": "groan"
+    },
+    {
+      "separable": true,
+      "margin": 0.83,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.0,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          2,
+          1
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          2,
+          0
+        ]
+      },
+      "item_id": "v6_05c",
+      "voc_a": "sigh",
+      "voc_b": "groan"
+    },
+    {
+      "separable": false,
+      "margin": 0.33,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          0,
+          2
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 0,
+        "generic": 3,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0,
+          0
+        ]
+      },
+      "item_id": "v6_05d",
+      "voc_a": "sigh",
+      "voc_b": "groan"
+    },
+    {
+      "separable": false,
+      "margin": 0.4,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 0,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.0,
+        "leans_right_way": false,
+        "deltas": [
+          0,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          2,
+          0
+        ]
+      },
+      "item_id": "v6_06a",
+      "voc_a": "gasp",
+      "voc_b": "groan"
+    },
+    {
+      "separable": true,
+      "margin": 1.0,
+      "condition_a": {
+        "n": 2,
+        "prefers_own": 1,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 0.5,
+        "leans_right_way": true,
+        "deltas": [
+          0,
+          1
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.33,
+        "leans_right_way": true,
+        "deltas": [
+          3,
+          1,
+          0
+        ]
+      },
+      "item_id": "v6_06b",
+      "voc_a": "gasp",
+      "voc_b": "groan"
+    },
+    {
+      "separable": true,
+      "margin": 0.67,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 1,
+        "generic": 2,
+        "prefers_other": 0,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          2,
+          0,
+          0
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 0,
+        "prefers_other": 1,
+        "mean_delta": 0.67,
+        "leans_right_way": true,
+        "deltas": [
+          2,
+          -1,
+          1
+        ]
+      },
+      "item_id": "v6_06c",
+      "voc_a": "gasp",
+      "voc_b": "groan"
+    },
+    {
+      "separable": true,
+      "margin": 2.5,
+      "condition_a": {
+        "n": 3,
+        "prefers_own": 3,
+        "generic": 0,
+        "prefers_other": 0,
+        "mean_delta": 3.33,
+        "leans_right_way": true,
+        "deltas": [
+          4,
+          4,
+          2
+        ]
+      },
+      "condition_b": {
+        "n": 3,
+        "prefers_own": 2,
+        "generic": 1,
+        "prefers_other": 0,
+        "mean_delta": 1.67,
+        "leans_right_way": true,
+        "deltas": [
+          4,
+          0,
+          1
+        ]
+      },
+      "item_id": "v6_06d",
+      "voc_a": "gasp",
+      "voc_b": "groan"
+    }
+  ]
+}
