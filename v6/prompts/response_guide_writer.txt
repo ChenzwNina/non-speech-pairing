@@ -1,22 +1,39 @@
 You are writing reference annotations for a benchmark on whether spoken-language models respond appropriately to non-speech vocalizations in conversation.
 
-You are given one five-turn conversation between two speakers. In the final turn, one speaker produces a single non-speech vocalization — that label is authoritative. You are also given three interpretations of that vocalization, all of which are defensible readings of this exchange.
+You are given one five-turn conversation between two speakers. In the final turn, one speaker produces a single non-speech vocalization — that label is authoritative. You are also given the interpretations of that vocalization this conversation supports. There may be one, two or three of them.
 
 **The other speaker now replies.** They are already in the conversation, not a third party joining it. They have just heard the sound and the words it came with, and they answer as the person who has been talking all along.
 
-Your task: for each of the three interpretations, write what that reply should accomplish **if that interpretation is the right one**.
+Your task: for each interpretation you are given, write what that reply should accomplish **if that interpretation is the right one**. Write exactly as many guides as there are interpretations.
 
 WHY IT IS PER INTERPRETATION
 
 A model under test will say what it thinks the vocalization means, and its reply will then be scored against the guide for whichever interpretation it actually held. A model that reads the sound differently from the most obvious reading should not be penalised for replying consistently with its own defensible reading — it should be scored on whether the reply follows from it.
 
-So the three guides must genuinely differ. If replying under interpretation 1 and interpretation 3 would call for the same thing, say so in `note` rather than inventing a difference.
+So the guides must genuinely differ. If replying under two of them would call for the same thing, say so in `note` rather than inventing a difference.
 
 WHAT A GUIDE CONTAINS
 
 - `response_function` — the main conversational action the reply should perform: acknowledging, joining the humour, checking whether they are all right, offering help, reassuring, conceding, pressing for detail, and so on.
-- `required_content` — exactly two short, independently checkable things the reply should convey. Meanings, not wordings.
-- `must_avoid` — exactly two ways a reply would go wrong under this interpretation specifically.
+- `required_content` — one or two short, independently checkable things the reply should convey. Meanings, not wordings.
+
+  **This is where these annotations go wrong, so read the rest of this carefully.** Require only what the *vocalization* makes necessary — the semantic or pragmatic adaptation a reply has to make because that sound was there rather than nothing. Do not require a next action. Do not require a topic. Do not require a detail the reply could sensibly leave out.
+
+  A real failure. The final turn was *"(gasps) The ball just came straight into the camera. Dad threw it right at whoever was filming."* One guide required the reply to convey:
+
+  > Keeps attention on the tape — rewind, replay, or watch what happens next
+
+  and another required:
+
+  > Adds something of her own — memory of Dad's throwing, or wanting to keep/show it
+
+  Now consider a reply: *"Whoa, that came out of nowhere."* It hears the gasp, it takes up the surprise, it is exactly what a person says. Under those requirements it scores badly for not proposing a replay and not volunteering a memory — neither of which the gasp obliges anyone to do.
+
+  What the gasp does oblige is treating the moment as startling rather than ordinary. That is the requirement. Everything past it is one of several natural continuations, and belongs in `acceptable_variations` if it belongs anywhere.
+
+  So before writing each requirement, ask: **would a reply that omits this have failed to understand the sound?** If not, it is not required.
+- `acceptable_variations` — two natural continuations that are fine but not required. Anything you were tempted to put in `required_content` because it would be a good reply, rather than because the sound demands it, belongs here.
+- `must_avoid` — one or two ways a reply would go wrong under this interpretation specifically. Ways of misreading the sound, not ways of being less thorough than you would have been.
 - `example` — one brief natural reply, for human inspection only. Judges are told never to require similarity to it.
 
 CONSTRAINTS
@@ -39,24 +56,10 @@ Return valid JSON only, using this schema:
     {
       "interpretation_index": 1,
       "response_function": "<maximum 12 words>",
-      "required_content": ["<maximum 20 words>", "<maximum 20 words>"],
-      "must_avoid": ["<maximum 20 words>", "<maximum 20 words>"],
-      "example": "<maximum 30 words>",
-      "note": ""
-    },
-    {
-      "interpretation_index": 2,
-      "response_function": "<maximum 12 words>",
-      "required_content": ["<maximum 20 words>", "<maximum 20 words>"],
-      "must_avoid": ["<maximum 20 words>", "<maximum 20 words>"],
-      "example": "<maximum 30 words>",
-      "note": ""
-    },
-    {
-      "interpretation_index": 3,
-      "response_function": "<maximum 12 words>",
-      "required_content": ["<maximum 20 words>", "<maximum 20 words>"],
-      "must_avoid": ["<maximum 20 words>", "<maximum 20 words>"],
+      "required_content": ["<what the sound obliges, maximum 20 words>"],
+      "acceptable_variations": ["<a natural continuation that is fine but not required>",
+                                "<another>"],
+      "must_avoid": ["<a way of misreading the sound, maximum 20 words>"],
       "example": "<maximum 30 words>",
       "note": ""
     }

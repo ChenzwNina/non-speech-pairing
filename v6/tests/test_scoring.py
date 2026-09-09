@@ -31,11 +31,20 @@ class TestContracts(unittest.TestCase):
     def test_scores_outside_one_to_five_are_rejected(self):
         for bad in (0, 6, -1, 99, 3.5):
             self.assertTrue(K.schema_errors("judge_outputs:content_match",
-                                            {"score": bad, "rationale": "x",
-                                             "unjudgeable": False}), bad)
+                                            {"score": bad, "best_guide_index": 1,
+                                             "rationale": "x", "unjudgeable": False}), bad)
         self.assertEqual(K.schema_errors("judge_outputs:content_match",
-                                         {"score": 3, "rationale": "x",
-                                          "unjudgeable": False}), [])
+                                         {"score": 3, "best_guide_index": 1,
+                                          "rationale": "x", "unjudgeable": False}), [])
+
+    def test_content_match_must_name_the_guide_it_scored_against(self):
+        """A reply is scored against whichever acceptable reading it fits best, so which one
+        that was has to be recorded — otherwise a score cannot be traced to a requirement."""
+        self.assertTrue(K.schema_errors("judge_outputs:content_match",
+                                        {"score": 4, "rationale": "x", "unjudgeable": False}))
+        self.assertTrue(K.schema_errors("judge_outputs:content_match",
+                                        {"score": 4, "best_guide_index": 4, "rationale": "x",
+                                         "unjudgeable": False}))
 
     def test_perception_is_a_five_way_choice(self):
         for letter in "ABCDE":
@@ -62,9 +71,11 @@ class TestMalformedRecordsRetained(unittest.TestCase):
         path.unlink(missing_ok=True)
         for record in (
                 judgment("t1", "t_01", "content_match",
-                         {"score": 4, "rationale": "ok", "unjudgeable": False}),
+                         {"score": 4, "best_guide_index": 1, "rationale": "ok",
+                          "unjudgeable": False}),
                 judgment("t2", "t_01", "content_match",
-                         {"score": 9, "rationale": "out of range", "unjudgeable": False}),
+                         {"score": 9, "best_guide_index": 1, "rationale": "out of range",
+                          "unjudgeable": False}),
                 judgment("t3", "t_01", "content_match", {"rationale": "no score"}),
                 dict(judgment("t4", "t_01", "content_match", None), status="parse_error")):
             K.append_jsonl(path, record)
@@ -213,7 +224,8 @@ class TestResponseQuality(unittest.TestCase):
             item_id = f"t_{n:02d}"
             out.append(judgment(f"{item_id}__{condition}__content_match", item_id,
                                 "content_match",
-                                {"score": score, "rationale": "x", "unjudgeable": False},
+                                {"score": score, "best_guide_index": 1, "rationale": "x",
+                                 "unjudgeable": False},
                                 condition=condition))
         return out
 

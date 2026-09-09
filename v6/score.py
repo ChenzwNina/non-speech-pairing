@@ -382,6 +382,13 @@ def score_response_quality(rows: list[dict], heard: set, cfg) -> dict:
         "by_model_end_to_end": by_group(end_to_end, lambda r: r.get("evaluated_model", "?"),
                                         normalized, resamples, confidence, seed),
         "distribution": dict(sorted(Counter(int(r["_score"]) for r in conditional).items())),
+        # Which acceptable reading each reply was scored against. A column of 1s means the
+        # replies all answered the most obvious reading, which is informative about the models;
+        # a spread means the minority readings are doing work, which is informative about the
+        # annotations.
+        "best_guide_distribution": dict(sorted(Counter(
+            r["parsed"].get("best_guide_index") for r in conditional
+            if r["parsed"].get("best_guide_index")).items())),
         "agreement": ordinal_agreement(conditional) if conditional else {},
     }
 

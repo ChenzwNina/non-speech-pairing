@@ -136,9 +136,10 @@
     "content_match": {
       "type": "object",
       "additionalProperties": false,
-      "description": "How well a reply follows from the interpretation the model actually held, scored against that interpretation's guide rather than against the majority reading.",
+      "description": "How well a reply follows from whichever acceptable reading it fits best. Scored against the best-fitting guide rather than a fixed one, so a model holding a defensible minority reading is judged on whether its reply follows from that reading instead of against the majority one.",
       "required": [
         "score",
+        "best_guide_index",
         "rationale",
         "unjudgeable"
       ],
@@ -147,6 +148,14 @@
           "type": "integer",
           "minimum": 1,
           "maximum": 5
+        },
+        "best_guide_index": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3
+          ]
         },
         "rationale": {
           "type": "string",

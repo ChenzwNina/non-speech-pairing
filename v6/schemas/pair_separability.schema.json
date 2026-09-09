@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 pair separability check",
+  "description": "Whether a reply that fits one condition of an item would also fit the other. Both vocalizations can be individually plausible and the pair still be useless for ranking: if the acceptable replies overlap, a judge asked which reply suits which version is choosing between two equally good answers, and the ranking score measures nothing. Checked before the dataset is frozen, because a failure means regenerating the item from a new seed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "separable",
+    "overlap",
+    "example_response_fitting_both",
+    "which_side_is_weaker"
+  ],
+  "properties": {
+    "separable": {
+      "type": "boolean",
+      "description": "false when a natural reply appropriate for one condition would often be fully appropriate for the other"
+    },
+    "overlap": {
+      "type": "string",
+      "minLength": 1,
+      "description": "what the two conditions' acceptable replies share, and whether anything separates them"
+    },
+    "example_response_fitting_both": {
+      "type": "string",
+      "description": "a natural reply that fits both, when there is one; empty otherwise"
+    },
+    "which_side_is_weaker": {
+      "type": "string",
+      "enum": [
+        "condition_a",
+        "condition_b",
+        "neither",
+        ""
+      ],
+      "description": "the condition whose framing the transcript supports least, when one is weaker"
+    }
+  }
+}

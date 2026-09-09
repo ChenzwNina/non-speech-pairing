@@ -2,23 +2,29 @@ You are scoring how well a reply follows from a particular reading of a non-spee
 
 Two people had a conversation. In the final turn one of them produced the vocalization described below — that label is authoritative. The other person, already part of the conversation, then replied. You are given a transcript of that reply.
 
-You are also given the interpretation the replying model actually held, and a guide describing what a reply should accomplish **under that interpretation**. Score the reply against that guide.
+You are also given every reading of the vocalization this conversation supports, each with a guide describing what a reply should accomplish under it.
+
+**Score the reply against whichever guide it fits best.** A reply that follows one acceptable reading well is a good reply, even if it does not follow the others. Read all of them, decide which one the reply is answering, and score it against that one. Name it in `best_guide_index`.
 
 | Score | Anchor |
 |---:|---|
-| 5 | Performs the guide's response function and conveys both required meanings; unmistakably a reply to this reading of the moment. |
-| 4 | Performs the function; one required meaning is thin, implied rather than said, or slightly off. |
+| 5 | Performs its guide's response function and conveys what that guide requires; unmistakably a reply to that reading of the moment. |
+| 4 | Performs the function; a required meaning is thin, implied rather than said, or slightly off. |
 | 3 | Broadly compatible with the guide but generic — it would fit almost any version of this conversation, so it shows little sensitivity to this reading. |
-| 2 | Performs a different conversational action than the guide calls for, or hits one of the `must_avoid` items. |
+| 2 | Performs a different conversational action than any guide calls for, or hits one of a guide's `must_avoid` items. |
 | 1 | Contradicts the reading, mishandles the situation, or is not a reply to this conversation. |
 
 WHAT NOT TO DO
 
-The guide's `example` is one natural reply, included so you can see what the guide means. **Do not reward similarity to it or penalise difference from it.** Several unrelated wordings can score 5.
+Each guide's `example` is one natural reply, included so you can see what the guide means. **Do not reward similarity to it or penalise difference from it.** Several unrelated wordings can score 5.
+
+Each guide also lists `acceptable_variations` — natural continuations that are fine but **not required**. A reply that does none of them and still conveys what `required_content` asks scores 5. Do not treat a variation as a requirement.
 
 Do not score delivery, prosody, or voice — you are reading text, and tone is scored separately. Do not score grammar or fluency except where they stop the meaning coming through. Do not require the reply to name or comment on the vocalization; a reply that says "you sound relieved" is analysing the sound rather than answering, which is worse than not mentioning it.
 
-Do not re-judge whether the interpretation was right. That has already been decided, and the reply is being scored against the reading the model held, not against the reading you would have chosen.
+Do not score the reply for holding a reading you would not have chosen. Every guide below describes an acceptable reading, so answering any one of them well is success. Scoring against the most obvious one would punish a model for a defensible minority reading, which is what taking the best fit avoids.
+
+If the reply fits none of them, score it on that basis and set `best_guide_index` to the closest.
 
 If the reply is empty, unintelligible, or not a response to this conversation at all, set `unjudgeable` to true and leave the score at 1.
 
@@ -30,16 +36,12 @@ VOCALIZATION
 
 {{VOCALIZATION}}
 
-THE INTERPRETATION THE MODEL HELD
+THE ACCEPTABLE READINGS, AND WHAT A REPLY UNDER EACH SHOULD DO
 
-{{INTERPRETATION}}
-
-WHAT A REPLY UNDER THAT INTERPRETATION SHOULD DO
-
-{{GUIDE}}
+{{GUIDES}}
 
 THE REPLY
 
 {{RESPONSE}}
 
-Return valid JSON only: {"score": 3, "rationale": "<one or two sentences tied to the guide>", "unjudgeable": false}
+Return valid JSON only: {"score": 3, "best_guide_index": 1, "rationale": "<one or two sentences tied to the guide you scored against>", "unjudgeable": false}

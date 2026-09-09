@@ -2,15 +2,25 @@ You are writing reference annotations for a benchmark on whether spoken-language
 
 You are given one five-turn conversation between two speakers. In the final turn, the speaker produces a single non-speech vocalization, and you are told which one it is. That label is authoritative — you are not being asked to detect it.
 
-Your task is to write the three most likely interpretations of that vocalization in this conversation.
+Your task is to write the interpretations of that vocalization this conversation actually supports. There may be one, two or three. Do not pad the list to reach three.
 
 WHAT THESE ARE FOR
 
 A model under test will be asked, in its own words, what the vocalization expresses. Its answer will be compared against your three interpretations, and it passes if it matches any one of them. So these are the boundary of what counts as understanding this item — not one right answer with two wrong ones.
 
-All three must be genuinely defensible readings that a competent listener could hold after hearing this exchange. If you would argue against one of them, it does not belong in the list.
+Every interpretation must be a reading a competent listener could hold after hearing this exchange. If you would argue against one, it does not belong in the list.
 
-Cover the spread of what is defensible rather than three restatements of the same thing. A useful set usually includes the most obvious reading, a reading that emphasises a different aspect of the speaker's state, and a mixed or hedged reading — because real listeners land in all three places.
+**One well-supported interpretation is a better annotation than three where the third is invented.** Padding does real damage: a model that responds naturally and correctly gets marked down for failing to address a reading the conversation never carried.
+
+Here is a real failure. The final turn is *"(gasps) The ball just came straight into the camera. Dad threw it right at whoever was filming."* Two readings hold up — startled by the ball at the lens, and delighted at what the old tape caught. A third was added:
+
+> Startled and moved, dawning realization about the unseen person holding the camera.
+
+The transcript says *whoever was filming*. That phrase says the speaker does **not** know who held the camera, and nothing in the five turns makes the camera-holder's identity the point. The third reading was inferred to fill a slot, and the response guide built on it then required a reply to engage with who was filming — so a reply that simply reacted to the ball would lose marks for missing something that was never there.
+
+Ask of each interpretation: **which words in these five turns support this?** If the answer is a phrase you have to read past its plain meaning, leave it out.
+
+Where there is genuine spread, cover it — the obvious reading, a reading emphasising a different aspect of the speaker's state, a mixed or hedged one. Where there is not, say so by writing fewer.
 
 Each interpretation has two parts, and both are required:
 
@@ -21,7 +31,7 @@ A reading without a function is incomplete: "amusement" is not an interpretation
 
 THE SHARED IMPLICATION
 
-Then state what all three interpretations agree on. This is the line a wrong answer crosses — a model whose reading contradicts the shared implication has misunderstood the item, even if it sounds confident. Write it as what the sound is *not* doing, or what it commits the speaker to, whichever is sharper.
+Then state what every interpretation in your list agrees on. This is the line a wrong answer crosses — a model whose reading contradicts the shared implication has misunderstood the item, even if it sounds confident. Write it as what the sound is *not* doing, or what it commits the speaker to, whichever is sharper.
 
 CONSTRAINTS
 
@@ -29,6 +39,7 @@ CONSTRAINTS
 - Do not mention the acoustic category where the sentence carries the meaning without it.
 - Do not speculate about how the conversation would read with a different sound. You are not given the other version and do not need it.
 - Keep each field to one clause or short sentence.
+- One to three entries. Fewer is the right answer when fewer are supported.
 
 Return valid JSON only, using this schema:
 
@@ -39,18 +50,11 @@ Return valid JSON only, using this schema:
   "acceptable_interpretations": [
     {
       "reading": "<the speaker's state, maximum 20 words>",
-      "interactional_function": "<what the sound does to the exchange, maximum 20 words>"
-    },
-    {
-      "reading": "<maximum 20 words>",
-      "interactional_function": "<maximum 20 words>"
-    },
-    {
-      "reading": "<maximum 20 words>",
-      "interactional_function": "<maximum 20 words>"
+      "interactional_function": "<what the sound does to the exchange, maximum 20 words>",
+      "supported_by": "<the words in these turns that carry this reading, maximum 15 words>"
     }
   ],
-  "shared_implication": "<what all three agree on, and so what a wrong answer contradicts, maximum 30 words>"
+  "shared_implication": "<what every interpretation in the list agrees on, and so what a wrong answer contradicts, maximum 30 words>"
 }
 
 INPUT:

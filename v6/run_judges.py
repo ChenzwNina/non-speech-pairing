@@ -1,12 +1,14 @@
 """Run the judge panels: interpretation match, response content, ranking, and tone.
 
-Four stages, in dependency order. `interp` must precede `content`, because a reply is scored
-against the guide for the interpretation the model actually held, and which one that was is
-decided by the interpretation panel.
+Four stages, independent of one another. `content` used to need `interp` to run first, because
+a reply was scored against the guide for whichever interpretation the model said it held. It is
+now scored against whichever guide it fits best, decided by the content judge from all of them,
+so the two tests no longer share a dependency — and a model that gave a poor account of the
+sound but replied well is no longer punished twice for the same thing.
 
     interp    3 text judges — does the model's own account match any acceptable reading?
               Two agreeing carries it; a tie is recorded, never rounded.
-    content   3 text judges — 1 to 5 against the guide for the reading it held.
+    content   3 text judges — 1 to 5 against the best-fitting guide, chosen from all of them.
     rank      3 text judges — R_A against R_B, in both conditions' contexts.
     tone      2 audio judges — is any clearly-wrong tone audible in the reply?
 
@@ -164,12 +166,6 @@ def main() -> int:
         print("dry run: nothing called, nothing written")
         return 0
 
-    matched: dict[tuple, int] = {}
-    for row in K.read_jsonl(K.stage_dir("judgments") / "interpretation.jsonl"):
-        if row.get("status") == "ok" and row["parsed"]["matched"]:
-            key = (row.get("evaluated_model"), row["item_id"], row["condition"])
-            matched.setdefault(key, row["parsed"]["interpretation_index"])
-
     counts = {"done": 0, "skipped": 0, "failed": 0, "invalid": 0}
     for stage in stages:
         out_file = K.stage_dir("judgments") / f"{stage_name(stage)}.jsonl"
@@ -182,8 +178,7 @@ def main() -> int:
             if item is None:
                 continue
             key = f"{unit['item_id']}__{unit['condition']}"
-            built = build_prompt(stage, template, unit, item, key, interps, guides, tones,
-                                 matched)
+            built = build_prompt(stage, template, unit, item, key, interps, guides, tones)
             if built is None:
                 counts["skipped"] += 1
                 continue
@@ -225,7 +220,7 @@ def stage_name(stage: str) -> str:
             "rank": "content_pair", "tone": "tone"}[stage]
 
 
-def build_prompt(stage, template, unit, item, key, interps, guides, tones, matched):
+def build_prompt(stage, template, unit, item, key, interps, guides, tones):
     """The filled prompt and, for tone, the audio to play. None means skip this unit."""
     condition = unit["condition"]
     common = {"TRANSCRIPT": transcript_of(item, condition),
@@ -242,15 +237,15 @@ def build_prompt(stage, template, unit, item, key, interps, guides, tones, match
                       ANSWER=unit["parsed"]["answer"]), None
     if stage == "content":
         source, guide_set = interps.get(key), guides.get(key)
-        index = matched.get((unit.get("evaluated_model"), unit["item_id"], condition))
-        if not source or not guide_set or not index:
+        if not source or not guide_set:
             return None
-        reading = source["acceptable_interpretations"][index - 1]
-        guide = next(g for g in guide_set["guides"] if g["interpretation_index"] == index)
-        return K.fill(template, **common,
-                      INTERPRETATION=f"{reading['reading']} — "
-                                     f"{reading['interactional_function']}",
-                      GUIDE=json.dumps(guide, indent=2, ensure_ascii=False),
+        blocks = []
+        for guide in guide_set["guides"]:
+            reading = source["acceptable_interpretations"][guide["interpretation_index"] - 1]
+            blocks.append(f"READING {guide['interpretation_index']}: {reading['reading']} — "
+                          f"{reading['interactional_function']}\n"
+                          + json.dumps(guide, indent=2, ensure_ascii=False))
+        return K.fill(template, **common, GUIDES="\n\n".join(blocks),
                       RESPONSE=unit["response_text"]), None
     if stage == "rank":
         return K.fill(template, **common,

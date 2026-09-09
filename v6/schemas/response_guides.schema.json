@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "v6 response guides, one per interpretation",
-  "description": "What the other speaker's reply should accomplish under each interpretation. A model is scored against the guide for the reading it actually held, so a defensible minority reading is judged on whether the reply follows from it rather than against the most obvious reading.",
+  "description": "What the other speaker's reply should accomplish under each interpretation, one guide per interpretation. `required_content` carries only what the vocalization obliges — the adaptation a reply has to make because the sound was there rather than nothing. Next actions, topics and volunteered details go in `acceptable_variations`: requiring them marks down replies that heard the sound correctly and simply said less.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -36,7 +36,7 @@
     },
     "guides": {
       "type": "array",
-      "minItems": 3,
+      "minItems": 1,
       "maxItems": 3,
       "items": {
         "type": "object",
@@ -45,6 +45,7 @@
           "interpretation_index",
           "response_function",
           "required_content",
+          "acceptable_variations",
           "must_avoid",
           "example",
           "note"
@@ -64,15 +65,15 @@
           },
           "required_content": {
             "type": "array",
-            "minItems": 2,
+            "minItems": 1,
             "maxItems": 2,
             "items": {
               "type": "string",
               "minLength": 1
             },
-            "description": "two checkable meanings"
+            "description": "only what the sound obliges"
           },
-          "must_avoid": {
+          "acceptable_variations": {
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
@@ -80,7 +81,17 @@
               "type": "string",
               "minLength": 1
             },
-            "description": "two ways it goes wrong under this reading"
+            "description": "natural continuations, not required"
+          },
+          "must_avoid": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "ways of misreading the sound"
           },
           "example": {
             "type": "string",
@@ -88,8 +99,7 @@
             "description": "human inspection only; never a similarity target"
           },
           "note": {
-            "type": "string",
-            "description": "non-empty when this guide barely differs from another"
+            "type": "string"
           }
         }
       }

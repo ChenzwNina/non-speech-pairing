@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "v6 acceptable interpretations",
-  "description": "Three defensible readings of one vocalization in one conversation — not one right answer with two distractors. A model under test answers in its own words and passes if it matches any of them, so this set is the boundary of what counts as understanding the item. `shared_implication` is the line a wrong answer crosses.",
+  "description": "The readings this conversation supports — one, two or three. Not a fixed three: padding the list to reach a quota invents readings the transcript does not carry, and a model that responds naturally is then marked down for failing to address one. `supported_by` names the words that carry each reading, so a reading with nothing to point at is visible. A model under test answers in its own words and passes if it matches any, so this set is the boundary of understanding; `shared_implication` is the line a wrong answer crosses.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -29,25 +29,29 @@
     },
     "acceptable_interpretations": {
       "type": "array",
-      "minItems": 3,
+      "minItems": 1,
       "maxItems": 3,
       "items": {
         "type": "object",
         "additionalProperties": false,
         "required": [
           "reading",
-          "interactional_function"
+          "interactional_function",
+          "supported_by"
         ],
         "properties": {
           "reading": {
             "type": "string",
-            "minLength": 1,
-            "description": "the speaker's state"
+            "minLength": 1
           },
           "interactional_function": {
             "type": "string",
+            "minLength": 1
+          },
+          "supported_by": {
+            "type": "string",
             "minLength": 1,
-            "description": "what the sound does to the exchange"
+            "description": "the words in the transcript that carry this reading"
           }
         }
       }

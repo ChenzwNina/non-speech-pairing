@@ -1,0 +1,36 @@
+You are checking whether one benchmark item can support a ranking comparison at all.
+
+An item is one five-turn conversation heard two ways. The words are identical; only the non-speech vocalization in the final turn differs. Below are both versions, the two sounds, and the interpretations each version supports.
+
+Later, a model will hear one version and reply, hear the other version and reply, and a judge will be asked which reply suits which version. That only measures anything if the two versions call for different replies.
+
+YOUR QUESTION
+
+Would a natural reply that is appropriate for one version often also be fully appropriate for the other?
+
+If yes, the item cannot support ranking — however plausible each sound is on its own. Two individually sensible vocalizations can leave the same reply fitting both, and a judge then chooses between two equally good answers, so the score measures the judge's coin-flip rather than the model's understanding.
+
+HOW TO DECIDE
+
+Do not compare the interpretations to each other. Compare what each one asks a *reply* to do. Two readings can differ in what the speaker feels while calling for the same thing from the other person — sympathy, or a check that they are all right, or shared amusement. That is the case that fails.
+
+The test is concrete: try to write one natural reply that fits both versions. If you can write one easily, the item is not separable. If every reply you try commits to one version and reads oddly against the other, it is.
+
+Be strict. A separable item is one where a listener who replied to the wrong version would be noticeably out of step, not one where they would be slightly less apt.
+
+Ignore whether the vocalizations are individually convincing, whether the transcript is well written, and whether the interpretations are well phrased. Only the replies matter here.
+
+If one version's framing is more weakly supported by the transcript than the other's, name it in `which_side_is_weaker` — that is the side worth changing if the item is regenerated. Use `neither` when both are equally supported.
+
+Return valid JSON only:
+
+{
+  "separable": true,
+  "overlap": "<what the two versions' acceptable replies share, and what if anything separates them, maximum 40 words>",
+  "example_response_fitting_both": "<a natural reply that fits both versions, if there is one; empty string otherwise>",
+  "which_side_is_weaker": "<condition_a | condition_b | neither>"
+}
+
+ITEM
+
+{{ITEM}}
