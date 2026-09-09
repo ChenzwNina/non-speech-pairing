@@ -62,33 +62,54 @@ spoken aloud — each is an instruction to its own model.
 
 ## How the dataset was built
 
-Three stages, in this order for a reason.
+Four stages. Two call a model, one calls none, and one exists to reject what the others produce.
 
-| | |
-| --- | --- |
-| [seeds.py](seeds.py) | a flat random sample of EmpatheticDialogues situations, no label filter |
-| [sample_items.py](sample_items.py) | draws the seeds and the vocalization pairs. **No model is called** — the assignment is an artefact you can read |
-| [plan_occasions.py](plan_occasions.py) | works out *when each sound would actually be produced*, then builds one moment that carries both |
-| [write_transcripts.py](write_transcripts.py) | writes five turns that arrive at that moment, and builds the three versions |
-| [out/transcripts.json](out/transcripts.json) | **the dataset.** 24 items, three versions each |
+| | | writes |
+| --- | --- | --- |
+| **0** [seeds.py](seeds.py) | a flat random draw over 16,646 usable EmpatheticDialogues situations, no label filter | `out/seeds.json` |
+| **1** [sample_items.py](sample_items.py) | assigns each item a seed and a pair of vocalizations. **No model is called** | `out/items.json` |
+| **2** [plan_occasions.py](plan_occasions.py) | works out *when each sound would actually be produced*, then builds one moment that carries both | `out/occasions.json` |
+| **3** [write_transcripts.py](write_transcripts.py) | writes five turns that arrive at that moment, checks them, builds the three versions | `out/transcripts.json` |
 
-**Why the middle stage exists.** The obvious pipeline writes the conversation and then attaches
-the vocalization, and it produces lines like this:
+```bash
+python3 v6/seeds.py --n 60
+python3 v6/sample_items.py                    # 24 items · 6 pairs × 4 · 36 spare seeds held back
+python3 v6/plan_occasions.py                  # 24 calls
+python3 v6/write_transcripts.py               # 24 calls + one verifier call each
+```
+
+Every stage takes `--dry-run`, which prints the payloads it would send and calls nothing, and
+`--only <item_id>` to work on one item. Stages 2 and 3 skip what is already on disk unless
+`--redo` is passed, so a failed run resumes.
+
+### Stage 1 calls no model on purpose
+
+The pairs come from a balanced pool — each of the six combinations appears `--per-pair` times,
+shuffled — so the draw is random without leaving one combination with a single item and another
+with seven. Keeping it out of the planning stage makes the assignment a file you can read and
+diff, rather than something that happened inside a loop, and the leftover seeds are recorded as
+`spare` because stage 2 can find that a situation cannot honestly carry its pair.
+
+### Stage 2 asks about the sound before it looks at the situation
+
+The obvious pipeline writes the conversation and then attaches the vocalization. It produces
+lines like this:
 
 ```
 5  A: Yeah, I kept her number. I paid twelve dollars for it. (gasps)
 ```
 
-The speaker is gasping at information he is himself delivering. Sounds are not interchangeable in
-*when* they can be produced: a gasp is the instant of contact with something, so it cannot be
-made about what you already know, while a sigh has no such requirement and can be produced about
-anything. Attaching the sound last means the strict cases fail silently.
+The speaker is gasping at information he is himself delivering. Sounds are not interchangeable
+in *when* they can be produced: a gasp is the instant of contact with something and cannot be
+made about what you already know, while a sigh has no such requirement. Attaching the sound last
+lets the strict cases fail silently.
 
 So the planner is asked for each sound's production condition **before it sees the situation**,
-then to satisfy the stricter of the two, then to outline five turns that arrive there. Asked that
-way it derives the asymmetry on its own — across 24 plans it marked `gasp` as requiring something
-to land in the moment 12 times out of 12, `sigh` 0 out of 12, and `laugh` and `groan` genuinely
-mixed. Nothing in the prompt names a vocalization; a fifth sound would need no new rule.
+then to satisfy the stricter of the two, then to outline five turns that arrive there. The
+schema's field order is that reasoning order, which is why it is fixed. Asked that way it derives
+the asymmetry itself — across 24 plans it marked `gasp` as requiring something to land in the
+moment 12 times out of 12, `sigh` 0 out of 12, and `laugh` and `groan` genuinely mixed. No
+vocalization is named in the prompt, so a fifth sound would need no new rule.
 
 The same item, rebuilt from the sound outward:
 
@@ -98,16 +119,70 @@ The same item, rebuilt from the sound outward:
 5  A: (groans) It's for next week.
 ```
 
-**The writer returns the five turns once**, with `«VOC»` marking the spot, and the three versions
-are built by substitution. Identical words, identical position, exactly one vocalization and none
-in the baseline are therefore true by construction rather than things a validator has to catch.
-What is checked is the one thing construction cannot guarantee: that the marker sits at a
-sentence boundary and not inside a clause.
+### Stage 3 writes the words once
 
-[archived/](archived/) holds everything this replaced — two transcript pipelines, the first
-evaluation design, the retired dataset's audio, and the data all of them produced — with a note
-on what each got wrong. The progression is the argument for the current design, so it is kept
-rather than deleted.
+The writer returns the five turns with `«VOC»` marking where the sound goes, and the three
+versions are built by substitution. Identical words, identical position, exactly one
+vocalization, and none in the baseline are therefore true by construction rather than things a
+validator has to catch afterwards.
+
+Two things construction cannot guarantee, so both are checked:
+
+**The marker must sit at a sentence boundary.** Turn-initial, turn-final, or between two
+complete sentences — never inside a clause. `The team gave me story feedback «VOC» and told the
+manager` is rejected. Which of the three is right follows from the moment the plan describes: a
+sound reacting to what was just said comes before the words it prompts, and end-of-turn is for a
+speaker landing on their own words.
+
+**Each speaker must stay the same person.** This one needs a model, and it caught ten of the
+first twenty-four:
+
+```
+1 A: How've the interviews been going?
+2 B: This was my third one this month.
+3 A: Everything you've heard from them has sounded encouraging.
+4 B: Hang on, there's a new message from the employer. I'm opening it now.
+5 A: They're asking me to schedule another interview next week.
+```
+
+Turns 1 to 4 make B the job seeker. Turn 5 has A speaking as that person. **Nothing else in the
+pipeline can see it** — the words are identical across the three conditions, the marker is where
+it belongs, the speakers alternate correctly, and the prose reads fluently. Only something
+tracking who owns what finds it.
+
+[prompts/speaker_consistency_verifier.txt](prompts/speaker_consistency_verifier.txt) is read by
+`claude-opus-5`, a different family from the writer on purpose: a model asked to find the fault
+in its own prose tends to explain why it is not a fault. It returns
+`{consistent, problem, turns_involved}`, and a failure goes back to the writer with the
+conflicting turn numbers quoted. **A verifier reply that cannot be parsed counts as a failure**,
+because a check that returns nothing must not clear a draft it might have rejected.
+
+The prompt lists what is *not* a failure as carefully as what is — one speaker knowing about the
+other's situation, a shift in who drives the conversation, someone noticing a thing on the
+other's screen — since a false alarm sends a usable conversation back to be rewritten.
+
+`--no-verify` skips it. `writers.verifier` in [eval_config.yaml](eval_config.yaml) sets the model
+and transport.
+
+### Why the writer prompt had to change too
+
+A verifier alone would have looped. The turn order is A-B-A-B-A, so turn 5 is always speaker A,
+while a plan often puts the news on the other speaker — and the writer then moved the role across
+to get the landing into turn 5. The first constraint in
+[prompts/transcript_writer.txt](prompts/transcript_writer.txt) now says the speaker who lands it
+in turn 5 is also the speaker of turns 1 and 3, so the roles are built that way round from the
+start, with the failure above quoted as the worked example. Without that, the verifier would keep
+rejecting drafts the plan had already made impossible.
+
+The ten rewritten items carry `revision: 2` in `out/transcripts.json`, with the verifier's own
+account of which role moved and between which turns. The top-level `revisions` block lists what
+the change left stale — 70 takes and 30 assembled conversations — and what it did not.
+`out/speaker_audit.json` has the verdict on all 24.
+
+[archived/](archived/) holds the two transcript pipelines this replaced, the first evaluation
+design, the retired dataset's audio, and the data all of them produced, with a note on what each
+got wrong. The progression is the argument for the current design, so it is kept rather than
+deleted.
 
 ## The audio
 
