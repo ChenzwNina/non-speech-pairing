@@ -1,0 +1,33 @@
+You are writing reference replies for a benchmark on whether spoken-language models respond appropriately to non-speech vocalizations.
+
+Below is one five-turn conversation. The final turn carries a non-speech vocalization, and the label given for it is authoritative. You are also given the readings that turn supports — each one a defensible account of what the speaker is doing with the sound.
+
+YOUR TASK
+
+For each reading, write the reply the other speaker would actually give if they held that reading.
+
+Write speech, not analysis. One to three sentences, the length a person really answers with. No stage directions, no bracketed sounds, no narration of the reply's purpose — just the words spoken.
+
+Write from the reading itself. Do not hedge across the readings and do not try to write a reply that would cover all of them: each reply belongs to exactly one reading and should commit to it. If two readings would genuinely draw the same words, write the same thing twice rather than manufacturing a difference.
+
+Let the sound matter. These replies answer a turn that carried a vocalization, so the reply should be one that would lose something if the sound had not been there. But do not name the sound or comment on it — no "you're laughing", no "why the sigh". A person replies to what the sound conveyed, not to the fact of it.
+
+Stay inside the conversation. The reply comes from the speaker named as the responder, who has been in this conversation the whole time and knows only what has been said in it. Do not introduce facts the conversation has not established.
+
+CONVERSATION
+
+{{INPUT}}
+
+Return valid JSON only:
+
+{
+  "item_id": "<the item id above>",
+  "condition": "<the condition above>",
+  "vocalization": "<the vocalization above>",
+  "responder": "<A|B — the speaker who did not make the sound>",
+  "responses": [
+    {"interpretation_index": 1, "text": "<the spoken reply>", "note": "<what in this reading the reply answers, under 15 words>"}
+  ]
+}
+
+One entry per reading, `interpretation_index` counting from 1 in the order the readings are given.

@@ -1,0 +1,41 @@
+You are scoring how well one reply fits one version of one conversation, for a benchmark on whether spoken-language models respond appropriately to non-speech vocalizations.
+
+Below are a five-turn conversation whose final turn carries a non-speech vocalization, the label for that sound — which is authoritative — and what a good reply to this version does, written out as one or more guides. One reply follows.
+
+You are not told where the reply came from, and nothing about its origin is knowable from it. Score only how it sits against this version.
+
+HOW TO SCORE
+
+Take the guide it matches best and score it against that one. The reply does not have to match the guide you would have picked: a reply that follows a different supported reading is scored on that reading, not marked down for holding it. Report which guide you scored against in `best_guide_index`.
+
+The scale turns on one distinction — whether the reply is right for *this* version specifically, or merely right in general:
+
+5 — Specifically right for this version. It answers what the sound is doing here, and it would lose something if the final turn had carried a different sound or none.
+4 — Fully appropriate, and generic. Nothing to fault, but nothing in it depends on this particular sound; it would read just as well against a different version of this same conversation.
+3 — Acceptable, but slightly out of step with this version's stance. A listener would not object, but would notice it is pitched a little wrong.
+2 — Noticeably out of step. A listener would hear that the reply misread the moment, though it stays on topic.
+1 — Contradicts what this version conveys, or does something the guides list under `must_avoid`.
+
+The 5-versus-4 line is the one that matters, so hold it honestly. A warm, well-written, entirely appropriate reply that would work equally well no matter what the speaker's final sound was is a 4, not a 5. Do not award 5 for quality. Award it only when the reply is answering this sound.
+
+Judge the words. Not their eloquence, not how long the reply is, not whether you would have said something else, and not what the reply implies about the speaker's talent. A short reply that lands this version beats a fluent one that does not.
+
+Set `depends_on_this_vocalization` to false whenever the reply would read the same had the final turn carried no sound at all.
+
+CONVERSATION
+
+{{TRANSCRIPT}}
+
+VOCALIZATION
+
+{{VOCALIZATION}}
+
+WHAT A GOOD REPLY TO THIS VERSION DOES
+
+{{GUIDES}}
+
+REPLY
+
+{{RESPONSE}}
+
+Return valid JSON only: {"score": <1-5>, "best_guide_index": <1-3>, "depends_on_this_vocalization": <true|false>, "rationale": "<short, tied to this version, under 30 words>"}

@@ -286,17 +286,58 @@ heard none — which is what v3 found — and an average would hide exactly that
 | [validate_dataset.py](validate_dataset.py) | twelve checks on the source before anything is built on it |
 | [build_tasks.py](build_tasks.py) | freezes the perception option sets |
 | [write_annotations.py](write_annotations.py) | the three reference annotations, one call per item and condition |
+| [measure_separability.py](measure_separability.py) | whether each item's two versions prefer different replies, measured before the freeze |
 | [build_pairs.py](build_pairs.py) | the directed paired-content trials |
 | [score.py](score.py) | the metrics, with intervals clustered by item |
-| [prompts/](prompts/) · [schemas/](schemas/) · [tests/](tests/) | 7 templates, 6 schemas, 69 tests |
+| [prompts/](prompts/) · [schemas/](schemas/) · [tests/](tests/) | 15 templates, 9 schemas, 116 tests |
 
 The annotations `write_annotations.py` produces, all for the two vocalization conditions only:
 
 | | |
 | --- | --- |
-| `interpretations` | the three defensible readings of this sound here. A model answers in its own words and passes if it matches any — the set is the boundary of understanding, not one right answer |
-| `response_guides` | what the other speaker's reply should accomplish, written once per interpretation, so a model is scored against the reading it actually held |
+| `interpretations` | the one to three defensible readings of this sound here, each with the words that support it. A model answers in its own words and passes if it matches any — the set is the boundary of understanding, not one right answer |
+| `response_guides` | what the other speaker's reply should accomplish, written once per interpretation, so a model is scored against the reading it actually held. `required_content` carries only what the sound obliges; everything else is an acceptable variation |
 | `tone_exclusions` | only the tones that are clearly wrong. Several deliveries are fine, and a prescribed profile would mark good replies wrong |
+
+### Can the two versions be told apart at all?
+
+Ranking only measures something if the two versions prefer different replies. That has to be
+established before the freeze, and the first attempt asked the wrong question.
+
+It asked whether a reply appropriate for one version would be *inappropriate* for the other,
+and failed 23 of 24 items — evenly across all six vocalization pairs. That uniformity was the
+tell. A vocalization usually changes the **stance** a reply takes, not the **action** it
+performs: laugh and sigh on the same words can both leave the other speaker saying "that spot
+is easy to miss", the laugh inviting shared amusement and the sigh commiseration. Sixteen of
+the 23 verdicts said as much in their own words — "only tone differs, not what B must do".
+Demanding exclusivity rejects almost every well-written item. The check and its verdicts are
+kept in [archive/binary_separability/](archive/binary_separability/) as evidence.
+
+[measure_separability.py](measure_separability.py) measures the preference instead of asking a
+model to declare it:
+
+1. Each condition already has one to three readings of its own, written without sight of the
+   other condition, and one guide per reading.
+2. One natural reply is written per reading — from the reading, never from the guide, so
+   scoring it against the guides measures fit rather than recall.
+3. Every reply is scored 1–5 under **both** conditions, blind: the judge sees one version, one
+   unlabelled reply, and no sign that another version exists. The score is taken against that
+   condition's best-matching guide, so a reply following a minority reading is judged on that
+   reading.
+4. A reply's preference is `home - away`. The two conditions' readings are never paired up —
+   the sets are different sizes and nothing needs to correspond across them.
+
+The scale carries the measurement, and one line in it does the work: **5 is specifically right
+for this version, 4 is fully appropriate and generic.** A generic reply scores the same under
+both versions, so its preference is zero and it abstains — it neither proves the item nor
+condemns it. An item separates when both sides lean toward the condition they came from.
+
+The verdict is a function of the stored scores, so changing the threshold costs no calls:
+
+```bash
+python3 v6/measure_separability.py               # replies, scores, verdict
+python3 v6/measure_separability.py --stage report  # re-decide from what is on disk
+```
 
 ```bash
 python3 v6/validate_dataset.py --renderer elevenlabs --require-audio
@@ -377,11 +418,10 @@ coverage denominator and out of the accuracy.
 ## What is not settled
 
 - **The evaluation runners do not exist yet.** Everything offline is built — validation, the
-  frozen perception set, pair construction, parsing, scoring, 69 tests — but nothing yet asks a
+  frozen perception set, pair construction, parsing, scoring, 116 tests — but nothing yet asks a
   model anything. `providers.py` already speaks to all four families over realtime websockets,
   so what is missing is wiring rather than new machinery.
-- **The annotations have not been run.** Three kinds × 24 items × 2 conditions = 144 Claude
-  calls, unspent. The prompts and schemas are in place and `--dry-run` previews every payload.
+- **The tone exclusions have not been run.** `interpretations` and `response_guides` are written for all 24 items and both conditions — 125 readings, one guide each — leaving `tone_exclusions` as the only annotation still unspent.
 - **`groan` splits between two readings.** The planner marked it as needing something to land
   in the moment 6 times out of 12 — bodily pain needs a physical event in the scene, a stance
   toward something known does not. Both are legitimate; whether the split matters depends on

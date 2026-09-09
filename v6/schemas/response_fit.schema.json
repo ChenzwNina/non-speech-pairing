@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "v6 response fit under one condition",
+  "description": "How well one reply fits one version of one item, scored against every guide that version has and reported at the best-matching guide. The scale separates `specifically right for this version` from `appropriate but generic`, because that gap is the whole measurement: a generic reply scores the same under both versions and contributes no preference, while a version-specific reply scores lower under the other version. The judge sees one version and one reply, and is never told the reply's origin or that another version exists.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["score", "best_guide_index", "depends_on_this_vocalization", "rationale"],
+  "properties": {
+    "score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "5 specifically right for this version; 4 appropriate but generic; 3 slightly out of step; 2 noticeably out of step; 1 contradicts this version"
+    },
+    "best_guide_index": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3,
+      "description": "the guide this reply matches best; the score is that guide's"
+    },
+    "depends_on_this_vocalization": {
+      "type": "boolean",
+      "description": "false when the reply would read the same had the final turn carried no sound at all"
+    },
+    "rationale": {"type": "string", "minLength": 1}
+  }
+}
