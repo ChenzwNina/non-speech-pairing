@@ -62,6 +62,26 @@ writers:
   # explain why it is not a fault.
   verifier: {model: claude-opus-5, transport: cli}
 
+# Token prices, USD per 1M tokens, so a run can report what it cost instead of only how many
+# tokens it used. Only the OpenAI models need this: the Claude CLI returns `total_cost_usd` with
+# every reply and that figure is used directly, while the OpenAI Responses API returns token
+# counts and no cost at all. A model with no entry here is reported as tokens only rather than
+# priced from a guess.
+#
+# `reasoning` tokens are already counted inside `output`, so they are billed at the output rate
+# and must not be added again. `long_context_threshold` is the input size above which the higher
+# tier applies — set from the vendor's own table if it differs; every call this pipeline makes is
+# a few thousand tokens, so the short tier is what it actually pays.
+pricing:
+  long_context_threshold: 128000
+  models:
+    gpt-5.6-terra:
+      short: {input: 2.00, cached_input: 0.20, cache_write: 2.50, output: 12.00}
+      long:  {input: 4.00, cached_input: 0.40, cache_write: 5.00, output: 18.00}
+    gpt-5.6-sol:
+      short: {input: 4.00, cached_input: 0.40, cache_write: 5.00, output: 20.00}
+      long:  {input: 8.00, cached_input: 0.80, cache_write: 10.00, output: 30.00}
+
 # The systems under test. Each is a speech-to-speech model reached over realtime websockets by
 # providers.py, at its own default effort — 2.0's convention, kept.
 evaluated_models:

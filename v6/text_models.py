@@ -133,10 +133,42 @@ def usage_rows() -> list[dict]:
     return list(USAGE)
 
 
+def _pricing() -> dict:
+    """The config's price table, or empty. Loaded lazily so a missing config costs a report
+    line rather than an import error in a stage that never prices anything."""
+    try:
+        import evalkit as K
+
+        return K.load_config().get("pricing") or {}
+    except Exception:                              # noqa: BLE001 - pricing is never essential
+        return {}
+
+
+def price_of(row: dict, pricing: dict) -> float | None:
+    """What one call cost, or None when the provider reported it or no rate is configured.
+
+    Cached reads and cache writes bill at their own rates, which is the whole reason the CLI's
+    tenfold swing between a cold and a warm call exists. Reasoning tokens are already inside
+    `output_tokens` and are billed at the output rate, so they are not added separately.
+    """
+    rates = (pricing.get("models") or {}).get(row["model"])
+    if not rates:
+        return None
+    tier = ("long" if row.get("input_tokens", 0) + row.get("cache_read_tokens", 0)
+            + row.get("cache_write_tokens", 0) > pricing.get("long_context_threshold", 128000)
+            else "short")
+    r = rates.get(tier) or {}
+    return (row.get("input_tokens", 0) * r.get("input", 0)
+            + row.get("cache_read_tokens", 0) * r.get("cached_input", 0)
+            + row.get("cache_write_tokens", 0) * r.get("cache_write", 0)
+            + row.get("output_tokens", 0) * r.get("output", 0)) / 1_000_000
+
+
 def usage_report(label: str = "usage") -> str:
     """One line per model, plus a total. Empty when nothing was called."""
     if not USAGE:
         return ""
+    pricing = _pricing()
     by: dict[str, dict] = {}
     for row in USAGE:
         acc = by.setdefault(row["model"], {"calls": 0, "input_tokens": 0, "output_tokens": 0,
@@ -144,8 +176,12 @@ def usage_report(label: str = "usage") -> str:
                                            "cache_write_tokens": 0, "cost_usd": 0.0})
         acc["calls"] += 1
         for k in ("input_tokens", "output_tokens", "reasoning_tokens", "cache_read_tokens",
-                  "cache_write_tokens", "cost_usd"):
+                  "cache_write_tokens"):
             acc[k] += row.get(k, 0)
+        # A provider-reported cost is authoritative; otherwise price it from the table.
+        acc["cost_usd"] += row.get("cost_usd") or (price_of(row, pricing) or 0.0)
+        acc["priced"] = acc.get("priced", True) and (
+            bool(row.get("cost_usd")) or price_of(row, pricing) is not None)
     lines = [f"{label}:"]
     for model, a in sorted(by.items()):
         # The Claude CLI bills most of a first call's input as cache creation and reports
@@ -157,7 +193,11 @@ def usage_report(label: str = "usage") -> str:
                      f"· cache read {a['cache_read_tokens']:,})  "
                      f"out {a['output_tokens']:,} (of which reasoning "
                      f"{a['reasoning_tokens']:,})"
-                     + (f"  ${a['cost_usd']:.4f}" if a["cost_usd"] else "  cost not reported"))
+                     + (f"  ${a['cost_usd']:.4f}" if a.get("priced")
+                        else "  cost not reported"))
+    total = sum(a["cost_usd"] for a in by.values())
+    if total and all(a.get("priced") for a in by.values()):
+        lines.append(f"  total  ${total:.4f}")
     return "\n".join(lines)
 
 
