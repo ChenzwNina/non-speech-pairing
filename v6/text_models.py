@@ -44,6 +44,13 @@ CLI_FLAGS = ("--output-format", "json", "--exclude-dynamic-system-prompt-section
 CLI_TIMEOUT = 240
 
 CLI_COST: list[float] = []
+# Every model call appends one row. Without this the only record of what a run cost is the
+# Claude CLI's dollar figure, which is per-process and never written down — so the transcript
+# pipeline's usage was unrecoverable once it had finished. Reasoning tokens are counted
+# separately because they do not appear in the text a call returns, which is what makes an
+# estimate reconstructed from saved responses undercount. They are a subset of output_tokens,
+# so a total must not add them again.
+USAGE: list[dict] = []
 _cost_lock = threading.Lock()
 
 # Stage 4 is GPT-4o per the spec, where every other writing stage is GPT-5.6-Terra. Kept as
@@ -106,11 +113,52 @@ def ask_claude(model: str, system: str, prompt: str) -> str:
         raise RuntimeError(f"claude cli reported an error: {str(payload.get('result'))[:200]}")
     with _cost_lock:
         CLI_COST.append(payload.get("total_cost_usd") or 0.0)
+        used = payload.get("usage") or {}
+        USAGE.append({"model": model, "transport": "cli",
+                      "input_tokens": used.get("input_tokens", 0),
+                      "output_tokens": used.get("output_tokens", 0),
+                      "reasoning_tokens": 0,
+                      "cache_read_tokens": used.get("cache_read_input_tokens", 0),
+                      "cache_write_tokens": used.get("cache_creation_input_tokens", 0),
+                      "cost_usd": payload.get("total_cost_usd") or 0.0})
     return (payload.get("result") or "").strip()
 
 
 def cli_spend() -> float:
     return sum(CLI_COST)
+
+
+def usage_rows() -> list[dict]:
+    """Every call this process made. Cost is present only where the provider reported one."""
+    return list(USAGE)
+
+
+def usage_report(label: str = "usage") -> str:
+    """One line per model, plus a total. Empty when nothing was called."""
+    if not USAGE:
+        return ""
+    by: dict[str, dict] = {}
+    for row in USAGE:
+        acc = by.setdefault(row["model"], {"calls": 0, "input_tokens": 0, "output_tokens": 0,
+                                           "reasoning_tokens": 0, "cache_read_tokens": 0,
+                                           "cache_write_tokens": 0, "cost_usd": 0.0})
+        acc["calls"] += 1
+        for k in ("input_tokens", "output_tokens", "reasoning_tokens", "cache_read_tokens",
+                  "cache_write_tokens", "cost_usd"):
+            acc[k] += row.get(k, 0)
+    lines = [f"{label}:"]
+    for model, a in sorted(by.items()):
+        # The Claude CLI bills most of a first call's input as cache creation and reports
+        # input_tokens as the remainder, so an input figure that omits the cache columns reads
+        # as ~0 and hides where the money went. Reasoning tokens are a subset of output_tokens.
+        billed_in = a["input_tokens"] + a["cache_write_tokens"] + a["cache_read_tokens"]
+        lines.append(f"  {model}  {a['calls']} call(s)  in {billed_in:,} "
+                     f"(fresh {a['input_tokens']:,} · cache write {a['cache_write_tokens']:,} "
+                     f"· cache read {a['cache_read_tokens']:,})  "
+                     f"out {a['output_tokens']:,} (of which reasoning "
+                     f"{a['reasoning_tokens']:,})"
+                     + (f"  ${a['cost_usd']:.4f}" if a["cost_usd"] else "  cost not reported"))
+    return "\n".join(lines)
 
 
 def retry(call, *args, **kwargs):
@@ -137,6 +185,15 @@ def json_call(model: str, system: str, prompt: str, schema: dict, name: str,
     if effort and not re.match(r"^gpt-(4|3\.5)", model):
         kwargs["reasoning"] = {"effort": effort}
     response = _openai().responses.create(**kwargs)
+    used = getattr(response, "usage", None)
+    if used is not None:
+        details = getattr(used, "output_tokens_details", None)
+        with _cost_lock:
+            USAGE.append({"model": model, "transport": "openai",
+                          "input_tokens": getattr(used, "input_tokens", 0) or 0,
+                          "output_tokens": getattr(used, "output_tokens", 0) or 0,
+                          "reasoning_tokens": getattr(details, "reasoning_tokens", 0) or 0,
+                          "cache_read_tokens": 0, "cache_write_tokens": 0, "cost_usd": 0.0})
     if response.status != "completed":
         raise RuntimeError(f"status={response.status} "
                            f"{getattr(response, 'incomplete_details', None)}")

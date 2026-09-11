@@ -147,6 +147,8 @@ def main() -> int:
     for line in swapped[:5]:
         print(f"    {line}"[:170])
     print(f"wrote {OCCASIONS.relative_to(K.HERE.parent)} · {len(by_id)} plan(s)")
+    if T.usage_report():
+        print(T.usage_report())
     return 0
 
 

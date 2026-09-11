@@ -306,6 +306,8 @@ def main() -> int:
     K.report("write-transcripts", planned=len(plans), completed=len(plans) - failed,
              skipped=0, failed=failed, invalid=0)
     print(f"wrote {TRANSCRIPTS.relative_to(K.HERE.parent)} · {len(by_id)} item(s)")
+    if T.usage_report():
+        print(T.usage_report())
     return 1 if failed else 0
 
 
